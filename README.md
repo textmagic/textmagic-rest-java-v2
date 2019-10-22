@@ -4,7 +4,9 @@ This library provides you with an easy way of sending SMS and receiving replies 
 
 ## What Is TextMagic?
 TextMagic’s application programming interface (API) provides the communication link between your application and TextMagic’s SMS Gateway, allowing you to send and receive text messages and to check the delivery status of text messages you’ve already sent.
+
 [comment]: <> (/HEAD)
+
 
 ## Requirements
 
@@ -21,7 +23,7 @@ Add this dependency to your project's POM:
     <dependency>
         <groupId>com.textmagic.sdk</groupId>
         <artifactId>textmagic-java-sdk</artifactId>
-        <version>2.0.212</version>
+        <version></version>
     </dependency>
 </dependencies>
 ```
@@ -30,7 +32,7 @@ Add this dependency to your project's POM:
 
 Add this dependency to your project’s build file:
 ```groovy
-compile "com.textmagic.sdk:textmagic-java-sdk:2.0.212"
+compile "com.textmagic.sdk:textmagic-java-sdk:"
 ```
 
 ## Usage Example
