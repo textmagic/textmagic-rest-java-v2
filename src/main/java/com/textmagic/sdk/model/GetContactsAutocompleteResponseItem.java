@@ -93,6 +93,9 @@ public class GetContactsAutocompleteResponseItem {
   @SerializedName("sharedBy")
   private String sharedBy = null;
 
+  @SerializedName("isShared")
+  private Boolean isShared = null;
+
   @SerializedName("avatar")
   private String avatar = null;
 
@@ -199,6 +202,24 @@ public class GetContactsAutocompleteResponseItem {
 
   public void setSharedBy(String sharedBy) {
     this.sharedBy = sharedBy;
+  }
+
+  public GetContactsAutocompleteResponseItem isShared(Boolean isShared) {
+    this.isShared = isShared;
+    return this;
+  }
+
+   /**
+   * If contact or list was shared by another sub-account then &#x60;true&#x60; will be set.
+   * @return isShared
+  **/
+  @ApiModelProperty(example = "true", required = true, value = "If contact or list was shared by another sub-account then `true` will be set.")
+  public Boolean isIsShared() {
+    return isShared;
+  }
+
+  public void setIsShared(Boolean isShared) {
+    this.isShared = isShared;
   }
 
   public GetContactsAutocompleteResponseItem avatar(String avatar) {
@@ -324,6 +345,7 @@ public class GetContactsAutocompleteResponseItem {
         Objects.equals(this.value, getContactsAutocompleteResponseItem.value) &&
         Objects.equals(this.label, getContactsAutocompleteResponseItem.label) &&
         Objects.equals(this.sharedBy, getContactsAutocompleteResponseItem.sharedBy) &&
+        Objects.equals(this.isShared, getContactsAutocompleteResponseItem.isShared) &&
         Objects.equals(this.avatar, getContactsAutocompleteResponseItem.avatar) &&
         Objects.equals(this.favorited, getContactsAutocompleteResponseItem.favorited) &&
         Objects.equals(this.userId, getContactsAutocompleteResponseItem.userId) &&
@@ -334,7 +356,7 @@ public class GetContactsAutocompleteResponseItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(entityId, entityType, value, label, sharedBy, avatar, favorited, userId, countryName, qposition, rposition);
+    return Objects.hash(entityId, entityType, value, label, sharedBy, isShared, avatar, favorited, userId, countryName, qposition, rposition);
   }
 
 
@@ -348,6 +370,7 @@ public class GetContactsAutocompleteResponseItem {
     sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("    label: ").append(toIndentedString(label)).append("\n");
     sb.append("    sharedBy: ").append(toIndentedString(sharedBy)).append("\n");
+    sb.append("    isShared: ").append(toIndentedString(isShared)).append("\n");
     sb.append("    avatar: ").append(toIndentedString(avatar)).append("\n");
     sb.append("    favorited: ").append(toIndentedString(favorited)).append("\n");
     sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
