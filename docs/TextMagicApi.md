@@ -34,8 +34,8 @@ Method | HTTP request | Description
 [**deleteInboundMessage**](TextMagicApi.md#deleteInboundMessage) | **DELETE** /api/v2/replies/{id} | Delete a single inbound message
 [**deleteInboundMessagesBulk**](TextMagicApi.md#deleteInboundMessagesBulk) | **POST** /api/v2/replies/delete | Delete inbound messages (bulk)
 [**deleteList**](TextMagicApi.md#deleteList) | **DELETE** /api/v2/lists/{id} | Delete a list
-[**deleteListAvatar**](TextMagicApi.md#deleteListAvatar) | **DELETE** /api/v2/lists/{id}/avatar | Delete an avatar for the list
-[**deleteListContactsBulk**](TextMagicApi.md#deleteListContactsBulk) | **POST** /api/v2/lists/{id}/contacts/delete | Delete contacts from list (bulk)
+[**deleteListAvatar**](TextMagicApi.md#deleteListAvatar) | **DELETE** /api/v2/lists/{id}/avatar | Delete an avatar for a list
+[**deleteListContactsBulk**](TextMagicApi.md#deleteListContactsBulk) | **POST** /api/v2/lists/{id}/contacts/delete | Delete contacts from a list (bulk)
 [**deleteListsBulk**](TextMagicApi.md#deleteListsBulk) | **POST** /api/v2/lists/delete | Delete lists (bulk)
 [**deleteMessageSession**](TextMagicApi.md#deleteMessageSession) | **DELETE** /api/v2/sessions/{id} | Delete a session
 [**deleteMessageSessionsBulk**](TextMagicApi.md#deleteMessageSessionsBulk) | **POST** /api/v2/sessions/delete | Delete sessions (bulk)
@@ -84,7 +84,7 @@ Method | HTTP request | Description
 [**getInboundMessagesNotificationSettings**](TextMagicApi.md#getInboundMessagesNotificationSettings) | **GET** /api/v2/user/notification/inbound | Get inbound messages notification settings
 [**getInvoices**](TextMagicApi.md#getInvoices) | **GET** /api/v2/invoices | Get all invoices
 [**getList**](TextMagicApi.md#getList) | **GET** /api/v2/lists/{id} | Get the details of a specific list
-[**getListContactsIds**](TextMagicApi.md#getListContactsIds) | **GET** /api/v2/lists/{id}/contacts/ids | Get all contacts IDs in a list
+[**getListContactsIds**](TextMagicApi.md#getListContactsIds) | **GET** /api/v2/lists/{id}/contacts/ids | Get all contact IDs in a list
 [**getLists**](TextMagicApi.md#getLists) | **GET** /api/v2/lists | Get all lists
 [**getListsOfContact**](TextMagicApi.md#getListsOfContact) | **GET** /api/v2/contacts/{id}/lists | Get a contact&#39;s lists
 [**getMessagePreview**](TextMagicApi.md#getMessagePreview) | **GET** /api/v2/messages/preview | Preview message
@@ -150,7 +150,7 @@ Method | HTTP request | Description
 [**updateTemplate**](TextMagicApi.md#updateTemplate) | **PUT** /api/v2/templates/{id} | Update a template
 [**uploadAvatar**](TextMagicApi.md#uploadAvatar) | **POST** /api/v2/user/avatar | Upload an avatar
 [**uploadContactAvatar**](TextMagicApi.md#uploadContactAvatar) | **POST** /api/v2/contacts/{id}/avatar | Upload an avatar
-[**uploadListAvatar**](TextMagicApi.md#uploadListAvatar) | **POST** /api/v2/lists/{id}/avatar | Add an avatar for the list
+[**uploadListAvatar**](TextMagicApi.md#uploadListAvatar) | **POST** /api/v2/lists/{id}/avatar | Add an avatar for a list
 [**uploadMessageAttachment**](TextMagicApi.md#uploadMessageAttachment) | **POST** /api/v2/messages/attachment | Upload message attachment
 
 
@@ -1701,7 +1701,7 @@ null (empty response body)
 
 Delete a list
 
-This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
 
 ### Example
 ```java
@@ -1752,9 +1752,9 @@ null (empty response body)
 # **deleteListAvatar**
 > deleteListAvatar(id)
 
-Delete an avatar for the list
+Delete an avatar for a list
 
-
+Delete an avatar for a list
 
 ### Example
 ```java
@@ -1805,9 +1805,9 @@ null (empty response body)
 # **deleteListContactsBulk**
 > deleteListContactsBulk(deleteListContactsBulkInputObject, id)
 
-Delete contacts from list (bulk)
+Delete contacts from a list (bulk)
 
-
+Delete contacts from a list (bulk)
 
 ### Example
 ```java
@@ -3920,7 +3920,7 @@ Name | Type | Description  | Notes
 
 Get all contacts in a list
 
-A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
+A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
 
 ### Example
 ```java
@@ -3939,10 +3939,10 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-Integer id = 1; // Integer | Given group Id.
+Integer id = 1; // Integer | Given group ID.
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-String orderBy = "id"; // String | Order results by some field. Default is id
+String orderBy = "id"; // String | Order results by some field. Default is id.
 String direction = "desc"; // String | Order direction. Default is desc.
 try {
     GetContactsByListIdPaginatedResponse result = apiInstance.getContactsByListId(id, page, limit, orderBy, direction);
@@ -3957,10 +3957,10 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Integer**| Given group Id. |
+ **id** | **Integer**| Given group ID. |
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, firstName, lastName]
+ **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, firstName, lastName]
  **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 
 ### Return type
@@ -4516,7 +4516,7 @@ Name | Type | Description  | Notes
 # **getListContactsIds**
 > GetListContactsIdsResponse getListContactsIds(id)
 
-Get all contacts IDs in a list
+Get all contact IDs in a list
 
 
 
@@ -8290,9 +8290,9 @@ Name | Type | Description  | Notes
 # **uploadListAvatar**
 > ResourceLinkResponse uploadListAvatar(image, id)
 
-Add an avatar for the list
+Add an avatar for a list
 
-
+Add an avatar for a list
 
 ### Example
 ```java
@@ -8311,7 +8311,7 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-File image = new File("/path/to/file.txt"); // File | List avatar. Should be PNG or JPG file not more than 10 MB
+File image = new File("/path/to/file.txt"); // File | List avatar. Should be a PNG or JPG file not more than 10 MB.
 Integer id = 1; // Integer | 
 try {
     ResourceLinkResponse result = apiInstance.uploadListAvatar(image, id);
@@ -8326,7 +8326,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **image** | **File**| List avatar. Should be PNG or JPG file not more than 10 MB |
+ **image** | **File**| List avatar. Should be a PNG or JPG file not more than 10 MB. |
  **id** | **Integer**|  |
 
 ### Return type

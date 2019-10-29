@@ -629,7 +629,7 @@ public class TextMagicApiTest {
     /**
      * Delete a list
      *
-     * This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+     * This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -643,9 +643,9 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Delete an avatar for the list
+     * Delete an avatar for a list
      *
-     * 
+     * Delete an avatar for a list
      *
      * @throws ApiException
      *          if the Api call fails
@@ -659,9 +659,9 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Delete contacts from list (bulk)
+     * Delete contacts from a list (bulk)
      *
-     * 
+     * Delete contacts from a list (bulk)
      *
      * @throws ApiException
      *          if the Api call fails
@@ -1308,7 +1308,7 @@ public class TextMagicApiTest {
     /**
      * Get all contacts in a list
      *
-     * A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
+     * A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -1487,7 +1487,7 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Get all contacts IDs in a list
+     * Get all contact IDs in a list
      *
      * 
      *
@@ -2658,9 +2658,9 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Add an avatar for the list
+     * Add an avatar for a list
      *
-     * 
+     * Add an avatar for a list
      *
      * @throws ApiException
      *          if the Api call fails

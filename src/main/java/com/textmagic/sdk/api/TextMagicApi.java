@@ -3734,7 +3734,7 @@ public class TextMagicApi {
 
     /**
      * Delete a list
-     * This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+     * This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -3744,7 +3744,7 @@ public class TextMagicApi {
 
     /**
      * Delete a list
-     * This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+     * This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3756,7 +3756,7 @@ public class TextMagicApi {
 
     /**
      * Delete a list (asynchronously)
-     * This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
+     * This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3852,8 +3852,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Delete an avatar for the list
-     * 
+     * Delete an avatar for a list
+     * Delete an avatar for a list
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -3862,8 +3862,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Delete an avatar for the list
-     * 
+     * Delete an avatar for a list
+     * Delete an avatar for a list
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3874,8 +3874,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Delete an avatar for the list (asynchronously)
-     * 
+     * Delete an avatar for a list (asynchronously)
+     * Delete an avatar for a list
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3977,8 +3977,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Delete contacts from list (bulk)
-     * 
+     * Delete contacts from a list (bulk)
+     * Delete contacts from a list (bulk)
      * @param deleteListContactsBulkInputObject  (required)
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3988,8 +3988,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Delete contacts from list (bulk)
-     * 
+     * Delete contacts from a list (bulk)
+     * Delete contacts from a list (bulk)
      * @param deleteListContactsBulkInputObject  (required)
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
@@ -4001,8 +4001,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Delete contacts from list (bulk) (asynchronously)
-     * 
+     * Delete contacts from a list (bulk) (asynchronously)
+     * Delete contacts from a list (bulk)
      * @param deleteListContactsBulkInputObject  (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -8721,10 +8721,10 @@ public class TextMagicApi {
     }
     /**
      * Build call for getContactsByListId
-     * @param id Given group Id. (required)
+     * @param id Given group ID. (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
@@ -8797,11 +8797,11 @@ public class TextMagicApi {
 
     /**
      * Get all contacts in a list
-     * A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
-     * @param id Given group Id. (required)
+     * A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+     * @param id Given group ID. (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return GetContactsByListIdPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -8813,11 +8813,11 @@ public class TextMagicApi {
 
     /**
      * Get all contacts in a list
-     * A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
-     * @param id Given group Id. (required)
+     * A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+     * @param id Given group ID. (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;GetContactsByListIdPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -8830,11 +8830,11 @@ public class TextMagicApi {
 
     /**
      * Get all contacts in a list (asynchronously)
-     * A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
-     * @param id Given group Id. (required)
+     * A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+     * @param id Given group ID. (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -10143,7 +10143,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Get all contacts IDs in a list
+     * Get all contact IDs in a list
      * 
      * @param id  (required)
      * @return GetListContactsIdsResponse
@@ -10155,7 +10155,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Get all contacts IDs in a list
+     * Get all contact IDs in a list
      * 
      * @param id  (required)
      * @return ApiResponse&lt;GetListContactsIdsResponse&gt;
@@ -10168,7 +10168,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Get all contacts IDs in a list (asynchronously)
+     * Get all contact IDs in a list (asynchronously)
      * 
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -18739,7 +18739,7 @@ public class TextMagicApi {
     }
     /**
      * Build call for uploadListAvatar
-     * @param image List avatar. Should be PNG or JPG file not more than 10 MB (required)
+     * @param image List avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
@@ -18810,9 +18810,9 @@ public class TextMagicApi {
     }
 
     /**
-     * Add an avatar for the list
-     * 
-     * @param image List avatar. Should be PNG or JPG file not more than 10 MB (required)
+     * Add an avatar for a list
+     * Add an avatar for a list
+     * @param image List avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -18823,9 +18823,9 @@ public class TextMagicApi {
     }
 
     /**
-     * Add an avatar for the list
-     * 
-     * @param image List avatar. Should be PNG or JPG file not more than 10 MB (required)
+     * Add an avatar for a list
+     * Add an avatar for a list
+     * @param image List avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -18837,9 +18837,9 @@ public class TextMagicApi {
     }
 
     /**
-     * Add an avatar for the list (asynchronously)
-     * 
-     * @param image List avatar. Should be PNG or JPG file not more than 10 MB (required)
+     * Add an avatar for a list (asynchronously)
+     * Add an avatar for a list
+     * @param image List avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
