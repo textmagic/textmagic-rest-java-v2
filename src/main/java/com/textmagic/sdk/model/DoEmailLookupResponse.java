@@ -342,10 +342,10 @@ public class DoEmailLookupResponse {
   }
 
    /**
-   * This is be &#x60;true&#x60; if the domain is in the list of disposable email addresses, otherwise returns as &#x60;false&#x60;.
+   * This is &#x60;true&#x60; if the domain is in the list of disposable email addresses; otherwise, it returns as &#x60;false&#x60;.
    * @return isDisposableAddress
   **/
-  @ApiModelProperty(example = "false", required = true, value = "This is be `true` if the domain is in the list of disposable email addresses, otherwise returns as `false`.")
+  @ApiModelProperty(example = "false", required = true, value = "This is `true` if the domain is in the list of disposable email addresses; otherwise, it returns as `false`.")
   public Boolean isIsDisposableAddress() {
     return isDisposableAddress;
   }
@@ -360,10 +360,10 @@ public class DoEmailLookupResponse {
   }
 
    /**
-   * Null if nothing is suggested, however, if there is a potential typo in the email address, the closest suggestion is provided.
+   * Null if nothing is suggested; however, if there is a potential typo in the email address, the closest suggestion is provided.
    * @return suggestion
   **/
-  @ApiModelProperty(example = "john@sample.com", required = true, value = "Null if nothing is suggested, however, if there is a potential typo in the email address, the closest suggestion is provided.")
+  @ApiModelProperty(example = "john@sample.com", required = true, value = "Null if nothing is suggested; however, if there is a potential typo in the email address, the closest suggestion is provided.")
   public String getSuggestion() {
     return suggestion;
   }
@@ -378,10 +378,10 @@ public class DoEmailLookupResponse {
   }
 
    /**
-   * Checks the mailbox part of the email whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)
+   * Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)
    * @return emailRole
   **/
-  @ApiModelProperty(example = "admin", required = true, value = "Checks the mailbox part of the email whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)")
+  @ApiModelProperty(example = "admin", required = true, value = "Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)")
   public String getEmailRole() {
     return emailRole;
   }
@@ -468,10 +468,10 @@ public class DoEmailLookupResponse {
   }
 
    /**
-   * &#x60;true&#x60; if the email address exists in TextMagic whitelist. 
+   * &#x60;true&#x60; if the email address exists in the TextMagic whitelist. 
    * @return isInWhiteList
   **/
-  @ApiModelProperty(example = "false", required = true, value = "`true` if the email address exists in TextMagic whitelist. ")
+  @ApiModelProperty(example = "false", required = true, value = "`true` if the email address exists in the TextMagic whitelist. ")
   public Boolean isIsInWhiteList() {
     return isInWhiteList;
   }
@@ -486,10 +486,10 @@ public class DoEmailLookupResponse {
   }
 
    /**
-   * &#x60;true&#x60; if the email address exists in TextMagic blacklist. 
+   * &#x60;true&#x60; if the email address exists in the TextMagic blacklist. 
    * @return isInBlackList
   **/
-  @ApiModelProperty(example = "false", required = true, value = "`true` if the email address exists in TextMagic blacklist. ")
+  @ApiModelProperty(example = "false", required = true, value = "`true` if the email address exists in the TextMagic blacklist. ")
   public Boolean isIsInBlackList() {
     return isInBlackList;
   }

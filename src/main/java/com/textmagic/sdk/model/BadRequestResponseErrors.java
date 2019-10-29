@@ -27,9 +27,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * If it was a **POST** or **PUT** request (and the **message** returned is &#x60;Validation Failed&#x60;), this field may contain **errors **that describe the errors grouped by the input parameter name. 
+ * If it was a **POST** or **PUT** request (and the **message** returned is &#x60;Validation Failed&#x60;), this field may contain **errors** that describe the errors grouped by the input parameter name. 
  */
-@ApiModel(description = "If it was a **POST** or **PUT** request (and the **message** returned is `Validation Failed`), this field may contain **errors **that describe the errors grouped by the input parameter name. ")
+@ApiModel(description = "If it was a **POST** or **PUT** request (and the **message** returned is `Validation Failed`), this field may contain **errors** that describe the errors grouped by the input parameter name. ")
 
 public class BadRequestResponseErrors {
   @SerializedName("common")

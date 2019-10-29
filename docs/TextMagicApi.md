@@ -30,7 +30,7 @@ Method | HTTP request | Description
 [**deleteContactsByIds**](TextMagicApi.md#deleteContactsByIds) | **POST** /api/v2/contacts/delete | Delete contacts by IDs (bulk)
 [**deleteContactsFromList**](TextMagicApi.md#deleteContactsFromList) | **DELETE** /api/v2/lists/{id}/contacts | Unassign contacts from a list
 [**deleteCustomField**](TextMagicApi.md#deleteCustomField) | **DELETE** /api/v2/customfields/{id} | Delete a custom field
-[**deleteDedicatedNumber**](TextMagicApi.md#deleteDedicatedNumber) | **DELETE** /api/v2/numbers/{id} | Cancel dedicated number subscription
+[**deleteDedicatedNumber**](TextMagicApi.md#deleteDedicatedNumber) | **DELETE** /api/v2/numbers/{id} | Cancel a dedicated number subscription
 [**deleteInboundMessage**](TextMagicApi.md#deleteInboundMessage) | **DELETE** /api/v2/replies/{id} | Delete a single inbound message
 [**deleteInboundMessagesBulk**](TextMagicApi.md#deleteInboundMessagesBulk) | **POST** /api/v2/replies/delete | Delete inbound messages (bulk)
 [**deleteList**](TextMagicApi.md#deleteList) | **DELETE** /api/v2/lists/{id} | Delete a list
@@ -70,7 +70,7 @@ Method | HTTP request | Description
 [**getContactIfBlocked**](TextMagicApi.md#getContactIfBlocked) | **GET** /api/v2/contacts/block/phone | Check is that phone number blocked
 [**getContactImportSessionProgress**](TextMagicApi.md#getContactImportSessionProgress) | **GET** /api/v2/contacts/import/progress/{id} | Check import progress
 [**getContactNote**](TextMagicApi.md#getContactNote) | **GET** /api/v2/notes/{id} | Get a contact note
-[**getContactNotes**](TextMagicApi.md#getContactNotes) | **GET** /api/v2/contacts/{id}/notes | Fetch notes assigned to the given contact.
+[**getContactNotes**](TextMagicApi.md#getContactNotes) | **GET** /api/v2/contacts/{id}/notes | Fetch notes assigned to a given contact
 [**getContacts**](TextMagicApi.md#getContacts) | **GET** /api/v2/contacts | Get all contacts
 [**getContactsAutocomplete**](TextMagicApi.md#getContactsAutocomplete) | **GET** /api/v2/contacts/autocomplete | Get contacts autocomplete suggestions
 [**getContactsByListId**](TextMagicApi.md#getContactsByListId) | **GET** /api/v2/lists/{id}/contacts | Get all contacts in a list
@@ -1540,7 +1540,7 @@ null (empty response body)
 # **deleteDedicatedNumber**
 > deleteDedicatedNumber(id)
 
-Cancel dedicated number subscription
+Cancel a dedicated number subscription
 
 
 
@@ -2392,7 +2392,7 @@ null (empty response body)
 
 Carrier Lookup
 
-This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
 
 ### Example
 ```java
@@ -2412,7 +2412,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
 String phone = "\"447860021130\""; // String | Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). 
-String country = "\"GB\""; // String | This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**. 
+String country = "\"GB\""; // String | This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**. 
 try {
     DoCarrierLookupResponse result = apiInstance.doCarrierLookup(phone, country);
     System.out.println(result);
@@ -2427,7 +2427,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **phone** | **String**| Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  |
- **country** | **String**| This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  | [optional]
+ **country** | **String**| This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  | [optional]
 
 ### Return type
 
@@ -2448,7 +2448,7 @@ Name | Type | Description  | Notes
 
 Email Lookup
 
-To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
 
 ### Example
 ```java
@@ -2933,8 +2933,8 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-String country = "\"GB\""; // String | Two-letter dedicated number country ISO code.
-Integer prefix = 447155; // Integer | Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country.
+String country = "\"GB\""; // String | The 2-letter dedicated number country ISO code.
+Integer prefix = 447155; // Integer | Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country.
 Integer tollfree = 0; // Integer | Should we show only tollfree numbers (tollfree available only for US).
 try {
     GetAvailableDedicatedNumbersResponse result = apiInstance.getAvailableDedicatedNumbers(country, prefix, tollfree);
@@ -2949,8 +2949,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country** | **String**| Two-letter dedicated number country ISO code. |
- **prefix** | **Integer**| Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. | [optional]
+ **country** | **String**| The 2-letter dedicated number country ISO code. |
+ **prefix** | **Integer**| Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. | [optional]
  **tollfree** | **Integer**| Should we show only tollfree numbers (tollfree available only for US). | [optional] [default to 0]
 
 ### Return type
@@ -2972,7 +2972,7 @@ Name | Type | Description  | Notes
 
 Get available sender settings
 
-Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
 
 ### Example
 ```java
@@ -3740,7 +3740,7 @@ Name | Type | Description  | Notes
 # **getContactNotes**
 > GetContactNotesPaginatedResponse getContactNotes(id, page, limit)
 
-Fetch notes assigned to the given contact.
+Fetch notes assigned to a given contact
 
 
 
@@ -5447,7 +5447,7 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-String country = "\"US\""; // String | Return sender settings enabled for sending to specified country. Two upper case characters
+String country = "\"US\""; // String | Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters.
 try {
     GetSenderSettingsResponse result = apiInstance.getSenderSettings(country);
     System.out.println(result);
@@ -5461,7 +5461,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country** | **String**| Return sender settings enabled for sending to specified country. Two upper case characters | [optional]
+ **country** | **String**| Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. | [optional]
 
 ### Return type
 
@@ -5999,7 +5999,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-Integer surveyId = 56; // Integer | Fetch only that numbers which are ready for the survey
+Integer surveyId = 56; // Integer | Fetch only those numbers that are ready for the survey.
 try {
     GetUserDedicatedNumbersPaginatedResponse result = apiInstance.getUserDedicatedNumbers(page, limit, surveyId);
     System.out.println(result);
@@ -6015,7 +6015,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **surveyId** | **Integer**| Fetch only that numbers which are ready for the survey | [optional]
+ **surveyId** | **Integer**| Fetch only those numbers that are ready for the survey. | [optional]
 
 ### Return type
 
@@ -6056,7 +6056,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
 File file = new File("/path/to/file.txt"); // File | File containing contacts in csv or xls(x) formats
-String column = "\"0:firstName;1:lastName;3:phone;4:email\""; // String | Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required. 
+String column = "\"0:firstName;1:lastName;3:phone;4:email\""; // String | Import file column mapping. The string must contain sub-strings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where the value before `:` is a number of the column in the file, and the value after `:` is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required. 
 Integer listId = 443; // Integer | List ID contacts will be imported to. Ignored if `listName` is specified. 
 String listName = "\"A new list\""; // String | List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified. 
 try {
@@ -6073,7 +6073,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **File**| File containing contacts in csv or xls(x) formats |
- **column** | **String**| Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  |
+ **column** | **String**| Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  |
  **listId** | **Integer**| List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  | [optional]
  **listName** | **String**| List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  | [optional]
 
@@ -6309,7 +6309,7 @@ Name | Type | Description  | Notes
 
 Mute chats (bulk)
 
-Mute several chats by chat IDs or mute all chats
+Mute several chats by chat ids or mute all chats.
 
 ### Example
 ```java
@@ -6519,7 +6519,7 @@ Name | Type | Description  | Notes
 
 Apply for a new Sender ID
 
-&gt; Sender IDs are shared between all of your sub-accounts.
+&gt; Sender IDs are shared among all of your sub-accounts.
 
 ### Example
 ```java
@@ -7421,7 +7421,7 @@ null (empty response body)
 
 Unmute chats (bulk)
 
-Unmute several chats by chat IDs or unmute all chats
+Unmute several chats by chat ids or unmute all chats.
 
 ### Example
 ```java
@@ -8255,7 +8255,7 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-File image = new File("/path/to/file.txt"); // File | Contact avatar. Should be PNG or JPG file not more than 10 MB
+File image = new File("/path/to/file.txt"); // File | Contact avatar. Should be a PNG or JPG file not more than 10 MB.
 Integer id = 1; // Integer | 
 try {
     ResourceLinkResponse result = apiInstance.uploadContactAvatar(image, id);
@@ -8270,7 +8270,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **image** | **File**| Contact avatar. Should be PNG or JPG file not more than 10 MB |
+ **image** | **File**| Contact avatar. Should be a PNG or JPG file not more than 10 MB. |
  **id** | **Integer**|  |
 
 ### Return type

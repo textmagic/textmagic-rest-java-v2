@@ -54,10 +54,10 @@ public class GetAvailableSenderSettingOptionsResponse {
   }
 
    /**
-   * Array of dedicated numbers strings.
+   * Array of dedicated number strings.
    * @return dedicated
   **/
-  @ApiModelProperty(example = "[447860021136,447860021137]", required = true, value = "Array of dedicated numbers strings.")
+  @ApiModelProperty(example = "[447860021136,447860021137]", required = true, value = "Array of dedicated number strings.")
   public List<String> getDedicated() {
     return dedicated;
   }
@@ -100,10 +100,10 @@ public class GetAvailableSenderSettingOptionsResponse {
   }
 
    /**
-   * Array of shared numbers strings.
+   * Array of shared number strings.
    * @return shared
   **/
-  @ApiModelProperty(example = "[447860021130,447860021131]", required = true, value = "Array of shared numbers strings.")
+  @ApiModelProperty(example = "[447860021130,447860021131]", required = true, value = "Array of shared number strings.")
   public List<String> getShared() {
     return shared;
   }

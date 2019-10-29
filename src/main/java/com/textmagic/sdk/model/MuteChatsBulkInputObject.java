@@ -80,10 +80,10 @@ public class MuteChatsBulkInputObject {
   }
 
    /**
-   * Mute for N hours
+   * Mute for N hours.
    * @return _for
   **/
-  @ApiModelProperty(example = "1", value = "Mute for N hours")
+  @ApiModelProperty(example = "1", value = "Mute for N hours.")
   public Integer getFor() {
     return _for;
   }

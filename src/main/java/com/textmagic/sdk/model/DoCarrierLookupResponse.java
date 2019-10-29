@@ -107,10 +107,10 @@ public class DoCarrierLookupResponse {
   }
 
    /**
-   * Cost to check that one number is constant – 0.04 in your account currency.
+   * The cost to check that one number is constant – 0.04 in your account currency.
    * @return cost
   **/
-  @ApiModelProperty(example = "0.04", required = true, value = "Cost to check that one number is constant – 0.04 in your account currency.")
+  @ApiModelProperty(example = "0.04", required = true, value = "The cost to check that one number is constant – 0.04 in your account currency.")
   public BigDecimal getCost() {
     return cost;
   }
@@ -215,10 +215,10 @@ public class DoCarrierLookupResponse {
   }
 
    /**
-   * The field shows if entered phone number is valid or not.
+   * This field shows whether the entered phone number is valid or not.
    * @return valid
   **/
-  @ApiModelProperty(example = "true", required = true, value = "The field shows if entered phone number is valid or not.")
+  @ApiModelProperty(example = "true", required = true, value = "This field shows whether the entered phone number is valid or not.")
   public Boolean isValid() {
     return valid;
   }

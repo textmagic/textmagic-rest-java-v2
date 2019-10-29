@@ -3377,7 +3377,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Cancel dedicated number subscription
+     * Cancel a dedicated number subscription
      * 
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3387,7 +3387,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Cancel dedicated number subscription
+     * Cancel a dedicated number subscription
      * 
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
@@ -3399,7 +3399,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Cancel dedicated number subscription (asynchronously)
+     * Cancel a dedicated number subscription (asynchronously)
      * 
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -5222,7 +5222,7 @@ public class TextMagicApi {
     /**
      * Build call for doCarrierLookup
      * @param phone Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  (required)
-     * @param country This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)
+     * @param country This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -5288,9 +5288,9 @@ public class TextMagicApi {
 
     /**
      * Carrier Lookup
-     * This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+     * This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
      * @param phone Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  (required)
-     * @param country This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)
+     * @param country This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)
      * @return DoCarrierLookupResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -5301,9 +5301,9 @@ public class TextMagicApi {
 
     /**
      * Carrier Lookup
-     * This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+     * This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
      * @param phone Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  (required)
-     * @param country This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)
+     * @param country This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)
      * @return ApiResponse&lt;DoCarrierLookupResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -5315,9 +5315,9 @@ public class TextMagicApi {
 
     /**
      * Carrier Lookup (asynchronously)
-     * This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+     * This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
      * @param phone Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  (required)
-     * @param country This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)
+     * @param country This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -5414,7 +5414,7 @@ public class TextMagicApi {
 
     /**
      * Email Lookup
-     * To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+     * To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
      * @param email Email address. (required)
      * @return DoEmailLookupResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -5426,7 +5426,7 @@ public class TextMagicApi {
 
     /**
      * Email Lookup
-     * To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+     * To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
      * @param email Email address. (required)
      * @return ApiResponse&lt;DoEmailLookupResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -5439,7 +5439,7 @@ public class TextMagicApi {
 
     /**
      * Email Lookup (asynchronously)
-     * To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+     * To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
      * @param email Email address. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -6408,8 +6408,8 @@ public class TextMagicApi {
     }
     /**
      * Build call for getAvailableDedicatedNumbers
-     * @param country Two-letter dedicated number country ISO code. (required)
-     * @param prefix Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)
+     * @param country The 2-letter dedicated number country ISO code. (required)
+     * @param prefix Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)
      * @param tollfree Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
@@ -6480,8 +6480,8 @@ public class TextMagicApi {
     /**
      * Find dedicated numbers available for purchase
      * 
-     * @param country Two-letter dedicated number country ISO code. (required)
-     * @param prefix Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)
+     * @param country The 2-letter dedicated number country ISO code. (required)
+     * @param prefix Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)
      * @param tollfree Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)
      * @return GetAvailableDedicatedNumbersResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -6494,8 +6494,8 @@ public class TextMagicApi {
     /**
      * Find dedicated numbers available for purchase
      * 
-     * @param country Two-letter dedicated number country ISO code. (required)
-     * @param prefix Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)
+     * @param country The 2-letter dedicated number country ISO code. (required)
+     * @param prefix Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)
      * @param tollfree Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)
      * @return ApiResponse&lt;GetAvailableDedicatedNumbersResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -6509,8 +6509,8 @@ public class TextMagicApi {
     /**
      * Find dedicated numbers available for purchase (asynchronously)
      * 
-     * @param country Two-letter dedicated number country ISO code. (required)
-     * @param prefix Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)
+     * @param country The 2-letter dedicated number country ISO code. (required)
+     * @param prefix Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)
      * @param tollfree Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -6604,7 +6604,7 @@ public class TextMagicApi {
 
     /**
      * Get available sender settings
-     * Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+     * Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
      * @param country The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)
      * @return GetAvailableSenderSettingOptionsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -6616,7 +6616,7 @@ public class TextMagicApi {
 
     /**
      * Get available sender settings
-     * Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+     * Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
      * @param country The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)
      * @return ApiResponse&lt;GetAvailableSenderSettingOptionsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -6629,7 +6629,7 @@ public class TextMagicApi {
 
     /**
      * Get available sender settings (asynchronously)
-     * Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+     * Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
      * @param country The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -8376,7 +8376,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Fetch notes assigned to the given contact.
+     * Fetch notes assigned to a given contact
      * 
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
@@ -8390,7 +8390,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Fetch notes assigned to the given contact.
+     * Fetch notes assigned to a given contact
      * 
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
@@ -8405,7 +8405,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Fetch notes assigned to the given contact. (asynchronously)
+     * Fetch notes assigned to a given contact (asynchronously)
      * 
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
@@ -12203,7 +12203,7 @@ public class TextMagicApi {
     }
     /**
      * Build call for getSenderSettings
-     * @param country Return sender settings enabled for sending to specified country. Two upper case characters (optional)
+     * @param country Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -12264,7 +12264,7 @@ public class TextMagicApi {
     /**
      * Get current sender settings
      * 
-     * @param country Return sender settings enabled for sending to specified country. Two upper case characters (optional)
+     * @param country Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)
      * @return GetSenderSettingsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -12276,7 +12276,7 @@ public class TextMagicApi {
     /**
      * Get current sender settings
      * 
-     * @param country Return sender settings enabled for sending to specified country. Two upper case characters (optional)
+     * @param country Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)
      * @return ApiResponse&lt;GetSenderSettingsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -12289,7 +12289,7 @@ public class TextMagicApi {
     /**
      * Get current sender settings (asynchronously)
      * 
-     * @param country Return sender settings enabled for sending to specified country. Two upper case characters (optional)
+     * @param country Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -13446,7 +13446,7 @@ public class TextMagicApi {
      * Build call for getUserDedicatedNumbers
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param surveyId Fetch only that numbers which are ready for the survey (optional)
+     * @param surveyId Fetch only those numbers that are ready for the survey. (optional)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -13513,7 +13513,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param surveyId Fetch only that numbers which are ready for the survey (optional)
+     * @param surveyId Fetch only those numbers that are ready for the survey. (optional)
      * @return GetUserDedicatedNumbersPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -13527,7 +13527,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param surveyId Fetch only that numbers which are ready for the survey (optional)
+     * @param surveyId Fetch only those numbers that are ready for the survey. (optional)
      * @return ApiResponse&lt;GetUserDedicatedNumbersPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -13542,7 +13542,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param surveyId Fetch only that numbers which are ready for the survey (optional)
+     * @param surveyId Fetch only those numbers that are ready for the survey. (optional)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -13576,7 +13576,7 @@ public class TextMagicApi {
     /**
      * Build call for importContacts
      * @param file File containing contacts in csv or xls(x) formats (required)
-     * @param column Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
+     * @param column Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
      * @param listId List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
      * @param listName List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)
      * @param progressListener Progress listener
@@ -13656,7 +13656,7 @@ public class TextMagicApi {
      * Import contacts
      * Import contacts from the CSV, XLS or XLSX file.
      * @param file File containing contacts in csv or xls(x) formats (required)
-     * @param column Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
+     * @param column Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
      * @param listId List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
      * @param listName List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)
      * @return ResourceLinkResponse
@@ -13671,7 +13671,7 @@ public class TextMagicApi {
      * Import contacts
      * Import contacts from the CSV, XLS or XLSX file.
      * @param file File containing contacts in csv or xls(x) formats (required)
-     * @param column Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
+     * @param column Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
      * @param listId List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
      * @param listName List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
@@ -13687,7 +13687,7 @@ public class TextMagicApi {
      * Import contacts (asynchronously)
      * Import contacts from the CSV, XLS or XLSX file.
      * @param file File containing contacts in csv or xls(x) formats (required)
-     * @param column Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
+     * @param column Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
      * @param listId List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
      * @param listName List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)
      * @param callback The callback to be executed when the API call finishes
@@ -14261,7 +14261,7 @@ public class TextMagicApi {
 
     /**
      * Mute chats (bulk)
-     * Mute several chats by chat IDs or mute all chats
+     * Mute several chats by chat ids or mute all chats.
      * @param muteChatsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -14271,7 +14271,7 @@ public class TextMagicApi {
 
     /**
      * Mute chats (bulk)
-     * Mute several chats by chat IDs or mute all chats
+     * Mute several chats by chat ids or mute all chats.
      * @param muteChatsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14283,7 +14283,7 @@ public class TextMagicApi {
 
     /**
      * Mute chats (bulk) (asynchronously)
-     * Mute several chats by chat IDs or mute all chats
+     * Mute several chats by chat ids or mute all chats.
      * @param muteChatsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -14732,7 +14732,7 @@ public class TextMagicApi {
 
     /**
      * Apply for a new Sender ID
-     * &gt; Sender IDs are shared between all of your sub-accounts.
+     * &gt; Sender IDs are shared among all of your sub-accounts.
      * @param requestSenderIdInputObject  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14744,7 +14744,7 @@ public class TextMagicApi {
 
     /**
      * Apply for a new Sender ID
-     * &gt; Sender IDs are shared between all of your sub-accounts.
+     * &gt; Sender IDs are shared among all of your sub-accounts.
      * @param requestSenderIdInputObject  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14757,7 +14757,7 @@ public class TextMagicApi {
 
     /**
      * Apply for a new Sender ID (asynchronously)
-     * &gt; Sender IDs are shared between all of your sub-accounts.
+     * &gt; Sender IDs are shared among all of your sub-accounts.
      * @param requestSenderIdInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -16809,7 +16809,7 @@ public class TextMagicApi {
 
     /**
      * Unmute chats (bulk)
-     * Unmute several chats by chat IDs or unmute all chats
+     * Unmute several chats by chat ids or unmute all chats.
      * @param unmuteChatsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -16819,7 +16819,7 @@ public class TextMagicApi {
 
     /**
      * Unmute chats (bulk)
-     * Unmute several chats by chat IDs or unmute all chats
+     * Unmute several chats by chat ids or unmute all chats.
      * @param unmuteChatsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16831,7 +16831,7 @@ public class TextMagicApi {
 
     /**
      * Unmute chats (bulk) (asynchronously)
-     * Unmute several chats by chat IDs or unmute all chats
+     * Unmute several chats by chat ids or unmute all chats.
      * @param unmuteChatsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -18605,7 +18605,7 @@ public class TextMagicApi {
     }
     /**
      * Build call for uploadContactAvatar
-     * @param image Contact avatar. Should be PNG or JPG file not more than 10 MB (required)
+     * @param image Contact avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
@@ -18678,7 +18678,7 @@ public class TextMagicApi {
     /**
      * Upload an avatar
      * 
-     * @param image Contact avatar. Should be PNG or JPG file not more than 10 MB (required)
+     * @param image Contact avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -18691,7 +18691,7 @@ public class TextMagicApi {
     /**
      * Upload an avatar
      * 
-     * @param image Contact avatar. Should be PNG or JPG file not more than 10 MB (required)
+     * @param image Contact avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -18705,7 +18705,7 @@ public class TextMagicApi {
     /**
      * Upload an avatar (asynchronously)
      * 
-     * @param image Contact avatar. Should be PNG or JPG file not more than 10 MB (required)
+     * @param image Contact avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call

@@ -51,7 +51,7 @@ public class UsersInbound {
   private OffsetDateTime expireAt = null;
 
   /**
-   * Number status: *   **U** for Unused. No messages have been sent from (or received to) this number. *   **A** for Active. 
+   * Number status: *   **U** for Unused. No messages have been sent from (or received to) this number; *   **A** for Active. 
    */
   @JsonAdapter(StatusEnum.Adapter.class)
   public enum StatusEnum {
@@ -217,10 +217,10 @@ public class UsersInbound {
   }
 
    /**
-   * Number status: *   **U** for Unused. No messages have been sent from (or received to) this number. *   **A** for Active. 
+   * Number status: *   **U** for Unused. No messages have been sent from (or received to) this number; *   **A** for Active. 
    * @return status
   **/
-  @ApiModelProperty(example = "U", required = true, value = "Number status: *   **U** for Unused. No messages have been sent from (or received to) this number. *   **A** for Active. ")
+  @ApiModelProperty(example = "U", required = true, value = "Number status: *   **U** for Unused. No messages have been sent from (or received to) this number; *   **A** for Active. ")
   public StatusEnum getStatus() {
     return status;
   }

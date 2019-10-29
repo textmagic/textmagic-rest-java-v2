@@ -579,7 +579,7 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Cancel dedicated number subscription
+     * Cancel a dedicated number subscription
      *
      * 
      *
@@ -838,7 +838,7 @@ public class TextMagicApiTest {
     /**
      * Carrier Lookup
      *
-     * This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+     * This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
      *
      * @throws ApiException
      *          if the Api call fails
@@ -855,7 +855,7 @@ public class TextMagicApiTest {
     /**
      * Email Lookup
      *
-     * To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+     * To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
      *
      * @throws ApiException
      *          if the Api call fails
@@ -1018,7 +1018,7 @@ public class TextMagicApiTest {
     /**
      * Get available sender settings
      *
-     * Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+     * Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -1250,7 +1250,7 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Fetch notes assigned to the given contact.
+     * Fetch notes assigned to a given contact
      *
      * 
      *
@@ -2047,7 +2047,7 @@ public class TextMagicApiTest {
     /**
      * Mute chats (bulk)
      *
-     * Mute several chats by chat IDs or mute all chats
+     * Mute several chats by chat ids or mute all chats.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -2110,7 +2110,7 @@ public class TextMagicApiTest {
     /**
      * Apply for a new Sender ID
      *
-     * &gt; Sender IDs are shared between all of your sub-accounts.
+     * &gt; Sender IDs are shared among all of your sub-accounts.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -2397,7 +2397,7 @@ public class TextMagicApiTest {
     /**
      * Unmute chats (bulk)
      *
-     * Unmute several chats by chat IDs or unmute all chats
+     * Unmute several chats by chat ids or unmute all chats.
      *
      * @throws ApiException
      *          if the Api call fails

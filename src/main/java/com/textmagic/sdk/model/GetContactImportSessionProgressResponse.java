@@ -41,10 +41,10 @@ public class GetContactImportSessionProgressResponse {
   }
 
    /**
-   * Session status: * **1** if session has been initialized but not yet started * **3** if session is being processed * **4** if session has errors * **5** if session completed successfully 
+   * Session status: * **1** - if session has been initialized but not yet started; * **3** - if session is being processed; * **4** - if session has errors; * **5** - if session completed successfully. 
    * @return status
   **/
-  @ApiModelProperty(required = true, value = "Session status: * **1** if session has been initialized but not yet started * **3** if session is being processed * **4** if session has errors * **5** if session completed successfully ")
+  @ApiModelProperty(required = true, value = "Session status: * **1** - if session has been initialized but not yet started; * **3** - if session is being processed; * **4** - if session has errors; * **5** - if session completed successfully. ")
   public Integer getStatus() {
     return status;
   }
@@ -59,10 +59,10 @@ public class GetContactImportSessionProgressResponse {
   }
 
    /**
-   * How many contacts have been imported.
+   * How many contacts have been imported?
    * @return processed
   **/
-  @ApiModelProperty(example = "67", required = true, value = "How many contacts have been imported.")
+  @ApiModelProperty(example = "67", required = true, value = "How many contacts have been imported?")
   public Integer getProcessed() {
     return processed;
   }
