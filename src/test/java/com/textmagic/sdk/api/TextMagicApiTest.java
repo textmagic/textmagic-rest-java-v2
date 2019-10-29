@@ -1898,7 +1898,7 @@ public class TextMagicApiTest {
     /**
      * Get unread messages number
      *
-     * Get total amount of unread messages in the current user chats.
+     * Get the total amount of unread messages in the current user chats.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -2349,7 +2349,7 @@ public class TextMagicApiTest {
     /**
      * Change chat status
      *
-     * Set status of the chat given by ID.
+     * Set the status of the chat given by ID.
      *
      * @throws ApiException
      *          if the Api call fails

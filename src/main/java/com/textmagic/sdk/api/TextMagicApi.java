@@ -13140,7 +13140,7 @@ public class TextMagicApi {
 
     /**
      * Get unread messages number
-     * Get total amount of unread messages in the current user chats.
+     * Get the total amount of unread messages in the current user chats.
      * @return GetUnreadMessagesTotalResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -13151,7 +13151,7 @@ public class TextMagicApi {
 
     /**
      * Get unread messages number
-     * Get total amount of unread messages in the current user chats.
+     * Get the total amount of unread messages in the current user chats.
      * @return ApiResponse&lt;GetUnreadMessagesTotalResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -13163,7 +13163,7 @@ public class TextMagicApi {
 
     /**
      * Get unread messages number (asynchronously)
-     * Get total amount of unread messages in the current user chats.
+     * Get the total amount of unread messages in the current user chats.
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -14793,7 +14793,7 @@ public class TextMagicApi {
      * Build call for searchChats
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param query Find chats by specified search query (optional)
+     * @param query Find chats by specified search query. (optional)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -14860,7 +14860,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param query Find chats by specified search query (optional)
+     * @param query Find chats by specified search query. (optional)
      * @return SearchChatsPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -14874,7 +14874,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param query Find chats by specified search query (optional)
+     * @param query Find chats by specified search query. (optional)
      * @return ApiResponse&lt;SearchChatsPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -14889,7 +14889,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param query Find chats by specified search query (optional)
+     * @param query Find chats by specified search query. (optional)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -14924,7 +14924,7 @@ public class TextMagicApi {
      * Build call for searchChatsByIds
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find chats by ID(s) (optional)
+     * @param ids Find chats by ID(s). (optional)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -14991,7 +14991,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find chats by ID(s) (optional)
+     * @param ids Find chats by ID(s). (optional)
      * @return SearchChatsByIdsPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -15005,7 +15005,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find chats by ID(s) (optional)
+     * @param ids Find chats by ID(s). (optional)
      * @return ApiResponse&lt;SearchChatsByIdsPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -15020,7 +15020,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find chats by ID(s) (optional)
+     * @param ids Find chats by ID(s). (optional)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -16451,7 +16451,7 @@ public class TextMagicApi {
 
     /**
      * Change chat status
-     * Set status of the chat given by ID.
+     * Set the status of the chat given by ID.
      * @param setChatStatusInputObject  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16463,7 +16463,7 @@ public class TextMagicApi {
 
     /**
      * Change chat status
-     * Set status of the chat given by ID.
+     * Set the status of the chat given by ID.
      * @param setChatStatusInputObject  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16476,7 +16476,7 @@ public class TextMagicApi {
 
     /**
      * Change chat status (asynchronously)
-     * Set status of the chat given by ID.
+     * Set the status of the chat given by ID.
      * @param setChatStatusInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call

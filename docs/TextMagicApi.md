@@ -5818,7 +5818,7 @@ Name | Type | Description  | Notes
 
 Get unread messages number
 
-Get total amount of unread messages in the current user chats.
+Get the total amount of unread messages in the current user chats.
 
 ### Example
 ```java
@@ -6594,7 +6594,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-String query = "query_example"; // String | Find chats by specified search query
+String query = "query_example"; // String | Find chats by specified search query.
 try {
     SearchChatsPaginatedResponse result = apiInstance.searchChats(page, limit, query);
     System.out.println(result);
@@ -6610,7 +6610,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **query** | **String**| Find chats by specified search query | [optional]
+ **query** | **String**| Find chats by specified search query. | [optional]
 
 ### Return type
 
@@ -6652,7 +6652,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-String ids = "ids_example"; // String | Find chats by ID(s)
+String ids = "ids_example"; // String | Find chats by ID(s).
 try {
     SearchChatsByIdsPaginatedResponse result = apiInstance.searchChatsByIds(page, limit, ids);
     System.out.println(result);
@@ -6668,7 +6668,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **ids** | **String**| Find chats by ID(s) | [optional]
+ **ids** | **String**| Find chats by ID(s). | [optional]
 
 ### Return type
 
@@ -7261,7 +7261,7 @@ Name | Type | Description  | Notes
 
 Change chat status
 
-Set status of the chat given by ID.
+Set the status of the chat given by ID.
 
 ### Example
 ```java

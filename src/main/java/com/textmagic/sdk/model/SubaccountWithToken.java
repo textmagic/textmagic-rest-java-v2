@@ -49,7 +49,7 @@ public class SubaccountWithToken {
   private String email = null;
 
   /**
-   * Current account status: * **A** for Active * **T** for Trial. 
+   * Current account status: * **A** for Active; * **T** for Trial. 
    */
   @JsonAdapter(StatusEnum.Adapter.class)
   public enum StatusEnum {
@@ -117,7 +117,7 @@ public class SubaccountWithToken {
   private Timezone timezone = null;
 
   /**
-   * Type of account: *   **A** for Administrator sub-account *   **U** for Regular User 
+   * Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. 
    */
   @JsonAdapter(SubaccountTypeEnum.Adapter.class)
   public enum SubaccountTypeEnum {
@@ -274,10 +274,10 @@ public class SubaccountWithToken {
   }
 
    /**
-   * Current account status: * **A** for Active * **T** for Trial. 
+   * Current account status: * **A** for Active; * **T** for Trial. 
    * @return status
   **/
-  @ApiModelProperty(required = true, value = "Current account status: * **A** for Active * **T** for Trial. ")
+  @ApiModelProperty(required = true, value = "Current account status: * **A** for Active; * **T** for Trial. ")
   public StatusEnum getStatus() {
     return status;
   }
@@ -400,10 +400,10 @@ public class SubaccountWithToken {
   }
 
    /**
-   * Type of account: *   **A** for Administrator sub-account *   **U** for Regular User 
+   * Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. 
    * @return subaccountType
   **/
-  @ApiModelProperty(example = "U", required = true, value = "Type of account: *   **A** for Administrator sub-account *   **U** for Regular User ")
+  @ApiModelProperty(example = "U", required = true, value = "Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. ")
   public SubaccountTypeEnum getSubaccountType() {
     return subaccountType;
   }

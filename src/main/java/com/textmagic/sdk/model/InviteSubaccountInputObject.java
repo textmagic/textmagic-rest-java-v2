@@ -33,7 +33,7 @@ public class InviteSubaccountInputObject {
   private String email = null;
 
   /**
-   * Type of account: *   **A** for Administrator sub-account *   **U** for Regular User 
+   * Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. 
    */
   @JsonAdapter(RoleEnum.Adapter.class)
   public enum RoleEnum {
@@ -106,10 +106,10 @@ public class InviteSubaccountInputObject {
   }
 
    /**
-   * Type of account: *   **A** for Administrator sub-account *   **U** for Regular User 
+   * Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. 
    * @return role
   **/
-  @ApiModelProperty(example = "U", required = true, value = "Type of account: *   **A** for Administrator sub-account *   **U** for Regular User ")
+  @ApiModelProperty(example = "U", required = true, value = "Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. ")
   public RoleEnum getRole() {
     return role;
   }

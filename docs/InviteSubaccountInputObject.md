@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **email** | **String** | Invitation email will be sent to this email address. | 
-**role** | [**RoleEnum**](#RoleEnum) | Type of account: *   **A** for Administrator sub-account *   **U** for Regular User  | 
+**role** | [**RoleEnum**](#RoleEnum) | Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User.  | 
 
 
 <a name="RoleEnum"></a>

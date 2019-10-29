@@ -54,7 +54,7 @@ public class Chat {
   private OffsetDateTime updatedAt = null;
 
   /**
-   * Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted 
+   * Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. 
    */
   @JsonAdapter(StatusEnum.Adapter.class)
   public enum StatusEnum {
@@ -309,10 +309,10 @@ public class Chat {
   }
 
    /**
-   * Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted 
+   * Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. 
    * @return status
   **/
-  @ApiModelProperty(required = true, value = "Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted ")
+  @ApiModelProperty(required = true, value = "Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. ")
   public StatusEnum getStatus() {
     return status;
   }
