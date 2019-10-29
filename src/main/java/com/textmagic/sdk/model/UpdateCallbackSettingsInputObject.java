@@ -96,7 +96,7 @@ public class UpdateCallbackSettingsInputObject {
    * This URL is used to push message delivery status updates to your application.
    * @return outUrl
   **/
-  @ApiModelProperty(example = "http://www.mysite.com/delivery-callback.php", required = true, value = "This URL is used to push message delivery status updates to your application.")
+  @ApiModelProperty(example = "http://www.mysite.com/delivery-callback.php", value = "This URL is used to push message delivery status updates to your application.")
   public String getOutUrl() {
     return outUrl;
   }
@@ -114,7 +114,7 @@ public class UpdateCallbackSettingsInputObject {
    * This URL is used to push incoming SMS to your application.
    * @return inUrl
   **/
-  @ApiModelProperty(example = "http://www.mysite.com/incoming-sms-callback.php", required = true, value = "This URL is used to push incoming SMS to your application.")
+  @ApiModelProperty(example = "http://www.mysite.com/incoming-sms-callback.php", value = "This URL is used to push incoming SMS to your application.")
   public String getInUrl() {
     return inUrl;
   }
@@ -132,7 +132,7 @@ public class UpdateCallbackSettingsInputObject {
    * Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json
    * @return format
   **/
-  @ApiModelProperty(required = true, value = "Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json")
+  @ApiModelProperty(value = "Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json")
   public FormatEnum getFormat() {
     return format;
   }

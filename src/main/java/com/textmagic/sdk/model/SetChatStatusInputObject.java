@@ -93,7 +93,7 @@ public class SetChatStatusInputObject {
    * Chat ID.
    * @return id
   **/
-  @ApiModelProperty(example = "543", required = true, value = "Chat ID.")
+  @ApiModelProperty(example = "543", value = "Chat ID.")
   public Integer getId() {
     return id;
   }
@@ -111,7 +111,7 @@ public class SetChatStatusInputObject {
    * Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. 
    * @return status
   **/
-  @ApiModelProperty(required = true, value = "Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. ")
+  @ApiModelProperty(value = "Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted. ")
   public StatusEnum getStatus() {
     return status;
   }

@@ -50,7 +50,7 @@ public class UpdateChatDesktopNotificationSettingsInputObject {
    * Enable notification sound?
    * @return playSound
   **/
-  @ApiModelProperty(example = "false", required = true, value = "Enable notification sound?")
+  @ApiModelProperty(example = "false", value = "Enable notification sound?")
   public Boolean isPlaySound() {
     return playSound;
   }
@@ -68,7 +68,7 @@ public class UpdateChatDesktopNotificationSettingsInputObject {
    * Show desktop notifications about new messages.
    * @return showNotifications
   **/
-  @ApiModelProperty(example = "false", required = true, value = "Show desktop notifications about new messages.")
+  @ApiModelProperty(example = "false", value = "Show desktop notifications about new messages.")
   public Boolean isShowNotifications() {
     return showNotifications;
   }

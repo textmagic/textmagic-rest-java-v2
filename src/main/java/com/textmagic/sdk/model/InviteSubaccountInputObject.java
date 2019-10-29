@@ -91,7 +91,7 @@ public class InviteSubaccountInputObject {
    * The invitation email will be sent to this email address.
    * @return email
   **/
-  @ApiModelProperty(example = "john@example.com", required = true, value = "The invitation email will be sent to this email address.")
+  @ApiModelProperty(example = "john@example.com", value = "The invitation email will be sent to this email address.")
   public String getEmail() {
     return email;
   }
@@ -109,7 +109,7 @@ public class InviteSubaccountInputObject {
    * Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. 
    * @return role
   **/
-  @ApiModelProperty(example = "U", required = true, value = "Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. ")
+  @ApiModelProperty(example = "U", value = "Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User. ")
   public RoleEnum getRole() {
     return role;
   }

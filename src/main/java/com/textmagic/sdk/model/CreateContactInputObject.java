@@ -113,7 +113,7 @@ public class CreateContactInputObject {
    * Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).
    * @return phone
   **/
-  @ApiModelProperty(example = "447860021130", required = true, value = "Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).")
+  @ApiModelProperty(example = "447860021130", value = "Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).")
   public String getPhone() {
     return phone;
   }
@@ -167,7 +167,7 @@ public class CreateContactInputObject {
    * Contact [list](http://docs.textmagictesting.com/#tag/Lists) ID. Each contact must be assigned to at least one list.
    * @return lists
   **/
-  @ApiModelProperty(example = "10541,18599", required = true, value = "Contact [list](http://docs.textmagictesting.com/#tag/Lists) ID. Each contact must be assigned to at least one list.")
+  @ApiModelProperty(example = "10541,18599", value = "Contact [list](http://docs.textmagictesting.com/#tag/Lists) ID. Each contact must be assigned to at least one list.")
   public String getLists() {
     return lists;
   }

@@ -47,7 +47,7 @@ public class MuteChatInputObject {
    * Chat ID.
    * @return id
   **/
-  @ApiModelProperty(example = "542", required = true, value = "Chat ID.")
+  @ApiModelProperty(example = "542", value = "Chat ID.")
   public Integer getId() {
     return id;
   }
@@ -65,7 +65,7 @@ public class MuteChatInputObject {
    * Mute notifications sound.
    * @return mute
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Mute notifications sound.")
+  @ApiModelProperty(example = "true", value = "Mute notifications sound.")
   public Boolean isMute() {
     return mute;
   }

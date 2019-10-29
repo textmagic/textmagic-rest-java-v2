@@ -74,7 +74,7 @@ public class UpdateBalanceNotificationSettingsInputObject {
    * If balance is below this value, user receive low balance notification.
    * @return alertBalance
   **/
-  @ApiModelProperty(example = "50", required = true, value = "If balance is below this value, user receive low balance notification.")
+  @ApiModelProperty(example = "50", value = "If balance is below this value, user receive low balance notification.")
   public String getAlertBalance() {
     return alertBalance;
   }

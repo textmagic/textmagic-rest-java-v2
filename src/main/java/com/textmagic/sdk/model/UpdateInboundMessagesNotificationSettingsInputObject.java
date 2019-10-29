@@ -56,7 +56,7 @@ public class UpdateInboundMessagesNotificationSettingsInputObject {
    * Should user receive notification about new incoming messages.
    * @return inboundMessageNotification
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Should user receive notification about new incoming messages.")
+  @ApiModelProperty(example = "true", value = "Should user receive notification about new incoming messages.")
   public Boolean isInboundMessageNotification() {
     return inboundMessageNotification;
   }
@@ -74,7 +74,7 @@ public class UpdateInboundMessagesNotificationSettingsInputObject {
    * Include SMS history into notification Email.
    * @return includeSmsHistory
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Include SMS history into notification Email.")
+  @ApiModelProperty(example = "true", value = "Include SMS history into notification Email.")
   public Boolean isIncludeSmsHistory() {
     return includeSmsHistory;
   }
@@ -92,7 +92,7 @@ public class UpdateInboundMessagesNotificationSettingsInputObject {
    * Send Email notification in HTML format.
    * @return sendInHtmlFormat
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Send Email notification in HTML format.")
+  @ApiModelProperty(example = "true", value = "Send Email notification in HTML format.")
   public Boolean isSendInHtmlFormat() {
     return sendInHtmlFormat;
   }

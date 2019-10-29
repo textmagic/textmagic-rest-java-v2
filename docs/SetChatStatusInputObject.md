@@ -4,8 +4,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Integer** | Chat ID. | 
-**status** | [**StatusEnum**](#StatusEnum) | Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted.  | 
+**id** | **Integer** | Chat ID. |  [optional]
+**status** | [**StatusEnum**](#StatusEnum) | Chat status:   * **a** - Active;   * **c** - Closed;   * **d** - Deleted.  |  [optional]
 
 
 <a name="StatusEnum"></a>

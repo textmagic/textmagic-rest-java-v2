@@ -44,7 +44,7 @@ public class CheckPhoneVerificationCodeInputObject {
    * Verification code received by the user and entered into the form field.
    * @return code
   **/
-  @ApiModelProperty(example = "1234", required = true, value = "Verification code received by the user and entered into the form field.")
+  @ApiModelProperty(example = "1234", value = "Verification code received by the user and entered into the form field.")
   public Integer getCode() {
     return code;
   }
@@ -62,7 +62,7 @@ public class CheckPhoneVerificationCodeInputObject {
    * VerifyId from Step 1 to match both requests together.
    * @return verifyId
   **/
-  @ApiModelProperty(example = "123e4567-e89b-12d3-a456-426655440000", required = true, value = "VerifyId from Step 1 to match both requests together.")
+  @ApiModelProperty(example = "123e4567-e89b-12d3-a456-426655440000", value = "VerifyId from Step 1 to match both requests together.")
   public String getVerifyId() {
     return verifyId;
   }

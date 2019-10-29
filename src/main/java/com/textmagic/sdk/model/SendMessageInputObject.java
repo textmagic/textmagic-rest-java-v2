@@ -89,7 +89,7 @@ public class SendMessageInputObject {
    * Message text. Required if the **template_id** is not set.
    * @return text
   **/
-  @ApiModelProperty(example = "Hello, how are you?", required = true, value = "Message text. Required if the **template_id** is not set.")
+  @ApiModelProperty(example = "Hello, how are you?", value = "Message text. Required if the **template_id** is not set.")
   public String getText() {
     return text;
   }
@@ -215,7 +215,7 @@ public class SendMessageInputObject {
    * Comma separated array of E.164 phone numbers message will be sent to.
    * @return phones
   **/
-  @ApiModelProperty(example = "447860021130,447860021131", required = true, value = "Comma separated array of E.164 phone numbers message will be sent to.")
+  @ApiModelProperty(example = "447860021130,447860021131", value = "Comma separated array of E.164 phone numbers message will be sent to.")
   public String getPhones() {
     return phones;
   }

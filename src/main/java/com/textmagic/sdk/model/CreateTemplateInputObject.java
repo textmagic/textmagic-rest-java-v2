@@ -44,7 +44,7 @@ public class CreateTemplateInputObject {
    * Template name.
    * @return name
   **/
-  @ApiModelProperty(example = "New template name", required = true, value = "Template name.")
+  @ApiModelProperty(example = "New template name", value = "Template name.")
   public String getName() {
     return name;
   }
@@ -62,7 +62,7 @@ public class CreateTemplateInputObject {
    * Template text. May contain tags inside braces. See [Get timezones](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).
    * @return content
   **/
-  @ApiModelProperty(example = "New template content", required = true, value = "Template text. May contain tags inside braces. See [Get timezones](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).")
+  @ApiModelProperty(example = "New template content", value = "Template text. May contain tags inside braces. See [Get timezones](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).")
   public String getContent() {
     return content;
   }

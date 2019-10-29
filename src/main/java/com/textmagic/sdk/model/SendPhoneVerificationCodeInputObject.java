@@ -56,7 +56,7 @@ public class SendPhoneVerificationCodeInputObject {
    * Use the phone number in international E.164 format. If you need to pass a phone number in the local format, please use it with the **country** parameter to specify the origin country of the phone number. 
    * @return phone
   **/
-  @ApiModelProperty(example = "447860021130", required = true, value = "Use the phone number in international E.164 format. If you need to pass a phone number in the local format, please use it with the **country** parameter to specify the origin country of the phone number. ")
+  @ApiModelProperty(example = "447860021130", value = "Use the phone number in international E.164 format. If you need to pass a phone number in the local format, please use it with the **country** parameter to specify the origin country of the phone number. ")
   public String getPhone() {
     return phone;
   }
@@ -74,7 +74,7 @@ public class SendPhoneVerificationCodeInputObject {
    * An alphanumeric string with up to 18 characters you can use to personalize the verification text message body, to help users identify your company or application name. For example: “Your TextMagic PIN is …” 
    * @return brand
   **/
-  @ApiModelProperty(example = "TextMagic", required = true, value = "An alphanumeric string with up to 18 characters you can use to personalize the verification text message body, to help users identify your company or application name. For example: “Your TextMagic PIN is …” ")
+  @ApiModelProperty(example = "TextMagic", value = "An alphanumeric string with up to 18 characters you can use to personalize the verification text message body, to help users identify your company or application name. For example: “Your TextMagic PIN is …” ")
   public String getBrand() {
     return brand;
   }
@@ -92,7 +92,7 @@ public class SendPhoneVerificationCodeInputObject {
    * The length of the verification code. The value can be 4 or 6 characters. 
    * @return codeLength
   **/
-  @ApiModelProperty(example = "4", required = true, value = "The length of the verification code. The value can be 4 or 6 characters. ")
+  @ApiModelProperty(example = "4", value = "The length of the verification code. The value can be 4 or 6 characters. ")
   public Integer getCodeLength() {
     return codeLength;
   }

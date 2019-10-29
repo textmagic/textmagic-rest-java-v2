@@ -4,8 +4,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**email** | **String** | The invitation email will be sent to this email address. | 
-**role** | [**RoleEnum**](#RoleEnum) | Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User.  | 
+**email** | **String** | The invitation email will be sent to this email address. |  [optional]
+**role** | [**RoleEnum**](#RoleEnum) | Type of account: *   **A** for Administrator sub-account; *   **U** for Regular User.  |  [optional]
 
 
 <a name="RoleEnum"></a>

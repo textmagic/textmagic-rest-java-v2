@@ -50,7 +50,7 @@ public class UpdateListObject {
    * List name.
    * @return name
   **/
-  @ApiModelProperty(example = "Private list", required = true, value = "List name.")
+  @ApiModelProperty(example = "Private list", value = "List name.")
   public String getName() {
     return name;
   }

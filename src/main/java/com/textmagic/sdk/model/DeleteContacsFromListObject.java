@@ -41,7 +41,7 @@ public class DeleteContacsFromListObject {
    * Comma-separated array of [Contacts](http://docs.textmagictesting.com/#tag/Contacts) IDs. 
    * @return contacts
   **/
-  @ApiModelProperty(example = "318,454,30091", required = true, value = "Comma-separated array of [Contacts](http://docs.textmagictesting.com/#tag/Contacts) IDs. ")
+  @ApiModelProperty(example = "318,454,30091", value = "Comma-separated array of [Contacts](http://docs.textmagictesting.com/#tag/Contacts) IDs. ")
   public String getContacts() {
     return contacts;
   }

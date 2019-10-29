@@ -47,7 +47,7 @@ public class UpdateSenderSettingInputObject {
    * Available phone number in international E.164 format or senderid.
    * @return value
   **/
-  @ApiModelProperty(example = "447624800500", required = true, value = "Available phone number in international E.164 format or senderid.")
+  @ApiModelProperty(example = "447624800500", value = "Available phone number in international E.164 format or senderid.")
   public String getValue() {
     return value;
   }
@@ -65,7 +65,7 @@ public class UpdateSenderSettingInputObject {
    * Country for which the setting will be set.
    * @return country
   **/
-  @ApiModelProperty(example = "AF", required = true, value = "Country for which the setting will be set.")
+  @ApiModelProperty(example = "AF", value = "Country for which the setting will be set.")
   public String getCountry() {
     return country;
   }
