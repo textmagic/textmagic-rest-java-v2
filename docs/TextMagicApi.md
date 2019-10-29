@@ -102,8 +102,8 @@ Method | HTTP request | Description
 [**getSenderSettings**](TextMagicApi.md#getSenderSettings) | **GET** /api/v2/sender/settings/normalized | Get current sender settings
 [**getSpendingStat**](TextMagicApi.md#getSpendingStat) | **GET** /api/v2/stats/spending | Get spending statistics
 [**getSubaccount**](TextMagicApi.md#getSubaccount) | **GET** /api/v2/subaccounts/{id} | Get sub-account information
-[**getSubaccounts**](TextMagicApi.md#getSubaccounts) | **GET** /api/v2/subaccounts | Get sub-accounts list
-[**getSubaccountsWithTokens**](TextMagicApi.md#getSubaccountsWithTokens) | **POST** /api/v2/subaccounts/tokens/list | Get all sub-accounts with their REST API tokens associated with app name
+[**getSubaccounts**](TextMagicApi.md#getSubaccounts) | **GET** /api/v2/subaccounts | Get a sub-accounts list
+[**getSubaccountsWithTokens**](TextMagicApi.md#getSubaccountsWithTokens) | **POST** /api/v2/subaccounts/tokens/list | Get all sub-accounts with their REST API tokens associated with a specified app name
 [**getTemplate**](TextMagicApi.md#getTemplate) | **GET** /api/v2/templates/{id} | Get a template&#x60;s details
 [**getTimezones**](TextMagicApi.md#getTimezones) | **GET** /api/v2/timezones | Get timezones
 [**getUnreadMessagesTotal**](TextMagicApi.md#getUnreadMessagesTotal) | **GET** /api/v2/chats/unread/count | Get unread messages number
@@ -4267,7 +4267,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-String query = "\"A\""; // String | Find contacts or lists by specified search query
+String query = "\"A\""; // String | Find contacts or lists by specified search query.
 try {
     GetFavoritesPaginatedResponse result = apiInstance.getFavorites(page, limit, query);
     System.out.println(result);
@@ -4283,7 +4283,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **query** | **String**| Find contacts or lists by specified search query | [optional]
+ **query** | **String**| Find contacts or lists by specified search query. | [optional]
 
 ### Return type
 
@@ -5109,7 +5109,7 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-String by = "off"; // String | *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year 
+String by = "off"; // String | *   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year. 
 Integer start = 1430438400; // Integer | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
 Integer end = 1431648000; // Integer | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
 try {
@@ -5125,7 +5125,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **by** | **String**| *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  | [optional] [default to off] [enum: off, day, month, year]
+ **by** | **String**| *   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  | [optional] [default to off] [enum: off, day, month, year]
  **start** | **Integer**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  | [optional]
  **end** | **Integer**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  | [optional]
 
@@ -5594,7 +5594,7 @@ Name | Type | Description  | Notes
 # **getSubaccounts**
 > User getSubaccounts(page, limit)
 
-Get sub-accounts list
+Get a sub-accounts list
 
 
 
@@ -5650,7 +5650,7 @@ Name | Type | Description  | Notes
 # **getSubaccountsWithTokens**
 > GetSubaccountsWithTokensResponse getSubaccountsWithTokens(getSubaccountsWithTokensInputObject, page, limit)
 
-Get all sub-accounts with their REST API tokens associated with app name
+Get all sub-accounts with their REST API tokens associated with a specified app name
 
 Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
 
@@ -5783,7 +5783,7 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-Integer full = 0; // Integer | Return full info about timezones in array (0 or 1). Default is 0
+Integer full = 0; // Integer | Return full info about timezones in array (0 or 1). Default is 0.
 try {
     GetTimezonesResponse result = apiInstance.getTimezones(full);
     System.out.println(result);
@@ -5797,7 +5797,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **full** | **Integer**| Return full info about timezones in array (0 or 1). Default is 0 | [optional] [default to 0]
+ **full** | **Integer**| Return full info about timezones in array (0 or 1). Default is 0. | [optional] [default to 0]
 
 ### Return type
 
@@ -6362,7 +6362,7 @@ null (empty response body)
 
 Ping
 
-Make a simple ping request
+Make a simple ping request.
 
 ### Example
 ```java
@@ -8202,7 +8202,7 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-File image = new File("/path/to/file.txt"); // File | User avatar. Should be PNG or JPG file not more than 10 MB
+File image = new File("/path/to/file.txt"); // File | User avatar. Should be a PNG or JPG file not more than 10 MB.
 try {
     apiInstance.uploadAvatar(image);
 } catch (ApiException e) {
@@ -8215,7 +8215,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **image** | **File**| User avatar. Should be PNG or JPG file not more than 10 MB |
+ **image** | **File**| User avatar. Should be a PNG or JPG file not more than 10 MB. |
 
 ### Return type
 

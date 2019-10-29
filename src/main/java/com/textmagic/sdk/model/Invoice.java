@@ -68,10 +68,10 @@ public class Invoice {
   }
 
    /**
-   * Top up amount.
+   * Top-up amount.
    * @return bundle
   **/
-  @ApiModelProperty(example = "200", required = true, value = "Top up amount.")
+  @ApiModelProperty(example = "200", required = true, value = "Top-up amount.")
   public Integer getBundle() {
     return bundle;
   }
@@ -86,10 +86,10 @@ public class Invoice {
   }
 
    /**
-   * Top up currency.
+   * Top-up currency.
    * @return currency
   **/
-  @ApiModelProperty(example = "USD", required = true, value = "Top up currency.")
+  @ApiModelProperty(example = "USD", required = true, value = "Top-up currency.")
   public String getCurrency() {
     return currency;
   }

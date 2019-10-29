@@ -87,10 +87,10 @@ public class MessagingStatItem {
   }
 
    /**
-   * Time interval start, empty if the **by** parameter was set to **off**. 
+   * Time interval start: empty if the **by** parameter was set to **off**. 
    * @return date
   **/
-  @ApiModelProperty(example = "2014-09-19T00:00:00+0000", required = true, value = "Time interval start, empty if the **by** parameter was set to **off**. ")
+  @ApiModelProperty(example = "2014-09-19T00:00:00+0000", required = true, value = "Time interval start: empty if the **by** parameter was set to **off**. ")
   public OffsetDateTime getDate() {
     return date;
   }
@@ -177,10 +177,10 @@ public class MessagingStatItem {
   }
 
    /**
-   * Messages accepted for delivery (in queue), but not yet delivered.
+   * Messages accepted for delivery (in queue) but not yet delivered.
    * @return messagesSentAccepted
   **/
-  @ApiModelProperty(example = "2", required = true, value = "Messages accepted for delivery (in queue), but not yet delivered.")
+  @ApiModelProperty(example = "2", required = true, value = "Messages accepted for delivery (in queue) but not yet delivered.")
   public Integer getMessagesSentAccepted() {
     return messagesSentAccepted;
   }
@@ -213,10 +213,10 @@ public class MessagingStatItem {
   }
 
    /**
-   * Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient phone account is out of service.
+   * Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient&#39;s phone account is out of service.
    * @return messagesSentFailed
   **/
-  @ApiModelProperty(example = "3", required = true, value = "Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient phone account is out of service.")
+  @ApiModelProperty(example = "3", required = true, value = "Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient's phone account is out of service.")
   public Integer getMessagesSentFailed() {
     return messagesSentFailed;
   }

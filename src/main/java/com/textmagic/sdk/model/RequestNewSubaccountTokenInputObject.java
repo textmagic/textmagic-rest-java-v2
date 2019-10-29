@@ -44,10 +44,10 @@ public class RequestNewSubaccountTokenInputObject {
   }
 
    /**
-   * Subaccount ID
+   * Sub-account ID.
    * @return userId
   **/
-  @ApiModelProperty(example = "1", required = true, value = "Subaccount ID")
+  @ApiModelProperty(example = "1", required = true, value = "Sub-account ID.")
   public Integer getUserId() {
     return userId;
   }
@@ -62,10 +62,10 @@ public class RequestNewSubaccountTokenInputObject {
   }
 
    /**
-   * Your account password
+   * Your account password.
    * @return password
   **/
-  @ApiModelProperty(example = "strongPassword", required = true, value = "Your account password")
+  @ApiModelProperty(example = "strongPassword", required = true, value = "Your account password.")
   public String getPassword() {
     return password;
   }
@@ -80,10 +80,10 @@ public class RequestNewSubaccountTokenInputObject {
   }
 
    /**
-   * Application name
+   * Application name.
    * @return appName
   **/
-  @ApiModelProperty(example = "sample app", value = "Application name")
+  @ApiModelProperty(example = "sample app", value = "Application name.")
   public String getAppName() {
     return appName;
   }

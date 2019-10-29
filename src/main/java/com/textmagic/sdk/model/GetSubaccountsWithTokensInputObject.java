@@ -41,10 +41,10 @@ public class GetSubaccountsWithTokensInputObject {
   }
 
    /**
-   * Application name
+   * Application name.
    * @return appName
   **/
-  @ApiModelProperty(example = "sample app", required = true, value = "Application name")
+  @ApiModelProperty(example = "sample app", required = true, value = "Application name.")
   public String getAppName() {
     return appName;
   }
@@ -59,10 +59,10 @@ public class GetSubaccountsWithTokensInputObject {
   }
 
    /**
-   * Your account password
+   * Your account password.
    * @return password
   **/
-  @ApiModelProperty(example = "strongPassword", required = true, value = "Your account password")
+  @ApiModelProperty(example = "strongPassword", required = true, value = "Your account password.")
   public String getPassword() {
     return password;
   }

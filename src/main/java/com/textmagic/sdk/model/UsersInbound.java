@@ -127,10 +127,10 @@ public class UsersInbound {
   }
 
    /**
-   * Format for representation of time
+   * Format for representation of time.
    * @return displayTimeFormat
   **/
-  @ApiModelProperty(example = "24h", value = "Format for representation of time")
+  @ApiModelProperty(example = "24h", value = "Format for representation of time.")
   public String getDisplayTimeFormat() {
     return displayTimeFormat;
   }

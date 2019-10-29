@@ -9467,7 +9467,7 @@ public class TextMagicApi {
      * Build call for getFavorites
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param query Find contacts or lists by specified search query (optional)
+     * @param query Find contacts or lists by specified search query. (optional)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -9534,7 +9534,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param query Find contacts or lists by specified search query (optional)
+     * @param query Find contacts or lists by specified search query. (optional)
      * @return GetFavoritesPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -9548,7 +9548,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param query Find contacts or lists by specified search query (optional)
+     * @param query Find contacts or lists by specified search query. (optional)
      * @return ApiResponse&lt;GetFavoritesPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -9563,7 +9563,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param query Find contacts or lists by specified search query (optional)
+     * @param query Find contacts or lists by specified search query. (optional)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -11435,7 +11435,7 @@ public class TextMagicApi {
     }
     /**
      * Build call for getMessagingStat
-     * @param by *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional, default to off)
+     * @param by *   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)
      * @param start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
      * @param end Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)
      * @param progressListener Progress listener
@@ -11502,7 +11502,7 @@ public class TextMagicApi {
     /**
      * Get messaging statistics
      * 
-     * @param by *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional, default to off)
+     * @param by *   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)
      * @param start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
      * @param end Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)
      * @return GetMessagingStatResponse
@@ -11516,7 +11516,7 @@ public class TextMagicApi {
     /**
      * Get messaging statistics
      * 
-     * @param by *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional, default to off)
+     * @param by *   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)
      * @param start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
      * @param end Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)
      * @return ApiResponse&lt;GetMessagingStatResponse&gt;
@@ -11531,7 +11531,7 @@ public class TextMagicApi {
     /**
      * Get messaging statistics (asynchronously)
      * 
-     * @param by *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (optional, default to off)
+     * @param by *   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)
      * @param start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
      * @param end Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)
      * @param callback The callback to be executed when the API call finishes
@@ -12644,7 +12644,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Get sub-accounts list
+     * Get a sub-accounts list
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -12657,7 +12657,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Get sub-accounts list
+     * Get a sub-accounts list
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -12671,7 +12671,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Get sub-accounts list (asynchronously)
+     * Get a sub-accounts list (asynchronously)
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -12775,7 +12775,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Get all sub-accounts with their REST API tokens associated with app name
+     * Get all sub-accounts with their REST API tokens associated with a specified app name
      * Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
      * @param getSubaccountsWithTokensInputObject  (required)
      * @param page Fetch specified results page. (optional, default to 1)
@@ -12789,7 +12789,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Get all sub-accounts with their REST API tokens associated with app name
+     * Get all sub-accounts with their REST API tokens associated with a specified app name
      * Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
      * @param getSubaccountsWithTokensInputObject  (required)
      * @param page Fetch specified results page. (optional, default to 1)
@@ -12804,7 +12804,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Get all sub-accounts with their REST API tokens associated with app name (asynchronously)
+     * Get all sub-accounts with their REST API tokens associated with a specified app name (asynchronously)
      * Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
      * @param getSubaccountsWithTokensInputObject  (required)
      * @param page Fetch specified results page. (optional, default to 1)
@@ -12964,7 +12964,7 @@ public class TextMagicApi {
     }
     /**
      * Build call for getTimezones
-     * @param full Return full info about timezones in array (0 or 1). Default is 0 (optional, default to 0)
+     * @param full Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -13025,7 +13025,7 @@ public class TextMagicApi {
     /**
      * Get timezones
      * Return all available timezone IDs
-     * @param full Return full info about timezones in array (0 or 1). Default is 0 (optional, default to 0)
+     * @param full Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)
      * @return GetTimezonesResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -13037,7 +13037,7 @@ public class TextMagicApi {
     /**
      * Get timezones
      * Return all available timezone IDs
-     * @param full Return full info about timezones in array (0 or 1). Default is 0 (optional, default to 0)
+     * @param full Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)
      * @return ApiResponse&lt;GetTimezonesResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -13050,7 +13050,7 @@ public class TextMagicApi {
     /**
      * Get timezones (asynchronously)
      * Return all available timezone IDs
-     * @param full Return full info about timezones in array (0 or 1). Default is 0 (optional, default to 0)
+     * @param full Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -14373,7 +14373,7 @@ public class TextMagicApi {
 
     /**
      * Ping
-     * Make a simple ping request
+     * Make a simple ping request.
      * @return PingResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -14384,7 +14384,7 @@ public class TextMagicApi {
 
     /**
      * Ping
-     * Make a simple ping request
+     * Make a simple ping request.
      * @return ApiResponse&lt;PingResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -14396,7 +14396,7 @@ public class TextMagicApi {
 
     /**
      * Ping (asynchronously)
-     * Make a simple ping request
+     * Make a simple ping request.
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -18485,7 +18485,7 @@ public class TextMagicApi {
     }
     /**
      * Build call for uploadAvatar
-     * @param image User avatar. Should be PNG or JPG file not more than 10 MB (required)
+     * @param image User avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -18551,7 +18551,7 @@ public class TextMagicApi {
     /**
      * Upload an avatar
      * 
-     * @param image User avatar. Should be PNG or JPG file not more than 10 MB (required)
+     * @param image User avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
     public void uploadAvatar(File image) throws ApiException {
@@ -18561,7 +18561,7 @@ public class TextMagicApi {
     /**
      * Upload an avatar
      * 
-     * @param image User avatar. Should be PNG or JPG file not more than 10 MB (required)
+     * @param image User avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -18573,7 +18573,7 @@ public class TextMagicApi {
     /**
      * Upload an avatar (asynchronously)
      * 
-     * @param image User avatar. Should be PNG or JPG file not more than 10 MB (required)
+     * @param image User avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object

@@ -59,10 +59,10 @@ public class PingResponse {
   }
 
    /**
-   * Current date time
+   * Current date and time.
    * @return utcDateTime
   **/
-  @ApiModelProperty(example = "2019-01-01T00:00:00.000Z", required = true, value = "Current date time")
+  @ApiModelProperty(example = "2019-01-01T00:00:00.000Z", required = true, value = "Current date and time.")
   public String getUtcDateTime() {
     return utcDateTime;
   }

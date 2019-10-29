@@ -1829,7 +1829,7 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Get sub-accounts list
+     * Get a sub-accounts list
      *
      * 
      *
@@ -1846,7 +1846,7 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Get all sub-accounts with their REST API tokens associated with app name
+     * Get all sub-accounts with their REST API tokens associated with a specified app name
      *
      * Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
      *
@@ -2063,7 +2063,7 @@ public class TextMagicApiTest {
     /**
      * Ping
      *
-     * Make a simple ping request
+     * Make a simple ping request.
      *
      * @throws ApiException
      *          if the Api call fails

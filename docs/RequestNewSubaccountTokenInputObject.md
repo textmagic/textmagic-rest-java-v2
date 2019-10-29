@@ -4,9 +4,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**userId** | **Integer** | Subaccount ID | 
-**password** | **String** | Your account password | 
-**appName** | **String** | Application name |  [optional]
+**userId** | **Integer** | Sub-account ID. | 
+**password** | **String** | Your account password. | 
+**appName** | **String** | Application name. |  [optional]
 
 
 

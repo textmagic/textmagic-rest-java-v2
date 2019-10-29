@@ -88,10 +88,10 @@ public class InviteSubaccountInputObject {
   }
 
    /**
-   * Invitation email will be sent to this email address.
+   * The invitation email will be sent to this email address.
    * @return email
   **/
-  @ApiModelProperty(example = "john@example.com", required = true, value = "Invitation email will be sent to this email address.")
+  @ApiModelProperty(example = "john@example.com", required = true, value = "The invitation email will be sent to this email address.")
   public String getEmail() {
     return email;
   }

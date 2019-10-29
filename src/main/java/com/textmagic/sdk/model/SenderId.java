@@ -43,7 +43,7 @@ public class SenderId {
   private User user = null;
 
   /**
-   * *   **P** for Pending. This Sender ID is being reviewed by our support team. *   **R** for Rejected. Our support team rejected your application for this Sender ID. *   **A** for Active. 
+   * *   **P** for Pending - this Sender ID is being reviewed by our support team; *   **R** for Rejected - our support team rejected your application for this Sender ID; *   **A** for Active. 
    */
   @JsonAdapter(StatusEnum.Adapter.class)
   public enum StatusEnum {
@@ -118,10 +118,10 @@ public class SenderId {
   }
 
    /**
-   * Format for representation of time
+   * Format for representation of time.
    * @return displayTimeFormat
   **/
-  @ApiModelProperty(example = "24h", value = "Format for representation of time")
+  @ApiModelProperty(example = "24h", value = "Format for representation of time.")
   public String getDisplayTimeFormat() {
     return displayTimeFormat;
   }
@@ -172,10 +172,10 @@ public class SenderId {
   }
 
    /**
-   * *   **P** for Pending. This Sender ID is being reviewed by our support team. *   **R** for Rejected. Our support team rejected your application for this Sender ID. *   **A** for Active. 
+   * *   **P** for Pending - this Sender ID is being reviewed by our support team; *   **R** for Rejected - our support team rejected your application for this Sender ID; *   **A** for Active. 
    * @return status
   **/
-  @ApiModelProperty(example = "A", required = true, value = "*   **P** for Pending. This Sender ID is being reviewed by our support team. *   **R** for Rejected. Our support team rejected your application for this Sender ID. *   **A** for Active. ")
+  @ApiModelProperty(example = "A", required = true, value = "*   **P** for Pending - this Sender ID is being reviewed by our support team; *   **R** for Rejected - our support team rejected your application for this Sender ID; *   **A** for Active. ")
   public StatusEnum getStatus() {
     return status;
   }
