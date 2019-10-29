@@ -33,7 +33,7 @@ public class GetContactsAutocompleteResponseItem {
   private Integer entityId = null;
 
   /**
-   * Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message 
+   * Entry type: * **contact** if it is related to a contact; * **list** if it is related to a contact list; * **reply** if it is related to an incoming message. 
    */
   @JsonAdapter(EntityTypeEnum.Adapter.class)
   public enum EntityTypeEnum {
@@ -120,10 +120,10 @@ public class GetContactsAutocompleteResponseItem {
   }
 
    /**
-   * Id of entity. 0 if object is a Reply
+   * Id of entity. 0 if object is a reply.
    * @return entityId
   **/
-  @ApiModelProperty(example = "362", required = true, value = "Id of entity. 0 if object is a Reply")
+  @ApiModelProperty(example = "362", required = true, value = "Id of entity. 0 if object is a reply.")
   public Integer getEntityId() {
     return entityId;
   }
@@ -138,10 +138,10 @@ public class GetContactsAutocompleteResponseItem {
   }
 
    /**
-   * Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message 
+   * Entry type: * **contact** if it is related to a contact; * **list** if it is related to a contact list; * **reply** if it is related to an incoming message. 
    * @return entityType
   **/
-  @ApiModelProperty(example = "contact", required = true, value = "Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message ")
+  @ApiModelProperty(example = "contact", required = true, value = "Entry type: * **contact** if it is related to a contact; * **list** if it is related to a contact list; * **reply** if it is related to an incoming message. ")
   public EntityTypeEnum getEntityType() {
     return entityType;
   }
@@ -156,10 +156,10 @@ public class GetContactsAutocompleteResponseItem {
   }
 
    /**
-   * Id of contact/list if entityType is contact/list OR phone number if entityType is reply.
+   * ID of the contact/list if entityType is contact/list OR phone number if entityType is reply.
    * @return value
   **/
-  @ApiModelProperty(example = "22", required = true, value = "Id of contact/list if entityType is contact/list OR phone number if entityType is reply.")
+  @ApiModelProperty(example = "22", required = true, value = "ID of the contact/list if entityType is contact/list OR phone number if entityType is reply.")
   public String getValue() {
     return value;
   }
@@ -192,10 +192,10 @@ public class GetContactsAutocompleteResponseItem {
   }
 
    /**
-   * If contact or list was shared by another sub-account then name if this user will be shown.
+   * If contact or list was shared by another sub-account, the name of this user will be shown.
    * @return sharedBy
   **/
-  @ApiModelProperty(example = "John Doe", required = true, value = "If contact or list was shared by another sub-account then name if this user will be shown.")
+  @ApiModelProperty(example = "John Doe", required = true, value = "If contact or list was shared by another sub-account, the name of this user will be shown.")
   public String getSharedBy() {
     return sharedBy;
   }
@@ -264,10 +264,10 @@ public class GetContactsAutocompleteResponseItem {
   }
 
    /**
-   * Owner id of the contact/list (if it was shared).
+   * Owner ID of the contact/list (if it was shared).
    * @return userId
   **/
-  @ApiModelProperty(example = "33", required = true, value = "Owner id of the contact/list (if it was shared).")
+  @ApiModelProperty(example = "33", required = true, value = "Owner ID of the contact/list (if it was shared).")
   public Integer getUserId() {
     return userId;
   }

@@ -3821,7 +3821,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-Integer shared = 0; // Integer | Should shared contacts to be included
+Integer shared = 0; // Integer | Should shared contacts be included?
 String orderBy = "id"; // String | Order results by some field. Default is id.
 String direction = "desc"; // String | Order direction. Default is desc.
 try {
@@ -3839,7 +3839,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **shared** | **Integer**| Should shared contacts to be included | [optional] [default to 0]
+ **shared** | **Integer**| Should shared contacts be included? | [optional] [default to 0]
  **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, firstName, lastName]
  **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 
@@ -3862,7 +3862,7 @@ Name | Type | Description  | Notes
 
 Get contacts autocomplete suggestions
 
-Get contacts autocomplete suggestions by given search term
+Get contacts autocomplete suggestions by given search terms.
 
 ### Example
 ```java
@@ -3883,7 +3883,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 String query = "\"A\""; // String | Find recipients by specified search query.
 Integer limit = 10; // Integer | The number of results per page.
-Integer lists = 0; // Integer | Should lists be returned or not
+Integer lists = 0; // Integer | Should lists be returned or not?
 try {
     GetContactsAutocompleteResponse result = apiInstance.getContactsAutocomplete(query, limit, lists);
     System.out.println(result);
@@ -3899,7 +3899,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **query** | **String**| Find recipients by specified search query. |
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **lists** | **Integer**| Should lists be returned or not | [optional] [default to 0]
+ **lists** | **Integer**| Should lists be returned or not? | [optional] [default to 0]
 
 ### Return type
 
@@ -6770,13 +6770,13 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-Integer shared = 0; // Integer | Should shared contacts to be included
-String ids = "ids_example"; // String | Find contact by ID(s)
-Integer listId = 56; // Integer | Find contact by List ID
-Integer includeBlocked = 56; // Integer | Should blocked contacts to be included
+Integer shared = 0; // Integer | Should shared contacts be included?
+String ids = "ids_example"; // String | Find contacts by IDs.
+Integer listId = 56; // Integer | Find contacts by List ID.
+Integer includeBlocked = 56; // Integer | Should blocked contacts be included?
 String query = "query_example"; // String | Find contacts by specified search query.
-Integer local = 0; // Integer | Treat phone number passed in 'query' field as local. Default is 0
-String country = "country_example"; // String | 2-letter ISO country code for local phone numbers, used when 'local' is set to true. Default is account country
+Integer local = 0; // Integer | Treat phone number passed in the \"query\" field as local. Default is 0.
+String country = "country_example"; // String | The 2-letter ISO country code for local phone numbers, used when \"local\" is set to true. Default is the account country.
 String orderBy = "id"; // String | Order results by some field. Default is id.
 String direction = "desc"; // String | Order direction. Default is desc.
 try {
@@ -6794,13 +6794,13 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **shared** | **Integer**| Should shared contacts to be included | [optional] [default to 0]
- **ids** | **String**| Find contact by ID(s) | [optional]
- **listId** | **Integer**| Find contact by List ID | [optional]
- **includeBlocked** | **Integer**| Should blocked contacts to be included | [optional]
+ **shared** | **Integer**| Should shared contacts be included? | [optional] [default to 0]
+ **ids** | **String**| Find contacts by IDs. | [optional]
+ **listId** | **Integer**| Find contacts by List ID. | [optional]
+ **includeBlocked** | **Integer**| Should blocked contacts be included? | [optional]
  **query** | **String**| Find contacts by specified search query. | [optional]
- **local** | **Integer**| Treat phone number passed in &#39;query&#39; field as local. Default is 0 | [optional] [default to 0]
- **country** | **String**| 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country | [optional]
+ **local** | **Integer**| Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. | [optional] [default to 0]
+ **country** | **String**| The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. | [optional]
  **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, firstName, lastName]
  **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 

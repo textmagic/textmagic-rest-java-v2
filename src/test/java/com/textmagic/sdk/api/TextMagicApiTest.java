@@ -1290,7 +1290,7 @@ public class TextMagicApiTest {
     /**
      * Get contacts autocomplete suggestions
      *
-     * Get contacts autocomplete suggestions by given search term
+     * Get contacts autocomplete suggestions by given search terms.
      *
      * @throws ApiException
      *          if the Api call fails

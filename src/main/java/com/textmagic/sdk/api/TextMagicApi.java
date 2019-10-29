@@ -8444,7 +8444,7 @@ public class TextMagicApi {
      * Build call for getContacts
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param shared Should shared contacts to be included (optional, default to 0)
+     * @param shared Should shared contacts be included? (optional, default to 0)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param progressListener Progress listener
@@ -8517,7 +8517,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param shared Should shared contacts to be included (optional, default to 0)
+     * @param shared Should shared contacts be included? (optional, default to 0)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return GetContactsPaginatedResponse
@@ -8533,7 +8533,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param shared Should shared contacts to be included (optional, default to 0)
+     * @param shared Should shared contacts be included? (optional, default to 0)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;GetContactsPaginatedResponse&gt;
@@ -8550,7 +8550,7 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param shared Should shared contacts to be included (optional, default to 0)
+     * @param shared Should shared contacts be included? (optional, default to 0)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param callback The callback to be executed when the API call finishes
@@ -8587,7 +8587,7 @@ public class TextMagicApi {
      * Build call for getContactsAutocomplete
      * @param query Find recipients by specified search query. (required)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param lists Should lists be returned or not (optional, default to 0)
+     * @param lists Should lists be returned or not? (optional, default to 0)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -8656,10 +8656,10 @@ public class TextMagicApi {
 
     /**
      * Get contacts autocomplete suggestions
-     * Get contacts autocomplete suggestions by given search term
+     * Get contacts autocomplete suggestions by given search terms.
      * @param query Find recipients by specified search query. (required)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param lists Should lists be returned or not (optional, default to 0)
+     * @param lists Should lists be returned or not? (optional, default to 0)
      * @return GetContactsAutocompleteResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -8670,10 +8670,10 @@ public class TextMagicApi {
 
     /**
      * Get contacts autocomplete suggestions
-     * Get contacts autocomplete suggestions by given search term
+     * Get contacts autocomplete suggestions by given search terms.
      * @param query Find recipients by specified search query. (required)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param lists Should lists be returned or not (optional, default to 0)
+     * @param lists Should lists be returned or not? (optional, default to 0)
      * @return ApiResponse&lt;GetContactsAutocompleteResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -8685,10 +8685,10 @@ public class TextMagicApi {
 
     /**
      * Get contacts autocomplete suggestions (asynchronously)
-     * Get contacts autocomplete suggestions by given search term
+     * Get contacts autocomplete suggestions by given search terms.
      * @param query Find recipients by specified search query. (required)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param lists Should lists be returned or not (optional, default to 0)
+     * @param lists Should lists be returned or not? (optional, default to 0)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -15192,13 +15192,13 @@ public class TextMagicApi {
      * Build call for searchContacts
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param shared Should shared contacts to be included (optional, default to 0)
-     * @param ids Find contact by ID(s) (optional)
-     * @param listId Find contact by List ID (optional)
-     * @param includeBlocked Should blocked contacts to be included (optional)
+     * @param shared Should shared contacts be included? (optional, default to 0)
+     * @param ids Find contacts by IDs. (optional)
+     * @param listId Find contacts by List ID. (optional)
+     * @param includeBlocked Should blocked contacts be included? (optional)
      * @param query Find contacts by specified search query. (optional)
-     * @param local Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)
-     * @param country 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)
+     * @param local Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)
+     * @param country The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param progressListener Progress listener
@@ -15283,13 +15283,13 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param shared Should shared contacts to be included (optional, default to 0)
-     * @param ids Find contact by ID(s) (optional)
-     * @param listId Find contact by List ID (optional)
-     * @param includeBlocked Should blocked contacts to be included (optional)
+     * @param shared Should shared contacts be included? (optional, default to 0)
+     * @param ids Find contacts by IDs. (optional)
+     * @param listId Find contacts by List ID. (optional)
+     * @param includeBlocked Should blocked contacts be included? (optional)
      * @param query Find contacts by specified search query. (optional)
-     * @param local Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)
-     * @param country 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)
+     * @param local Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)
+     * @param country The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return SearchContactsPaginatedResponse
@@ -15305,13 +15305,13 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param shared Should shared contacts to be included (optional, default to 0)
-     * @param ids Find contact by ID(s) (optional)
-     * @param listId Find contact by List ID (optional)
-     * @param includeBlocked Should blocked contacts to be included (optional)
+     * @param shared Should shared contacts be included? (optional, default to 0)
+     * @param ids Find contacts by IDs. (optional)
+     * @param listId Find contacts by List ID. (optional)
+     * @param includeBlocked Should blocked contacts be included? (optional)
      * @param query Find contacts by specified search query. (optional)
-     * @param local Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)
-     * @param country 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)
+     * @param local Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)
+     * @param country The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;SearchContactsPaginatedResponse&gt;
@@ -15328,13 +15328,13 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param shared Should shared contacts to be included (optional, default to 0)
-     * @param ids Find contact by ID(s) (optional)
-     * @param listId Find contact by List ID (optional)
-     * @param includeBlocked Should blocked contacts to be included (optional)
+     * @param shared Should shared contacts be included? (optional, default to 0)
+     * @param ids Find contacts by IDs. (optional)
+     * @param listId Find contacts by List ID. (optional)
+     * @param includeBlocked Should blocked contacts be included? (optional)
      * @param query Find contacts by specified search query. (optional)
-     * @param local Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)
-     * @param country 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)
+     * @param local Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)
+     * @param country The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param callback The callback to be executed when the API call finishes

@@ -123,10 +123,10 @@ public class Contact {
   }
 
    /**
-   * Is the Contact blocked? [Custom fields list](http://docs.textmagictesting.com/#operation/getBlockedContacts).
+   * Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts).
    * @return blocked
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Is the Contact blocked? [Custom fields list](http://docs.textmagictesting.com/#operation/getBlockedContacts).")
+  @ApiModelProperty(example = "true", required = true, value = "Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts).")
   public Boolean isBlocked() {
     return blocked;
   }
