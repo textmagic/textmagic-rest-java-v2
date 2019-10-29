@@ -35,7 +35,7 @@ public class BulkSession {
   private Integer id = null;
 
   /**
-   * * **n** - bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended 
+   * * **n** – bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended 
    */
   @JsonAdapter(StatusEnum.Adapter.class)
   public enum StatusEnum {
@@ -129,10 +129,10 @@ public class BulkSession {
   }
 
    /**
-   * * **n** - bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended 
+   * * **n** – bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended 
    * @return status
   **/
-  @ApiModelProperty(example = "n", required = true, value = "* **n** - bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended ")
+  @ApiModelProperty(example = "n", required = true, value = "* **n** – bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended ")
   public StatusEnum getStatus() {
     return status;
   }
@@ -147,10 +147,10 @@ public class BulkSession {
   }
 
    /**
-   * Amount of messages which is already processed.
+   * Amount of messages already processed.
    * @return itemsProcessed
   **/
-  @ApiModelProperty(example = "564", required = true, value = "Amount of messages which is already processed.")
+  @ApiModelProperty(example = "564", required = true, value = "Amount of messages already processed.")
   public Integer getItemsProcessed() {
     return itemsProcessed;
   }

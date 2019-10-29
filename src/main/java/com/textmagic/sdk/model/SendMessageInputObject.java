@@ -86,10 +86,10 @@ public class SendMessageInputObject {
   }
 
    /**
-   * Message text. Required if **template_id** is not set.
+   * Message text. Required if the **template_id** is not set.
    * @return text
   **/
-  @ApiModelProperty(example = "Hello, how are you?", required = true, value = "Message text. Required if **template_id** is not set.")
+  @ApiModelProperty(example = "Hello, how are you?", required = true, value = "Message text. Required if the **template_id** is not set.")
   public String getText() {
     return text;
   }
@@ -104,10 +104,10 @@ public class SendMessageInputObject {
   }
 
    /**
-   * Template used instead of message text. Required if **text** is not set.
+   * Template used instead of message text. Required if the **text** is not set.
    * @return templateId
   **/
-  @ApiModelProperty(example = "1", value = "Template used instead of message text. Required if **text** is not set.")
+  @ApiModelProperty(example = "1", value = "Template used instead of message text. Required if the **text** is not set.")
   public Integer getTemplateId() {
     return templateId;
   }
@@ -338,10 +338,10 @@ public class SendMessageInputObject {
   }
 
    /**
-   * Send a Text to Speech message.
+   * Send a Text-to-Speech message.
    * @return tts
   **/
-  @ApiModelProperty(example = "false", value = "Send a Text to Speech message.")
+  @ApiModelProperty(example = "false", value = "Send a Text-to-Speech message.")
   public Boolean isTts() {
     return tts;
   }

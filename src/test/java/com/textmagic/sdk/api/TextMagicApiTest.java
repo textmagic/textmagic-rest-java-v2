@@ -742,7 +742,7 @@ public class TextMagicApiTest {
     /**
      * Delete messages (bulk)
      *
-     * Delete outbound messages by given ID(s) or delete all outbound messages.
+     * Delete outbound messages by the given ID(s) or delete all outbound messages.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -1544,7 +1544,7 @@ public class TextMagicApiTest {
     /**
      * Preview message
      *
-     * Get messages preview (with tags merged) up to 100 messages per session.
+     * Get a messages preview (with tags merged) of up to 100 messages per session.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -1711,7 +1711,7 @@ public class TextMagicApiTest {
     /**
      * Get history
      *
-     * Get outbound messages history.
+     * Get the outbound messages history.
      *
      * @throws ApiException
      *          if the Api call fails

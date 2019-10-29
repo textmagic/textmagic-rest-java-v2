@@ -65,10 +65,10 @@ public class UploadMessageAttachmentResponse {
   }
 
    /**
-   * This is a relative link to your file. To construct a full link, just add “[https://my.textmagic.com/”](https://my.textmagic.com/%E2%80%9D) to the beginning (like this: [https://my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9)). For most modern devices, you can omit “https://” part and write just [my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9), it will save you 8 characters. 
+   * This is a relative link to your file. To construct a full link, just add “[https://my.textmagic.com/”](https://my.textmagic.com/%E2%80%9D) to the beginning (like this: [https://my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9)). For most modern devices, you can omit the “https://” part and write just [my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9), which will save you 8 characters. 
    * @return href
   **/
-  @ApiModelProperty(example = "click/Zwcj9", required = true, value = "This is a relative link to your file. To construct a full link, just add “[https://my.textmagic.com/”](https://my.textmagic.com/%E2%80%9D) to the beginning (like this: [https://my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9)). For most modern devices, you can omit “https://” part and write just [my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9), it will save you 8 characters. ")
+  @ApiModelProperty(example = "click/Zwcj9", required = true, value = "This is a relative link to your file. To construct a full link, just add “[https://my.textmagic.com/”](https://my.textmagic.com/%E2%80%9D) to the beginning (like this: [https://my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9)). For most modern devices, you can omit the “https://” part and write just [my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9), which will save you 8 characters. ")
   public String getHref() {
     return href;
   }
@@ -83,10 +83,10 @@ public class UploadMessageAttachmentResponse {
   }
 
    /**
-   * File name of uploaded file. 
+   * File name of the uploaded file. 
    * @return name
   **/
-  @ApiModelProperty(example = "test.pdf", required = true, value = "File name of uploaded file. ")
+  @ApiModelProperty(example = "test.pdf", required = true, value = "File name of the uploaded file. ")
   public String getName() {
     return name;
   }

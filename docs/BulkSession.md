@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **Integer** | Bulk Session ID. | 
-**status** | [**StatusEnum**](#StatusEnum) | * **n** - bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended  | 
-**itemsProcessed** | **Integer** | Amount of messages which is already processed. | 
+**status** | [**StatusEnum**](#StatusEnum) | * **n** – bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended  | 
+**itemsProcessed** | **Integer** | Amount of messages already processed. | 
 **itemsTotal** | **Integer** | Total amount of messages to be processed. | 
 **createdAt** | [**OffsetDateTime**](OffsetDateTime.md) | Creation date and time of a Bulk Session. | 
 **session** | [**MessageSession**](MessageSession.md) |  | 

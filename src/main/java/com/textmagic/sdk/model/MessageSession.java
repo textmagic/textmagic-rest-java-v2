@@ -52,7 +52,7 @@ public class MessageSession {
   private Integer numbersCount = null;
 
   /**
-   * Destination type of a Message Session: * **t** - text SMS * **s** - text to speech * **v** - voice broadcast 
+   * Destination type of a Message Session: * **t** - text SMS * **s** - text-to-speech * **v** - voice broadcast 
    */
   @JsonAdapter(DestinationEnum.Adapter.class)
   public enum DestinationEnum {
@@ -163,10 +163,10 @@ public class MessageSession {
   }
 
    /**
-   * *   **O** for TextMagic Online *   **A** for API *   **M** for TextMagic Messenger *   **E** for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) *   **X** for [Distribution lists](http://docs.textmagictesting.com/#tag/Distribution-Lists) 
+   * *   **O** – for TextMagic Online *   **A** – for API *   **M** – for TextMagic Messenger *   **E** – for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) *   **X** – for [Distribution Lists](http://docs.textmagictesting.com/#tag/Distribution-Lists) 
    * @return source
   **/
-  @ApiModelProperty(example = "O", required = true, value = "*   **O** for TextMagic Online *   **A** for API *   **M** for TextMagic Messenger *   **E** for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) *   **X** for [Distribution lists](http://docs.textmagictesting.com/#tag/Distribution-Lists) ")
+  @ApiModelProperty(example = "O", required = true, value = "*   **O** – for TextMagic Online *   **A** – for API *   **M** – for TextMagic Messenger *   **E** – for [Email to SMS](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) *   **X** – for [Distribution Lists](http://docs.textmagictesting.com/#tag/Distribution-Lists) ")
   public String getSource() {
     return source;
   }
@@ -235,10 +235,10 @@ public class MessageSession {
   }
 
    /**
-   * Destination type of a Message Session: * **t** - text SMS * **s** - text to speech * **v** - voice broadcast 
+   * Destination type of a Message Session: * **t** - text SMS * **s** - text-to-speech * **v** - voice broadcast 
    * @return destination
   **/
-  @ApiModelProperty(example = "t", required = true, value = "Destination type of a Message Session: * **t** - text SMS * **s** - text to speech * **v** - voice broadcast ")
+  @ApiModelProperty(example = "t", required = true, value = "Destination type of a Message Session: * **t** - text SMS * **s** - text-to-speech * **v** - voice broadcast ")
   public DestinationEnum getDestination() {
     return destination;
   }

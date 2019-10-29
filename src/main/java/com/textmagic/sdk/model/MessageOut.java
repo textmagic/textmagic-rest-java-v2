@@ -507,10 +507,10 @@ public class MessageOut {
   }
 
    /**
-   * Phone number used to send the SMS.
+   * The Phone number used to send the SMS.
    * @return fromNumber
   **/
-  @ApiModelProperty(example = "447624800500", value = "Phone number used to send the SMS.")
+  @ApiModelProperty(example = "447624800500", value = "The Phone number used to send the SMS.")
   public String getFromNumber() {
     return fromNumber;
   }

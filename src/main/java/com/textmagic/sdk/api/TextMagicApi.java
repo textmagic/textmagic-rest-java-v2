@@ -4573,7 +4573,7 @@ public class TextMagicApi {
 
     /**
      * Delete messages (bulk)
-     * Delete outbound messages by given ID(s) or delete all outbound messages.
+     * Delete outbound messages by the given ID(s) or delete all outbound messages.
      * @param deleteOutboundMessagesBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -4583,7 +4583,7 @@ public class TextMagicApi {
 
     /**
      * Delete messages (bulk)
-     * Delete outbound messages by given ID(s) or delete all outbound messages.
+     * Delete outbound messages by the given ID(s) or delete all outbound messages.
      * @param deleteOutboundMessagesBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -4595,7 +4595,7 @@ public class TextMagicApi {
 
     /**
      * Delete messages (bulk) (asynchronously)
-     * Delete outbound messages by given ID(s) or delete all outbound messages.
+     * Delete outbound messages by the given ID(s) or delete all outbound messages.
      * @param deleteOutboundMessagesBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -5750,7 +5750,7 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -5820,7 +5820,7 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return GetAllInboundMessagesPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -5835,7 +5835,7 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;GetAllInboundMessagesPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -5851,7 +5851,7 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -6144,7 +6144,7 @@ public class TextMagicApi {
      * @param limit The number of results per page. (optional, default to 10)
      * @param status Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -6217,7 +6217,7 @@ public class TextMagicApi {
      * @param limit The number of results per page. (optional, default to 10)
      * @param status Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return GetAllScheduledMessagesPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -6233,7 +6233,7 @@ public class TextMagicApi {
      * @param limit The number of results per page. (optional, default to 10)
      * @param status Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;GetAllScheduledMessagesPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -6250,7 +6250,7 @@ public class TextMagicApi {
      * @param limit The number of results per page. (optional, default to 10)
      * @param status Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -6891,9 +6891,9 @@ public class TextMagicApi {
      * Build call for getBlockedContacts
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param query Find blocked contacts by specified search query (optional)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param query Find blocked contacts by specified search query. (optional)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -6964,9 +6964,9 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param query Find blocked contacts by specified search query (optional)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param query Find blocked contacts by specified search query. (optional)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return GetBlockedContactsPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -6980,9 +6980,9 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param query Find blocked contacts by specified search query (optional)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param query Find blocked contacts by specified search query. (optional)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;GetBlockedContactsPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -6997,9 +6997,9 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param query Find blocked contacts by specified search query (optional)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param query Find blocked contacts by specified search query. (optional)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -7532,7 +7532,7 @@ public class TextMagicApi {
      * @param query Find messages by specified search query (optional)
      * @param start Return messages since specified timestamp only (optional)
      * @param end Return messages up to specified timestamp only (optional)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param voice Fetch results with voice calls (optional, default to 0)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
@@ -7618,7 +7618,7 @@ public class TextMagicApi {
      * @param query Find messages by specified search query (optional)
      * @param start Return messages since specified timestamp only (optional)
      * @param end Return messages up to specified timestamp only (optional)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param voice Fetch results with voice calls (optional, default to 0)
      * @return GetChatMessagesPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -7637,7 +7637,7 @@ public class TextMagicApi {
      * @param query Find messages by specified search query (optional)
      * @param start Return messages since specified timestamp only (optional)
      * @param end Return messages up to specified timestamp only (optional)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param voice Fetch results with voice calls (optional, default to 0)
      * @return ApiResponse&lt;GetChatMessagesPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -7657,7 +7657,7 @@ public class TextMagicApi {
      * @param query Find messages by specified search query (optional)
      * @param start Return messages since specified timestamp only (optional)
      * @param end Return messages up to specified timestamp only (optional)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param voice Fetch results with voice calls (optional, default to 0)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -8445,8 +8445,8 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param shared Should shared contacts to be included (optional, default to 0)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -8518,8 +8518,8 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param shared Should shared contacts to be included (optional, default to 0)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return GetContactsPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -8534,8 +8534,8 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param shared Should shared contacts to be included (optional, default to 0)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;GetContactsPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -8551,8 +8551,8 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param shared Should shared contacts to be included (optional, default to 0)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -8585,7 +8585,7 @@ public class TextMagicApi {
     }
     /**
      * Build call for getContactsAutocomplete
-     * @param query Find recipients by specified search query (required)
+     * @param query Find recipients by specified search query. (required)
      * @param limit The number of results per page. (optional, default to 10)
      * @param lists Should lists be returned or not (optional, default to 0)
      * @param progressListener Progress listener
@@ -8657,7 +8657,7 @@ public class TextMagicApi {
     /**
      * Get contacts autocomplete suggestions
      * Get contacts autocomplete suggestions by given search term
-     * @param query Find recipients by specified search query (required)
+     * @param query Find recipients by specified search query. (required)
      * @param limit The number of results per page. (optional, default to 10)
      * @param lists Should lists be returned or not (optional, default to 0)
      * @return GetContactsAutocompleteResponse
@@ -8671,7 +8671,7 @@ public class TextMagicApi {
     /**
      * Get contacts autocomplete suggestions
      * Get contacts autocomplete suggestions by given search term
-     * @param query Find recipients by specified search query (required)
+     * @param query Find recipients by specified search query. (required)
      * @param limit The number of results per page. (optional, default to 10)
      * @param lists Should lists be returned or not (optional, default to 0)
      * @return ApiResponse&lt;GetContactsAutocompleteResponse&gt;
@@ -8686,7 +8686,7 @@ public class TextMagicApi {
     /**
      * Get contacts autocomplete suggestions (asynchronously)
      * Get contacts autocomplete suggestions by given search term
-     * @param query Find recipients by specified search query (required)
+     * @param query Find recipients by specified search query. (required)
      * @param limit The number of results per page. (optional, default to 10)
      * @param lists Should lists be returned or not (optional, default to 0)
      * @param callback The callback to be executed when the API call finishes
@@ -8725,7 +8725,7 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -8802,7 +8802,7 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return GetContactsByListIdPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -8818,7 +8818,7 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;GetContactsByListIdPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -8835,7 +8835,7 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -10205,8 +10205,8 @@ public class TextMagicApi {
      * Build call for getLists
      * @param page The current fetched page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param favoriteOnly Return only favorite lists (optional, default to 0)
      * @param onlyMine Return only current user lists (optional, default to 0)
      * @param progressListener Progress listener
@@ -10281,8 +10281,8 @@ public class TextMagicApi {
      * 
      * @param page The current fetched page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param favoriteOnly Return only favorite lists (optional, default to 0)
      * @param onlyMine Return only current user lists (optional, default to 0)
      * @return GetListsPaginatedResponse
@@ -10298,8 +10298,8 @@ public class TextMagicApi {
      * 
      * @param page The current fetched page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param favoriteOnly Return only favorite lists (optional, default to 0)
      * @param onlyMine Return only current user lists (optional, default to 0)
      * @return ApiResponse&lt;GetListsPaginatedResponse&gt;
@@ -10316,8 +10316,8 @@ public class TextMagicApi {
      * 
      * @param page The current fetched page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param favoriteOnly Return only favorite lists (optional, default to 0)
      * @param onlyMine Return only current user lists (optional, default to 0)
      * @param callback The callback to be executed when the API call finishes
@@ -10501,7 +10501,7 @@ public class TextMagicApi {
      * @param from One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)
      * @param rule An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)
      * @param createChat Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)
-     * @param tts Send Text to Speech message. (optional, default to 0)
+     * @param tts Send Text-to-Speech message. (optional, default to 0)
      * @param local Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)
      * @param localCountry The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)
      * @param progressListener Progress listener
@@ -10595,7 +10595,7 @@ public class TextMagicApi {
 
     /**
      * Preview message
-     * Get messages preview (with tags merged) up to 100 messages per session.
+     * Get a messages preview (with tags merged) of up to 100 messages per session.
      * @param text Message text. Required if **template_id** is not set. (optional)
      * @param templateId Template used instead of message text. Required if **text** is not set. (optional)
      * @param sendingTime DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)
@@ -10610,7 +10610,7 @@ public class TextMagicApi {
      * @param from One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)
      * @param rule An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)
      * @param createChat Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)
-     * @param tts Send Text to Speech message. (optional, default to 0)
+     * @param tts Send Text-to-Speech message. (optional, default to 0)
      * @param local Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)
      * @param localCountry The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)
      * @return GetMessagePreviewResponse
@@ -10623,7 +10623,7 @@ public class TextMagicApi {
 
     /**
      * Preview message
-     * Get messages preview (with tags merged) up to 100 messages per session.
+     * Get a messages preview (with tags merged) of up to 100 messages per session.
      * @param text Message text. Required if **template_id** is not set. (optional)
      * @param templateId Template used instead of message text. Required if **text** is not set. (optional)
      * @param sendingTime DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)
@@ -10638,7 +10638,7 @@ public class TextMagicApi {
      * @param from One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)
      * @param rule An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)
      * @param createChat Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)
-     * @param tts Send Text to Speech message. (optional, default to 0)
+     * @param tts Send Text-to-Speech message. (optional, default to 0)
      * @param local Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)
      * @param localCountry The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)
      * @return ApiResponse&lt;GetMessagePreviewResponse&gt;
@@ -10652,7 +10652,7 @@ public class TextMagicApi {
 
     /**
      * Preview message (asynchronously)
-     * Get messages preview (with tags merged) up to 100 messages per session.
+     * Get a messages preview (with tags merged) of up to 100 messages per session.
      * @param text Message text. Required if **template_id** is not set. (optional)
      * @param templateId Template used instead of message text. Required if **text** is not set. (optional)
      * @param sendingTime DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)
@@ -10667,7 +10667,7 @@ public class TextMagicApi {
      * @param from One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)
      * @param rule An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)
      * @param createChat Should the sending method try to create new Chat(if not exist) with specified recipients? (optional, default to 0)
-     * @param tts Send Text to Speech message. (optional, default to 0)
+     * @param tts Send Text-to-Speech message. (optional, default to 0)
      * @param local Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)
      * @param localCountry The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)
      * @param callback The callback to be executed when the API call finishes
@@ -10717,7 +10717,7 @@ public class TextMagicApi {
      * @param from One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)
      * @param rule An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)
      * @param createChat Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)
-     * @param tts Send a Text to Speech message. (optional, default to 0)
+     * @param tts Send a Text-to-Speech message. (optional, default to 0)
      * @param local Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)
      * @param localCountry The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)
      * @param progressListener Progress listener
@@ -10829,7 +10829,7 @@ public class TextMagicApi {
      * @param from One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)
      * @param rule An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)
      * @param createChat Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)
-     * @param tts Send a Text to Speech message. (optional, default to 0)
+     * @param tts Send a Text-to-Speech message. (optional, default to 0)
      * @param local Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)
      * @param localCountry The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)
      * @return GetMessagePriceResponse
@@ -10858,7 +10858,7 @@ public class TextMagicApi {
      * @param from One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)
      * @param rule An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)
      * @param createChat Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)
-     * @param tts Send a Text to Speech message. (optional, default to 0)
+     * @param tts Send a Text-to-Speech message. (optional, default to 0)
      * @param local Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)
      * @param localCountry The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)
      * @return ApiResponse&lt;GetMessagePriceResponse&gt;
@@ -10888,7 +10888,7 @@ public class TextMagicApi {
      * @param from One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). (optional)
      * @param rule An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. (optional)
      * @param createChat Should the sending method try to create new Chat (if not exist) with specified recipients? (optional, default to 0)
-     * @param tts Send a Text to Speech message. (optional, default to 0)
+     * @param tts Send a Text-to-Speech message. (optional, default to 0)
      * @param local Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. (optional, default to 0)
      * @param localCountry The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. (optional)
      * @param callback The callback to be executed when the API call finishes
@@ -11693,7 +11693,7 @@ public class TextMagicApi {
      * @param lastId Filter results by ID, selecting all values lesser than the specified ID. (optional)
      * @param query Find message by specified search query (optional)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -11761,12 +11761,12 @@ public class TextMagicApi {
 
     /**
      * Get history
-     * Get outbound messages history.
+     * Get the outbound messages history.
      * @param limit The number of results per page. (optional, default to 10)
      * @param lastId Filter results by ID, selecting all values lesser than the specified ID. (optional)
      * @param query Find message by specified search query (optional)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return GetOutboundMessagesHistoryPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -11777,12 +11777,12 @@ public class TextMagicApi {
 
     /**
      * Get history
-     * Get outbound messages history.
+     * Get the outbound messages history.
      * @param limit The number of results per page. (optional, default to 10)
      * @param lastId Filter results by ID, selecting all values lesser than the specified ID. (optional)
      * @param query Find message by specified search query (optional)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;GetOutboundMessagesHistoryPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -11794,12 +11794,12 @@ public class TextMagicApi {
 
     /**
      * Get history (asynchronously)
-     * Get outbound messages history.
+     * Get the outbound messages history.
      * @param limit The number of results per page. (optional, default to 10)
      * @param lastId Filter results by ID, selecting all values lesser than the specified ID. (optional)
      * @param query Find message by specified search query (optional)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -15199,8 +15199,8 @@ public class TextMagicApi {
      * @param query Find contacts by specified search query (optional)
      * @param local Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)
      * @param country 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -15290,8 +15290,8 @@ public class TextMagicApi {
      * @param query Find contacts by specified search query (optional)
      * @param local Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)
      * @param country 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return SearchContactsPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -15312,8 +15312,8 @@ public class TextMagicApi {
      * @param query Find contacts by specified search query (optional)
      * @param local Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)
      * @param country 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;SearchContactsPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -15335,8 +15335,8 @@ public class TextMagicApi {
      * @param query Find contacts by specified search query (optional)
      * @param local Treat phone number passed in &#39;query&#39; field as local. Default is 0 (optional, default to 0)
      * @param country 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country (optional)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -15371,11 +15371,11 @@ public class TextMagicApi {
      * Build call for searchInboundMessages
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find message by ID(s) (optional)
-     * @param query Find recipients by specified search query (optional)
+     * @param ids Find message by ID(s). (optional)
+     * @param query Find recipients by specified search query. (optional)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
-     * @param expand Expand by adding firstName, lastName and contactId (optional, default to 0)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
+     * @param expand Expand by adding firstName, lastName and contactId. (optional, default to 0)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -15450,11 +15450,11 @@ public class TextMagicApi {
      * Find inbound messages by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find message by ID(s) (optional)
-     * @param query Find recipients by specified search query (optional)
+     * @param ids Find message by ID(s). (optional)
+     * @param query Find recipients by specified search query. (optional)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
-     * @param expand Expand by adding firstName, lastName and contactId (optional, default to 0)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
+     * @param expand Expand by adding firstName, lastName and contactId. (optional, default to 0)
      * @return SearchInboundMessagesPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -15468,11 +15468,11 @@ public class TextMagicApi {
      * Find inbound messages by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find message by ID(s) (optional)
-     * @param query Find recipients by specified search query (optional)
+     * @param ids Find message by ID(s). (optional)
+     * @param query Find recipients by specified search query. (optional)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
-     * @param expand Expand by adding firstName, lastName and contactId (optional, default to 0)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
+     * @param expand Expand by adding firstName, lastName and contactId. (optional, default to 0)
      * @return ApiResponse&lt;SearchInboundMessagesPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -15487,11 +15487,11 @@ public class TextMagicApi {
      * Find inbound messages by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find message by ID(s) (optional)
-     * @param query Find recipients by specified search query (optional)
+     * @param ids Find message by ID(s). (optional)
+     * @param query Find recipients by specified search query. (optional)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
-     * @param expand Expand by adding firstName, lastName and contactId (optional, default to 0)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
+     * @param expand Expand by adding firstName, lastName and contactId. (optional, default to 0)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -15531,7 +15531,7 @@ public class TextMagicApi {
      * @param onlyMine Return only current user lists (optional, default to 0)
      * @param onlyDefault Return only default lists (optional, default to 0)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -15613,7 +15613,7 @@ public class TextMagicApi {
      * @param onlyMine Return only current user lists (optional, default to 0)
      * @param onlyDefault Return only default lists (optional, default to 0)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return SearchListsPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -15632,7 +15632,7 @@ public class TextMagicApi {
      * @param onlyMine Return only current user lists (optional, default to 0)
      * @param onlyDefault Return only default lists (optional, default to 0)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;SearchListsPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -15652,7 +15652,7 @@ public class TextMagicApi {
      * @param onlyMine Return only current user lists (optional, default to 0)
      * @param onlyDefault Return only default lists (optional, default to 0)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -15687,12 +15687,12 @@ public class TextMagicApi {
      * Build call for searchOutboundMessages
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)
-     * @param ids Find message by ID(s) (optional)
-     * @param sessionId Find messages by session ID (optional)
-     * @param statuses Find messages by status (optional)
-     * @param includeDeleted Search also in deleted messages (optional, default to 0)
-     * @param query Find messages by specified search query (optional)
+     * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)
+     * @param ids Find message by ID(s). (optional)
+     * @param sessionId Find messages by session ID. (optional)
+     * @param statuses Find messages by status. (optional)
+     * @param includeDeleted Search also in deleted messages. (optional, default to 0)
+     * @param query Find messages by specified search query. (optional)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -15769,12 +15769,12 @@ public class TextMagicApi {
      * Find outbound messages by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)
-     * @param ids Find message by ID(s) (optional)
-     * @param sessionId Find messages by session ID (optional)
-     * @param statuses Find messages by status (optional)
-     * @param includeDeleted Search also in deleted messages (optional, default to 0)
-     * @param query Find messages by specified search query (optional)
+     * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)
+     * @param ids Find message by ID(s). (optional)
+     * @param sessionId Find messages by session ID. (optional)
+     * @param statuses Find messages by status. (optional)
+     * @param includeDeleted Search also in deleted messages. (optional, default to 0)
+     * @param query Find messages by specified search query. (optional)
      * @return SearchOutboundMessagesPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -15788,12 +15788,12 @@ public class TextMagicApi {
      * Find outbound messages by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)
-     * @param ids Find message by ID(s) (optional)
-     * @param sessionId Find messages by session ID (optional)
-     * @param statuses Find messages by status (optional)
-     * @param includeDeleted Search also in deleted messages (optional, default to 0)
-     * @param query Find messages by specified search query (optional)
+     * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)
+     * @param ids Find message by ID(s). (optional)
+     * @param sessionId Find messages by session ID. (optional)
+     * @param statuses Find messages by status. (optional)
+     * @param includeDeleted Search also in deleted messages. (optional, default to 0)
+     * @param query Find messages by specified search query. (optional)
      * @return ApiResponse&lt;SearchOutboundMessagesPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -15808,12 +15808,12 @@ public class TextMagicApi {
      * Find outbound messages by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)
-     * @param ids Find message by ID(s) (optional)
-     * @param sessionId Find messages by session ID (optional)
-     * @param statuses Find messages by status (optional)
-     * @param includeDeleted Search also in deleted messages (optional, default to 0)
-     * @param query Find messages by specified search query (optional)
+     * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified (optional)
+     * @param ids Find message by ID(s). (optional)
+     * @param sessionId Find messages by session ID. (optional)
+     * @param statuses Find messages by status. (optional)
+     * @param includeDeleted Search also in deleted messages. (optional, default to 0)
+     * @param query Find messages by specified search query. (optional)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -15852,7 +15852,7 @@ public class TextMagicApi {
      * @param ids Find schedules by ID(s) (optional)
      * @param status Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -15931,7 +15931,7 @@ public class TextMagicApi {
      * @param ids Find schedules by ID(s) (optional)
      * @param status Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return SearchScheduledMessagesPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -15949,7 +15949,7 @@ public class TextMagicApi {
      * @param ids Find schedules by ID(s) (optional)
      * @param status Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;SearchScheduledMessagesPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -15968,7 +15968,7 @@ public class TextMagicApi {
      * @param ids Find schedules by ID(s) (optional)
      * @param status Fetch schedules with the specific status: a - actual, c - completed, x - all (optional, default to x)
      * @param orderBy Order results by some field. Default is id (optional, default to id)
-     * @param direction Order direction. Default is desc (optional, default to desc)
+     * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object

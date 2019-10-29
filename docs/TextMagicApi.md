@@ -2074,7 +2074,7 @@ null (empty response body)
 
 Delete messages (bulk)
 
-Delete outbound messages by given ID(s) or delete all outbound messages.
+Delete outbound messages by the given ID(s) or delete all outbound messages.
 
 ### Example
 ```java
@@ -2644,7 +2644,7 @@ TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
 String orderBy = "id"; // String | Order results by some field. Default is id
-String direction = "desc"; // String | Order direction. Default is desc
+String direction = "desc"; // String | Order direction. Default is desc.
 try {
     GetAllInboundMessagesPaginatedResponse result = apiInstance.getAllInboundMessages(page, limit, orderBy, direction);
     System.out.println(result);
@@ -2661,7 +2661,7 @@ Name | Type | Description  | Notes
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
  **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, sender, receiver, messageTime, firstName, lastName]
- **direction** | **String**| Order direction. Default is desc | [optional] [default to desc] [enum: asc, desc]
+ **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 
 ### Return type
 
@@ -2819,7 +2819,7 @@ Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
 String status = "x"; // String | Fetch schedules with the specific status: a - actual, c - completed, x - all
 String orderBy = "id"; // String | Order results by some field. Default is id
-String direction = "desc"; // String | Order direction. Default is desc
+String direction = "desc"; // String | Order direction. Default is desc.
 try {
     GetAllScheduledMessagesPaginatedResponse result = apiInstance.getAllScheduledMessages(page, limit, status, orderBy, direction);
     System.out.println(result);
@@ -2837,7 +2837,7 @@ Name | Type | Description  | Notes
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
  **status** | **String**| Fetch schedules with the specific status: a - actual, c - completed, x - all | [optional] [default to x] [enum: a, c, x]
  **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, nextSend, lastSend]
- **direction** | **String**| Order direction. Default is desc | [optional] [default to desc] [enum: asc, desc]
+ **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 
 ### Return type
 
@@ -3147,9 +3147,9 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-String query = "query_example"; // String | Find blocked contacts by specified search query
-String orderBy = "id"; // String | Order results by some field. Default is id
-String direction = "desc"; // String | Order direction. Default is desc
+String query = "query_example"; // String | Find blocked contacts by specified search query.
+String orderBy = "id"; // String | Order results by some field. Default is id.
+String direction = "desc"; // String | Order direction. Default is desc.
 try {
     GetBlockedContactsPaginatedResponse result = apiInstance.getBlockedContacts(page, limit, query, orderBy, direction);
     System.out.println(result);
@@ -3165,9 +3165,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **query** | **String**| Find blocked contacts by specified search query | [optional]
- **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, firstName, lastName]
- **direction** | **String**| Order direction. Default is desc | [optional] [default to desc] [enum: asc, desc]
+ **query** | **String**| Find blocked contacts by specified search query. | [optional]
+ **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, firstName, lastName]
+ **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 
 ### Return type
 
@@ -3429,7 +3429,7 @@ Integer limit = 10; // Integer | The number of results per page.
 String query = "query_example"; // String | Find messages by specified search query
 Integer start = 56; // Integer | Return messages since specified timestamp only
 Integer end = 56; // Integer | Return messages up to specified timestamp only
-String direction = "desc"; // String | Order direction. Default is desc
+String direction = "desc"; // String | Order direction. Default is desc.
 Integer voice = 0; // Integer | Fetch results with voice calls
 try {
     GetChatMessagesPaginatedResponse result = apiInstance.getChatMessages(id, page, limit, query, start, end, direction, voice);
@@ -3450,7 +3450,7 @@ Name | Type | Description  | Notes
  **query** | **String**| Find messages by specified search query | [optional]
  **start** | **Integer**| Return messages since specified timestamp only | [optional]
  **end** | **Integer**| Return messages up to specified timestamp only | [optional]
- **direction** | **String**| Order direction. Default is desc | [optional] [default to desc] [enum: asc, desc]
+ **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
  **voice** | **Integer**| Fetch results with voice calls | [optional] [default to 0]
 
 ### Return type
@@ -3822,8 +3822,8 @@ TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
 Integer shared = 0; // Integer | Should shared contacts to be included
-String orderBy = "id"; // String | Order results by some field. Default is id
-String direction = "desc"; // String | Order direction. Default is desc
+String orderBy = "id"; // String | Order results by some field. Default is id.
+String direction = "desc"; // String | Order direction. Default is desc.
 try {
     GetContactsPaginatedResponse result = apiInstance.getContacts(page, limit, shared, orderBy, direction);
     System.out.println(result);
@@ -3840,8 +3840,8 @@ Name | Type | Description  | Notes
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
  **shared** | **Integer**| Should shared contacts to be included | [optional] [default to 0]
- **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, firstName, lastName]
- **direction** | **String**| Order direction. Default is desc | [optional] [default to desc] [enum: asc, desc]
+ **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, firstName, lastName]
+ **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 
 ### Return type
 
@@ -3881,7 +3881,7 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-String query = "\"A\""; // String | Find recipients by specified search query
+String query = "\"A\""; // String | Find recipients by specified search query.
 Integer limit = 10; // Integer | The number of results per page.
 Integer lists = 0; // Integer | Should lists be returned or not
 try {
@@ -3897,7 +3897,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **query** | **String**| Find recipients by specified search query |
+ **query** | **String**| Find recipients by specified search query. |
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
  **lists** | **Integer**| Should lists be returned or not | [optional] [default to 0]
 
@@ -3943,7 +3943,7 @@ Integer id = 1; // Integer | Given group Id.
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
 String orderBy = "id"; // String | Order results by some field. Default is id
-String direction = "desc"; // String | Order direction. Default is desc
+String direction = "desc"; // String | Order direction. Default is desc.
 try {
     GetContactsByListIdPaginatedResponse result = apiInstance.getContactsByListId(id, page, limit, orderBy, direction);
     System.out.println(result);
@@ -3961,7 +3961,7 @@ Name | Type | Description  | Notes
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
  **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, firstName, lastName]
- **direction** | **String**| Order direction. Default is desc | [optional] [default to desc] [enum: asc, desc]
+ **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 
 ### Return type
 
@@ -4593,8 +4593,8 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | The current fetched page.
 Integer limit = 10; // Integer | The number of results per page.
-String orderBy = "id"; // String | Order results by some field. Default is id
-String direction = "desc"; // String | Order direction. Default is desc
+String orderBy = "id"; // String | Order results by some field. Default is id.
+String direction = "desc"; // String | Order direction. Default is desc.
 Integer favoriteOnly = 0; // Integer | Return only favorite lists
 Integer onlyMine = 0; // Integer | Return only current user lists
 try {
@@ -4612,8 +4612,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| The current fetched page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, firstName, lastName]
- **direction** | **String**| Order direction. Default is desc | [optional] [default to desc] [enum: asc, desc]
+ **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, firstName, lastName]
+ **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
  **favoriteOnly** | **Integer**| Return only favorite lists | [optional] [default to 0]
  **onlyMine** | **Integer**| Return only current user lists | [optional] [default to 0]
 
@@ -4694,7 +4694,7 @@ Name | Type | Description  | Notes
 
 Preview message
 
-Get messages preview (with tags merged) up to 100 messages per session.
+Get a messages preview (with tags merged) of up to 100 messages per session.
 
 ### Example
 ```java
@@ -4727,7 +4727,7 @@ Integer referenceId = 1; // Integer | Custom message reference id which can be u
 String from = "\"Test Sender ID\""; // String | One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
 String rule = "\"FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1;COUNT=1\""; // String | An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
 Integer createChat = 0; // Integer | Should the sending method try to create new Chat(if not exist) with specified recipients?
-Integer tts = 0; // Integer | Send Text to Speech message.
+Integer tts = 0; // Integer | Send Text-to-Speech message.
 Integer local = 0; // Integer | Treat phone numbers passed in the \\'phones\\' field as local.
 String localCountry = "\"US\""; // String | The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.
 try {
@@ -4757,7 +4757,7 @@ Name | Type | Description  | Notes
  **from** | **String**| One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). | [optional]
  **rule** | **String**| An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. | [optional]
  **createChat** | **Integer**| Should the sending method try to create new Chat(if not exist) with specified recipients? | [optional] [default to 0]
- **tts** | **Integer**| Send Text to Speech message. | [optional] [default to 0]
+ **tts** | **Integer**| Send Text-to-Speech message. | [optional] [default to 0]
  **local** | **Integer**| Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. | [optional] [default to 0]
  **localCountry** | **String**| The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. | [optional]
 
@@ -4814,7 +4814,7 @@ Integer referenceId = 1; // Integer | Custom message reference id which can be u
 String from = "\"Test Sender ID\""; // String | One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
 String rule = "\"FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1;COUNT=1\""; // String | An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
 Integer createChat = 0; // Integer | Should the sending method try to create new Chat (if not exist) with specified recipients?
-Integer tts = 0; // Integer | Send a Text to Speech message.
+Integer tts = 0; // Integer | Send a Text-to-Speech message.
 Integer local = 0; // Integer | Treat phone numbers passed in the \\'phones\\' field as local.
 String localCountry = "\"US\""; // String | The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.
 try {
@@ -4845,7 +4845,7 @@ Name | Type | Description  | Notes
  **from** | **String**| One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). | [optional]
  **rule** | **String**| An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. | [optional]
  **createChat** | **Integer**| Should the sending method try to create new Chat (if not exist) with specified recipients? | [optional] [default to 0]
- **tts** | **Integer**| Send a Text to Speech message. | [optional] [default to 0]
+ **tts** | **Integer**| Send a Text-to-Speech message. | [optional] [default to 0]
  **local** | **Integer**| Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. | [optional] [default to 0]
  **localCountry** | **String**| The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. | [optional]
 
@@ -5202,7 +5202,7 @@ Name | Type | Description  | Notes
 
 Get history
 
-Get outbound messages history.
+Get the outbound messages history.
 
 ### Example
 ```java
@@ -5225,7 +5225,7 @@ Integer limit = 10; // Integer | The number of results per page.
 Integer lastId = 56; // Integer | Filter results by ID, selecting all values lesser than the specified ID.
 String query = "query_example"; // String | Find message by specified search query
 String orderBy = "id"; // String | Order results by some field. Default is id
-String direction = "desc"; // String | Order direction. Default is desc
+String direction = "desc"; // String | Order direction. Default is desc.
 try {
     GetOutboundMessagesHistoryPaginatedResponse result = apiInstance.getOutboundMessagesHistory(limit, lastId, query, orderBy, direction);
     System.out.println(result);
@@ -5243,7 +5243,7 @@ Name | Type | Description  | Notes
  **lastId** | **Integer**| Filter results by ID, selecting all values lesser than the specified ID. | [optional]
  **query** | **String**| Find message by specified search query | [optional]
  **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, phone, sender, firstName, lastName, messageTime]
- **direction** | **String**| Order direction. Default is desc | [optional] [default to desc] [enum: asc, desc]
+ **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 
 ### Return type
 
@@ -6777,8 +6777,8 @@ Integer includeBlocked = 56; // Integer | Should blocked contacts to be included
 String query = "query_example"; // String | Find contacts by specified search query
 Integer local = 0; // Integer | Treat phone number passed in 'query' field as local. Default is 0
 String country = "country_example"; // String | 2-letter ISO country code for local phone numbers, used when 'local' is set to true. Default is account country
-String orderBy = "id"; // String | Order results by some field. Default is id
-String direction = "desc"; // String | Order direction. Default is desc
+String orderBy = "id"; // String | Order results by some field. Default is id.
+String direction = "desc"; // String | Order direction. Default is desc.
 try {
     SearchContactsPaginatedResponse result = apiInstance.searchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, country, orderBy, direction);
     System.out.println(result);
@@ -6801,8 +6801,8 @@ Name | Type | Description  | Notes
  **query** | **String**| Find contacts by specified search query | [optional]
  **local** | **Integer**| Treat phone number passed in &#39;query&#39; field as local. Default is 0 | [optional] [default to 0]
  **country** | **String**| 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country | [optional]
- **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, firstName, lastName]
- **direction** | **String**| Order direction. Default is desc | [optional] [default to desc] [enum: asc, desc]
+ **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, firstName, lastName]
+ **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 
 ### Return type
 
@@ -6844,11 +6844,11 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-String ids = "ids_example"; // String | Find message by ID(s)
-String query = "query_example"; // String | Find recipients by specified search query
+String ids = "ids_example"; // String | Find message by ID(s).
+String query = "query_example"; // String | Find recipients by specified search query.
 String orderBy = "id"; // String | Order results by some field. Default is id
-String direction = "desc"; // String | Order direction. Default is desc
-Integer expand = 0; // Integer | Expand by adding firstName, lastName and contactId
+String direction = "desc"; // String | Order direction. Default is desc.
+Integer expand = 0; // Integer | Expand by adding firstName, lastName and contactId.
 try {
     SearchInboundMessagesPaginatedResponse result = apiInstance.searchInboundMessages(page, limit, ids, query, orderBy, direction, expand);
     System.out.println(result);
@@ -6864,11 +6864,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **ids** | **String**| Find message by ID(s) | [optional]
- **query** | **String**| Find recipients by specified search query | [optional]
+ **ids** | **String**| Find message by ID(s). | [optional]
+ **query** | **String**| Find recipients by specified search query. | [optional]
  **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, sender, receiver, messageTime, firstName, lastName]
- **direction** | **String**| Order direction. Default is desc | [optional] [default to desc] [enum: asc, desc]
- **expand** | **Integer**| Expand by adding firstName, lastName and contactId | [optional] [default to 0]
+ **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
+ **expand** | **Integer**| Expand by adding firstName, lastName and contactId. | [optional] [default to 0]
 
 ### Return type
 
@@ -6915,7 +6915,7 @@ String query = "\"A\""; // String | Find lists by specified search query
 Integer onlyMine = 0; // Integer | Return only current user lists
 Integer onlyDefault = 0; // Integer | Return only default lists
 String orderBy = "id"; // String | Order results by some field. Default is id
-String direction = "desc"; // String | Order direction. Default is desc
+String direction = "desc"; // String | Order direction. Default is desc.
 try {
     SearchListsPaginatedResponse result = apiInstance.searchLists(page, limit, ids, query, onlyMine, onlyDefault, orderBy, direction);
     System.out.println(result);
@@ -6936,7 +6936,7 @@ Name | Type | Description  | Notes
  **onlyMine** | **Integer**| Return only current user lists | [optional] [default to 0]
  **onlyDefault** | **Integer**| Return only default lists | [optional] [default to 0]
  **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, firstName, lastName]
- **direction** | **String**| Order direction. Default is desc | [optional] [default to desc] [enum: asc, desc]
+ **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 
 ### Return type
 
@@ -6978,12 +6978,12 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-Integer lastId = 56; // Integer | Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified
-String ids = "ids_example"; // String | Find message by ID(s)
-Integer sessionId = 56; // Integer | Find messages by session ID
-String statuses = "\"q\""; // String | Find messages by status
-Integer includeDeleted = 0; // Integer | Search also in deleted messages
-String query = "query_example"; // String | Find messages by specified search query
+Integer lastId = 56; // Integer | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified
+String ids = "ids_example"; // String | Find message by ID(s).
+Integer sessionId = 56; // Integer | Find messages by session ID.
+String statuses = "\"q\""; // String | Find messages by status.
+Integer includeDeleted = 0; // Integer | Search also in deleted messages.
+String query = "query_example"; // String | Find messages by specified search query.
 try {
     SearchOutboundMessagesPaginatedResponse result = apiInstance.searchOutboundMessages(page, limit, lastId, ids, sessionId, statuses, includeDeleted, query);
     System.out.println(result);
@@ -6999,12 +6999,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **lastId** | **Integer**| Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified | [optional]
- **ids** | **String**| Find message by ID(s) | [optional]
- **sessionId** | **Integer**| Find messages by session ID | [optional]
- **statuses** | **String**| Find messages by status | [optional] [enum: q, s, e, r, a, d, b, f, u, j, i, p, h]
- **includeDeleted** | **Integer**| Search also in deleted messages | [optional] [default to 0]
- **query** | **String**| Find messages by specified search query | [optional]
+ **lastId** | **Integer**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified | [optional]
+ **ids** | **String**| Find message by ID(s). | [optional]
+ **sessionId** | **Integer**| Find messages by session ID. | [optional]
+ **statuses** | **String**| Find messages by status. | [optional] [enum: q, s, e, r, a, d, b, f, u, j, i, p, h]
+ **includeDeleted** | **Integer**| Search also in deleted messages. | [optional] [default to 0]
+ **query** | **String**| Find messages by specified search query. | [optional]
 
 ### Return type
 
@@ -7050,7 +7050,7 @@ String query = "query_example"; // String | Find messages by specified search qu
 String ids = "ids_example"; // String | Find schedules by ID(s)
 String status = "x"; // String | Fetch schedules with the specific status: a - actual, c - completed, x - all
 String orderBy = "id"; // String | Order results by some field. Default is id
-String direction = "desc"; // String | Order direction. Default is desc
+String direction = "desc"; // String | Order direction. Default is desc.
 try {
     SearchScheduledMessagesPaginatedResponse result = apiInstance.searchScheduledMessages(page, limit, query, ids, status, orderBy, direction);
     System.out.println(result);
@@ -7070,7 +7070,7 @@ Name | Type | Description  | Notes
  **ids** | **String**| Find schedules by ID(s) | [optional]
  **status** | **String**| Fetch schedules with the specific status: a - actual, c - completed, x - all | [optional] [default to x] [enum: x, a, c]
  **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, nextSend, lastSend]
- **direction** | **String**| Order direction. Default is desc | [optional] [default to desc] [enum: asc, desc]
+ **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 
 ### Return type
 

@@ -23,7 +23,7 @@ Add this dependency to your project's POM:
     <dependency>
         <groupId>com.textmagic.sdk</groupId>
         <artifactId>textmagic-java-sdk</artifactId>
-        <version>2.0.808</version>
+        <version>2.0.809</version>
     </dependency>
 </dependencies>
 ```
@@ -32,7 +32,7 @@ Add this dependency to your project's POM:
 
 Add this dependency to your project’s build file:
 ```groovy
-compile "com.textmagic.sdk:textmagic-java-sdk:2.0.808"
+compile "com.textmagic.sdk:textmagic-java-sdk:2.0.809"
 ```
 
 ## Usage Example
