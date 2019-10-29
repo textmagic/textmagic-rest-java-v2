@@ -44,10 +44,10 @@ public class Currency {
   }
 
    /**
-   * Three-letter ISO currency ID.
+   * The 3-letter ISO currency ID.
    * @return id
   **/
-  @ApiModelProperty(example = "GBP", required = true, value = "Three-letter ISO currency ID.")
+  @ApiModelProperty(example = "GBP", required = true, value = "The 3-letter ISO currency ID.")
   public String getId() {
     return id;
   }

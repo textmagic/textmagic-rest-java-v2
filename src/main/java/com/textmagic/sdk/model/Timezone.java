@@ -86,10 +86,10 @@ public class Timezone {
   }
 
    /**
-   * Is Daylight saving time used in this timezone?
+   * Is daylight saving time used in this timezone?
    * @return dst
   **/
-  @ApiModelProperty(example = "1", required = true, value = "Is Daylight saving time used in this timezone?")
+  @ApiModelProperty(example = "1", required = true, value = "Is daylight saving time used in this timezone?")
   public Integer getDst() {
     return dst;
   }
@@ -104,10 +104,10 @@ public class Timezone {
   }
 
    /**
-   * Offset from UTC time in seconds. In this example it is 21600/60/60&#x3D;6 hours.
+   * Offset from UTC time in seconds. In this example, it is 21600/60/60&#x3D;6 hours.
    * @return offset
   **/
-  @ApiModelProperty(example = "10800", required = true, value = "Offset from UTC time in seconds. In this example it is 21600/60/60=6 hours.")
+  @ApiModelProperty(example = "10800", required = true, value = "Offset from UTC time in seconds. In this example, it is 21600/60/60=6 hours.")
   public Integer getOffset() {
     return offset;
   }

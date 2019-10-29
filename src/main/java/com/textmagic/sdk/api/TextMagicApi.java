@@ -988,7 +988,7 @@ public class TextMagicApi {
 
     /**
      * Close chats (bulk)
-     * Close chats by chat ids or close all chats
+     * Close chats by chat IDs or close all chats
      * @param closeChatsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -998,7 +998,7 @@ public class TextMagicApi {
 
     /**
      * Close chats (bulk)
-     * Close chats by chat ids or close all chats
+     * Close chats by chat IDs or close all chats
      * @param closeChatsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1010,7 +1010,7 @@ public class TextMagicApi {
 
     /**
      * Close chats (bulk) (asynchronously)
-     * Close chats by chat ids or close all chats
+     * Close chats by chat IDs or close all chats
      * @param closeChatsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -2288,7 +2288,7 @@ public class TextMagicApi {
 
     /**
      * Delete chat messages by ID(s)
-     * Delete messages from chat by given messages ID(s).
+     * Delete messages from chat by given message IDs.
      * @param deleteChatMessagesBulkInputObject  (required)
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2299,7 +2299,7 @@ public class TextMagicApi {
 
     /**
      * Delete chat messages by ID(s)
-     * Delete messages from chat by given messages ID(s).
+     * Delete messages from chat by given message IDs.
      * @param deleteChatMessagesBulkInputObject  (required)
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
@@ -2312,7 +2312,7 @@ public class TextMagicApi {
 
     /**
      * Delete chat messages by ID(s) (asynchronously)
-     * Delete messages from chat by given messages ID(s).
+     * Delete messages from chat by given message IDs.
      * @param deleteChatMessagesBulkInputObject  (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -2409,7 +2409,7 @@ public class TextMagicApi {
 
     /**
      * Delete chats (bulk)
-     * Delete chats by given ID(s) or delete all chats.
+     * Delete chats by given IDs or delete all chats.
      * @param deleteChatsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -2419,7 +2419,7 @@ public class TextMagicApi {
 
     /**
      * Delete chats (bulk)
-     * Delete chats by given ID(s) or delete all chats.
+     * Delete chats by given IDs or delete all chats.
      * @param deleteChatsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2431,7 +2431,7 @@ public class TextMagicApi {
 
     /**
      * Delete chats (bulk) (asynchronously)
-     * Delete chats by given ID(s) or delete all chats.
+     * Delete chats by given IDs or delete all chats.
      * @param deleteChatsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -4336,7 +4336,7 @@ public class TextMagicApi {
 
     /**
      * Delete sessions (bulk)
-     * Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+     * Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
      * @param deleteMessageSessionsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -4346,7 +4346,7 @@ public class TextMagicApi {
 
     /**
      * Delete sessions (bulk)
-     * Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+     * Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
      * @param deleteMessageSessionsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -4358,7 +4358,7 @@ public class TextMagicApi {
 
     /**
      * Delete sessions (bulk) (asynchronously)
-     * Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+     * Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
      * @param deleteMessageSessionsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -5166,7 +5166,7 @@ public class TextMagicApi {
 
     /**
      * Delete templates (bulk)
-     * Delete template by given ID(s) or delete all templates.
+     * Delete templates by given IDs or delete all templates.
      * @param deleteTemplatesBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -5176,7 +5176,7 @@ public class TextMagicApi {
 
     /**
      * Delete templates (bulk)
-     * Delete template by given ID(s) or delete all templates.
+     * Delete templates by given IDs or delete all templates.
      * @param deleteTemplatesBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -5188,7 +5188,7 @@ public class TextMagicApi {
 
     /**
      * Delete templates (bulk) (asynchronously)
-     * Delete template by given ID(s) or delete all templates.
+     * Delete templates by given IDs or delete all templates.
      * @param deleteTemplatesBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -10207,8 +10207,8 @@ public class TextMagicApi {
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
-     * @param favoriteOnly Return only favorite lists (optional, default to 0)
-     * @param onlyMine Return only current user lists (optional, default to 0)
+     * @param favoriteOnly Return only favorited lists. (optional, default to 0)
+     * @param onlyMine Return only current user lists. (optional, default to 0)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -10283,8 +10283,8 @@ public class TextMagicApi {
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
-     * @param favoriteOnly Return only favorite lists (optional, default to 0)
-     * @param onlyMine Return only current user lists (optional, default to 0)
+     * @param favoriteOnly Return only favorited lists. (optional, default to 0)
+     * @param onlyMine Return only current user lists. (optional, default to 0)
      * @return GetListsPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -10300,8 +10300,8 @@ public class TextMagicApi {
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
-     * @param favoriteOnly Return only favorite lists (optional, default to 0)
-     * @param onlyMine Return only current user lists (optional, default to 0)
+     * @param favoriteOnly Return only favorited lists. (optional, default to 0)
+     * @param onlyMine Return only current user lists. (optional, default to 0)
      * @return ApiResponse&lt;GetListsPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -10318,8 +10318,8 @@ public class TextMagicApi {
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
-     * @param favoriteOnly Return only favorite lists (optional, default to 0)
-     * @param onlyMine Return only current user lists (optional, default to 0)
+     * @param favoriteOnly Return only favorited lists. (optional, default to 0)
+     * @param onlyMine Return only current user lists. (optional, default to 0)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -10923,7 +10923,7 @@ public class TextMagicApi {
     }
     /**
      * Build call for getMessageSession
-     * @param id a session ID (required)
+     * @param id Session ID. (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -10986,9 +10986,9 @@ public class TextMagicApi {
     }
 
     /**
-     * Get a session details
-     * Get a specific session’s details
-     * @param id a session ID (required)
+     * Get a session&#x60;s details
+     * Get a specific session’s details.
+     * @param id Session ID. (required)
      * @return MessageSession
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -10998,9 +10998,9 @@ public class TextMagicApi {
     }
 
     /**
-     * Get a session details
-     * Get a specific session’s details
-     * @param id a session ID (required)
+     * Get a session&#x60;s details
+     * Get a specific session’s details.
+     * @param id Session ID. (required)
      * @return ApiResponse&lt;MessageSession&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -11011,9 +11011,9 @@ public class TextMagicApi {
     }
 
     /**
-     * Get a session details (asynchronously)
-     * Get a specific session’s details
-     * @param id a session ID (required)
+     * Get a session&#x60;s details (asynchronously)
+     * Get a specific session’s details.
+     * @param id Session ID. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -11047,7 +11047,7 @@ public class TextMagicApi {
     /**
      * Build call for getMessageSessionStat
      * @param id  (required)
-     * @param includeDeleted Search also in deleted messages (optional, default to 0)
+     * @param includeDeleted Search also in deleted messages. (optional, default to 0)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -11112,10 +11112,10 @@ public class TextMagicApi {
     }
 
     /**
-     * Get a session statistics
+     * Get a session&#x60;s statistics
      * 
      * @param id  (required)
-     * @param includeDeleted Search also in deleted messages (optional, default to 0)
+     * @param includeDeleted Search also in deleted messages. (optional, default to 0)
      * @return GetMessageSessionStatResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -11125,10 +11125,10 @@ public class TextMagicApi {
     }
 
     /**
-     * Get a session statistics
+     * Get a session&#x60;s statistics
      * 
      * @param id  (required)
-     * @param includeDeleted Search also in deleted messages (optional, default to 0)
+     * @param includeDeleted Search also in deleted messages. (optional, default to 0)
      * @return ApiResponse&lt;GetMessageSessionStatResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -11139,10 +11139,10 @@ public class TextMagicApi {
     }
 
     /**
-     * Get a session statistics (asynchronously)
+     * Get a session&#x60;s statistics (asynchronously)
      * 
      * @param id  (required)
-     * @param includeDeleted Search also in deleted messages (optional, default to 0)
+     * @param includeDeleted Search also in deleted messages. (optional, default to 0)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -11178,8 +11178,8 @@ public class TextMagicApi {
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param statuses Find messages by status (optional)
-     * @param includeDeleted Search also in deleted messages (optional, default to 0)
+     * @param statuses Find messages by status. (optional)
+     * @param includeDeleted Search also in deleted messages. (optional, default to 0)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -11250,13 +11250,13 @@ public class TextMagicApi {
     }
 
     /**
-     * Get a session messages
-     * A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+     * Get a session&#x60;s messages
+     * A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param statuses Find messages by status (optional)
-     * @param includeDeleted Search also in deleted messages (optional, default to 0)
+     * @param statuses Find messages by status. (optional)
+     * @param includeDeleted Search also in deleted messages. (optional, default to 0)
      * @return GetMessagesBySessionIdPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -11266,13 +11266,13 @@ public class TextMagicApi {
     }
 
     /**
-     * Get a session messages
-     * A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+     * Get a session&#x60;s messages
+     * A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param statuses Find messages by status (optional)
-     * @param includeDeleted Search also in deleted messages (optional, default to 0)
+     * @param statuses Find messages by status. (optional)
+     * @param includeDeleted Search also in deleted messages. (optional, default to 0)
      * @return ApiResponse&lt;GetMessagesBySessionIdPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -11283,13 +11283,13 @@ public class TextMagicApi {
     }
 
     /**
-     * Get a session messages (asynchronously)
-     * A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+     * Get a session&#x60;s messages (asynchronously)
+     * A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param statuses Find messages by status (optional)
-     * @param includeDeleted Search also in deleted messages (optional, default to 0)
+     * @param statuses Find messages by status. (optional)
+     * @param includeDeleted Search also in deleted messages. (optional, default to 0)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -12904,7 +12904,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Get a template details
+     * Get a template&#x60;s details
      * Get a single template.
      * @param id  (required)
      * @return MessageTemplate
@@ -12916,7 +12916,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Get a template details
+     * Get a template&#x60;s details
      * Get a single template.
      * @param id  (required)
      * @return ApiResponse&lt;MessageTemplate&gt;
@@ -12929,7 +12929,7 @@ public class TextMagicApi {
     }
 
     /**
-     * Get a template details (asynchronously)
+     * Get a template&#x60;s details (asynchronously)
      * Get a single template.
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -13903,7 +13903,7 @@ public class TextMagicApi {
 
     /**
      * Mark chats as read (bulk)
-     * Mark several chats as read by chat ids or mark all chats as read
+     * Mark several chats as read by chat IDs or mark all chats as read
      * @param markChatsReadBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -13913,7 +13913,7 @@ public class TextMagicApi {
 
     /**
      * Mark chats as read (bulk)
-     * Mark several chats as read by chat ids or mark all chats as read
+     * Mark several chats as read by chat IDs or mark all chats as read
      * @param markChatsReadBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -13925,7 +13925,7 @@ public class TextMagicApi {
 
     /**
      * Mark chats as read (bulk) (asynchronously)
-     * Mark several chats as read by chat ids or mark all chats as read
+     * Mark several chats as read by chat IDs or mark all chats as read
      * @param markChatsReadBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -14021,7 +14021,7 @@ public class TextMagicApi {
 
     /**
      * Mark chats as unread (bulk)
-     * Mark several chats as UNread by chat ids or mark all chats as UNread
+     * Mark several chats as UNread by chat IDs or mark all chats as UNread
      * @param markChatsUnreadBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -14031,7 +14031,7 @@ public class TextMagicApi {
 
     /**
      * Mark chats as unread (bulk)
-     * Mark several chats as UNread by chat ids or mark all chats as UNread
+     * Mark several chats as UNread by chat IDs or mark all chats as UNread
      * @param markChatsUnreadBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14043,7 +14043,7 @@ public class TextMagicApi {
 
     /**
      * Mark chats as unread (bulk) (asynchronously)
-     * Mark several chats as UNread by chat ids or mark all chats as UNread
+     * Mark several chats as UNread by chat IDs or mark all chats as UNread
      * @param markChatsUnreadBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -14261,7 +14261,7 @@ public class TextMagicApi {
 
     /**
      * Mute chats (bulk)
-     * Mute several chats by chat ids or mute all chats
+     * Mute several chats by chat IDs or mute all chats
      * @param muteChatsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -14271,7 +14271,7 @@ public class TextMagicApi {
 
     /**
      * Mute chats (bulk)
-     * Mute several chats by chat ids or mute all chats
+     * Mute several chats by chat IDs or mute all chats
      * @param muteChatsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14283,7 +14283,7 @@ public class TextMagicApi {
 
     /**
      * Mute chats (bulk) (asynchronously)
-     * Mute several chats by chat ids or mute all chats
+     * Mute several chats by chat IDs or mute all chats
      * @param muteChatsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -14492,7 +14492,7 @@ public class TextMagicApi {
 
     /**
      * Reopen chats (bulk)
-     * Reopen chats by chat ids or reopen all chats
+     * Reopen chats by chat IDs or reopen all chats
      * @param reopenChatsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -14502,7 +14502,7 @@ public class TextMagicApi {
 
     /**
      * Reopen chats (bulk)
-     * Reopen chats by chat ids or reopen all chats
+     * Reopen chats by chat IDs or reopen all chats
      * @param reopenChatsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14514,7 +14514,7 @@ public class TextMagicApi {
 
     /**
      * Reopen chats (bulk) (asynchronously)
-     * Reopen chats by chat ids or reopen all chats
+     * Reopen chats by chat IDs or reopen all chats
      * @param reopenChatsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -16003,9 +16003,9 @@ public class TextMagicApi {
      * Build call for searchTemplates
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find template by ID(s) (optional)
-     * @param name Find template by name (optional)
-     * @param content Find template by content (optional)
+     * @param ids Find template by ID(s). (optional)
+     * @param name Find template by name. (optional)
+     * @param content Find template by content. (optional)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -16076,9 +16076,9 @@ public class TextMagicApi {
      * Find user templates by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find template by ID(s) (optional)
-     * @param name Find template by name (optional)
-     * @param content Find template by content (optional)
+     * @param ids Find template by ID(s). (optional)
+     * @param name Find template by name. (optional)
+     * @param content Find template by content. (optional)
      * @return SearchTemplatesPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -16092,9 +16092,9 @@ public class TextMagicApi {
      * Find user templates by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find template by ID(s) (optional)
-     * @param name Find template by name (optional)
-     * @param content Find template by content (optional)
+     * @param ids Find template by ID(s). (optional)
+     * @param name Find template by name. (optional)
+     * @param content Find template by content. (optional)
      * @return ApiResponse&lt;SearchTemplatesPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -16109,9 +16109,9 @@ public class TextMagicApi {
      * Find user templates by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find template by ID(s) (optional)
-     * @param name Find template by name (optional)
-     * @param content Find template by content (optional)
+     * @param ids Find template by ID(s). (optional)
+     * @param name Find template by name. (optional)
+     * @param content Find template by content. (optional)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -16809,7 +16809,7 @@ public class TextMagicApi {
 
     /**
      * Unmute chats (bulk)
-     * Unmute several chats by chat ids or unmute all chats
+     * Unmute several chats by chat IDs or unmute all chats
      * @param unmuteChatsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -16819,7 +16819,7 @@ public class TextMagicApi {
 
     /**
      * Unmute chats (bulk)
-     * Unmute several chats by chat ids or unmute all chats
+     * Unmute several chats by chat IDs or unmute all chats
      * @param unmuteChatsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16831,7 +16831,7 @@ public class TextMagicApi {
 
     /**
      * Unmute chats (bulk) (asynchronously)
-     * Unmute several chats by chat ids or unmute all chats
+     * Unmute several chats by chat IDs or unmute all chats
      * @param unmuteChatsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call

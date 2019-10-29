@@ -36,7 +36,7 @@ public class DeleteChatsBulkInputObject {
   private Boolean all = null;
 
   /**
-   * Default is empty string. If set then all entities with specified status will be affected.
+   * Default is empty string. If set, all entities with specified status will be affected.
    */
   @JsonAdapter(StatusEnum.Adapter.class)
   public enum StatusEnum {
@@ -129,10 +129,10 @@ public class DeleteChatsBulkInputObject {
   }
 
    /**
-   * Default is empty string. If set then all entities with specified status will be affected.
+   * Default is empty string. If set, all entities with specified status will be affected.
    * @return status
   **/
-  @ApiModelProperty(example = "a", value = "Default is empty string. If set then all entities with specified status will be affected.")
+  @ApiModelProperty(example = "a", value = "Default is empty string. If set, all entities with specified status will be affected.")
   public StatusEnum getStatus() {
     return status;
   }

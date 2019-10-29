@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**href** | **String** | URI of a list avatar. | 
+**href** | **String** | The URI of a list avatar. | 
 
 
 

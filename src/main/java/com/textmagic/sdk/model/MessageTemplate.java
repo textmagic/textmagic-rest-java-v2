@@ -84,10 +84,10 @@ public class MessageTemplate {
   }
 
    /**
-   * Template text. May contain the tags. See [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).
+   * Template text. May contain tags inside braces. See the [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).
    * @return content
   **/
-  @ApiModelProperty(example = "Hello {First name}!", required = true, value = "Template text. May contain the tags. See [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).")
+  @ApiModelProperty(example = "Hello {First name}!", required = true, value = "Template text. May contain tags inside braces. See the [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).")
   public String getContent() {
     return content;
   }
@@ -102,10 +102,10 @@ public class MessageTemplate {
   }
 
    /**
-   * Time when template was last modified.
+   * Time when the template was last modified.
    * @return lastModified
   **/
-  @ApiModelProperty(example = "2014-09-11T08:12:01+0000", required = true, value = "Time when template was last modified.")
+  @ApiModelProperty(example = "2014-09-11T08:12:01+0000", required = true, value = "Time when the template was last modified.")
   public OffsetDateTime getLastModified() {
     return lastModified;
   }

@@ -261,7 +261,7 @@ public class TextMagicApiTest {
     /**
      * Close chats (bulk)
      *
-     * Close chats by chat ids or close all chats
+     * Close chats by chat IDs or close all chats
      *
      * @throws ApiException
      *          if the Api call fails
@@ -434,7 +434,7 @@ public class TextMagicApiTest {
     /**
      * Delete chat messages by ID(s)
      *
-     * Delete messages from chat by given messages ID(s).
+     * Delete messages from chat by given message IDs.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -451,7 +451,7 @@ public class TextMagicApiTest {
     /**
      * Delete chats (bulk)
      *
-     * Delete chats by given ID(s) or delete all chats.
+     * Delete chats by given IDs or delete all chats.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -710,7 +710,7 @@ public class TextMagicApiTest {
     /**
      * Delete sessions (bulk)
      *
-     * Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+     * Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -822,7 +822,7 @@ public class TextMagicApiTest {
     /**
      * Delete templates (bulk)
      *
-     * Delete template by given ID(s) or delete all templates.
+     * Delete templates by given IDs or delete all templates.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -1607,9 +1607,9 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Get a session details
+     * Get a session&#x60;s details
      *
-     * Get a specific session’s details
+     * Get a specific session’s details.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -1623,7 +1623,7 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Get a session statistics
+     * Get a session&#x60;s statistics
      *
      * 
      *
@@ -1640,9 +1640,9 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Get a session messages
+     * Get a session&#x60;s messages
      *
-     * A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+     * A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -1864,7 +1864,7 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Get a template details
+     * Get a template&#x60;s details
      *
      * Get a single template.
      *
@@ -1999,7 +1999,7 @@ public class TextMagicApiTest {
     /**
      * Mark chats as read (bulk)
      *
-     * Mark several chats as read by chat ids or mark all chats as read
+     * Mark several chats as read by chat IDs or mark all chats as read
      *
      * @throws ApiException
      *          if the Api call fails
@@ -2015,7 +2015,7 @@ public class TextMagicApiTest {
     /**
      * Mark chats as unread (bulk)
      *
-     * Mark several chats as UNread by chat ids or mark all chats as UNread
+     * Mark several chats as UNread by chat IDs or mark all chats as UNread
      *
      * @throws ApiException
      *          if the Api call fails
@@ -2047,7 +2047,7 @@ public class TextMagicApiTest {
     /**
      * Mute chats (bulk)
      *
-     * Mute several chats by chat ids or mute all chats
+     * Mute several chats by chat IDs or mute all chats
      *
      * @throws ApiException
      *          if the Api call fails
@@ -2078,7 +2078,7 @@ public class TextMagicApiTest {
     /**
      * Reopen chats (bulk)
      *
-     * Reopen chats by chat ids or reopen all chats
+     * Reopen chats by chat IDs or reopen all chats
      *
      * @throws ApiException
      *          if the Api call fails
@@ -2397,7 +2397,7 @@ public class TextMagicApiTest {
     /**
      * Unmute chats (bulk)
      *
-     * Unmute several chats by chat ids or unmute all chats
+     * Unmute several chats by chat IDs or unmute all chats
      *
      * @throws ApiException
      *          if the Api call fails

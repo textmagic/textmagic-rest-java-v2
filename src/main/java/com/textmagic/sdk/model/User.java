@@ -38,7 +38,7 @@ public class User {
   private Integer id = null;
 
   /**
-   * User&#39;s prefered format of time display * *12h* - AM/PM format * *24h* - 24 hour clock format 
+   * User&#39;s preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format. 
    */
   @JsonAdapter(DisplayTimeFormatEnum.Adapter.class)
   public enum DisplayTimeFormatEnum {
@@ -100,7 +100,7 @@ public class User {
   private String email = null;
 
   /**
-   * Current account status: * **A** for Active * **T** for Trial. 
+   * Current account status: * **A** for Active; * **T** for Trial. 
    */
   @JsonAdapter(StatusEnum.Adapter.class)
   public enum StatusEnum {
@@ -168,7 +168,7 @@ public class User {
   private Timezone timezone = null;
 
   /**
-   * Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User 
+   * Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User 
    */
   @JsonAdapter(SubaccountTypeEnum.Adapter.class)
   public enum SubaccountTypeEnum {
@@ -252,10 +252,10 @@ public class User {
   }
 
    /**
-   * User&#39;s prefered format of time display * *12h* - AM/PM format * *24h* - 24 hour clock format 
+   * User&#39;s preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format. 
    * @return displayTimeFormat
   **/
-  @ApiModelProperty(example = "24h", value = "User's prefered format of time display * *12h* - AM/PM format * *24h* - 24 hour clock format ")
+  @ApiModelProperty(example = "24h", value = "User's preferred format of time display: * *12h* – AM/PM format; * *24h* – 24 hour clock format. ")
   public DisplayTimeFormatEnum getDisplayTimeFormat() {
     return displayTimeFormat;
   }
@@ -342,10 +342,10 @@ public class User {
   }
 
    /**
-   * Current account status: * **A** for Active * **T** for Trial. 
+   * Current account status: * **A** for Active; * **T** for Trial. 
    * @return status
   **/
-  @ApiModelProperty(example = "A", required = true, value = "Current account status: * **A** for Active * **T** for Trial. ")
+  @ApiModelProperty(example = "A", required = true, value = "Current account status: * **A** for Active; * **T** for Trial. ")
   public StatusEnum getStatus() {
     return status;
   }
@@ -378,10 +378,10 @@ public class User {
   }
 
    /**
-   * User phone number
+   * User&#x60;s phone number.
    * @return phone
   **/
-  @ApiModelProperty(example = "447860021130", required = true, value = "User phone number")
+  @ApiModelProperty(example = "447860021130", required = true, value = "User`s phone number.")
   public String getPhone() {
     return phone;
   }
@@ -468,10 +468,10 @@ public class User {
   }
 
    /**
-   * Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User 
+   * Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User 
    * @return subaccountType
   **/
-  @ApiModelProperty(example = "P", required = true, value = "Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User ")
+  @ApiModelProperty(example = "P", required = true, value = "Type of account: * **P** for Parent User; * **A** for Administrator Sub-Account; * **U** for Regular User ")
   public SubaccountTypeEnum getSubaccountType() {
     return subaccountType;
   }
@@ -486,10 +486,10 @@ public class User {
   }
 
    /**
-   * Is account has confirmed Email.
+   * Does the account have a confirmed email?
    * @return emailAccepted
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Is account has confirmed Email.")
+  @ApiModelProperty(example = "true", required = true, value = "Does the account have a confirmed email?")
   public Boolean isEmailAccepted() {
     return emailAccepted;
   }
@@ -504,10 +504,10 @@ public class User {
   }
 
    /**
-   * Is account has confirmed Phone number.
+   * Does the account have a confirmed phone number?
    * @return phoneAccepted
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Is account has confirmed Phone number.")
+  @ApiModelProperty(example = "true", required = true, value = "Does the account have a confirmed phone number?")
   public Boolean isPhoneAccepted() {
     return phoneAccepted;
   }

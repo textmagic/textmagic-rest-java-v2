@@ -89,9 +89,9 @@ Method | HTTP request | Description
 [**getListsOfContact**](TextMagicApi.md#getListsOfContact) | **GET** /api/v2/contacts/{id}/lists | Get contact&#39;s lists
 [**getMessagePreview**](TextMagicApi.md#getMessagePreview) | **GET** /api/v2/messages/preview | Preview message
 [**getMessagePrice**](TextMagicApi.md#getMessagePrice) | **GET** /api/v2/messages/price/normalized | Check message price
-[**getMessageSession**](TextMagicApi.md#getMessageSession) | **GET** /api/v2/sessions/{id} | Get a session details
-[**getMessageSessionStat**](TextMagicApi.md#getMessageSessionStat) | **GET** /api/v2/sessions/{id}/stat | Get a session statistics
-[**getMessagesBySessionId**](TextMagicApi.md#getMessagesBySessionId) | **GET** /api/v2/sessions/{id}/messages | Get a session messages
+[**getMessageSession**](TextMagicApi.md#getMessageSession) | **GET** /api/v2/sessions/{id} | Get a session&#x60;s details
+[**getMessageSessionStat**](TextMagicApi.md#getMessageSessionStat) | **GET** /api/v2/sessions/{id}/stat | Get a session&#x60;s statistics
+[**getMessagesBySessionId**](TextMagicApi.md#getMessagesBySessionId) | **GET** /api/v2/sessions/{id}/messages | Get a session&#x60;s messages
 [**getMessagingCounters**](TextMagicApi.md#getMessagingCounters) | **GET** /api/v2/stats/messaging/data | Get sent/received messages counters values
 [**getMessagingStat**](TextMagicApi.md#getMessagingStat) | **GET** /api/v2/stats/messaging | Get messaging statistics
 [**getOutboundMessage**](TextMagicApi.md#getOutboundMessage) | **GET** /api/v2/messages/{id} | Get a single message
@@ -104,7 +104,7 @@ Method | HTTP request | Description
 [**getSubaccount**](TextMagicApi.md#getSubaccount) | **GET** /api/v2/subaccounts/{id} | Get sub-account information
 [**getSubaccounts**](TextMagicApi.md#getSubaccounts) | **GET** /api/v2/subaccounts | Get sub-accounts list
 [**getSubaccountsWithTokens**](TextMagicApi.md#getSubaccountsWithTokens) | **POST** /api/v2/subaccounts/tokens/list | Get all sub-accounts with their REST API tokens associated with app name
-[**getTemplate**](TextMagicApi.md#getTemplate) | **GET** /api/v2/templates/{id} | Get a template details
+[**getTemplate**](TextMagicApi.md#getTemplate) | **GET** /api/v2/templates/{id} | Get a template&#x60;s details
 [**getTimezones**](TextMagicApi.md#getTimezones) | **GET** /api/v2/timezones | Get timezones
 [**getUnreadMessagesTotal**](TextMagicApi.md#getUnreadMessagesTotal) | **GET** /api/v2/chats/unread/count | Get unread messages number
 [**getUnsubscribedContact**](TextMagicApi.md#getUnsubscribedContact) | **GET** /api/v2/unsubscribers/{id} | Get the details of a specific unsubscribed contact
@@ -485,7 +485,7 @@ Name | Type | Description  | Notes
 
 Close chats (bulk)
 
-Close chats by chat ids or close all chats
+Close chats by chat IDs or close all chats
 
 ### Example
 ```java
@@ -1059,7 +1059,7 @@ null (empty response body)
 
 Delete chat messages by ID(s)
 
-Delete messages from chat by given messages ID(s).
+Delete messages from chat by given message IDs.
 
 ### Example
 ```java
@@ -1114,7 +1114,7 @@ null (empty response body)
 
 Delete chats (bulk)
 
-Delete chats by given ID(s) or delete all chats.
+Delete chats by given IDs or delete all chats.
 
 ### Example
 ```java
@@ -1968,7 +1968,7 @@ null (empty response body)
 
 Delete sessions (bulk)
 
-Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
 
 ### Example
 ```java
@@ -2339,7 +2339,7 @@ null (empty response body)
 
 Delete templates (bulk)
 
-Delete template by given ID(s) or delete all templates.
+Delete templates by given IDs or delete all templates.
 
 ### Example
 ```java
@@ -4595,8 +4595,8 @@ Integer page = 1; // Integer | The current fetched page.
 Integer limit = 10; // Integer | The number of results per page.
 String orderBy = "id"; // String | Order results by some field. Default is id.
 String direction = "desc"; // String | Order direction. Default is desc.
-Integer favoriteOnly = 0; // Integer | Return only favorite lists
-Integer onlyMine = 0; // Integer | Return only current user lists
+Integer favoriteOnly = 0; // Integer | Return only favorited lists.
+Integer onlyMine = 0; // Integer | Return only current user lists.
 try {
     GetListsPaginatedResponse result = apiInstance.getLists(page, limit, orderBy, direction, favoriteOnly, onlyMine);
     System.out.println(result);
@@ -4614,8 +4614,8 @@ Name | Type | Description  | Notes
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
  **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, firstName, lastName]
  **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
- **favoriteOnly** | **Integer**| Return only favorite lists | [optional] [default to 0]
- **onlyMine** | **Integer**| Return only current user lists | [optional] [default to 0]
+ **favoriteOnly** | **Integer**| Return only favorited lists. | [optional] [default to 0]
+ **onlyMine** | **Integer**| Return only current user lists. | [optional] [default to 0]
 
 ### Return type
 
@@ -4866,9 +4866,9 @@ Name | Type | Description  | Notes
 # **getMessageSession**
 > MessageSession getMessageSession(id)
 
-Get a session details
+Get a session&#x60;s details
 
-Get a specific session’s details
+Get a specific session’s details.
 
 ### Example
 ```java
@@ -4887,7 +4887,7 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-Integer id = 1; // Integer | a session ID
+Integer id = 1; // Integer | Session ID.
 try {
     MessageSession result = apiInstance.getMessageSession(id);
     System.out.println(result);
@@ -4901,7 +4901,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Integer**| a session ID |
+ **id** | **Integer**| Session ID. |
 
 ### Return type
 
@@ -4920,7 +4920,7 @@ Name | Type | Description  | Notes
 # **getMessageSessionStat**
 > GetMessageSessionStatResponse getMessageSessionStat(id, includeDeleted)
 
-Get a session statistics
+Get a session&#x60;s statistics
 
 
 
@@ -4942,7 +4942,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
 Integer id = 1; // Integer | 
-Integer includeDeleted = 0; // Integer | Search also in deleted messages
+Integer includeDeleted = 0; // Integer | Search also in deleted messages.
 try {
     GetMessageSessionStatResponse result = apiInstance.getMessageSessionStat(id, includeDeleted);
     System.out.println(result);
@@ -4957,7 +4957,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**|  |
- **includeDeleted** | **Integer**| Search also in deleted messages | [optional] [default to 0]
+ **includeDeleted** | **Integer**| Search also in deleted messages. | [optional] [default to 0]
 
 ### Return type
 
@@ -4976,9 +4976,9 @@ Name | Type | Description  | Notes
 # **getMessagesBySessionId**
 > GetMessagesBySessionIdPaginatedResponse getMessagesBySessionId(id, page, limit, statuses, includeDeleted)
 
-Get a session messages
+Get a session&#x60;s messages
 
-A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
 
 ### Example
 ```java
@@ -5000,8 +5000,8 @@ TextMagicApi apiInstance = new TextMagicApi();
 Integer id = 1; // Integer | 
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-String statuses = "statuses_example"; // String | Find messages by status
-Integer includeDeleted = 0; // Integer | Search also in deleted messages
+String statuses = "statuses_example"; // String | Find messages by status.
+Integer includeDeleted = 0; // Integer | Search also in deleted messages.
 try {
     GetMessagesBySessionIdPaginatedResponse result = apiInstance.getMessagesBySessionId(id, page, limit, statuses, includeDeleted);
     System.out.println(result);
@@ -5018,8 +5018,8 @@ Name | Type | Description  | Notes
  **id** | **Integer**|  |
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **statuses** | **String**| Find messages by status | [optional] [enum: q, s, e, r, a, d, b, f, u, j, i, p, h]
- **includeDeleted** | **Integer**| Search also in deleted messages | [optional] [default to 0]
+ **statuses** | **String**| Find messages by status. | [optional] [enum: q, s, e, r, a, d, b, f, u, j, i, p, h]
+ **includeDeleted** | **Integer**| Search also in deleted messages. | [optional] [default to 0]
 
 ### Return type
 
@@ -5708,7 +5708,7 @@ Name | Type | Description  | Notes
 # **getTemplate**
 > MessageTemplate getTemplate(id)
 
-Get a template details
+Get a template&#x60;s details
 
 Get a single template.
 
@@ -6149,7 +6149,7 @@ null (empty response body)
 
 Mark chats as read (bulk)
 
-Mark several chats as read by chat ids or mark all chats as read
+Mark several chats as read by chat IDs or mark all chats as read
 
 ### Example
 ```java
@@ -6202,7 +6202,7 @@ null (empty response body)
 
 Mark chats as unread (bulk)
 
-Mark several chats as UNread by chat ids or mark all chats as UNread
+Mark several chats as UNread by chat IDs or mark all chats as UNread
 
 ### Example
 ```java
@@ -6309,7 +6309,7 @@ Name | Type | Description  | Notes
 
 Mute chats (bulk)
 
-Mute several chats by chat ids or mute all chats
+Mute several chats by chat IDs or mute all chats
 
 ### Example
 ```java
@@ -6412,7 +6412,7 @@ This endpoint does not need any parameter.
 
 Reopen chats (bulk)
 
-Reopen chats by chat ids or reopen all chats
+Reopen chats by chat IDs or reopen all chats
 
 ### Example
 ```java
@@ -7112,9 +7112,9 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-String ids = "ids_example"; // String | Find template by ID(s)
-String name = "name_example"; // String | Find template by name
-String content = "content_example"; // String | Find template by content
+String ids = "ids_example"; // String | Find template by ID(s).
+String name = "name_example"; // String | Find template by name.
+String content = "content_example"; // String | Find template by content.
 try {
     SearchTemplatesPaginatedResponse result = apiInstance.searchTemplates(page, limit, ids, name, content);
     System.out.println(result);
@@ -7130,9 +7130,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **ids** | **String**| Find template by ID(s) | [optional]
- **name** | **String**| Find template by name | [optional]
- **content** | **String**| Find template by content | [optional]
+ **ids** | **String**| Find template by ID(s). | [optional]
+ **name** | **String**| Find template by name. | [optional]
+ **content** | **String**| Find template by content. | [optional]
 
 ### Return type
 
@@ -7421,7 +7421,7 @@ null (empty response body)
 
 Unmute chats (bulk)
 
-Unmute several chats by chat ids or unmute all chats
+Unmute several chats by chat IDs or unmute all chats
 
 ### Example
 ```java

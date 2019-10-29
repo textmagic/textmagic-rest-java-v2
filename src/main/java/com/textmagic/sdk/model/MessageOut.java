@@ -201,10 +201,10 @@ public class MessageOut {
   }
 
    /**
-   * Recipient phone number.
+   * Recipient&#x60;s phone number.
    * @return receiver
   **/
-  @ApiModelProperty(example = "447860021130", value = "Recipient phone number.")
+  @ApiModelProperty(example = "447860021130", value = "Recipient`s phone number.")
   public String getReceiver() {
     return receiver;
   }
@@ -273,10 +273,10 @@ public class MessageOut {
   }
 
    /**
-   * Message Session ID of a Message.
+   * Message Session ID of a message.
    * @return sessionId
   **/
-  @ApiModelProperty(example = "3122", required = true, value = "Message Session ID of a Message.")
+  @ApiModelProperty(example = "3122", required = true, value = "Message Session ID of a message.")
   public Integer getSessionId() {
     return sessionId;
   }
@@ -435,10 +435,10 @@ public class MessageOut {
   }
 
    /**
-   * Receipent phone number.
+   * Receipent&#x60;s phone number.
    * @return phone
   **/
-  @ApiModelProperty(example = "447624800500", value = "Receipent phone number.")
+  @ApiModelProperty(example = "447624800500", value = "Receipent`s phone number.")
   public String getPhone() {
     return phone;
   }
@@ -489,10 +489,10 @@ public class MessageOut {
   }
 
    /**
-   * The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address.
+   * The user email which this message came from. For Email2SMS and Distribution Lists the messages, it is an original email address - in other cases, it is an account email address.
    * @return fromEmail
   **/
-  @ApiModelProperty(example = "test@email.com", value = "The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address.")
+  @ApiModelProperty(example = "test@email.com", value = "The user email which this message came from. For Email2SMS and Distribution Lists the messages, it is an original email address - in other cases, it is an account email address.")
   public String getFromEmail() {
     return fromEmail;
   }

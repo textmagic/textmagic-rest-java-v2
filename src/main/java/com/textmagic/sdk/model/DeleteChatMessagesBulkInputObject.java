@@ -47,10 +47,10 @@ public class DeleteChatMessagesBulkInputObject {
   }
 
    /**
-   * Inbound messages ID(s) to delete. Require when \&quot;all\&quot; equal to 0 (false).
+   * Inbound message IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false).
    * @return inboundIds
   **/
-  @ApiModelProperty(example = "1,2,3,4", value = "Inbound messages ID(s) to delete. Require when \"all\" equal to 0 (false).")
+  @ApiModelProperty(example = "1,2,3,4", value = "Inbound message IDs to delete. Require when \"all\" is equal to 0 (false).")
   public String getInboundIds() {
     return inboundIds;
   }
@@ -65,10 +65,10 @@ public class DeleteChatMessagesBulkInputObject {
   }
 
    /**
-   * Sent messages ID(s) to delete. Require when \&quot;all\&quot; equal to 0 (false).
+   * Sent message IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false).
    * @return sentIds
   **/
-  @ApiModelProperty(example = "1,2,3,4", value = "Sent messages ID(s) to delete. Require when \"all\" equal to 0 (false).")
+  @ApiModelProperty(example = "1,2,3,4", value = "Sent message IDs to delete. Require when \"all\" is equal to 0 (false).")
   public String getSentIds() {
     return sentIds;
   }
@@ -83,10 +83,10 @@ public class DeleteChatMessagesBulkInputObject {
   }
 
    /**
-   * Calls ID(s) to delete. Require when \&quot;all\&quot; equal to 0 (false).
+   * Calls IDs to delete. Require when \&quot;all\&quot; is equal to 0 (false).
    * @return callsIds
   **/
-  @ApiModelProperty(example = "1,2,3,4", value = "Calls ID(s) to delete. Require when \"all\" equal to 0 (false).")
+  @ApiModelProperty(example = "1,2,3,4", value = "Calls IDs to delete. Require when \"all\" is equal to 0 (false).")
   public String getCallsIds() {
     return callsIds;
   }
@@ -101,10 +101,10 @@ public class DeleteChatMessagesBulkInputObject {
   }
 
    /**
-   * Default is 0 (false). If set to 1 all the entities will be removed.
+   * Default is 0 (false). If set to 1, all entities will be removed.
    * @return all
   **/
-  @ApiModelProperty(example = "false", value = "Default is 0 (false). If set to 1 all the entities will be removed.")
+  @ApiModelProperty(example = "false", value = "Default is 0 (false). If set to 1, all entities will be removed.")
   public Boolean isAll() {
     return all;
   }
