@@ -60,10 +60,10 @@ public class NotFoundResponse {
   }
 
    /**
-   * Brief error message. You could display this message to your user or save it in a log.
+   * A Brief error message. You could display this message to your user or save it in a log.
    * @return message
   **/
-  @ApiModelProperty(example = "Resource does not exist.", value = "Brief error message. You could display this message to your user or save it in a log.")
+  @ApiModelProperty(example = "Resource does not exist.", value = "A Brief error message. You could display this message to your user or save it in a log.")
   public String getMessage() {
     return message;
   }

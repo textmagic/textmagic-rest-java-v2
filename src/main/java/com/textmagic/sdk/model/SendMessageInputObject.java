@@ -320,10 +320,10 @@ public class SendMessageInputObject {
   }
 
    /**
-   * Should sending method try to create new Chat(if not exist) with specified recipients.
+   * Should sending method try to create new Chat (if not exist) with specified recipients?
    * @return createChat
   **/
-  @ApiModelProperty(example = "false", value = "Should sending method try to create new Chat(if not exist) with specified recipients.")
+  @ApiModelProperty(example = "false", value = "Should sending method try to create new Chat (if not exist) with specified recipients?")
   public Boolean isCreateChat() {
     return createChat;
   }
@@ -338,10 +338,10 @@ public class SendMessageInputObject {
   }
 
    /**
-   * Send Text to Speech message.
+   * Send a Text to Speech message.
    * @return tts
   **/
-  @ApiModelProperty(example = "false", value = "Send Text to Speech message.")
+  @ApiModelProperty(example = "false", value = "Send a Text to Speech message.")
   public Boolean isTts() {
     return tts;
   }
@@ -356,10 +356,10 @@ public class SendMessageInputObject {
   }
 
    /**
-   * Treat phone numbers passed in \\&#39;phones\\&#39; field as local.
+   * Treat phone numbers passed in the \\&#39;phones\\&#39; field as local.
    * @return local
   **/
-  @ApiModelProperty(example = "false", value = "Treat phone numbers passed in \\'phones\\' field as local.")
+  @ApiModelProperty(example = "false", value = "Treat phone numbers passed in the \\'phones\\' field as local.")
   public Boolean isLocal() {
     return local;
   }
@@ -374,10 +374,10 @@ public class SendMessageInputObject {
   }
 
    /**
-   * 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country.
+   * The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country.
    * @return localCountry
   **/
-  @ApiModelProperty(example = "US", value = "2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country.")
+  @ApiModelProperty(example = "US", value = "The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.")
   public String getLocalCountry() {
     return localCountry;
   }

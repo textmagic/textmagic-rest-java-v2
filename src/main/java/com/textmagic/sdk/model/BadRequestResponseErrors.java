@@ -52,10 +52,10 @@ public class BadRequestResponseErrors {
   }
 
    /**
-   * Array of messages with errors related to the entire request. For example, you did not specify either the **text** or **templateId** when [sending the message](http://docs.textmagictesting.com/#tag/Outbound-Messages). 
+   * Array of messages with errors related to the entire request. For example, you did not specify either the **text** or the **templateId** when [sending the message](http://docs.textmagictesting.com/#tag/Outbound-Messages). 
    * @return common
   **/
-  @ApiModelProperty(example = "[\"Common error message 1\",\"Common error message 2\"]", value = "Array of messages with errors related to the entire request. For example, you did not specify either the **text** or **templateId** when [sending the message](http://docs.textmagictesting.com/#tag/Outbound-Messages). ")
+  @ApiModelProperty(example = "[\"Common error message 1\",\"Common error message 2\"]", value = "Array of messages with errors related to the entire request. For example, you did not specify either the **text** or the **templateId** when [sending the message](http://docs.textmagictesting.com/#tag/Outbound-Messages). ")
   public List<String> getCommon() {
     return common;
   }
@@ -70,10 +70,10 @@ public class BadRequestResponseErrors {
   }
 
    /**
-   * Associative array. The keys are the POST/PUT parameters names and the values are arrays with error messages for these parameters. 
+   * Associative array. The keys are the POST/PUT parameter names and the values are arrays with error messages for these parameters. 
    * @return fields
   **/
-  @ApiModelProperty(example = "{\"fieldName1\":[\"Error message 1\",\"Error message 2\"],\"fieldName2\":[\"Error message 3\",\"Error message 4\"]}", value = "Associative array. The keys are the POST/PUT parameters names and the values are arrays with error messages for these parameters. ")
+  @ApiModelProperty(example = "{\"fieldName1\":[\"Error message 1\",\"Error message 2\"],\"fieldName2\":[\"Error message 3\",\"Error message 4\"]}", value = "Associative array. The keys are the POST/PUT parameter names and the values are arrays with error messages for these parameters. ")
   public Object getFields() {
     return fields;
   }

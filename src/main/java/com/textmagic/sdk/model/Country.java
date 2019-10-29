@@ -41,10 +41,10 @@ public class Country {
   }
 
    /**
-   * Two-letter ISO country ID.
+   * The 2-letter ISO country ID.
    * @return id
   **/
-  @ApiModelProperty(example = "US", required = true, value = "Two-letter ISO country ID.")
+  @ApiModelProperty(example = "US", required = true, value = "The 2-letter ISO country ID.")
   public String getId() {
     return id;
   }

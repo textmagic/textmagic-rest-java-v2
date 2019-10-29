@@ -80,10 +80,10 @@ public class MessagePriceItem {
   }
 
    /**
-   * Two-letter ISO country code of the recipient phone number.
+   * The 2-letter ISO country code of the recipient phone number.
    * @return country
   **/
-  @ApiModelProperty(example = "UK", required = true, value = "Two-letter ISO country code of the recipient phone number.")
+  @ApiModelProperty(example = "UK", required = true, value = "The 2-letter ISO country code of the recipient phone number.")
   public String getCountry() {
     return country;
   }

@@ -57,10 +57,10 @@ public class GetMessagePriceResponseCountriesItem {
   }
 
    /**
-   * Two-letter ISO country code
+   * The 2-letter ISO country code.
    * @return country
   **/
-  @ApiModelProperty(example = "US", required = true, value = "Two-letter ISO country code")
+  @ApiModelProperty(example = "US", required = true, value = "The 2-letter ISO country code.")
   public String getCountry() {
     return country;
   }
@@ -75,10 +75,10 @@ public class GetMessagePriceResponseCountriesItem {
   }
 
    /**
-   * Country name
+   * Country name.
    * @return countryName
   **/
-  @ApiModelProperty(example = "United State", required = true, value = "Country name")
+  @ApiModelProperty(example = "United State", required = true, value = "Country name.")
   public String getCountryName() {
     return countryName;
   }
@@ -93,10 +93,10 @@ public class GetMessagePriceResponseCountriesItem {
   }
 
    /**
-   * Is allow to use dedicated number
+   * Is allowed to use a dedicated number?
    * @return allowDedicated
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Is allow to use dedicated number")
+  @ApiModelProperty(example = "true", required = true, value = "Is allowed to use a dedicated number?")
   public Boolean isAllowDedicated() {
     return allowDedicated;
   }
@@ -111,10 +111,10 @@ public class GetMessagePriceResponseCountriesItem {
   }
 
    /**
-   * Parts count to send
+   * Parts count to send.
    * @return count
   **/
-  @ApiModelProperty(example = "1.0", required = true, value = "Parts count to send")
+  @ApiModelProperty(example = "1.0", required = true, value = "Parts count to send.")
   public BigDecimal getCount() {
     return count;
   }
@@ -129,10 +129,10 @@ public class GetMessagePriceResponseCountriesItem {
   }
 
    /**
-   * Maximum parts to send
+   * Maximum parts to send.
    * @return max
   **/
-  @ApiModelProperty(example = "6.0", required = true, value = "Maximum parts to send")
+  @ApiModelProperty(example = "6.0", required = true, value = "Maximum parts to send.")
   public BigDecimal getMax() {
     return max;
   }
@@ -147,10 +147,10 @@ public class GetMessagePriceResponseCountriesItem {
   }
 
    /**
-   * Total price to send
+   * Total price to send.
    * @return sum
   **/
-  @ApiModelProperty(example = "1", required = true, value = "Total price to send")
+  @ApiModelProperty(example = "1", required = true, value = "Total price to send.")
   public String getSum() {
     return sum;
   }
@@ -165,10 +165,10 @@ public class GetMessagePriceResponseCountriesItem {
   }
 
    /**
-   * Is this landline number?
+   * Is this a landline number?
    * @return landline
   **/
-  @ApiModelProperty(example = "0.0", required = true, value = "Is this landline number?")
+  @ApiModelProperty(example = "0.0", required = true, value = "Is this a landline number?")
   public BigDecimal getLandline() {
     return landline;
   }

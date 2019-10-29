@@ -327,10 +327,10 @@ public class MessageOut {
   }
 
    /**
-   * Indicates that message has been deleted.
+   * Indicates that the message has been deleted.
    * @return deleted
   **/
-  @ApiModelProperty(example = "false", value = "Indicates that message has been deleted.")
+  @ApiModelProperty(example = "false", value = "Indicates that the message has been deleted.")
   public Boolean isDeleted() {
     return deleted;
   }
@@ -345,10 +345,10 @@ public class MessageOut {
   }
 
    /**
-   * Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS 
+   * Message charset. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS. 
    * @return charset
   **/
-  @ApiModelProperty(example = "ISO-8859-1", required = true, value = "Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS ")
+  @ApiModelProperty(example = "ISO-8859-1", required = true, value = "Message charset. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS. ")
   public String getCharset() {
     return charset;
   }
@@ -363,10 +363,10 @@ public class MessageOut {
   }
 
    /**
-   * Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages 
+   * Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages. 
    * @return charsetLabel
   **/
-  @ApiModelProperty(example = "ISO-8859-1", required = true, value = "Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages ")
+  @ApiModelProperty(example = "ISO-8859-1", required = true, value = "Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages. ")
   public String getCharsetLabel() {
     return charsetLabel;
   }
@@ -381,10 +381,10 @@ public class MessageOut {
   }
 
    /**
-   * Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted phone number instead of contact ID). 
+   * Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID). 
    * @return firstName
   **/
-  @ApiModelProperty(example = "John", required = true, value = "Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted phone number instead of contact ID). ")
+  @ApiModelProperty(example = "John", required = true, value = "Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID). ")
   public String getFirstName() {
     return firstName;
   }
@@ -417,10 +417,10 @@ public class MessageOut {
   }
 
    /**
-   * Two-letter ISO country code of the recipient phone number. 
+   * The 2-letter ISO country code of the recipient&#39;s phone number. 
    * @return country
   **/
-  @ApiModelProperty(example = "US", required = true, value = "Two-letter ISO country code of the recipient phone number. ")
+  @ApiModelProperty(example = "US", required = true, value = "The 2-letter ISO country code of the recipient's phone number. ")
   public String getCountry() {
     return country;
   }
@@ -489,10 +489,10 @@ public class MessageOut {
   }
 
    /**
-   * User email which this message came from. For Email2SMS and Distribution Lists messages it will be an original email address, in other cases it is an account email address.
+   * The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address.
    * @return fromEmail
   **/
-  @ApiModelProperty(example = "test@email.com", value = "User email which this message came from. For Email2SMS and Distribution Lists messages it will be an original email address, in other cases it is an account email address.")
+  @ApiModelProperty(example = "test@email.com", value = "The user email which this message came from. For Email2SMS and Distribution Lists the message will come from an original email address; in other cases, it will come from an account email address.")
   public String getFromEmail() {
     return fromEmail;
   }
@@ -507,10 +507,10 @@ public class MessageOut {
   }
 
    /**
-   * Phone number which is used to send SMS.
+   * Phone number used to send the SMS.
    * @return fromNumber
   **/
-  @ApiModelProperty(example = "447624800500", value = "Phone number which is used to send SMS.")
+  @ApiModelProperty(example = "447624800500", value = "Phone number used to send the SMS.")
   public String getFromNumber() {
     return fromNumber;
   }

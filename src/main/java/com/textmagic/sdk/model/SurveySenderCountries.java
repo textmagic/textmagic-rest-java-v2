@@ -101,10 +101,10 @@ public class SurveySenderCountries {
   }
 
    /**
-   * Get allowDedicated
+   * Is allowed to use a dedicated number?
    * @return allowDedicated
   **/
-  @ApiModelProperty(example = "true", required = true, value = "")
+  @ApiModelProperty(example = "true", required = true, value = "Is allowed to use a dedicated number?")
   public Boolean isAllowDedicated() {
     return allowDedicated;
   }

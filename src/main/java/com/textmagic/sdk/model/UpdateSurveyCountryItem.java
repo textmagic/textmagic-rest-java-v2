@@ -41,10 +41,10 @@ public class UpdateSurveyCountryItem {
   }
 
    /**
-   * Two-letter ISO country code
+   * The 2-letter ISO country code
    * @return country
   **/
-  @ApiModelProperty(example = "US", required = true, value = "Two-letter ISO country code")
+  @ApiModelProperty(example = "US", required = true, value = "The 2-letter ISO country code")
   public String getCountry() {
     return country;
   }

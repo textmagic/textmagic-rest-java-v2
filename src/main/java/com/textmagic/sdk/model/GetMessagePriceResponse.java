@@ -48,10 +48,10 @@ public class GetMessagePriceResponse {
   }
 
    /**
-   * Total price of the mesasge.
+   * Total price of the message.
    * @return total
   **/
-  @ApiModelProperty(example = "0.08", required = true, value = "Total price of the mesasge.")
+  @ApiModelProperty(example = "0.08", required = true, value = "Total price of the message.")
   public BigDecimal getTotal() {
     return total;
   }

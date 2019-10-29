@@ -2317,7 +2317,7 @@ public class TextMagicApiTest {
     /**
      * Send message
      *
-     * The main entrypoint to send messages. See examples above for the reference.
+     * This is the main entrypoint to send messages. See the examples above for the reference.
      *
      * @throws ApiException
      *          if the Api call fails

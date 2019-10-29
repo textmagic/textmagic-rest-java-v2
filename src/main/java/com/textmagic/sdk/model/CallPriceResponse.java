@@ -102,10 +102,10 @@ public class CallPriceResponse {
   }
 
    /**
-   * 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country
+   * The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country
    * @return country
   **/
-  @ApiModelProperty(example = "US", required = true, value = "2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country")
+  @ApiModelProperty(example = "US", required = true, value = "The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country")
   public String getCountry() {
     return country;
   }

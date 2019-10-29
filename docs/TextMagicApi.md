@@ -2759,7 +2759,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-Integer lastId = 56; // Integer | Filter results by ID, selecting all values lesser than the specified ID. Note that \\'page\\' parameter is ignored when \\'lastId\\' is specified
+Integer lastId = 56; // Integer | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified
 try {
     GetAllOutboundMessagesPaginatedResponse result = apiInstance.getAllOutboundMessages(page, limit, lastId);
     System.out.println(result);
@@ -2775,7 +2775,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **lastId** | **Integer**| Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified | [optional]
+ **lastId** | **Integer**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified | [optional]
 
 ### Return type
 
@@ -2991,7 +2991,7 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-String country = "\"US\""; // String | Two-letter ISO country ID. If not specified, it returns all the available sender settings.
+String country = "\"US\""; // String | The 2-letter ISO country ID. If not specified, it returns all the available sender settings.
 try {
     GetAvailableSenderSettingOptionsResponse result = apiInstance.getAvailableSenderSettingOptions(country);
     System.out.println(result);
@@ -3005,7 +3005,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country** | **String**| Two-letter ISO country ID. If not specified, it returns all the available sender settings. | [optional]
+ **country** | **String**| The 2-letter ISO country ID. If not specified, it returns all the available sender settings. | [optional]
 
 ### Return type
 
@@ -4715,21 +4715,21 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 String text = "\"Test message test\""; // String | Message text. Required if **template_id** is not set.
 Integer templateId = 1; // Integer | Template used instead of message text. Required if **text** is not set.
-Integer sendingTime = 1565606455; // Integer | DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now.
-String sendingDateTime = "\"2020-05-27 13:02:33\""; // String | Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone.
-String sendingTimezone = "\"America/Buenos_Aires\""; // String | ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone.
-String contacts = "\"1,2,3,4\""; // String | Comma separated array of contact resources id message will be sent to.
-String lists = "\"1,2,3,4\""; // String | Comma separated array of list resources id message will be sent to.
-String phones = "\"447860021130,447860021131\""; // String | Comma separated array of E.164 phone numbers message will be sent to.
+Integer sendingTime = 1565606455; // Integer | DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now.
+String sendingDateTime = "\"2020-05-27 13:02:33\""; // String | Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone.
+String sendingTimezone = "\"America/Buenos_Aires\""; // String | The ID or ISO-name of the timezone used for sending when the sendingDateTime parameter is set, e.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone.
+String contacts = "\"1,2,3,4\""; // String | Comma-separated array of contact resources id message will be sent to.
+String lists = "\"1,2,3,4\""; // String | Comma-separated array of list resources id message will be sent to.
+String phones = "\"447860021130,447860021131\""; // String | Comma-separated array of E.164 phone numbers message will be sent to.
 Integer cutExtra = 0; // Integer | Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead.
-Integer partsCount = 6; // Integer | Maximum message parts count (TextMagic allows sending 1 to 6 message parts).
+Integer partsCount = 6; // Integer | Maximum message parts count (TextMagic allows sending of 1 to 6 message parts).
 Integer referenceId = 1; // Integer | Custom message reference id which can be used in your application infrastructure.
-String from = "\"Test Sender ID\""; // String | One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
-String rule = "\"FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1;COUNT=1\""; // String | iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
-Integer createChat = 0; // Integer | Should sending method try to create new Chat(if not exist) with specified recipients.
+String from = "\"Test Sender ID\""; // String | One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
+String rule = "\"FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1;COUNT=1\""; // String | An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
+Integer createChat = 0; // Integer | Should the sending method try to create new Chat(if not exist) with specified recipients?
 Integer tts = 0; // Integer | Send Text to Speech message.
-Integer local = 0; // Integer | Treat phone numbers passed in \\'phones\\' field as local.
-String localCountry = "\"US\""; // String | 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country.
+Integer local = 0; // Integer | Treat phone numbers passed in the \\'phones\\' field as local.
+String localCountry = "\"US\""; // String | The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.
 try {
     GetMessagePreviewResponse result = apiInstance.getMessagePreview(text, templateId, sendingTime, sendingDateTime, sendingTimezone, contacts, lists, phones, cutExtra, partsCount, referenceId, from, rule, createChat, tts, local, localCountry);
     System.out.println(result);
@@ -4745,21 +4745,21 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **text** | **String**| Message text. Required if **template_id** is not set. | [optional]
  **templateId** | **Integer**| Template used instead of message text. Required if **text** is not set. | [optional]
- **sendingTime** | **Integer**| DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. | [optional]
- **sendingDateTime** | **String**| Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. | [optional]
- **sendingTimezone** | **String**| ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. | [optional]
- **contacts** | **String**| Comma separated array of contact resources id message will be sent to. | [optional]
- **lists** | **String**| Comma separated array of list resources id message will be sent to. | [optional]
- **phones** | **String**| Comma separated array of E.164 phone numbers message will be sent to. | [optional]
+ **sendingTime** | **Integer**| DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. | [optional]
+ **sendingDateTime** | **String**| Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. | [optional]
+ **sendingTimezone** | **String**| The ID or ISO-name of the timezone used for sending when the sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. | [optional]
+ **contacts** | **String**| Comma-separated array of contact resources id message will be sent to. | [optional]
+ **lists** | **String**| Comma-separated array of list resources id message will be sent to. | [optional]
+ **phones** | **String**| Comma-separated array of E.164 phone numbers message will be sent to. | [optional]
  **cutExtra** | **Integer**| Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. | [optional] [default to 0]
- **partsCount** | **Integer**| Maximum message parts count (TextMagic allows sending 1 to 6 message parts). | [optional] [default to 6]
+ **partsCount** | **Integer**| Maximum message parts count (TextMagic allows sending of 1 to 6 message parts). | [optional] [default to 6]
  **referenceId** | **Integer**| Custom message reference id which can be used in your application infrastructure. | [optional]
- **from** | **String**| One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). | [optional]
- **rule** | **String**| iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. | [optional]
- **createChat** | **Integer**| Should sending method try to create new Chat(if not exist) with specified recipients. | [optional] [default to 0]
+ **from** | **String**| One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). | [optional]
+ **rule** | **String**| An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. | [optional]
+ **createChat** | **Integer**| Should the sending method try to create new Chat(if not exist) with specified recipients? | [optional] [default to 0]
  **tts** | **Integer**| Send Text to Speech message. | [optional] [default to 0]
- **local** | **Integer**| Treat phone numbers passed in \\&#39;phones\\&#39; field as local. | [optional] [default to 0]
- **localCountry** | **String**| 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. | [optional]
+ **local** | **Integer**| Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. | [optional] [default to 0]
+ **localCountry** | **String**| The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. | [optional]
 
 ### Return type
 
@@ -4799,24 +4799,24 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-Integer includeBlocked = 0; // Integer | Should we show pricing for the blocked contacts.
-String text = "\"Test message test\""; // String | Message text. Required if **template_id** is not set.
-Integer templateId = 1; // Integer | Template used instead of message text. Required if **text** is not set.
-Integer sendingTime = 1565606455; // Integer | DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now.
-String sendingDateTime = "\"2020-05-27 13:02:33\""; // String | Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone.
-String sendingTimezone = "\"America/Buenos_Aires\""; // String | ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone.
-String contacts = "\"1,2,3,4\""; // String | Comma separated array of contact resources id message will be sent to.
-String lists = "\"1,2,3,4\""; // String | Comma separated array of list resources id message will be sent to.
-String phones = "\"447860021130,447860021131\""; // String | Comma separated array of E.164 phone numbers message will be sent to.
+Integer includeBlocked = 0; // Integer | Should we show the pricing for blocked contacts?
+String text = "\"Test message test\""; // String | Message text. Required if the **template_id** is not set.
+Integer templateId = 1; // Integer | Template used instead of message text. Required if the **text** is not set.
+Integer sendingTime = 1565606455; // Integer | DEPRECATED, consider using the sendingDateTime and sendingTimezone parameters instead: optional (required with rrule set). Message sending time is in unix timestamp format. Default is now.
+String sendingDateTime = "\"2020-05-27 13:02:33\""; // String | Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone.
+String sendingTimezone = "\"America/Buenos_Aires\""; // String | The ID or ISO-name of the timezone used for sending when sendingDateTime parameter is set, e.g. if you specify sendingDateTime = \\\"2016-05-27 13:02:33\\\" and sendingTimezone = \\\"America/Buenos_Aires\\\", your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone.
+String contacts = "\"1,2,3,4\""; // String | Comma-separated array of contact resources id message will be sent to.
+String lists = "\"1,2,3,4\""; // String | Comma-separated array of list resources id message will be sent to.
+String phones = "\"447860021130,447860021131\""; // String | Comma-separated array of E.164 phone numbers message will be sent to.
 Integer cutExtra = 0; // Integer | Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead.
 Integer partsCount = 6; // Integer | Maximum message parts count (TextMagic allows sending 1 to 6 message parts).
 Integer referenceId = 1; // Integer | Custom message reference id which can be used in your application infrastructure.
-String from = "\"Test Sender ID\""; // String | One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
-String rule = "\"FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1;COUNT=1\""; // String | iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
-Integer createChat = 0; // Integer | Should sending method try to create new Chat(if not exist) with specified recipients.
-Integer tts = 0; // Integer | Send Text to Speech message.
-Integer local = 0; // Integer | Treat phone numbers passed in \\'phones\\' field as local.
-String localCountry = "\"US\""; // String | 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is account country.
+String from = "\"Test Sender ID\""; // String | One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs).
+String rule = "\"FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1;COUNT=1\""; // String | An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
+Integer createChat = 0; // Integer | Should the sending method try to create new Chat (if not exist) with specified recipients?
+Integer tts = 0; // Integer | Send a Text to Speech message.
+Integer local = 0; // Integer | Treat phone numbers passed in the \\'phones\\' field as local.
+String localCountry = "\"US\""; // String | The 2-letter ISO country code for local phone numbers, used when \\'local\\' is set to true. Default is the account country.
 try {
     GetMessagePriceResponse result = apiInstance.getMessagePrice(includeBlocked, text, templateId, sendingTime, sendingDateTime, sendingTimezone, contacts, lists, phones, cutExtra, partsCount, referenceId, from, rule, createChat, tts, local, localCountry);
     System.out.println(result);
@@ -4830,24 +4830,24 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **includeBlocked** | **Integer**| Should we show pricing for the blocked contacts. | [optional] [default to 0]
- **text** | **String**| Message text. Required if **template_id** is not set. | [optional]
- **templateId** | **Integer**| Template used instead of message text. Required if **text** is not set. | [optional]
- **sendingTime** | **Integer**| DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time in unix timestamp format. Default is now. | [optional]
- **sendingDateTime** | **String**| Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to sendingTimezone. | [optional]
- **sendingTimezone** | **String**| ID or ISO-name of timezone used for sending when sendingDateTime parameter is set. E.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent at May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is account timezone. | [optional]
- **contacts** | **String**| Comma separated array of contact resources id message will be sent to. | [optional]
- **lists** | **String**| Comma separated array of list resources id message will be sent to. | [optional]
- **phones** | **String**| Comma separated array of E.164 phone numbers message will be sent to. | [optional]
+ **includeBlocked** | **Integer**| Should we show the pricing for blocked contacts? | [optional] [default to 0]
+ **text** | **String**| Message text. Required if the **template_id** is not set. | [optional]
+ **templateId** | **Integer**| Template used instead of message text. Required if the **text** is not set. | [optional]
+ **sendingTime** | **Integer**| DEPRECATED, consider using the sendingDateTime and sendingTimezone parameters instead: optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. | [optional]
+ **sendingDateTime** | **String**| Sending time is in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to the sendingTimezone. | [optional]
+ **sendingTimezone** | **String**| The ID or ISO-name of the timezone used for sending when sendingDateTime parameter is set, e.g. if you specify sendingDateTime &#x3D; \\\&quot;2016-05-27 13:02:33\\\&quot; and sendingTimezone &#x3D; \\\&quot;America/Buenos_Aires\\\&quot;, your message will be sent on May 27, 2016 13:02:33 Buenos Aires time, or 16:02:33 UTC. Default is the account timezone. | [optional]
+ **contacts** | **String**| Comma-separated array of contact resources id message will be sent to. | [optional]
+ **lists** | **String**| Comma-separated array of list resources id message will be sent to. | [optional]
+ **phones** | **String**| Comma-separated array of E.164 phone numbers message will be sent to. | [optional]
  **cutExtra** | **Integer**| Should sending method cut extra characters which not fit supplied partsCount or return 400 Bad request response instead. | [optional] [default to 0]
  **partsCount** | **Integer**| Maximum message parts count (TextMagic allows sending 1 to 6 message parts). | [optional] [default to 6]
  **referenceId** | **Integer**| Custom message reference id which can be used in your application infrastructure. | [optional]
- **from** | **String**| One of allowed Sender ID (phone number or alphanumeric sender ID). If specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). | [optional]
- **rule** | **String**| iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. | [optional]
- **createChat** | **Integer**| Should sending method try to create new Chat(if not exist) with specified recipients. | [optional] [default to 0]
- **tts** | **Integer**| Send Text to Speech message. | [optional] [default to 0]
- **local** | **Integer**| Treat phone numbers passed in \\&#39;phones\\&#39; field as local. | [optional] [default to 0]
- **localCountry** | **String**| 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is account country. | [optional]
+ **from** | **String**| One of the allowed Sender ID (phone number or alphanumeric sender ID). If the specified Sender ID is not allowed for some destinations, a fallback default Sender ID will be used to ensure delivery. See [Get timezones](http://docs.textmagictesting.com/#tag/Sender-IDs). | [optional]
+ **rule** | **String**| An iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as the start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details. | [optional]
+ **createChat** | **Integer**| Should the sending method try to create new Chat (if not exist) with specified recipients? | [optional] [default to 0]
+ **tts** | **Integer**| Send a Text to Speech message. | [optional] [default to 0]
+ **local** | **Integer**| Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. | [optional] [default to 0]
+ **localCountry** | **String**| The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. | [optional]
 
 ### Return type
 
@@ -7153,7 +7153,7 @@ Name | Type | Description  | Notes
 
 Send message
 
-The main entrypoint to send messages. See examples above for the reference.
+This is the main entrypoint to send messages. See the examples above for the reference.
 
 ### Example
 ```java
