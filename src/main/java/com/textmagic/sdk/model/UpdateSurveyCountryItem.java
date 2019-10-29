@@ -41,10 +41,10 @@ public class UpdateSurveyCountryItem {
   }
 
    /**
-   * The 2-letter ISO country code
+   * The 2-letter ISO country code.
    * @return country
   **/
-  @ApiModelProperty(example = "US", required = true, value = "The 2-letter ISO country code")
+  @ApiModelProperty(example = "US", required = true, value = "The 2-letter ISO country code.")
   public String getCountry() {
     return country;
   }
@@ -59,10 +59,10 @@ public class UpdateSurveyCountryItem {
   }
 
    /**
-   * User inbound phone ID
+   * User inbound phone ID.
    * @return userInboundId
   **/
-  @ApiModelProperty(example = "10", required = true, value = "User inbound phone ID")
+  @ApiModelProperty(example = "10", required = true, value = "User inbound phone ID.")
   public Integer getUserInboundId() {
     return userInboundId;
   }

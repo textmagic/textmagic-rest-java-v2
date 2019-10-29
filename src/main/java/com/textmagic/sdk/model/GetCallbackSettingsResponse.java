@@ -36,7 +36,7 @@ public class GetCallbackSettingsResponse {
   private String inUrl = null;
 
   /**
-   * Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json
+   * Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json.
    */
   @JsonAdapter(FormatEnum.Adapter.class)
   public enum FormatEnum {
@@ -129,10 +129,10 @@ public class GetCallbackSettingsResponse {
   }
 
    /**
-   * Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json
+   * Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json.
    * @return format
   **/
-  @ApiModelProperty(required = true, value = "Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json")
+  @ApiModelProperty(required = true, value = "Desired callback data format. m - multipart/form-data, u - application/x-www-form-urlencoded, j - application/json.")
   public FormatEnum getFormat() {
     return format;
   }

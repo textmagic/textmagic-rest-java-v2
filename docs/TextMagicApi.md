@@ -2577,7 +2577,7 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-String status = "\"a\""; // String | Fetch only (a)ctive, (c)losed or (d)eleted chats
+String status = "\"a\""; // String | Fetch only (a)ctive, (c)losed or (d)eleted chats.
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
 String orderBy = "id"; // String | Order results by some field. Default is id.
@@ -2596,7 +2596,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **String**| Fetch only (a)ctive, (c)losed or (d)eleted chats | [optional] [enum: a, c, d]
+ **status** | **String**| Fetch only (a)ctive, (c)losed or (d)eleted chats. | [optional] [enum: a, c, d]
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
  **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, unread, messageTime]
@@ -2759,7 +2759,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-Integer lastId = 56; // Integer | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified
+Integer lastId = 56; // Integer | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified.
 try {
     GetAllOutboundMessagesPaginatedResponse result = apiInstance.getAllOutboundMessages(page, limit, lastId);
     System.out.println(result);
@@ -2775,7 +2775,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **lastId** | **Integer**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified | [optional]
+ **lastId** | **Integer**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified. | [optional]
 
 ### Return type
 
@@ -2818,7 +2818,7 @@ TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
 String status = "x"; // String | Fetch schedules with a specific status: a - actual, c - completed, x - all.
-String orderBy = "id"; // String | Order results by some field. Default is id
+String orderBy = "id"; // String | Order results by some field. Default is id.
 String direction = "desc"; // String | Order direction. Default is desc.
 try {
     GetAllScheduledMessagesPaginatedResponse result = apiInstance.getAllScheduledMessages(page, limit, status, orderBy, direction);
@@ -2836,7 +2836,7 @@ Name | Type | Description  | Notes
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
  **status** | **String**| Fetch schedules with a specific status: a - actual, c - completed, x - all. | [optional] [default to x] [enum: a, c, x]
- **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, nextSend, lastSend]
+ **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, nextSend, lastSend]
  **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 
 ### Return type
@@ -3366,8 +3366,8 @@ BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
 String phone = "\"447860021130\""; // String | 
-Integer upsert = 0; // Integer | Create a new chat if not found
-Integer reopen = 0; // Integer | Reopen chat if found or do not change status
+Integer upsert = 0; // Integer | Create a new chat if not found.
+Integer reopen = 0; // Integer | Reopen chat if found or do not change status.
 try {
     Chat result = apiInstance.getChatByPhone(phone, upsert, reopen);
     System.out.println(result);
@@ -3382,8 +3382,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **phone** | **String**|  |
- **upsert** | **Integer**| Create a new chat if not found | [optional] [default to 0]
- **reopen** | **Integer**| Reopen chat if found or do not change status | [optional] [default to 0]
+ **upsert** | **Integer**| Create a new chat if not found. | [optional] [default to 0]
+ **reopen** | **Integer**| Reopen chat if found or do not change status. | [optional] [default to 0]
 
 ### Return type
 
@@ -3426,7 +3426,7 @@ TextMagicApi apiInstance = new TextMagicApi();
 Integer id = 1; // Integer | 
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-String query = "query_example"; // String | Find messages by specified search query
+String query = "query_example"; // String | Find messages by specified search query.
 Integer start = 56; // Integer | Return messages since specified timestamp only.
 Integer end = 56; // Integer | Return messages up to specified timestamp only.
 String direction = "desc"; // String | Order direction. Default is desc.
@@ -3447,7 +3447,7 @@ Name | Type | Description  | Notes
  **id** | **Integer**|  |
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **query** | **String**| Find messages by specified search query | [optional]
+ **query** | **String**| Find messages by specified search query. | [optional]
  **start** | **Integer**| Return messages since specified timestamp only. | [optional]
  **end** | **Integer**| Return messages up to specified timestamp only. | [optional]
  **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
@@ -5223,8 +5223,8 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer limit = 10; // Integer | The number of results per page.
 Integer lastId = 56; // Integer | Filter results by ID, selecting all values lesser than the specified ID.
-String query = "query_example"; // String | Find message by specified search query
-String orderBy = "id"; // String | Order results by some field. Default is id
+String query = "query_example"; // String | Find message by specified search query.
+String orderBy = "id"; // String | Order results by some field. Default is id.
 String direction = "desc"; // String | Order direction. Default is desc.
 try {
     GetOutboundMessagesHistoryPaginatedResponse result = apiInstance.getOutboundMessagesHistory(limit, lastId, query, orderBy, direction);
@@ -5241,8 +5241,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
  **lastId** | **Integer**| Filter results by ID, selecting all values lesser than the specified ID. | [optional]
- **query** | **String**| Find message by specified search query | [optional]
- **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id] [enum: id, phone, sender, firstName, lastName, messageTime]
+ **query** | **String**| Find message by specified search query. | [optional]
+ **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, phone, sender, firstName, lastName, messageTime]
  **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
 
 ### Return type
@@ -6710,7 +6710,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-String query = "query_example"; // String | Find chats by specified search query
+String query = "query_example"; // String | Find chats by specified search query.
 String orderBy = "id"; // String | Order results by some field. Default is id.
 try {
     SearchChatsByReceipentPaginatedResponse result = apiInstance.searchChatsByReceipent(page, limit, query, orderBy);
@@ -6727,7 +6727,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **query** | **String**| Find chats by specified search query | [optional]
+ **query** | **String**| Find chats by specified search query. | [optional]
  **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, unread, messageTime]
 
 ### Return type
@@ -6978,7 +6978,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-Integer lastId = 56; // Integer | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified
+Integer lastId = 56; // Integer | Filter results by ID, selecting all values lesser than the specified ID. Note that the \\'page\\' parameter is ignored when \\'lastId\\' is specified.
 String ids = "ids_example"; // String | Find message by ID(s).
 Integer sessionId = 56; // Integer | Find messages by session ID.
 String statuses = "\"q\""; // String | Find messages by status.
@@ -6999,7 +6999,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **lastId** | **Integer**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified | [optional]
+ **lastId** | **Integer**| Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified. | [optional]
  **ids** | **String**| Find message by ID(s). | [optional]
  **sessionId** | **Integer**| Find messages by session ID. | [optional]
  **statuses** | **String**| Find messages by status. | [optional] [enum: q, s, e, r, a, d, b, f, u, j, i, p, h]
@@ -7046,8 +7046,8 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
-String query = "query_example"; // String | Find messages by specified search query
-String ids = "ids_example"; // String | Find schedules by ID(s)
+String query = "query_example"; // String | Find messages by specified search query.
+String ids = "ids_example"; // String | Find schedules by ID(s).
 String status = "x"; // String | Fetch schedules with a specific status: a - actual, c - completed, x - all.
 String orderBy = "id"; // String | Order results by some field. Default is id.
 String direction = "desc"; // String | Order direction. Default is desc.
@@ -7066,8 +7066,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
- **query** | **String**| Find messages by specified search query | [optional]
- **ids** | **String**| Find schedules by ID(s) | [optional]
+ **query** | **String**| Find messages by specified search query. | [optional]
+ **ids** | **String**| Find schedules by ID(s). | [optional]
  **status** | **String**| Fetch schedules with a specific status: a - actual, c - completed, x - all. | [optional] [default to x] [enum: x, a, c]
  **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, nextSend, lastSend]
  **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
@@ -8367,7 +8367,7 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-File file = new File("/path/to/file.txt"); // File | Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats
+File file = new File("/path/to/file.txt"); // File | Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats.
 try {
     UploadMessageAttachmentResponse result = apiInstance.uploadMessageAttachment(file);
     System.out.println(result);
@@ -8381,7 +8381,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **File**| Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats |
+ **file** | **File**| Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats. |
 
 ### Return type
 

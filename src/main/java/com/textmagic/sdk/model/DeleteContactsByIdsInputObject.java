@@ -41,10 +41,10 @@ public class DeleteContactsByIdsInputObject {
   }
 
    /**
-   * Entity ID(s), separated by comma
+   * Entity ID(s), separated by comma.
    * @return ids
   **/
-  @ApiModelProperty(example = "1,2,3", value = "Entity ID(s), separated by comma")
+  @ApiModelProperty(example = "1,2,3", value = "Entity ID(s), separated by comma.")
   public String getIds() {
     return ids;
   }
@@ -59,10 +59,10 @@ public class DeleteContactsByIdsInputObject {
   }
 
    /**
-   * Entity ID(s), separated by comma
+   * Entity ID(s), separated by comma.
    * @return all
   **/
-  @ApiModelProperty(example = "false", value = "Entity ID(s), separated by comma")
+  @ApiModelProperty(example = "false", value = "Entity ID(s), separated by comma.")
   public Boolean isAll() {
     return all;
   }

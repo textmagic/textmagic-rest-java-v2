@@ -59,10 +59,10 @@ public class SenderSettingsItem {
   }
 
    /**
-   * Phone enabled for sending to a specified country
+   * Phone enabled for sending to a specified country.
    * @return phone
   **/
-  @ApiModelProperty(example = "+447937946700", required = true, value = "Phone enabled for sending to a specified country")
+  @ApiModelProperty(example = "+447937946700", required = true, value = "Phone enabled for sending to a specified country.")
   public String getPhone() {
     return phone;
   }

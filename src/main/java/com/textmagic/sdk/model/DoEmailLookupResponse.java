@@ -270,10 +270,10 @@ public class DoEmailLookupResponse {
   }
 
    /**
-   * The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;  or &#x60;unknown&#x60;.
+   * The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;. or &#x60;unknown&#x60;.
    * @return deliverability
   **/
-  @ApiModelProperty(example = "undeliverable", required = true, value = "The delivery status of the email address is`deliverable`, `undeliverable`  or `unknown`.")
+  @ApiModelProperty(example = "undeliverable", required = true, value = "The delivery status of the email address is`deliverable`, `undeliverable`. or `unknown`.")
   public String getDeliverability() {
     return deliverability;
   }
@@ -378,10 +378,10 @@ public class DoEmailLookupResponse {
   }
 
    /**
-   * Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)
+   * Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’).
    * @return emailRole
   **/
-  @ApiModelProperty(example = "admin", required = true, value = "Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)")
+  @ApiModelProperty(example = "admin", required = true, value = "Checks the mailbox part of the email to see whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’).")
   public String getEmailRole() {
     return emailRole;
   }

@@ -48,10 +48,10 @@ public class CallPriceResponse {
   }
 
    /**
-   * Price for outbound message
+   * Price for outbound message.
    * @return outbound
   **/
-  @ApiModelProperty(required = true, value = "Price for outbound message")
+  @ApiModelProperty(required = true, value = "Price for outbound message.")
   public BigDecimal getOutbound() {
     return outbound;
   }
@@ -66,10 +66,10 @@ public class CallPriceResponse {
   }
 
    /**
-   * Price for inbound message
+   * Price for inbound message.
    * @return inbound
   **/
-  @ApiModelProperty(required = true, value = "Price for inbound message")
+  @ApiModelProperty(required = true, value = "Price for inbound message.")
   public BigDecimal getInbound() {
     return inbound;
   }
@@ -84,10 +84,10 @@ public class CallPriceResponse {
   }
 
    /**
-   * Price for forward
+   * Price for forward.
    * @return forward
   **/
-  @ApiModelProperty(required = true, value = "Price for forward")
+  @ApiModelProperty(required = true, value = "Price for forward.")
   public BigDecimal getForward() {
     return forward;
   }
@@ -102,10 +102,10 @@ public class CallPriceResponse {
   }
 
    /**
-   * The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country
+   * The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country.
    * @return country
   **/
-  @ApiModelProperty(example = "US", required = true, value = "The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country")
+  @ApiModelProperty(example = "US", required = true, value = "The 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country.")
   public String getCountry() {
     return country;
   }
