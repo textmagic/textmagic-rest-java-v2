@@ -378,8 +378,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Block contact by phone number
-     * Block contact from inbound and outbound communication by phone number.
+     * Block a contact by phone number
+     * Block a contact from inbound and outbound communication by phone number.
      * @param blockContactInputObject  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -390,8 +390,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Block contact by phone number
-     * Block contact from inbound and outbound communication by phone number.
+     * Block a contact by phone number
+     * Block a contact from inbound and outbound communication by phone number.
      * @param blockContactInputObject  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -403,8 +403,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Block contact by phone number (asynchronously)
-     * Block contact from inbound and outbound communication by phone number.
+     * Block a contact by phone number (asynchronously)
+     * Block a contact from inbound and outbound communication by phone number.
      * @param blockContactInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -2528,7 +2528,7 @@ public class TextMagicApi {
 
     /**
      * Delete a contact
-     * &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, instead use the Contact assignment command in the Lists section rather than deleting the contact. 
+     * &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -2538,7 +2538,7 @@ public class TextMagicApi {
 
     /**
      * Delete a contact
-     * &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, instead use the Contact assignment command in the Lists section rather than deleting the contact. 
+     * &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2550,7 +2550,7 @@ public class TextMagicApi {
 
     /**
      * Delete a contact (asynchronously)
-     * &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, instead use the Contact assignment command in the Lists section rather than deleting the contact. 
+     * &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -7691,7 +7691,7 @@ public class TextMagicApi {
     }
     /**
      * Build call for getContact
-     * @param id The contact id (required)
+     * @param id Contact ID. (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -7756,7 +7756,7 @@ public class TextMagicApi {
     /**
      * Get the details of a specific contact
      * 
-     * @param id The contact id (required)
+     * @param id Contact ID. (required)
      * @return Contact
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -7768,7 +7768,7 @@ public class TextMagicApi {
     /**
      * Get the details of a specific contact
      * 
-     * @param id The contact id (required)
+     * @param id Contact ID. (required)
      * @return ApiResponse&lt;Contact&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -7781,7 +7781,7 @@ public class TextMagicApi {
     /**
      * Get the details of a specific contact (asynchronously)
      * 
-     * @param id The contact id (required)
+     * @param id Contact ID. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -7937,7 +7937,7 @@ public class TextMagicApi {
     }
     /**
      * Build call for getContactIfBlocked
-     * @param phone Phone number to check (required)
+     * @param phone Phone number to check. (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
@@ -8001,9 +8001,9 @@ public class TextMagicApi {
     }
 
     /**
-     * Check is that phone number blocked
+     * Check if a phone number is blocked
      * 
-     * @param phone Phone number to check (required)
+     * @param phone Phone number to check. (required)
      * @return Contact
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -8013,9 +8013,9 @@ public class TextMagicApi {
     }
 
     /**
-     * Check is that phone number blocked
+     * Check if a phone number is blocked
      * 
-     * @param phone Phone number to check (required)
+     * @param phone Phone number to check. (required)
      * @return ApiResponse&lt;Contact&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -8026,9 +8026,9 @@ public class TextMagicApi {
     }
 
     /**
-     * Check is that phone number blocked (asynchronously)
+     * Check if a phone number is blocked (asynchronously)
      * 
-     * @param phone Phone number to check (required)
+     * @param phone Phone number to check. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -13382,7 +13382,7 @@ public class TextMagicApi {
 
     /**
      * Get all unsubscribed contacts
-     * When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use: 
+     * When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return GetUnsubscribersPaginatedResponse
@@ -13395,7 +13395,7 @@ public class TextMagicApi {
 
     /**
      * Get all unsubscribed contacts
-     * When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use: 
+     * When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return ApiResponse&lt;GetUnsubscribersPaginatedResponse&gt;
@@ -13409,7 +13409,7 @@ public class TextMagicApi {
 
     /**
      * Get all unsubscribed contacts (asynchronously)
-     * When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use: 
+     * When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param callback The callback to be executed when the API call finishes
@@ -13575,9 +13575,9 @@ public class TextMagicApi {
     }
     /**
      * Build call for importContacts
-     * @param file File containing contacts in csv or xls(x) formats (required)
+     * @param file File containing contacts in csv or xls(x) formats. (required)
      * @param column Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
-     * @param listId List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
+     * @param listId List that ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
      * @param listName List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
@@ -13655,9 +13655,9 @@ public class TextMagicApi {
     /**
      * Import contacts
      * Import contacts from the CSV, XLS or XLSX file.
-     * @param file File containing contacts in csv or xls(x) formats (required)
+     * @param file File containing contacts in csv or xls(x) formats. (required)
      * @param column Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
-     * @param listId List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
+     * @param listId List that ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
      * @param listName List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -13670,9 +13670,9 @@ public class TextMagicApi {
     /**
      * Import contacts
      * Import contacts from the CSV, XLS or XLSX file.
-     * @param file File containing contacts in csv or xls(x) formats (required)
+     * @param file File containing contacts in csv or xls(x) formats. (required)
      * @param column Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
-     * @param listId List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
+     * @param listId List that ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
      * @param listName List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -13686,9 +13686,9 @@ public class TextMagicApi {
     /**
      * Import contacts (asynchronously)
      * Import contacts from the CSV, XLS or XLSX file.
-     * @param file File containing contacts in csv or xls(x) formats (required)
+     * @param file File containing contacts in csv or xls(x) formats. (required)
      * @param column Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
-     * @param listId List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
+     * @param listId List that ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
      * @param listName List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  (optional)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -16572,8 +16572,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Unblock contact by phone number.
-     * 
+     * Unblock a contact by phone number
+     * Unblock a contact by phone number
      * @param unblockContactInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -16582,8 +16582,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Unblock contact by phone number.
-     * 
+     * Unblock a contact by phone number
+     * Unblock a contact by phone number
      * @param unblockContactInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16594,8 +16594,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Unblock contact by phone number. (asynchronously)
-     * 
+     * Unblock a contact by phone number (asynchronously)
+     * Unblock a contact by phone number
      * @param unblockContactInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -16691,7 +16691,7 @@ public class TextMagicApi {
 
     /**
      * Unblock contacts (bulk)
-     * Unblock several contacts by blocked contact ids or unblock all contacts
+     * Unblock several contacts by blocked contact IDs or unblock all contacts.
      * @param unblockContactsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -16701,7 +16701,7 @@ public class TextMagicApi {
 
     /**
      * Unblock contacts (bulk)
-     * Unblock several contacts by blocked contact ids or unblock all contacts
+     * Unblock several contacts by blocked contact IDs or unblock all contacts.
      * @param unblockContactsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16713,7 +16713,7 @@ public class TextMagicApi {
 
     /**
      * Unblock contacts (bulk) (asynchronously)
-     * Unblock several contacts by blocked contact ids or unblock all contacts
+     * Unblock several contacts by blocked contact IDs or unblock all contacts.
      * @param unblockContactsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call

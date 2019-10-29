@@ -59,10 +59,10 @@ public class UnsubscribeContactInputObject {
   }
 
    /**
-   * If set to 1 incoming messages from this number will be blocked.
+   * If set to 1, incoming messages from this number will be blocked.
    * @return blockIncoming
   **/
-  @ApiModelProperty(example = "0", value = "If set to 1 incoming messages from this number will be blocked.")
+  @ApiModelProperty(example = "0", value = "If set to 1, incoming messages from this number will be blocked.")
   public Integer getBlockIncoming() {
     return blockIncoming;
   }

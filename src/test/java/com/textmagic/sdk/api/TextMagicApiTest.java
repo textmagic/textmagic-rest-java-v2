@@ -178,9 +178,9 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Block contact by phone number
+     * Block a contact by phone number
      *
-     * Block contact from inbound and outbound communication by phone number.
+     * Block a contact from inbound and outbound communication by phone number.
      *
      * @throws ApiException
      *          if the Api call fails
@@ -467,7 +467,7 @@ public class TextMagicApiTest {
     /**
      * Delete a contact
      *
-     * &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, instead use the Contact assignment command in the Lists section rather than deleting the contact. 
+     * &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
      *
      * @throws ApiException
      *          if the Api call fails
@@ -1202,7 +1202,7 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Check is that phone number blocked
+     * Check if a phone number is blocked
      *
      * 
      *
@@ -1929,7 +1929,7 @@ public class TextMagicApiTest {
     /**
      * Get all unsubscribed contacts
      *
-     * When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use: 
+     * When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
      *
      * @throws ApiException
      *          if the Api call fails
@@ -2363,9 +2363,9 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Unblock contact by phone number.
+     * Unblock a contact by phone number
      *
-     * 
+     * Unblock a contact by phone number
      *
      * @throws ApiException
      *          if the Api call fails
@@ -2381,7 +2381,7 @@ public class TextMagicApiTest {
     /**
      * Unblock contacts (bulk)
      *
-     * Unblock several contacts by blocked contact ids or unblock all contacts
+     * Unblock several contacts by blocked contact IDs or unblock all contacts.
      *
      * @throws ApiException
      *          if the Api call fails

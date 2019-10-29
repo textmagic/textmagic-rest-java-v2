@@ -74,10 +74,10 @@ public class UpdateContactInputObject {
   }
 
    /**
-   * Contact first name
+   * Contact first name.
    * @return firstName
   **/
-  @ApiModelProperty(example = "Example first name", value = "Contact first name")
+  @ApiModelProperty(example = "Example first name", value = "Contact first name.")
   public String getFirstName() {
     return firstName;
   }
@@ -92,10 +92,10 @@ public class UpdateContactInputObject {
   }
 
    /**
-   * Contact last name
+   * Contact last name.
    * @return lastName
   **/
-  @ApiModelProperty(example = "Example first name", value = "Contact last name")
+  @ApiModelProperty(example = "Example first name", value = "Contact last name.")
   public String getLastName() {
     return lastName;
   }
@@ -146,10 +146,10 @@ public class UpdateContactInputObject {
   }
 
    /**
-   * Contact company name
+   * Contact company name.
    * @return companyName
   **/
-  @ApiModelProperty(example = "My pretty company", value = "Contact company name")
+  @ApiModelProperty(example = "My pretty company", value = "Contact company name.")
   public String getCompanyName() {
     return companyName;
   }
@@ -182,10 +182,10 @@ public class UpdateContactInputObject {
   }
 
    /**
-   * Is contact marked as favorite.
+   * Is the contact marked as favorite?
    * @return favorited
   **/
-  @ApiModelProperty(example = "false", value = "Is contact marked as favorite.")
+  @ApiModelProperty(example = "false", value = "Is the contact marked as favorite?")
   public Boolean isFavorited() {
     return favorited;
   }
@@ -200,10 +200,10 @@ public class UpdateContactInputObject {
   }
 
    /**
-   * Is contact blocked for outgoing and incoming messaging.
+   * Is the contact blocked for outgoing and incoming messaging?
    * @return blocked
   **/
-  @ApiModelProperty(example = "false", value = "Is contact blocked for outgoing and incoming messaging.")
+  @ApiModelProperty(example = "false", value = "Is the contact blocked for outgoing and incoming messaging?")
   public Boolean isBlocked() {
     return blocked;
   }
@@ -218,10 +218,10 @@ public class UpdateContactInputObject {
   }
 
    /**
-   * Force type of phone. Possible values: 0 - landline, 1 - mobile. Default is -1 (auto detection).
+   * Force type of phone. Possible values: 0 is landline; 1 is mobile; default is -1 (auto-detection).
    * @return type
   **/
-  @ApiModelProperty(example = "1", value = "Force type of phone. Possible values: 0 - landline, 1 - mobile. Default is -1 (auto detection).")
+  @ApiModelProperty(example = "1", value = "Force type of phone. Possible values: 0 is landline; 1 is mobile; default is -1 (auto-detection).")
   public Integer getType() {
     return type;
   }
@@ -262,10 +262,10 @@ public class UpdateContactInputObject {
   }
 
    /**
-   * Treat phone number passed in request body as **local**.
+   * Treat phone numbers passed in the request body as **local**.
    * @return local
   **/
-  @ApiModelProperty(example = "0", value = "Treat phone number passed in request body as **local**.")
+  @ApiModelProperty(example = "0", value = "Treat phone numbers passed in the request body as **local**.")
   public Integer getLocal() {
     return local;
   }
@@ -280,10 +280,10 @@ public class UpdateContactInputObject {
   }
 
    /**
-   * 2-letter ISO country code for local phone numbers, used when **local** is set to true.
+   * The 2-letter ISO country code for local phone numbers, used when **local** is set to true.
    * @return country
   **/
-  @ApiModelProperty(example = "US", value = "2-letter ISO country code for local phone numbers, used when **local** is set to true.")
+  @ApiModelProperty(example = "US", value = "The 2-letter ISO country code for local phone numbers, used when **local** is set to true.")
   public String getCountry() {
     return country;
   }

@@ -87,10 +87,10 @@ public class UnsubscribedContact {
   }
 
    /**
-   * Time when contact has been opted-out.
+   * Time when contact was opted-out.
    * @return unsubscribeTime
   **/
-  @ApiModelProperty(example = "2015-01-09T18:59:46+0000", required = true, value = "Time when contact has been opted-out.")
+  @ApiModelProperty(example = "2015-01-09T18:59:46+0000", required = true, value = "Time when contact was opted-out.")
   public OffsetDateTime getUnsubscribeTime() {
     return unsubscribeTime;
   }

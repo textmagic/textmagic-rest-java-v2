@@ -105,10 +105,10 @@ public class Contact {
   }
 
    /**
-   * Is the Contact favorite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavorites).
+   * Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites).
    * @return favorited
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Is the Contact favorite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavorites).")
+  @ApiModelProperty(example = "true", required = true, value = "Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites).")
   public Boolean isFavorited() {
     return favorited;
   }
