@@ -10421,8 +10421,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Get contact&#39;s lists
-     * Get all the lists in which the contact is included
+     * Get a contact&#39;s lists
+     * Get all the lists in which a contact is included.
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -10435,8 +10435,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Get contact&#39;s lists
-     * Get all the lists in which the contact is included
+     * Get a contact&#39;s lists
+     * Get all the lists in which a contact is included.
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -10450,8 +10450,8 @@ public class TextMagicApi {
     }
 
     /**
-     * Get contact&#39;s lists (asynchronously)
-     * Get all the lists in which the contact is included
+     * Get a contact&#39;s lists (asynchronously)
+     * Get all the lists in which a contact is included.
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -15526,11 +15526,11 @@ public class TextMagicApi {
      * Build call for searchLists
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find lists by ID(s) (optional)
-     * @param query Find lists by specified search query (optional)
-     * @param onlyMine Return only current user lists (optional, default to 0)
-     * @param onlyDefault Return only default lists (optional, default to 0)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
+     * @param ids Find lists by IDs. (optional)
+     * @param query Find lists by specified search query. (optional)
+     * @param onlyMine Return only current user lists. (optional, default to 0)
+     * @param onlyDefault Return only default lists. (optional, default to 0)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
@@ -15608,11 +15608,11 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find lists by ID(s) (optional)
-     * @param query Find lists by specified search query (optional)
-     * @param onlyMine Return only current user lists (optional, default to 0)
-     * @param onlyDefault Return only default lists (optional, default to 0)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
+     * @param ids Find lists by IDs. (optional)
+     * @param query Find lists by specified search query. (optional)
+     * @param onlyMine Return only current user lists. (optional, default to 0)
+     * @param onlyDefault Return only default lists. (optional, default to 0)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return SearchListsPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -15627,11 +15627,11 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find lists by ID(s) (optional)
-     * @param query Find lists by specified search query (optional)
-     * @param onlyMine Return only current user lists (optional, default to 0)
-     * @param onlyDefault Return only default lists (optional, default to 0)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
+     * @param ids Find lists by IDs. (optional)
+     * @param query Find lists by specified search query. (optional)
+     * @param onlyMine Return only current user lists. (optional, default to 0)
+     * @param onlyDefault Return only default lists. (optional, default to 0)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;SearchListsPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -15647,11 +15647,11 @@ public class TextMagicApi {
      * 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
-     * @param ids Find lists by ID(s) (optional)
-     * @param query Find lists by specified search query (optional)
-     * @param onlyMine Return only current user lists (optional, default to 0)
-     * @param onlyDefault Return only default lists (optional, default to 0)
-     * @param orderBy Order results by some field. Default is id (optional, default to id)
+     * @param ids Find lists by IDs. (optional)
+     * @param query Find lists by specified search query. (optional)
+     * @param onlyMine Return only current user lists. (optional, default to 0)
+     * @param onlyDefault Return only default lists. (optional, default to 0)
+     * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call

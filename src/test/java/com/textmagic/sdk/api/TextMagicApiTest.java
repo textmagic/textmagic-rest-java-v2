@@ -1524,9 +1524,9 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Get contact&#39;s lists
+     * Get a contact&#39;s lists
      *
-     * Get all the lists in which the contact is included
+     * Get all the lists in which a contact is included.
      *
      * @throws ApiException
      *          if the Api call fails

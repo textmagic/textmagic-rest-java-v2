@@ -65,10 +65,10 @@ public class CreateListInputObject {
   }
 
    /**
-   * Should new list be **shared** among all the sub-accounts?
+   * Should the new list be **shared** among all the sub-accounts?
    * @return shared
   **/
-  @ApiModelProperty(example = "false", value = "Should new list be **shared** among all the sub-accounts?")
+  @ApiModelProperty(example = "false", value = "Should the new list be **shared** among all the sub-accounts?")
   public Boolean isShared() {
     return shared;
   }
@@ -83,10 +83,10 @@ public class CreateListInputObject {
   }
 
    /**
-   * Is list favorited. Default is false.
+   * Is the list favorited? Default is false.
    * @return favorited
   **/
-  @ApiModelProperty(example = "false", value = "Is list favorited. Default is false.")
+  @ApiModelProperty(example = "false", value = "Is the list favorited? Default is false.")
   public Boolean isFavorited() {
     return favorited;
   }
@@ -101,10 +101,10 @@ public class CreateListInputObject {
   }
 
    /**
-   * Is list default for new contacts (web only).
+   * Is the list default for new contacts (web only)?
    * @return isDefault
   **/
-  @ApiModelProperty(example = "false", value = "Is list default for new contacts (web only).")
+  @ApiModelProperty(example = "false", value = "Is the list default for new contacts (web only)?")
   public Boolean isIsDefault() {
     return isDefault;
   }
