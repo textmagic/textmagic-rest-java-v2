@@ -112,7 +112,7 @@ public class Chat {
   private String lastMessage = null;
 
   /**
-   * Last message type: * **ci** - incoming call * **co** - outgoing call * **i** - incoming message * **o** - outgoing message 
+   * Last message type: * **ci** - incoming call; * **co** - outgoing call; * **i** - incoming message; * **o** - outgoing message. 
    */
   @JsonAdapter(DirectionEnum.Adapter.class)
   public enum DirectionEnum {
@@ -219,10 +219,10 @@ public class Chat {
   }
 
    /**
-   * Chat partner phone number.
+   * Chat partner&#39;s phone number.
    * @return phone
   **/
-  @ApiModelProperty(example = "447860021130", required = true, value = "Chat partner phone number.")
+  @ApiModelProperty(example = "447860021130", required = true, value = "Chat partner's phone number.")
   public String getPhone() {
     return phone;
   }
@@ -255,10 +255,10 @@ public class Chat {
   }
 
    /**
-   * If this field has a value then it means that chat phone number has been unsubscribed from you and this value is a ID of a Unsubscribed contact entity. See [Get all unsubscribed contacts](http://docs.textmagictesting.com/#operation/getUnsubscribers).
+   * If this field has a value, it means that the chat phone number has been unsubscribed from you and this value is an ID of an Unsubscribed contact entity. See [Get all unsubscribed contacts](http://docs.textmagictesting.com/#operation/getUnsubscribers).
    * @return unsubscribedContactId
   **/
-  @ApiModelProperty(example = "546", required = true, value = "If this field has a value then it means that chat phone number has been unsubscribed from you and this value is a ID of a Unsubscribed contact entity. See [Get all unsubscribed contacts](http://docs.textmagictesting.com/#operation/getUnsubscribers).")
+  @ApiModelProperty(example = "546", required = true, value = "If this field has a value, it means that the chat phone number has been unsubscribed from you and this value is an ID of an Unsubscribed contact entity. See [Get all unsubscribed contacts](http://docs.textmagictesting.com/#operation/getUnsubscribers).")
   public Integer getUnsubscribedContactId() {
     return unsubscribedContactId;
   }
@@ -291,10 +291,10 @@ public class Chat {
   }
 
    /**
-   * Time when last incoming message arrived at this chat.
+   * Time when the last incoming message arrived at this chat.
    * @return updatedAt
   **/
-  @ApiModelProperty(example = "2015-01-08T06:13:21+0000", required = true, value = "Time when last incoming message arrived at this chat.")
+  @ApiModelProperty(example = "2015-01-08T06:13:21+0000", required = true, value = "Time when the last incoming message arrived at this chat.")
   public OffsetDateTime getUpdatedAt() {
     return updatedAt;
   }
@@ -327,10 +327,10 @@ public class Chat {
   }
 
    /**
-   * Indicates when chat is muted.
+   * Indicates when the chat is muted.
    * @return mute
   **/
-  @ApiModelProperty(example = "0", required = true, value = "Indicates when chat is muted.")
+  @ApiModelProperty(example = "0", required = true, value = "Indicates when the chat is muted.")
   public Integer getMute() {
     return mute;
   }
@@ -363,10 +363,10 @@ public class Chat {
   }
 
    /**
-   * Last message type: * **ci** - incoming call * **co** - outgoing call * **i** - incoming message * **o** - outgoing message 
+   * Last message type: * **ci** - incoming call; * **co** - outgoing call; * **i** - incoming message; * **o** - outgoing message. 
    * @return direction
   **/
-  @ApiModelProperty(required = true, value = "Last message type: * **ci** - incoming call * **co** - outgoing call * **i** - incoming message * **o** - outgoing message ")
+  @ApiModelProperty(required = true, value = "Last message type: * **ci** - incoming call; * **co** - outgoing call; * **i** - incoming message; * **o** - outgoing message. ")
   public DirectionEnum getDirection() {
     return direction;
   }
@@ -381,10 +381,10 @@ public class Chat {
   }
 
    /**
-   * If filled then value will be used as a sender number for all outgoing messages of a chat.
+   * If filled, the value will be used as a sender number for all outgoing messages of a chat.
    * @return from
   **/
-  @ApiModelProperty(example = "447860021130", required = true, value = "If filled then value will be used as a sender number for all outgoing messages of a chat.")
+  @ApiModelProperty(example = "447860021130", required = true, value = "If filled, the value will be used as a sender number for all outgoing messages of a chat.")
   public String getFrom() {
     return from;
   }
@@ -399,10 +399,10 @@ public class Chat {
   }
 
    /**
-   * Date and time until chat will be mutted.
+   * Date and time until the chat will be muted.
    * @return mutedUntil
   **/
-  @ApiModelProperty(example = "2019-10-10T14:44:00+0000", required = true, value = "Date and time until chat will be mutted.")
+  @ApiModelProperty(example = "2019-10-10T14:44:00+0000", required = true, value = "Date and time until the chat will be muted.")
   public OffsetDateTime getMutedUntil() {
     return mutedUntil;
   }
@@ -417,10 +417,10 @@ public class Chat {
   }
 
    /**
-   * Time left till chat will be unmutted (seconds).
+   * Time left untill the chat will be unmuted (seconds).
    * @return timeLeftMute
   **/
-  @ApiModelProperty(example = "17988", required = true, value = "Time left till chat will be unmutted (seconds).")
+  @ApiModelProperty(example = "17988", required = true, value = "Time left untill the chat will be unmuted (seconds).")
   public Integer getTimeLeftMute() {
     return timeLeftMute;
   }

@@ -67,7 +67,7 @@ import com.textmagic.sdk.model.GetContactsByListIdPaginatedResponse;
 import com.textmagic.sdk.model.GetContactsPaginatedResponse;
 import com.textmagic.sdk.model.GetCountriesResponse;
 import com.textmagic.sdk.model.GetCustomFieldsPaginatedResponse;
-import com.textmagic.sdk.model.GetFavouritesPaginatedResponse;
+import com.textmagic.sdk.model.GetFavoritesPaginatedResponse;
 import com.textmagic.sdk.model.GetInboundMessagesNotificationSettingsResponse;
 import com.textmagic.sdk.model.GetInvoicesPaginatedResponse;
 import com.textmagic.sdk.model.GetListContactsIdsResponse;
@@ -597,7 +597,7 @@ public class TextMagicApiTest {
     /**
      * Delete a single inbound message
      *
-     * &gt; Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+     * &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
      *
      * @throws ApiException
      *          if the Api call fails
@@ -613,7 +613,7 @@ public class TextMagicApiTest {
     /**
      * Delete inbound messages (bulk)
      *
-     * &gt; Note, deleted inbound message will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+     * &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
      *
      * @throws ApiException
      *          if the Api call fails
@@ -1413,11 +1413,11 @@ public class TextMagicApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getFavouritesTest() throws ApiException {
+    public void getFavoritesTest() throws ApiException {
         Integer page = null;
         Integer limit = null;
         String query = null;
-        GetFavouritesPaginatedResponse response = api.getFavourites(page, limit, query);
+        GetFavoritesPaginatedResponse response = api.getFavorites(page, limit, query);
 
         // TODO: test validations
     }
@@ -2333,7 +2333,7 @@ public class TextMagicApiTest {
     /**
      * Step 1: Send a verification code 
      *
-     * Sends verification code to specified phone number.
+     * Sends a verification code to a specified phone number.
      *
      * @throws ApiException
      *          if the Api call fails

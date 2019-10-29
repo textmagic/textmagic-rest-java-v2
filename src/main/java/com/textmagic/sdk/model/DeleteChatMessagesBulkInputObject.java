@@ -101,10 +101,10 @@ public class DeleteChatMessagesBulkInputObject {
   }
 
    /**
-   * Default is 0 (false). If set to 1, all entities will be removed.
+   * Default is 0 (false). If set to 1, all the entities will be removed.
    * @return all
   **/
-  @ApiModelProperty(example = "false", value = "Default is 0 (false). If set to 1, all entities will be removed.")
+  @ApiModelProperty(example = "false", value = "Default is 0 (false). If set to 1, all the entities will be removed.")
   public Boolean isAll() {
     return all;
   }

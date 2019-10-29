@@ -42,7 +42,7 @@ public class MessagesIcsTextParameters {
   private Integer chars = null;
 
   /**
-   * Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS 
+   * Message charset. Could be: * **ISO-8859-1** – for plaintext SMS; * **UTF-16BE** – for Unicode SMS. 
    */
   @JsonAdapter(EncodingEnum.Adapter.class)
   public enum EncodingEnum {
@@ -103,10 +103,10 @@ public class MessagesIcsTextParameters {
   }
 
    /**
-   * Cost to check one number is constant – 0.04 in your account currency.
+   * Cost to check that one number is constant – 0.04 in your account currency.
    * @return cost
   **/
-  @ApiModelProperty(example = "0.04", required = true, value = "Cost to check one number is constant – 0.04 in your account currency.")
+  @ApiModelProperty(example = "0.04", required = true, value = "Cost to check that one number is constant – 0.04 in your account currency.")
   public BigDecimal getCost() {
     return cost;
   }
@@ -157,10 +157,10 @@ public class MessagesIcsTextParameters {
   }
 
    /**
-   * Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS 
+   * Message charset. Could be: * **ISO-8859-1** – for plaintext SMS; * **UTF-16BE** – for Unicode SMS. 
    * @return encoding
   **/
-  @ApiModelProperty(example = "ISO-8859-1", required = true, value = "Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS ")
+  @ApiModelProperty(example = "ISO-8859-1", required = true, value = "Message charset. Could be: * **ISO-8859-1** – for plaintext SMS; * **UTF-16BE** – for Unicode SMS. ")
   public EncodingEnum getEncoding() {
     return encoding;
   }
@@ -198,10 +198,10 @@ public class MessagesIcsTextParameters {
   }
 
    /**
-   * Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages 
+   * Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages. 
    * @return charsetLabel
   **/
-  @ApiModelProperty(example = "ISO-8859-1", required = true, value = "Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages ")
+  @ApiModelProperty(example = "ISO-8859-1", required = true, value = "Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS; *   **UTF-16BE** for Unicode SMS; *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages. ")
   public String getCharsetLabel() {
     return charsetLabel;
   }

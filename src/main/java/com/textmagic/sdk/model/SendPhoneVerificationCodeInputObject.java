@@ -53,10 +53,10 @@ public class SendPhoneVerificationCodeInputObject {
   }
 
    /**
-   * Use the phone number in international E.164 format. If you need to pass phone numbers in the local format, please use them with the **country** parameter to specify the origin country of the phone number. 
+   * Use the phone number in international E.164 format. If you need to pass a phone number in the local format, please use it with the **country** parameter to specify the origin country of the phone number. 
    * @return phone
   **/
-  @ApiModelProperty(example = "447860021130", required = true, value = "Use the phone number in international E.164 format. If you need to pass phone numbers in the local format, please use them with the **country** parameter to specify the origin country of the phone number. ")
+  @ApiModelProperty(example = "447860021130", required = true, value = "Use the phone number in international E.164 format. If you need to pass a phone number in the local format, please use it with the **country** parameter to specify the origin country of the phone number. ")
   public String getPhone() {
     return phone;
   }
@@ -71,10 +71,10 @@ public class SendPhoneVerificationCodeInputObject {
   }
 
    /**
-   * Alphanumeric string with up to 18 characters you can use to personalize the verification text message body, to help users identify your company or application name. For example: “Your TextMagic PIN is …” 
+   * An alphanumeric string with up to 18 characters you can use to personalize the verification text message body, to help users identify your company or application name. For example: “Your TextMagic PIN is …” 
    * @return brand
   **/
-  @ApiModelProperty(example = "TextMagic", required = true, value = "Alphanumeric string with up to 18 characters you can use to personalize the verification text message body, to help users identify your company or application name. For example: “Your TextMagic PIN is …” ")
+  @ApiModelProperty(example = "TextMagic", required = true, value = "An alphanumeric string with up to 18 characters you can use to personalize the verification text message body, to help users identify your company or application name. For example: “Your TextMagic PIN is …” ")
   public String getBrand() {
     return brand;
   }
@@ -107,10 +107,10 @@ public class SendPhoneVerificationCodeInputObject {
   }
 
    /**
-   * By default, the SMS or text-to-speech (TTS) voice message is generated in the locale that matches the number. For example, the text message or TTS message for a 33\\* number is sent in French. Use this parameter to explicitly control the language, accent, and gender used for the verification request.Can be one of the following: &#x60;de-de&#x60;, &#x60;en-au&#x60;, &#x60;en-gb&#x60;, &#x60;en-us&#x60;, &#x60;en-in&#x60;, &#x60;es-es&#x60;, &#x60;es-mx&#x60;, &#x60;es-us&#x60;, &#x60;fr-ca&#x60;, &#x60;fr-fr&#x60;, &#x60;is-is&#x60;, &#x60;it-it&#x60;, &#x60;ja-jp&#x60;, &#x60;ko-kr&#x60;, &#x60;nl-nl&#x60;, &#x60;pl-pl&#x60;, &#x60;pt-pt&#x60;, &#x60;pt-br&#x60;, &#x60;ro-ro&#x60;, &#x60;ru-ru&#x60;, &#x60;sv-se&#x60;, &#x60;tr-tr&#x60;, &#x60;zh-cn&#x60; or &#x60;zh-tw&#x60;. 
+   * By default, the SMS or text-to-speech (TTS) voice message is generated in the locale that matches the number. For example, the text message or TTS message for a 33\\* number is sent in French. Use this parameter to explicitly control the language, accent, and gender used for the verification request. Choosing one of the following: &#x60;de-de&#x60;, &#x60;en-au&#x60;, &#x60;en-gb&#x60;, &#x60;en-us&#x60;, &#x60;en-in&#x60;, &#x60;es-es&#x60;, &#x60;es-mx&#x60;, &#x60;es-us&#x60;, &#x60;fr-ca&#x60;, &#x60;fr-fr&#x60;, &#x60;is-is&#x60;, &#x60;it-it&#x60;, &#x60;ja-jp&#x60;, &#x60;ko-kr&#x60;, &#x60;nl-nl&#x60;, &#x60;pl-pl&#x60;, &#x60;pt-pt&#x60;, &#x60;pt-br&#x60;, &#x60;ro-ro&#x60;, &#x60;ru-ru&#x60;, &#x60;sv-se&#x60;, &#x60;tr-tr&#x60;, &#x60;zh-cn&#x60; or &#x60;zh-tw&#x60;. 
    * @return language
   **/
-  @ApiModelProperty(example = "en-gb", value = "By default, the SMS or text-to-speech (TTS) voice message is generated in the locale that matches the number. For example, the text message or TTS message for a 33\\* number is sent in French. Use this parameter to explicitly control the language, accent, and gender used for the verification request.Can be one of the following: `de-de`, `en-au`, `en-gb`, `en-us`, `en-in`, `es-es`, `es-mx`, `es-us`, `fr-ca`, `fr-fr`, `is-is`, `it-it`, `ja-jp`, `ko-kr`, `nl-nl`, `pl-pl`, `pt-pt`, `pt-br`, `ro-ro`, `ru-ru`, `sv-se`, `tr-tr`, `zh-cn` or `zh-tw`. ")
+  @ApiModelProperty(example = "en-gb", value = "By default, the SMS or text-to-speech (TTS) voice message is generated in the locale that matches the number. For example, the text message or TTS message for a 33\\* number is sent in French. Use this parameter to explicitly control the language, accent, and gender used for the verification request. Choosing one of the following: `de-de`, `en-au`, `en-gb`, `en-us`, `en-in`, `es-es`, `es-mx`, `es-us`, `fr-ca`, `fr-fr`, `is-is`, `it-it`, `ja-jp`, `ko-kr`, `nl-nl`, `pl-pl`, `pt-pt`, `pt-br`, `ro-ro`, `ru-ru`, `sv-se`, `tr-tr`, `zh-cn` or `zh-tw`. ")
   public String getLanguage() {
     return language;
   }
@@ -125,10 +125,10 @@ public class SendPhoneVerificationCodeInputObject {
   }
 
    /**
-   * One of the available [sender settings](https://my.textmagic.com/online/reply-options/) on your TextMagic account. If specified sender setting type is not allowed for some destinations, a fallback default sender will be used to ensure the message delivery. More info about known restrictions can be found [here](https://support.textmagic.com/article/how-to-understand-sender-setting-restrictions/). 
+   * One of the available [sender settings](https://my.textmagic.com/online/reply-options/) on your TextMagic account. If the specified sender setting type is not allowed for some destinations, a fallback default sender will be used to ensure message delivery. More info about known restrictions can be found [here](https://support.textmagic.com/article/how-to-understand-sender-setting-restrictions/). 
    * @return senderId
   **/
-  @ApiModelProperty(example = "TextMagic", value = "One of the available [sender settings](https://my.textmagic.com/online/reply-options/) on your TextMagic account. If specified sender setting type is not allowed for some destinations, a fallback default sender will be used to ensure the message delivery. More info about known restrictions can be found [here](https://support.textmagic.com/article/how-to-understand-sender-setting-restrictions/). ")
+  @ApiModelProperty(example = "TextMagic", value = "One of the available [sender settings](https://my.textmagic.com/online/reply-options/) on your TextMagic account. If the specified sender setting type is not allowed for some destinations, a fallback default sender will be used to ensure message delivery. More info about known restrictions can be found [here](https://support.textmagic.com/article/how-to-understand-sender-setting-restrictions/). ")
   public String getSenderId() {
     return senderId;
   }
@@ -143,10 +143,10 @@ public class SendPhoneVerificationCodeInputObject {
   }
 
    /**
-   * 2-letter ISO country code for local phone number.
+   * The 2-letter ISO country code for the local phone number.
    * @return country
   **/
-  @ApiModelProperty(example = "US", value = "2-letter ISO country code for local phone number.")
+  @ApiModelProperty(example = "US", value = "The 2-letter ISO country code for the local phone number.")
   public String getCountry() {
     return country;
   }

@@ -41,10 +41,10 @@ public class CheckPhoneVerificationCodeInputObject {
   }
 
    /**
-   * Verification code that was received by the user and entered into the form field.
+   * Verification code received by the user and entered into the form field.
    * @return code
   **/
-  @ApiModelProperty(example = "1234", required = true, value = "Verification code that was received by the user and entered into the form field.")
+  @ApiModelProperty(example = "1234", required = true, value = "Verification code received by the user and entered into the form field.")
   public Integer getCode() {
     return code;
   }

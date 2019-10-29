@@ -107,10 +107,10 @@ public class DoCarrierLookupResponse {
   }
 
    /**
-   * Cost to check one number is constant – 0.04 in your account currency.
+   * Cost to check that one number is constant – 0.04 in your account currency.
    * @return cost
   **/
-  @ApiModelProperty(example = "0.04", required = true, value = "Cost to check one number is constant – 0.04 in your account currency.")
+  @ApiModelProperty(example = "0.04", required = true, value = "Cost to check that one number is constant – 0.04 in your account currency.")
   public BigDecimal getCost() {
     return cost;
   }

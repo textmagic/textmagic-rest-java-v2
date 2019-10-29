@@ -105,10 +105,10 @@ public class Contact {
   }
 
    /**
-   * Is the Contact favourite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavourites).
+   * Is the Contact favorite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavorites).
    * @return favorited
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Is the Contact favourite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavourites).")
+  @ApiModelProperty(example = "true", required = true, value = "Is the Contact favorite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavorites).")
   public Boolean isFavorited() {
     return favorited;
   }
@@ -254,10 +254,10 @@ public class Contact {
   }
 
    /**
-   * See [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.
+   * See the [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.
    * @return customFields
   **/
-  @ApiModelProperty(required = true, value = "See [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.")
+  @ApiModelProperty(required = true, value = "See the [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.")
   public List<ContactCustomField> getCustomFields() {
     return customFields;
   }
@@ -313,10 +313,10 @@ public class Contact {
   }
 
    /**
-   * Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is an Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined. 
+   * Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is a Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined. 
    * @return phoneType
   **/
-  @ApiModelProperty(required = true, value = "Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is an Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined. ")
+  @ApiModelProperty(required = true, value = "Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is a Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined. ")
   public String getPhoneType() {
     return phoneType;
   }

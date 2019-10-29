@@ -171,10 +171,10 @@ public class Conversation {
   }
 
    /**
-   * Time when message arrived at TextMagic.
+   * Time when  the message arrived at TextMagic.
    * @return messageTime
   **/
-  @ApiModelProperty(example = "2012-11-28T18:38:28+0000", required = true, value = "Time when message arrived at TextMagic.")
+  @ApiModelProperty(example = "2012-11-28T18:38:28+0000", required = true, value = "Time when  the message arrived at TextMagic.")
   public OffsetDateTime getMessageTime() {
     return messageTime;
   }
@@ -207,10 +207,10 @@ public class Conversation {
   }
 
    /**
-   * Receiver phone number.
+   * Receiver&#39;s phone number.
    * @return receiver
   **/
-  @ApiModelProperty(example = "447624800500", required = true, value = "Receiver phone number.")
+  @ApiModelProperty(example = "447624800500", required = true, value = "Receiver's phone number.")
   public String getReceiver() {
     return receiver;
   }

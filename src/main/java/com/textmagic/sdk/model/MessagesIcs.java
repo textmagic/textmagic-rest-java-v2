@@ -163,10 +163,10 @@ public class MessagesIcs {
   }
 
    /**
-   * Next send date in [ISO 8601](https://en.wikipedia.org/?title&#x3D;ISO_8601) format. 
+   * The next send date in [ISO 8601](https://en.wikipedia.org/?title&#x3D;ISO_8601) format. 
    * @return nextSend
   **/
-  @ApiModelProperty(example = "2014-10-13T05:00:00+0000", required = true, value = "Next send date in [ISO 8601](https://en.wikipedia.org/?title=ISO_8601) format. ")
+  @ApiModelProperty(example = "2014-10-13T05:00:00+0000", required = true, value = "The next send date in [ISO 8601](https://en.wikipedia.org/?title=ISO_8601) format. ")
   public OffsetDateTime getNextSend() {
     return nextSend;
   }
@@ -217,10 +217,10 @@ public class MessagesIcs {
   }
 
    /**
-   * Date and time when last message has been sent.
+   * The date and time when the last message was sent.
    * @return lastSent
   **/
-  @ApiModelProperty(example = "2015-06-19T09:48:24+0000", required = true, value = "Date and time when last message has been sent.")
+  @ApiModelProperty(example = "2015-06-19T09:48:24+0000", required = true, value = "The date and time when the last message was sent.")
   public OffsetDateTime getLastSent() {
     return lastSent;
   }
@@ -235,10 +235,10 @@ public class MessagesIcs {
   }
 
    /**
-   * Aggregated contact information. If the message scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount contacts will be returned.
+   * Aggregated contact information. If the message was scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount of contacts will be returned.
    * @return contactName
   **/
-  @ApiModelProperty(example = "15 recipients", required = true, value = "Aggregated contact information. If the message scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount contacts will be returned.")
+  @ApiModelProperty(example = "15 recipients", required = true, value = "Aggregated contact information. If the message was scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount of contacts will be returned.")
   public String getContactName() {
     return contactName;
   }
@@ -397,10 +397,10 @@ public class MessagesIcs {
   }
 
    /**
-   * Indicates that schedling has been completed.
+   * Indicates that scheduling has been completed.
    * @return completed
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Indicates that schedling has been completed.")
+  @ApiModelProperty(example = "true", required = true, value = "Indicates that scheduling has been completed.")
   public Boolean isCompleted() {
     return completed;
   }

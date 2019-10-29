@@ -1,5 +1,5 @@
 
-# GetFavouritesPaginatedResponse
+# GetFavoritesPaginatedResponse
 
 ## Properties
 Name | Type | Description | Notes

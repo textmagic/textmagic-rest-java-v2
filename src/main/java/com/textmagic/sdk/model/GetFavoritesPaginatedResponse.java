@@ -28,10 +28,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * GetFavouritesPaginatedResponse
+ * GetFavoritesPaginatedResponse
  */
 
-public class GetFavouritesPaginatedResponse {
+public class GetFavoritesPaginatedResponse {
   @SerializedName("page")
   private Integer page = null;
 
@@ -44,7 +44,7 @@ public class GetFavouritesPaginatedResponse {
   @SerializedName("resources")
   private List<FavoriteContact> resources = new ArrayList<FavoriteContact>();
 
-  public GetFavouritesPaginatedResponse page(Integer page) {
+  public GetFavoritesPaginatedResponse page(Integer page) {
     this.page = page;
     return this;
   }
@@ -62,7 +62,7 @@ public class GetFavouritesPaginatedResponse {
     this.page = page;
   }
 
-  public GetFavouritesPaginatedResponse pageCount(Integer pageCount) {
+  public GetFavoritesPaginatedResponse pageCount(Integer pageCount) {
     this.pageCount = pageCount;
     return this;
   }
@@ -80,7 +80,7 @@ public class GetFavouritesPaginatedResponse {
     this.pageCount = pageCount;
   }
 
-  public GetFavouritesPaginatedResponse limit(Integer limit) {
+  public GetFavoritesPaginatedResponse limit(Integer limit) {
     this.limit = limit;
     return this;
   }
@@ -98,12 +98,12 @@ public class GetFavouritesPaginatedResponse {
     this.limit = limit;
   }
 
-  public GetFavouritesPaginatedResponse resources(List<FavoriteContact> resources) {
+  public GetFavoritesPaginatedResponse resources(List<FavoriteContact> resources) {
     this.resources = resources;
     return this;
   }
 
-  public GetFavouritesPaginatedResponse addResourcesItem(FavoriteContact resourcesItem) {
+  public GetFavoritesPaginatedResponse addResourcesItem(FavoriteContact resourcesItem) {
     this.resources.add(resourcesItem);
     return this;
   }
@@ -130,11 +130,11 @@ public class GetFavouritesPaginatedResponse {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    GetFavouritesPaginatedResponse getFavouritesPaginatedResponse = (GetFavouritesPaginatedResponse) o;
-    return Objects.equals(this.page, getFavouritesPaginatedResponse.page) &&
-        Objects.equals(this.pageCount, getFavouritesPaginatedResponse.pageCount) &&
-        Objects.equals(this.limit, getFavouritesPaginatedResponse.limit) &&
-        Objects.equals(this.resources, getFavouritesPaginatedResponse.resources);
+    GetFavoritesPaginatedResponse getFavoritesPaginatedResponse = (GetFavoritesPaginatedResponse) o;
+    return Objects.equals(this.page, getFavoritesPaginatedResponse.page) &&
+        Objects.equals(this.pageCount, getFavoritesPaginatedResponse.pageCount) &&
+        Objects.equals(this.limit, getFavoritesPaginatedResponse.limit) &&
+        Objects.equals(this.resources, getFavoritesPaginatedResponse.resources);
   }
 
   @Override
@@ -146,7 +146,7 @@ public class GetFavouritesPaginatedResponse {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class GetFavouritesPaginatedResponse {\n");
+    sb.append("class GetFavoritesPaginatedResponse {\n");
     
     sb.append("    page: ").append(toIndentedString(page)).append("\n");
     sb.append("    pageCount: ").append(toIndentedString(pageCount)).append("\n");

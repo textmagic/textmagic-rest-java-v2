@@ -418,10 +418,10 @@ public class SubaccountWithToken {
   }
 
    /**
-   * Is account has confirmed Email.
+   * Does the account have a confirmed Email?.
    * @return emailAccepted
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Is account has confirmed Email.")
+  @ApiModelProperty(example = "true", required = true, value = "Does the account have a confirmed Email?.")
   public Boolean isEmailAccepted() {
     return emailAccepted;
   }
@@ -436,10 +436,10 @@ public class SubaccountWithToken {
   }
 
    /**
-   * Is account has confirmed Phone number.
+   * Does the account have a confirmed Phone Number?.
    * @return phoneAccepted
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Is account has confirmed Phone number.")
+  @ApiModelProperty(example = "true", required = true, value = "Does the account have a confirmed Phone Number?.")
   public Boolean isPhoneAccepted() {
     return phoneAccepted;
   }

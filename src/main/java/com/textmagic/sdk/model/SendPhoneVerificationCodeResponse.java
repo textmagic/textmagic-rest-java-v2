@@ -61,10 +61,10 @@ public class SendPhoneVerificationCodeResponse {
   }
 
    /**
-   * Amount of credit which will be deducted from your account balance when this verification is successfully completed.
+   * An amount of credit which will be deducted from your account balance when this verification is successfully completed.
    * @return price
   **/
-  @ApiModelProperty(example = "0.05", required = true, value = "Amount of credit which will be deducted from your account balance when this verification is successfully completed.")
+  @ApiModelProperty(example = "0.05", required = true, value = "An amount of credit which will be deducted from your account balance when this verification is successfully completed.")
   public BigDecimal getPrice() {
     return price;
   }

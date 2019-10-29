@@ -33,7 +33,7 @@ public class FavoriteContact {
   private Integer entityId = null;
 
   /**
-   * Entity type which should be marked as **favourite**.
+   * Entity type which should be marked as **favorite**.
    */
   @JsonAdapter(EntityTypeEnum.Adapter.class)
   public enum EntityTypeEnum {
@@ -118,10 +118,10 @@ public class FavoriteContact {
   }
 
    /**
-   * Entity type which should be marked as **favourite**.
+   * Entity type which should be marked as **favorite**.
    * @return entityType
   **/
-  @ApiModelProperty(example = "contact", required = true, value = "Entity type which should be marked as **favourite**.")
+  @ApiModelProperty(example = "contact", required = true, value = "Entity type which should be marked as **favorite**.")
   public EntityTypeEnum getEntityType() {
     return entityType;
   }

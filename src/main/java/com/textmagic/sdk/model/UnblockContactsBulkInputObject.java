@@ -59,10 +59,10 @@ public class UnblockContactsBulkInputObject {
   }
 
    /**
-   * Default is 0 (false). If set to 1 all the entities will be removed.
+   * Default is 0 (false). If set to 1, all the entities will be removed.
    * @return all
   **/
-  @ApiModelProperty(example = "0", value = "Default is 0 (false). If set to 1 all the entities will be removed.")
+  @ApiModelProperty(example = "0", value = "Default is 0 (false). If set to 1, all the entities will be removed.")
   public Integer getAll() {
     return all;
   }
