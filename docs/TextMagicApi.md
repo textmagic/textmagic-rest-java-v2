@@ -160,7 +160,7 @@ Method | HTTP request | Description
 
 Assign contacts to a list
 
-&gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
 
 ### Example
 ```java
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
 
 Block a contact by phone number
 
-Block a contact from inbound and outbound communication by phone number.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/blockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Block a contact from inbound and outbound communication by phone number.
 
 ### Example
 ```java
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 
 Buy a dedicated number
 
-To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
 
 ### Example
 ```java
@@ -323,7 +323,7 @@ null (empty response body)
 
 Cancel verification process
 
-You can cancel the verification not earlier than 30 seconds after the initial request.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;You can cancel the verification not earlier than 30 seconds after the initial request.
 
 ### Example
 ```java
@@ -376,7 +376,7 @@ null (empty response body)
 
 Step 2: Check the verification code 
 
-Check received code from user with the code which was actually sent.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check received code from user with the code which was actually sent.
 
 ### Example
 ```java
@@ -429,7 +429,7 @@ null (empty response body)
 
 Reset list members to the specified contacts
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -485,7 +485,7 @@ Name | Type | Description  | Notes
 
 Close chats (bulk)
 
-Close chats by chat IDs or close all chats
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close chats by chat IDs or close all chats
 
 ### Example
 ```java
@@ -538,7 +538,7 @@ null (empty response body)
 
 Close read chats
 
-Close all chats that have no unread messages.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeReadChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close all chats that have no unread messages.
 
 ### Example
 ```java
@@ -587,7 +587,7 @@ null (empty response body)
 
 Close sub-account
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -640,7 +640,7 @@ null (empty response body)
 
 Add a new contact
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/createContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -694,7 +694,7 @@ Name | Type | Description  | Notes
 
 Create a new contact note
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -750,7 +750,7 @@ Name | Type | Description  | Notes
 
 Add a new custom field
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -804,7 +804,7 @@ Name | Type | Description  | Notes
 
 Create a new list
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/createList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -858,7 +858,7 @@ Name | Type | Description  | Notes
 
 Create a template
 
-There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/createTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
 
 ### Example
 ```java
@@ -912,7 +912,7 @@ Name | Type | Description  | Notes
 
 Delete contacts (bulk)
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -961,7 +961,7 @@ null (empty response body)
 
 Delete all messages
 
-Delete all messages.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete all messages.
 
 ### Example
 ```java
@@ -1010,7 +1010,7 @@ null (empty response body)
 
 Delete an avatar
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/deleteAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -1059,7 +1059,7 @@ null (empty response body)
 
 Delete chat messages by ID(s)
 
-Delete messages from chat by given message IDs.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete messages from chat by given message IDs.
 
 ### Example
 ```java
@@ -1114,7 +1114,7 @@ null (empty response body)
 
 Delete chats (bulk)
 
-Delete chats by given IDs or delete all chats.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete chats by given IDs or delete all chats.
 
 ### Example
 ```java
@@ -1167,7 +1167,7 @@ null (empty response body)
 
 Delete a contact
 
-&gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
 
 ### Example
 ```java
@@ -1220,7 +1220,7 @@ null (empty response body)
 
 Delete an avatar
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -1273,7 +1273,7 @@ null (empty response body)
 
 Delete a contact note
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -1326,7 +1326,7 @@ null (empty response body)
 
 Delete contact notes (bulk)
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -1381,7 +1381,7 @@ null (empty response body)
 
 Delete contacts by IDs (bulk)
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -1434,7 +1434,7 @@ null (empty response body)
 
 Unassign contacts from a list
 
-&gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
 
 ### Example
 ```java
@@ -1489,7 +1489,7 @@ null (empty response body)
 
 Delete a custom field
 
-&gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
 
 ### Example
 ```java
@@ -1542,7 +1542,7 @@ null (empty response body)
 
 Cancel a dedicated number subscription
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -1595,7 +1595,7 @@ null (empty response body)
 
 Delete a single inbound message
 
-&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
 
 ### Example
 ```java
@@ -1648,7 +1648,7 @@ null (empty response body)
 
 Delete inbound messages (bulk)
 
-&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
 
 ### Example
 ```java
@@ -1701,7 +1701,7 @@ null (empty response body)
 
 Delete a list
 
-This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
 
 ### Example
 ```java
@@ -1754,7 +1754,7 @@ null (empty response body)
 
 Delete an avatar for a list
 
-Delete an avatar for a list
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete an avatar for a list
 
 ### Example
 ```java
@@ -1807,7 +1807,7 @@ null (empty response body)
 
 Delete contacts from a list (bulk)
 
-Delete contacts from a list (bulk)
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete contacts from a list (bulk)
 
 ### Example
 ```java
@@ -1862,7 +1862,7 @@ null (empty response body)
 
 Delete lists (bulk)
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -1915,7 +1915,7 @@ null (empty response body)
 
 Delete a session
 
-Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
 
 ### Example
 ```java
@@ -1968,7 +1968,7 @@ null (empty response body)
 
 Delete sessions (bulk)
 
-Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
 
 ### Example
 ```java
@@ -2021,7 +2021,7 @@ null (empty response body)
 
 Delete message
 
-Delete a single message.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a single message.
 
 ### Example
 ```java
@@ -2074,7 +2074,7 @@ null (empty response body)
 
 Delete messages (bulk)
 
-Delete outbound messages by the given ID(s) or delete all outbound messages.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete outbound messages by the given ID(s) or delete all outbound messages.
 
 ### Example
 ```java
@@ -2127,7 +2127,7 @@ null (empty response body)
 
 Delete a single scheduled message
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -2180,7 +2180,7 @@ null (empty response body)
 
 Delete scheduled messages (bulk)
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -2233,7 +2233,7 @@ null (empty response body)
 
 Delete a Sender ID
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -2286,7 +2286,7 @@ null (empty response body)
 
 Delete a template
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -2339,7 +2339,7 @@ null (empty response body)
 
 Delete templates (bulk)
 
-Delete templates by given IDs or delete all templates.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete templates by given IDs or delete all templates.
 
 ### Example
 ```java
@@ -2392,7 +2392,7 @@ null (empty response body)
 
 Carrier Lookup
 
-This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
 
 ### Example
 ```java
@@ -2448,7 +2448,7 @@ Name | Type | Description  | Notes
 
 Email Lookup
 
-To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
 
 ### Example
 ```java
@@ -2502,7 +2502,7 @@ Name | Type | Description  | Notes
 
 Get all bulk sessions
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -2558,7 +2558,7 @@ Name | Type | Description  | Notes
 
 Get all chats
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getAllChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -2622,7 +2622,7 @@ Name | Type | Description  | Notes
 
 Get all inbound messages
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -2682,7 +2682,7 @@ Name | Type | Description  | Notes
 
 Get all sessions
 
-Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
 
 ### Example
 ```java
@@ -2738,7 +2738,7 @@ Name | Type | Description  | Notes
 
 Get all messages
 
-Get all user oubound messages.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all user oubound messages.
 
 ### Example
 ```java
@@ -2796,7 +2796,7 @@ Name | Type | Description  | Notes
 
 Get all scheduled messages
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -2858,7 +2858,7 @@ Name | Type | Description  | Notes
 
 Get all templates
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -2914,7 +2914,7 @@ Name | Type | Description  | Notes
 
 Find dedicated numbers available for purchase
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -2972,7 +2972,7 @@ Name | Type | Description  | Notes
 
 Get available sender settings
 
-Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
 
 ### Example
 ```java
@@ -3026,7 +3026,7 @@ Name | Type | Description  | Notes
 
 Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3076,7 +3076,7 @@ This endpoint does not need any parameter.
 
 Get balance notification settings
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3126,7 +3126,7 @@ This endpoint does not need any parameter.
 
 Get blocked contacts
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3188,7 +3188,7 @@ Name | Type | Description  | Notes
 
 Get bulk session status
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3242,7 +3242,7 @@ Name | Type | Description  | Notes
 
 Fetch callback URL settings
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3292,7 +3292,7 @@ This endpoint does not need any parameter.
 
 Get a single chat
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3346,7 +3346,7 @@ Name | Type | Description  | Notes
 
 Find chats by phone
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3404,7 +3404,7 @@ Name | Type | Description  | Notes
 
 Get chat messages
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3472,7 +3472,7 @@ Name | Type | Description  | Notes
 
 Get the details of a specific contact
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3526,7 +3526,7 @@ Name | Type | Description  | Notes
 
 Get the details of a specific contact by phone number
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3580,7 +3580,7 @@ Name | Type | Description  | Notes
 
 Check if a phone number is blocked
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3634,7 +3634,7 @@ Name | Type | Description  | Notes
 
 Check import progress
 
-Get contact import session progress.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contact import session progress.
 
 ### Example
 ```java
@@ -3688,7 +3688,7 @@ Name | Type | Description  | Notes
 
 Get a contact note
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3742,7 +3742,7 @@ Name | Type | Description  | Notes
 
 Fetch notes assigned to a given contact
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3800,7 +3800,7 @@ Name | Type | Description  | Notes
 
 Get all contacts
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -3862,7 +3862,7 @@ Name | Type | Description  | Notes
 
 Get contacts autocomplete suggestions
 
-Get contacts autocomplete suggestions by given search terms.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contacts autocomplete suggestions by given search terms.
 
 ### Example
 ```java
@@ -3920,7 +3920,7 @@ Name | Type | Description  | Notes
 
 Get all contacts in a list
 
-A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
 
 ### Example
 ```java
@@ -3982,7 +3982,7 @@ Name | Type | Description  | Notes
 
 Get countries
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -4032,7 +4032,7 @@ This endpoint does not need any parameter.
 
 Get current account information
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/getCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -4082,7 +4082,7 @@ This endpoint does not need any parameter.
 
 Get the details of a specific custom field
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -4136,7 +4136,7 @@ Name | Type | Description  | Notes
 
 Get all custom fields
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -4192,7 +4192,7 @@ Name | Type | Description  | Notes
 
 Get the details of a specific dedicated number
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -4246,7 +4246,7 @@ Name | Type | Description  | Notes
 
 Get favorite contacts and lists
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getFavorites\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -4304,7 +4304,7 @@ Name | Type | Description  | Notes
 
 Get a single inbound message
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -4358,7 +4358,7 @@ Name | Type | Description  | Notes
 
 Get inbound messages notification settings
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -4408,7 +4408,7 @@ This endpoint does not need any parameter.
 
 Get all invoices
 
-With the TextMagic API, you can check the invoices and transactions for your account.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Invoices/getInvoices\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;With the TextMagic API, you can check the invoices and transactions for your account.
 
 ### Example
 ```java
@@ -4464,7 +4464,7 @@ Name | Type | Description  | Notes
 
 Get the details of a specific list
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -4518,7 +4518,7 @@ Name | Type | Description  | Notes
 
 Get all contact IDs in a list
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -4572,7 +4572,7 @@ Name | Type | Description  | Notes
 
 Get all lists
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -4636,7 +4636,7 @@ Name | Type | Description  | Notes
 
 Get a contact&#39;s lists
 
-Get all the lists in which a contact is included.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all the lists in which a contact is included.
 
 ### Example
 ```java
@@ -4694,7 +4694,7 @@ Name | Type | Description  | Notes
 
 Preview message
 
-Get a messages preview (with tags merged) of up to 100 messages per session.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a messages preview (with tags merged) of up to 100 messages per session.
 
 ### Example
 ```java
@@ -4780,7 +4780,7 @@ Name | Type | Description  | Notes
 
 Check message price
 
-Check pricing for a new outbound message.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check pricing for a new outbound message.
 
 ### Example
 ```java
@@ -4868,7 +4868,7 @@ Name | Type | Description  | Notes
 
 Get a session&#x60;s details
 
-Get a specific session’s details.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a specific session’s details.
 
 ### Example
 ```java
@@ -4922,7 +4922,7 @@ Name | Type | Description  | Notes
 
 Get a session&#x60;s statistics
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -4978,7 +4978,7 @@ Name | Type | Description  | Notes
 
 Get a session&#x60;s messages
 
-A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
 
 ### Example
 ```java
@@ -5040,7 +5040,7 @@ Name | Type | Description  | Notes
 
 Get sent/received messages counters values
 
-Get total contacts, sent messages and received messages counters values.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get total contacts, sent messages and received messages counters values.
 
 ### Example
 ```java
@@ -5090,7 +5090,7 @@ This endpoint does not need any parameter.
 
 Get messaging statistics
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -5148,7 +5148,7 @@ Name | Type | Description  | Notes
 
 Get a single message
 
-Get a single outgoing message.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single outgoing message.
 
 ### Example
 ```java
@@ -5202,7 +5202,7 @@ Name | Type | Description  | Notes
 
 Get history
 
-Get the outbound messages history.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the outbound messages history.
 
 ### Example
 ```java
@@ -5264,7 +5264,7 @@ Name | Type | Description  | Notes
 
 Get a single scheduled message
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -5318,7 +5318,7 @@ Name | Type | Description  | Notes
 
 Get the details of a specific Sender ID
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -5372,7 +5372,7 @@ Name | Type | Description  | Notes
 
 Get all your approved Sender IDs
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -5428,7 +5428,7 @@ Name | Type | Description  | Notes
 
 Get current sender settings
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -5482,7 +5482,7 @@ Name | Type | Description  | Notes
 
 Get spending statistics
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -5542,7 +5542,7 @@ Name | Type | Description  | Notes
 
 Get sub-account information
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -5596,7 +5596,7 @@ Name | Type | Description  | Notes
 
 Get a sub-accounts list
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -5652,7 +5652,7 @@ Name | Type | Description  | Notes
 
 Get all sub-accounts with their REST API tokens associated with a specified app name
 
-Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
 
 ### Example
 ```java
@@ -5710,7 +5710,7 @@ Name | Type | Description  | Notes
 
 Get a template&#x60;s details
 
-Get a single template.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single template.
 
 ### Example
 ```java
@@ -5764,7 +5764,7 @@ Name | Type | Description  | Notes
 
 Get timezones
 
-Return all available timezone IDs
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Return all available timezone IDs
 
 ### Example
 ```java
@@ -5818,7 +5818,7 @@ Name | Type | Description  | Notes
 
 Get unread messages number
 
-Get the total amount of unread messages in the current user chats.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the total amount of unread messages in the current user chats.
 
 ### Example
 ```java
@@ -5868,7 +5868,7 @@ This endpoint does not need any parameter.
 
 Get the details of a specific unsubscribed contact
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -5922,7 +5922,7 @@ Name | Type | Description  | Notes
 
 Get all unsubscribed contacts
 
-When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
 
 ### Example
 ```java
@@ -5978,7 +5978,7 @@ Name | Type | Description  | Notes
 
 Get all your dedicated numbers
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -6036,7 +6036,7 @@ Name | Type | Description  | Notes
 
 Import contacts
 
-Import contacts from the CSV, XLS or XLSX file.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/importContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Import contacts from the CSV, XLS or XLSX file.
 
 ### Example
 ```java
@@ -6096,7 +6096,7 @@ Name | Type | Description  | Notes
 
 Invite a new sub-account
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -6149,7 +6149,7 @@ null (empty response body)
 
 Mark chats as read (bulk)
 
-Mark several chats as read by chat IDs or mark all chats as read
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as read by chat IDs or mark all chats as read
 
 ### Example
 ```java
@@ -6202,7 +6202,7 @@ null (empty response body)
 
 Mark chats as unread (bulk)
 
-Mark several chats as UNread by chat IDs or mark all chats as UNread
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as UNread by chat IDs or mark all chats as UNread
 
 ### Example
 ```java
@@ -6255,7 +6255,7 @@ null (empty response body)
 
 Mute chat sounds
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -6309,7 +6309,7 @@ Name | Type | Description  | Notes
 
 Mute chats (bulk)
 
-Mute several chats by chat ids or mute all chats.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mute several chats by chat ids or mute all chats.
 
 ### Example
 ```java
@@ -6362,7 +6362,7 @@ null (empty response body)
 
 Ping
 
-Make a simple ping request.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Make a simple ping request.
 
 ### Example
 ```java
@@ -6412,7 +6412,7 @@ This endpoint does not need any parameter.
 
 Reopen chats (bulk)
 
-Reopen chats by chat IDs or reopen all chats
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Reopen chats by chat IDs or reopen all chats
 
 ### Example
 ```java
@@ -6465,7 +6465,7 @@ null (empty response body)
 
 Request a new REST API token for sub-account
 
-Returning user object, key and app name.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Returning user object, key and app name.
 
 ### Example
 ```java
@@ -6519,7 +6519,7 @@ Name | Type | Description  | Notes
 
 Apply for a new Sender ID
 
-&gt; Sender IDs are shared among all of your sub-accounts.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Sender IDs are shared among all of your sub-accounts.
 
 ### Example
 ```java
@@ -6573,7 +6573,7 @@ Name | Type | Description  | Notes
 
 Find chats by message text
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -6631,7 +6631,7 @@ Name | Type | Description  | Notes
 
 Find chats (bulk)
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -6689,7 +6689,7 @@ Name | Type | Description  | Notes
 
 Find chats by recipient
 
-Find chats by recipient (contact, list name or phone number).
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find chats by recipient (contact, list name or phone number).
 
 ### Example
 ```java
@@ -6749,7 +6749,7 @@ Name | Type | Description  | Notes
 
 Find contacts by given criteria
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/searchContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -6823,7 +6823,7 @@ Name | Type | Description  | Notes
 
 Find inbound messages
 
-Find inbound messages by given parameters.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find inbound messages by given parameters.
 
 ### Example
 ```java
@@ -6889,7 +6889,7 @@ Name | Type | Description  | Notes
 
 Find lists by given criteria
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/searchLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -6957,7 +6957,7 @@ Name | Type | Description  | Notes
 
 Find messages
 
-Find outbound messages by given parameters.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find outbound messages by given parameters.
 
 ### Example
 ```java
@@ -7025,7 +7025,7 @@ Name | Type | Description  | Notes
 
 Find scheduled messages
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -7091,7 +7091,7 @@ Name | Type | Description  | Notes
 
 Find templates by criteria
 
-Find user templates by given parameters.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/searchTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find user templates by given parameters.
 
 ### Example
 ```java
@@ -7153,7 +7153,7 @@ Name | Type | Description  | Notes
 
 Send message
 
-This is the main entrypoint to send messages. See the examples above for the reference.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This is the main entrypoint to send messages. See the examples above for the reference.
 
 ### Example
 ```java
@@ -7207,7 +7207,7 @@ Name | Type | Description  | Notes
 
 Step 1: Send a verification code 
 
-Sends a verification code to a specified phone number.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Sends a verification code to a specified phone number.
 
 ### Example
 ```java
@@ -7261,7 +7261,7 @@ Name | Type | Description  | Notes
 
 Change chat status
 
-Set the status of the chat given by ID.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/setChatStatus\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Set the status of the chat given by ID.
 
 ### Example
 ```java
@@ -7315,7 +7315,7 @@ Name | Type | Description  | Notes
 
 Unblock a contact by phone number
 
-Unblock a contact by phone number
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock a contact by phone number
 
 ### Example
 ```java
@@ -7368,7 +7368,7 @@ null (empty response body)
 
 Unblock contacts (bulk)
 
-Unblock several contacts by blocked contact IDs or unblock all contacts.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock several contacts by blocked contact IDs or unblock all contacts.
 
 ### Example
 ```java
@@ -7421,7 +7421,7 @@ null (empty response body)
 
 Unmute chats (bulk)
 
-Unmute several chats by chat ids or unmute all chats.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unmute several chats by chat ids or unmute all chats.
 
 ### Example
 ```java
@@ -7474,7 +7474,7 @@ null (empty response body)
 
 Manually unsubscribe a contact
 
-&gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
 
 ### Example
 ```java
@@ -7528,7 +7528,7 @@ Name | Type | Description  | Notes
 
 Update balance notification settings
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -7581,7 +7581,7 @@ null (empty response body)
 
 Update callback URL settings
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -7634,7 +7634,7 @@ null (empty response body)
 
 Update chat desktop notification settings
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -7687,7 +7687,7 @@ null (empty response body)
 
 Edit a contact
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/updateContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -7743,7 +7743,7 @@ Name | Type | Description  | Notes
 
 Update a contact note
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -7799,7 +7799,7 @@ Name | Type | Description  | Notes
 
 Edit current account info
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -7853,7 +7853,7 @@ Name | Type | Description  | Notes
 
 Edit a custom field
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -7909,7 +7909,7 @@ Name | Type | Description  | Notes
 
 Edit the custom field value of a specified contact
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -7965,7 +7965,7 @@ Name | Type | Description  | Notes
 
 Update inbound messages notification settings
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -8018,7 +8018,7 @@ null (empty response body)
 
 Edit a list
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/updateList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -8074,7 +8074,7 @@ Name | Type | Description  | Notes
 
 Change sender settings
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -8127,7 +8127,7 @@ null (empty response body)
 
 Update a template
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/updateTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -8183,7 +8183,7 @@ Name | Type | Description  | Notes
 
 Upload an avatar
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/uploadAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -8236,7 +8236,7 @@ null (empty response body)
 
 Upload an avatar
 
-
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
 
 ### Example
 ```java
@@ -8292,7 +8292,7 @@ Name | Type | Description  | Notes
 
 Add an avatar for a list
 
-Add an avatar for a list
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Add an avatar for a list
 
 ### Example
 ```java
@@ -8348,7 +8348,7 @@ Name | Type | Description  | Notes
 
 Upload message attachment
 
-Upload a new file to insert it as a link.
+&lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Upload a new file to insert it as a link.
 
 ### Example
 ```java

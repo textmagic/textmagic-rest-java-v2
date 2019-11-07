@@ -254,7 +254,7 @@ public class TextMagicApi {
 
     /**
      * Assign contacts to a list
-     * &gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
      * @param assignContactsToListInputObject  (required)
      * @param id  (required)
      * @return ResourceLinkResponse
@@ -267,7 +267,7 @@ public class TextMagicApi {
 
     /**
      * Assign contacts to a list
-     * &gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
      * @param assignContactsToListInputObject  (required)
      * @param id  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
@@ -281,7 +281,7 @@ public class TextMagicApi {
 
     /**
      * Assign contacts to a list (asynchronously)
-     * &gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/assignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
      * @param assignContactsToListInputObject  (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -379,7 +379,7 @@ public class TextMagicApi {
 
     /**
      * Block a contact by phone number
-     * Block a contact from inbound and outbound communication by phone number.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/blockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Block a contact from inbound and outbound communication by phone number.
      * @param blockContactInputObject  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -391,7 +391,7 @@ public class TextMagicApi {
 
     /**
      * Block a contact by phone number
-     * Block a contact from inbound and outbound communication by phone number.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/blockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Block a contact from inbound and outbound communication by phone number.
      * @param blockContactInputObject  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -404,7 +404,7 @@ public class TextMagicApi {
 
     /**
      * Block a contact by phone number (asynchronously)
-     * Block a contact from inbound and outbound communication by phone number.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/blockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Block a contact from inbound and outbound communication by phone number.
      * @param blockContactInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -501,7 +501,7 @@ public class TextMagicApi {
 
     /**
      * Buy a dedicated number
-     * To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
      * @param buyDedicatedNumberInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -511,7 +511,7 @@ public class TextMagicApi {
 
     /**
      * Buy a dedicated number
-     * To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
      * @param buyDedicatedNumberInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -523,7 +523,7 @@ public class TextMagicApi {
 
     /**
      * Buy a dedicated number (asynchronously)
-     * To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/buyDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
      * @param buyDedicatedNumberInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -620,7 +620,7 @@ public class TextMagicApi {
 
     /**
      * Cancel verification process
-     * You can cancel the verification not earlier than 30 seconds after the initial request.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;You can cancel the verification not earlier than 30 seconds after the initial request.
      * @param verifyId The verifyId that you received in Step 1. (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -630,7 +630,7 @@ public class TextMagicApi {
 
     /**
      * Cancel verification process
-     * You can cancel the verification not earlier than 30 seconds after the initial request.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;You can cancel the verification not earlier than 30 seconds after the initial request.
      * @param verifyId The verifyId that you received in Step 1. (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -642,7 +642,7 @@ public class TextMagicApi {
 
     /**
      * Cancel verification process (asynchronously)
-     * You can cancel the verification not earlier than 30 seconds after the initial request.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/cancelVerification\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;You can cancel the verification not earlier than 30 seconds after the initial request.
      * @param verifyId The verifyId that you received in Step 1. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -738,7 +738,7 @@ public class TextMagicApi {
 
     /**
      * Step 2: Check the verification code 
-     * Check received code from user with the code which was actually sent.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check received code from user with the code which was actually sent.
      * @param checkPhoneVerificationCodeInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -748,7 +748,7 @@ public class TextMagicApi {
 
     /**
      * Step 2: Check the verification code 
-     * Check received code from user with the code which was actually sent.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check received code from user with the code which was actually sent.
      * @param checkPhoneVerificationCodeInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -760,7 +760,7 @@ public class TextMagicApi {
 
     /**
      * Step 2: Check the verification code  (asynchronously)
-     * Check received code from user with the code which was actually sent.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/checkPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check received code from user with the code which was actually sent.
      * @param checkPhoneVerificationCodeInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -863,7 +863,7 @@ public class TextMagicApi {
 
     /**
      * Reset list members to the specified contacts
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param clearAndAssignContactsToListInputObject  (required)
      * @param id  (required)
      * @return ResourceLinkResponse
@@ -876,7 +876,7 @@ public class TextMagicApi {
 
     /**
      * Reset list members to the specified contacts
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param clearAndAssignContactsToListInputObject  (required)
      * @param id  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
@@ -890,7 +890,7 @@ public class TextMagicApi {
 
     /**
      * Reset list members to the specified contacts (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/clearAndAssignContactsToList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param clearAndAssignContactsToListInputObject  (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -988,7 +988,7 @@ public class TextMagicApi {
 
     /**
      * Close chats (bulk)
-     * Close chats by chat IDs or close all chats
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close chats by chat IDs or close all chats
      * @param closeChatsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -998,7 +998,7 @@ public class TextMagicApi {
 
     /**
      * Close chats (bulk)
-     * Close chats by chat IDs or close all chats
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close chats by chat IDs or close all chats
      * @param closeChatsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1010,7 +1010,7 @@ public class TextMagicApi {
 
     /**
      * Close chats (bulk) (asynchronously)
-     * Close chats by chat IDs or close all chats
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close chats by chat IDs or close all chats
      * @param closeChatsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1100,7 +1100,7 @@ public class TextMagicApi {
 
     /**
      * Close read chats
-     * Close all chats that have no unread messages.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeReadChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close all chats that have no unread messages.
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
     public void closeReadChats() throws ApiException {
@@ -1109,7 +1109,7 @@ public class TextMagicApi {
 
     /**
      * Close read chats
-     * Close all chats that have no unread messages.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeReadChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close all chats that have no unread messages.
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -1120,7 +1120,7 @@ public class TextMagicApi {
 
     /**
      * Close read chats (asynchronously)
-     * Close all chats that have no unread messages.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/closeReadChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Close all chats that have no unread messages.
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -1216,7 +1216,7 @@ public class TextMagicApi {
 
     /**
      * Close sub-account
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -1226,7 +1226,7 @@ public class TextMagicApi {
 
     /**
      * Close sub-account
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1238,7 +1238,7 @@ public class TextMagicApi {
 
     /**
      * Close sub-account (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/closeSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1334,7 +1334,7 @@ public class TextMagicApi {
 
     /**
      * Add a new contact
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/createContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param createContactInputObject  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1346,7 +1346,7 @@ public class TextMagicApi {
 
     /**
      * Add a new contact
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/createContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param createContactInputObject  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1359,7 +1359,7 @@ public class TextMagicApi {
 
     /**
      * Add a new contact (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/createContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param createContactInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1463,7 +1463,7 @@ public class TextMagicApi {
 
     /**
      * Create a new contact note
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param createContactNoteInputObject  (required)
      * @param id  (required)
      * @return ResourceLinkResponse
@@ -1476,7 +1476,7 @@ public class TextMagicApi {
 
     /**
      * Create a new contact note
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param createContactNoteInputObject  (required)
      * @param id  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
@@ -1490,7 +1490,7 @@ public class TextMagicApi {
 
     /**
      * Create a new contact note (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/createContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param createContactNoteInputObject  (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -1588,7 +1588,7 @@ public class TextMagicApi {
 
     /**
      * Add a new custom field
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param createCustomFieldInputObject  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1600,7 +1600,7 @@ public class TextMagicApi {
 
     /**
      * Add a new custom field
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param createCustomFieldInputObject  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1613,7 +1613,7 @@ public class TextMagicApi {
 
     /**
      * Add a new custom field (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/createCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param createCustomFieldInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1710,7 +1710,7 @@ public class TextMagicApi {
 
     /**
      * Create a new list
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/createList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param createListInputObject  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1722,7 +1722,7 @@ public class TextMagicApi {
 
     /**
      * Create a new list
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/createList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param createListInputObject  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1735,7 +1735,7 @@ public class TextMagicApi {
 
     /**
      * Create a new list (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/createList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param createListInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1832,7 +1832,7 @@ public class TextMagicApi {
 
     /**
      * Create a template
-     * There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/createTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
      * @param createTemplateInputObject  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1844,7 +1844,7 @@ public class TextMagicApi {
 
     /**
      * Create a template
-     * There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/createTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
      * @param createTemplateInputObject  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1857,7 +1857,7 @@ public class TextMagicApi {
 
     /**
      * Create a template (asynchronously)
-     * There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/createTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
      * @param createTemplateInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1948,7 +1948,7 @@ public class TextMagicApi {
 
     /**
      * Delete contacts (bulk)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
     public void deleteAllContacts() throws ApiException {
@@ -1957,7 +1957,7 @@ public class TextMagicApi {
 
     /**
      * Delete contacts (bulk)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -1968,7 +1968,7 @@ public class TextMagicApi {
 
     /**
      * Delete contacts (bulk) (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteAllContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -2057,7 +2057,7 @@ public class TextMagicApi {
 
     /**
      * Delete all messages
-     * Delete all messages.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete all messages.
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
     public void deleteAllOutboundMessages() throws ApiException {
@@ -2066,7 +2066,7 @@ public class TextMagicApi {
 
     /**
      * Delete all messages
-     * Delete all messages.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete all messages.
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -2077,7 +2077,7 @@ public class TextMagicApi {
 
     /**
      * Delete all messages (asynchronously)
-     * Delete all messages.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete all messages.
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -2166,7 +2166,7 @@ public class TextMagicApi {
 
     /**
      * Delete an avatar
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/deleteAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
     public void deleteAvatar() throws ApiException {
@@ -2175,7 +2175,7 @@ public class TextMagicApi {
 
     /**
      * Delete an avatar
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/deleteAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -2186,7 +2186,7 @@ public class TextMagicApi {
 
     /**
      * Delete an avatar (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/deleteAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -2288,7 +2288,7 @@ public class TextMagicApi {
 
     /**
      * Delete chat messages by ID(s)
-     * Delete messages from chat by given message IDs.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete messages from chat by given message IDs.
      * @param deleteChatMessagesBulkInputObject  (required)
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2299,7 +2299,7 @@ public class TextMagicApi {
 
     /**
      * Delete chat messages by ID(s)
-     * Delete messages from chat by given message IDs.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete messages from chat by given message IDs.
      * @param deleteChatMessagesBulkInputObject  (required)
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
@@ -2312,7 +2312,7 @@ public class TextMagicApi {
 
     /**
      * Delete chat messages by ID(s) (asynchronously)
-     * Delete messages from chat by given message IDs.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete messages from chat by given message IDs.
      * @param deleteChatMessagesBulkInputObject  (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -2409,7 +2409,7 @@ public class TextMagicApi {
 
     /**
      * Delete chats (bulk)
-     * Delete chats by given IDs or delete all chats.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete chats by given IDs or delete all chats.
      * @param deleteChatsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -2419,7 +2419,7 @@ public class TextMagicApi {
 
     /**
      * Delete chats (bulk)
-     * Delete chats by given IDs or delete all chats.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete chats by given IDs or delete all chats.
      * @param deleteChatsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2431,7 +2431,7 @@ public class TextMagicApi {
 
     /**
      * Delete chats (bulk) (asynchronously)
-     * Delete chats by given IDs or delete all chats.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/deleteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete chats by given IDs or delete all chats.
      * @param deleteChatsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -2528,7 +2528,7 @@ public class TextMagicApi {
 
     /**
      * Delete a contact
-     * &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -2538,7 +2538,7 @@ public class TextMagicApi {
 
     /**
      * Delete a contact
-     * &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2550,7 +2550,7 @@ public class TextMagicApi {
 
     /**
      * Delete a contact (asynchronously)
-     * &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, use the Contact assignment command in the Lists section instead, rather than deleting the contact. 
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -2647,7 +2647,7 @@ public class TextMagicApi {
 
     /**
      * Delete an avatar
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -2657,7 +2657,7 @@ public class TextMagicApi {
 
     /**
      * Delete an avatar
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2669,7 +2669,7 @@ public class TextMagicApi {
 
     /**
      * Delete an avatar (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -2766,7 +2766,7 @@ public class TextMagicApi {
 
     /**
      * Delete a contact note
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -2776,7 +2776,7 @@ public class TextMagicApi {
 
     /**
      * Delete a contact note
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2788,7 +2788,7 @@ public class TextMagicApi {
 
     /**
      * Delete a contact note (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -2891,7 +2891,7 @@ public class TextMagicApi {
 
     /**
      * Delete contact notes (bulk)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param deleteContactNotesBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2902,7 +2902,7 @@ public class TextMagicApi {
 
     /**
      * Delete contact notes (bulk)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param deleteContactNotesBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
@@ -2915,7 +2915,7 @@ public class TextMagicApi {
 
     /**
      * Delete contact notes (bulk) (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/deleteContactNotesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param deleteContactNotesBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -3012,7 +3012,7 @@ public class TextMagicApi {
 
     /**
      * Delete contacts by IDs (bulk)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param deleteContactsByIdsInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -3022,7 +3022,7 @@ public class TextMagicApi {
 
     /**
      * Delete contacts by IDs (bulk)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param deleteContactsByIdsInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3034,7 +3034,7 @@ public class TextMagicApi {
 
     /**
      * Delete contacts by IDs (bulk) (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/deleteContactsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param deleteContactsByIdsInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3137,7 +3137,7 @@ public class TextMagicApi {
 
     /**
      * Unassign contacts from a list
-     * &gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
      * @param deleteContacsFromListObject  (required)
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3148,7 +3148,7 @@ public class TextMagicApi {
 
     /**
      * Unassign contacts from a list
-     * &gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
      * @param deleteContacsFromListObject  (required)
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
@@ -3161,7 +3161,7 @@ public class TextMagicApi {
 
     /**
      * Unassign contacts from a list (asynchronously)
-     * &gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteContactsFromList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
      * @param deleteContacsFromListObject  (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -3259,7 +3259,7 @@ public class TextMagicApi {
 
     /**
      * Delete a custom field
-     * &gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -3269,7 +3269,7 @@ public class TextMagicApi {
 
     /**
      * Delete a custom field
-     * &gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3281,7 +3281,7 @@ public class TextMagicApi {
 
     /**
      * Delete a custom field (asynchronously)
-     * &gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/deleteCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3378,7 +3378,7 @@ public class TextMagicApi {
 
     /**
      * Cancel a dedicated number subscription
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -3388,7 +3388,7 @@ public class TextMagicApi {
 
     /**
      * Cancel a dedicated number subscription
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3400,7 +3400,7 @@ public class TextMagicApi {
 
     /**
      * Cancel a dedicated number subscription (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/deleteDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3497,7 +3497,7 @@ public class TextMagicApi {
 
     /**
      * Delete a single inbound message
-     * &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
      * @param id The unique numeric ID for the inbound message. (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -3507,7 +3507,7 @@ public class TextMagicApi {
 
     /**
      * Delete a single inbound message
-     * &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
      * @param id The unique numeric ID for the inbound message. (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3519,7 +3519,7 @@ public class TextMagicApi {
 
     /**
      * Delete a single inbound message (asynchronously)
-     * &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
      * @param id The unique numeric ID for the inbound message. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3615,7 +3615,7 @@ public class TextMagicApi {
 
     /**
      * Delete inbound messages (bulk)
-     * &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
      * @param deleteInboundMessagesBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -3625,7 +3625,7 @@ public class TextMagicApi {
 
     /**
      * Delete inbound messages (bulk)
-     * &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
      * @param deleteInboundMessagesBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3637,7 +3637,7 @@ public class TextMagicApi {
 
     /**
      * Delete inbound messages (bulk) (asynchronously)
-     * &gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/deleteInboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Note: deleted inbound messages will disappear from TextMagic Online, chats, and any other place they are referenced.  So, be careful! 
      * @param deleteInboundMessagesBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3734,7 +3734,7 @@ public class TextMagicApi {
 
     /**
      * Delete a list
-     * This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -3744,7 +3744,7 @@ public class TextMagicApi {
 
     /**
      * Delete a list
-     * This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3756,7 +3756,7 @@ public class TextMagicApi {
 
     /**
      * Delete a list (asynchronously)
-     * This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This command has no parameters. If successful, this command will return the standard delete response (204 No Content); otherwise, a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well, unless they were saved in another list.
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3853,7 +3853,7 @@ public class TextMagicApi {
 
     /**
      * Delete an avatar for a list
-     * Delete an avatar for a list
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete an avatar for a list
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -3863,7 +3863,7 @@ public class TextMagicApi {
 
     /**
      * Delete an avatar for a list
-     * Delete an avatar for a list
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete an avatar for a list
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3875,7 +3875,7 @@ public class TextMagicApi {
 
     /**
      * Delete an avatar for a list (asynchronously)
-     * Delete an avatar for a list
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete an avatar for a list
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3978,7 +3978,7 @@ public class TextMagicApi {
 
     /**
      * Delete contacts from a list (bulk)
-     * Delete contacts from a list (bulk)
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete contacts from a list (bulk)
      * @param deleteListContactsBulkInputObject  (required)
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -3989,7 +3989,7 @@ public class TextMagicApi {
 
     /**
      * Delete contacts from a list (bulk)
-     * Delete contacts from a list (bulk)
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete contacts from a list (bulk)
      * @param deleteListContactsBulkInputObject  (required)
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
@@ -4002,7 +4002,7 @@ public class TextMagicApi {
 
     /**
      * Delete contacts from a list (bulk) (asynchronously)
-     * Delete contacts from a list (bulk)
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete contacts from a list (bulk)
      * @param deleteListContactsBulkInputObject  (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -4099,7 +4099,7 @@ public class TextMagicApi {
 
     /**
      * Delete lists (bulk)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param deleteListsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -4109,7 +4109,7 @@ public class TextMagicApi {
 
     /**
      * Delete lists (bulk)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param deleteListsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -4121,7 +4121,7 @@ public class TextMagicApi {
 
     /**
      * Delete lists (bulk) (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/deleteListsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param deleteListsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -4218,7 +4218,7 @@ public class TextMagicApi {
 
     /**
      * Delete a session
-     * Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -4228,7 +4228,7 @@ public class TextMagicApi {
 
     /**
      * Delete a session
-     * Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -4240,7 +4240,7 @@ public class TextMagicApi {
 
     /**
      * Delete a session (asynchronously)
-     * Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -4336,7 +4336,7 @@ public class TextMagicApi {
 
     /**
      * Delete sessions (bulk)
-     * Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
      * @param deleteMessageSessionsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -4346,7 +4346,7 @@ public class TextMagicApi {
 
     /**
      * Delete sessions (bulk)
-     * Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
      * @param deleteMessageSessionsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -4358,7 +4358,7 @@ public class TextMagicApi {
 
     /**
      * Delete sessions (bulk) (asynchronously)
-     * Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/deleteMessageSessionsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete message sessions, together with all nested messages, by given ID(s) or delete all message sessions.
      * @param deleteMessageSessionsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -4455,7 +4455,7 @@ public class TextMagicApi {
 
     /**
      * Delete message
-     * Delete a single message.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a single message.
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -4465,7 +4465,7 @@ public class TextMagicApi {
 
     /**
      * Delete message
-     * Delete a single message.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a single message.
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -4477,7 +4477,7 @@ public class TextMagicApi {
 
     /**
      * Delete message (asynchronously)
-     * Delete a single message.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete a single message.
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -4573,7 +4573,7 @@ public class TextMagicApi {
 
     /**
      * Delete messages (bulk)
-     * Delete outbound messages by the given ID(s) or delete all outbound messages.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete outbound messages by the given ID(s) or delete all outbound messages.
      * @param deleteOutboundMessagesBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -4583,7 +4583,7 @@ public class TextMagicApi {
 
     /**
      * Delete messages (bulk)
-     * Delete outbound messages by the given ID(s) or delete all outbound messages.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete outbound messages by the given ID(s) or delete all outbound messages.
      * @param deleteOutboundMessagesBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -4595,7 +4595,7 @@ public class TextMagicApi {
 
     /**
      * Delete messages (bulk) (asynchronously)
-     * Delete outbound messages by the given ID(s) or delete all outbound messages.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/deleteOutboundMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete outbound messages by the given ID(s) or delete all outbound messages.
      * @param deleteOutboundMessagesBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -4692,7 +4692,7 @@ public class TextMagicApi {
 
     /**
      * Delete a single scheduled message
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -4702,7 +4702,7 @@ public class TextMagicApi {
 
     /**
      * Delete a single scheduled message
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -4714,7 +4714,7 @@ public class TextMagicApi {
 
     /**
      * Delete a single scheduled message (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -4810,7 +4810,7 @@ public class TextMagicApi {
 
     /**
      * Delete scheduled messages (bulk)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param deleteScheduledMessagesBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -4820,7 +4820,7 @@ public class TextMagicApi {
 
     /**
      * Delete scheduled messages (bulk)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param deleteScheduledMessagesBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -4832,7 +4832,7 @@ public class TextMagicApi {
 
     /**
      * Delete scheduled messages (bulk) (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/deleteScheduledMessagesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param deleteScheduledMessagesBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -4929,7 +4929,7 @@ public class TextMagicApi {
 
     /**
      * Delete a Sender ID
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -4939,7 +4939,7 @@ public class TextMagicApi {
 
     /**
      * Delete a Sender ID
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -4951,7 +4951,7 @@ public class TextMagicApi {
 
     /**
      * Delete a Sender ID (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/deleteSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -5048,7 +5048,7 @@ public class TextMagicApi {
 
     /**
      * Delete a template
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -5058,7 +5058,7 @@ public class TextMagicApi {
 
     /**
      * Delete a template
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -5070,7 +5070,7 @@ public class TextMagicApi {
 
     /**
      * Delete a template (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -5166,7 +5166,7 @@ public class TextMagicApi {
 
     /**
      * Delete templates (bulk)
-     * Delete templates by given IDs or delete all templates.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete templates by given IDs or delete all templates.
      * @param deleteTemplatesBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -5176,7 +5176,7 @@ public class TextMagicApi {
 
     /**
      * Delete templates (bulk)
-     * Delete templates by given IDs or delete all templates.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete templates by given IDs or delete all templates.
      * @param deleteTemplatesBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -5188,7 +5188,7 @@ public class TextMagicApi {
 
     /**
      * Delete templates (bulk) (asynchronously)
-     * Delete templates by given IDs or delete all templates.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/deleteTemplatesBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Delete templates by given IDs or delete all templates.
      * @param deleteTemplatesBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -5288,7 +5288,7 @@ public class TextMagicApi {
 
     /**
      * Carrier Lookup
-     * This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
      * @param phone Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  (required)
      * @param country This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)
      * @return DoCarrierLookupResponse
@@ -5301,7 +5301,7 @@ public class TextMagicApi {
 
     /**
      * Carrier Lookup
-     * This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
      * @param phone Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  (required)
      * @param country This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)
      * @return ApiResponse&lt;DoCarrierLookupResponse&gt;
@@ -5315,7 +5315,7 @@ public class TextMagicApi {
 
     /**
      * Carrier Lookup (asynchronously)
-     * This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doCarrierLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers must be checked one by one. You cannot check multiple numbers in one request.   
      * @param phone Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  (required)
      * @param country This option must be specified only if the phone number is in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  (optional)
      * @param callback The callback to be executed when the API call finishes
@@ -5414,7 +5414,7 @@ public class TextMagicApi {
 
     /**
      * Email Lookup
-     * To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
      * @param email Email address. (required)
      * @return DoEmailLookupResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -5426,7 +5426,7 @@ public class TextMagicApi {
 
     /**
      * Email Lookup
-     * To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
      * @param email Email address. (required)
      * @return ApiResponse&lt;DoEmailLookupResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -5439,7 +5439,7 @@ public class TextMagicApi {
 
     /**
      * Email Lookup (asynchronously)
-     * To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lookup/doEmailLookup\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;To get more details about an email address or to check whether it is a valid email or not, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
      * @param email Email address. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -5536,7 +5536,7 @@ public class TextMagicApi {
 
     /**
      * Get all bulk sessions
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return GetAllBulkSessionsPaginatedResponse
@@ -5549,7 +5549,7 @@ public class TextMagicApi {
 
     /**
      * Get all bulk sessions
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return ApiResponse&lt;GetAllBulkSessionsPaginatedResponse&gt;
@@ -5563,7 +5563,7 @@ public class TextMagicApi {
 
     /**
      * Get all bulk sessions (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllBulkSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param callback The callback to be executed when the API call finishes
@@ -5673,7 +5673,7 @@ public class TextMagicApi {
 
     /**
      * Get all chats
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getAllChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param status Fetch only (a)ctive, (c)losed or (d)eleted chats. (optional)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -5690,7 +5690,7 @@ public class TextMagicApi {
 
     /**
      * Get all chats
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getAllChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param status Fetch only (a)ctive, (c)losed or (d)eleted chats. (optional)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -5708,7 +5708,7 @@ public class TextMagicApi {
 
     /**
      * Get all chats (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getAllChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param status Fetch only (a)ctive, (c)losed or (d)eleted chats. (optional)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -5816,7 +5816,7 @@ public class TextMagicApi {
 
     /**
      * Get all inbound messages
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
@@ -5831,7 +5831,7 @@ public class TextMagicApi {
 
     /**
      * Get all inbound messages
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
@@ -5847,7 +5847,7 @@ public class TextMagicApi {
 
     /**
      * Get all inbound messages (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getAllInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
@@ -5947,7 +5947,7 @@ public class TextMagicApi {
 
     /**
      * Get all sessions
-     * Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return GetAllMessageSessionsPaginatedResponse
@@ -5960,7 +5960,7 @@ public class TextMagicApi {
 
     /**
      * Get all sessions
-     * Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return ApiResponse&lt;GetAllMessageSessionsPaginatedResponse&gt;
@@ -5974,7 +5974,7 @@ public class TextMagicApi {
 
     /**
      * Get all sessions (asynchronously)
-     * Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getAllMessageSessions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param callback The callback to be executed when the API call finishes
@@ -6075,7 +6075,7 @@ public class TextMagicApi {
 
     /**
      * Get all messages
-     * Get all user oubound messages.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all user oubound messages.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified. (optional)
@@ -6089,7 +6089,7 @@ public class TextMagicApi {
 
     /**
      * Get all messages
-     * Get all user oubound messages.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all user oubound messages.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified. (optional)
@@ -6104,7 +6104,7 @@ public class TextMagicApi {
 
     /**
      * Get all messages (asynchronously)
-     * Get all user oubound messages.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getAllOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all user oubound messages.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified. (optional)
@@ -6212,7 +6212,7 @@ public class TextMagicApi {
 
     /**
      * Get all scheduled messages
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param status Fetch schedules with a specific status: a - actual, c - completed, x - all. (optional, default to x)
@@ -6228,7 +6228,7 @@ public class TextMagicApi {
 
     /**
      * Get all scheduled messages
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param status Fetch schedules with a specific status: a - actual, c - completed, x - all. (optional, default to x)
@@ -6245,7 +6245,7 @@ public class TextMagicApi {
 
     /**
      * Get all scheduled messages (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getAllScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param status Fetch schedules with a specific status: a - actual, c - completed, x - all. (optional, default to x)
@@ -6346,7 +6346,7 @@ public class TextMagicApi {
 
     /**
      * Get all templates
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional)
      * @param limit The number of results per page. (optional)
      * @return GetAllTemplatesPaginatedResponse
@@ -6359,7 +6359,7 @@ public class TextMagicApi {
 
     /**
      * Get all templates
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional)
      * @param limit The number of results per page. (optional)
      * @return ApiResponse&lt;GetAllTemplatesPaginatedResponse&gt;
@@ -6373,7 +6373,7 @@ public class TextMagicApi {
 
     /**
      * Get all templates (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getAllTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional)
      * @param limit The number of results per page. (optional)
      * @param callback The callback to be executed when the API call finishes
@@ -6479,7 +6479,7 @@ public class TextMagicApi {
 
     /**
      * Find dedicated numbers available for purchase
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param country The 2-letter dedicated number country ISO code. (required)
      * @param prefix Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)
      * @param tollfree Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)
@@ -6493,7 +6493,7 @@ public class TextMagicApi {
 
     /**
      * Find dedicated numbers available for purchase
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param country The 2-letter dedicated number country ISO code. (required)
      * @param prefix Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)
      * @param tollfree Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)
@@ -6508,7 +6508,7 @@ public class TextMagicApi {
 
     /**
      * Find dedicated numbers available for purchase (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getAvailableDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param country The 2-letter dedicated number country ISO code. (required)
      * @param prefix Desired number prefix. Should include the country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (optional)
      * @param tollfree Should we show only tollfree numbers (tollfree available only for US). (optional, default to 0)
@@ -6604,7 +6604,7 @@ public class TextMagicApi {
 
     /**
      * Get available sender settings
-     * Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
      * @param country The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)
      * @return GetAvailableSenderSettingOptionsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -6616,7 +6616,7 @@ public class TextMagicApi {
 
     /**
      * Get available sender settings
-     * Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
      * @param country The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)
      * @return ApiResponse&lt;GetAvailableSenderSettingOptionsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -6629,7 +6629,7 @@ public class TextMagicApi {
 
     /**
      * Get available sender settings (asynchronously)
-     * Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getAvailableSenderSettingOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all available sender setting options which can be used in the \&quot;from\&quot; parameter of the POST messages method.
      * @param country The 2-letter ISO country ID. If not specified, it returns all the available sender settings. (optional)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -6720,7 +6720,7 @@ public class TextMagicApi {
 
     /**
      * Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return GetBalanceNotificationOptionsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -6731,7 +6731,7 @@ public class TextMagicApi {
 
     /**
      * Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return ApiResponse&lt;GetBalanceNotificationOptionsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -6743,7 +6743,7 @@ public class TextMagicApi {
 
     /**
      * Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationOptions\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -6833,7 +6833,7 @@ public class TextMagicApi {
 
     /**
      * Get balance notification settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return GetBalanceNotificationSettingsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -6844,7 +6844,7 @@ public class TextMagicApi {
 
     /**
      * Get balance notification settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return ApiResponse&lt;GetBalanceNotificationSettingsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -6856,7 +6856,7 @@ public class TextMagicApi {
 
     /**
      * Get balance notification settings (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -6961,7 +6961,7 @@ public class TextMagicApi {
 
     /**
      * Get blocked contacts
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find blocked contacts by specified search query. (optional)
@@ -6977,7 +6977,7 @@ public class TextMagicApi {
 
     /**
      * Get blocked contacts
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find blocked contacts by specified search query. (optional)
@@ -6994,7 +6994,7 @@ public class TextMagicApi {
 
     /**
      * Get blocked contacts (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getBlockedContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find blocked contacts by specified search query. (optional)
@@ -7096,7 +7096,7 @@ public class TextMagicApi {
 
     /**
      * Get bulk session status
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return BulkSession
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -7108,7 +7108,7 @@ public class TextMagicApi {
 
     /**
      * Get bulk session status
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;BulkSession&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -7121,7 +7121,7 @@ public class TextMagicApi {
 
     /**
      * Get bulk session status (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getBulkSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -7212,7 +7212,7 @@ public class TextMagicApi {
 
     /**
      * Fetch callback URL settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return GetCallbackSettingsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -7223,7 +7223,7 @@ public class TextMagicApi {
 
     /**
      * Fetch callback URL settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return ApiResponse&lt;GetCallbackSettingsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -7235,7 +7235,7 @@ public class TextMagicApi {
 
     /**
      * Fetch callback URL settings (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -7332,7 +7332,7 @@ public class TextMagicApi {
 
     /**
      * Get a single chat
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return Chat
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -7344,7 +7344,7 @@ public class TextMagicApi {
 
     /**
      * Get a single chat
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;Chat&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -7357,7 +7357,7 @@ public class TextMagicApi {
 
     /**
      * Get a single chat (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -7461,7 +7461,7 @@ public class TextMagicApi {
 
     /**
      * Find chats by phone
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param phone  (required)
      * @param upsert Create a new chat if not found. (optional, default to 0)
      * @param reopen Reopen chat if found or do not change status. (optional, default to 0)
@@ -7475,7 +7475,7 @@ public class TextMagicApi {
 
     /**
      * Find chats by phone
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param phone  (required)
      * @param upsert Create a new chat if not found. (optional, default to 0)
      * @param reopen Reopen chat if found or do not change status. (optional, default to 0)
@@ -7490,7 +7490,7 @@ public class TextMagicApi {
 
     /**
      * Find chats by phone (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param phone  (required)
      * @param upsert Create a new chat if not found. (optional, default to 0)
      * @param reopen Reopen chat if found or do not change status. (optional, default to 0)
@@ -7611,7 +7611,7 @@ public class TextMagicApi {
 
     /**
      * Get chat messages
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -7630,7 +7630,7 @@ public class TextMagicApi {
 
     /**
      * Get chat messages
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -7650,7 +7650,7 @@ public class TextMagicApi {
 
     /**
      * Get chat messages (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getChatMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -7755,7 +7755,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific contact
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id Contact ID. (required)
      * @return Contact
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -7767,7 +7767,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific contact
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id Contact ID. (required)
      * @return ApiResponse&lt;Contact&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -7780,7 +7780,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific contact (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id Contact ID. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -7878,7 +7878,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific contact by phone number
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param phone  (required)
      * @return Contact
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -7890,7 +7890,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific contact by phone number
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param phone  (required)
      * @return ApiResponse&lt;Contact&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -7903,7 +7903,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific contact by phone number (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactByPhone\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param phone  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -8002,7 +8002,7 @@ public class TextMagicApi {
 
     /**
      * Check if a phone number is blocked
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param phone Phone number to check. (required)
      * @return Contact
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -8014,7 +8014,7 @@ public class TextMagicApi {
 
     /**
      * Check if a phone number is blocked
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param phone Phone number to check. (required)
      * @return ApiResponse&lt;Contact&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -8027,7 +8027,7 @@ public class TextMagicApi {
 
     /**
      * Check if a phone number is blocked (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactIfBlocked\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param phone Phone number to check. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -8125,7 +8125,7 @@ public class TextMagicApi {
 
     /**
      * Check import progress
-     * Get contact import session progress.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contact import session progress.
      * @param id  (required)
      * @return GetContactImportSessionProgressResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -8137,7 +8137,7 @@ public class TextMagicApi {
 
     /**
      * Check import progress
-     * Get contact import session progress.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contact import session progress.
      * @param id  (required)
      * @return ApiResponse&lt;GetContactImportSessionProgressResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -8150,7 +8150,7 @@ public class TextMagicApi {
 
     /**
      * Check import progress (asynchronously)
-     * Get contact import session progress.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactImportSessionProgress\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contact import session progress.
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -8248,7 +8248,7 @@ public class TextMagicApi {
 
     /**
      * Get a contact note
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ContactNote
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -8260,7 +8260,7 @@ public class TextMagicApi {
 
     /**
      * Get a contact note
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;ContactNote&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -8273,7 +8273,7 @@ public class TextMagicApi {
 
     /**
      * Get a contact note (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -8377,7 +8377,7 @@ public class TextMagicApi {
 
     /**
      * Fetch notes assigned to a given contact
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -8391,7 +8391,7 @@ public class TextMagicApi {
 
     /**
      * Fetch notes assigned to a given contact
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -8406,7 +8406,7 @@ public class TextMagicApi {
 
     /**
      * Fetch notes assigned to a given contact (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/getContactNotes\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -8514,7 +8514,7 @@ public class TextMagicApi {
 
     /**
      * Get all contacts
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param shared Should shared contacts be included? (optional, default to 0)
@@ -8530,7 +8530,7 @@ public class TextMagicApi {
 
     /**
      * Get all contacts
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param shared Should shared contacts be included? (optional, default to 0)
@@ -8547,7 +8547,7 @@ public class TextMagicApi {
 
     /**
      * Get all contacts (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param shared Should shared contacts be included? (optional, default to 0)
@@ -8656,7 +8656,7 @@ public class TextMagicApi {
 
     /**
      * Get contacts autocomplete suggestions
-     * Get contacts autocomplete suggestions by given search terms.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contacts autocomplete suggestions by given search terms.
      * @param query Find recipients by specified search query. (required)
      * @param limit The number of results per page. (optional, default to 10)
      * @param lists Should lists be returned or not? (optional, default to 0)
@@ -8670,7 +8670,7 @@ public class TextMagicApi {
 
     /**
      * Get contacts autocomplete suggestions
-     * Get contacts autocomplete suggestions by given search terms.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contacts autocomplete suggestions by given search terms.
      * @param query Find recipients by specified search query. (required)
      * @param limit The number of results per page. (optional, default to 10)
      * @param lists Should lists be returned or not? (optional, default to 0)
@@ -8685,7 +8685,7 @@ public class TextMagicApi {
 
     /**
      * Get contacts autocomplete suggestions (asynchronously)
-     * Get contacts autocomplete suggestions by given search terms.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getContactsAutocomplete\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get contacts autocomplete suggestions by given search terms.
      * @param query Find recipients by specified search query. (required)
      * @param limit The number of results per page. (optional, default to 10)
      * @param lists Should lists be returned or not? (optional, default to 0)
@@ -8797,7 +8797,7 @@ public class TextMagicApi {
 
     /**
      * Get all contacts in a list
-     * A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
      * @param id Given group ID. (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -8813,7 +8813,7 @@ public class TextMagicApi {
 
     /**
      * Get all contacts in a list
-     * A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
      * @param id Given group ID. (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -8830,7 +8830,7 @@ public class TextMagicApi {
 
     /**
      * Get all contacts in a list (asynchronously)
-     * A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getContactsByListId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;contacts/search\&quot; command with the provided \&quot;listId\&quot; parameter.
      * @param id Given group ID. (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -8925,7 +8925,7 @@ public class TextMagicApi {
 
     /**
      * Get countries
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return GetCountriesResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -8936,7 +8936,7 @@ public class TextMagicApi {
 
     /**
      * Get countries
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return ApiResponse&lt;GetCountriesResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -8948,7 +8948,7 @@ public class TextMagicApi {
 
     /**
      * Get countries (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getCountries\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -9038,7 +9038,7 @@ public class TextMagicApi {
 
     /**
      * Get current account information
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/getCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return User
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -9049,7 +9049,7 @@ public class TextMagicApi {
 
     /**
      * Get current account information
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/getCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return ApiResponse&lt;User&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -9061,7 +9061,7 @@ public class TextMagicApi {
 
     /**
      * Get current account information (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/getCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -9158,7 +9158,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific custom field
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return UserCustomField
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -9170,7 +9170,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific custom field
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;UserCustomField&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -9183,7 +9183,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific custom field (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -9280,7 +9280,7 @@ public class TextMagicApi {
 
     /**
      * Get all custom fields
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return GetCustomFieldsPaginatedResponse
@@ -9293,7 +9293,7 @@ public class TextMagicApi {
 
     /**
      * Get all custom fields
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return ApiResponse&lt;GetCustomFieldsPaginatedResponse&gt;
@@ -9307,7 +9307,7 @@ public class TextMagicApi {
 
     /**
      * Get all custom fields (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/getCustomFields\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param callback The callback to be executed when the API call finishes
@@ -9406,7 +9406,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific dedicated number
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return UsersInbound
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -9418,7 +9418,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific dedicated number
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;UsersInbound&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -9431,7 +9431,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific dedicated number (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getDedicatedNumber\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -9531,7 +9531,7 @@ public class TextMagicApi {
 
     /**
      * Get favorite contacts and lists
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getFavorites\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find contacts or lists by specified search query. (optional)
@@ -9545,7 +9545,7 @@ public class TextMagicApi {
 
     /**
      * Get favorite contacts and lists
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getFavorites\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find contacts or lists by specified search query. (optional)
@@ -9560,7 +9560,7 @@ public class TextMagicApi {
 
     /**
      * Get favorite contacts and lists (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getFavorites\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find contacts or lists by specified search query. (optional)
@@ -9660,7 +9660,7 @@ public class TextMagicApi {
 
     /**
      * Get a single inbound message
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id The unique numeric ID for the inbound message. (required)
      * @return MessageIn
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -9672,7 +9672,7 @@ public class TextMagicApi {
 
     /**
      * Get a single inbound message
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id The unique numeric ID for the inbound message. (required)
      * @return ApiResponse&lt;MessageIn&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -9685,7 +9685,7 @@ public class TextMagicApi {
 
     /**
      * Get a single inbound message (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/getInboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id The unique numeric ID for the inbound message. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -9776,7 +9776,7 @@ public class TextMagicApi {
 
     /**
      * Get inbound messages notification settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return GetInboundMessagesNotificationSettingsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -9787,7 +9787,7 @@ public class TextMagicApi {
 
     /**
      * Get inbound messages notification settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @return ApiResponse&lt;GetInboundMessagesNotificationSettingsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -9799,7 +9799,7 @@ public class TextMagicApi {
 
     /**
      * Get inbound messages notification settings (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -9895,7 +9895,7 @@ public class TextMagicApi {
 
     /**
      * Get all invoices
-     * With the TextMagic API, you can check the invoices and transactions for your account.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Invoices/getInvoices\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;With the TextMagic API, you can check the invoices and transactions for your account.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return GetInvoicesPaginatedResponse
@@ -9908,7 +9908,7 @@ public class TextMagicApi {
 
     /**
      * Get all invoices
-     * With the TextMagic API, you can check the invoices and transactions for your account.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Invoices/getInvoices\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;With the TextMagic API, you can check the invoices and transactions for your account.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return ApiResponse&lt;GetInvoicesPaginatedResponse&gt;
@@ -9922,7 +9922,7 @@ public class TextMagicApi {
 
     /**
      * Get all invoices (asynchronously)
-     * With the TextMagic API, you can check the invoices and transactions for your account.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Invoices/getInvoices\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;With the TextMagic API, you can check the invoices and transactions for your account.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param callback The callback to be executed when the API call finishes
@@ -10021,7 +10021,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific list
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return List
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -10033,7 +10033,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific list
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;List&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -10046,7 +10046,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific list (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -10144,7 +10144,7 @@ public class TextMagicApi {
 
     /**
      * Get all contact IDs in a list
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return GetListContactsIdsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -10156,7 +10156,7 @@ public class TextMagicApi {
 
     /**
      * Get all contact IDs in a list
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;GetListContactsIdsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -10169,7 +10169,7 @@ public class TextMagicApi {
 
     /**
      * Get all contact IDs in a list (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListContactsIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -10278,7 +10278,7 @@ public class TextMagicApi {
 
     /**
      * Get all lists
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page The current fetched page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
@@ -10295,7 +10295,7 @@ public class TextMagicApi {
 
     /**
      * Get all lists
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page The current fetched page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
@@ -10313,7 +10313,7 @@ public class TextMagicApi {
 
     /**
      * Get all lists (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page The current fetched page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
@@ -10422,7 +10422,7 @@ public class TextMagicApi {
 
     /**
      * Get a contact&#39;s lists
-     * Get all the lists in which a contact is included.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all the lists in which a contact is included.
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -10436,7 +10436,7 @@ public class TextMagicApi {
 
     /**
      * Get a contact&#39;s lists
-     * Get all the lists in which a contact is included.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all the lists in which a contact is included.
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -10451,7 +10451,7 @@ public class TextMagicApi {
 
     /**
      * Get a contact&#39;s lists (asynchronously)
-     * Get all the lists in which a contact is included.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/getListsOfContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all the lists in which a contact is included.
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -10595,7 +10595,7 @@ public class TextMagicApi {
 
     /**
      * Preview message
-     * Get a messages preview (with tags merged) of up to 100 messages per session.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a messages preview (with tags merged) of up to 100 messages per session.
      * @param text Message text. Required if **template_id** is not set. (optional)
      * @param templateId Template used instead of message text. Required if **text** is not set. (optional)
      * @param sendingTime DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)
@@ -10623,7 +10623,7 @@ public class TextMagicApi {
 
     /**
      * Preview message
-     * Get a messages preview (with tags merged) of up to 100 messages per session.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a messages preview (with tags merged) of up to 100 messages per session.
      * @param text Message text. Required if **template_id** is not set. (optional)
      * @param templateId Template used instead of message text. Required if **text** is not set. (optional)
      * @param sendingTime DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)
@@ -10652,7 +10652,7 @@ public class TextMagicApi {
 
     /**
      * Preview message (asynchronously)
-     * Get a messages preview (with tags merged) of up to 100 messages per session.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePreview\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a messages preview (with tags merged) of up to 100 messages per session.
      * @param text Message text. Required if **template_id** is not set. (optional)
      * @param templateId Template used instead of message text. Required if **text** is not set. (optional)
      * @param sendingTime DEPRECATED, consider using sendingDateTime and sendingTimezone parameters instead: Optional (required with rrule set). Message sending time is in unix timestamp format. Default is now. (optional)
@@ -10813,7 +10813,7 @@ public class TextMagicApi {
 
     /**
      * Check message price
-     * Check pricing for a new outbound message.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check pricing for a new outbound message.
      * @param includeBlocked Should we show the pricing for blocked contacts? (optional, default to 0)
      * @param text Message text. Required if the **template_id** is not set. (optional)
      * @param templateId Template used instead of message text. Required if the **text** is not set. (optional)
@@ -10842,7 +10842,7 @@ public class TextMagicApi {
 
     /**
      * Check message price
-     * Check pricing for a new outbound message.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check pricing for a new outbound message.
      * @param includeBlocked Should we show the pricing for blocked contacts? (optional, default to 0)
      * @param text Message text. Required if the **template_id** is not set. (optional)
      * @param templateId Template used instead of message text. Required if the **text** is not set. (optional)
@@ -10872,7 +10872,7 @@ public class TextMagicApi {
 
     /**
      * Check message price (asynchronously)
-     * Check pricing for a new outbound message.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getMessagePrice\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Check pricing for a new outbound message.
      * @param includeBlocked Should we show the pricing for blocked contacts? (optional, default to 0)
      * @param text Message text. Required if the **template_id** is not set. (optional)
      * @param templateId Template used instead of message text. Required if the **text** is not set. (optional)
@@ -10987,7 +10987,7 @@ public class TextMagicApi {
 
     /**
      * Get a session&#x60;s details
-     * Get a specific session’s details.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a specific session’s details.
      * @param id Session ID. (required)
      * @return MessageSession
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -10999,7 +10999,7 @@ public class TextMagicApi {
 
     /**
      * Get a session&#x60;s details
-     * Get a specific session’s details.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a specific session’s details.
      * @param id Session ID. (required)
      * @return ApiResponse&lt;MessageSession&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -11012,7 +11012,7 @@ public class TextMagicApi {
 
     /**
      * Get a session&#x60;s details (asynchronously)
-     * Get a specific session’s details.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSession\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a specific session’s details.
      * @param id Session ID. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -11113,7 +11113,7 @@ public class TextMagicApi {
 
     /**
      * Get a session&#x60;s statistics
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param includeDeleted Search also in deleted messages. (optional, default to 0)
      * @return GetMessageSessionStatResponse
@@ -11126,7 +11126,7 @@ public class TextMagicApi {
 
     /**
      * Get a session&#x60;s statistics
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param includeDeleted Search also in deleted messages. (optional, default to 0)
      * @return ApiResponse&lt;GetMessageSessionStatResponse&gt;
@@ -11140,7 +11140,7 @@ public class TextMagicApi {
 
     /**
      * Get a session&#x60;s statistics (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessageSessionStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param includeDeleted Search also in deleted messages. (optional, default to 0)
      * @param callback The callback to be executed when the API call finishes
@@ -11251,7 +11251,7 @@ public class TextMagicApi {
 
     /**
      * Get a session&#x60;s messages
-     * A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -11267,7 +11267,7 @@ public class TextMagicApi {
 
     /**
      * Get a session&#x60;s messages
-     * A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -11284,7 +11284,7 @@ public class TextMagicApi {
 
     /**
      * Get a session&#x60;s messages (asynchronously)
-     * A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sessions/getMessagesBySessionId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;A useful synonym for the \&quot;messages/search\&quot; command with the provided \&quot;sessionId\&quot; parameter.
      * @param id  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -11379,7 +11379,7 @@ public class TextMagicApi {
 
     /**
      * Get sent/received messages counters values
-     * Get total contacts, sent messages and received messages counters values.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get total contacts, sent messages and received messages counters values.
      * @return GetMessagingCountersResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -11390,7 +11390,7 @@ public class TextMagicApi {
 
     /**
      * Get sent/received messages counters values
-     * Get total contacts, sent messages and received messages counters values.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get total contacts, sent messages and received messages counters values.
      * @return ApiResponse&lt;GetMessagingCountersResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -11402,7 +11402,7 @@ public class TextMagicApi {
 
     /**
      * Get sent/received messages counters values (asynchronously)
-     * Get total contacts, sent messages and received messages counters values.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingCounters\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get total contacts, sent messages and received messages counters values.
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -11501,7 +11501,7 @@ public class TextMagicApi {
 
     /**
      * Get messaging statistics
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param by *   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)
      * @param start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
      * @param end Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)
@@ -11515,7 +11515,7 @@ public class TextMagicApi {
 
     /**
      * Get messaging statistics
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param by *   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)
      * @param start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
      * @param end Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)
@@ -11530,7 +11530,7 @@ public class TextMagicApi {
 
     /**
      * Get messaging statistics (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getMessagingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param by *   **off** - to get total values per specified time interval; *   **day** - to show values grouped by day; *   **month** - to show values grouped by month; *   **year** - to show values grouped by year.  (optional, default to off)
      * @param start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
      * @param end Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  (optional)
@@ -11630,7 +11630,7 @@ public class TextMagicApi {
 
     /**
      * Get a single message
-     * Get a single outgoing message.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single outgoing message.
      * @param id  (required)
      * @return MessageOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -11642,7 +11642,7 @@ public class TextMagicApi {
 
     /**
      * Get a single message
-     * Get a single outgoing message.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single outgoing message.
      * @param id  (required)
      * @return ApiResponse&lt;MessageOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -11655,7 +11655,7 @@ public class TextMagicApi {
 
     /**
      * Get a single message (asynchronously)
-     * Get a single outgoing message.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single outgoing message.
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -11761,7 +11761,7 @@ public class TextMagicApi {
 
     /**
      * Get history
-     * Get the outbound messages history.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the outbound messages history.
      * @param limit The number of results per page. (optional, default to 10)
      * @param lastId Filter results by ID, selecting all values lesser than the specified ID. (optional)
      * @param query Find message by specified search query. (optional)
@@ -11777,7 +11777,7 @@ public class TextMagicApi {
 
     /**
      * Get history
-     * Get the outbound messages history.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the outbound messages history.
      * @param limit The number of results per page. (optional, default to 10)
      * @param lastId Filter results by ID, selecting all values lesser than the specified ID. (optional)
      * @param query Find message by specified search query. (optional)
@@ -11794,7 +11794,7 @@ public class TextMagicApi {
 
     /**
      * Get history (asynchronously)
-     * Get the outbound messages history.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/getOutboundMessagesHistory\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the outbound messages history.
      * @param limit The number of results per page. (optional, default to 10)
      * @param lastId Filter results by ID, selecting all values lesser than the specified ID. (optional)
      * @param query Find message by specified search query. (optional)
@@ -11896,7 +11896,7 @@ public class TextMagicApi {
 
     /**
      * Get a single scheduled message
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return MessagesIcs
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -11908,7 +11908,7 @@ public class TextMagicApi {
 
     /**
      * Get a single scheduled message
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;MessagesIcs&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -11921,7 +11921,7 @@ public class TextMagicApi {
 
     /**
      * Get a single scheduled message (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/getScheduledMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -12019,7 +12019,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific Sender ID
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return SenderId
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -12031,7 +12031,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific Sender ID
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;SenderId&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -12044,7 +12044,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific Sender ID (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -12141,7 +12141,7 @@ public class TextMagicApi {
 
     /**
      * Get all your approved Sender IDs
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return GetSenderIdsPaginatedResponse
@@ -12154,7 +12154,7 @@ public class TextMagicApi {
 
     /**
      * Get all your approved Sender IDs
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return ApiResponse&lt;GetSenderIdsPaginatedResponse&gt;
@@ -12168,7 +12168,7 @@ public class TextMagicApi {
 
     /**
      * Get all your approved Sender IDs (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/getSenderIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param callback The callback to be executed when the API call finishes
@@ -12263,7 +12263,7 @@ public class TextMagicApi {
 
     /**
      * Get current sender settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param country Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)
      * @return GetSenderSettingsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -12275,7 +12275,7 @@ public class TextMagicApi {
 
     /**
      * Get current sender settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param country Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)
      * @return ApiResponse&lt;GetSenderSettingsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -12288,7 +12288,7 @@ public class TextMagicApi {
 
     /**
      * Get current sender settings (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/getSenderSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param country Return sender settings enabled for sending to a specified country. Should be 2 upper-case characters. (optional)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -12391,7 +12391,7 @@ public class TextMagicApi {
 
     /**
      * Get spending statistics
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
@@ -12406,7 +12406,7 @@ public class TextMagicApi {
 
     /**
      * Get spending statistics
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
@@ -12422,7 +12422,7 @@ public class TextMagicApi {
 
     /**
      * Get spending statistics (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Statistics/getSpendingStat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  (optional)
@@ -12523,7 +12523,7 @@ public class TextMagicApi {
 
     /**
      * Get sub-account information
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return User
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -12535,7 +12535,7 @@ public class TextMagicApi {
 
     /**
      * Get sub-account information
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;User&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -12548,7 +12548,7 @@ public class TextMagicApi {
 
     /**
      * Get sub-account information (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -12645,7 +12645,7 @@ public class TextMagicApi {
 
     /**
      * Get a sub-accounts list
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return User
@@ -12658,7 +12658,7 @@ public class TextMagicApi {
 
     /**
      * Get a sub-accounts list
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return ApiResponse&lt;User&gt;
@@ -12672,7 +12672,7 @@ public class TextMagicApi {
 
     /**
      * Get a sub-accounts list (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccounts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param callback The callback to be executed when the API call finishes
@@ -12776,7 +12776,7 @@ public class TextMagicApi {
 
     /**
      * Get all sub-accounts with their REST API tokens associated with a specified app name
-     * Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
      * @param getSubaccountsWithTokensInputObject  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -12790,7 +12790,7 @@ public class TextMagicApi {
 
     /**
      * Get all sub-accounts with their REST API tokens associated with a specified app name
-     * Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
      * @param getSubaccountsWithTokensInputObject  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -12805,7 +12805,7 @@ public class TextMagicApi {
 
     /**
      * Get all sub-accounts with their REST API tokens associated with a specified app name (asynchronously)
-     * Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/getSubaccountsWithTokens\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
      * @param getSubaccountsWithTokensInputObject  (required)
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -12905,7 +12905,7 @@ public class TextMagicApi {
 
     /**
      * Get a template&#x60;s details
-     * Get a single template.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single template.
      * @param id  (required)
      * @return MessageTemplate
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -12917,7 +12917,7 @@ public class TextMagicApi {
 
     /**
      * Get a template&#x60;s details
-     * Get a single template.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single template.
      * @param id  (required)
      * @return ApiResponse&lt;MessageTemplate&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -12930,7 +12930,7 @@ public class TextMagicApi {
 
     /**
      * Get a template&#x60;s details (asynchronously)
-     * Get a single template.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/getTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get a single template.
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -13024,7 +13024,7 @@ public class TextMagicApi {
 
     /**
      * Get timezones
-     * Return all available timezone IDs
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Return all available timezone IDs
      * @param full Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)
      * @return GetTimezonesResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -13036,7 +13036,7 @@ public class TextMagicApi {
 
     /**
      * Get timezones
-     * Return all available timezone IDs
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Return all available timezone IDs
      * @param full Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)
      * @return ApiResponse&lt;GetTimezonesResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -13049,7 +13049,7 @@ public class TextMagicApi {
 
     /**
      * Get timezones (asynchronously)
-     * Return all available timezone IDs
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/getTimezones\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Return all available timezone IDs
      * @param full Return full info about timezones in array (0 or 1). Default is 0. (optional, default to 0)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -13140,7 +13140,7 @@ public class TextMagicApi {
 
     /**
      * Get unread messages number
-     * Get the total amount of unread messages in the current user chats.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the total amount of unread messages in the current user chats.
      * @return GetUnreadMessagesTotalResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -13151,7 +13151,7 @@ public class TextMagicApi {
 
     /**
      * Get unread messages number
-     * Get the total amount of unread messages in the current user chats.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the total amount of unread messages in the current user chats.
      * @return ApiResponse&lt;GetUnreadMessagesTotalResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -13163,7 +13163,7 @@ public class TextMagicApi {
 
     /**
      * Get unread messages number (asynchronously)
-     * Get the total amount of unread messages in the current user chats.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/getUnreadMessagesTotal\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Get the total amount of unread messages in the current user chats.
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -13260,7 +13260,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific unsubscribed contact
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return UnsubscribedContact
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -13272,7 +13272,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific unsubscribed contact
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @return ApiResponse&lt;UnsubscribedContact&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -13285,7 +13285,7 @@ public class TextMagicApi {
 
     /**
      * Get the details of a specific unsubscribed contact (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribedContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -13382,7 +13382,7 @@ public class TextMagicApi {
 
     /**
      * Get all unsubscribed contacts
-     * When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return GetUnsubscribersPaginatedResponse
@@ -13395,7 +13395,7 @@ public class TextMagicApi {
 
     /**
      * Get all unsubscribed contacts
-     * When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @return ApiResponse&lt;GetUnsubscribersPaginatedResponse&gt;
@@ -13409,7 +13409,7 @@ public class TextMagicApi {
 
     /**
      * Get all unsubscribed contacts (asynchronously)
-     * When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/getUnsubscribers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;When one of your message recipients sends a request with one of the [STOP-words](https://www.textmagic.com/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed status, use: 
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param callback The callback to be executed when the API call finishes
@@ -13510,7 +13510,7 @@ public class TextMagicApi {
 
     /**
      * Get all your dedicated numbers
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param surveyId Fetch only those numbers that are ready for the survey. (optional)
@@ -13524,7 +13524,7 @@ public class TextMagicApi {
 
     /**
      * Get all your dedicated numbers
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param surveyId Fetch only those numbers that are ready for the survey. (optional)
@@ -13539,7 +13539,7 @@ public class TextMagicApi {
 
     /**
      * Get all your dedicated numbers (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/getUserDedicatedNumbers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param surveyId Fetch only those numbers that are ready for the survey. (optional)
@@ -13654,7 +13654,7 @@ public class TextMagicApi {
 
     /**
      * Import contacts
-     * Import contacts from the CSV, XLS or XLSX file.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/importContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Import contacts from the CSV, XLS or XLSX file.
      * @param file File containing contacts in csv or xls(x) formats. (required)
      * @param column Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
      * @param listId List that ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
@@ -13669,7 +13669,7 @@ public class TextMagicApi {
 
     /**
      * Import contacts
-     * Import contacts from the CSV, XLS or XLSX file.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/importContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Import contacts from the CSV, XLS or XLSX file.
      * @param file File containing contacts in csv or xls(x) formats. (required)
      * @param column Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
      * @param listId List that ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
@@ -13685,7 +13685,7 @@ public class TextMagicApi {
 
     /**
      * Import contacts (asynchronously)
-     * Import contacts from the CSV, XLS or XLSX file.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/importContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Import contacts from the CSV, XLS or XLSX file.
      * @param file File containing contacts in csv or xls(x) formats. (required)
      * @param column Import file column mapping. The string must contain sub-strings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where the value before &#x60;:&#x60; is a number of the column in the file, and the value after &#x60;:&#x60; is a field of the newly created contact or the ID of a custom field. Numbers of columns begin from zero. Allowed built-in contact fields are: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  (required)
      * @param listId List that ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  (optional)
@@ -13785,7 +13785,7 @@ public class TextMagicApi {
 
     /**
      * Invite a new sub-account
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param inviteSubaccountInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -13795,7 +13795,7 @@ public class TextMagicApi {
 
     /**
      * Invite a new sub-account
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param inviteSubaccountInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -13807,7 +13807,7 @@ public class TextMagicApi {
 
     /**
      * Invite a new sub-account (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/inviteSubaccount\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param inviteSubaccountInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -13903,7 +13903,7 @@ public class TextMagicApi {
 
     /**
      * Mark chats as read (bulk)
-     * Mark several chats as read by chat IDs or mark all chats as read
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as read by chat IDs or mark all chats as read
      * @param markChatsReadBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -13913,7 +13913,7 @@ public class TextMagicApi {
 
     /**
      * Mark chats as read (bulk)
-     * Mark several chats as read by chat IDs or mark all chats as read
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as read by chat IDs or mark all chats as read
      * @param markChatsReadBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -13925,7 +13925,7 @@ public class TextMagicApi {
 
     /**
      * Mark chats as read (bulk) (asynchronously)
-     * Mark several chats as read by chat IDs or mark all chats as read
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsReadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as read by chat IDs or mark all chats as read
      * @param markChatsReadBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -14021,7 +14021,7 @@ public class TextMagicApi {
 
     /**
      * Mark chats as unread (bulk)
-     * Mark several chats as UNread by chat IDs or mark all chats as UNread
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as UNread by chat IDs or mark all chats as UNread
      * @param markChatsUnreadBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -14031,7 +14031,7 @@ public class TextMagicApi {
 
     /**
      * Mark chats as unread (bulk)
-     * Mark several chats as UNread by chat IDs or mark all chats as UNread
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as UNread by chat IDs or mark all chats as UNread
      * @param markChatsUnreadBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14043,7 +14043,7 @@ public class TextMagicApi {
 
     /**
      * Mark chats as unread (bulk) (asynchronously)
-     * Mark several chats as UNread by chat IDs or mark all chats as UNread
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/markChatsUnreadBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mark several chats as UNread by chat IDs or mark all chats as UNread
      * @param markChatsUnreadBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -14139,7 +14139,7 @@ public class TextMagicApi {
 
     /**
      * Mute chat sounds
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param muteChatInputObject  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14151,7 +14151,7 @@ public class TextMagicApi {
 
     /**
      * Mute chat sounds
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param muteChatInputObject  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14164,7 +14164,7 @@ public class TextMagicApi {
 
     /**
      * Mute chat sounds (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChat\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param muteChatInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -14261,7 +14261,7 @@ public class TextMagicApi {
 
     /**
      * Mute chats (bulk)
-     * Mute several chats by chat ids or mute all chats.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mute several chats by chat ids or mute all chats.
      * @param muteChatsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -14271,7 +14271,7 @@ public class TextMagicApi {
 
     /**
      * Mute chats (bulk)
-     * Mute several chats by chat ids or mute all chats.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mute several chats by chat ids or mute all chats.
      * @param muteChatsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14283,7 +14283,7 @@ public class TextMagicApi {
 
     /**
      * Mute chats (bulk) (asynchronously)
-     * Mute several chats by chat ids or mute all chats.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/muteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Mute several chats by chat ids or mute all chats.
      * @param muteChatsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -14373,7 +14373,7 @@ public class TextMagicApi {
 
     /**
      * Ping
-     * Make a simple ping request.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Make a simple ping request.
      * @return PingResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -14384,7 +14384,7 @@ public class TextMagicApi {
 
     /**
      * Ping
-     * Make a simple ping request.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Make a simple ping request.
      * @return ApiResponse&lt;PingResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -14396,7 +14396,7 @@ public class TextMagicApi {
 
     /**
      * Ping (asynchronously)
-     * Make a simple ping request.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Timezones%20and%20Countries/ping\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Make a simple ping request.
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -14492,7 +14492,7 @@ public class TextMagicApi {
 
     /**
      * Reopen chats (bulk)
-     * Reopen chats by chat IDs or reopen all chats
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Reopen chats by chat IDs or reopen all chats
      * @param reopenChatsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -14502,7 +14502,7 @@ public class TextMagicApi {
 
     /**
      * Reopen chats (bulk)
-     * Reopen chats by chat IDs or reopen all chats
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Reopen chats by chat IDs or reopen all chats
      * @param reopenChatsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14514,7 +14514,7 @@ public class TextMagicApi {
 
     /**
      * Reopen chats (bulk) (asynchronously)
-     * Reopen chats by chat IDs or reopen all chats
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/reopenChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Reopen chats by chat IDs or reopen all chats
      * @param reopenChatsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -14610,7 +14610,7 @@ public class TextMagicApi {
 
     /**
      * Request a new REST API token for sub-account
-     * Returning user object, key and app name.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Returning user object, key and app name.
      * @param requestNewSubaccountTokenInputObject  (required)
      * @return User
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14622,7 +14622,7 @@ public class TextMagicApi {
 
     /**
      * Request a new REST API token for sub-account
-     * Returning user object, key and app name.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Returning user object, key and app name.
      * @param requestNewSubaccountTokenInputObject  (required)
      * @return ApiResponse&lt;User&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14635,7 +14635,7 @@ public class TextMagicApi {
 
     /**
      * Request a new REST API token for sub-account (asynchronously)
-     * Returning user object, key and app name.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sub-Accounts/requestNewSubaccountToken\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Returning user object, key and app name.
      * @param requestNewSubaccountTokenInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -14732,7 +14732,7 @@ public class TextMagicApi {
 
     /**
      * Apply for a new Sender ID
-     * &gt; Sender IDs are shared among all of your sub-accounts.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Sender IDs are shared among all of your sub-accounts.
      * @param requestSenderIdInputObject  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14744,7 +14744,7 @@ public class TextMagicApi {
 
     /**
      * Apply for a new Sender ID
-     * &gt; Sender IDs are shared among all of your sub-accounts.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Sender IDs are shared among all of your sub-accounts.
      * @param requestSenderIdInputObject  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -14757,7 +14757,7 @@ public class TextMagicApi {
 
     /**
      * Apply for a new Sender ID (asynchronously)
-     * &gt; Sender IDs are shared among all of your sub-accounts.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Sender%20IDs/requestSenderId\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Sender IDs are shared among all of your sub-accounts.
      * @param requestSenderIdInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -14857,7 +14857,7 @@ public class TextMagicApi {
 
     /**
      * Find chats by message text
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find chats by specified search query. (optional)
@@ -14871,7 +14871,7 @@ public class TextMagicApi {
 
     /**
      * Find chats by message text
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find chats by specified search query. (optional)
@@ -14886,7 +14886,7 @@ public class TextMagicApi {
 
     /**
      * Find chats by message text (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChats\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find chats by specified search query. (optional)
@@ -14988,7 +14988,7 @@ public class TextMagicApi {
 
     /**
      * Find chats (bulk)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param ids Find chats by ID(s). (optional)
@@ -15002,7 +15002,7 @@ public class TextMagicApi {
 
     /**
      * Find chats (bulk)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param ids Find chats by ID(s). (optional)
@@ -15017,7 +15017,7 @@ public class TextMagicApi {
 
     /**
      * Find chats (bulk) (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByIds\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param ids Find chats by ID(s). (optional)
@@ -15122,7 +15122,7 @@ public class TextMagicApi {
 
     /**
      * Find chats by recipient
-     * Find chats by recipient (contact, list name or phone number).
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find chats by recipient (contact, list name or phone number).
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find chats by specified search query. (optional)
@@ -15137,7 +15137,7 @@ public class TextMagicApi {
 
     /**
      * Find chats by recipient
-     * Find chats by recipient (contact, list name or phone number).
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find chats by recipient (contact, list name or phone number).
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find chats by specified search query. (optional)
@@ -15153,7 +15153,7 @@ public class TextMagicApi {
 
     /**
      * Find chats by recipient (asynchronously)
-     * Find chats by recipient (contact, list name or phone number).
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/searchChatsByReceipent\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find chats by recipient (contact, list name or phone number).
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find chats by specified search query. (optional)
@@ -15280,7 +15280,7 @@ public class TextMagicApi {
 
     /**
      * Find contacts by given criteria
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/searchContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param shared Should shared contacts be included? (optional, default to 0)
@@ -15302,7 +15302,7 @@ public class TextMagicApi {
 
     /**
      * Find contacts by given criteria
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/searchContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param shared Should shared contacts be included? (optional, default to 0)
@@ -15325,7 +15325,7 @@ public class TextMagicApi {
 
     /**
      * Find contacts by given criteria (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/searchContacts\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param shared Should shared contacts be included? (optional, default to 0)
@@ -15447,7 +15447,7 @@ public class TextMagicApi {
 
     /**
      * Find inbound messages
-     * Find inbound messages by given parameters.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find inbound messages by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param ids Find message by ID(s). (optional)
@@ -15465,7 +15465,7 @@ public class TextMagicApi {
 
     /**
      * Find inbound messages
-     * Find inbound messages by given parameters.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find inbound messages by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param ids Find message by ID(s). (optional)
@@ -15484,7 +15484,7 @@ public class TextMagicApi {
 
     /**
      * Find inbound messages (asynchronously)
-     * Find inbound messages by given parameters.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Receive%0A/searchInboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find inbound messages by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param ids Find message by ID(s). (optional)
@@ -15605,7 +15605,7 @@ public class TextMagicApi {
 
     /**
      * Find lists by given criteria
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/searchLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param ids Find lists by IDs. (optional)
@@ -15624,7 +15624,7 @@ public class TextMagicApi {
 
     /**
      * Find lists by given criteria
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/searchLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param ids Find lists by IDs. (optional)
@@ -15644,7 +15644,7 @@ public class TextMagicApi {
 
     /**
      * Find lists by given criteria (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/searchLists\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param ids Find lists by IDs. (optional)
@@ -15766,7 +15766,7 @@ public class TextMagicApi {
 
     /**
      * Find messages
-     * Find outbound messages by given parameters.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find outbound messages by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified. (optional)
@@ -15785,7 +15785,7 @@ public class TextMagicApi {
 
     /**
      * Find messages
-     * Find outbound messages by given parameters.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find outbound messages by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified. (optional)
@@ -15805,7 +15805,7 @@ public class TextMagicApi {
 
     /**
      * Find messages (asynchronously)
-     * Find outbound messages by given parameters.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/searchOutboundMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find outbound messages by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param lastId Filter results by ID, selecting all values lesser than the specified ID. Note that the \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified. (optional)
@@ -15924,7 +15924,7 @@ public class TextMagicApi {
 
     /**
      * Find scheduled messages
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find messages by specified search query. (optional)
@@ -15942,7 +15942,7 @@ public class TextMagicApi {
 
     /**
      * Find scheduled messages
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find messages by specified search query. (optional)
@@ -15961,7 +15961,7 @@ public class TextMagicApi {
 
     /**
      * Find scheduled messages (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Schedule%0A/searchScheduledMessages\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find messages by specified search query. (optional)
@@ -16073,7 +16073,7 @@ public class TextMagicApi {
 
     /**
      * Find templates by criteria
-     * Find user templates by given parameters.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/searchTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find user templates by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param ids Find template by ID(s). (optional)
@@ -16089,7 +16089,7 @@ public class TextMagicApi {
 
     /**
      * Find templates by criteria
-     * Find user templates by given parameters.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/searchTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find user templates by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param ids Find template by ID(s). (optional)
@@ -16106,7 +16106,7 @@ public class TextMagicApi {
 
     /**
      * Find templates by criteria (asynchronously)
-     * Find user templates by given parameters.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/searchTemplates\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Find user templates by given parameters.
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param ids Find template by ID(s). (optional)
@@ -16207,7 +16207,7 @@ public class TextMagicApi {
 
     /**
      * Send message
-     * This is the main entrypoint to send messages. See the examples above for the reference.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This is the main entrypoint to send messages. See the examples above for the reference.
      * @param sendMessageInputObject  (required)
      * @return SendMessageResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16219,7 +16219,7 @@ public class TextMagicApi {
 
     /**
      * Send message
-     * This is the main entrypoint to send messages. See the examples above for the reference.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This is the main entrypoint to send messages. See the examples above for the reference.
      * @param sendMessageInputObject  (required)
      * @return ApiResponse&lt;SendMessageResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16232,7 +16232,7 @@ public class TextMagicApi {
 
     /**
      * Send message (asynchronously)
-     * This is the main entrypoint to send messages. See the examples above for the reference.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/sendMessage\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;This is the main entrypoint to send messages. See the examples above for the reference.
      * @param sendMessageInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -16329,7 +16329,7 @@ public class TextMagicApi {
 
     /**
      * Step 1: Send a verification code 
-     * Sends a verification code to a specified phone number.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Sends a verification code to a specified phone number.
      * @param sendPhoneVerificationCodeInputObject  (required)
      * @return SendPhoneVerificationCodeResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16341,7 +16341,7 @@ public class TextMagicApi {
 
     /**
      * Step 1: Send a verification code 
-     * Sends a verification code to a specified phone number.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Sends a verification code to a specified phone number.
      * @param sendPhoneVerificationCodeInputObject  (required)
      * @return ApiResponse&lt;SendPhoneVerificationCodeResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16354,7 +16354,7 @@ public class TextMagicApi {
 
     /**
      * Step 1: Send a verification code  (asynchronously)
-     * Sends a verification code to a specified phone number.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Two-factor%20authentication/sendPhoneVerificationCodeTFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Sends a verification code to a specified phone number.
      * @param sendPhoneVerificationCodeInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -16451,7 +16451,7 @@ public class TextMagicApi {
 
     /**
      * Change chat status
-     * Set the status of the chat given by ID.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/setChatStatus\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Set the status of the chat given by ID.
      * @param setChatStatusInputObject  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16463,7 +16463,7 @@ public class TextMagicApi {
 
     /**
      * Change chat status
-     * Set the status of the chat given by ID.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/setChatStatus\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Set the status of the chat given by ID.
      * @param setChatStatusInputObject  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16476,7 +16476,7 @@ public class TextMagicApi {
 
     /**
      * Change chat status (asynchronously)
-     * Set the status of the chat given by ID.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/setChatStatus\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Set the status of the chat given by ID.
      * @param setChatStatusInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -16573,7 +16573,7 @@ public class TextMagicApi {
 
     /**
      * Unblock a contact by phone number
-     * Unblock a contact by phone number
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock a contact by phone number
      * @param unblockContactInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -16583,7 +16583,7 @@ public class TextMagicApi {
 
     /**
      * Unblock a contact by phone number
-     * Unblock a contact by phone number
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock a contact by phone number
      * @param unblockContactInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16595,7 +16595,7 @@ public class TextMagicApi {
 
     /**
      * Unblock a contact by phone number (asynchronously)
-     * Unblock a contact by phone number
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock a contact by phone number
      * @param unblockContactInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -16691,7 +16691,7 @@ public class TextMagicApi {
 
     /**
      * Unblock contacts (bulk)
-     * Unblock several contacts by blocked contact IDs or unblock all contacts.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock several contacts by blocked contact IDs or unblock all contacts.
      * @param unblockContactsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -16701,7 +16701,7 @@ public class TextMagicApi {
 
     /**
      * Unblock contacts (bulk)
-     * Unblock several contacts by blocked contact IDs or unblock all contacts.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock several contacts by blocked contact IDs or unblock all contacts.
      * @param unblockContactsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16713,7 +16713,7 @@ public class TextMagicApi {
 
     /**
      * Unblock contacts (bulk) (asynchronously)
-     * Unblock several contacts by blocked contact IDs or unblock all contacts.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unblockContactsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unblock several contacts by blocked contact IDs or unblock all contacts.
      * @param unblockContactsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -16809,7 +16809,7 @@ public class TextMagicApi {
 
     /**
      * Unmute chats (bulk)
-     * Unmute several chats by chat ids or unmute all chats.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unmute several chats by chat ids or unmute all chats.
      * @param unmuteChatsBulkInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -16819,7 +16819,7 @@ public class TextMagicApi {
 
     /**
      * Unmute chats (bulk)
-     * Unmute several chats by chat ids or unmute all chats.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unmute several chats by chat ids or unmute all chats.
      * @param unmuteChatsBulkInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16831,7 +16831,7 @@ public class TextMagicApi {
 
     /**
      * Unmute chats (bulk) (asynchronously)
-     * Unmute several chats by chat ids or unmute all chats.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Chats/unmuteChatsBulk\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Unmute several chats by chat ids or unmute all chats.
      * @param unmuteChatsBulkInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -16927,7 +16927,7 @@ public class TextMagicApi {
 
     /**
      * Manually unsubscribe a contact
-     * &gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
      * @param unsubscribeContactInputObject  (required)
      * @return ResourceLinkResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16939,7 +16939,7 @@ public class TextMagicApi {
 
     /**
      * Manually unsubscribe a contact
-     * &gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
      * @param unsubscribeContactInputObject  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -16952,7 +16952,7 @@ public class TextMagicApi {
 
     /**
      * Manually unsubscribe a contact (asynchronously)
-     * &gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/unsubscribeContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;&gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
      * @param unsubscribeContactInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -17049,7 +17049,7 @@ public class TextMagicApi {
 
     /**
      * Update balance notification settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateBalanceNotificationSettingsInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -17059,7 +17059,7 @@ public class TextMagicApi {
 
     /**
      * Update balance notification settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateBalanceNotificationSettingsInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -17071,7 +17071,7 @@ public class TextMagicApi {
 
     /**
      * Update balance notification settings (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateBalanceNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateBalanceNotificationSettingsInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -17167,7 +17167,7 @@ public class TextMagicApi {
 
     /**
      * Update callback URL settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateCallbackSettingsInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -17177,7 +17177,7 @@ public class TextMagicApi {
 
     /**
      * Update callback URL settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateCallbackSettingsInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -17189,7 +17189,7 @@ public class TextMagicApi {
 
     /**
      * Update callback URL settings (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateCallbackSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateCallbackSettingsInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -17285,7 +17285,7 @@ public class TextMagicApi {
 
     /**
      * Update chat desktop notification settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateChatDesktopNotificationSettingsInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -17295,7 +17295,7 @@ public class TextMagicApi {
 
     /**
      * Update chat desktop notification settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateChatDesktopNotificationSettingsInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -17307,7 +17307,7 @@ public class TextMagicApi {
 
     /**
      * Update chat desktop notification settings (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateChatDesktopNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateChatDesktopNotificationSettingsInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -17410,7 +17410,7 @@ public class TextMagicApi {
 
     /**
      * Edit a contact
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/updateContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateContactInputObject  (required)
      * @param id  (required)
      * @return ResourceLinkResponse
@@ -17423,7 +17423,7 @@ public class TextMagicApi {
 
     /**
      * Edit a contact
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/updateContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateContactInputObject  (required)
      * @param id  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
@@ -17437,7 +17437,7 @@ public class TextMagicApi {
 
     /**
      * Edit a contact (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/updateContact\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateContactInputObject  (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -17542,7 +17542,7 @@ public class TextMagicApi {
 
     /**
      * Update a contact note
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateContactNoteInputObject  (required)
      * @param id  (required)
      * @return ResourceLinkResponse
@@ -17555,7 +17555,7 @@ public class TextMagicApi {
 
     /**
      * Update a contact note
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateContactNoteInputObject  (required)
      * @param id  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
@@ -17569,7 +17569,7 @@ public class TextMagicApi {
 
     /**
      * Update a contact note (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contact%20Notes/updateContactNote\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateContactNoteInputObject  (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -17667,7 +17667,7 @@ public class TextMagicApi {
 
     /**
      * Edit current account info
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateCurrentUserInputObject  (required)
      * @return UpdateCurrentUserResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -17679,7 +17679,7 @@ public class TextMagicApi {
 
     /**
      * Edit current account info
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateCurrentUserInputObject  (required)
      * @return ApiResponse&lt;UpdateCurrentUserResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -17692,7 +17692,7 @@ public class TextMagicApi {
 
     /**
      * Edit current account info (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/updateCurrentUser\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateCurrentUserInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -17796,7 +17796,7 @@ public class TextMagicApi {
 
     /**
      * Edit a custom field
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateCustomFieldInputObject  (required)
      * @param id  (required)
      * @return ResourceLinkResponse
@@ -17809,7 +17809,7 @@ public class TextMagicApi {
 
     /**
      * Edit a custom field
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateCustomFieldInputObject  (required)
      * @param id  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
@@ -17823,7 +17823,7 @@ public class TextMagicApi {
 
     /**
      * Edit a custom field (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomField\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateCustomFieldInputObject  (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -17928,7 +17928,7 @@ public class TextMagicApi {
 
     /**
      * Edit the custom field value of a specified contact
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateCustomFieldValueInputObject  (required)
      * @param id  (required)
      * @return ResourceLinkResponse
@@ -17941,7 +17941,7 @@ public class TextMagicApi {
 
     /**
      * Edit the custom field value of a specified contact
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateCustomFieldValueInputObject  (required)
      * @param id  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
@@ -17955,7 +17955,7 @@ public class TextMagicApi {
 
     /**
      * Edit the custom field value of a specified contact (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Custom%20Fields/updateCustomFieldValue\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateCustomFieldValueInputObject  (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -18053,7 +18053,7 @@ public class TextMagicApi {
 
     /**
      * Update inbound messages notification settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateInboundMessagesNotificationSettingsInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -18063,7 +18063,7 @@ public class TextMagicApi {
 
     /**
      * Update inbound messages notification settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateInboundMessagesNotificationSettingsInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -18075,7 +18075,7 @@ public class TextMagicApi {
 
     /**
      * Update inbound messages notification settings (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/undefined/updateInboundMessagesNotificationSettings\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateInboundMessagesNotificationSettingsInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -18173,7 +18173,7 @@ public class TextMagicApi {
 
     /**
      * Edit a list
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/updateList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param updateListObject  (optional)
      * @return ResourceLinkResponse
@@ -18186,7 +18186,7 @@ public class TextMagicApi {
 
     /**
      * Edit a list
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/updateList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param updateListObject  (optional)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
@@ -18200,7 +18200,7 @@ public class TextMagicApi {
 
     /**
      * Edit a list (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/updateList\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param id  (required)
      * @param updateListObject  (optional)
      * @param callback The callback to be executed when the API call finishes
@@ -18298,7 +18298,7 @@ public class TextMagicApi {
 
     /**
      * Change sender settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateSenderSettingInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -18308,7 +18308,7 @@ public class TextMagicApi {
 
     /**
      * Change sender settings
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateSenderSettingInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -18320,7 +18320,7 @@ public class TextMagicApi {
 
     /**
      * Change sender settings (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Overview/updateSenderSetting\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateSenderSettingInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -18423,7 +18423,7 @@ public class TextMagicApi {
 
     /**
      * Update a template
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/updateTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateTemplateInputObject  (required)
      * @param id  (required)
      * @return ResourceLinkResponse
@@ -18436,7 +18436,7 @@ public class TextMagicApi {
 
     /**
      * Update a template
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/updateTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateTemplateInputObject  (required)
      * @param id  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
@@ -18450,7 +18450,7 @@ public class TextMagicApi {
 
     /**
      * Update a template (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Templates/updateTemplate\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param updateTemplateInputObject  (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -18550,7 +18550,7 @@ public class TextMagicApi {
 
     /**
      * Upload an avatar
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/uploadAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param image User avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
@@ -18560,7 +18560,7 @@ public class TextMagicApi {
 
     /**
      * Upload an avatar
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/uploadAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param image User avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -18572,7 +18572,7 @@ public class TextMagicApi {
 
     /**
      * Upload an avatar (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Account/uploadAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param image User avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
@@ -18677,7 +18677,7 @@ public class TextMagicApi {
 
     /**
      * Upload an avatar
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param image Contact avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @return ResourceLinkResponse
@@ -18690,7 +18690,7 @@ public class TextMagicApi {
 
     /**
      * Upload an avatar
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param image Contact avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
@@ -18704,7 +18704,7 @@ public class TextMagicApi {
 
     /**
      * Upload an avatar (asynchronously)
-     * 
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Contacts/uploadContactAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;
      * @param image Contact avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -18811,7 +18811,7 @@ public class TextMagicApi {
 
     /**
      * Add an avatar for a list
-     * Add an avatar for a list
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Add an avatar for a list
      * @param image List avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @return ResourceLinkResponse
@@ -18824,7 +18824,7 @@ public class TextMagicApi {
 
     /**
      * Add an avatar for a list
-     * Add an avatar for a list
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Add an avatar for a list
      * @param image List avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @return ApiResponse&lt;ResourceLinkResponse&gt;
@@ -18838,7 +18838,7 @@ public class TextMagicApi {
 
     /**
      * Add an avatar for a list (asynchronously)
-     * Add an avatar for a list
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Lists/uploadListAvatar\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Add an avatar for a list
      * @param image List avatar. Should be a PNG or JPG file not more than 10 MB. (required)
      * @param id  (required)
      * @param callback The callback to be executed when the API call finishes
@@ -18938,7 +18938,7 @@ public class TextMagicApi {
 
     /**
      * Upload message attachment
-     * Upload a new file to insert it as a link.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Upload a new file to insert it as a link.
      * @param file Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats. (required)
      * @return UploadMessageAttachmentResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -18950,7 +18950,7 @@ public class TextMagicApi {
 
     /**
      * Upload message attachment
-     * Upload a new file to insert it as a link.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Upload a new file to insert it as a link.
      * @param file Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats. (required)
      * @return ApiResponse&lt;UploadMessageAttachmentResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -18963,7 +18963,7 @@ public class TextMagicApi {
 
     /**
      * Upload message attachment (asynchronously)
-     * Upload a new file to insert it as a link.
+     * &lt;a class&#x3D;\&quot;try-sandbox-link\&quot; href&#x3D;\&quot;http://sandbox.textmagictesting.com/#/Messages%3A%20Send%0A/uploadMessageAttachment\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Try in sandbox&lt;/a&gt;&lt;br&gt;Upload a new file to insert it as a link.
      * @param file Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
