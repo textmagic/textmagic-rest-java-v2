@@ -57,6 +57,9 @@ public class MessageIn {
   @SerializedName("avatar")
   private String avatar = null;
 
+  @SerializedName("email")
+  private String email = null;
+
   public MessageIn id(Integer id) {
     this.id = id;
     return this;
@@ -219,6 +222,24 @@ public class MessageIn {
     this.avatar = avatar;
   }
 
+  public MessageIn email(String email) {
+    this.email = email;
+    return this;
+  }
+
+   /**
+   * Sender email.
+   * @return email
+  **/
+  @ApiModelProperty(example = "charles@example.com", value = "Sender email.")
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -237,12 +258,13 @@ public class MessageIn {
         Objects.equals(this.contactId, messageIn.contactId) &&
         Objects.equals(this.firstName, messageIn.firstName) &&
         Objects.equals(this.lastName, messageIn.lastName) &&
-        Objects.equals(this.avatar, messageIn.avatar);
+        Objects.equals(this.avatar, messageIn.avatar) &&
+        Objects.equals(this.email, messageIn.email);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, sender, receiver, messageTime, text, contactId, firstName, lastName, avatar);
+    return Objects.hash(id, sender, receiver, messageTime, text, contactId, firstName, lastName, avatar, email);
   }
 
 
@@ -260,6 +282,7 @@ public class MessageIn {
     sb.append("    firstName: ").append(toIndentedString(firstName)).append("\n");
     sb.append("    lastName: ").append(toIndentedString(lastName)).append("\n");
     sb.append("    avatar: ").append(toIndentedString(avatar)).append("\n");
+    sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("}");
     return sb.toString();
   }

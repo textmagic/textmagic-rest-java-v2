@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **firstName** | **String** | Sender contact first name. |  [optional]
 **lastName** | **String** | Sender contact last name. |  [optional]
 **avatar** | **String** |  | 
+**email** | **String** | Sender email. |  [optional]
 
 
 
