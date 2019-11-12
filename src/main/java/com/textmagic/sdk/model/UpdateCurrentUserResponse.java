@@ -164,10 +164,10 @@ public class UpdateCurrentUserResponse {
   }
 
    /**
-   * Internal timezone ID. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones).
+   * Internal timezone ID. See [Get timezones](https://docs.textmagic.com/#operation/getTimezones).
    * @return timezone
   **/
-  @ApiModelProperty(example = "13", value = "Internal timezone ID. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones).")
+  @ApiModelProperty(example = "13", value = "Internal timezone ID. See [Get timezones](https://docs.textmagic.com/#operation/getTimezones).")
   public Integer getTimezone() {
     return timezone;
   }

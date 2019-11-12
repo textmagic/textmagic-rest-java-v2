@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **email** | **String** | User email address. |  [optional]
 **phone** | **String** |  |  [optional]
 **company** | **String** | Account company name. |  [optional]
-**timezone** | **Integer** | Internal timezone ID. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones). |  [optional]
+**timezone** | **Integer** | Internal timezone ID. See [Get timezones](https://docs.textmagic.com/#operation/getTimezones). |  [optional]
 
 
 

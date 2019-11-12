@@ -225,10 +225,10 @@ public class Conversation {
   }
 
    /**
-   * Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.
+   * Message status (for chats outbound only). See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details.
    * @return status
   **/
-  @ApiModelProperty(example = "d", required = true, value = "Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.")
+  @ApiModelProperty(example = "d", required = true, value = "Message status (for chats outbound only). See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details.")
   public String getStatus() {
     return status;
   }
@@ -279,10 +279,10 @@ public class Conversation {
   }
 
    /**
-   * Session ID of a message. See [message sessions](http://docs.textmagictesting.com/#tag/Outbound-Message-Sessions) for details.
+   * Session ID of a message. See [message sessions](https://docs.textmagic.com/#tag/Outbound-Message-Sessions) for details.
    * @return sessionId
   **/
-  @ApiModelProperty(required = true, value = "Session ID of a message. See [message sessions](http://docs.textmagictesting.com/#tag/Outbound-Message-Sessions) for details.")
+  @ApiModelProperty(required = true, value = "Session ID of a message. See [message sessions](https://docs.textmagic.com/#tag/Outbound-Message-Sessions) for details.")
   public Integer getSessionId() {
     return sessionId;
   }

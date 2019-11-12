@@ -105,10 +105,10 @@ public class Contact {
   }
 
    /**
-   * Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites).
+   * Is the Contact favorite? [Favorite list](https://docs.textmagic.com/#operation/getFavorites).
    * @return favorited
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Is the Contact favorite? [Favorite list](http://docs.textmagictesting.com/#operation/getFavorites).")
+  @ApiModelProperty(example = "true", required = true, value = "Is the Contact favorite? [Favorite list](https://docs.textmagic.com/#operation/getFavorites).")
   public Boolean isFavorited() {
     return favorited;
   }
@@ -123,10 +123,10 @@ public class Contact {
   }
 
    /**
-   * Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts).
+   * Is the Contact blocked? [Blocked contacts](https://docs.textmagic.com/#operation/getBlockedContacts).
    * @return blocked
   **/
-  @ApiModelProperty(example = "true", required = true, value = "Is the Contact blocked? [Blocked contacts](http://docs.textmagictesting.com/#operation/getBlockedContacts).")
+  @ApiModelProperty(example = "true", required = true, value = "Is the Contact blocked? [Blocked contacts](https://docs.textmagic.com/#operation/getBlockedContacts).")
   public Boolean isBlocked() {
     return blocked;
   }
@@ -254,10 +254,10 @@ public class Contact {
   }
 
    /**
-   * See the [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.
+   * See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section.
    * @return customFields
   **/
-  @ApiModelProperty(required = true, value = "See the [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.")
+  @ApiModelProperty(required = true, value = "See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section.")
   public List<ContactCustomField> getCustomFields() {
     return customFields;
   }

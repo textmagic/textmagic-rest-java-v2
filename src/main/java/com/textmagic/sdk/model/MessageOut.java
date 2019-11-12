@@ -43,7 +43,7 @@ public class MessageOut {
   private String text = null;
 
   /**
-   * Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details. 
+   * Delivery status of the message. See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details. 
    */
   @JsonAdapter(StatusEnum.Adapter.class)
   public enum StatusEnum {
@@ -237,10 +237,10 @@ public class MessageOut {
   }
 
    /**
-   * Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details. 
+   * Delivery status of the message. See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details. 
    * @return status
   **/
-  @ApiModelProperty(example = "d", required = true, value = "Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details. ")
+  @ApiModelProperty(example = "d", required = true, value = "Delivery status of the message. See [message delivery statuses](https://docs.textmagic.com/#section/Delivery-status-codes) for details. ")
   public StatusEnum getStatus() {
     return status;
   }
@@ -381,10 +381,10 @@ public class MessageOut {
   }
 
    /**
-   * Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID). 
+   * Contact first name. Could be substituted from your [Contacts](https://docs.textmagic.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID). 
    * @return firstName
   **/
-  @ApiModelProperty(example = "John", required = true, value = "Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID). ")
+  @ApiModelProperty(example = "John", required = true, value = "Contact first name. Could be substituted from your [Contacts](https://docs.textmagic.com/#tag/Contacts) (even if you submitted the phone number instead of the contact ID). ")
   public String getFirstName() {
     return firstName;
   }

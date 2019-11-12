@@ -164,10 +164,10 @@ public class UpdateContactInputObject {
   }
 
    /**
-   * Comma-separated [list](http://docs.textmagictesting.com/#section/Lists) ID. Each contact must be assigned to at least one list.
+   * Comma-separated [list](https://docs.textmagic.com/#section/Lists) ID. Each contact must be assigned to at least one list.
    * @return lists
   **/
-  @ApiModelProperty(example = "10541,18599", value = "Comma-separated [list](http://docs.textmagictesting.com/#section/Lists) ID. Each contact must be assigned to at least one list.")
+  @ApiModelProperty(example = "10541,18599", value = "Comma-separated [list](https://docs.textmagic.com/#section/Lists) ID. Each contact must be assigned to at least one list.")
   public String getLists() {
     return lists;
   }

@@ -84,10 +84,10 @@ public class MessageTemplate {
   }
 
    /**
-   * Template text. May contain tags inside braces. See the [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).
+   * Template text. May contain tags inside braces. See the [Custom fields list](https://docs.textmagic.com/#section/Custom-fields-list-(Merge-tags)).
    * @return content
   **/
-  @ApiModelProperty(example = "Hello {First name}!", required = true, value = "Template text. May contain tags inside braces. See the [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).")
+  @ApiModelProperty(example = "Hello {First name}!", required = true, value = "Template text. May contain tags inside braces. See the [Custom fields list](https://docs.textmagic.com/#section/Custom-fields-list-(Merge-tags)).")
   public String getContent() {
     return content;
   }

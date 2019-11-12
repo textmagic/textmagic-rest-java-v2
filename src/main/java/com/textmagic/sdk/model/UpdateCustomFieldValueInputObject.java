@@ -41,10 +41,10 @@ public class UpdateCustomFieldValueInputObject {
   }
 
    /**
-   * Contact ID. See [Contact](http://docs.textmagictesting.com/#tag/Contacts). 
+   * Contact ID. See [Contact](https://docs.textmagic.com/#tag/Contacts). 
    * @return contactId
   **/
-  @ApiModelProperty(example = "50315", value = "Contact ID. See [Contact](http://docs.textmagictesting.com/#tag/Contacts). ")
+  @ApiModelProperty(example = "50315", value = "Contact ID. See [Contact](https://docs.textmagic.com/#tag/Contacts). ")
   public Integer getContactId() {
     return contactId;
   }
