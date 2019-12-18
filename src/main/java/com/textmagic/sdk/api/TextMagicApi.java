@@ -34,7 +34,7 @@ import com.textmagic.sdk.model.BlockContactInputObject;
 import com.textmagic.sdk.model.BulkSession;
 import com.textmagic.sdk.model.BuyDedicatedNumberInputObject;
 import com.textmagic.sdk.model.Chat;
-import com.textmagic.sdk.model.CheckPhoneVerificationCodeInputObject;
+import com.textmagic.sdk.model.CheckPhoneVerificationCodeTFAInputObject;
 import com.textmagic.sdk.model.ClearAndAssignContactsToListInputObject;
 import com.textmagic.sdk.model.CloseChatsBulkInputObject;
 import com.textmagic.sdk.model.Contact;
@@ -129,8 +129,8 @@ import com.textmagic.sdk.model.SearchScheduledMessagesPaginatedResponse;
 import com.textmagic.sdk.model.SearchTemplatesPaginatedResponse;
 import com.textmagic.sdk.model.SendMessageInputObject;
 import com.textmagic.sdk.model.SendMessageResponse;
-import com.textmagic.sdk.model.SendPhoneVerificationCodeInputObject;
 import com.textmagic.sdk.model.SendPhoneVerificationCodeResponse;
+import com.textmagic.sdk.model.SendPhoneVerificationCodeTFAInputObject;
 import com.textmagic.sdk.model.SenderId;
 import com.textmagic.sdk.model.SetChatStatusInputObject;
 import com.textmagic.sdk.model.UnauthorizedResponse;
@@ -675,14 +675,14 @@ public class TextMagicApi {
     }
     /**
      * Build call for checkPhoneVerificationCodeTFA
-     * @param checkPhoneVerificationCodeInputObject  (required)
+     * @param checkPhoneVerificationCodeTFAInputObject  (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call checkPhoneVerificationCodeTFACall(CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        Object localVarPostBody = checkPhoneVerificationCodeInputObject;
+    public com.squareup.okhttp.Call checkPhoneVerificationCodeTFACall(CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+        Object localVarPostBody = checkPhoneVerificationCodeTFAInputObject;
 
         // create path and map variables
         String localVarPath = "/api/v2/verify";
@@ -723,15 +723,15 @@ public class TextMagicApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call checkPhoneVerificationCodeTFAValidateBeforeCall(CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call checkPhoneVerificationCodeTFAValidateBeforeCall(CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
-        // verify the required parameter 'checkPhoneVerificationCodeInputObject' is set
-        if (checkPhoneVerificationCodeInputObject == null) {
-            throw new ApiException("Missing the required parameter 'checkPhoneVerificationCodeInputObject' when calling checkPhoneVerificationCodeTFA(Async)");
+        // verify the required parameter 'checkPhoneVerificationCodeTFAInputObject' is set
+        if (checkPhoneVerificationCodeTFAInputObject == null) {
+            throw new ApiException("Missing the required parameter 'checkPhoneVerificationCodeTFAInputObject' when calling checkPhoneVerificationCodeTFA(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = checkPhoneVerificationCodeTFACall(checkPhoneVerificationCodeInputObject, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = checkPhoneVerificationCodeTFACall(checkPhoneVerificationCodeTFAInputObject, progressListener, progressRequestListener);
         return call;
 
     }
@@ -739,34 +739,34 @@ public class TextMagicApi {
     /**
      * Step 2: Check the verification code 
      * Check received code from user with the code which was actually sent.
-     * @param checkPhoneVerificationCodeInputObject  (required)
+     * @param checkPhoneVerificationCodeTFAInputObject  (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public void checkPhoneVerificationCodeTFA(CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject) throws ApiException {
-        checkPhoneVerificationCodeTFAWithHttpInfo(checkPhoneVerificationCodeInputObject);
+    public void checkPhoneVerificationCodeTFA(CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject) throws ApiException {
+        checkPhoneVerificationCodeTFAWithHttpInfo(checkPhoneVerificationCodeTFAInputObject);
     }
 
     /**
      * Step 2: Check the verification code 
      * Check received code from user with the code which was actually sent.
-     * @param checkPhoneVerificationCodeInputObject  (required)
+     * @param checkPhoneVerificationCodeTFAInputObject  (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<Void> checkPhoneVerificationCodeTFAWithHttpInfo(CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject) throws ApiException {
-        com.squareup.okhttp.Call call = checkPhoneVerificationCodeTFAValidateBeforeCall(checkPhoneVerificationCodeInputObject, null, null);
+    public ApiResponse<Void> checkPhoneVerificationCodeTFAWithHttpInfo(CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject) throws ApiException {
+        com.squareup.okhttp.Call call = checkPhoneVerificationCodeTFAValidateBeforeCall(checkPhoneVerificationCodeTFAInputObject, null, null);
         return apiClient.execute(call);
     }
 
     /**
      * Step 2: Check the verification code  (asynchronously)
      * Check received code from user with the code which was actually sent.
-     * @param checkPhoneVerificationCodeInputObject  (required)
+     * @param checkPhoneVerificationCodeTFAInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call checkPhoneVerificationCodeTFAAsync(CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject, final ApiCallback<Void> callback) throws ApiException {
+    public com.squareup.okhttp.Call checkPhoneVerificationCodeTFAAsync(CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject, final ApiCallback<Void> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -787,7 +787,7 @@ public class TextMagicApi {
             };
         }
 
-        com.squareup.okhttp.Call call = checkPhoneVerificationCodeTFAValidateBeforeCall(checkPhoneVerificationCodeInputObject, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = checkPhoneVerificationCodeTFAValidateBeforeCall(checkPhoneVerificationCodeTFAInputObject, progressListener, progressRequestListener);
         apiClient.executeAsync(call, callback);
         return call;
     }
@@ -16266,14 +16266,14 @@ public class TextMagicApi {
     }
     /**
      * Build call for sendPhoneVerificationCodeTFA
-     * @param sendPhoneVerificationCodeInputObject  (required)
+     * @param sendPhoneVerificationCodeTFAInputObject  (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call sendPhoneVerificationCodeTFACall(SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        Object localVarPostBody = sendPhoneVerificationCodeInputObject;
+    public com.squareup.okhttp.Call sendPhoneVerificationCodeTFACall(SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+        Object localVarPostBody = sendPhoneVerificationCodeTFAInputObject;
 
         // create path and map variables
         String localVarPath = "/api/v2/verify";
@@ -16314,15 +16314,15 @@ public class TextMagicApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call sendPhoneVerificationCodeTFAValidateBeforeCall(SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call sendPhoneVerificationCodeTFAValidateBeforeCall(SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
-        // verify the required parameter 'sendPhoneVerificationCodeInputObject' is set
-        if (sendPhoneVerificationCodeInputObject == null) {
-            throw new ApiException("Missing the required parameter 'sendPhoneVerificationCodeInputObject' when calling sendPhoneVerificationCodeTFA(Async)");
+        // verify the required parameter 'sendPhoneVerificationCodeTFAInputObject' is set
+        if (sendPhoneVerificationCodeTFAInputObject == null) {
+            throw new ApiException("Missing the required parameter 'sendPhoneVerificationCodeTFAInputObject' when calling sendPhoneVerificationCodeTFA(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = sendPhoneVerificationCodeTFACall(sendPhoneVerificationCodeInputObject, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = sendPhoneVerificationCodeTFACall(sendPhoneVerificationCodeTFAInputObject, progressListener, progressRequestListener);
         return call;
 
     }
@@ -16330,24 +16330,24 @@ public class TextMagicApi {
     /**
      * Step 1: Send a verification code 
      * Sends a verification code to a specified phone number.
-     * @param sendPhoneVerificationCodeInputObject  (required)
+     * @param sendPhoneVerificationCodeTFAInputObject  (required)
      * @return SendPhoneVerificationCodeResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public SendPhoneVerificationCodeResponse sendPhoneVerificationCodeTFA(SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject) throws ApiException {
-        ApiResponse<SendPhoneVerificationCodeResponse> resp = sendPhoneVerificationCodeTFAWithHttpInfo(sendPhoneVerificationCodeInputObject);
+    public SendPhoneVerificationCodeResponse sendPhoneVerificationCodeTFA(SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject) throws ApiException {
+        ApiResponse<SendPhoneVerificationCodeResponse> resp = sendPhoneVerificationCodeTFAWithHttpInfo(sendPhoneVerificationCodeTFAInputObject);
         return resp.getData();
     }
 
     /**
      * Step 1: Send a verification code 
      * Sends a verification code to a specified phone number.
-     * @param sendPhoneVerificationCodeInputObject  (required)
+     * @param sendPhoneVerificationCodeTFAInputObject  (required)
      * @return ApiResponse&lt;SendPhoneVerificationCodeResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<SendPhoneVerificationCodeResponse> sendPhoneVerificationCodeTFAWithHttpInfo(SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject) throws ApiException {
-        com.squareup.okhttp.Call call = sendPhoneVerificationCodeTFAValidateBeforeCall(sendPhoneVerificationCodeInputObject, null, null);
+    public ApiResponse<SendPhoneVerificationCodeResponse> sendPhoneVerificationCodeTFAWithHttpInfo(SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject) throws ApiException {
+        com.squareup.okhttp.Call call = sendPhoneVerificationCodeTFAValidateBeforeCall(sendPhoneVerificationCodeTFAInputObject, null, null);
         Type localVarReturnType = new TypeToken<SendPhoneVerificationCodeResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -16355,12 +16355,12 @@ public class TextMagicApi {
     /**
      * Step 1: Send a verification code  (asynchronously)
      * Sends a verification code to a specified phone number.
-     * @param sendPhoneVerificationCodeInputObject  (required)
+     * @param sendPhoneVerificationCodeTFAInputObject  (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call sendPhoneVerificationCodeTFAAsync(SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject, final ApiCallback<SendPhoneVerificationCodeResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call sendPhoneVerificationCodeTFAAsync(SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject, final ApiCallback<SendPhoneVerificationCodeResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -16381,7 +16381,7 @@ public class TextMagicApi {
             };
         }
 
-        com.squareup.okhttp.Call call = sendPhoneVerificationCodeTFAValidateBeforeCall(sendPhoneVerificationCodeInputObject, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = sendPhoneVerificationCodeTFAValidateBeforeCall(sendPhoneVerificationCodeTFAInputObject, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<SendPhoneVerificationCodeResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;

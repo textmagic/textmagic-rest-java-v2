@@ -21,7 +21,7 @@ import com.textmagic.sdk.model.BlockContactInputObject;
 import com.textmagic.sdk.model.BulkSession;
 import com.textmagic.sdk.model.BuyDedicatedNumberInputObject;
 import com.textmagic.sdk.model.Chat;
-import com.textmagic.sdk.model.CheckPhoneVerificationCodeInputObject;
+import com.textmagic.sdk.model.CheckPhoneVerificationCodeTFAInputObject;
 import com.textmagic.sdk.model.ClearAndAssignContactsToListInputObject;
 import com.textmagic.sdk.model.CloseChatsBulkInputObject;
 import com.textmagic.sdk.model.Contact;
@@ -116,8 +116,8 @@ import com.textmagic.sdk.model.SearchScheduledMessagesPaginatedResponse;
 import com.textmagic.sdk.model.SearchTemplatesPaginatedResponse;
 import com.textmagic.sdk.model.SendMessageInputObject;
 import com.textmagic.sdk.model.SendMessageResponse;
-import com.textmagic.sdk.model.SendPhoneVerificationCodeInputObject;
 import com.textmagic.sdk.model.SendPhoneVerificationCodeResponse;
+import com.textmagic.sdk.model.SendPhoneVerificationCodeTFAInputObject;
 import com.textmagic.sdk.model.SenderId;
 import com.textmagic.sdk.model.SetChatStatusInputObject;
 import com.textmagic.sdk.model.UnauthorizedResponse;
@@ -235,8 +235,8 @@ public class TextMagicApiTest {
      */
     @Test
     public void checkPhoneVerificationCodeTFATest() throws ApiException {
-        CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject = null;
-        api.checkPhoneVerificationCodeTFA(checkPhoneVerificationCodeInputObject);
+        CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject = null;
+        api.checkPhoneVerificationCodeTFA(checkPhoneVerificationCodeTFAInputObject);
 
         // TODO: test validations
     }
@@ -2340,8 +2340,8 @@ public class TextMagicApiTest {
      */
     @Test
     public void sendPhoneVerificationCodeTFATest() throws ApiException {
-        SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject = null;
-        SendPhoneVerificationCodeResponse response = api.sendPhoneVerificationCodeTFA(sendPhoneVerificationCodeInputObject);
+        SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject = null;
+        SendPhoneVerificationCodeResponse response = api.sendPhoneVerificationCodeTFA(sendPhoneVerificationCodeTFAInputObject);
 
         // TODO: test validations
     }

@@ -372,7 +372,7 @@ null (empty response body)
 
 <a name="checkPhoneVerificationCodeTFA"></a>
 # **checkPhoneVerificationCodeTFA**
-> checkPhoneVerificationCodeTFA(checkPhoneVerificationCodeInputObject)
+> checkPhoneVerificationCodeTFA(checkPhoneVerificationCodeTFAInputObject)
 
 Step 2: Check the verification code 
 
@@ -395,9 +395,9 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject = new CheckPhoneVerificationCodeInputObject(); // CheckPhoneVerificationCodeInputObject | 
+CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject = new CheckPhoneVerificationCodeTFAInputObject(); // CheckPhoneVerificationCodeTFAInputObject | 
 try {
-    apiInstance.checkPhoneVerificationCodeTFA(checkPhoneVerificationCodeInputObject);
+    apiInstance.checkPhoneVerificationCodeTFA(checkPhoneVerificationCodeTFAInputObject);
 } catch (ApiException e) {
     System.err.println("Exception when calling TextMagicApi#checkPhoneVerificationCodeTFA");
     e.printStackTrace();
@@ -408,7 +408,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **checkPhoneVerificationCodeInputObject** | [**CheckPhoneVerificationCodeInputObject**](CheckPhoneVerificationCodeInputObject.md)|  |
+ **checkPhoneVerificationCodeTFAInputObject** | [**CheckPhoneVerificationCodeTFAInputObject**](CheckPhoneVerificationCodeTFAInputObject.md)|  |
 
 ### Return type
 
@@ -7203,7 +7203,7 @@ Name | Type | Description  | Notes
 
 <a name="sendPhoneVerificationCodeTFA"></a>
 # **sendPhoneVerificationCodeTFA**
-> SendPhoneVerificationCodeResponse sendPhoneVerificationCodeTFA(sendPhoneVerificationCodeInputObject)
+> SendPhoneVerificationCodeResponse sendPhoneVerificationCodeTFA(sendPhoneVerificationCodeTFAInputObject)
 
 Step 1: Send a verification code 
 
@@ -7226,9 +7226,9 @@ BasicAuth.setUsername("YOUR USERNAME");
 BasicAuth.setPassword("YOUR PASSWORD");
 
 TextMagicApi apiInstance = new TextMagicApi();
-SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject = new SendPhoneVerificationCodeInputObject(); // SendPhoneVerificationCodeInputObject | 
+SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject = new SendPhoneVerificationCodeTFAInputObject(); // SendPhoneVerificationCodeTFAInputObject | 
 try {
-    SendPhoneVerificationCodeResponse result = apiInstance.sendPhoneVerificationCodeTFA(sendPhoneVerificationCodeInputObject);
+    SendPhoneVerificationCodeResponse result = apiInstance.sendPhoneVerificationCodeTFA(sendPhoneVerificationCodeTFAInputObject);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling TextMagicApi#sendPhoneVerificationCodeTFA");
@@ -7240,7 +7240,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sendPhoneVerificationCodeInputObject** | [**SendPhoneVerificationCodeInputObject**](SendPhoneVerificationCodeInputObject.md)|  |
+ **sendPhoneVerificationCodeTFAInputObject** | [**SendPhoneVerificationCodeTFAInputObject**](SendPhoneVerificationCodeTFAInputObject.md)|  |
 
 ### Return type
 

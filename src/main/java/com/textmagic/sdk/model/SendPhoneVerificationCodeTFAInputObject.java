@@ -25,10 +25,10 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 
 /**
- * SendPhoneVerificationCodeInputObject
+ * SendPhoneVerificationCodeTFAInputObject
  */
 
-public class SendPhoneVerificationCodeInputObject {
+public class SendPhoneVerificationCodeTFAInputObject {
   @SerializedName("phone")
   private String phone = null;
 
@@ -47,7 +47,7 @@ public class SendPhoneVerificationCodeInputObject {
   @SerializedName("country")
   private String country = null;
 
-  public SendPhoneVerificationCodeInputObject phone(String phone) {
+  public SendPhoneVerificationCodeTFAInputObject phone(String phone) {
     this.phone = phone;
     return this;
   }
@@ -65,7 +65,7 @@ public class SendPhoneVerificationCodeInputObject {
     this.phone = phone;
   }
 
-  public SendPhoneVerificationCodeInputObject brand(String brand) {
+  public SendPhoneVerificationCodeTFAInputObject brand(String brand) {
     this.brand = brand;
     return this;
   }
@@ -83,7 +83,7 @@ public class SendPhoneVerificationCodeInputObject {
     this.brand = brand;
   }
 
-  public SendPhoneVerificationCodeInputObject codeLength(Integer codeLength) {
+  public SendPhoneVerificationCodeTFAInputObject codeLength(Integer codeLength) {
     this.codeLength = codeLength;
     return this;
   }
@@ -101,7 +101,7 @@ public class SendPhoneVerificationCodeInputObject {
     this.codeLength = codeLength;
   }
 
-  public SendPhoneVerificationCodeInputObject language(String language) {
+  public SendPhoneVerificationCodeTFAInputObject language(String language) {
     this.language = language;
     return this;
   }
@@ -119,7 +119,7 @@ public class SendPhoneVerificationCodeInputObject {
     this.language = language;
   }
 
-  public SendPhoneVerificationCodeInputObject senderId(String senderId) {
+  public SendPhoneVerificationCodeTFAInputObject senderId(String senderId) {
     this.senderId = senderId;
     return this;
   }
@@ -137,7 +137,7 @@ public class SendPhoneVerificationCodeInputObject {
     this.senderId = senderId;
   }
 
-  public SendPhoneVerificationCodeInputObject country(String country) {
+  public SendPhoneVerificationCodeTFAInputObject country(String country) {
     this.country = country;
     return this;
   }
@@ -164,13 +164,13 @@ public class SendPhoneVerificationCodeInputObject {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    SendPhoneVerificationCodeInputObject sendPhoneVerificationCodeInputObject = (SendPhoneVerificationCodeInputObject) o;
-    return Objects.equals(this.phone, sendPhoneVerificationCodeInputObject.phone) &&
-        Objects.equals(this.brand, sendPhoneVerificationCodeInputObject.brand) &&
-        Objects.equals(this.codeLength, sendPhoneVerificationCodeInputObject.codeLength) &&
-        Objects.equals(this.language, sendPhoneVerificationCodeInputObject.language) &&
-        Objects.equals(this.senderId, sendPhoneVerificationCodeInputObject.senderId) &&
-        Objects.equals(this.country, sendPhoneVerificationCodeInputObject.country);
+    SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject = (SendPhoneVerificationCodeTFAInputObject) o;
+    return Objects.equals(this.phone, sendPhoneVerificationCodeTFAInputObject.phone) &&
+        Objects.equals(this.brand, sendPhoneVerificationCodeTFAInputObject.brand) &&
+        Objects.equals(this.codeLength, sendPhoneVerificationCodeTFAInputObject.codeLength) &&
+        Objects.equals(this.language, sendPhoneVerificationCodeTFAInputObject.language) &&
+        Objects.equals(this.senderId, sendPhoneVerificationCodeTFAInputObject.senderId) &&
+        Objects.equals(this.country, sendPhoneVerificationCodeTFAInputObject.country);
   }
 
   @Override
@@ -182,7 +182,7 @@ public class SendPhoneVerificationCodeInputObject {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class SendPhoneVerificationCodeInputObject {\n");
+    sb.append("class SendPhoneVerificationCodeTFAInputObject {\n");
     
     sb.append("    phone: ").append(toIndentedString(phone)).append("\n");
     sb.append("    brand: ").append(toIndentedString(brand)).append("\n");

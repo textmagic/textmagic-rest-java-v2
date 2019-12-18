@@ -25,17 +25,17 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 
 /**
- * CheckPhoneVerificationCodeInputObject
+ * CheckPhoneVerificationCodeTFAInputObject
  */
 
-public class CheckPhoneVerificationCodeInputObject {
+public class CheckPhoneVerificationCodeTFAInputObject {
   @SerializedName("code")
   private Integer code = null;
 
   @SerializedName("verifyId")
   private String verifyId = null;
 
-  public CheckPhoneVerificationCodeInputObject code(Integer code) {
+  public CheckPhoneVerificationCodeTFAInputObject code(Integer code) {
     this.code = code;
     return this;
   }
@@ -53,7 +53,7 @@ public class CheckPhoneVerificationCodeInputObject {
     this.code = code;
   }
 
-  public CheckPhoneVerificationCodeInputObject verifyId(String verifyId) {
+  public CheckPhoneVerificationCodeTFAInputObject verifyId(String verifyId) {
     this.verifyId = verifyId;
     return this;
   }
@@ -80,9 +80,9 @@ public class CheckPhoneVerificationCodeInputObject {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    CheckPhoneVerificationCodeInputObject checkPhoneVerificationCodeInputObject = (CheckPhoneVerificationCodeInputObject) o;
-    return Objects.equals(this.code, checkPhoneVerificationCodeInputObject.code) &&
-        Objects.equals(this.verifyId, checkPhoneVerificationCodeInputObject.verifyId);
+    CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject = (CheckPhoneVerificationCodeTFAInputObject) o;
+    return Objects.equals(this.code, checkPhoneVerificationCodeTFAInputObject.code) &&
+        Objects.equals(this.verifyId, checkPhoneVerificationCodeTFAInputObject.verifyId);
   }
 
   @Override
@@ -94,7 +94,7 @@ public class CheckPhoneVerificationCodeInputObject {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class CheckPhoneVerificationCodeInputObject {\n");
+    sb.append("class CheckPhoneVerificationCodeTFAInputObject {\n");
     
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    verifyId: ").append(toIndentedString(verifyId)).append("\n");
