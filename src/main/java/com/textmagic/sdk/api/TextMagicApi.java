@@ -15198,6 +15198,7 @@ public class TextMagicApi {
      * @param includeBlocked Should blocked contacts be included? (optional)
      * @param query Find contacts by specified search query. (optional)
      * @param local Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)
+     * @param exactMatch Return only exactly matching contacts. Default is 0. (optional, default to 0)
      * @param country The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
@@ -15206,7 +15207,7 @@ public class TextMagicApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call searchContactsCall(Integer page, Integer limit, Integer shared, String ids, Integer listId, Integer includeBlocked, String query, Integer local, String country, String orderBy, String direction, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call searchContactsCall(Integer page, Integer limit, Integer shared, String ids, Integer listId, Integer includeBlocked, String query, Integer local, Integer exactMatch, String country, String orderBy, String direction, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
 
         // create path and map variables
@@ -15230,6 +15231,8 @@ public class TextMagicApi {
         localVarQueryParams.addAll(apiClient.parameterToPair("query", query));
         if (local != null)
         localVarQueryParams.addAll(apiClient.parameterToPair("local", local));
+        if (exactMatch != null)
+        localVarQueryParams.addAll(apiClient.parameterToPair("exactMatch", exactMatch));
         if (country != null)
         localVarQueryParams.addAll(apiClient.parameterToPair("country", country));
         if (orderBy != null)
@@ -15270,10 +15273,10 @@ public class TextMagicApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call searchContactsValidateBeforeCall(Integer page, Integer limit, Integer shared, String ids, Integer listId, Integer includeBlocked, String query, Integer local, String country, String orderBy, String direction, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call searchContactsValidateBeforeCall(Integer page, Integer limit, Integer shared, String ids, Integer listId, Integer includeBlocked, String query, Integer local, Integer exactMatch, String country, String orderBy, String direction, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
 
-        com.squareup.okhttp.Call call = searchContactsCall(page, limit, shared, ids, listId, includeBlocked, query, local, country, orderBy, direction, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = searchContactsCall(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction, progressListener, progressRequestListener);
         return call;
 
     }
@@ -15289,14 +15292,15 @@ public class TextMagicApi {
      * @param includeBlocked Should blocked contacts be included? (optional)
      * @param query Find contacts by specified search query. (optional)
      * @param local Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)
+     * @param exactMatch Return only exactly matching contacts. Default is 0. (optional, default to 0)
      * @param country The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return SearchContactsPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public SearchContactsPaginatedResponse searchContacts(Integer page, Integer limit, Integer shared, String ids, Integer listId, Integer includeBlocked, String query, Integer local, String country, String orderBy, String direction) throws ApiException {
-        ApiResponse<SearchContactsPaginatedResponse> resp = searchContactsWithHttpInfo(page, limit, shared, ids, listId, includeBlocked, query, local, country, orderBy, direction);
+    public SearchContactsPaginatedResponse searchContacts(Integer page, Integer limit, Integer shared, String ids, Integer listId, Integer includeBlocked, String query, Integer local, Integer exactMatch, String country, String orderBy, String direction) throws ApiException {
+        ApiResponse<SearchContactsPaginatedResponse> resp = searchContactsWithHttpInfo(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction);
         return resp.getData();
     }
 
@@ -15311,14 +15315,15 @@ public class TextMagicApi {
      * @param includeBlocked Should blocked contacts be included? (optional)
      * @param query Find contacts by specified search query. (optional)
      * @param local Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)
+     * @param exactMatch Return only exactly matching contacts. Default is 0. (optional, default to 0)
      * @param country The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @return ApiResponse&lt;SearchContactsPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<SearchContactsPaginatedResponse> searchContactsWithHttpInfo(Integer page, Integer limit, Integer shared, String ids, Integer listId, Integer includeBlocked, String query, Integer local, String country, String orderBy, String direction) throws ApiException {
-        com.squareup.okhttp.Call call = searchContactsValidateBeforeCall(page, limit, shared, ids, listId, includeBlocked, query, local, country, orderBy, direction, null, null);
+    public ApiResponse<SearchContactsPaginatedResponse> searchContactsWithHttpInfo(Integer page, Integer limit, Integer shared, String ids, Integer listId, Integer includeBlocked, String query, Integer local, Integer exactMatch, String country, String orderBy, String direction) throws ApiException {
+        com.squareup.okhttp.Call call = searchContactsValidateBeforeCall(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction, null, null);
         Type localVarReturnType = new TypeToken<SearchContactsPaginatedResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -15334,6 +15339,7 @@ public class TextMagicApi {
      * @param includeBlocked Should blocked contacts be included? (optional)
      * @param query Find contacts by specified search query. (optional)
      * @param local Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. (optional, default to 0)
+     * @param exactMatch Return only exactly matching contacts. Default is 0. (optional, default to 0)
      * @param country The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
@@ -15341,7 +15347,7 @@ public class TextMagicApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call searchContactsAsync(Integer page, Integer limit, Integer shared, String ids, Integer listId, Integer includeBlocked, String query, Integer local, String country, String orderBy, String direction, final ApiCallback<SearchContactsPaginatedResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call searchContactsAsync(Integer page, Integer limit, Integer shared, String ids, Integer listId, Integer includeBlocked, String query, Integer local, Integer exactMatch, String country, String orderBy, String direction, final ApiCallback<SearchContactsPaginatedResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -15362,7 +15368,7 @@ public class TextMagicApi {
             };
         }
 
-        com.squareup.okhttp.Call call = searchContactsValidateBeforeCall(page, limit, shared, ids, listId, includeBlocked, query, local, country, orderBy, direction, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = searchContactsValidateBeforeCall(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<SearchContactsPaginatedResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;

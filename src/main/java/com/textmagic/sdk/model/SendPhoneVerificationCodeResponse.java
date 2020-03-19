@@ -24,7 +24,6 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.util.UUID;
 
 /**
  * SendPhoneVerificationCodeResponse
@@ -32,12 +31,12 @@ import java.util.UUID;
 
 public class SendPhoneVerificationCodeResponse {
   @SerializedName("verifyId")
-  private UUID verifyId = null;
+  private String verifyId = null;
 
   @SerializedName("price")
   private BigDecimal price = null;
 
-  public SendPhoneVerificationCodeResponse verifyId(UUID verifyId) {
+  public SendPhoneVerificationCodeResponse verifyId(String verifyId) {
     this.verifyId = verifyId;
     return this;
   }
@@ -47,11 +46,11 @@ public class SendPhoneVerificationCodeResponse {
    * @return verifyId
   **/
   @ApiModelProperty(example = "123e4567-e89b-12d3-a456-426655440000", required = true, value = "The ID of a verification request. This is required to finish the verification request in the next step.")
-  public UUID getVerifyId() {
+  public String getVerifyId() {
     return verifyId;
   }
 
-  public void setVerifyId(UUID verifyId) {
+  public void setVerifyId(String verifyId) {
     this.verifyId = verifyId;
   }
 

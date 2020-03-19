@@ -29,11 +29,32 @@ import java.io.IOException;
  */
 
 public class PingResponse {
+  @SerializedName("userId")
+  private Integer userId = null;
+
   @SerializedName("ping")
   private String ping = null;
 
   @SerializedName("utcDateTime")
   private String utcDateTime = null;
+
+  public PingResponse userId(Integer userId) {
+    this.userId = userId;
+    return this;
+  }
+
+   /**
+   * Current user Id.
+   * @return userId
+  **/
+  @ApiModelProperty(example = "123", required = true, value = "Current user Id.")
+  public Integer getUserId() {
+    return userId;
+  }
+
+  public void setUserId(Integer userId) {
+    this.userId = userId;
+  }
 
   public PingResponse ping(String ping) {
     this.ping = ping;
@@ -81,13 +102,14 @@ public class PingResponse {
       return false;
     }
     PingResponse pingResponse = (PingResponse) o;
-    return Objects.equals(this.ping, pingResponse.ping) &&
+    return Objects.equals(this.userId, pingResponse.userId) &&
+        Objects.equals(this.ping, pingResponse.ping) &&
         Objects.equals(this.utcDateTime, pingResponse.utcDateTime);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(ping, utcDateTime);
+    return Objects.hash(userId, ping, utcDateTime);
   }
 
 
@@ -96,6 +118,7 @@ public class PingResponse {
     StringBuilder sb = new StringBuilder();
     sb.append("class PingResponse {\n");
     
+    sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
     sb.append("    ping: ").append(toIndentedString(ping)).append("\n");
     sb.append("    utcDateTime: ").append(toIndentedString(utcDateTime)).append("\n");
     sb.append("}");

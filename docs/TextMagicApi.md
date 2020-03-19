@@ -6745,7 +6745,7 @@ Name | Type | Description  | Notes
 
 <a name="searchContacts"></a>
 # **searchContacts**
-> SearchContactsPaginatedResponse searchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, country, orderBy, direction)
+> SearchContactsPaginatedResponse searchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction)
 
 Find contacts by given criteria
 
@@ -6776,11 +6776,12 @@ Integer listId = 56; // Integer | Find contacts by List ID.
 Integer includeBlocked = 56; // Integer | Should blocked contacts be included?
 String query = "query_example"; // String | Find contacts by specified search query.
 Integer local = 0; // Integer | Treat phone number passed in the \"query\" field as local. Default is 0.
+Integer exactMatch = 0; // Integer | Return only exactly matching contacts. Default is 0.
 String country = "country_example"; // String | The 2-letter ISO country code for local phone numbers, used when \"local\" is set to true. Default is the account country.
 String orderBy = "id"; // String | Order results by some field. Default is id.
 String direction = "desc"; // String | Order direction. Default is desc.
 try {
-    SearchContactsPaginatedResponse result = apiInstance.searchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, country, orderBy, direction);
+    SearchContactsPaginatedResponse result = apiInstance.searchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling TextMagicApi#searchContacts");
@@ -6800,6 +6801,7 @@ Name | Type | Description  | Notes
  **includeBlocked** | **Integer**| Should blocked contacts be included? | [optional]
  **query** | **String**| Find contacts by specified search query. | [optional]
  **local** | **Integer**| Treat phone number passed in the \&quot;query\&quot; field as local. Default is 0. | [optional] [default to 0]
+ **exactMatch** | **Integer**| Return only exactly matching contacts. Default is 0. | [optional] [default to 0]
  **country** | **String**| The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. | [optional]
  **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, firstName, lastName]
  **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]

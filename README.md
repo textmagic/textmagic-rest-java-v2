@@ -23,7 +23,7 @@ Add this dependency to your project's POM:
     <dependency>
         <groupId>com.textmagic.sdk</groupId>
         <artifactId>textmagic-java-sdk</artifactId>
-        <version>2.0.1067</version>
+        <version>2.0.1307</version>
     </dependency>
 </dependencies>
 ```
@@ -32,7 +32,7 @@ Add this dependency to your project's POM:
 
 Add this dependency to your project’s build file:
 ```groovy
-compile "com.textmagic.sdk:textmagic-java-sdk:2.0.1067"
+compile "com.textmagic.sdk:textmagic-java-sdk:2.0.1307"
 ```
 
 ## Usage Example
@@ -48,10 +48,10 @@ public class App {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-        // Configure HTTP basic authorization: BasicAuth
+        // put your Username and API Key from https://my.textmagic.com/online/api/rest-api/keys page.
         HttpBasicAuth BasicAuth = (HttpBasicAuth) defaultClient.getAuthentication("BasicAuth");
         BasicAuth.setUsername("YOUR_USERNAME");
-        BasicAuth.setPassword("YOUR_PASSWORD");
+        BasicAuth.setPassword("YOUR_API_KEY");
 
         TextMagicApi apiInstance = new TextMagicApi();
 

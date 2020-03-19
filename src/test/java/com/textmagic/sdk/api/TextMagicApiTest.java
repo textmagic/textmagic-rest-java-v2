@@ -2196,10 +2196,11 @@ public class TextMagicApiTest {
         Integer includeBlocked = null;
         String query = null;
         Integer local = null;
+        Integer exactMatch = null;
         String country = null;
         String orderBy = null;
         String direction = null;
-        SearchContactsPaginatedResponse response = api.searchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, country, orderBy, direction);
+        SearchContactsPaginatedResponse response = api.searchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction);
 
         // TODO: test validations
     }
