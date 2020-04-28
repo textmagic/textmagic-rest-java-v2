@@ -32,6 +32,9 @@ public class SendPhoneVerificationCodeTFAInputObject {
   @SerializedName("phone")
   private String phone = null;
 
+  @SerializedName("workflowId")
+  private String workflowId = null;
+
   @SerializedName("brand")
   private String brand = null;
 
@@ -63,6 +66,24 @@ public class SendPhoneVerificationCodeTFAInputObject {
 
   public void setPhone(String phone) {
     this.phone = phone;
+  }
+
+  public SendPhoneVerificationCodeTFAInputObject workflowId(String workflowId) {
+    this.workflowId = workflowId;
+    return this;
+  }
+
+   /**
+   * **Workflows**  The Verify API allows you to select the best workflow for your use case. This might depend on the type of verification taking place, your users&#39; preference, or their geographical location. You can specify which workflow to use for each Verify API request by setting the workflowId field to an integer value 1-7. The details of each of these preset workflows are detailed below.  &lt;br /&gt;  **Workflow 1 (Default Workflow): SMS -&gt; TTS -&gt; TTS**  &lt;br /&gt;  Send PIN code by text message, follow up with two subsequent voice calls if the request wasn&#39;t already verified.  Send SMS to user with PIN code Wait for 60 seconds Call user and give TTS PIN code Wait for 60 seconds Call user and give TTS PIN code  Request expires after 300 seconds  &lt;br /&gt;  **Workflow 2: SMS -&gt; SMS -&gt; TTS**  &lt;br /&gt;    Send PIN code by text message, follow up with a second text message and finally a voice call if the request has not been verified.  Send SMS to user with PIN code Wait for 60 seconds Send SMS to user with PIN code Wait for 60 seconds Call user and give TTS PIN code  Request expires after 300 seconds  &lt;br /&gt;  **Workflow 3: TTS -&gt; TTS**  &lt;br /&gt;   Call the user and speak a PIN code, follow up with a second call if the request wasn&#39;t already verified.  Call user and give TTS PIN code Wait for 60 seconds Call user and give TTS PIN code  Request expires after 300 seconds  &lt;br /&gt;  **Workflow 4: SMS -&gt; SMS**  &lt;br /&gt;    Send PIN code by text message, follow up with a second text message if the code hasn&#39;t been verified.  Send SMS to user with PIN code Wait for 60 seconds Send SMS to user with PIN code Wait for 60 seconds  Request expires after 300 seconds  &lt;br /&gt;  **Workflow 5: SMS -&gt; TTS**  &lt;br /&gt;   Send PIN code by text message, follow up with a voice call if the code hasn&#39;t been verified.  Send SMS to user with PIN code Wait for 60 seconds Call user and give TTS PIN code Wait for 60 seconds  Request expires after 300 seconds  &lt;br /&gt;  **Workflow 6: SMS**  &lt;br /&gt;   Send PIN code by text message once only.  Send SMS to user with PIN code Request expires after 300 seconds  &lt;br /&gt;  **Workflow 7: TTS**  &lt;br /&gt;  Call the user and speak a PIN code once only.  Call user and give TTS PIN code  Request expires after 300 seconds 
+   * @return workflowId
+  **/
+  @ApiModelProperty(example = "6", value = "**Workflows**  The Verify API allows you to select the best workflow for your use case. This might depend on the type of verification taking place, your users' preference, or their geographical location. You can specify which workflow to use for each Verify API request by setting the workflowId field to an integer value 1-7. The details of each of these preset workflows are detailed below.  <br />  **Workflow 1 (Default Workflow): SMS -> TTS -> TTS**  <br />  Send PIN code by text message, follow up with two subsequent voice calls if the request wasn't already verified.  Send SMS to user with PIN code Wait for 60 seconds Call user and give TTS PIN code Wait for 60 seconds Call user and give TTS PIN code  Request expires after 300 seconds  <br />  **Workflow 2: SMS -> SMS -> TTS**  <br />    Send PIN code by text message, follow up with a second text message and finally a voice call if the request has not been verified.  Send SMS to user with PIN code Wait for 60 seconds Send SMS to user with PIN code Wait for 60 seconds Call user and give TTS PIN code  Request expires after 300 seconds  <br />  **Workflow 3: TTS -> TTS**  <br />   Call the user and speak a PIN code, follow up with a second call if the request wasn't already verified.  Call user and give TTS PIN code Wait for 60 seconds Call user and give TTS PIN code  Request expires after 300 seconds  <br />  **Workflow 4: SMS -> SMS**  <br />    Send PIN code by text message, follow up with a second text message if the code hasn't been verified.  Send SMS to user with PIN code Wait for 60 seconds Send SMS to user with PIN code Wait for 60 seconds  Request expires after 300 seconds  <br />  **Workflow 5: SMS -> TTS**  <br />   Send PIN code by text message, follow up with a voice call if the code hasn't been verified.  Send SMS to user with PIN code Wait for 60 seconds Call user and give TTS PIN code Wait for 60 seconds  Request expires after 300 seconds  <br />  **Workflow 6: SMS**  <br />   Send PIN code by text message once only.  Send SMS to user with PIN code Request expires after 300 seconds  <br />  **Workflow 7: TTS**  <br />  Call the user and speak a PIN code once only.  Call user and give TTS PIN code  Request expires after 300 seconds ")
+  public String getWorkflowId() {
+    return workflowId;
+  }
+
+  public void setWorkflowId(String workflowId) {
+    this.workflowId = workflowId;
   }
 
   public SendPhoneVerificationCodeTFAInputObject brand(String brand) {
@@ -166,6 +187,7 @@ public class SendPhoneVerificationCodeTFAInputObject {
     }
     SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject = (SendPhoneVerificationCodeTFAInputObject) o;
     return Objects.equals(this.phone, sendPhoneVerificationCodeTFAInputObject.phone) &&
+        Objects.equals(this.workflowId, sendPhoneVerificationCodeTFAInputObject.workflowId) &&
         Objects.equals(this.brand, sendPhoneVerificationCodeTFAInputObject.brand) &&
         Objects.equals(this.codeLength, sendPhoneVerificationCodeTFAInputObject.codeLength) &&
         Objects.equals(this.language, sendPhoneVerificationCodeTFAInputObject.language) &&
@@ -175,7 +197,7 @@ public class SendPhoneVerificationCodeTFAInputObject {
 
   @Override
   public int hashCode() {
-    return Objects.hash(phone, brand, codeLength, language, senderId, country);
+    return Objects.hash(phone, workflowId, brand, codeLength, language, senderId, country);
   }
 
 
@@ -185,6 +207,7 @@ public class SendPhoneVerificationCodeTFAInputObject {
     sb.append("class SendPhoneVerificationCodeTFAInputObject {\n");
     
     sb.append("    phone: ").append(toIndentedString(phone)).append("\n");
+    sb.append("    workflowId: ").append(toIndentedString(workflowId)).append("\n");
     sb.append("    brand: ").append(toIndentedString(brand)).append("\n");
     sb.append("    codeLength: ").append(toIndentedString(codeLength)).append("\n");
     sb.append("    language: ").append(toIndentedString(language)).append("\n");

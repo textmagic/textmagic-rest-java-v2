@@ -101,6 +101,12 @@ public class GetStateResponse {
   @SerializedName("chatUnmuted")
   private Integer chatUnmuted = null;
 
+  @SerializedName("chatPinned")
+  private Integer chatPinned = null;
+
+  @SerializedName("chatUnpinned")
+  private Integer chatUnpinned = null;
+
   @SerializedName("chatDeleted")
   private Integer chatDeleted = null;
 
@@ -578,6 +584,42 @@ public class GetStateResponse {
     this.chatUnmuted = chatUnmuted;
   }
 
+  public GetStateResponse chatPinned(Integer chatPinned) {
+    this.chatPinned = chatPinned;
+    return this;
+  }
+
+   /**
+   * Get chatPinned
+   * @return chatPinned
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getChatPinned() {
+    return chatPinned;
+  }
+
+  public void setChatPinned(Integer chatPinned) {
+    this.chatPinned = chatPinned;
+  }
+
+  public GetStateResponse chatUnpinned(Integer chatUnpinned) {
+    this.chatUnpinned = chatUnpinned;
+    return this;
+  }
+
+   /**
+   * Get chatUnpinned
+   * @return chatUnpinned
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getChatUnpinned() {
+    return chatUnpinned;
+  }
+
+  public void setChatUnpinned(Integer chatUnpinned) {
+    this.chatUnpinned = chatUnpinned;
+  }
+
   public GetStateResponse chatDeleted(Integer chatDeleted) {
     this.chatDeleted = chatDeleted;
     return this;
@@ -882,6 +924,8 @@ public class GetStateResponse {
         Objects.equals(this.chatMarkedAsRead, getStateResponse.chatMarkedAsRead) &&
         Objects.equals(this.chatMuted, getStateResponse.chatMuted) &&
         Objects.equals(this.chatUnmuted, getStateResponse.chatUnmuted) &&
+        Objects.equals(this.chatPinned, getStateResponse.chatPinned) &&
+        Objects.equals(this.chatUnpinned, getStateResponse.chatUnpinned) &&
         Objects.equals(this.chatDeleted, getStateResponse.chatDeleted) &&
         Objects.equals(this.chatClosed, getStateResponse.chatClosed) &&
         Objects.equals(this.chatReopened, getStateResponse.chatReopened) &&
@@ -901,7 +945,7 @@ public class GetStateResponse {
 
   @Override
   public int hashCode() {
-    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatDeleted, chatClosed, chatReopened, chatCacheClear, contactAdded, contactDeleted, contactStateChanged, listAdded, listDeleted, listStateChanged, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear);
+    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatPinned, chatUnpinned, chatDeleted, chatClosed, chatReopened, chatCacheClear, contactAdded, contactDeleted, contactStateChanged, listAdded, listDeleted, listStateChanged, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear);
   }
 
 
@@ -934,6 +978,8 @@ public class GetStateResponse {
     sb.append("    chatMarkedAsRead: ").append(toIndentedString(chatMarkedAsRead)).append("\n");
     sb.append("    chatMuted: ").append(toIndentedString(chatMuted)).append("\n");
     sb.append("    chatUnmuted: ").append(toIndentedString(chatUnmuted)).append("\n");
+    sb.append("    chatPinned: ").append(toIndentedString(chatPinned)).append("\n");
+    sb.append("    chatUnpinned: ").append(toIndentedString(chatUnpinned)).append("\n");
     sb.append("    chatDeleted: ").append(toIndentedString(chatDeleted)).append("\n");
     sb.append("    chatClosed: ").append(toIndentedString(chatClosed)).append("\n");
     sb.append("    chatReopened: ").append(toIndentedString(chatReopened)).append("\n");

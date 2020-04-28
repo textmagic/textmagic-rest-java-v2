@@ -177,6 +177,9 @@ public class Chat {
   @SerializedName("country")
   private Country country = null;
 
+  @SerializedName("pinned")
+  private Boolean pinned = null;
+
   public Chat id(Integer id) {
     this.id = id;
     return this;
@@ -447,6 +450,24 @@ public class Chat {
     this.country = country;
   }
 
+  public Chat pinned(Boolean pinned) {
+    this.pinned = pinned;
+    return this;
+  }
+
+   /**
+   * Indicates when the chat is pinned.
+   * @return pinned
+  **/
+  @ApiModelProperty(example = "true", required = true, value = "Indicates when the chat is pinned.")
+  public Boolean isPinned() {
+    return pinned;
+  }
+
+  public void setPinned(Boolean pinned) {
+    this.pinned = pinned;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -471,12 +492,13 @@ public class Chat {
         Objects.equals(this.from, chat.from) &&
         Objects.equals(this.mutedUntil, chat.mutedUntil) &&
         Objects.equals(this.timeLeftMute, chat.timeLeftMute) &&
-        Objects.equals(this.country, chat.country);
+        Objects.equals(this.country, chat.country) &&
+        Objects.equals(this.pinned, chat.pinned);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, originalId, phone, contact, unsubscribedContactId, unread, updatedAt, status, mute, lastMessage, direction, from, mutedUntil, timeLeftMute, country);
+    return Objects.hash(id, originalId, phone, contact, unsubscribedContactId, unread, updatedAt, status, mute, lastMessage, direction, from, mutedUntil, timeLeftMute, country, pinned);
   }
 
 
@@ -500,6 +522,7 @@ public class Chat {
     sb.append("    mutedUntil: ").append(toIndentedString(mutedUntil)).append("\n");
     sb.append("    timeLeftMute: ").append(toIndentedString(timeLeftMute)).append("\n");
     sb.append("    country: ").append(toIndentedString(country)).append("\n");
+    sb.append("    pinned: ").append(toIndentedString(pinned)).append("\n");
     sb.append("}");
     return sb.toString();
   }

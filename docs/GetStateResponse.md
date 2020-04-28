@@ -28,6 +28,8 @@ Name | Type | Description | Notes
 **chatMarkedAsRead** | **Integer** |  | 
 **chatMuted** | **Integer** |  | 
 **chatUnmuted** | **Integer** |  | 
+**chatPinned** | **Integer** |  | 
+**chatUnpinned** | **Integer** |  | 
 **chatDeleted** | **Integer** |  | 
 **chatClosed** | **Integer** |  | 
 **chatReopened** | **Integer** |  | 

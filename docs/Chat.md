@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **mutedUntil** | [**OffsetDateTime**](OffsetDateTime.md) | Date and time until the chat will be muted. | 
 **timeLeftMute** | **Integer** | Time left untill the chat will be unmuted (seconds). | 
 **country** | [**Country**](Country.md) |  | 
+**pinned** | **Boolean** | Indicates when the chat is pinned. | 
 
 
 <a name="StatusEnum"></a>
