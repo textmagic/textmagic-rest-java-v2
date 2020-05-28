@@ -2691,4 +2691,20 @@ public class TextMagicApiTest {
         // TODO: test validations
     }
     
+    /**
+     * Upload message mms attachment
+     *
+     * Upload a new file to mms.
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void uploadMessageMMSAttachmentTest() throws ApiException {
+        File file = null;
+        UploadMessageAttachmentResponse response = api.uploadMessageMMSAttachment(file);
+
+        // TODO: test validations
+    }
+    
 }

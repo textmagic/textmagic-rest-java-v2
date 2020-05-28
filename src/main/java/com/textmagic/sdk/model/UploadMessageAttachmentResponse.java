@@ -41,6 +41,9 @@ public class UploadMessageAttachmentResponse {
   @SerializedName("size")
   private Integer size = null;
 
+  @SerializedName("resource")
+  private String resource = null;
+
   public UploadMessageAttachmentResponse chars(Integer chars) {
     this.chars = chars;
     return this;
@@ -113,6 +116,24 @@ public class UploadMessageAttachmentResponse {
     this.size = size;
   }
 
+  public UploadMessageAttachmentResponse resource(String resource) {
+    this.resource = resource;
+    return this;
+  }
+
+   /**
+   * Internal file name
+   * @return resource
+  **/
+  @ApiModelProperty(example = "tmfGSR8ShMSDMy8Aa15904809817838.jpg", required = true, value = "Internal file name")
+  public String getResource() {
+    return resource;
+  }
+
+  public void setResource(String resource) {
+    this.resource = resource;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -126,12 +147,13 @@ public class UploadMessageAttachmentResponse {
     return Objects.equals(this.chars, uploadMessageAttachmentResponse.chars) &&
         Objects.equals(this.href, uploadMessageAttachmentResponse.href) &&
         Objects.equals(this.name, uploadMessageAttachmentResponse.name) &&
-        Objects.equals(this.size, uploadMessageAttachmentResponse.size);
+        Objects.equals(this.size, uploadMessageAttachmentResponse.size) &&
+        Objects.equals(this.resource, uploadMessageAttachmentResponse.resource);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(chars, href, name, size);
+    return Objects.hash(chars, href, name, size, resource);
   }
 
 
@@ -144,6 +166,7 @@ public class UploadMessageAttachmentResponse {
     sb.append("    href: ").append(toIndentedString(href)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    size: ").append(toIndentedString(size)).append("\n");
+    sb.append("    resource: ").append(toIndentedString(resource)).append("\n");
     sb.append("}");
     return sb.toString();
   }

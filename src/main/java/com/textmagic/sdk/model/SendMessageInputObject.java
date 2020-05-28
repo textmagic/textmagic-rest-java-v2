@@ -80,6 +80,12 @@ public class SendMessageInputObject {
   @SerializedName("localCountry")
   private String localCountry = null;
 
+  @SerializedName("destination")
+  private String destination = "false";
+
+  @SerializedName("resources")
+  private String resources = null;
+
   public SendMessageInputObject text(String text) {
     this.text = text;
     return this;
@@ -386,6 +392,42 @@ public class SendMessageInputObject {
     this.localCountry = localCountry;
   }
 
+  public SendMessageInputObject destination(String destination) {
+    this.destination = destination;
+    return this;
+  }
+
+   /**
+   * Messsage destination type allowed [mms, tts].
+   * @return destination
+  **/
+  @ApiModelProperty(example = "mms", value = "Messsage destination type allowed [mms, tts].")
+  public String getDestination() {
+    return destination;
+  }
+
+  public void setDestination(String destination) {
+    this.destination = destination;
+  }
+
+  public SendMessageInputObject resources(String resources) {
+    this.resources = resources;
+    return this;
+  }
+
+   /**
+   * File name from mms attachment response (named as resource)
+   * @return resources
+  **/
+  @ApiModelProperty(example = "tmauKcSmwflB77kLQ15904023426649.jpg", value = "File name from mms attachment response (named as resource)")
+  public String getResources() {
+    return resources;
+  }
+
+  public void setResources(String resources) {
+    this.resources = resources;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -412,12 +454,14 @@ public class SendMessageInputObject {
         Objects.equals(this.createChat, sendMessageInputObject.createChat) &&
         Objects.equals(this.tts, sendMessageInputObject.tts) &&
         Objects.equals(this.local, sendMessageInputObject.local) &&
-        Objects.equals(this.localCountry, sendMessageInputObject.localCountry);
+        Objects.equals(this.localCountry, sendMessageInputObject.localCountry) &&
+        Objects.equals(this.destination, sendMessageInputObject.destination) &&
+        Objects.equals(this.resources, sendMessageInputObject.resources);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(text, templateId, sendingTime, sendingDateTime, sendingTimezone, contacts, lists, phones, cutExtra, partsCount, referenceId, from, rrule, createChat, tts, local, localCountry);
+    return Objects.hash(text, templateId, sendingTime, sendingDateTime, sendingTimezone, contacts, lists, phones, cutExtra, partsCount, referenceId, from, rrule, createChat, tts, local, localCountry, destination, resources);
   }
 
 
@@ -443,6 +487,8 @@ public class SendMessageInputObject {
     sb.append("    tts: ").append(toIndentedString(tts)).append("\n");
     sb.append("    local: ").append(toIndentedString(local)).append("\n");
     sb.append("    localCountry: ").append(toIndentedString(localCountry)).append("\n");
+    sb.append("    destination: ").append(toIndentedString(destination)).append("\n");
+    sb.append("    resources: ").append(toIndentedString(resources)).append("\n");
     sb.append("}");
     return sb.toString();
   }

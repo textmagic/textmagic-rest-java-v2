@@ -21,6 +21,8 @@ Name | Type | Description | Notes
 **tts** | **Boolean** | Send a Text-to-Speech message. |  [optional]
 **local** | **Boolean** | Treat phone numbers passed in the \\&#39;phones\\&#39; field as local. |  [optional]
 **localCountry** | **String** | The 2-letter ISO country code for local phone numbers, used when \\&#39;local\\&#39; is set to true. Default is the account country. |  [optional]
+**destination** | **String** | Messsage destination type allowed [mms, tts]. |  [optional]
+**resources** | **String** | File name from mms attachment response (named as resource) |  [optional]
 
 
 

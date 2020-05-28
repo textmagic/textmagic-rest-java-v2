@@ -152,6 +152,7 @@ Method | HTTP request | Description
 [**uploadContactAvatar**](TextMagicApi.md#uploadContactAvatar) | **POST** /api/v2/contacts/{id}/avatar | Upload an avatar
 [**uploadListAvatar**](TextMagicApi.md#uploadListAvatar) | **POST** /api/v2/lists/{id}/avatar | Add an avatar for a list
 [**uploadMessageAttachment**](TextMagicApi.md#uploadMessageAttachment) | **POST** /api/v2/messages/attachment | Upload message attachment
+[**uploadMessageMMSAttachment**](TextMagicApi.md#uploadMessageMMSAttachment) | **POST** /api/v2/messages/mms/attachment | Upload message mms attachment
 
 
 <a name="assignContactsToList"></a>
@@ -8375,6 +8376,60 @@ try {
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling TextMagicApi#uploadMessageAttachment");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **File**| Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats. |
+
+### Return type
+
+[**UploadMessageAttachmentResponse**](UploadMessageAttachmentResponse.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
+ - **Accept**: application/json
+
+<a name="uploadMessageMMSAttachment"></a>
+# **uploadMessageMMSAttachment**
+> UploadMessageAttachmentResponse uploadMessageMMSAttachment(file)
+
+Upload message mms attachment
+
+Upload a new file to mms.
+
+### Example
+```java
+// Import classes:
+//import com.textmagic.sdk.ApiClient;
+//import com.textmagic.sdk.ApiException;
+//import com.textmagic.sdk.Configuration;
+//import com.textmagic.sdk.auth.*;
+//import com.textmagic.sdk.api.TextMagicApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure HTTP basic authorization: BasicAuth
+HttpBasicAuth BasicAuth = (HttpBasicAuth) defaultClient.getAuthentication("BasicAuth");
+BasicAuth.setUsername("YOUR USERNAME");
+BasicAuth.setPassword("YOUR PASSWORD");
+
+TextMagicApi apiInstance = new TextMagicApi();
+File file = new File("/path/to/file.txt"); // File | Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats.
+try {
+    UploadMessageAttachmentResponse result = apiInstance.uploadMessageMMSAttachment(file);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling TextMagicApi#uploadMessageMMSAttachment");
     e.printStackTrace();
 }
 ```
