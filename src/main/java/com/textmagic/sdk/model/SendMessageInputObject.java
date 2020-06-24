@@ -81,7 +81,7 @@ public class SendMessageInputObject {
   private String localCountry = null;
 
   @SerializedName("destination")
-  private String destination = "false";
+  private String destination = null;
 
   @SerializedName("resources")
   private String resources = null;
