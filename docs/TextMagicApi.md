@@ -3428,8 +3428,8 @@ Integer id = 1; // Integer |
 Integer page = 1; // Integer | Fetch specified results page.
 Integer limit = 10; // Integer | The number of results per page.
 String query = "query_example"; // String | Find messages by specified search query.
-Integer start = 56; // Integer | Return messages since specified timestamp only.
-Integer end = 56; // Integer | Return messages up to specified timestamp only.
+String start = "start_example"; // String | Return messages since specified timestamp only. Required when `end` parameter specified.
+String end = "end_example"; // String | Return messages up to specified timestamp only. Required when `start` parameter specified.
 String direction = "desc"; // String | Order direction. Default is desc.
 Integer voice = 0; // Integer | Fetch results with voice calls.
 try {
@@ -3449,8 +3449,8 @@ Name | Type | Description  | Notes
  **page** | **Integer**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Integer**| The number of results per page. | [optional] [default to 10]
  **query** | **String**| Find messages by specified search query. | [optional]
- **start** | **Integer**| Return messages since specified timestamp only. | [optional]
- **end** | **Integer**| Return messages up to specified timestamp only. | [optional]
+ **start** | **String**| Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. | [optional]
+ **end** | **String**| Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. | [optional]
  **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
  **voice** | **Integer**| Fetch results with voice calls. | [optional] [default to 0]
 

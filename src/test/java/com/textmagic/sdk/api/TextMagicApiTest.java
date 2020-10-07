@@ -1160,8 +1160,8 @@ public class TextMagicApiTest {
         Integer page = null;
         Integer limit = null;
         String query = null;
-        Integer start = null;
-        Integer end = null;
+        String start = null;
+        String end = null;
         String direction = null;
         Integer voice = null;
         GetChatMessagesPaginatedResponse response = api.getChatMessages(id, page, limit, query, start, end, direction, voice);

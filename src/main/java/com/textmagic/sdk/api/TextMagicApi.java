@@ -7530,8 +7530,8 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find messages by specified search query. (optional)
-     * @param start Return messages since specified timestamp only. (optional)
-     * @param end Return messages up to specified timestamp only. (optional)
+     * @param start Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. (optional)
+     * @param end Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param voice Fetch results with voice calls. (optional, default to 0)
      * @param progressListener Progress listener
@@ -7539,7 +7539,7 @@ public class TextMagicApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call getChatMessagesCall(Integer id, Integer page, Integer limit, String query, Integer start, Integer end, String direction, Integer voice, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call getChatMessagesCall(Integer id, Integer page, Integer limit, String query, String start, String end, String direction, Integer voice, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
 
         // create path and map variables
@@ -7596,7 +7596,7 @@ public class TextMagicApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call getChatMessagesValidateBeforeCall(Integer id, Integer page, Integer limit, String query, Integer start, Integer end, String direction, Integer voice, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call getChatMessagesValidateBeforeCall(Integer id, Integer page, Integer limit, String query, String start, String end, String direction, Integer voice, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
         // verify the required parameter 'id' is set
         if (id == null) {
@@ -7616,14 +7616,14 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find messages by specified search query. (optional)
-     * @param start Return messages since specified timestamp only. (optional)
-     * @param end Return messages up to specified timestamp only. (optional)
+     * @param start Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. (optional)
+     * @param end Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param voice Fetch results with voice calls. (optional, default to 0)
      * @return GetChatMessagesPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GetChatMessagesPaginatedResponse getChatMessages(Integer id, Integer page, Integer limit, String query, Integer start, Integer end, String direction, Integer voice) throws ApiException {
+    public GetChatMessagesPaginatedResponse getChatMessages(Integer id, Integer page, Integer limit, String query, String start, String end, String direction, Integer voice) throws ApiException {
         ApiResponse<GetChatMessagesPaginatedResponse> resp = getChatMessagesWithHttpInfo(id, page, limit, query, start, end, direction, voice);
         return resp.getData();
     }
@@ -7635,14 +7635,14 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find messages by specified search query. (optional)
-     * @param start Return messages since specified timestamp only. (optional)
-     * @param end Return messages up to specified timestamp only. (optional)
+     * @param start Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. (optional)
+     * @param end Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param voice Fetch results with voice calls. (optional, default to 0)
      * @return ApiResponse&lt;GetChatMessagesPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GetChatMessagesPaginatedResponse> getChatMessagesWithHttpInfo(Integer id, Integer page, Integer limit, String query, Integer start, Integer end, String direction, Integer voice) throws ApiException {
+    public ApiResponse<GetChatMessagesPaginatedResponse> getChatMessagesWithHttpInfo(Integer id, Integer page, Integer limit, String query, String start, String end, String direction, Integer voice) throws ApiException {
         com.squareup.okhttp.Call call = getChatMessagesValidateBeforeCall(id, page, limit, query, start, end, direction, voice, null, null);
         Type localVarReturnType = new TypeToken<GetChatMessagesPaginatedResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
@@ -7655,15 +7655,15 @@ public class TextMagicApi {
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
      * @param query Find messages by specified search query. (optional)
-     * @param start Return messages since specified timestamp only. (optional)
-     * @param end Return messages up to specified timestamp only. (optional)
+     * @param start Return messages since specified timestamp only. Required when &#x60;end&#x60; parameter specified. (optional)
+     * @param end Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. (optional)
      * @param direction Order direction. Default is desc. (optional, default to desc)
      * @param voice Fetch results with voice calls. (optional, default to 0)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call getChatMessagesAsync(Integer id, Integer page, Integer limit, String query, Integer start, Integer end, String direction, Integer voice, final ApiCallback<GetChatMessagesPaginatedResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call getChatMessagesAsync(Integer id, Integer page, Integer limit, String query, String start, String end, String direction, Integer voice, final ApiCallback<GetChatMessagesPaginatedResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
