@@ -146,10 +146,10 @@ public class SendMessageInputObject {
   }
 
    /**
-   * Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to **sendingTimezone**.
+   * Sending time in Y-m-d H:i:s format (e.g. 2022-05-27 13:05:10). This time is relative to **sendingTimezone**. Note: for correct operation, the value of seconds must not be less than 10.
    * @return sendingDateTime
   **/
-  @ApiModelProperty(example = "2020-05-27 13:02:33", value = "Sending time in Y-m-d H:i:s format (e.g. 2016-05-27 13:02:33). This time is relative to **sendingTimezone**.")
+  @ApiModelProperty(example = "2020-05-27 13:02:33", value = "Sending time in Y-m-d H:i:s format (e.g. 2022-05-27 13:05:10). This time is relative to **sendingTimezone**. Note: for correct operation, the value of seconds must not be less than 10.")
   public String getSendingDateTime() {
     return sendingDateTime;
   }

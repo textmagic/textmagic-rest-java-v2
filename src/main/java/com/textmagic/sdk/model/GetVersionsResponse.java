@@ -30,15 +30,15 @@ import java.io.IOException;
 
 public class GetVersionsResponse {
   @SerializedName("ios")
-  private Integer ios = null;
+  private String ios = null;
 
   @SerializedName("android")
-  private Integer android = null;
+  private String android = null;
 
   @SerializedName("desktop")
-  private Integer desktop = null;
+  private String desktop = null;
 
-  public GetVersionsResponse ios(Integer ios) {
+  public GetVersionsResponse ios(String ios) {
     this.ios = ios;
     return this;
   }
@@ -48,15 +48,15 @@ public class GetVersionsResponse {
    * @return ios
   **/
   @ApiModelProperty(example = "1", required = true, value = "")
-  public Integer getIos() {
+  public String getIos() {
     return ios;
   }
 
-  public void setIos(Integer ios) {
+  public void setIos(String ios) {
     this.ios = ios;
   }
 
-  public GetVersionsResponse android(Integer android) {
+  public GetVersionsResponse android(String android) {
     this.android = android;
     return this;
   }
@@ -66,15 +66,15 @@ public class GetVersionsResponse {
    * @return android
   **/
   @ApiModelProperty(example = "2", required = true, value = "")
-  public Integer getAndroid() {
+  public String getAndroid() {
     return android;
   }
 
-  public void setAndroid(Integer android) {
+  public void setAndroid(String android) {
     this.android = android;
   }
 
-  public GetVersionsResponse desktop(Integer desktop) {
+  public GetVersionsResponse desktop(String desktop) {
     this.desktop = desktop;
     return this;
   }
@@ -84,11 +84,11 @@ public class GetVersionsResponse {
    * @return desktop
   **/
   @ApiModelProperty(example = "3", required = true, value = "")
-  public Integer getDesktop() {
+  public String getDesktop() {
     return desktop;
   }
 
-  public void setDesktop(Integer desktop) {
+  public void setDesktop(String desktop) {
     this.desktop = desktop;
   }
 

@@ -30,15 +30,15 @@ import java.io.IOException;
 
 public class DoAuthResponseMinVersions {
   @SerializedName("ios")
-  private Integer ios = null;
+  private String ios = null;
 
   @SerializedName("android")
-  private Integer android = null;
+  private String android = null;
 
   @SerializedName("desktop")
-  private Integer desktop = null;
+  private String desktop = null;
 
-  public DoAuthResponseMinVersions ios(Integer ios) {
+  public DoAuthResponseMinVersions ios(String ios) {
     this.ios = ios;
     return this;
   }
@@ -48,15 +48,15 @@ public class DoAuthResponseMinVersions {
    * @return ios
   **/
   @ApiModelProperty(example = "0", required = true, value = "")
-  public Integer getIos() {
+  public String getIos() {
     return ios;
   }
 
-  public void setIos(Integer ios) {
+  public void setIos(String ios) {
     this.ios = ios;
   }
 
-  public DoAuthResponseMinVersions android(Integer android) {
+  public DoAuthResponseMinVersions android(String android) {
     this.android = android;
     return this;
   }
@@ -66,15 +66,15 @@ public class DoAuthResponseMinVersions {
    * @return android
   **/
   @ApiModelProperty(example = "0", required = true, value = "")
-  public Integer getAndroid() {
+  public String getAndroid() {
     return android;
   }
 
-  public void setAndroid(Integer android) {
+  public void setAndroid(String android) {
     this.android = android;
   }
 
-  public DoAuthResponseMinVersions desktop(Integer desktop) {
+  public DoAuthResponseMinVersions desktop(String desktop) {
     this.desktop = desktop;
     return this;
   }
@@ -84,11 +84,11 @@ public class DoAuthResponseMinVersions {
    * @return desktop
   **/
   @ApiModelProperty(example = "0", required = true, value = "")
-  public Integer getDesktop() {
+  public String getDesktop() {
     return desktop;
   }
 
-  public void setDesktop(Integer desktop) {
+  public void setDesktop(String desktop) {
     this.desktop = desktop;
   }
 
