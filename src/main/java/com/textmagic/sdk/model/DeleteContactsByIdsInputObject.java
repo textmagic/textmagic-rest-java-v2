@@ -33,7 +33,7 @@ public class DeleteContactsByIdsInputObject {
   private String ids = null;
 
   @SerializedName("all")
-  private Boolean all = null;
+  private Integer all = null;
 
   public DeleteContactsByIdsInputObject ids(String ids) {
     this.ids = ids;
@@ -53,21 +53,21 @@ public class DeleteContactsByIdsInputObject {
     this.ids = ids;
   }
 
-  public DeleteContactsByIdsInputObject all(Boolean all) {
+  public DeleteContactsByIdsInputObject all(Integer all) {
     this.all = all;
     return this;
   }
 
    /**
-   * Entity ID(s), separated by comma.
+   * Optional. Default is 0 (false). If set to 1 all the entities will be removed.
    * @return all
   **/
-  @ApiModelProperty(example = "false", value = "Entity ID(s), separated by comma.")
-  public Boolean isAll() {
+  @ApiModelProperty(example = "0", value = "Optional. Default is 0 (false). If set to 1 all the entities will be removed.")
+  public Integer getAll() {
     return all;
   }
 
-  public void setAll(Boolean all) {
+  public void setAll(Integer all) {
     this.all = all;
   }
 

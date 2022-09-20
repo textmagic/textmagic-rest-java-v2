@@ -23,6 +23,7 @@ import com.google.gson.stream.JsonWriter;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
+import java.math.BigDecimal;
 
 /**
  * GetBalanceNotificationSettingsResponse
@@ -33,7 +34,7 @@ public class GetBalanceNotificationSettingsResponse {
   private Boolean lowBalanceNotification = null;
 
   @SerializedName("alertBalance")
-  private String alertBalance = null;
+  private BigDecimal alertBalance = null;
 
   @SerializedName("alertPhone")
   private String alertPhone = null;
@@ -65,7 +66,7 @@ public class GetBalanceNotificationSettingsResponse {
     this.lowBalanceNotification = lowBalanceNotification;
   }
 
-  public GetBalanceNotificationSettingsResponse alertBalance(String alertBalance) {
+  public GetBalanceNotificationSettingsResponse alertBalance(BigDecimal alertBalance) {
     this.alertBalance = alertBalance;
     return this;
   }
@@ -74,12 +75,12 @@ public class GetBalanceNotificationSettingsResponse {
    * If balance is below this value, user receive low balance notification.
    * @return alertBalance
   **/
-  @ApiModelProperty(example = "50", required = true, value = "If balance is below this value, user receive low balance notification.")
-  public String getAlertBalance() {
+  @ApiModelProperty(example = "50.0", required = true, value = "If balance is below this value, user receive low balance notification.")
+  public BigDecimal getAlertBalance() {
     return alertBalance;
   }
 
-  public void setAlertBalance(String alertBalance) {
+  public void setAlertBalance(BigDecimal alertBalance) {
     this.alertBalance = alertBalance;
   }
 
