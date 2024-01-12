@@ -165,6 +165,9 @@ public class Chat {
   @SerializedName("direction")
   private DirectionEnum direction = null;
 
+  @SerializedName("replyOptionsType")
+  private String replyOptionsType = null;
+
   @SerializedName("from")
   private String from = null;
 
@@ -378,6 +381,24 @@ public class Chat {
     this.direction = direction;
   }
 
+  public Chat replyOptionsType(String replyOptionsType) {
+    this.replyOptionsType = replyOptionsType;
+    return this;
+  }
+
+   /**
+   * Used for chats prices.
+   * @return replyOptionsType
+  **/
+  @ApiModelProperty(example = "user_carrier_twilio", required = true, value = "Used for chats prices.")
+  public String getReplyOptionsType() {
+    return replyOptionsType;
+  }
+
+  public void setReplyOptionsType(String replyOptionsType) {
+    this.replyOptionsType = replyOptionsType;
+  }
+
   public Chat from(String from) {
     this.from = from;
     return this;
@@ -489,6 +510,7 @@ public class Chat {
         Objects.equals(this.mute, chat.mute) &&
         Objects.equals(this.lastMessage, chat.lastMessage) &&
         Objects.equals(this.direction, chat.direction) &&
+        Objects.equals(this.replyOptionsType, chat.replyOptionsType) &&
         Objects.equals(this.from, chat.from) &&
         Objects.equals(this.mutedUntil, chat.mutedUntil) &&
         Objects.equals(this.timeLeftMute, chat.timeLeftMute) &&
@@ -498,7 +520,7 @@ public class Chat {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, originalId, phone, contact, unsubscribedContactId, unread, updatedAt, status, mute, lastMessage, direction, from, mutedUntil, timeLeftMute, country, pinned);
+    return Objects.hash(id, originalId, phone, contact, unsubscribedContactId, unread, updatedAt, status, mute, lastMessage, direction, replyOptionsType, from, mutedUntil, timeLeftMute, country, pinned);
   }
 
 
@@ -518,6 +540,7 @@ public class Chat {
     sb.append("    mute: ").append(toIndentedString(mute)).append("\n");
     sb.append("    lastMessage: ").append(toIndentedString(lastMessage)).append("\n");
     sb.append("    direction: ").append(toIndentedString(direction)).append("\n");
+    sb.append("    replyOptionsType: ").append(toIndentedString(replyOptionsType)).append("\n");
     sb.append("    from: ").append(toIndentedString(from)).append("\n");
     sb.append("    mutedUntil: ").append(toIndentedString(mutedUntil)).append("\n");
     sb.append("    timeLeftMute: ").append(toIndentedString(timeLeftMute)).append("\n");

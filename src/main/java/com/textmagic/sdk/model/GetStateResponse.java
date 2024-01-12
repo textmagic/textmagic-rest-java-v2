@@ -41,6 +41,15 @@ public class GetStateResponse {
   @SerializedName("systemAccountStateChanged")
   private Integer systemAccountStateChanged = null;
 
+  @SerializedName("systemAccountAdditionalFields")
+  private Integer systemAccountAdditionalFields = null;
+
+  @SerializedName("systemAccountPermissionsChanged")
+  private Integer systemAccountPermissionsChanged = null;
+
+  @SerializedName("userBalanceChanged")
+  private Integer userBalanceChanged = null;
+
   @SerializedName("messageDeleted")
   private Integer messageDeleted = null;
 
@@ -79,6 +88,9 @@ public class GetStateResponse {
 
   @SerializedName("messageScheduleDeleted")
   private Integer messageScheduleDeleted = null;
+
+  @SerializedName("messageScheduleNotSentStateChanged")
+  private Integer messageScheduleNotSentStateChanged = null;
 
   @SerializedName("messageScheduleCacheClear")
   private Integer messageScheduleCacheClear = null;
@@ -119,6 +131,12 @@ public class GetStateResponse {
   @SerializedName("chatCacheClear")
   private Integer chatCacheClear = null;
 
+  @SerializedName("chatRead")
+  private Integer chatRead = null;
+
+  @SerializedName("chatUnread")
+  private Integer chatUnread = null;
+
   @SerializedName("contactAdded")
   private Integer contactAdded = null;
 
@@ -151,6 +169,30 @@ public class GetStateResponse {
 
   @SerializedName("customFieldsCacheClear")
   private Integer customFieldsCacheClear = null;
+
+  @SerializedName("progressCarrierBulkLookup")
+  private Integer progressCarrierBulkLookup = null;
+
+  @SerializedName("progressEmailBulkLookup")
+  private Integer progressEmailBulkLookup = null;
+
+  @SerializedName("progressSubAccountBulkImport")
+  private Integer progressSubAccountBulkImport = null;
+
+  @SerializedName("progressContactBulkImport")
+  private Integer progressContactBulkImport = null;
+
+  @SerializedName("forceRefreshWebApp")
+  private Integer forceRefreshWebApp = null;
+
+  @SerializedName("chatSenderSettingsChanged")
+  private Integer chatSenderSettingsChanged = null;
+
+  @SerializedName("countrySenderSettingsChanged")
+  private Integer countrySenderSettingsChanged = null;
+
+  @SerializedName("chatSuggestedReplyChunk")
+  private Integer chatSuggestedReplyChunk = null;
 
   public GetStateResponse systemCacheClear(Integer systemCacheClear) {
     this.systemCacheClear = systemCacheClear;
@@ -222,6 +264,60 @@ public class GetStateResponse {
 
   public void setSystemAccountStateChanged(Integer systemAccountStateChanged) {
     this.systemAccountStateChanged = systemAccountStateChanged;
+  }
+
+  public GetStateResponse systemAccountAdditionalFields(Integer systemAccountAdditionalFields) {
+    this.systemAccountAdditionalFields = systemAccountAdditionalFields;
+    return this;
+  }
+
+   /**
+   * Get systemAccountAdditionalFields
+   * @return systemAccountAdditionalFields
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getSystemAccountAdditionalFields() {
+    return systemAccountAdditionalFields;
+  }
+
+  public void setSystemAccountAdditionalFields(Integer systemAccountAdditionalFields) {
+    this.systemAccountAdditionalFields = systemAccountAdditionalFields;
+  }
+
+  public GetStateResponse systemAccountPermissionsChanged(Integer systemAccountPermissionsChanged) {
+    this.systemAccountPermissionsChanged = systemAccountPermissionsChanged;
+    return this;
+  }
+
+   /**
+   * Get systemAccountPermissionsChanged
+   * @return systemAccountPermissionsChanged
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getSystemAccountPermissionsChanged() {
+    return systemAccountPermissionsChanged;
+  }
+
+  public void setSystemAccountPermissionsChanged(Integer systemAccountPermissionsChanged) {
+    this.systemAccountPermissionsChanged = systemAccountPermissionsChanged;
+  }
+
+  public GetStateResponse userBalanceChanged(Integer userBalanceChanged) {
+    this.userBalanceChanged = userBalanceChanged;
+    return this;
+  }
+
+   /**
+   * Get userBalanceChanged
+   * @return userBalanceChanged
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getUserBalanceChanged() {
+    return userBalanceChanged;
+  }
+
+  public void setUserBalanceChanged(Integer userBalanceChanged) {
+    this.userBalanceChanged = userBalanceChanged;
   }
 
   public GetStateResponse messageDeleted(Integer messageDeleted) {
@@ -458,6 +554,24 @@ public class GetStateResponse {
     this.messageScheduleDeleted = messageScheduleDeleted;
   }
 
+  public GetStateResponse messageScheduleNotSentStateChanged(Integer messageScheduleNotSentStateChanged) {
+    this.messageScheduleNotSentStateChanged = messageScheduleNotSentStateChanged;
+    return this;
+  }
+
+   /**
+   * Get messageScheduleNotSentStateChanged
+   * @return messageScheduleNotSentStateChanged
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getMessageScheduleNotSentStateChanged() {
+    return messageScheduleNotSentStateChanged;
+  }
+
+  public void setMessageScheduleNotSentStateChanged(Integer messageScheduleNotSentStateChanged) {
+    this.messageScheduleNotSentStateChanged = messageScheduleNotSentStateChanged;
+  }
+
   public GetStateResponse messageScheduleCacheClear(Integer messageScheduleCacheClear) {
     this.messageScheduleCacheClear = messageScheduleCacheClear;
     return this;
@@ -692,6 +806,42 @@ public class GetStateResponse {
     this.chatCacheClear = chatCacheClear;
   }
 
+  public GetStateResponse chatRead(Integer chatRead) {
+    this.chatRead = chatRead;
+    return this;
+  }
+
+   /**
+   * Get chatRead
+   * @return chatRead
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getChatRead() {
+    return chatRead;
+  }
+
+  public void setChatRead(Integer chatRead) {
+    this.chatRead = chatRead;
+  }
+
+  public GetStateResponse chatUnread(Integer chatUnread) {
+    this.chatUnread = chatUnread;
+    return this;
+  }
+
+   /**
+   * Get chatUnread
+   * @return chatUnread
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getChatUnread() {
+    return chatUnread;
+  }
+
+  public void setChatUnread(Integer chatUnread) {
+    this.chatUnread = chatUnread;
+  }
+
   public GetStateResponse contactAdded(Integer contactAdded) {
     this.contactAdded = contactAdded;
     return this;
@@ -890,6 +1040,150 @@ public class GetStateResponse {
     this.customFieldsCacheClear = customFieldsCacheClear;
   }
 
+  public GetStateResponse progressCarrierBulkLookup(Integer progressCarrierBulkLookup) {
+    this.progressCarrierBulkLookup = progressCarrierBulkLookup;
+    return this;
+  }
+
+   /**
+   * Get progressCarrierBulkLookup
+   * @return progressCarrierBulkLookup
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getProgressCarrierBulkLookup() {
+    return progressCarrierBulkLookup;
+  }
+
+  public void setProgressCarrierBulkLookup(Integer progressCarrierBulkLookup) {
+    this.progressCarrierBulkLookup = progressCarrierBulkLookup;
+  }
+
+  public GetStateResponse progressEmailBulkLookup(Integer progressEmailBulkLookup) {
+    this.progressEmailBulkLookup = progressEmailBulkLookup;
+    return this;
+  }
+
+   /**
+   * Get progressEmailBulkLookup
+   * @return progressEmailBulkLookup
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getProgressEmailBulkLookup() {
+    return progressEmailBulkLookup;
+  }
+
+  public void setProgressEmailBulkLookup(Integer progressEmailBulkLookup) {
+    this.progressEmailBulkLookup = progressEmailBulkLookup;
+  }
+
+  public GetStateResponse progressSubAccountBulkImport(Integer progressSubAccountBulkImport) {
+    this.progressSubAccountBulkImport = progressSubAccountBulkImport;
+    return this;
+  }
+
+   /**
+   * Get progressSubAccountBulkImport
+   * @return progressSubAccountBulkImport
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getProgressSubAccountBulkImport() {
+    return progressSubAccountBulkImport;
+  }
+
+  public void setProgressSubAccountBulkImport(Integer progressSubAccountBulkImport) {
+    this.progressSubAccountBulkImport = progressSubAccountBulkImport;
+  }
+
+  public GetStateResponse progressContactBulkImport(Integer progressContactBulkImport) {
+    this.progressContactBulkImport = progressContactBulkImport;
+    return this;
+  }
+
+   /**
+   * Get progressContactBulkImport
+   * @return progressContactBulkImport
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getProgressContactBulkImport() {
+    return progressContactBulkImport;
+  }
+
+  public void setProgressContactBulkImport(Integer progressContactBulkImport) {
+    this.progressContactBulkImport = progressContactBulkImport;
+  }
+
+  public GetStateResponse forceRefreshWebApp(Integer forceRefreshWebApp) {
+    this.forceRefreshWebApp = forceRefreshWebApp;
+    return this;
+  }
+
+   /**
+   * Get forceRefreshWebApp
+   * @return forceRefreshWebApp
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getForceRefreshWebApp() {
+    return forceRefreshWebApp;
+  }
+
+  public void setForceRefreshWebApp(Integer forceRefreshWebApp) {
+    this.forceRefreshWebApp = forceRefreshWebApp;
+  }
+
+  public GetStateResponse chatSenderSettingsChanged(Integer chatSenderSettingsChanged) {
+    this.chatSenderSettingsChanged = chatSenderSettingsChanged;
+    return this;
+  }
+
+   /**
+   * Get chatSenderSettingsChanged
+   * @return chatSenderSettingsChanged
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getChatSenderSettingsChanged() {
+    return chatSenderSettingsChanged;
+  }
+
+  public void setChatSenderSettingsChanged(Integer chatSenderSettingsChanged) {
+    this.chatSenderSettingsChanged = chatSenderSettingsChanged;
+  }
+
+  public GetStateResponse countrySenderSettingsChanged(Integer countrySenderSettingsChanged) {
+    this.countrySenderSettingsChanged = countrySenderSettingsChanged;
+    return this;
+  }
+
+   /**
+   * Get countrySenderSettingsChanged
+   * @return countrySenderSettingsChanged
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getCountrySenderSettingsChanged() {
+    return countrySenderSettingsChanged;
+  }
+
+  public void setCountrySenderSettingsChanged(Integer countrySenderSettingsChanged) {
+    this.countrySenderSettingsChanged = countrySenderSettingsChanged;
+  }
+
+  public GetStateResponse chatSuggestedReplyChunk(Integer chatSuggestedReplyChunk) {
+    this.chatSuggestedReplyChunk = chatSuggestedReplyChunk;
+    return this;
+  }
+
+   /**
+   * Get chatSuggestedReplyChunk
+   * @return chatSuggestedReplyChunk
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getChatSuggestedReplyChunk() {
+    return chatSuggestedReplyChunk;
+  }
+
+  public void setChatSuggestedReplyChunk(Integer chatSuggestedReplyChunk) {
+    this.chatSuggestedReplyChunk = chatSuggestedReplyChunk;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -904,6 +1198,9 @@ public class GetStateResponse {
         Objects.equals(this.systemExit, getStateResponse.systemExit) &&
         Objects.equals(this.systemAlert, getStateResponse.systemAlert) &&
         Objects.equals(this.systemAccountStateChanged, getStateResponse.systemAccountStateChanged) &&
+        Objects.equals(this.systemAccountAdditionalFields, getStateResponse.systemAccountAdditionalFields) &&
+        Objects.equals(this.systemAccountPermissionsChanged, getStateResponse.systemAccountPermissionsChanged) &&
+        Objects.equals(this.userBalanceChanged, getStateResponse.userBalanceChanged) &&
         Objects.equals(this.messageDeleted, getStateResponse.messageDeleted) &&
         Objects.equals(this.messageIncoming, getStateResponse.messageIncoming) &&
         Objects.equals(this.messageIncomingDeleted, getStateResponse.messageIncomingDeleted) &&
@@ -917,6 +1214,7 @@ public class GetStateResponse {
         Objects.equals(this.messageScheduleAdded, getStateResponse.messageScheduleAdded) &&
         Objects.equals(this.messageScheduleStateChanged, getStateResponse.messageScheduleStateChanged) &&
         Objects.equals(this.messageScheduleDeleted, getStateResponse.messageScheduleDeleted) &&
+        Objects.equals(this.messageScheduleNotSentStateChanged, getStateResponse.messageScheduleNotSentStateChanged) &&
         Objects.equals(this.messageScheduleCacheClear, getStateResponse.messageScheduleCacheClear) &&
         Objects.equals(this.messageTemplateCacheClear, getStateResponse.messageTemplateCacheClear) &&
         Objects.equals(this.callFinished, getStateResponse.callFinished) &&
@@ -930,6 +1228,8 @@ public class GetStateResponse {
         Objects.equals(this.chatClosed, getStateResponse.chatClosed) &&
         Objects.equals(this.chatReopened, getStateResponse.chatReopened) &&
         Objects.equals(this.chatCacheClear, getStateResponse.chatCacheClear) &&
+        Objects.equals(this.chatRead, getStateResponse.chatRead) &&
+        Objects.equals(this.chatUnread, getStateResponse.chatUnread) &&
         Objects.equals(this.contactAdded, getStateResponse.contactAdded) &&
         Objects.equals(this.contactDeleted, getStateResponse.contactDeleted) &&
         Objects.equals(this.contactStateChanged, getStateResponse.contactStateChanged) &&
@@ -940,12 +1240,20 @@ public class GetStateResponse {
         Objects.equals(this.contactImportEnd, getStateResponse.contactImportEnd) &&
         Objects.equals(this.contactCacheClear, getStateResponse.contactCacheClear) &&
         Objects.equals(this.listCacheClear, getStateResponse.listCacheClear) &&
-        Objects.equals(this.customFieldsCacheClear, getStateResponse.customFieldsCacheClear);
+        Objects.equals(this.customFieldsCacheClear, getStateResponse.customFieldsCacheClear) &&
+        Objects.equals(this.progressCarrierBulkLookup, getStateResponse.progressCarrierBulkLookup) &&
+        Objects.equals(this.progressEmailBulkLookup, getStateResponse.progressEmailBulkLookup) &&
+        Objects.equals(this.progressSubAccountBulkImport, getStateResponse.progressSubAccountBulkImport) &&
+        Objects.equals(this.progressContactBulkImport, getStateResponse.progressContactBulkImport) &&
+        Objects.equals(this.forceRefreshWebApp, getStateResponse.forceRefreshWebApp) &&
+        Objects.equals(this.chatSenderSettingsChanged, getStateResponse.chatSenderSettingsChanged) &&
+        Objects.equals(this.countrySenderSettingsChanged, getStateResponse.countrySenderSettingsChanged) &&
+        Objects.equals(this.chatSuggestedReplyChunk, getStateResponse.chatSuggestedReplyChunk);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatPinned, chatUnpinned, chatDeleted, chatClosed, chatReopened, chatCacheClear, contactAdded, contactDeleted, contactStateChanged, listAdded, listDeleted, listStateChanged, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear);
+    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, systemAccountAdditionalFields, systemAccountPermissionsChanged, userBalanceChanged, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleNotSentStateChanged, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatPinned, chatUnpinned, chatDeleted, chatClosed, chatReopened, chatCacheClear, chatRead, chatUnread, contactAdded, contactDeleted, contactStateChanged, listAdded, listDeleted, listStateChanged, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear, progressCarrierBulkLookup, progressEmailBulkLookup, progressSubAccountBulkImport, progressContactBulkImport, forceRefreshWebApp, chatSenderSettingsChanged, countrySenderSettingsChanged, chatSuggestedReplyChunk);
   }
 
 
@@ -958,6 +1266,9 @@ public class GetStateResponse {
     sb.append("    systemExit: ").append(toIndentedString(systemExit)).append("\n");
     sb.append("    systemAlert: ").append(toIndentedString(systemAlert)).append("\n");
     sb.append("    systemAccountStateChanged: ").append(toIndentedString(systemAccountStateChanged)).append("\n");
+    sb.append("    systemAccountAdditionalFields: ").append(toIndentedString(systemAccountAdditionalFields)).append("\n");
+    sb.append("    systemAccountPermissionsChanged: ").append(toIndentedString(systemAccountPermissionsChanged)).append("\n");
+    sb.append("    userBalanceChanged: ").append(toIndentedString(userBalanceChanged)).append("\n");
     sb.append("    messageDeleted: ").append(toIndentedString(messageDeleted)).append("\n");
     sb.append("    messageIncoming: ").append(toIndentedString(messageIncoming)).append("\n");
     sb.append("    messageIncomingDeleted: ").append(toIndentedString(messageIncomingDeleted)).append("\n");
@@ -971,6 +1282,7 @@ public class GetStateResponse {
     sb.append("    messageScheduleAdded: ").append(toIndentedString(messageScheduleAdded)).append("\n");
     sb.append("    messageScheduleStateChanged: ").append(toIndentedString(messageScheduleStateChanged)).append("\n");
     sb.append("    messageScheduleDeleted: ").append(toIndentedString(messageScheduleDeleted)).append("\n");
+    sb.append("    messageScheduleNotSentStateChanged: ").append(toIndentedString(messageScheduleNotSentStateChanged)).append("\n");
     sb.append("    messageScheduleCacheClear: ").append(toIndentedString(messageScheduleCacheClear)).append("\n");
     sb.append("    messageTemplateCacheClear: ").append(toIndentedString(messageTemplateCacheClear)).append("\n");
     sb.append("    callFinished: ").append(toIndentedString(callFinished)).append("\n");
@@ -984,6 +1296,8 @@ public class GetStateResponse {
     sb.append("    chatClosed: ").append(toIndentedString(chatClosed)).append("\n");
     sb.append("    chatReopened: ").append(toIndentedString(chatReopened)).append("\n");
     sb.append("    chatCacheClear: ").append(toIndentedString(chatCacheClear)).append("\n");
+    sb.append("    chatRead: ").append(toIndentedString(chatRead)).append("\n");
+    sb.append("    chatUnread: ").append(toIndentedString(chatUnread)).append("\n");
     sb.append("    contactAdded: ").append(toIndentedString(contactAdded)).append("\n");
     sb.append("    contactDeleted: ").append(toIndentedString(contactDeleted)).append("\n");
     sb.append("    contactStateChanged: ").append(toIndentedString(contactStateChanged)).append("\n");
@@ -995,6 +1309,14 @@ public class GetStateResponse {
     sb.append("    contactCacheClear: ").append(toIndentedString(contactCacheClear)).append("\n");
     sb.append("    listCacheClear: ").append(toIndentedString(listCacheClear)).append("\n");
     sb.append("    customFieldsCacheClear: ").append(toIndentedString(customFieldsCacheClear)).append("\n");
+    sb.append("    progressCarrierBulkLookup: ").append(toIndentedString(progressCarrierBulkLookup)).append("\n");
+    sb.append("    progressEmailBulkLookup: ").append(toIndentedString(progressEmailBulkLookup)).append("\n");
+    sb.append("    progressSubAccountBulkImport: ").append(toIndentedString(progressSubAccountBulkImport)).append("\n");
+    sb.append("    progressContactBulkImport: ").append(toIndentedString(progressContactBulkImport)).append("\n");
+    sb.append("    forceRefreshWebApp: ").append(toIndentedString(forceRefreshWebApp)).append("\n");
+    sb.append("    chatSenderSettingsChanged: ").append(toIndentedString(chatSenderSettingsChanged)).append("\n");
+    sb.append("    countrySenderSettingsChanged: ").append(toIndentedString(countrySenderSettingsChanged)).append("\n");
+    sb.append("    chatSuggestedReplyChunk: ").append(toIndentedString(chatSuggestedReplyChunk)).append("\n");
     sb.append("}");
     return sb.toString();
   }

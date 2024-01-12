@@ -43,6 +43,12 @@ public class GetAvailableSenderSettingOptionsResponse {
   @SerializedName("senderIds")
   private List<String> senderIds = new ArrayList<String>();
 
+  @SerializedName("userCarrierTwilio")
+  private List<String> userCarrierTwilio = new ArrayList<String>();
+
+  @SerializedName("userCarrierVonage")
+  private List<String> userCarrierVonage = new ArrayList<String>();
+
   public GetAvailableSenderSettingOptionsResponse dedicated(List<String> dedicated) {
     this.dedicated = dedicated;
     return this;
@@ -135,6 +141,52 @@ public class GetAvailableSenderSettingOptionsResponse {
     this.senderIds = senderIds;
   }
 
+  public GetAvailableSenderSettingOptionsResponse userCarrierTwilio(List<String> userCarrierTwilio) {
+    this.userCarrierTwilio = userCarrierTwilio;
+    return this;
+  }
+
+  public GetAvailableSenderSettingOptionsResponse addUserCarrierTwilioItem(String userCarrierTwilioItem) {
+    this.userCarrierTwilio.add(userCarrierTwilioItem);
+    return this;
+  }
+
+   /**
+   * Array of alphanumeric sender IDs.
+   * @return userCarrierTwilio
+  **/
+  @ApiModelProperty(example = "[447860021136,447860021137]", required = true, value = "Array of alphanumeric sender IDs.")
+  public List<String> getUserCarrierTwilio() {
+    return userCarrierTwilio;
+  }
+
+  public void setUserCarrierTwilio(List<String> userCarrierTwilio) {
+    this.userCarrierTwilio = userCarrierTwilio;
+  }
+
+  public GetAvailableSenderSettingOptionsResponse userCarrierVonage(List<String> userCarrierVonage) {
+    this.userCarrierVonage = userCarrierVonage;
+    return this;
+  }
+
+  public GetAvailableSenderSettingOptionsResponse addUserCarrierVonageItem(String userCarrierVonageItem) {
+    this.userCarrierVonage.add(userCarrierVonageItem);
+    return this;
+  }
+
+   /**
+   * Array of alphanumeric sender IDs.
+   * @return userCarrierVonage
+  **/
+  @ApiModelProperty(example = "[447860021138,447860021139]", required = true, value = "Array of alphanumeric sender IDs.")
+  public List<String> getUserCarrierVonage() {
+    return userCarrierVonage;
+  }
+
+  public void setUserCarrierVonage(List<String> userCarrierVonage) {
+    this.userCarrierVonage = userCarrierVonage;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -148,12 +200,14 @@ public class GetAvailableSenderSettingOptionsResponse {
     return Objects.equals(this.dedicated, getAvailableSenderSettingOptionsResponse.dedicated) &&
         Objects.equals(this.user, getAvailableSenderSettingOptionsResponse.user) &&
         Objects.equals(this.shared, getAvailableSenderSettingOptionsResponse.shared) &&
-        Objects.equals(this.senderIds, getAvailableSenderSettingOptionsResponse.senderIds);
+        Objects.equals(this.senderIds, getAvailableSenderSettingOptionsResponse.senderIds) &&
+        Objects.equals(this.userCarrierTwilio, getAvailableSenderSettingOptionsResponse.userCarrierTwilio) &&
+        Objects.equals(this.userCarrierVonage, getAvailableSenderSettingOptionsResponse.userCarrierVonage);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(dedicated, user, shared, senderIds);
+    return Objects.hash(dedicated, user, shared, senderIds, userCarrierTwilio, userCarrierVonage);
   }
 
 
@@ -166,6 +220,8 @@ public class GetAvailableSenderSettingOptionsResponse {
     sb.append("    user: ").append(toIndentedString(user)).append("\n");
     sb.append("    shared: ").append(toIndentedString(shared)).append("\n");
     sb.append("    senderIds: ").append(toIndentedString(senderIds)).append("\n");
+    sb.append("    userCarrierTwilio: ").append(toIndentedString(userCarrierTwilio)).append("\n");
+    sb.append("    userCarrierVonage: ").append(toIndentedString(userCarrierVonage)).append("\n");
     sb.append("}");
     return sb.toString();
   }

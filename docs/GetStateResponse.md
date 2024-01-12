@@ -8,6 +8,9 @@ Name | Type | Description | Notes
 **systemExit** | **Integer** |  | 
 **systemAlert** | **Integer** |  | 
 **systemAccountStateChanged** | **Integer** |  | 
+**systemAccountAdditionalFields** | **Integer** |  | 
+**systemAccountPermissionsChanged** | **Integer** |  | 
+**userBalanceChanged** | **Integer** |  | 
 **messageDeleted** | **Integer** |  | 
 **messageIncoming** | **Integer** |  | 
 **messageIncomingDeleted** | **Integer** |  | 
@@ -21,6 +24,7 @@ Name | Type | Description | Notes
 **messageScheduleAdded** | **Integer** |  | 
 **messageScheduleStateChanged** | **Integer** |  | 
 **messageScheduleDeleted** | **Integer** |  | 
+**messageScheduleNotSentStateChanged** | **Integer** |  | 
 **messageScheduleCacheClear** | **Integer** |  | 
 **messageTemplateCacheClear** | **Integer** |  | 
 **callFinished** | **Integer** |  | 
@@ -34,6 +38,8 @@ Name | Type | Description | Notes
 **chatClosed** | **Integer** |  | 
 **chatReopened** | **Integer** |  | 
 **chatCacheClear** | **Integer** |  | 
+**chatRead** | **Integer** |  | 
+**chatUnread** | **Integer** |  | 
 **contactAdded** | **Integer** |  | 
 **contactDeleted** | **Integer** |  | 
 **contactStateChanged** | **Integer** |  | 
@@ -45,6 +51,14 @@ Name | Type | Description | Notes
 **contactCacheClear** | **Integer** |  | 
 **listCacheClear** | **Integer** |  | 
 **customFieldsCacheClear** | **Integer** |  | 
+**progressCarrierBulkLookup** | **Integer** |  | 
+**progressEmailBulkLookup** | **Integer** |  | 
+**progressSubAccountBulkImport** | **Integer** |  | 
+**progressContactBulkImport** | **Integer** |  | 
+**forceRefreshWebApp** | **Integer** |  | 
+**chatSenderSettingsChanged** | **Integer** |  | 
+**countrySenderSettingsChanged** | **Integer** |  | 
+**chatSuggestedReplyChunk** | **Integer** |  | 
 
 
 

@@ -8,6 +8,8 @@ Name | Type | Description | Notes
 **user** | **List&lt;String&gt;** | Array of verified account phone numbers (currently only one). | 
 **shared** | **List&lt;String&gt;** | Array of shared number strings. | 
 **senderIds** | **List&lt;String&gt;** | Array of alphanumeric sender IDs. | 
+**userCarrierTwilio** | **List&lt;String&gt;** | Array of alphanumeric sender IDs. | 
+**userCarrierVonage** | **List&lt;String&gt;** | Array of alphanumeric sender IDs. | 
 
 
 
