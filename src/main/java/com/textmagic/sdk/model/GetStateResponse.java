@@ -191,6 +191,12 @@ public class GetStateResponse {
   @SerializedName("countrySenderSettingsChanged")
   private Integer countrySenderSettingsChanged = null;
 
+  @SerializedName("chatSummaryChunk")
+  private Integer chatSummaryChunk = null;
+
+  @SerializedName("chatWaysToReplyChunk")
+  private Integer chatWaysToReplyChunk = null;
+
   @SerializedName("chatSuggestedReplyChunk")
   private Integer chatSuggestedReplyChunk = null;
 
@@ -1166,6 +1172,42 @@ public class GetStateResponse {
     this.countrySenderSettingsChanged = countrySenderSettingsChanged;
   }
 
+  public GetStateResponse chatSummaryChunk(Integer chatSummaryChunk) {
+    this.chatSummaryChunk = chatSummaryChunk;
+    return this;
+  }
+
+   /**
+   * Get chatSummaryChunk
+   * @return chatSummaryChunk
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getChatSummaryChunk() {
+    return chatSummaryChunk;
+  }
+
+  public void setChatSummaryChunk(Integer chatSummaryChunk) {
+    this.chatSummaryChunk = chatSummaryChunk;
+  }
+
+  public GetStateResponse chatWaysToReplyChunk(Integer chatWaysToReplyChunk) {
+    this.chatWaysToReplyChunk = chatWaysToReplyChunk;
+    return this;
+  }
+
+   /**
+   * Get chatWaysToReplyChunk
+   * @return chatWaysToReplyChunk
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getChatWaysToReplyChunk() {
+    return chatWaysToReplyChunk;
+  }
+
+  public void setChatWaysToReplyChunk(Integer chatWaysToReplyChunk) {
+    this.chatWaysToReplyChunk = chatWaysToReplyChunk;
+  }
+
   public GetStateResponse chatSuggestedReplyChunk(Integer chatSuggestedReplyChunk) {
     this.chatSuggestedReplyChunk = chatSuggestedReplyChunk;
     return this;
@@ -1248,12 +1290,14 @@ public class GetStateResponse {
         Objects.equals(this.forceRefreshWebApp, getStateResponse.forceRefreshWebApp) &&
         Objects.equals(this.chatSenderSettingsChanged, getStateResponse.chatSenderSettingsChanged) &&
         Objects.equals(this.countrySenderSettingsChanged, getStateResponse.countrySenderSettingsChanged) &&
+        Objects.equals(this.chatSummaryChunk, getStateResponse.chatSummaryChunk) &&
+        Objects.equals(this.chatWaysToReplyChunk, getStateResponse.chatWaysToReplyChunk) &&
         Objects.equals(this.chatSuggestedReplyChunk, getStateResponse.chatSuggestedReplyChunk);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, systemAccountAdditionalFields, systemAccountPermissionsChanged, userBalanceChanged, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleNotSentStateChanged, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatPinned, chatUnpinned, chatDeleted, chatClosed, chatReopened, chatCacheClear, chatRead, chatUnread, contactAdded, contactDeleted, contactStateChanged, listAdded, listDeleted, listStateChanged, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear, progressCarrierBulkLookup, progressEmailBulkLookup, progressSubAccountBulkImport, progressContactBulkImport, forceRefreshWebApp, chatSenderSettingsChanged, countrySenderSettingsChanged, chatSuggestedReplyChunk);
+    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, systemAccountAdditionalFields, systemAccountPermissionsChanged, userBalanceChanged, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleNotSentStateChanged, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatPinned, chatUnpinned, chatDeleted, chatClosed, chatReopened, chatCacheClear, chatRead, chatUnread, contactAdded, contactDeleted, contactStateChanged, listAdded, listDeleted, listStateChanged, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear, progressCarrierBulkLookup, progressEmailBulkLookup, progressSubAccountBulkImport, progressContactBulkImport, forceRefreshWebApp, chatSenderSettingsChanged, countrySenderSettingsChanged, chatSummaryChunk, chatWaysToReplyChunk, chatSuggestedReplyChunk);
   }
 
 
@@ -1316,6 +1360,8 @@ public class GetStateResponse {
     sb.append("    forceRefreshWebApp: ").append(toIndentedString(forceRefreshWebApp)).append("\n");
     sb.append("    chatSenderSettingsChanged: ").append(toIndentedString(chatSenderSettingsChanged)).append("\n");
     sb.append("    countrySenderSettingsChanged: ").append(toIndentedString(countrySenderSettingsChanged)).append("\n");
+    sb.append("    chatSummaryChunk: ").append(toIndentedString(chatSummaryChunk)).append("\n");
+    sb.append("    chatWaysToReplyChunk: ").append(toIndentedString(chatWaysToReplyChunk)).append("\n");
     sb.append("    chatSuggestedReplyChunk: ").append(toIndentedString(chatSuggestedReplyChunk)).append("\n");
     sb.append("}");
     return sb.toString();

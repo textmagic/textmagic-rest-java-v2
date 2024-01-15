@@ -58,6 +58,8 @@ Name | Type | Description | Notes
 **forceRefreshWebApp** | **Integer** |  | 
 **chatSenderSettingsChanged** | **Integer** |  | 
 **countrySenderSettingsChanged** | **Integer** |  | 
+**chatSummaryChunk** | **Integer** |  | 
+**chatWaysToReplyChunk** | **Integer** |  | 
 **chatSuggestedReplyChunk** | **Integer** |  | 
 
 
