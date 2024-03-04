@@ -60,6 +60,12 @@ public class MessageIn {
   @SerializedName("email")
   private String email = null;
 
+  @SerializedName("contactUserId")
+  private Integer contactUserId = null;
+
+  @SerializedName("userId")
+  private Integer userId = null;
+
   public MessageIn id(Integer id) {
     this.id = id;
     return this;
@@ -240,6 +246,42 @@ public class MessageIn {
     this.email = email;
   }
 
+  public MessageIn contactUserId(Integer contactUserId) {
+    this.contactUserId = contactUserId;
+    return this;
+  }
+
+   /**
+   * Get contactUserId
+   * @return contactUserId
+  **/
+  @ApiModelProperty(value = "")
+  public Integer getContactUserId() {
+    return contactUserId;
+  }
+
+  public void setContactUserId(Integer contactUserId) {
+    this.contactUserId = contactUserId;
+  }
+
+  public MessageIn userId(Integer userId) {
+    this.userId = userId;
+    return this;
+  }
+
+   /**
+   * Get userId
+   * @return userId
+  **/
+  @ApiModelProperty(value = "")
+  public Integer getUserId() {
+    return userId;
+  }
+
+  public void setUserId(Integer userId) {
+    this.userId = userId;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -259,12 +301,14 @@ public class MessageIn {
         Objects.equals(this.firstName, messageIn.firstName) &&
         Objects.equals(this.lastName, messageIn.lastName) &&
         Objects.equals(this.avatar, messageIn.avatar) &&
-        Objects.equals(this.email, messageIn.email);
+        Objects.equals(this.email, messageIn.email) &&
+        Objects.equals(this.contactUserId, messageIn.contactUserId) &&
+        Objects.equals(this.userId, messageIn.userId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, sender, receiver, messageTime, text, contactId, firstName, lastName, avatar, email);
+    return Objects.hash(id, sender, receiver, messageTime, text, contactId, firstName, lastName, avatar, email, contactUserId, userId);
   }
 
 
@@ -283,6 +327,8 @@ public class MessageIn {
     sb.append("    lastName: ").append(toIndentedString(lastName)).append("\n");
     sb.append("    avatar: ").append(toIndentedString(avatar)).append("\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
+    sb.append("    contactUserId: ").append(toIndentedString(contactUserId)).append("\n");
+    sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

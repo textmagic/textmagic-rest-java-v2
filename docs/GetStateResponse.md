@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **systemExit** | **Integer** |  | 
 **systemAlert** | **Integer** |  | 
 **systemAccountStateChanged** | **Integer** |  | 
+**systemAccountClosed** | **Integer** |  | 
 **systemAccountAdditionalFields** | **Integer** |  | 
 **systemAccountPermissionsChanged** | **Integer** |  | 
 **userBalanceChanged** | **Integer** |  | 

@@ -41,6 +41,9 @@ public class GetStateResponse {
   @SerializedName("systemAccountStateChanged")
   private Integer systemAccountStateChanged = null;
 
+  @SerializedName("systemAccountClosed")
+  private Integer systemAccountClosed = null;
+
   @SerializedName("systemAccountAdditionalFields")
   private Integer systemAccountAdditionalFields = null;
 
@@ -270,6 +273,24 @@ public class GetStateResponse {
 
   public void setSystemAccountStateChanged(Integer systemAccountStateChanged) {
     this.systemAccountStateChanged = systemAccountStateChanged;
+  }
+
+  public GetStateResponse systemAccountClosed(Integer systemAccountClosed) {
+    this.systemAccountClosed = systemAccountClosed;
+    return this;
+  }
+
+   /**
+   * Get systemAccountClosed
+   * @return systemAccountClosed
+  **/
+  @ApiModelProperty(example = "1", required = true, value = "")
+  public Integer getSystemAccountClosed() {
+    return systemAccountClosed;
+  }
+
+  public void setSystemAccountClosed(Integer systemAccountClosed) {
+    this.systemAccountClosed = systemAccountClosed;
   }
 
   public GetStateResponse systemAccountAdditionalFields(Integer systemAccountAdditionalFields) {
@@ -1240,6 +1261,7 @@ public class GetStateResponse {
         Objects.equals(this.systemExit, getStateResponse.systemExit) &&
         Objects.equals(this.systemAlert, getStateResponse.systemAlert) &&
         Objects.equals(this.systemAccountStateChanged, getStateResponse.systemAccountStateChanged) &&
+        Objects.equals(this.systemAccountClosed, getStateResponse.systemAccountClosed) &&
         Objects.equals(this.systemAccountAdditionalFields, getStateResponse.systemAccountAdditionalFields) &&
         Objects.equals(this.systemAccountPermissionsChanged, getStateResponse.systemAccountPermissionsChanged) &&
         Objects.equals(this.userBalanceChanged, getStateResponse.userBalanceChanged) &&
@@ -1297,7 +1319,7 @@ public class GetStateResponse {
 
   @Override
   public int hashCode() {
-    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, systemAccountAdditionalFields, systemAccountPermissionsChanged, userBalanceChanged, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleNotSentStateChanged, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatPinned, chatUnpinned, chatDeleted, chatClosed, chatReopened, chatCacheClear, chatRead, chatUnread, contactAdded, contactDeleted, contactStateChanged, listAdded, listDeleted, listStateChanged, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear, progressCarrierBulkLookup, progressEmailBulkLookup, progressSubAccountBulkImport, progressContactBulkImport, forceRefreshWebApp, chatSenderSettingsChanged, countrySenderSettingsChanged, chatSummaryChunk, chatWaysToReplyChunk, chatSuggestedReplyChunk);
+    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, systemAccountClosed, systemAccountAdditionalFields, systemAccountPermissionsChanged, userBalanceChanged, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleNotSentStateChanged, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatPinned, chatUnpinned, chatDeleted, chatClosed, chatReopened, chatCacheClear, chatRead, chatUnread, contactAdded, contactDeleted, contactStateChanged, listAdded, listDeleted, listStateChanged, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear, progressCarrierBulkLookup, progressEmailBulkLookup, progressSubAccountBulkImport, progressContactBulkImport, forceRefreshWebApp, chatSenderSettingsChanged, countrySenderSettingsChanged, chatSummaryChunk, chatWaysToReplyChunk, chatSuggestedReplyChunk);
   }
 
 
@@ -1310,6 +1332,7 @@ public class GetStateResponse {
     sb.append("    systemExit: ").append(toIndentedString(systemExit)).append("\n");
     sb.append("    systemAlert: ").append(toIndentedString(systemAlert)).append("\n");
     sb.append("    systemAccountStateChanged: ").append(toIndentedString(systemAccountStateChanged)).append("\n");
+    sb.append("    systemAccountClosed: ").append(toIndentedString(systemAccountClosed)).append("\n");
     sb.append("    systemAccountAdditionalFields: ").append(toIndentedString(systemAccountAdditionalFields)).append("\n");
     sb.append("    systemAccountPermissionsChanged: ").append(toIndentedString(systemAccountPermissionsChanged)).append("\n");
     sb.append("    userBalanceChanged: ").append(toIndentedString(userBalanceChanged)).append("\n");
