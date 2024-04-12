@@ -11,7 +11,9 @@ Name | Type | Description | Notes
 **systemAccountClosed** | **Integer** |  | 
 **systemAccountAdditionalFields** | **Integer** |  | 
 **systemAccountPermissionsChanged** | **Integer** |  | 
+**userProfileChanged** | **Integer** |  | 
 **userBalanceChanged** | **Integer** |  | 
+**userImpersonationEnd** | **Integer** |  | 
 **messageDeleted** | **Integer** |  | 
 **messageIncoming** | **Integer** |  | 
 **messageIncomingDeleted** | **Integer** |  | 
@@ -62,6 +64,8 @@ Name | Type | Description | Notes
 **chatSummaryChunk** | **Integer** |  | 
 **chatWaysToReplyChunk** | **Integer** |  | 
 **chatSuggestedReplyChunk** | **Integer** |  | 
+**userSubscriptionChanged** | **Integer** |  | 
+**userSubscriptionDeleted** | **Integer** |  | 
 
 
 
