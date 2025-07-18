@@ -41,6 +41,9 @@ public class GetStateResponse {
   @SerializedName("systemAccountStateChanged")
   private Integer systemAccountStateChanged = null;
 
+  @SerializedName("systemAccountAcceptTermsUpdate")
+  private Integer systemAccountAcceptTermsUpdate = null;
+
   @SerializedName("systemAccountClosed")
   private Integer systemAccountClosed = null;
 
@@ -55,6 +58,9 @@ public class GetStateResponse {
 
   @SerializedName("userBalanceChanged")
   private Integer userBalanceChanged = null;
+
+  @SerializedName("userPresenceStatusChanged")
+  private Integer userPresenceStatusChanged = null;
 
   @SerializedName("userImpersonationEnd")
   private Integer userImpersonationEnd = null;
@@ -79,6 +85,18 @@ public class GetStateResponse {
 
   @SerializedName("messageSent")
   private Integer messageSent = null;
+
+  @SerializedName("messageLog")
+  private Integer messageLog = null;
+
+  @SerializedName("messageNote")
+  private Integer messageNote = null;
+
+  @SerializedName("messageInitial")
+  private Integer messageInitial = null;
+
+  @SerializedName("lastMessageSet")
+  private Integer lastMessageSet = null;
 
   @SerializedName("messageSessionDeleted")
   private Integer messageSessionDeleted = null;
@@ -137,6 +155,9 @@ public class GetStateResponse {
   @SerializedName("chatReopened")
   private Integer chatReopened = null;
 
+  @SerializedName("chatActivated")
+  private Integer chatActivated = null;
+
   @SerializedName("chatCacheClear")
   private Integer chatCacheClear = null;
 
@@ -146,14 +167,56 @@ public class GetStateResponse {
   @SerializedName("chatUnread")
   private Integer chatUnread = null;
 
+  @SerializedName("chatAssigneeChanged")
+  private Integer chatAssigneeChanged = null;
+
+  @SerializedName("chatTagsChanged")
+  private Integer chatTagsChanged = null;
+
+  @SerializedName("chatConversationEnded")
+  private Integer chatConversationEnded = null;
+
+  @SerializedName("chatUpdated")
+  private Integer chatUpdated = null;
+
+  @SerializedName("liveChatAgentChanged")
+  private Integer liveChatAgentChanged = null;
+
+  @SerializedName("liveChatRated")
+  private Integer liveChatRated = null;
+
+  @SerializedName("webWidgetUpdated")
+  private Integer webWidgetUpdated = null;
+
+  @SerializedName("webWidgetDeleted")
+  private Integer webWidgetDeleted = null;
+
   @SerializedName("contactAdded")
   private Integer contactAdded = null;
 
   @SerializedName("contactDeleted")
   private Integer contactDeleted = null;
 
+  @SerializedName("contactBulkUpdated")
+  private Integer contactBulkUpdated = null;
+
   @SerializedName("contactStateChanged")
   private Integer contactStateChanged = null;
+
+  @SerializedName("contactUnsubscribed")
+  private Integer contactUnsubscribed = null;
+
+  @SerializedName("contactResubscribed")
+  private Integer contactResubscribed = null;
+
+  @SerializedName("contactNoteAdded")
+  private Integer contactNoteAdded = null;
+
+  @SerializedName("contactNoteDeleted")
+  private Integer contactNoteDeleted = null;
+
+  @SerializedName("contactNoteStateChanged")
+  private Integer contactNoteStateChanged = null;
 
   @SerializedName("listAdded")
   private Integer listAdded = null;
@@ -163,6 +226,9 @@ public class GetStateResponse {
 
   @SerializedName("listStateChanged")
   private Integer listStateChanged = null;
+
+  @SerializedName("listCountMembersUpdated")
+  private Integer listCountMembersUpdated = null;
 
   @SerializedName("contactWipeEnd")
   private Integer contactWipeEnd = null;
@@ -188,8 +254,8 @@ public class GetStateResponse {
   @SerializedName("progressSubAccountBulkImport")
   private Integer progressSubAccountBulkImport = null;
 
-  @SerializedName("progressContactBulkImport")
-  private Integer progressContactBulkImport = null;
+  @SerializedName("importProgressState")
+  private Integer importProgressState = null;
 
   @SerializedName("forceRefreshWebApp")
   private Integer forceRefreshWebApp = null;
@@ -215,6 +281,312 @@ public class GetStateResponse {
   @SerializedName("userSubscriptionDeleted")
   private Integer userSubscriptionDeleted = null;
 
+  @SerializedName("taskCreated")
+  private Integer taskCreated = null;
+
+  @SerializedName("taskUpdated")
+  private Integer taskUpdated = null;
+
+  @SerializedName("taskReordered")
+  private Integer taskReordered = null;
+
+  @SerializedName("taskDeleted")
+  private Integer taskDeleted = null;
+
+  @SerializedName("taskMovedAll")
+  private Integer taskMovedAll = null;
+
+  @SerializedName("taskStageCreated")
+  private Integer taskStageCreated = null;
+
+  @SerializedName("taskStageUpdated")
+  private Integer taskStageUpdated = null;
+
+  @SerializedName("taskStageDeleted")
+  private Integer taskStageDeleted = null;
+
+  @SerializedName("taskBoardCreated")
+  private Integer taskBoardCreated = null;
+
+  @SerializedName("taskBoardUpdated")
+  private Integer taskBoardUpdated = null;
+
+  @SerializedName("taskBoardReordered")
+  private Integer taskBoardReordered = null;
+
+  @SerializedName("taskBoardDeleted")
+  private Integer taskBoardDeleted = null;
+
+  @SerializedName("taskBoardArchived")
+  private Integer taskBoardArchived = null;
+
+  @SerializedName("taskChecklistCreated")
+  private Integer taskChecklistCreated = null;
+
+  @SerializedName("taskChecklistUpdated")
+  private Integer taskChecklistUpdated = null;
+
+  @SerializedName("taskChecklistDeleted")
+  private Integer taskChecklistDeleted = null;
+
+  @SerializedName("taskChecklistBulkMarked")
+  private Integer taskChecklistBulkMarked = null;
+
+  @SerializedName("taskChecklistItemCreated")
+  private Integer taskChecklistItemCreated = null;
+
+  @SerializedName("taskChecklistItemUpdated")
+  private Integer taskChecklistItemUpdated = null;
+
+  @SerializedName("taskChecklistItemDeleted")
+  private Integer taskChecklistItemDeleted = null;
+
+  @SerializedName("taskCommentCreated")
+  private Integer taskCommentCreated = null;
+
+  @SerializedName("taskCommentDeleted")
+  private Integer taskCommentDeleted = null;
+
+  @SerializedName("pinnedContactAdded")
+  private Integer pinnedContactAdded = null;
+
+  @SerializedName("pinnedContactRemoved")
+  private Integer pinnedContactRemoved = null;
+
+  @SerializedName("pinnedContactReordered")
+  private Integer pinnedContactReordered = null;
+
+  @SerializedName("pinnedContactStateChanged")
+  private Integer pinnedContactStateChanged = null;
+
+  @SerializedName("whatsappAccountAdded")
+  private Integer whatsappAccountAdded = null;
+
+  @SerializedName("whatsappAccountRemoved")
+  private Integer whatsappAccountRemoved = null;
+
+  @SerializedName("whatsappAccountChanged")
+  private Integer whatsappAccountChanged = null;
+
+  @SerializedName("facebookPageAdded")
+  private Integer facebookPageAdded = null;
+
+  @SerializedName("facebookPageRemoved")
+  private Integer facebookPageRemoved = null;
+
+  @SerializedName("facebookPageChanged")
+  private Integer facebookPageChanged = null;
+
+  @SerializedName("instagramAccountAdded")
+  private Integer instagramAccountAdded = null;
+
+  @SerializedName("instagramAccountRemoved")
+  private Integer instagramAccountRemoved = null;
+
+  @SerializedName("instagramAccountChanged")
+  private Integer instagramAccountChanged = null;
+
+  @SerializedName("unreadTicketsCountUpdated")
+  private Integer unreadTicketsCountUpdated = null;
+
+  @SerializedName("ticketDeleted")
+  private Integer ticketDeleted = null;
+
+  @SerializedName("ticketUpdated")
+  private Integer ticketUpdated = null;
+
+  @SerializedName("ticketCreated")
+  private Integer ticketCreated = null;
+
+  @SerializedName("ticketBulkUpdated")
+  private Integer ticketBulkUpdated = null;
+
+  @SerializedName("ticketBulkDeleted")
+  private Integer ticketBulkDeleted = null;
+
+  @SerializedName("ticketMessageCreated")
+  private Integer ticketMessageCreated = null;
+
+  @SerializedName("ticketMessageUpdated")
+  private Integer ticketMessageUpdated = null;
+
+  @SerializedName("ticketMessageDeleted")
+  private Integer ticketMessageDeleted = null;
+
+  @SerializedName("subAccountsClosed")
+  private Integer subAccountsClosed = null;
+
+  @SerializedName("userInvited")
+  private Integer userInvited = null;
+
+  @SerializedName("filteredViewCreated")
+  private Integer filteredViewCreated = null;
+
+  @SerializedName("filteredViewCountUpdated")
+  private Integer filteredViewCountUpdated = null;
+
+  @SerializedName("filteredViewDeleted")
+  private Integer filteredViewDeleted = null;
+
+  @SerializedName("forwardingInboxWasVerified")
+  private Integer forwardingInboxWasVerified = null;
+
+  @SerializedName("forwardingInboxCheckWasFailed")
+  private Integer forwardingInboxCheckWasFailed = null;
+
+  @SerializedName("forwardingInboxVerificationLinkWasParsed")
+  private Integer forwardingInboxVerificationLinkWasParsed = null;
+
+  @SerializedName("tendlcLinkNumberStatusUpdated")
+  private Integer tendlcLinkNumberStatusUpdated = null;
+
+  @SerializedName("channelPresence")
+  private Integer channelPresence = null;
+
+  @SerializedName("dealCreated")
+  private Integer dealCreated = null;
+
+  @SerializedName("dealUpdated")
+  private Integer dealUpdated = null;
+
+  @SerializedName("dealDeleted")
+  private Integer dealDeleted = null;
+
+  @SerializedName("dealMoved")
+  private Integer dealMoved = null;
+
+  @SerializedName("dealStageCreated")
+  private Integer dealStageCreated = null;
+
+  @SerializedName("dealStageUpdated")
+  private Integer dealStageUpdated = null;
+
+  @SerializedName("dealStageDeleted")
+  private Integer dealStageDeleted = null;
+
+  @SerializedName("dealPipelineCreated")
+  private Integer dealPipelineCreated = null;
+
+  @SerializedName("dealPipelineUpdated")
+  private Integer dealPipelineUpdated = null;
+
+  @SerializedName("dealPipelineDeleted")
+  private Integer dealPipelineDeleted = null;
+
+  @SerializedName("dealPipelineArchived")
+  private Integer dealPipelineArchived = null;
+
+  @SerializedName("dealPipelineReordered")
+  private Integer dealPipelineReordered = null;
+
+  @SerializedName("dealActivityUpdated")
+  private Integer dealActivityUpdated = null;
+
+  @SerializedName("dealActivityItemCreated")
+  private Integer dealActivityItemCreated = null;
+
+  @SerializedName("dealActivityItemUpdated")
+  private Integer dealActivityItemUpdated = null;
+
+  @SerializedName("dealActivityItemDeleted")
+  private Integer dealActivityItemDeleted = null;
+
+  @SerializedName("dealActivityItemBulkMarked")
+  private Integer dealActivityItemBulkMarked = null;
+
+  @SerializedName("dealTimelineItemDeleted")
+  private Integer dealTimelineItemDeleted = null;
+
+  @SerializedName("dealTimelineItemCreated")
+  private Integer dealTimelineItemCreated = null;
+
+  @SerializedName("AIAssistantCreated")
+  private Integer aiAssistantCreated = null;
+
+  @SerializedName("AIAssistantState")
+  private Integer aiAssistantState = null;
+
+  @SerializedName("AIAssistantDeleted")
+  private Integer aiAssistantDeleted = null;
+
+  @SerializedName("AIAssistantLinkDeleted")
+  private Integer aiAssistantLinkDeleted = null;
+
+  @SerializedName("AIAssistantLinkState")
+  private Integer aiAssistantLinkState = null;
+
+  @SerializedName("AIAssistantLinkCreated")
+  private Integer aiAssistantLinkCreated = null;
+
+  @SerializedName("AIAssistantSubLinkState")
+  private Integer aiAssistantSubLinkState = null;
+
+  @SerializedName("AIAssistantSubLinkCreated")
+  private Integer aiAssistantSubLinkCreated = null;
+
+  @SerializedName("emailCampaignEmailSenderCreated")
+  private Integer emailCampaignEmailSenderCreated = null;
+
+  @SerializedName("emailCampaignEmailSenderUpdated")
+  private Integer emailCampaignEmailSenderUpdated = null;
+
+  @SerializedName("emailCampaignEmailSenderDeleted")
+  private Integer emailCampaignEmailSenderDeleted = null;
+
+  @SerializedName("emailCampaignDomainCreated")
+  private Integer emailCampaignDomainCreated = null;
+
+  @SerializedName("emailCampaignDomainDeleted")
+  private Integer emailCampaignDomainDeleted = null;
+
+  @SerializedName("emailCampaignDomainVerified")
+  private Integer emailCampaignDomainVerified = null;
+
+  @SerializedName("emailCampaignDomainStatusChanged")
+  private Integer emailCampaignDomainStatusChanged = null;
+
+  @SerializedName("emailCampaignDomainDkimVerified")
+  private Integer emailCampaignDomainDkimVerified = null;
+
+  @SerializedName("emailCampaignDomainReturnPathVerified")
+  private Integer emailCampaignDomainReturnPathVerified = null;
+
+  @SerializedName("emailCampaignDomainDmarcVerified")
+  private Integer emailCampaignDomainDmarcVerified = null;
+
+  @SerializedName("emailCampaignDomainEntryVerificationChanged")
+  private Integer emailCampaignDomainEntryVerificationChanged = null;
+
+  @SerializedName("emailCampaignProgressState")
+  private Integer emailCampaignProgressState = null;
+
+  @SerializedName("emailCampaignUpdated")
+  private Integer emailCampaignUpdated = null;
+
+  @SerializedName("smsCampaignInvalidated")
+  private Integer smsCampaignInvalidated = null;
+
+  @SerializedName("scheduledEmailCampaignCreated")
+  private Integer scheduledEmailCampaignCreated = null;
+
+  @SerializedName("scheduledEmailCampaignUpdated")
+  private Integer scheduledEmailCampaignUpdated = null;
+
+  @SerializedName("scheduledEmailCampaignStatusUpdated")
+  private Integer scheduledEmailCampaignStatusUpdated = null;
+
+  @SerializedName("scheduledEmailCampaignDeleted")
+  private Integer scheduledEmailCampaignDeleted = null;
+
+  @SerializedName("emailCampaignFailedAttemptCreated")
+  private Integer emailCampaignFailedAttemptCreated = null;
+
+  @SerializedName("emailCampaignFailedAttemptDeleted")
+  private Integer emailCampaignFailedAttemptDeleted = null;
+
+  @SerializedName("emailCampaignFailedAttemptStateUpdated")
+  private Integer emailCampaignFailedAttemptStateUpdated = null;
+
   public GetStateResponse systemCacheClear(Integer systemCacheClear) {
     this.systemCacheClear = systemCacheClear;
     return this;
@@ -224,7 +596,7 @@ public class GetStateResponse {
    * Get systemCacheClear
    * @return systemCacheClear
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getSystemCacheClear() {
     return systemCacheClear;
   }
@@ -242,7 +614,7 @@ public class GetStateResponse {
    * Get systemExit
    * @return systemExit
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getSystemExit() {
     return systemExit;
   }
@@ -260,7 +632,7 @@ public class GetStateResponse {
    * Get systemAlert
    * @return systemAlert
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getSystemAlert() {
     return systemAlert;
   }
@@ -278,13 +650,31 @@ public class GetStateResponse {
    * Get systemAccountStateChanged
    * @return systemAccountStateChanged
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getSystemAccountStateChanged() {
     return systemAccountStateChanged;
   }
 
   public void setSystemAccountStateChanged(Integer systemAccountStateChanged) {
     this.systemAccountStateChanged = systemAccountStateChanged;
+  }
+
+  public GetStateResponse systemAccountAcceptTermsUpdate(Integer systemAccountAcceptTermsUpdate) {
+    this.systemAccountAcceptTermsUpdate = systemAccountAcceptTermsUpdate;
+    return this;
+  }
+
+   /**
+   * Get systemAccountAcceptTermsUpdate
+   * @return systemAccountAcceptTermsUpdate
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getSystemAccountAcceptTermsUpdate() {
+    return systemAccountAcceptTermsUpdate;
+  }
+
+  public void setSystemAccountAcceptTermsUpdate(Integer systemAccountAcceptTermsUpdate) {
+    this.systemAccountAcceptTermsUpdate = systemAccountAcceptTermsUpdate;
   }
 
   public GetStateResponse systemAccountClosed(Integer systemAccountClosed) {
@@ -296,7 +686,7 @@ public class GetStateResponse {
    * Get systemAccountClosed
    * @return systemAccountClosed
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getSystemAccountClosed() {
     return systemAccountClosed;
   }
@@ -314,7 +704,7 @@ public class GetStateResponse {
    * Get systemAccountAdditionalFields
    * @return systemAccountAdditionalFields
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getSystemAccountAdditionalFields() {
     return systemAccountAdditionalFields;
   }
@@ -332,7 +722,7 @@ public class GetStateResponse {
    * Get systemAccountPermissionsChanged
    * @return systemAccountPermissionsChanged
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getSystemAccountPermissionsChanged() {
     return systemAccountPermissionsChanged;
   }
@@ -350,7 +740,7 @@ public class GetStateResponse {
    * Get userProfileChanged
    * @return userProfileChanged
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getUserProfileChanged() {
     return userProfileChanged;
   }
@@ -368,13 +758,31 @@ public class GetStateResponse {
    * Get userBalanceChanged
    * @return userBalanceChanged
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getUserBalanceChanged() {
     return userBalanceChanged;
   }
 
   public void setUserBalanceChanged(Integer userBalanceChanged) {
     this.userBalanceChanged = userBalanceChanged;
+  }
+
+  public GetStateResponse userPresenceStatusChanged(Integer userPresenceStatusChanged) {
+    this.userPresenceStatusChanged = userPresenceStatusChanged;
+    return this;
+  }
+
+   /**
+   * Get userPresenceStatusChanged
+   * @return userPresenceStatusChanged
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getUserPresenceStatusChanged() {
+    return userPresenceStatusChanged;
+  }
+
+  public void setUserPresenceStatusChanged(Integer userPresenceStatusChanged) {
+    this.userPresenceStatusChanged = userPresenceStatusChanged;
   }
 
   public GetStateResponse userImpersonationEnd(Integer userImpersonationEnd) {
@@ -386,7 +794,7 @@ public class GetStateResponse {
    * Get userImpersonationEnd
    * @return userImpersonationEnd
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getUserImpersonationEnd() {
     return userImpersonationEnd;
   }
@@ -404,7 +812,7 @@ public class GetStateResponse {
    * Get messageDeleted
    * @return messageDeleted
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageDeleted() {
     return messageDeleted;
   }
@@ -422,7 +830,7 @@ public class GetStateResponse {
    * Get messageIncoming
    * @return messageIncoming
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageIncoming() {
     return messageIncoming;
   }
@@ -440,7 +848,7 @@ public class GetStateResponse {
    * Get messageIncomingDeleted
    * @return messageIncomingDeleted
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageIncomingDeleted() {
     return messageIncomingDeleted;
   }
@@ -458,7 +866,7 @@ public class GetStateResponse {
    * Get messageStateChanged
    * @return messageStateChanged
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageStateChanged() {
     return messageStateChanged;
   }
@@ -476,7 +884,7 @@ public class GetStateResponse {
    * Get messageBulkEnd
    * @return messageBulkEnd
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageBulkEnd() {
     return messageBulkEnd;
   }
@@ -494,7 +902,7 @@ public class GetStateResponse {
    * Get messageWipeEnd
    * @return messageWipeEnd
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageWipeEnd() {
     return messageWipeEnd;
   }
@@ -512,13 +920,85 @@ public class GetStateResponse {
    * Get messageSent
    * @return messageSent
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageSent() {
     return messageSent;
   }
 
   public void setMessageSent(Integer messageSent) {
     this.messageSent = messageSent;
+  }
+
+  public GetStateResponse messageLog(Integer messageLog) {
+    this.messageLog = messageLog;
+    return this;
+  }
+
+   /**
+   * Get messageLog
+   * @return messageLog
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getMessageLog() {
+    return messageLog;
+  }
+
+  public void setMessageLog(Integer messageLog) {
+    this.messageLog = messageLog;
+  }
+
+  public GetStateResponse messageNote(Integer messageNote) {
+    this.messageNote = messageNote;
+    return this;
+  }
+
+   /**
+   * Get messageNote
+   * @return messageNote
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getMessageNote() {
+    return messageNote;
+  }
+
+  public void setMessageNote(Integer messageNote) {
+    this.messageNote = messageNote;
+  }
+
+  public GetStateResponse messageInitial(Integer messageInitial) {
+    this.messageInitial = messageInitial;
+    return this;
+  }
+
+   /**
+   * Get messageInitial
+   * @return messageInitial
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getMessageInitial() {
+    return messageInitial;
+  }
+
+  public void setMessageInitial(Integer messageInitial) {
+    this.messageInitial = messageInitial;
+  }
+
+  public GetStateResponse lastMessageSet(Integer lastMessageSet) {
+    this.lastMessageSet = lastMessageSet;
+    return this;
+  }
+
+   /**
+   * Get lastMessageSet
+   * @return lastMessageSet
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getLastMessageSet() {
+    return lastMessageSet;
+  }
+
+  public void setLastMessageSet(Integer lastMessageSet) {
+    this.lastMessageSet = lastMessageSet;
   }
 
   public GetStateResponse messageSessionDeleted(Integer messageSessionDeleted) {
@@ -530,7 +1010,7 @@ public class GetStateResponse {
    * Get messageSessionDeleted
    * @return messageSessionDeleted
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageSessionDeleted() {
     return messageSessionDeleted;
   }
@@ -548,7 +1028,7 @@ public class GetStateResponse {
    * Get messageCacheClear
    * @return messageCacheClear
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageCacheClear() {
     return messageCacheClear;
   }
@@ -566,7 +1046,7 @@ public class GetStateResponse {
    * Get messageIncomingCacheClear
    * @return messageIncomingCacheClear
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageIncomingCacheClear() {
     return messageIncomingCacheClear;
   }
@@ -584,7 +1064,7 @@ public class GetStateResponse {
    * Get messageScheduleAdded
    * @return messageScheduleAdded
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageScheduleAdded() {
     return messageScheduleAdded;
   }
@@ -602,7 +1082,7 @@ public class GetStateResponse {
    * Get messageScheduleStateChanged
    * @return messageScheduleStateChanged
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageScheduleStateChanged() {
     return messageScheduleStateChanged;
   }
@@ -620,7 +1100,7 @@ public class GetStateResponse {
    * Get messageScheduleDeleted
    * @return messageScheduleDeleted
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageScheduleDeleted() {
     return messageScheduleDeleted;
   }
@@ -638,7 +1118,7 @@ public class GetStateResponse {
    * Get messageScheduleNotSentStateChanged
    * @return messageScheduleNotSentStateChanged
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageScheduleNotSentStateChanged() {
     return messageScheduleNotSentStateChanged;
   }
@@ -656,7 +1136,7 @@ public class GetStateResponse {
    * Get messageScheduleCacheClear
    * @return messageScheduleCacheClear
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageScheduleCacheClear() {
     return messageScheduleCacheClear;
   }
@@ -674,7 +1154,7 @@ public class GetStateResponse {
    * Get messageTemplateCacheClear
    * @return messageTemplateCacheClear
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getMessageTemplateCacheClear() {
     return messageTemplateCacheClear;
   }
@@ -692,7 +1172,7 @@ public class GetStateResponse {
    * Get callFinished
    * @return callFinished
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getCallFinished() {
     return callFinished;
   }
@@ -710,7 +1190,7 @@ public class GetStateResponse {
    * Get chatCreated
    * @return chatCreated
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatCreated() {
     return chatCreated;
   }
@@ -728,7 +1208,7 @@ public class GetStateResponse {
    * Get chatMarkedAsRead
    * @return chatMarkedAsRead
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatMarkedAsRead() {
     return chatMarkedAsRead;
   }
@@ -746,7 +1226,7 @@ public class GetStateResponse {
    * Get chatMuted
    * @return chatMuted
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatMuted() {
     return chatMuted;
   }
@@ -764,7 +1244,7 @@ public class GetStateResponse {
    * Get chatUnmuted
    * @return chatUnmuted
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatUnmuted() {
     return chatUnmuted;
   }
@@ -782,7 +1262,7 @@ public class GetStateResponse {
    * Get chatPinned
    * @return chatPinned
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatPinned() {
     return chatPinned;
   }
@@ -800,7 +1280,7 @@ public class GetStateResponse {
    * Get chatUnpinned
    * @return chatUnpinned
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatUnpinned() {
     return chatUnpinned;
   }
@@ -818,7 +1298,7 @@ public class GetStateResponse {
    * Get chatDeleted
    * @return chatDeleted
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatDeleted() {
     return chatDeleted;
   }
@@ -836,7 +1316,7 @@ public class GetStateResponse {
    * Get chatClosed
    * @return chatClosed
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatClosed() {
     return chatClosed;
   }
@@ -854,13 +1334,31 @@ public class GetStateResponse {
    * Get chatReopened
    * @return chatReopened
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatReopened() {
     return chatReopened;
   }
 
   public void setChatReopened(Integer chatReopened) {
     this.chatReopened = chatReopened;
+  }
+
+  public GetStateResponse chatActivated(Integer chatActivated) {
+    this.chatActivated = chatActivated;
+    return this;
+  }
+
+   /**
+   * Get chatActivated
+   * @return chatActivated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getChatActivated() {
+    return chatActivated;
+  }
+
+  public void setChatActivated(Integer chatActivated) {
+    this.chatActivated = chatActivated;
   }
 
   public GetStateResponse chatCacheClear(Integer chatCacheClear) {
@@ -872,7 +1370,7 @@ public class GetStateResponse {
    * Get chatCacheClear
    * @return chatCacheClear
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatCacheClear() {
     return chatCacheClear;
   }
@@ -890,7 +1388,7 @@ public class GetStateResponse {
    * Get chatRead
    * @return chatRead
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatRead() {
     return chatRead;
   }
@@ -908,13 +1406,157 @@ public class GetStateResponse {
    * Get chatUnread
    * @return chatUnread
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatUnread() {
     return chatUnread;
   }
 
   public void setChatUnread(Integer chatUnread) {
     this.chatUnread = chatUnread;
+  }
+
+  public GetStateResponse chatAssigneeChanged(Integer chatAssigneeChanged) {
+    this.chatAssigneeChanged = chatAssigneeChanged;
+    return this;
+  }
+
+   /**
+   * Get chatAssigneeChanged
+   * @return chatAssigneeChanged
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getChatAssigneeChanged() {
+    return chatAssigneeChanged;
+  }
+
+  public void setChatAssigneeChanged(Integer chatAssigneeChanged) {
+    this.chatAssigneeChanged = chatAssigneeChanged;
+  }
+
+  public GetStateResponse chatTagsChanged(Integer chatTagsChanged) {
+    this.chatTagsChanged = chatTagsChanged;
+    return this;
+  }
+
+   /**
+   * Get chatTagsChanged
+   * @return chatTagsChanged
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getChatTagsChanged() {
+    return chatTagsChanged;
+  }
+
+  public void setChatTagsChanged(Integer chatTagsChanged) {
+    this.chatTagsChanged = chatTagsChanged;
+  }
+
+  public GetStateResponse chatConversationEnded(Integer chatConversationEnded) {
+    this.chatConversationEnded = chatConversationEnded;
+    return this;
+  }
+
+   /**
+   * Get chatConversationEnded
+   * @return chatConversationEnded
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getChatConversationEnded() {
+    return chatConversationEnded;
+  }
+
+  public void setChatConversationEnded(Integer chatConversationEnded) {
+    this.chatConversationEnded = chatConversationEnded;
+  }
+
+  public GetStateResponse chatUpdated(Integer chatUpdated) {
+    this.chatUpdated = chatUpdated;
+    return this;
+  }
+
+   /**
+   * Get chatUpdated
+   * @return chatUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getChatUpdated() {
+    return chatUpdated;
+  }
+
+  public void setChatUpdated(Integer chatUpdated) {
+    this.chatUpdated = chatUpdated;
+  }
+
+  public GetStateResponse liveChatAgentChanged(Integer liveChatAgentChanged) {
+    this.liveChatAgentChanged = liveChatAgentChanged;
+    return this;
+  }
+
+   /**
+   * Get liveChatAgentChanged
+   * @return liveChatAgentChanged
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getLiveChatAgentChanged() {
+    return liveChatAgentChanged;
+  }
+
+  public void setLiveChatAgentChanged(Integer liveChatAgentChanged) {
+    this.liveChatAgentChanged = liveChatAgentChanged;
+  }
+
+  public GetStateResponse liveChatRated(Integer liveChatRated) {
+    this.liveChatRated = liveChatRated;
+    return this;
+  }
+
+   /**
+   * Get liveChatRated
+   * @return liveChatRated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getLiveChatRated() {
+    return liveChatRated;
+  }
+
+  public void setLiveChatRated(Integer liveChatRated) {
+    this.liveChatRated = liveChatRated;
+  }
+
+  public GetStateResponse webWidgetUpdated(Integer webWidgetUpdated) {
+    this.webWidgetUpdated = webWidgetUpdated;
+    return this;
+  }
+
+   /**
+   * Get webWidgetUpdated
+   * @return webWidgetUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getWebWidgetUpdated() {
+    return webWidgetUpdated;
+  }
+
+  public void setWebWidgetUpdated(Integer webWidgetUpdated) {
+    this.webWidgetUpdated = webWidgetUpdated;
+  }
+
+  public GetStateResponse webWidgetDeleted(Integer webWidgetDeleted) {
+    this.webWidgetDeleted = webWidgetDeleted;
+    return this;
+  }
+
+   /**
+   * Get webWidgetDeleted
+   * @return webWidgetDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getWebWidgetDeleted() {
+    return webWidgetDeleted;
+  }
+
+  public void setWebWidgetDeleted(Integer webWidgetDeleted) {
+    this.webWidgetDeleted = webWidgetDeleted;
   }
 
   public GetStateResponse contactAdded(Integer contactAdded) {
@@ -926,7 +1568,7 @@ public class GetStateResponse {
    * Get contactAdded
    * @return contactAdded
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getContactAdded() {
     return contactAdded;
   }
@@ -944,13 +1586,31 @@ public class GetStateResponse {
    * Get contactDeleted
    * @return contactDeleted
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getContactDeleted() {
     return contactDeleted;
   }
 
   public void setContactDeleted(Integer contactDeleted) {
     this.contactDeleted = contactDeleted;
+  }
+
+  public GetStateResponse contactBulkUpdated(Integer contactBulkUpdated) {
+    this.contactBulkUpdated = contactBulkUpdated;
+    return this;
+  }
+
+   /**
+   * Get contactBulkUpdated
+   * @return contactBulkUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getContactBulkUpdated() {
+    return contactBulkUpdated;
+  }
+
+  public void setContactBulkUpdated(Integer contactBulkUpdated) {
+    this.contactBulkUpdated = contactBulkUpdated;
   }
 
   public GetStateResponse contactStateChanged(Integer contactStateChanged) {
@@ -962,13 +1622,103 @@ public class GetStateResponse {
    * Get contactStateChanged
    * @return contactStateChanged
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getContactStateChanged() {
     return contactStateChanged;
   }
 
   public void setContactStateChanged(Integer contactStateChanged) {
     this.contactStateChanged = contactStateChanged;
+  }
+
+  public GetStateResponse contactUnsubscribed(Integer contactUnsubscribed) {
+    this.contactUnsubscribed = contactUnsubscribed;
+    return this;
+  }
+
+   /**
+   * Get contactUnsubscribed
+   * @return contactUnsubscribed
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getContactUnsubscribed() {
+    return contactUnsubscribed;
+  }
+
+  public void setContactUnsubscribed(Integer contactUnsubscribed) {
+    this.contactUnsubscribed = contactUnsubscribed;
+  }
+
+  public GetStateResponse contactResubscribed(Integer contactResubscribed) {
+    this.contactResubscribed = contactResubscribed;
+    return this;
+  }
+
+   /**
+   * Get contactResubscribed
+   * @return contactResubscribed
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getContactResubscribed() {
+    return contactResubscribed;
+  }
+
+  public void setContactResubscribed(Integer contactResubscribed) {
+    this.contactResubscribed = contactResubscribed;
+  }
+
+  public GetStateResponse contactNoteAdded(Integer contactNoteAdded) {
+    this.contactNoteAdded = contactNoteAdded;
+    return this;
+  }
+
+   /**
+   * Get contactNoteAdded
+   * @return contactNoteAdded
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getContactNoteAdded() {
+    return contactNoteAdded;
+  }
+
+  public void setContactNoteAdded(Integer contactNoteAdded) {
+    this.contactNoteAdded = contactNoteAdded;
+  }
+
+  public GetStateResponse contactNoteDeleted(Integer contactNoteDeleted) {
+    this.contactNoteDeleted = contactNoteDeleted;
+    return this;
+  }
+
+   /**
+   * Get contactNoteDeleted
+   * @return contactNoteDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getContactNoteDeleted() {
+    return contactNoteDeleted;
+  }
+
+  public void setContactNoteDeleted(Integer contactNoteDeleted) {
+    this.contactNoteDeleted = contactNoteDeleted;
+  }
+
+  public GetStateResponse contactNoteStateChanged(Integer contactNoteStateChanged) {
+    this.contactNoteStateChanged = contactNoteStateChanged;
+    return this;
+  }
+
+   /**
+   * Get contactNoteStateChanged
+   * @return contactNoteStateChanged
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getContactNoteStateChanged() {
+    return contactNoteStateChanged;
+  }
+
+  public void setContactNoteStateChanged(Integer contactNoteStateChanged) {
+    this.contactNoteStateChanged = contactNoteStateChanged;
   }
 
   public GetStateResponse listAdded(Integer listAdded) {
@@ -980,7 +1730,7 @@ public class GetStateResponse {
    * Get listAdded
    * @return listAdded
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getListAdded() {
     return listAdded;
   }
@@ -998,7 +1748,7 @@ public class GetStateResponse {
    * Get listDeleted
    * @return listDeleted
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getListDeleted() {
     return listDeleted;
   }
@@ -1016,13 +1766,31 @@ public class GetStateResponse {
    * Get listStateChanged
    * @return listStateChanged
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getListStateChanged() {
     return listStateChanged;
   }
 
   public void setListStateChanged(Integer listStateChanged) {
     this.listStateChanged = listStateChanged;
+  }
+
+  public GetStateResponse listCountMembersUpdated(Integer listCountMembersUpdated) {
+    this.listCountMembersUpdated = listCountMembersUpdated;
+    return this;
+  }
+
+   /**
+   * Get listCountMembersUpdated
+   * @return listCountMembersUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getListCountMembersUpdated() {
+    return listCountMembersUpdated;
+  }
+
+  public void setListCountMembersUpdated(Integer listCountMembersUpdated) {
+    this.listCountMembersUpdated = listCountMembersUpdated;
   }
 
   public GetStateResponse contactWipeEnd(Integer contactWipeEnd) {
@@ -1034,7 +1802,7 @@ public class GetStateResponse {
    * Get contactWipeEnd
    * @return contactWipeEnd
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getContactWipeEnd() {
     return contactWipeEnd;
   }
@@ -1052,7 +1820,7 @@ public class GetStateResponse {
    * Get contactImportEnd
    * @return contactImportEnd
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getContactImportEnd() {
     return contactImportEnd;
   }
@@ -1070,7 +1838,7 @@ public class GetStateResponse {
    * Get contactCacheClear
    * @return contactCacheClear
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getContactCacheClear() {
     return contactCacheClear;
   }
@@ -1088,7 +1856,7 @@ public class GetStateResponse {
    * Get listCacheClear
    * @return listCacheClear
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getListCacheClear() {
     return listCacheClear;
   }
@@ -1106,7 +1874,7 @@ public class GetStateResponse {
    * Get customFieldsCacheClear
    * @return customFieldsCacheClear
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getCustomFieldsCacheClear() {
     return customFieldsCacheClear;
   }
@@ -1124,7 +1892,7 @@ public class GetStateResponse {
    * Get progressCarrierBulkLookup
    * @return progressCarrierBulkLookup
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getProgressCarrierBulkLookup() {
     return progressCarrierBulkLookup;
   }
@@ -1142,7 +1910,7 @@ public class GetStateResponse {
    * Get progressEmailBulkLookup
    * @return progressEmailBulkLookup
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getProgressEmailBulkLookup() {
     return progressEmailBulkLookup;
   }
@@ -1160,7 +1928,7 @@ public class GetStateResponse {
    * Get progressSubAccountBulkImport
    * @return progressSubAccountBulkImport
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getProgressSubAccountBulkImport() {
     return progressSubAccountBulkImport;
   }
@@ -1169,22 +1937,22 @@ public class GetStateResponse {
     this.progressSubAccountBulkImport = progressSubAccountBulkImport;
   }
 
-  public GetStateResponse progressContactBulkImport(Integer progressContactBulkImport) {
-    this.progressContactBulkImport = progressContactBulkImport;
+  public GetStateResponse importProgressState(Integer importProgressState) {
+    this.importProgressState = importProgressState;
     return this;
   }
 
    /**
-   * Get progressContactBulkImport
-   * @return progressContactBulkImport
+   * Get importProgressState
+   * @return importProgressState
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
-  public Integer getProgressContactBulkImport() {
-    return progressContactBulkImport;
+  @ApiModelProperty(required = true, value = "")
+  public Integer getImportProgressState() {
+    return importProgressState;
   }
 
-  public void setProgressContactBulkImport(Integer progressContactBulkImport) {
-    this.progressContactBulkImport = progressContactBulkImport;
+  public void setImportProgressState(Integer importProgressState) {
+    this.importProgressState = importProgressState;
   }
 
   public GetStateResponse forceRefreshWebApp(Integer forceRefreshWebApp) {
@@ -1196,7 +1964,7 @@ public class GetStateResponse {
    * Get forceRefreshWebApp
    * @return forceRefreshWebApp
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getForceRefreshWebApp() {
     return forceRefreshWebApp;
   }
@@ -1214,7 +1982,7 @@ public class GetStateResponse {
    * Get chatSenderSettingsChanged
    * @return chatSenderSettingsChanged
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatSenderSettingsChanged() {
     return chatSenderSettingsChanged;
   }
@@ -1232,7 +2000,7 @@ public class GetStateResponse {
    * Get countrySenderSettingsChanged
    * @return countrySenderSettingsChanged
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getCountrySenderSettingsChanged() {
     return countrySenderSettingsChanged;
   }
@@ -1250,7 +2018,7 @@ public class GetStateResponse {
    * Get chatSummaryChunk
    * @return chatSummaryChunk
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatSummaryChunk() {
     return chatSummaryChunk;
   }
@@ -1268,7 +2036,7 @@ public class GetStateResponse {
    * Get chatWaysToReplyChunk
    * @return chatWaysToReplyChunk
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatWaysToReplyChunk() {
     return chatWaysToReplyChunk;
   }
@@ -1286,7 +2054,7 @@ public class GetStateResponse {
    * Get chatSuggestedReplyChunk
    * @return chatSuggestedReplyChunk
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getChatSuggestedReplyChunk() {
     return chatSuggestedReplyChunk;
   }
@@ -1304,7 +2072,7 @@ public class GetStateResponse {
    * Get userSubscriptionChanged
    * @return userSubscriptionChanged
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getUserSubscriptionChanged() {
     return userSubscriptionChanged;
   }
@@ -1322,13 +2090,1849 @@ public class GetStateResponse {
    * Get userSubscriptionDeleted
    * @return userSubscriptionDeleted
   **/
-  @ApiModelProperty(example = "1", required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public Integer getUserSubscriptionDeleted() {
     return userSubscriptionDeleted;
   }
 
   public void setUserSubscriptionDeleted(Integer userSubscriptionDeleted) {
     this.userSubscriptionDeleted = userSubscriptionDeleted;
+  }
+
+  public GetStateResponse taskCreated(Integer taskCreated) {
+    this.taskCreated = taskCreated;
+    return this;
+  }
+
+   /**
+   * Get taskCreated
+   * @return taskCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskCreated() {
+    return taskCreated;
+  }
+
+  public void setTaskCreated(Integer taskCreated) {
+    this.taskCreated = taskCreated;
+  }
+
+  public GetStateResponse taskUpdated(Integer taskUpdated) {
+    this.taskUpdated = taskUpdated;
+    return this;
+  }
+
+   /**
+   * Get taskUpdated
+   * @return taskUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskUpdated() {
+    return taskUpdated;
+  }
+
+  public void setTaskUpdated(Integer taskUpdated) {
+    this.taskUpdated = taskUpdated;
+  }
+
+  public GetStateResponse taskReordered(Integer taskReordered) {
+    this.taskReordered = taskReordered;
+    return this;
+  }
+
+   /**
+   * Get taskReordered
+   * @return taskReordered
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskReordered() {
+    return taskReordered;
+  }
+
+  public void setTaskReordered(Integer taskReordered) {
+    this.taskReordered = taskReordered;
+  }
+
+  public GetStateResponse taskDeleted(Integer taskDeleted) {
+    this.taskDeleted = taskDeleted;
+    return this;
+  }
+
+   /**
+   * Get taskDeleted
+   * @return taskDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskDeleted() {
+    return taskDeleted;
+  }
+
+  public void setTaskDeleted(Integer taskDeleted) {
+    this.taskDeleted = taskDeleted;
+  }
+
+  public GetStateResponse taskMovedAll(Integer taskMovedAll) {
+    this.taskMovedAll = taskMovedAll;
+    return this;
+  }
+
+   /**
+   * Get taskMovedAll
+   * @return taskMovedAll
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskMovedAll() {
+    return taskMovedAll;
+  }
+
+  public void setTaskMovedAll(Integer taskMovedAll) {
+    this.taskMovedAll = taskMovedAll;
+  }
+
+  public GetStateResponse taskStageCreated(Integer taskStageCreated) {
+    this.taskStageCreated = taskStageCreated;
+    return this;
+  }
+
+   /**
+   * Get taskStageCreated
+   * @return taskStageCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskStageCreated() {
+    return taskStageCreated;
+  }
+
+  public void setTaskStageCreated(Integer taskStageCreated) {
+    this.taskStageCreated = taskStageCreated;
+  }
+
+  public GetStateResponse taskStageUpdated(Integer taskStageUpdated) {
+    this.taskStageUpdated = taskStageUpdated;
+    return this;
+  }
+
+   /**
+   * Get taskStageUpdated
+   * @return taskStageUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskStageUpdated() {
+    return taskStageUpdated;
+  }
+
+  public void setTaskStageUpdated(Integer taskStageUpdated) {
+    this.taskStageUpdated = taskStageUpdated;
+  }
+
+  public GetStateResponse taskStageDeleted(Integer taskStageDeleted) {
+    this.taskStageDeleted = taskStageDeleted;
+    return this;
+  }
+
+   /**
+   * Get taskStageDeleted
+   * @return taskStageDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskStageDeleted() {
+    return taskStageDeleted;
+  }
+
+  public void setTaskStageDeleted(Integer taskStageDeleted) {
+    this.taskStageDeleted = taskStageDeleted;
+  }
+
+  public GetStateResponse taskBoardCreated(Integer taskBoardCreated) {
+    this.taskBoardCreated = taskBoardCreated;
+    return this;
+  }
+
+   /**
+   * Get taskBoardCreated
+   * @return taskBoardCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskBoardCreated() {
+    return taskBoardCreated;
+  }
+
+  public void setTaskBoardCreated(Integer taskBoardCreated) {
+    this.taskBoardCreated = taskBoardCreated;
+  }
+
+  public GetStateResponse taskBoardUpdated(Integer taskBoardUpdated) {
+    this.taskBoardUpdated = taskBoardUpdated;
+    return this;
+  }
+
+   /**
+   * Get taskBoardUpdated
+   * @return taskBoardUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskBoardUpdated() {
+    return taskBoardUpdated;
+  }
+
+  public void setTaskBoardUpdated(Integer taskBoardUpdated) {
+    this.taskBoardUpdated = taskBoardUpdated;
+  }
+
+  public GetStateResponse taskBoardReordered(Integer taskBoardReordered) {
+    this.taskBoardReordered = taskBoardReordered;
+    return this;
+  }
+
+   /**
+   * Get taskBoardReordered
+   * @return taskBoardReordered
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskBoardReordered() {
+    return taskBoardReordered;
+  }
+
+  public void setTaskBoardReordered(Integer taskBoardReordered) {
+    this.taskBoardReordered = taskBoardReordered;
+  }
+
+  public GetStateResponse taskBoardDeleted(Integer taskBoardDeleted) {
+    this.taskBoardDeleted = taskBoardDeleted;
+    return this;
+  }
+
+   /**
+   * Get taskBoardDeleted
+   * @return taskBoardDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskBoardDeleted() {
+    return taskBoardDeleted;
+  }
+
+  public void setTaskBoardDeleted(Integer taskBoardDeleted) {
+    this.taskBoardDeleted = taskBoardDeleted;
+  }
+
+  public GetStateResponse taskBoardArchived(Integer taskBoardArchived) {
+    this.taskBoardArchived = taskBoardArchived;
+    return this;
+  }
+
+   /**
+   * Get taskBoardArchived
+   * @return taskBoardArchived
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskBoardArchived() {
+    return taskBoardArchived;
+  }
+
+  public void setTaskBoardArchived(Integer taskBoardArchived) {
+    this.taskBoardArchived = taskBoardArchived;
+  }
+
+  public GetStateResponse taskChecklistCreated(Integer taskChecklistCreated) {
+    this.taskChecklistCreated = taskChecklistCreated;
+    return this;
+  }
+
+   /**
+   * Get taskChecklistCreated
+   * @return taskChecklistCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskChecklistCreated() {
+    return taskChecklistCreated;
+  }
+
+  public void setTaskChecklistCreated(Integer taskChecklistCreated) {
+    this.taskChecklistCreated = taskChecklistCreated;
+  }
+
+  public GetStateResponse taskChecklistUpdated(Integer taskChecklistUpdated) {
+    this.taskChecklistUpdated = taskChecklistUpdated;
+    return this;
+  }
+
+   /**
+   * Get taskChecklistUpdated
+   * @return taskChecklistUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskChecklistUpdated() {
+    return taskChecklistUpdated;
+  }
+
+  public void setTaskChecklistUpdated(Integer taskChecklistUpdated) {
+    this.taskChecklistUpdated = taskChecklistUpdated;
+  }
+
+  public GetStateResponse taskChecklistDeleted(Integer taskChecklistDeleted) {
+    this.taskChecklistDeleted = taskChecklistDeleted;
+    return this;
+  }
+
+   /**
+   * Get taskChecklistDeleted
+   * @return taskChecklistDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskChecklistDeleted() {
+    return taskChecklistDeleted;
+  }
+
+  public void setTaskChecklistDeleted(Integer taskChecklistDeleted) {
+    this.taskChecklistDeleted = taskChecklistDeleted;
+  }
+
+  public GetStateResponse taskChecklistBulkMarked(Integer taskChecklistBulkMarked) {
+    this.taskChecklistBulkMarked = taskChecklistBulkMarked;
+    return this;
+  }
+
+   /**
+   * Get taskChecklistBulkMarked
+   * @return taskChecklistBulkMarked
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskChecklistBulkMarked() {
+    return taskChecklistBulkMarked;
+  }
+
+  public void setTaskChecklistBulkMarked(Integer taskChecklistBulkMarked) {
+    this.taskChecklistBulkMarked = taskChecklistBulkMarked;
+  }
+
+  public GetStateResponse taskChecklistItemCreated(Integer taskChecklistItemCreated) {
+    this.taskChecklistItemCreated = taskChecklistItemCreated;
+    return this;
+  }
+
+   /**
+   * Get taskChecklistItemCreated
+   * @return taskChecklistItemCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskChecklistItemCreated() {
+    return taskChecklistItemCreated;
+  }
+
+  public void setTaskChecklistItemCreated(Integer taskChecklistItemCreated) {
+    this.taskChecklistItemCreated = taskChecklistItemCreated;
+  }
+
+  public GetStateResponse taskChecklistItemUpdated(Integer taskChecklistItemUpdated) {
+    this.taskChecklistItemUpdated = taskChecklistItemUpdated;
+    return this;
+  }
+
+   /**
+   * Get taskChecklistItemUpdated
+   * @return taskChecklistItemUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskChecklistItemUpdated() {
+    return taskChecklistItemUpdated;
+  }
+
+  public void setTaskChecklistItemUpdated(Integer taskChecklistItemUpdated) {
+    this.taskChecklistItemUpdated = taskChecklistItemUpdated;
+  }
+
+  public GetStateResponse taskChecklistItemDeleted(Integer taskChecklistItemDeleted) {
+    this.taskChecklistItemDeleted = taskChecklistItemDeleted;
+    return this;
+  }
+
+   /**
+   * Get taskChecklistItemDeleted
+   * @return taskChecklistItemDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskChecklistItemDeleted() {
+    return taskChecklistItemDeleted;
+  }
+
+  public void setTaskChecklistItemDeleted(Integer taskChecklistItemDeleted) {
+    this.taskChecklistItemDeleted = taskChecklistItemDeleted;
+  }
+
+  public GetStateResponse taskCommentCreated(Integer taskCommentCreated) {
+    this.taskCommentCreated = taskCommentCreated;
+    return this;
+  }
+
+   /**
+   * Get taskCommentCreated
+   * @return taskCommentCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskCommentCreated() {
+    return taskCommentCreated;
+  }
+
+  public void setTaskCommentCreated(Integer taskCommentCreated) {
+    this.taskCommentCreated = taskCommentCreated;
+  }
+
+  public GetStateResponse taskCommentDeleted(Integer taskCommentDeleted) {
+    this.taskCommentDeleted = taskCommentDeleted;
+    return this;
+  }
+
+   /**
+   * Get taskCommentDeleted
+   * @return taskCommentDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTaskCommentDeleted() {
+    return taskCommentDeleted;
+  }
+
+  public void setTaskCommentDeleted(Integer taskCommentDeleted) {
+    this.taskCommentDeleted = taskCommentDeleted;
+  }
+
+  public GetStateResponse pinnedContactAdded(Integer pinnedContactAdded) {
+    this.pinnedContactAdded = pinnedContactAdded;
+    return this;
+  }
+
+   /**
+   * Get pinnedContactAdded
+   * @return pinnedContactAdded
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getPinnedContactAdded() {
+    return pinnedContactAdded;
+  }
+
+  public void setPinnedContactAdded(Integer pinnedContactAdded) {
+    this.pinnedContactAdded = pinnedContactAdded;
+  }
+
+  public GetStateResponse pinnedContactRemoved(Integer pinnedContactRemoved) {
+    this.pinnedContactRemoved = pinnedContactRemoved;
+    return this;
+  }
+
+   /**
+   * Get pinnedContactRemoved
+   * @return pinnedContactRemoved
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getPinnedContactRemoved() {
+    return pinnedContactRemoved;
+  }
+
+  public void setPinnedContactRemoved(Integer pinnedContactRemoved) {
+    this.pinnedContactRemoved = pinnedContactRemoved;
+  }
+
+  public GetStateResponse pinnedContactReordered(Integer pinnedContactReordered) {
+    this.pinnedContactReordered = pinnedContactReordered;
+    return this;
+  }
+
+   /**
+   * Get pinnedContactReordered
+   * @return pinnedContactReordered
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getPinnedContactReordered() {
+    return pinnedContactReordered;
+  }
+
+  public void setPinnedContactReordered(Integer pinnedContactReordered) {
+    this.pinnedContactReordered = pinnedContactReordered;
+  }
+
+  public GetStateResponse pinnedContactStateChanged(Integer pinnedContactStateChanged) {
+    this.pinnedContactStateChanged = pinnedContactStateChanged;
+    return this;
+  }
+
+   /**
+   * Get pinnedContactStateChanged
+   * @return pinnedContactStateChanged
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getPinnedContactStateChanged() {
+    return pinnedContactStateChanged;
+  }
+
+  public void setPinnedContactStateChanged(Integer pinnedContactStateChanged) {
+    this.pinnedContactStateChanged = pinnedContactStateChanged;
+  }
+
+  public GetStateResponse whatsappAccountAdded(Integer whatsappAccountAdded) {
+    this.whatsappAccountAdded = whatsappAccountAdded;
+    return this;
+  }
+
+   /**
+   * Get whatsappAccountAdded
+   * @return whatsappAccountAdded
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getWhatsappAccountAdded() {
+    return whatsappAccountAdded;
+  }
+
+  public void setWhatsappAccountAdded(Integer whatsappAccountAdded) {
+    this.whatsappAccountAdded = whatsappAccountAdded;
+  }
+
+  public GetStateResponse whatsappAccountRemoved(Integer whatsappAccountRemoved) {
+    this.whatsappAccountRemoved = whatsappAccountRemoved;
+    return this;
+  }
+
+   /**
+   * Get whatsappAccountRemoved
+   * @return whatsappAccountRemoved
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getWhatsappAccountRemoved() {
+    return whatsappAccountRemoved;
+  }
+
+  public void setWhatsappAccountRemoved(Integer whatsappAccountRemoved) {
+    this.whatsappAccountRemoved = whatsappAccountRemoved;
+  }
+
+  public GetStateResponse whatsappAccountChanged(Integer whatsappAccountChanged) {
+    this.whatsappAccountChanged = whatsappAccountChanged;
+    return this;
+  }
+
+   /**
+   * Get whatsappAccountChanged
+   * @return whatsappAccountChanged
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getWhatsappAccountChanged() {
+    return whatsappAccountChanged;
+  }
+
+  public void setWhatsappAccountChanged(Integer whatsappAccountChanged) {
+    this.whatsappAccountChanged = whatsappAccountChanged;
+  }
+
+  public GetStateResponse facebookPageAdded(Integer facebookPageAdded) {
+    this.facebookPageAdded = facebookPageAdded;
+    return this;
+  }
+
+   /**
+   * Get facebookPageAdded
+   * @return facebookPageAdded
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getFacebookPageAdded() {
+    return facebookPageAdded;
+  }
+
+  public void setFacebookPageAdded(Integer facebookPageAdded) {
+    this.facebookPageAdded = facebookPageAdded;
+  }
+
+  public GetStateResponse facebookPageRemoved(Integer facebookPageRemoved) {
+    this.facebookPageRemoved = facebookPageRemoved;
+    return this;
+  }
+
+   /**
+   * Get facebookPageRemoved
+   * @return facebookPageRemoved
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getFacebookPageRemoved() {
+    return facebookPageRemoved;
+  }
+
+  public void setFacebookPageRemoved(Integer facebookPageRemoved) {
+    this.facebookPageRemoved = facebookPageRemoved;
+  }
+
+  public GetStateResponse facebookPageChanged(Integer facebookPageChanged) {
+    this.facebookPageChanged = facebookPageChanged;
+    return this;
+  }
+
+   /**
+   * Get facebookPageChanged
+   * @return facebookPageChanged
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getFacebookPageChanged() {
+    return facebookPageChanged;
+  }
+
+  public void setFacebookPageChanged(Integer facebookPageChanged) {
+    this.facebookPageChanged = facebookPageChanged;
+  }
+
+  public GetStateResponse instagramAccountAdded(Integer instagramAccountAdded) {
+    this.instagramAccountAdded = instagramAccountAdded;
+    return this;
+  }
+
+   /**
+   * Get instagramAccountAdded
+   * @return instagramAccountAdded
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getInstagramAccountAdded() {
+    return instagramAccountAdded;
+  }
+
+  public void setInstagramAccountAdded(Integer instagramAccountAdded) {
+    this.instagramAccountAdded = instagramAccountAdded;
+  }
+
+  public GetStateResponse instagramAccountRemoved(Integer instagramAccountRemoved) {
+    this.instagramAccountRemoved = instagramAccountRemoved;
+    return this;
+  }
+
+   /**
+   * Get instagramAccountRemoved
+   * @return instagramAccountRemoved
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getInstagramAccountRemoved() {
+    return instagramAccountRemoved;
+  }
+
+  public void setInstagramAccountRemoved(Integer instagramAccountRemoved) {
+    this.instagramAccountRemoved = instagramAccountRemoved;
+  }
+
+  public GetStateResponse instagramAccountChanged(Integer instagramAccountChanged) {
+    this.instagramAccountChanged = instagramAccountChanged;
+    return this;
+  }
+
+   /**
+   * Get instagramAccountChanged
+   * @return instagramAccountChanged
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getInstagramAccountChanged() {
+    return instagramAccountChanged;
+  }
+
+  public void setInstagramAccountChanged(Integer instagramAccountChanged) {
+    this.instagramAccountChanged = instagramAccountChanged;
+  }
+
+  public GetStateResponse unreadTicketsCountUpdated(Integer unreadTicketsCountUpdated) {
+    this.unreadTicketsCountUpdated = unreadTicketsCountUpdated;
+    return this;
+  }
+
+   /**
+   * Get unreadTicketsCountUpdated
+   * @return unreadTicketsCountUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getUnreadTicketsCountUpdated() {
+    return unreadTicketsCountUpdated;
+  }
+
+  public void setUnreadTicketsCountUpdated(Integer unreadTicketsCountUpdated) {
+    this.unreadTicketsCountUpdated = unreadTicketsCountUpdated;
+  }
+
+  public GetStateResponse ticketDeleted(Integer ticketDeleted) {
+    this.ticketDeleted = ticketDeleted;
+    return this;
+  }
+
+   /**
+   * Get ticketDeleted
+   * @return ticketDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTicketDeleted() {
+    return ticketDeleted;
+  }
+
+  public void setTicketDeleted(Integer ticketDeleted) {
+    this.ticketDeleted = ticketDeleted;
+  }
+
+  public GetStateResponse ticketUpdated(Integer ticketUpdated) {
+    this.ticketUpdated = ticketUpdated;
+    return this;
+  }
+
+   /**
+   * Get ticketUpdated
+   * @return ticketUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTicketUpdated() {
+    return ticketUpdated;
+  }
+
+  public void setTicketUpdated(Integer ticketUpdated) {
+    this.ticketUpdated = ticketUpdated;
+  }
+
+  public GetStateResponse ticketCreated(Integer ticketCreated) {
+    this.ticketCreated = ticketCreated;
+    return this;
+  }
+
+   /**
+   * Get ticketCreated
+   * @return ticketCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTicketCreated() {
+    return ticketCreated;
+  }
+
+  public void setTicketCreated(Integer ticketCreated) {
+    this.ticketCreated = ticketCreated;
+  }
+
+  public GetStateResponse ticketBulkUpdated(Integer ticketBulkUpdated) {
+    this.ticketBulkUpdated = ticketBulkUpdated;
+    return this;
+  }
+
+   /**
+   * Get ticketBulkUpdated
+   * @return ticketBulkUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTicketBulkUpdated() {
+    return ticketBulkUpdated;
+  }
+
+  public void setTicketBulkUpdated(Integer ticketBulkUpdated) {
+    this.ticketBulkUpdated = ticketBulkUpdated;
+  }
+
+  public GetStateResponse ticketBulkDeleted(Integer ticketBulkDeleted) {
+    this.ticketBulkDeleted = ticketBulkDeleted;
+    return this;
+  }
+
+   /**
+   * Get ticketBulkDeleted
+   * @return ticketBulkDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTicketBulkDeleted() {
+    return ticketBulkDeleted;
+  }
+
+  public void setTicketBulkDeleted(Integer ticketBulkDeleted) {
+    this.ticketBulkDeleted = ticketBulkDeleted;
+  }
+
+  public GetStateResponse ticketMessageCreated(Integer ticketMessageCreated) {
+    this.ticketMessageCreated = ticketMessageCreated;
+    return this;
+  }
+
+   /**
+   * Get ticketMessageCreated
+   * @return ticketMessageCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTicketMessageCreated() {
+    return ticketMessageCreated;
+  }
+
+  public void setTicketMessageCreated(Integer ticketMessageCreated) {
+    this.ticketMessageCreated = ticketMessageCreated;
+  }
+
+  public GetStateResponse ticketMessageUpdated(Integer ticketMessageUpdated) {
+    this.ticketMessageUpdated = ticketMessageUpdated;
+    return this;
+  }
+
+   /**
+   * Get ticketMessageUpdated
+   * @return ticketMessageUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTicketMessageUpdated() {
+    return ticketMessageUpdated;
+  }
+
+  public void setTicketMessageUpdated(Integer ticketMessageUpdated) {
+    this.ticketMessageUpdated = ticketMessageUpdated;
+  }
+
+  public GetStateResponse ticketMessageDeleted(Integer ticketMessageDeleted) {
+    this.ticketMessageDeleted = ticketMessageDeleted;
+    return this;
+  }
+
+   /**
+   * Get ticketMessageDeleted
+   * @return ticketMessageDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTicketMessageDeleted() {
+    return ticketMessageDeleted;
+  }
+
+  public void setTicketMessageDeleted(Integer ticketMessageDeleted) {
+    this.ticketMessageDeleted = ticketMessageDeleted;
+  }
+
+  public GetStateResponse subAccountsClosed(Integer subAccountsClosed) {
+    this.subAccountsClosed = subAccountsClosed;
+    return this;
+  }
+
+   /**
+   * Get subAccountsClosed
+   * @return subAccountsClosed
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getSubAccountsClosed() {
+    return subAccountsClosed;
+  }
+
+  public void setSubAccountsClosed(Integer subAccountsClosed) {
+    this.subAccountsClosed = subAccountsClosed;
+  }
+
+  public GetStateResponse userInvited(Integer userInvited) {
+    this.userInvited = userInvited;
+    return this;
+  }
+
+   /**
+   * Get userInvited
+   * @return userInvited
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getUserInvited() {
+    return userInvited;
+  }
+
+  public void setUserInvited(Integer userInvited) {
+    this.userInvited = userInvited;
+  }
+
+  public GetStateResponse filteredViewCreated(Integer filteredViewCreated) {
+    this.filteredViewCreated = filteredViewCreated;
+    return this;
+  }
+
+   /**
+   * Get filteredViewCreated
+   * @return filteredViewCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getFilteredViewCreated() {
+    return filteredViewCreated;
+  }
+
+  public void setFilteredViewCreated(Integer filteredViewCreated) {
+    this.filteredViewCreated = filteredViewCreated;
+  }
+
+  public GetStateResponse filteredViewCountUpdated(Integer filteredViewCountUpdated) {
+    this.filteredViewCountUpdated = filteredViewCountUpdated;
+    return this;
+  }
+
+   /**
+   * Get filteredViewCountUpdated
+   * @return filteredViewCountUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getFilteredViewCountUpdated() {
+    return filteredViewCountUpdated;
+  }
+
+  public void setFilteredViewCountUpdated(Integer filteredViewCountUpdated) {
+    this.filteredViewCountUpdated = filteredViewCountUpdated;
+  }
+
+  public GetStateResponse filteredViewDeleted(Integer filteredViewDeleted) {
+    this.filteredViewDeleted = filteredViewDeleted;
+    return this;
+  }
+
+   /**
+   * Get filteredViewDeleted
+   * @return filteredViewDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getFilteredViewDeleted() {
+    return filteredViewDeleted;
+  }
+
+  public void setFilteredViewDeleted(Integer filteredViewDeleted) {
+    this.filteredViewDeleted = filteredViewDeleted;
+  }
+
+  public GetStateResponse forwardingInboxWasVerified(Integer forwardingInboxWasVerified) {
+    this.forwardingInboxWasVerified = forwardingInboxWasVerified;
+    return this;
+  }
+
+   /**
+   * Get forwardingInboxWasVerified
+   * @return forwardingInboxWasVerified
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getForwardingInboxWasVerified() {
+    return forwardingInboxWasVerified;
+  }
+
+  public void setForwardingInboxWasVerified(Integer forwardingInboxWasVerified) {
+    this.forwardingInboxWasVerified = forwardingInboxWasVerified;
+  }
+
+  public GetStateResponse forwardingInboxCheckWasFailed(Integer forwardingInboxCheckWasFailed) {
+    this.forwardingInboxCheckWasFailed = forwardingInboxCheckWasFailed;
+    return this;
+  }
+
+   /**
+   * Get forwardingInboxCheckWasFailed
+   * @return forwardingInboxCheckWasFailed
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getForwardingInboxCheckWasFailed() {
+    return forwardingInboxCheckWasFailed;
+  }
+
+  public void setForwardingInboxCheckWasFailed(Integer forwardingInboxCheckWasFailed) {
+    this.forwardingInboxCheckWasFailed = forwardingInboxCheckWasFailed;
+  }
+
+  public GetStateResponse forwardingInboxVerificationLinkWasParsed(Integer forwardingInboxVerificationLinkWasParsed) {
+    this.forwardingInboxVerificationLinkWasParsed = forwardingInboxVerificationLinkWasParsed;
+    return this;
+  }
+
+   /**
+   * Get forwardingInboxVerificationLinkWasParsed
+   * @return forwardingInboxVerificationLinkWasParsed
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getForwardingInboxVerificationLinkWasParsed() {
+    return forwardingInboxVerificationLinkWasParsed;
+  }
+
+  public void setForwardingInboxVerificationLinkWasParsed(Integer forwardingInboxVerificationLinkWasParsed) {
+    this.forwardingInboxVerificationLinkWasParsed = forwardingInboxVerificationLinkWasParsed;
+  }
+
+  public GetStateResponse tendlcLinkNumberStatusUpdated(Integer tendlcLinkNumberStatusUpdated) {
+    this.tendlcLinkNumberStatusUpdated = tendlcLinkNumberStatusUpdated;
+    return this;
+  }
+
+   /**
+   * Get tendlcLinkNumberStatusUpdated
+   * @return tendlcLinkNumberStatusUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getTendlcLinkNumberStatusUpdated() {
+    return tendlcLinkNumberStatusUpdated;
+  }
+
+  public void setTendlcLinkNumberStatusUpdated(Integer tendlcLinkNumberStatusUpdated) {
+    this.tendlcLinkNumberStatusUpdated = tendlcLinkNumberStatusUpdated;
+  }
+
+  public GetStateResponse channelPresence(Integer channelPresence) {
+    this.channelPresence = channelPresence;
+    return this;
+  }
+
+   /**
+   * Get channelPresence
+   * @return channelPresence
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getChannelPresence() {
+    return channelPresence;
+  }
+
+  public void setChannelPresence(Integer channelPresence) {
+    this.channelPresence = channelPresence;
+  }
+
+  public GetStateResponse dealCreated(Integer dealCreated) {
+    this.dealCreated = dealCreated;
+    return this;
+  }
+
+   /**
+   * Get dealCreated
+   * @return dealCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealCreated() {
+    return dealCreated;
+  }
+
+  public void setDealCreated(Integer dealCreated) {
+    this.dealCreated = dealCreated;
+  }
+
+  public GetStateResponse dealUpdated(Integer dealUpdated) {
+    this.dealUpdated = dealUpdated;
+    return this;
+  }
+
+   /**
+   * Get dealUpdated
+   * @return dealUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealUpdated() {
+    return dealUpdated;
+  }
+
+  public void setDealUpdated(Integer dealUpdated) {
+    this.dealUpdated = dealUpdated;
+  }
+
+  public GetStateResponse dealDeleted(Integer dealDeleted) {
+    this.dealDeleted = dealDeleted;
+    return this;
+  }
+
+   /**
+   * Get dealDeleted
+   * @return dealDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealDeleted() {
+    return dealDeleted;
+  }
+
+  public void setDealDeleted(Integer dealDeleted) {
+    this.dealDeleted = dealDeleted;
+  }
+
+  public GetStateResponse dealMoved(Integer dealMoved) {
+    this.dealMoved = dealMoved;
+    return this;
+  }
+
+   /**
+   * Get dealMoved
+   * @return dealMoved
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealMoved() {
+    return dealMoved;
+  }
+
+  public void setDealMoved(Integer dealMoved) {
+    this.dealMoved = dealMoved;
+  }
+
+  public GetStateResponse dealStageCreated(Integer dealStageCreated) {
+    this.dealStageCreated = dealStageCreated;
+    return this;
+  }
+
+   /**
+   * Get dealStageCreated
+   * @return dealStageCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealStageCreated() {
+    return dealStageCreated;
+  }
+
+  public void setDealStageCreated(Integer dealStageCreated) {
+    this.dealStageCreated = dealStageCreated;
+  }
+
+  public GetStateResponse dealStageUpdated(Integer dealStageUpdated) {
+    this.dealStageUpdated = dealStageUpdated;
+    return this;
+  }
+
+   /**
+   * Get dealStageUpdated
+   * @return dealStageUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealStageUpdated() {
+    return dealStageUpdated;
+  }
+
+  public void setDealStageUpdated(Integer dealStageUpdated) {
+    this.dealStageUpdated = dealStageUpdated;
+  }
+
+  public GetStateResponse dealStageDeleted(Integer dealStageDeleted) {
+    this.dealStageDeleted = dealStageDeleted;
+    return this;
+  }
+
+   /**
+   * Get dealStageDeleted
+   * @return dealStageDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealStageDeleted() {
+    return dealStageDeleted;
+  }
+
+  public void setDealStageDeleted(Integer dealStageDeleted) {
+    this.dealStageDeleted = dealStageDeleted;
+  }
+
+  public GetStateResponse dealPipelineCreated(Integer dealPipelineCreated) {
+    this.dealPipelineCreated = dealPipelineCreated;
+    return this;
+  }
+
+   /**
+   * Get dealPipelineCreated
+   * @return dealPipelineCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealPipelineCreated() {
+    return dealPipelineCreated;
+  }
+
+  public void setDealPipelineCreated(Integer dealPipelineCreated) {
+    this.dealPipelineCreated = dealPipelineCreated;
+  }
+
+  public GetStateResponse dealPipelineUpdated(Integer dealPipelineUpdated) {
+    this.dealPipelineUpdated = dealPipelineUpdated;
+    return this;
+  }
+
+   /**
+   * Get dealPipelineUpdated
+   * @return dealPipelineUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealPipelineUpdated() {
+    return dealPipelineUpdated;
+  }
+
+  public void setDealPipelineUpdated(Integer dealPipelineUpdated) {
+    this.dealPipelineUpdated = dealPipelineUpdated;
+  }
+
+  public GetStateResponse dealPipelineDeleted(Integer dealPipelineDeleted) {
+    this.dealPipelineDeleted = dealPipelineDeleted;
+    return this;
+  }
+
+   /**
+   * Get dealPipelineDeleted
+   * @return dealPipelineDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealPipelineDeleted() {
+    return dealPipelineDeleted;
+  }
+
+  public void setDealPipelineDeleted(Integer dealPipelineDeleted) {
+    this.dealPipelineDeleted = dealPipelineDeleted;
+  }
+
+  public GetStateResponse dealPipelineArchived(Integer dealPipelineArchived) {
+    this.dealPipelineArchived = dealPipelineArchived;
+    return this;
+  }
+
+   /**
+   * Get dealPipelineArchived
+   * @return dealPipelineArchived
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealPipelineArchived() {
+    return dealPipelineArchived;
+  }
+
+  public void setDealPipelineArchived(Integer dealPipelineArchived) {
+    this.dealPipelineArchived = dealPipelineArchived;
+  }
+
+  public GetStateResponse dealPipelineReordered(Integer dealPipelineReordered) {
+    this.dealPipelineReordered = dealPipelineReordered;
+    return this;
+  }
+
+   /**
+   * Get dealPipelineReordered
+   * @return dealPipelineReordered
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealPipelineReordered() {
+    return dealPipelineReordered;
+  }
+
+  public void setDealPipelineReordered(Integer dealPipelineReordered) {
+    this.dealPipelineReordered = dealPipelineReordered;
+  }
+
+  public GetStateResponse dealActivityUpdated(Integer dealActivityUpdated) {
+    this.dealActivityUpdated = dealActivityUpdated;
+    return this;
+  }
+
+   /**
+   * Get dealActivityUpdated
+   * @return dealActivityUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealActivityUpdated() {
+    return dealActivityUpdated;
+  }
+
+  public void setDealActivityUpdated(Integer dealActivityUpdated) {
+    this.dealActivityUpdated = dealActivityUpdated;
+  }
+
+  public GetStateResponse dealActivityItemCreated(Integer dealActivityItemCreated) {
+    this.dealActivityItemCreated = dealActivityItemCreated;
+    return this;
+  }
+
+   /**
+   * Get dealActivityItemCreated
+   * @return dealActivityItemCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealActivityItemCreated() {
+    return dealActivityItemCreated;
+  }
+
+  public void setDealActivityItemCreated(Integer dealActivityItemCreated) {
+    this.dealActivityItemCreated = dealActivityItemCreated;
+  }
+
+  public GetStateResponse dealActivityItemUpdated(Integer dealActivityItemUpdated) {
+    this.dealActivityItemUpdated = dealActivityItemUpdated;
+    return this;
+  }
+
+   /**
+   * Get dealActivityItemUpdated
+   * @return dealActivityItemUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealActivityItemUpdated() {
+    return dealActivityItemUpdated;
+  }
+
+  public void setDealActivityItemUpdated(Integer dealActivityItemUpdated) {
+    this.dealActivityItemUpdated = dealActivityItemUpdated;
+  }
+
+  public GetStateResponse dealActivityItemDeleted(Integer dealActivityItemDeleted) {
+    this.dealActivityItemDeleted = dealActivityItemDeleted;
+    return this;
+  }
+
+   /**
+   * Get dealActivityItemDeleted
+   * @return dealActivityItemDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealActivityItemDeleted() {
+    return dealActivityItemDeleted;
+  }
+
+  public void setDealActivityItemDeleted(Integer dealActivityItemDeleted) {
+    this.dealActivityItemDeleted = dealActivityItemDeleted;
+  }
+
+  public GetStateResponse dealActivityItemBulkMarked(Integer dealActivityItemBulkMarked) {
+    this.dealActivityItemBulkMarked = dealActivityItemBulkMarked;
+    return this;
+  }
+
+   /**
+   * Get dealActivityItemBulkMarked
+   * @return dealActivityItemBulkMarked
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealActivityItemBulkMarked() {
+    return dealActivityItemBulkMarked;
+  }
+
+  public void setDealActivityItemBulkMarked(Integer dealActivityItemBulkMarked) {
+    this.dealActivityItemBulkMarked = dealActivityItemBulkMarked;
+  }
+
+  public GetStateResponse dealTimelineItemDeleted(Integer dealTimelineItemDeleted) {
+    this.dealTimelineItemDeleted = dealTimelineItemDeleted;
+    return this;
+  }
+
+   /**
+   * Get dealTimelineItemDeleted
+   * @return dealTimelineItemDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealTimelineItemDeleted() {
+    return dealTimelineItemDeleted;
+  }
+
+  public void setDealTimelineItemDeleted(Integer dealTimelineItemDeleted) {
+    this.dealTimelineItemDeleted = dealTimelineItemDeleted;
+  }
+
+  public GetStateResponse dealTimelineItemCreated(Integer dealTimelineItemCreated) {
+    this.dealTimelineItemCreated = dealTimelineItemCreated;
+    return this;
+  }
+
+   /**
+   * Get dealTimelineItemCreated
+   * @return dealTimelineItemCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getDealTimelineItemCreated() {
+    return dealTimelineItemCreated;
+  }
+
+  public void setDealTimelineItemCreated(Integer dealTimelineItemCreated) {
+    this.dealTimelineItemCreated = dealTimelineItemCreated;
+  }
+
+  public GetStateResponse aiAssistantCreated(Integer aiAssistantCreated) {
+    this.aiAssistantCreated = aiAssistantCreated;
+    return this;
+  }
+
+   /**
+   * Get aiAssistantCreated
+   * @return aiAssistantCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getAiAssistantCreated() {
+    return aiAssistantCreated;
+  }
+
+  public void setAiAssistantCreated(Integer aiAssistantCreated) {
+    this.aiAssistantCreated = aiAssistantCreated;
+  }
+
+  public GetStateResponse aiAssistantState(Integer aiAssistantState) {
+    this.aiAssistantState = aiAssistantState;
+    return this;
+  }
+
+   /**
+   * Get aiAssistantState
+   * @return aiAssistantState
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getAiAssistantState() {
+    return aiAssistantState;
+  }
+
+  public void setAiAssistantState(Integer aiAssistantState) {
+    this.aiAssistantState = aiAssistantState;
+  }
+
+  public GetStateResponse aiAssistantDeleted(Integer aiAssistantDeleted) {
+    this.aiAssistantDeleted = aiAssistantDeleted;
+    return this;
+  }
+
+   /**
+   * Get aiAssistantDeleted
+   * @return aiAssistantDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getAiAssistantDeleted() {
+    return aiAssistantDeleted;
+  }
+
+  public void setAiAssistantDeleted(Integer aiAssistantDeleted) {
+    this.aiAssistantDeleted = aiAssistantDeleted;
+  }
+
+  public GetStateResponse aiAssistantLinkDeleted(Integer aiAssistantLinkDeleted) {
+    this.aiAssistantLinkDeleted = aiAssistantLinkDeleted;
+    return this;
+  }
+
+   /**
+   * Get aiAssistantLinkDeleted
+   * @return aiAssistantLinkDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getAiAssistantLinkDeleted() {
+    return aiAssistantLinkDeleted;
+  }
+
+  public void setAiAssistantLinkDeleted(Integer aiAssistantLinkDeleted) {
+    this.aiAssistantLinkDeleted = aiAssistantLinkDeleted;
+  }
+
+  public GetStateResponse aiAssistantLinkState(Integer aiAssistantLinkState) {
+    this.aiAssistantLinkState = aiAssistantLinkState;
+    return this;
+  }
+
+   /**
+   * Get aiAssistantLinkState
+   * @return aiAssistantLinkState
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getAiAssistantLinkState() {
+    return aiAssistantLinkState;
+  }
+
+  public void setAiAssistantLinkState(Integer aiAssistantLinkState) {
+    this.aiAssistantLinkState = aiAssistantLinkState;
+  }
+
+  public GetStateResponse aiAssistantLinkCreated(Integer aiAssistantLinkCreated) {
+    this.aiAssistantLinkCreated = aiAssistantLinkCreated;
+    return this;
+  }
+
+   /**
+   * Get aiAssistantLinkCreated
+   * @return aiAssistantLinkCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getAiAssistantLinkCreated() {
+    return aiAssistantLinkCreated;
+  }
+
+  public void setAiAssistantLinkCreated(Integer aiAssistantLinkCreated) {
+    this.aiAssistantLinkCreated = aiAssistantLinkCreated;
+  }
+
+  public GetStateResponse aiAssistantSubLinkState(Integer aiAssistantSubLinkState) {
+    this.aiAssistantSubLinkState = aiAssistantSubLinkState;
+    return this;
+  }
+
+   /**
+   * Get aiAssistantSubLinkState
+   * @return aiAssistantSubLinkState
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getAiAssistantSubLinkState() {
+    return aiAssistantSubLinkState;
+  }
+
+  public void setAiAssistantSubLinkState(Integer aiAssistantSubLinkState) {
+    this.aiAssistantSubLinkState = aiAssistantSubLinkState;
+  }
+
+  public GetStateResponse aiAssistantSubLinkCreated(Integer aiAssistantSubLinkCreated) {
+    this.aiAssistantSubLinkCreated = aiAssistantSubLinkCreated;
+    return this;
+  }
+
+   /**
+   * Get aiAssistantSubLinkCreated
+   * @return aiAssistantSubLinkCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getAiAssistantSubLinkCreated() {
+    return aiAssistantSubLinkCreated;
+  }
+
+  public void setAiAssistantSubLinkCreated(Integer aiAssistantSubLinkCreated) {
+    this.aiAssistantSubLinkCreated = aiAssistantSubLinkCreated;
+  }
+
+  public GetStateResponse emailCampaignEmailSenderCreated(Integer emailCampaignEmailSenderCreated) {
+    this.emailCampaignEmailSenderCreated = emailCampaignEmailSenderCreated;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignEmailSenderCreated
+   * @return emailCampaignEmailSenderCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignEmailSenderCreated() {
+    return emailCampaignEmailSenderCreated;
+  }
+
+  public void setEmailCampaignEmailSenderCreated(Integer emailCampaignEmailSenderCreated) {
+    this.emailCampaignEmailSenderCreated = emailCampaignEmailSenderCreated;
+  }
+
+  public GetStateResponse emailCampaignEmailSenderUpdated(Integer emailCampaignEmailSenderUpdated) {
+    this.emailCampaignEmailSenderUpdated = emailCampaignEmailSenderUpdated;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignEmailSenderUpdated
+   * @return emailCampaignEmailSenderUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignEmailSenderUpdated() {
+    return emailCampaignEmailSenderUpdated;
+  }
+
+  public void setEmailCampaignEmailSenderUpdated(Integer emailCampaignEmailSenderUpdated) {
+    this.emailCampaignEmailSenderUpdated = emailCampaignEmailSenderUpdated;
+  }
+
+  public GetStateResponse emailCampaignEmailSenderDeleted(Integer emailCampaignEmailSenderDeleted) {
+    this.emailCampaignEmailSenderDeleted = emailCampaignEmailSenderDeleted;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignEmailSenderDeleted
+   * @return emailCampaignEmailSenderDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignEmailSenderDeleted() {
+    return emailCampaignEmailSenderDeleted;
+  }
+
+  public void setEmailCampaignEmailSenderDeleted(Integer emailCampaignEmailSenderDeleted) {
+    this.emailCampaignEmailSenderDeleted = emailCampaignEmailSenderDeleted;
+  }
+
+  public GetStateResponse emailCampaignDomainCreated(Integer emailCampaignDomainCreated) {
+    this.emailCampaignDomainCreated = emailCampaignDomainCreated;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignDomainCreated
+   * @return emailCampaignDomainCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignDomainCreated() {
+    return emailCampaignDomainCreated;
+  }
+
+  public void setEmailCampaignDomainCreated(Integer emailCampaignDomainCreated) {
+    this.emailCampaignDomainCreated = emailCampaignDomainCreated;
+  }
+
+  public GetStateResponse emailCampaignDomainDeleted(Integer emailCampaignDomainDeleted) {
+    this.emailCampaignDomainDeleted = emailCampaignDomainDeleted;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignDomainDeleted
+   * @return emailCampaignDomainDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignDomainDeleted() {
+    return emailCampaignDomainDeleted;
+  }
+
+  public void setEmailCampaignDomainDeleted(Integer emailCampaignDomainDeleted) {
+    this.emailCampaignDomainDeleted = emailCampaignDomainDeleted;
+  }
+
+  public GetStateResponse emailCampaignDomainVerified(Integer emailCampaignDomainVerified) {
+    this.emailCampaignDomainVerified = emailCampaignDomainVerified;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignDomainVerified
+   * @return emailCampaignDomainVerified
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignDomainVerified() {
+    return emailCampaignDomainVerified;
+  }
+
+  public void setEmailCampaignDomainVerified(Integer emailCampaignDomainVerified) {
+    this.emailCampaignDomainVerified = emailCampaignDomainVerified;
+  }
+
+  public GetStateResponse emailCampaignDomainStatusChanged(Integer emailCampaignDomainStatusChanged) {
+    this.emailCampaignDomainStatusChanged = emailCampaignDomainStatusChanged;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignDomainStatusChanged
+   * @return emailCampaignDomainStatusChanged
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignDomainStatusChanged() {
+    return emailCampaignDomainStatusChanged;
+  }
+
+  public void setEmailCampaignDomainStatusChanged(Integer emailCampaignDomainStatusChanged) {
+    this.emailCampaignDomainStatusChanged = emailCampaignDomainStatusChanged;
+  }
+
+  public GetStateResponse emailCampaignDomainDkimVerified(Integer emailCampaignDomainDkimVerified) {
+    this.emailCampaignDomainDkimVerified = emailCampaignDomainDkimVerified;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignDomainDkimVerified
+   * @return emailCampaignDomainDkimVerified
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignDomainDkimVerified() {
+    return emailCampaignDomainDkimVerified;
+  }
+
+  public void setEmailCampaignDomainDkimVerified(Integer emailCampaignDomainDkimVerified) {
+    this.emailCampaignDomainDkimVerified = emailCampaignDomainDkimVerified;
+  }
+
+  public GetStateResponse emailCampaignDomainReturnPathVerified(Integer emailCampaignDomainReturnPathVerified) {
+    this.emailCampaignDomainReturnPathVerified = emailCampaignDomainReturnPathVerified;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignDomainReturnPathVerified
+   * @return emailCampaignDomainReturnPathVerified
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignDomainReturnPathVerified() {
+    return emailCampaignDomainReturnPathVerified;
+  }
+
+  public void setEmailCampaignDomainReturnPathVerified(Integer emailCampaignDomainReturnPathVerified) {
+    this.emailCampaignDomainReturnPathVerified = emailCampaignDomainReturnPathVerified;
+  }
+
+  public GetStateResponse emailCampaignDomainDmarcVerified(Integer emailCampaignDomainDmarcVerified) {
+    this.emailCampaignDomainDmarcVerified = emailCampaignDomainDmarcVerified;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignDomainDmarcVerified
+   * @return emailCampaignDomainDmarcVerified
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignDomainDmarcVerified() {
+    return emailCampaignDomainDmarcVerified;
+  }
+
+  public void setEmailCampaignDomainDmarcVerified(Integer emailCampaignDomainDmarcVerified) {
+    this.emailCampaignDomainDmarcVerified = emailCampaignDomainDmarcVerified;
+  }
+
+  public GetStateResponse emailCampaignDomainEntryVerificationChanged(Integer emailCampaignDomainEntryVerificationChanged) {
+    this.emailCampaignDomainEntryVerificationChanged = emailCampaignDomainEntryVerificationChanged;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignDomainEntryVerificationChanged
+   * @return emailCampaignDomainEntryVerificationChanged
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignDomainEntryVerificationChanged() {
+    return emailCampaignDomainEntryVerificationChanged;
+  }
+
+  public void setEmailCampaignDomainEntryVerificationChanged(Integer emailCampaignDomainEntryVerificationChanged) {
+    this.emailCampaignDomainEntryVerificationChanged = emailCampaignDomainEntryVerificationChanged;
+  }
+
+  public GetStateResponse emailCampaignProgressState(Integer emailCampaignProgressState) {
+    this.emailCampaignProgressState = emailCampaignProgressState;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignProgressState
+   * @return emailCampaignProgressState
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignProgressState() {
+    return emailCampaignProgressState;
+  }
+
+  public void setEmailCampaignProgressState(Integer emailCampaignProgressState) {
+    this.emailCampaignProgressState = emailCampaignProgressState;
+  }
+
+  public GetStateResponse emailCampaignUpdated(Integer emailCampaignUpdated) {
+    this.emailCampaignUpdated = emailCampaignUpdated;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignUpdated
+   * @return emailCampaignUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignUpdated() {
+    return emailCampaignUpdated;
+  }
+
+  public void setEmailCampaignUpdated(Integer emailCampaignUpdated) {
+    this.emailCampaignUpdated = emailCampaignUpdated;
+  }
+
+  public GetStateResponse smsCampaignInvalidated(Integer smsCampaignInvalidated) {
+    this.smsCampaignInvalidated = smsCampaignInvalidated;
+    return this;
+  }
+
+   /**
+   * Get smsCampaignInvalidated
+   * @return smsCampaignInvalidated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getSmsCampaignInvalidated() {
+    return smsCampaignInvalidated;
+  }
+
+  public void setSmsCampaignInvalidated(Integer smsCampaignInvalidated) {
+    this.smsCampaignInvalidated = smsCampaignInvalidated;
+  }
+
+  public GetStateResponse scheduledEmailCampaignCreated(Integer scheduledEmailCampaignCreated) {
+    this.scheduledEmailCampaignCreated = scheduledEmailCampaignCreated;
+    return this;
+  }
+
+   /**
+   * Get scheduledEmailCampaignCreated
+   * @return scheduledEmailCampaignCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getScheduledEmailCampaignCreated() {
+    return scheduledEmailCampaignCreated;
+  }
+
+  public void setScheduledEmailCampaignCreated(Integer scheduledEmailCampaignCreated) {
+    this.scheduledEmailCampaignCreated = scheduledEmailCampaignCreated;
+  }
+
+  public GetStateResponse scheduledEmailCampaignUpdated(Integer scheduledEmailCampaignUpdated) {
+    this.scheduledEmailCampaignUpdated = scheduledEmailCampaignUpdated;
+    return this;
+  }
+
+   /**
+   * Get scheduledEmailCampaignUpdated
+   * @return scheduledEmailCampaignUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getScheduledEmailCampaignUpdated() {
+    return scheduledEmailCampaignUpdated;
+  }
+
+  public void setScheduledEmailCampaignUpdated(Integer scheduledEmailCampaignUpdated) {
+    this.scheduledEmailCampaignUpdated = scheduledEmailCampaignUpdated;
+  }
+
+  public GetStateResponse scheduledEmailCampaignStatusUpdated(Integer scheduledEmailCampaignStatusUpdated) {
+    this.scheduledEmailCampaignStatusUpdated = scheduledEmailCampaignStatusUpdated;
+    return this;
+  }
+
+   /**
+   * Get scheduledEmailCampaignStatusUpdated
+   * @return scheduledEmailCampaignStatusUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getScheduledEmailCampaignStatusUpdated() {
+    return scheduledEmailCampaignStatusUpdated;
+  }
+
+  public void setScheduledEmailCampaignStatusUpdated(Integer scheduledEmailCampaignStatusUpdated) {
+    this.scheduledEmailCampaignStatusUpdated = scheduledEmailCampaignStatusUpdated;
+  }
+
+  public GetStateResponse scheduledEmailCampaignDeleted(Integer scheduledEmailCampaignDeleted) {
+    this.scheduledEmailCampaignDeleted = scheduledEmailCampaignDeleted;
+    return this;
+  }
+
+   /**
+   * Get scheduledEmailCampaignDeleted
+   * @return scheduledEmailCampaignDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getScheduledEmailCampaignDeleted() {
+    return scheduledEmailCampaignDeleted;
+  }
+
+  public void setScheduledEmailCampaignDeleted(Integer scheduledEmailCampaignDeleted) {
+    this.scheduledEmailCampaignDeleted = scheduledEmailCampaignDeleted;
+  }
+
+  public GetStateResponse emailCampaignFailedAttemptCreated(Integer emailCampaignFailedAttemptCreated) {
+    this.emailCampaignFailedAttemptCreated = emailCampaignFailedAttemptCreated;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignFailedAttemptCreated
+   * @return emailCampaignFailedAttemptCreated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignFailedAttemptCreated() {
+    return emailCampaignFailedAttemptCreated;
+  }
+
+  public void setEmailCampaignFailedAttemptCreated(Integer emailCampaignFailedAttemptCreated) {
+    this.emailCampaignFailedAttemptCreated = emailCampaignFailedAttemptCreated;
+  }
+
+  public GetStateResponse emailCampaignFailedAttemptDeleted(Integer emailCampaignFailedAttemptDeleted) {
+    this.emailCampaignFailedAttemptDeleted = emailCampaignFailedAttemptDeleted;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignFailedAttemptDeleted
+   * @return emailCampaignFailedAttemptDeleted
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignFailedAttemptDeleted() {
+    return emailCampaignFailedAttemptDeleted;
+  }
+
+  public void setEmailCampaignFailedAttemptDeleted(Integer emailCampaignFailedAttemptDeleted) {
+    this.emailCampaignFailedAttemptDeleted = emailCampaignFailedAttemptDeleted;
+  }
+
+  public GetStateResponse emailCampaignFailedAttemptStateUpdated(Integer emailCampaignFailedAttemptStateUpdated) {
+    this.emailCampaignFailedAttemptStateUpdated = emailCampaignFailedAttemptStateUpdated;
+    return this;
+  }
+
+   /**
+   * Get emailCampaignFailedAttemptStateUpdated
+   * @return emailCampaignFailedAttemptStateUpdated
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailCampaignFailedAttemptStateUpdated() {
+    return emailCampaignFailedAttemptStateUpdated;
+  }
+
+  public void setEmailCampaignFailedAttemptStateUpdated(Integer emailCampaignFailedAttemptStateUpdated) {
+    this.emailCampaignFailedAttemptStateUpdated = emailCampaignFailedAttemptStateUpdated;
   }
 
 
@@ -1345,11 +3949,13 @@ public class GetStateResponse {
         Objects.equals(this.systemExit, getStateResponse.systemExit) &&
         Objects.equals(this.systemAlert, getStateResponse.systemAlert) &&
         Objects.equals(this.systemAccountStateChanged, getStateResponse.systemAccountStateChanged) &&
+        Objects.equals(this.systemAccountAcceptTermsUpdate, getStateResponse.systemAccountAcceptTermsUpdate) &&
         Objects.equals(this.systemAccountClosed, getStateResponse.systemAccountClosed) &&
         Objects.equals(this.systemAccountAdditionalFields, getStateResponse.systemAccountAdditionalFields) &&
         Objects.equals(this.systemAccountPermissionsChanged, getStateResponse.systemAccountPermissionsChanged) &&
         Objects.equals(this.userProfileChanged, getStateResponse.userProfileChanged) &&
         Objects.equals(this.userBalanceChanged, getStateResponse.userBalanceChanged) &&
+        Objects.equals(this.userPresenceStatusChanged, getStateResponse.userPresenceStatusChanged) &&
         Objects.equals(this.userImpersonationEnd, getStateResponse.userImpersonationEnd) &&
         Objects.equals(this.messageDeleted, getStateResponse.messageDeleted) &&
         Objects.equals(this.messageIncoming, getStateResponse.messageIncoming) &&
@@ -1358,6 +3964,10 @@ public class GetStateResponse {
         Objects.equals(this.messageBulkEnd, getStateResponse.messageBulkEnd) &&
         Objects.equals(this.messageWipeEnd, getStateResponse.messageWipeEnd) &&
         Objects.equals(this.messageSent, getStateResponse.messageSent) &&
+        Objects.equals(this.messageLog, getStateResponse.messageLog) &&
+        Objects.equals(this.messageNote, getStateResponse.messageNote) &&
+        Objects.equals(this.messageInitial, getStateResponse.messageInitial) &&
+        Objects.equals(this.lastMessageSet, getStateResponse.lastMessageSet) &&
         Objects.equals(this.messageSessionDeleted, getStateResponse.messageSessionDeleted) &&
         Objects.equals(this.messageCacheClear, getStateResponse.messageCacheClear) &&
         Objects.equals(this.messageIncomingCacheClear, getStateResponse.messageIncomingCacheClear) &&
@@ -1377,15 +3987,31 @@ public class GetStateResponse {
         Objects.equals(this.chatDeleted, getStateResponse.chatDeleted) &&
         Objects.equals(this.chatClosed, getStateResponse.chatClosed) &&
         Objects.equals(this.chatReopened, getStateResponse.chatReopened) &&
+        Objects.equals(this.chatActivated, getStateResponse.chatActivated) &&
         Objects.equals(this.chatCacheClear, getStateResponse.chatCacheClear) &&
         Objects.equals(this.chatRead, getStateResponse.chatRead) &&
         Objects.equals(this.chatUnread, getStateResponse.chatUnread) &&
+        Objects.equals(this.chatAssigneeChanged, getStateResponse.chatAssigneeChanged) &&
+        Objects.equals(this.chatTagsChanged, getStateResponse.chatTagsChanged) &&
+        Objects.equals(this.chatConversationEnded, getStateResponse.chatConversationEnded) &&
+        Objects.equals(this.chatUpdated, getStateResponse.chatUpdated) &&
+        Objects.equals(this.liveChatAgentChanged, getStateResponse.liveChatAgentChanged) &&
+        Objects.equals(this.liveChatRated, getStateResponse.liveChatRated) &&
+        Objects.equals(this.webWidgetUpdated, getStateResponse.webWidgetUpdated) &&
+        Objects.equals(this.webWidgetDeleted, getStateResponse.webWidgetDeleted) &&
         Objects.equals(this.contactAdded, getStateResponse.contactAdded) &&
         Objects.equals(this.contactDeleted, getStateResponse.contactDeleted) &&
+        Objects.equals(this.contactBulkUpdated, getStateResponse.contactBulkUpdated) &&
         Objects.equals(this.contactStateChanged, getStateResponse.contactStateChanged) &&
+        Objects.equals(this.contactUnsubscribed, getStateResponse.contactUnsubscribed) &&
+        Objects.equals(this.contactResubscribed, getStateResponse.contactResubscribed) &&
+        Objects.equals(this.contactNoteAdded, getStateResponse.contactNoteAdded) &&
+        Objects.equals(this.contactNoteDeleted, getStateResponse.contactNoteDeleted) &&
+        Objects.equals(this.contactNoteStateChanged, getStateResponse.contactNoteStateChanged) &&
         Objects.equals(this.listAdded, getStateResponse.listAdded) &&
         Objects.equals(this.listDeleted, getStateResponse.listDeleted) &&
         Objects.equals(this.listStateChanged, getStateResponse.listStateChanged) &&
+        Objects.equals(this.listCountMembersUpdated, getStateResponse.listCountMembersUpdated) &&
         Objects.equals(this.contactWipeEnd, getStateResponse.contactWipeEnd) &&
         Objects.equals(this.contactImportEnd, getStateResponse.contactImportEnd) &&
         Objects.equals(this.contactCacheClear, getStateResponse.contactCacheClear) &&
@@ -1394,7 +4020,7 @@ public class GetStateResponse {
         Objects.equals(this.progressCarrierBulkLookup, getStateResponse.progressCarrierBulkLookup) &&
         Objects.equals(this.progressEmailBulkLookup, getStateResponse.progressEmailBulkLookup) &&
         Objects.equals(this.progressSubAccountBulkImport, getStateResponse.progressSubAccountBulkImport) &&
-        Objects.equals(this.progressContactBulkImport, getStateResponse.progressContactBulkImport) &&
+        Objects.equals(this.importProgressState, getStateResponse.importProgressState) &&
         Objects.equals(this.forceRefreshWebApp, getStateResponse.forceRefreshWebApp) &&
         Objects.equals(this.chatSenderSettingsChanged, getStateResponse.chatSenderSettingsChanged) &&
         Objects.equals(this.countrySenderSettingsChanged, getStateResponse.countrySenderSettingsChanged) &&
@@ -1402,12 +4028,114 @@ public class GetStateResponse {
         Objects.equals(this.chatWaysToReplyChunk, getStateResponse.chatWaysToReplyChunk) &&
         Objects.equals(this.chatSuggestedReplyChunk, getStateResponse.chatSuggestedReplyChunk) &&
         Objects.equals(this.userSubscriptionChanged, getStateResponse.userSubscriptionChanged) &&
-        Objects.equals(this.userSubscriptionDeleted, getStateResponse.userSubscriptionDeleted);
+        Objects.equals(this.userSubscriptionDeleted, getStateResponse.userSubscriptionDeleted) &&
+        Objects.equals(this.taskCreated, getStateResponse.taskCreated) &&
+        Objects.equals(this.taskUpdated, getStateResponse.taskUpdated) &&
+        Objects.equals(this.taskReordered, getStateResponse.taskReordered) &&
+        Objects.equals(this.taskDeleted, getStateResponse.taskDeleted) &&
+        Objects.equals(this.taskMovedAll, getStateResponse.taskMovedAll) &&
+        Objects.equals(this.taskStageCreated, getStateResponse.taskStageCreated) &&
+        Objects.equals(this.taskStageUpdated, getStateResponse.taskStageUpdated) &&
+        Objects.equals(this.taskStageDeleted, getStateResponse.taskStageDeleted) &&
+        Objects.equals(this.taskBoardCreated, getStateResponse.taskBoardCreated) &&
+        Objects.equals(this.taskBoardUpdated, getStateResponse.taskBoardUpdated) &&
+        Objects.equals(this.taskBoardReordered, getStateResponse.taskBoardReordered) &&
+        Objects.equals(this.taskBoardDeleted, getStateResponse.taskBoardDeleted) &&
+        Objects.equals(this.taskBoardArchived, getStateResponse.taskBoardArchived) &&
+        Objects.equals(this.taskChecklistCreated, getStateResponse.taskChecklistCreated) &&
+        Objects.equals(this.taskChecklistUpdated, getStateResponse.taskChecklistUpdated) &&
+        Objects.equals(this.taskChecklistDeleted, getStateResponse.taskChecklistDeleted) &&
+        Objects.equals(this.taskChecklistBulkMarked, getStateResponse.taskChecklistBulkMarked) &&
+        Objects.equals(this.taskChecklistItemCreated, getStateResponse.taskChecklistItemCreated) &&
+        Objects.equals(this.taskChecklistItemUpdated, getStateResponse.taskChecklistItemUpdated) &&
+        Objects.equals(this.taskChecklistItemDeleted, getStateResponse.taskChecklistItemDeleted) &&
+        Objects.equals(this.taskCommentCreated, getStateResponse.taskCommentCreated) &&
+        Objects.equals(this.taskCommentDeleted, getStateResponse.taskCommentDeleted) &&
+        Objects.equals(this.pinnedContactAdded, getStateResponse.pinnedContactAdded) &&
+        Objects.equals(this.pinnedContactRemoved, getStateResponse.pinnedContactRemoved) &&
+        Objects.equals(this.pinnedContactReordered, getStateResponse.pinnedContactReordered) &&
+        Objects.equals(this.pinnedContactStateChanged, getStateResponse.pinnedContactStateChanged) &&
+        Objects.equals(this.whatsappAccountAdded, getStateResponse.whatsappAccountAdded) &&
+        Objects.equals(this.whatsappAccountRemoved, getStateResponse.whatsappAccountRemoved) &&
+        Objects.equals(this.whatsappAccountChanged, getStateResponse.whatsappAccountChanged) &&
+        Objects.equals(this.facebookPageAdded, getStateResponse.facebookPageAdded) &&
+        Objects.equals(this.facebookPageRemoved, getStateResponse.facebookPageRemoved) &&
+        Objects.equals(this.facebookPageChanged, getStateResponse.facebookPageChanged) &&
+        Objects.equals(this.instagramAccountAdded, getStateResponse.instagramAccountAdded) &&
+        Objects.equals(this.instagramAccountRemoved, getStateResponse.instagramAccountRemoved) &&
+        Objects.equals(this.instagramAccountChanged, getStateResponse.instagramAccountChanged) &&
+        Objects.equals(this.unreadTicketsCountUpdated, getStateResponse.unreadTicketsCountUpdated) &&
+        Objects.equals(this.ticketDeleted, getStateResponse.ticketDeleted) &&
+        Objects.equals(this.ticketUpdated, getStateResponse.ticketUpdated) &&
+        Objects.equals(this.ticketCreated, getStateResponse.ticketCreated) &&
+        Objects.equals(this.ticketBulkUpdated, getStateResponse.ticketBulkUpdated) &&
+        Objects.equals(this.ticketBulkDeleted, getStateResponse.ticketBulkDeleted) &&
+        Objects.equals(this.ticketMessageCreated, getStateResponse.ticketMessageCreated) &&
+        Objects.equals(this.ticketMessageUpdated, getStateResponse.ticketMessageUpdated) &&
+        Objects.equals(this.ticketMessageDeleted, getStateResponse.ticketMessageDeleted) &&
+        Objects.equals(this.subAccountsClosed, getStateResponse.subAccountsClosed) &&
+        Objects.equals(this.userInvited, getStateResponse.userInvited) &&
+        Objects.equals(this.filteredViewCreated, getStateResponse.filteredViewCreated) &&
+        Objects.equals(this.filteredViewCountUpdated, getStateResponse.filteredViewCountUpdated) &&
+        Objects.equals(this.filteredViewDeleted, getStateResponse.filteredViewDeleted) &&
+        Objects.equals(this.forwardingInboxWasVerified, getStateResponse.forwardingInboxWasVerified) &&
+        Objects.equals(this.forwardingInboxCheckWasFailed, getStateResponse.forwardingInboxCheckWasFailed) &&
+        Objects.equals(this.forwardingInboxVerificationLinkWasParsed, getStateResponse.forwardingInboxVerificationLinkWasParsed) &&
+        Objects.equals(this.tendlcLinkNumberStatusUpdated, getStateResponse.tendlcLinkNumberStatusUpdated) &&
+        Objects.equals(this.channelPresence, getStateResponse.channelPresence) &&
+        Objects.equals(this.dealCreated, getStateResponse.dealCreated) &&
+        Objects.equals(this.dealUpdated, getStateResponse.dealUpdated) &&
+        Objects.equals(this.dealDeleted, getStateResponse.dealDeleted) &&
+        Objects.equals(this.dealMoved, getStateResponse.dealMoved) &&
+        Objects.equals(this.dealStageCreated, getStateResponse.dealStageCreated) &&
+        Objects.equals(this.dealStageUpdated, getStateResponse.dealStageUpdated) &&
+        Objects.equals(this.dealStageDeleted, getStateResponse.dealStageDeleted) &&
+        Objects.equals(this.dealPipelineCreated, getStateResponse.dealPipelineCreated) &&
+        Objects.equals(this.dealPipelineUpdated, getStateResponse.dealPipelineUpdated) &&
+        Objects.equals(this.dealPipelineDeleted, getStateResponse.dealPipelineDeleted) &&
+        Objects.equals(this.dealPipelineArchived, getStateResponse.dealPipelineArchived) &&
+        Objects.equals(this.dealPipelineReordered, getStateResponse.dealPipelineReordered) &&
+        Objects.equals(this.dealActivityUpdated, getStateResponse.dealActivityUpdated) &&
+        Objects.equals(this.dealActivityItemCreated, getStateResponse.dealActivityItemCreated) &&
+        Objects.equals(this.dealActivityItemUpdated, getStateResponse.dealActivityItemUpdated) &&
+        Objects.equals(this.dealActivityItemDeleted, getStateResponse.dealActivityItemDeleted) &&
+        Objects.equals(this.dealActivityItemBulkMarked, getStateResponse.dealActivityItemBulkMarked) &&
+        Objects.equals(this.dealTimelineItemDeleted, getStateResponse.dealTimelineItemDeleted) &&
+        Objects.equals(this.dealTimelineItemCreated, getStateResponse.dealTimelineItemCreated) &&
+        Objects.equals(this.aiAssistantCreated, getStateResponse.aiAssistantCreated) &&
+        Objects.equals(this.aiAssistantState, getStateResponse.aiAssistantState) &&
+        Objects.equals(this.aiAssistantDeleted, getStateResponse.aiAssistantDeleted) &&
+        Objects.equals(this.aiAssistantLinkDeleted, getStateResponse.aiAssistantLinkDeleted) &&
+        Objects.equals(this.aiAssistantLinkState, getStateResponse.aiAssistantLinkState) &&
+        Objects.equals(this.aiAssistantLinkCreated, getStateResponse.aiAssistantLinkCreated) &&
+        Objects.equals(this.aiAssistantSubLinkState, getStateResponse.aiAssistantSubLinkState) &&
+        Objects.equals(this.aiAssistantSubLinkCreated, getStateResponse.aiAssistantSubLinkCreated) &&
+        Objects.equals(this.emailCampaignEmailSenderCreated, getStateResponse.emailCampaignEmailSenderCreated) &&
+        Objects.equals(this.emailCampaignEmailSenderUpdated, getStateResponse.emailCampaignEmailSenderUpdated) &&
+        Objects.equals(this.emailCampaignEmailSenderDeleted, getStateResponse.emailCampaignEmailSenderDeleted) &&
+        Objects.equals(this.emailCampaignDomainCreated, getStateResponse.emailCampaignDomainCreated) &&
+        Objects.equals(this.emailCampaignDomainDeleted, getStateResponse.emailCampaignDomainDeleted) &&
+        Objects.equals(this.emailCampaignDomainVerified, getStateResponse.emailCampaignDomainVerified) &&
+        Objects.equals(this.emailCampaignDomainStatusChanged, getStateResponse.emailCampaignDomainStatusChanged) &&
+        Objects.equals(this.emailCampaignDomainDkimVerified, getStateResponse.emailCampaignDomainDkimVerified) &&
+        Objects.equals(this.emailCampaignDomainReturnPathVerified, getStateResponse.emailCampaignDomainReturnPathVerified) &&
+        Objects.equals(this.emailCampaignDomainDmarcVerified, getStateResponse.emailCampaignDomainDmarcVerified) &&
+        Objects.equals(this.emailCampaignDomainEntryVerificationChanged, getStateResponse.emailCampaignDomainEntryVerificationChanged) &&
+        Objects.equals(this.emailCampaignProgressState, getStateResponse.emailCampaignProgressState) &&
+        Objects.equals(this.emailCampaignUpdated, getStateResponse.emailCampaignUpdated) &&
+        Objects.equals(this.smsCampaignInvalidated, getStateResponse.smsCampaignInvalidated) &&
+        Objects.equals(this.scheduledEmailCampaignCreated, getStateResponse.scheduledEmailCampaignCreated) &&
+        Objects.equals(this.scheduledEmailCampaignUpdated, getStateResponse.scheduledEmailCampaignUpdated) &&
+        Objects.equals(this.scheduledEmailCampaignStatusUpdated, getStateResponse.scheduledEmailCampaignStatusUpdated) &&
+        Objects.equals(this.scheduledEmailCampaignDeleted, getStateResponse.scheduledEmailCampaignDeleted) &&
+        Objects.equals(this.emailCampaignFailedAttemptCreated, getStateResponse.emailCampaignFailedAttemptCreated) &&
+        Objects.equals(this.emailCampaignFailedAttemptDeleted, getStateResponse.emailCampaignFailedAttemptDeleted) &&
+        Objects.equals(this.emailCampaignFailedAttemptStateUpdated, getStateResponse.emailCampaignFailedAttemptStateUpdated);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, systemAccountClosed, systemAccountAdditionalFields, systemAccountPermissionsChanged, userProfileChanged, userBalanceChanged, userImpersonationEnd, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleNotSentStateChanged, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatPinned, chatUnpinned, chatDeleted, chatClosed, chatReopened, chatCacheClear, chatRead, chatUnread, contactAdded, contactDeleted, contactStateChanged, listAdded, listDeleted, listStateChanged, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear, progressCarrierBulkLookup, progressEmailBulkLookup, progressSubAccountBulkImport, progressContactBulkImport, forceRefreshWebApp, chatSenderSettingsChanged, countrySenderSettingsChanged, chatSummaryChunk, chatWaysToReplyChunk, chatSuggestedReplyChunk, userSubscriptionChanged, userSubscriptionDeleted);
+    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, systemAccountAcceptTermsUpdate, systemAccountClosed, systemAccountAdditionalFields, systemAccountPermissionsChanged, userProfileChanged, userBalanceChanged, userPresenceStatusChanged, userImpersonationEnd, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageLog, messageNote, messageInitial, lastMessageSet, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleNotSentStateChanged, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatPinned, chatUnpinned, chatDeleted, chatClosed, chatReopened, chatActivated, chatCacheClear, chatRead, chatUnread, chatAssigneeChanged, chatTagsChanged, chatConversationEnded, chatUpdated, liveChatAgentChanged, liveChatRated, webWidgetUpdated, webWidgetDeleted, contactAdded, contactDeleted, contactBulkUpdated, contactStateChanged, contactUnsubscribed, contactResubscribed, contactNoteAdded, contactNoteDeleted, contactNoteStateChanged, listAdded, listDeleted, listStateChanged, listCountMembersUpdated, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear, progressCarrierBulkLookup, progressEmailBulkLookup, progressSubAccountBulkImport, importProgressState, forceRefreshWebApp, chatSenderSettingsChanged, countrySenderSettingsChanged, chatSummaryChunk, chatWaysToReplyChunk, chatSuggestedReplyChunk, userSubscriptionChanged, userSubscriptionDeleted, taskCreated, taskUpdated, taskReordered, taskDeleted, taskMovedAll, taskStageCreated, taskStageUpdated, taskStageDeleted, taskBoardCreated, taskBoardUpdated, taskBoardReordered, taskBoardDeleted, taskBoardArchived, taskChecklistCreated, taskChecklistUpdated, taskChecklistDeleted, taskChecklistBulkMarked, taskChecklistItemCreated, taskChecklistItemUpdated, taskChecklistItemDeleted, taskCommentCreated, taskCommentDeleted, pinnedContactAdded, pinnedContactRemoved, pinnedContactReordered, pinnedContactStateChanged, whatsappAccountAdded, whatsappAccountRemoved, whatsappAccountChanged, facebookPageAdded, facebookPageRemoved, facebookPageChanged, instagramAccountAdded, instagramAccountRemoved, instagramAccountChanged, unreadTicketsCountUpdated, ticketDeleted, ticketUpdated, ticketCreated, ticketBulkUpdated, ticketBulkDeleted, ticketMessageCreated, ticketMessageUpdated, ticketMessageDeleted, subAccountsClosed, userInvited, filteredViewCreated, filteredViewCountUpdated, filteredViewDeleted, forwardingInboxWasVerified, forwardingInboxCheckWasFailed, forwardingInboxVerificationLinkWasParsed, tendlcLinkNumberStatusUpdated, channelPresence, dealCreated, dealUpdated, dealDeleted, dealMoved, dealStageCreated, dealStageUpdated, dealStageDeleted, dealPipelineCreated, dealPipelineUpdated, dealPipelineDeleted, dealPipelineArchived, dealPipelineReordered, dealActivityUpdated, dealActivityItemCreated, dealActivityItemUpdated, dealActivityItemDeleted, dealActivityItemBulkMarked, dealTimelineItemDeleted, dealTimelineItemCreated, aiAssistantCreated, aiAssistantState, aiAssistantDeleted, aiAssistantLinkDeleted, aiAssistantLinkState, aiAssistantLinkCreated, aiAssistantSubLinkState, aiAssistantSubLinkCreated, emailCampaignEmailSenderCreated, emailCampaignEmailSenderUpdated, emailCampaignEmailSenderDeleted, emailCampaignDomainCreated, emailCampaignDomainDeleted, emailCampaignDomainVerified, emailCampaignDomainStatusChanged, emailCampaignDomainDkimVerified, emailCampaignDomainReturnPathVerified, emailCampaignDomainDmarcVerified, emailCampaignDomainEntryVerificationChanged, emailCampaignProgressState, emailCampaignUpdated, smsCampaignInvalidated, scheduledEmailCampaignCreated, scheduledEmailCampaignUpdated, scheduledEmailCampaignStatusUpdated, scheduledEmailCampaignDeleted, emailCampaignFailedAttemptCreated, emailCampaignFailedAttemptDeleted, emailCampaignFailedAttemptStateUpdated);
   }
 
 
@@ -1420,11 +4148,13 @@ public class GetStateResponse {
     sb.append("    systemExit: ").append(toIndentedString(systemExit)).append("\n");
     sb.append("    systemAlert: ").append(toIndentedString(systemAlert)).append("\n");
     sb.append("    systemAccountStateChanged: ").append(toIndentedString(systemAccountStateChanged)).append("\n");
+    sb.append("    systemAccountAcceptTermsUpdate: ").append(toIndentedString(systemAccountAcceptTermsUpdate)).append("\n");
     sb.append("    systemAccountClosed: ").append(toIndentedString(systemAccountClosed)).append("\n");
     sb.append("    systemAccountAdditionalFields: ").append(toIndentedString(systemAccountAdditionalFields)).append("\n");
     sb.append("    systemAccountPermissionsChanged: ").append(toIndentedString(systemAccountPermissionsChanged)).append("\n");
     sb.append("    userProfileChanged: ").append(toIndentedString(userProfileChanged)).append("\n");
     sb.append("    userBalanceChanged: ").append(toIndentedString(userBalanceChanged)).append("\n");
+    sb.append("    userPresenceStatusChanged: ").append(toIndentedString(userPresenceStatusChanged)).append("\n");
     sb.append("    userImpersonationEnd: ").append(toIndentedString(userImpersonationEnd)).append("\n");
     sb.append("    messageDeleted: ").append(toIndentedString(messageDeleted)).append("\n");
     sb.append("    messageIncoming: ").append(toIndentedString(messageIncoming)).append("\n");
@@ -1433,6 +4163,10 @@ public class GetStateResponse {
     sb.append("    messageBulkEnd: ").append(toIndentedString(messageBulkEnd)).append("\n");
     sb.append("    messageWipeEnd: ").append(toIndentedString(messageWipeEnd)).append("\n");
     sb.append("    messageSent: ").append(toIndentedString(messageSent)).append("\n");
+    sb.append("    messageLog: ").append(toIndentedString(messageLog)).append("\n");
+    sb.append("    messageNote: ").append(toIndentedString(messageNote)).append("\n");
+    sb.append("    messageInitial: ").append(toIndentedString(messageInitial)).append("\n");
+    sb.append("    lastMessageSet: ").append(toIndentedString(lastMessageSet)).append("\n");
     sb.append("    messageSessionDeleted: ").append(toIndentedString(messageSessionDeleted)).append("\n");
     sb.append("    messageCacheClear: ").append(toIndentedString(messageCacheClear)).append("\n");
     sb.append("    messageIncomingCacheClear: ").append(toIndentedString(messageIncomingCacheClear)).append("\n");
@@ -1452,15 +4186,31 @@ public class GetStateResponse {
     sb.append("    chatDeleted: ").append(toIndentedString(chatDeleted)).append("\n");
     sb.append("    chatClosed: ").append(toIndentedString(chatClosed)).append("\n");
     sb.append("    chatReopened: ").append(toIndentedString(chatReopened)).append("\n");
+    sb.append("    chatActivated: ").append(toIndentedString(chatActivated)).append("\n");
     sb.append("    chatCacheClear: ").append(toIndentedString(chatCacheClear)).append("\n");
     sb.append("    chatRead: ").append(toIndentedString(chatRead)).append("\n");
     sb.append("    chatUnread: ").append(toIndentedString(chatUnread)).append("\n");
+    sb.append("    chatAssigneeChanged: ").append(toIndentedString(chatAssigneeChanged)).append("\n");
+    sb.append("    chatTagsChanged: ").append(toIndentedString(chatTagsChanged)).append("\n");
+    sb.append("    chatConversationEnded: ").append(toIndentedString(chatConversationEnded)).append("\n");
+    sb.append("    chatUpdated: ").append(toIndentedString(chatUpdated)).append("\n");
+    sb.append("    liveChatAgentChanged: ").append(toIndentedString(liveChatAgentChanged)).append("\n");
+    sb.append("    liveChatRated: ").append(toIndentedString(liveChatRated)).append("\n");
+    sb.append("    webWidgetUpdated: ").append(toIndentedString(webWidgetUpdated)).append("\n");
+    sb.append("    webWidgetDeleted: ").append(toIndentedString(webWidgetDeleted)).append("\n");
     sb.append("    contactAdded: ").append(toIndentedString(contactAdded)).append("\n");
     sb.append("    contactDeleted: ").append(toIndentedString(contactDeleted)).append("\n");
+    sb.append("    contactBulkUpdated: ").append(toIndentedString(contactBulkUpdated)).append("\n");
     sb.append("    contactStateChanged: ").append(toIndentedString(contactStateChanged)).append("\n");
+    sb.append("    contactUnsubscribed: ").append(toIndentedString(contactUnsubscribed)).append("\n");
+    sb.append("    contactResubscribed: ").append(toIndentedString(contactResubscribed)).append("\n");
+    sb.append("    contactNoteAdded: ").append(toIndentedString(contactNoteAdded)).append("\n");
+    sb.append("    contactNoteDeleted: ").append(toIndentedString(contactNoteDeleted)).append("\n");
+    sb.append("    contactNoteStateChanged: ").append(toIndentedString(contactNoteStateChanged)).append("\n");
     sb.append("    listAdded: ").append(toIndentedString(listAdded)).append("\n");
     sb.append("    listDeleted: ").append(toIndentedString(listDeleted)).append("\n");
     sb.append("    listStateChanged: ").append(toIndentedString(listStateChanged)).append("\n");
+    sb.append("    listCountMembersUpdated: ").append(toIndentedString(listCountMembersUpdated)).append("\n");
     sb.append("    contactWipeEnd: ").append(toIndentedString(contactWipeEnd)).append("\n");
     sb.append("    contactImportEnd: ").append(toIndentedString(contactImportEnd)).append("\n");
     sb.append("    contactCacheClear: ").append(toIndentedString(contactCacheClear)).append("\n");
@@ -1469,7 +4219,7 @@ public class GetStateResponse {
     sb.append("    progressCarrierBulkLookup: ").append(toIndentedString(progressCarrierBulkLookup)).append("\n");
     sb.append("    progressEmailBulkLookup: ").append(toIndentedString(progressEmailBulkLookup)).append("\n");
     sb.append("    progressSubAccountBulkImport: ").append(toIndentedString(progressSubAccountBulkImport)).append("\n");
-    sb.append("    progressContactBulkImport: ").append(toIndentedString(progressContactBulkImport)).append("\n");
+    sb.append("    importProgressState: ").append(toIndentedString(importProgressState)).append("\n");
     sb.append("    forceRefreshWebApp: ").append(toIndentedString(forceRefreshWebApp)).append("\n");
     sb.append("    chatSenderSettingsChanged: ").append(toIndentedString(chatSenderSettingsChanged)).append("\n");
     sb.append("    countrySenderSettingsChanged: ").append(toIndentedString(countrySenderSettingsChanged)).append("\n");
@@ -1478,6 +4228,108 @@ public class GetStateResponse {
     sb.append("    chatSuggestedReplyChunk: ").append(toIndentedString(chatSuggestedReplyChunk)).append("\n");
     sb.append("    userSubscriptionChanged: ").append(toIndentedString(userSubscriptionChanged)).append("\n");
     sb.append("    userSubscriptionDeleted: ").append(toIndentedString(userSubscriptionDeleted)).append("\n");
+    sb.append("    taskCreated: ").append(toIndentedString(taskCreated)).append("\n");
+    sb.append("    taskUpdated: ").append(toIndentedString(taskUpdated)).append("\n");
+    sb.append("    taskReordered: ").append(toIndentedString(taskReordered)).append("\n");
+    sb.append("    taskDeleted: ").append(toIndentedString(taskDeleted)).append("\n");
+    sb.append("    taskMovedAll: ").append(toIndentedString(taskMovedAll)).append("\n");
+    sb.append("    taskStageCreated: ").append(toIndentedString(taskStageCreated)).append("\n");
+    sb.append("    taskStageUpdated: ").append(toIndentedString(taskStageUpdated)).append("\n");
+    sb.append("    taskStageDeleted: ").append(toIndentedString(taskStageDeleted)).append("\n");
+    sb.append("    taskBoardCreated: ").append(toIndentedString(taskBoardCreated)).append("\n");
+    sb.append("    taskBoardUpdated: ").append(toIndentedString(taskBoardUpdated)).append("\n");
+    sb.append("    taskBoardReordered: ").append(toIndentedString(taskBoardReordered)).append("\n");
+    sb.append("    taskBoardDeleted: ").append(toIndentedString(taskBoardDeleted)).append("\n");
+    sb.append("    taskBoardArchived: ").append(toIndentedString(taskBoardArchived)).append("\n");
+    sb.append("    taskChecklistCreated: ").append(toIndentedString(taskChecklistCreated)).append("\n");
+    sb.append("    taskChecklistUpdated: ").append(toIndentedString(taskChecklistUpdated)).append("\n");
+    sb.append("    taskChecklistDeleted: ").append(toIndentedString(taskChecklistDeleted)).append("\n");
+    sb.append("    taskChecklistBulkMarked: ").append(toIndentedString(taskChecklistBulkMarked)).append("\n");
+    sb.append("    taskChecklistItemCreated: ").append(toIndentedString(taskChecklistItemCreated)).append("\n");
+    sb.append("    taskChecklistItemUpdated: ").append(toIndentedString(taskChecklistItemUpdated)).append("\n");
+    sb.append("    taskChecklistItemDeleted: ").append(toIndentedString(taskChecklistItemDeleted)).append("\n");
+    sb.append("    taskCommentCreated: ").append(toIndentedString(taskCommentCreated)).append("\n");
+    sb.append("    taskCommentDeleted: ").append(toIndentedString(taskCommentDeleted)).append("\n");
+    sb.append("    pinnedContactAdded: ").append(toIndentedString(pinnedContactAdded)).append("\n");
+    sb.append("    pinnedContactRemoved: ").append(toIndentedString(pinnedContactRemoved)).append("\n");
+    sb.append("    pinnedContactReordered: ").append(toIndentedString(pinnedContactReordered)).append("\n");
+    sb.append("    pinnedContactStateChanged: ").append(toIndentedString(pinnedContactStateChanged)).append("\n");
+    sb.append("    whatsappAccountAdded: ").append(toIndentedString(whatsappAccountAdded)).append("\n");
+    sb.append("    whatsappAccountRemoved: ").append(toIndentedString(whatsappAccountRemoved)).append("\n");
+    sb.append("    whatsappAccountChanged: ").append(toIndentedString(whatsappAccountChanged)).append("\n");
+    sb.append("    facebookPageAdded: ").append(toIndentedString(facebookPageAdded)).append("\n");
+    sb.append("    facebookPageRemoved: ").append(toIndentedString(facebookPageRemoved)).append("\n");
+    sb.append("    facebookPageChanged: ").append(toIndentedString(facebookPageChanged)).append("\n");
+    sb.append("    instagramAccountAdded: ").append(toIndentedString(instagramAccountAdded)).append("\n");
+    sb.append("    instagramAccountRemoved: ").append(toIndentedString(instagramAccountRemoved)).append("\n");
+    sb.append("    instagramAccountChanged: ").append(toIndentedString(instagramAccountChanged)).append("\n");
+    sb.append("    unreadTicketsCountUpdated: ").append(toIndentedString(unreadTicketsCountUpdated)).append("\n");
+    sb.append("    ticketDeleted: ").append(toIndentedString(ticketDeleted)).append("\n");
+    sb.append("    ticketUpdated: ").append(toIndentedString(ticketUpdated)).append("\n");
+    sb.append("    ticketCreated: ").append(toIndentedString(ticketCreated)).append("\n");
+    sb.append("    ticketBulkUpdated: ").append(toIndentedString(ticketBulkUpdated)).append("\n");
+    sb.append("    ticketBulkDeleted: ").append(toIndentedString(ticketBulkDeleted)).append("\n");
+    sb.append("    ticketMessageCreated: ").append(toIndentedString(ticketMessageCreated)).append("\n");
+    sb.append("    ticketMessageUpdated: ").append(toIndentedString(ticketMessageUpdated)).append("\n");
+    sb.append("    ticketMessageDeleted: ").append(toIndentedString(ticketMessageDeleted)).append("\n");
+    sb.append("    subAccountsClosed: ").append(toIndentedString(subAccountsClosed)).append("\n");
+    sb.append("    userInvited: ").append(toIndentedString(userInvited)).append("\n");
+    sb.append("    filteredViewCreated: ").append(toIndentedString(filteredViewCreated)).append("\n");
+    sb.append("    filteredViewCountUpdated: ").append(toIndentedString(filteredViewCountUpdated)).append("\n");
+    sb.append("    filteredViewDeleted: ").append(toIndentedString(filteredViewDeleted)).append("\n");
+    sb.append("    forwardingInboxWasVerified: ").append(toIndentedString(forwardingInboxWasVerified)).append("\n");
+    sb.append("    forwardingInboxCheckWasFailed: ").append(toIndentedString(forwardingInboxCheckWasFailed)).append("\n");
+    sb.append("    forwardingInboxVerificationLinkWasParsed: ").append(toIndentedString(forwardingInboxVerificationLinkWasParsed)).append("\n");
+    sb.append("    tendlcLinkNumberStatusUpdated: ").append(toIndentedString(tendlcLinkNumberStatusUpdated)).append("\n");
+    sb.append("    channelPresence: ").append(toIndentedString(channelPresence)).append("\n");
+    sb.append("    dealCreated: ").append(toIndentedString(dealCreated)).append("\n");
+    sb.append("    dealUpdated: ").append(toIndentedString(dealUpdated)).append("\n");
+    sb.append("    dealDeleted: ").append(toIndentedString(dealDeleted)).append("\n");
+    sb.append("    dealMoved: ").append(toIndentedString(dealMoved)).append("\n");
+    sb.append("    dealStageCreated: ").append(toIndentedString(dealStageCreated)).append("\n");
+    sb.append("    dealStageUpdated: ").append(toIndentedString(dealStageUpdated)).append("\n");
+    sb.append("    dealStageDeleted: ").append(toIndentedString(dealStageDeleted)).append("\n");
+    sb.append("    dealPipelineCreated: ").append(toIndentedString(dealPipelineCreated)).append("\n");
+    sb.append("    dealPipelineUpdated: ").append(toIndentedString(dealPipelineUpdated)).append("\n");
+    sb.append("    dealPipelineDeleted: ").append(toIndentedString(dealPipelineDeleted)).append("\n");
+    sb.append("    dealPipelineArchived: ").append(toIndentedString(dealPipelineArchived)).append("\n");
+    sb.append("    dealPipelineReordered: ").append(toIndentedString(dealPipelineReordered)).append("\n");
+    sb.append("    dealActivityUpdated: ").append(toIndentedString(dealActivityUpdated)).append("\n");
+    sb.append("    dealActivityItemCreated: ").append(toIndentedString(dealActivityItemCreated)).append("\n");
+    sb.append("    dealActivityItemUpdated: ").append(toIndentedString(dealActivityItemUpdated)).append("\n");
+    sb.append("    dealActivityItemDeleted: ").append(toIndentedString(dealActivityItemDeleted)).append("\n");
+    sb.append("    dealActivityItemBulkMarked: ").append(toIndentedString(dealActivityItemBulkMarked)).append("\n");
+    sb.append("    dealTimelineItemDeleted: ").append(toIndentedString(dealTimelineItemDeleted)).append("\n");
+    sb.append("    dealTimelineItemCreated: ").append(toIndentedString(dealTimelineItemCreated)).append("\n");
+    sb.append("    aiAssistantCreated: ").append(toIndentedString(aiAssistantCreated)).append("\n");
+    sb.append("    aiAssistantState: ").append(toIndentedString(aiAssistantState)).append("\n");
+    sb.append("    aiAssistantDeleted: ").append(toIndentedString(aiAssistantDeleted)).append("\n");
+    sb.append("    aiAssistantLinkDeleted: ").append(toIndentedString(aiAssistantLinkDeleted)).append("\n");
+    sb.append("    aiAssistantLinkState: ").append(toIndentedString(aiAssistantLinkState)).append("\n");
+    sb.append("    aiAssistantLinkCreated: ").append(toIndentedString(aiAssistantLinkCreated)).append("\n");
+    sb.append("    aiAssistantSubLinkState: ").append(toIndentedString(aiAssistantSubLinkState)).append("\n");
+    sb.append("    aiAssistantSubLinkCreated: ").append(toIndentedString(aiAssistantSubLinkCreated)).append("\n");
+    sb.append("    emailCampaignEmailSenderCreated: ").append(toIndentedString(emailCampaignEmailSenderCreated)).append("\n");
+    sb.append("    emailCampaignEmailSenderUpdated: ").append(toIndentedString(emailCampaignEmailSenderUpdated)).append("\n");
+    sb.append("    emailCampaignEmailSenderDeleted: ").append(toIndentedString(emailCampaignEmailSenderDeleted)).append("\n");
+    sb.append("    emailCampaignDomainCreated: ").append(toIndentedString(emailCampaignDomainCreated)).append("\n");
+    sb.append("    emailCampaignDomainDeleted: ").append(toIndentedString(emailCampaignDomainDeleted)).append("\n");
+    sb.append("    emailCampaignDomainVerified: ").append(toIndentedString(emailCampaignDomainVerified)).append("\n");
+    sb.append("    emailCampaignDomainStatusChanged: ").append(toIndentedString(emailCampaignDomainStatusChanged)).append("\n");
+    sb.append("    emailCampaignDomainDkimVerified: ").append(toIndentedString(emailCampaignDomainDkimVerified)).append("\n");
+    sb.append("    emailCampaignDomainReturnPathVerified: ").append(toIndentedString(emailCampaignDomainReturnPathVerified)).append("\n");
+    sb.append("    emailCampaignDomainDmarcVerified: ").append(toIndentedString(emailCampaignDomainDmarcVerified)).append("\n");
+    sb.append("    emailCampaignDomainEntryVerificationChanged: ").append(toIndentedString(emailCampaignDomainEntryVerificationChanged)).append("\n");
+    sb.append("    emailCampaignProgressState: ").append(toIndentedString(emailCampaignProgressState)).append("\n");
+    sb.append("    emailCampaignUpdated: ").append(toIndentedString(emailCampaignUpdated)).append("\n");
+    sb.append("    smsCampaignInvalidated: ").append(toIndentedString(smsCampaignInvalidated)).append("\n");
+    sb.append("    scheduledEmailCampaignCreated: ").append(toIndentedString(scheduledEmailCampaignCreated)).append("\n");
+    sb.append("    scheduledEmailCampaignUpdated: ").append(toIndentedString(scheduledEmailCampaignUpdated)).append("\n");
+    sb.append("    scheduledEmailCampaignStatusUpdated: ").append(toIndentedString(scheduledEmailCampaignStatusUpdated)).append("\n");
+    sb.append("    scheduledEmailCampaignDeleted: ").append(toIndentedString(scheduledEmailCampaignDeleted)).append("\n");
+    sb.append("    emailCampaignFailedAttemptCreated: ").append(toIndentedString(emailCampaignFailedAttemptCreated)).append("\n");
+    sb.append("    emailCampaignFailedAttemptDeleted: ").append(toIndentedString(emailCampaignFailedAttemptDeleted)).append("\n");
+    sb.append("    emailCampaignFailedAttemptStateUpdated: ").append(toIndentedString(emailCampaignFailedAttemptStateUpdated)).append("\n");
     sb.append("}");
     return sb.toString();
   }

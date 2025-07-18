@@ -20,6 +20,8 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import com.textmagic.sdk.model.MessageOutSenderSource;
+import com.textmagic.sdk.model.MessageOutSession;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
@@ -114,6 +116,102 @@ public class MessageOut {
   @SerializedName("status")
   private StatusEnum status = null;
 
+  /**
+   * Rejection reason.
+   */
+  @JsonAdapter(RejectReasonEnum.Adapter.class)
+  public enum RejectReasonEnum {
+    A("a"),
+    
+    F("f"),
+    
+    L("l"),
+    
+    C("c"),
+    
+    U("u"),
+    
+    B("b"),
+    
+    S("s"),
+    
+    M("m"),
+    
+    N("n"),
+    
+    I("i"),
+    
+    IF("if"),
+    
+    D("d"),
+    
+    T("t"),
+    
+    E("e"),
+    
+    H("h"),
+    
+    K("k"),
+    
+    R("r"),
+    
+    G("g"),
+    
+    J("j"),
+    
+    W("w"),
+    
+    V("v"),
+    
+    Q("q"),
+    
+    X("x"),
+    
+    O("o"),
+    
+    P("p");
+
+    private String value;
+
+    RejectReasonEnum(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static RejectReasonEnum fromValue(String text) {
+      for (RejectReasonEnum b : RejectReasonEnum.values()) {
+        if (String.valueOf(b.value).equals(text)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<RejectReasonEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final RejectReasonEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public RejectReasonEnum read(final JsonReader jsonReader) throws IOException {
+        String value = jsonReader.nextString();
+        return RejectReasonEnum.fromValue(String.valueOf(value));
+      }
+    }
+  }
+
+  @SerializedName("rejectReason")
+  private RejectReasonEnum rejectReason = null;
+
   @SerializedName("contactId")
   private Integer contactId = null;
 
@@ -158,6 +256,12 @@ public class MessageOut {
 
   @SerializedName("fromNumber")
   private String fromNumber = null;
+
+  @SerializedName("senderSource")
+  private MessageOutSenderSource senderSource = null;
+
+  @SerializedName("session")
+  private MessageOutSession session = null;
 
   public MessageOut id(Integer id) {
     this.id = id;
@@ -247,6 +351,24 @@ public class MessageOut {
 
   public void setStatus(StatusEnum status) {
     this.status = status;
+  }
+
+  public MessageOut rejectReason(RejectReasonEnum rejectReason) {
+    this.rejectReason = rejectReason;
+    return this;
+  }
+
+   /**
+   * Rejection reason.
+   * @return rejectReason
+  **/
+  @ApiModelProperty(example = "a", value = "Rejection reason.")
+  public RejectReasonEnum getRejectReason() {
+    return rejectReason;
+  }
+
+  public void setRejectReason(RejectReasonEnum rejectReason) {
+    this.rejectReason = rejectReason;
   }
 
   public MessageOut contactId(Integer contactId) {
@@ -519,6 +641,42 @@ public class MessageOut {
     this.fromNumber = fromNumber;
   }
 
+  public MessageOut senderSource(MessageOutSenderSource senderSource) {
+    this.senderSource = senderSource;
+    return this;
+  }
+
+   /**
+   * Get senderSource
+   * @return senderSource
+  **/
+  @ApiModelProperty(value = "")
+  public MessageOutSenderSource getSenderSource() {
+    return senderSource;
+  }
+
+  public void setSenderSource(MessageOutSenderSource senderSource) {
+    this.senderSource = senderSource;
+  }
+
+  public MessageOut session(MessageOutSession session) {
+    this.session = session;
+    return this;
+  }
+
+   /**
+   * Get session
+   * @return session
+  **/
+  @ApiModelProperty(value = "")
+  public MessageOutSession getSession() {
+    return session;
+  }
+
+  public void setSession(MessageOutSession session) {
+    this.session = session;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -534,6 +692,7 @@ public class MessageOut {
         Objects.equals(this.receiver, messageOut.receiver) &&
         Objects.equals(this.text, messageOut.text) &&
         Objects.equals(this.status, messageOut.status) &&
+        Objects.equals(this.rejectReason, messageOut.rejectReason) &&
         Objects.equals(this.contactId, messageOut.contactId) &&
         Objects.equals(this.sessionId, messageOut.sessionId) &&
         Objects.equals(this.messageTime, messageOut.messageTime) &&
@@ -548,12 +707,14 @@ public class MessageOut {
         Objects.equals(this.price, messageOut.price) &&
         Objects.equals(this.partsCount, messageOut.partsCount) &&
         Objects.equals(this.fromEmail, messageOut.fromEmail) &&
-        Objects.equals(this.fromNumber, messageOut.fromNumber);
+        Objects.equals(this.fromNumber, messageOut.fromNumber) &&
+        Objects.equals(this.senderSource, messageOut.senderSource) &&
+        Objects.equals(this.session, messageOut.session);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, sender, receiver, text, status, contactId, sessionId, messageTime, avatar, deleted, charset, charsetLabel, firstName, lastName, country, phone, price, partsCount, fromEmail, fromNumber);
+    return Objects.hash(id, sender, receiver, text, status, rejectReason, contactId, sessionId, messageTime, avatar, deleted, charset, charsetLabel, firstName, lastName, country, phone, price, partsCount, fromEmail, fromNumber, senderSource, session);
   }
 
 
@@ -567,6 +728,7 @@ public class MessageOut {
     sb.append("    receiver: ").append(toIndentedString(receiver)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("    rejectReason: ").append(toIndentedString(rejectReason)).append("\n");
     sb.append("    contactId: ").append(toIndentedString(contactId)).append("\n");
     sb.append("    sessionId: ").append(toIndentedString(sessionId)).append("\n");
     sb.append("    messageTime: ").append(toIndentedString(messageTime)).append("\n");
@@ -582,6 +744,8 @@ public class MessageOut {
     sb.append("    partsCount: ").append(toIndentedString(partsCount)).append("\n");
     sb.append("    fromEmail: ").append(toIndentedString(fromEmail)).append("\n");
     sb.append("    fromNumber: ").append(toIndentedString(fromNumber)).append("\n");
+    sb.append("    senderSource: ").append(toIndentedString(senderSource)).append("\n");
+    sb.append("    session: ").append(toIndentedString(session)).append("\n");
     sb.append("}");
     return sb.toString();
   }

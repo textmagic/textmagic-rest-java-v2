@@ -20,9 +20,12 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import com.textmagic.sdk.model.MessagePayload;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import org.threeten.bp.OffsetDateTime;
 
 /**
@@ -113,6 +116,147 @@ public class Conversation {
 
   @SerializedName("initiatorId")
   private Integer initiatorId = null;
+
+  @SerializedName("messageFileId")
+  private Integer messageFileId = null;
+
+  /**
+   * Message type.
+   */
+  @JsonAdapter(TypeEnum.Adapter.class)
+  public enum TypeEnum {
+    TEXT("text"),
+    
+    IMAGE("image"),
+    
+    AUDIO("audio"),
+    
+    VOICE("voice"),
+    
+    DOCUMENT("document"),
+    
+    VIDEO("video"),
+    
+    LOG("log"),
+    
+    INITIAL("initial"),
+    
+    NOTE("note");
+
+    private String value;
+
+    TypeEnum(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static TypeEnum fromValue(String text) {
+      for (TypeEnum b : TypeEnum.values()) {
+        if (String.valueOf(b.value).equals(text)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<TypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final TypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public TypeEnum read(final JsonReader jsonReader) throws IOException {
+        String value = jsonReader.nextString();
+        return TypeEnum.fromValue(String.valueOf(value));
+      }
+    }
+  }
+
+  @SerializedName("type")
+  private TypeEnum type = null;
+
+  /**
+   * Chat type.
+   */
+  @JsonAdapter(ChatTypeEnum.Adapter.class)
+  public enum ChatTypeEnum {
+    SMS("sms"),
+    
+    FACEBOOK_MESSENGER("facebook_messenger"),
+    
+    INSTAGRAM("instagram"),
+    
+    WHATSAPP_BUSINESS("whatsapp_business"),
+    
+    LIVE_CHAT("live_chat");
+
+    private String value;
+
+    ChatTypeEnum(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static ChatTypeEnum fromValue(String text) {
+      for (ChatTypeEnum b : ChatTypeEnum.values()) {
+        if (String.valueOf(b.value).equals(text)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<ChatTypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final ChatTypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public ChatTypeEnum read(final JsonReader jsonReader) throws IOException {
+        String value = jsonReader.nextString();
+        return ChatTypeEnum.fromValue(String.valueOf(value));
+      }
+    }
+  }
+
+  @SerializedName("chatType")
+  private ChatTypeEnum chatType = null;
+
+  @SerializedName("chatId")
+  private Integer chatId = null;
+
+  @SerializedName("isEdited")
+  private Boolean isEdited = null;
+
+  @SerializedName("errorCode")
+  private String errorCode = null;
+
+  @SerializedName("files")
+  private List<java.io.File> files = null;
+
+  @SerializedName("payload")
+  private MessagePayload payload = null;
+
+  @SerializedName("avatar")
+  private String avatar = null;
 
   public Conversation id(Integer id) {
     this.id = id;
@@ -312,6 +456,176 @@ public class Conversation {
     this.initiatorId = initiatorId;
   }
 
+  public Conversation messageFileId(Integer messageFileId) {
+    this.messageFileId = messageFileId;
+    return this;
+  }
+
+   /**
+   * Message file id.
+   * @return messageFileId
+  **/
+  @ApiModelProperty(value = "Message file id.")
+  public Integer getMessageFileId() {
+    return messageFileId;
+  }
+
+  public void setMessageFileId(Integer messageFileId) {
+    this.messageFileId = messageFileId;
+  }
+
+  public Conversation type(TypeEnum type) {
+    this.type = type;
+    return this;
+  }
+
+   /**
+   * Message type.
+   * @return type
+  **/
+  @ApiModelProperty(example = "text", value = "Message type.")
+  public TypeEnum getType() {
+    return type;
+  }
+
+  public void setType(TypeEnum type) {
+    this.type = type;
+  }
+
+  public Conversation chatType(ChatTypeEnum chatType) {
+    this.chatType = chatType;
+    return this;
+  }
+
+   /**
+   * Chat type.
+   * @return chatType
+  **/
+  @ApiModelProperty(example = "text", value = "Chat type.")
+  public ChatTypeEnum getChatType() {
+    return chatType;
+  }
+
+  public void setChatType(ChatTypeEnum chatType) {
+    this.chatType = chatType;
+  }
+
+  public Conversation chatId(Integer chatId) {
+    this.chatId = chatId;
+    return this;
+  }
+
+   /**
+   * Chat id.
+   * @return chatId
+  **/
+  @ApiModelProperty(value = "Chat id.")
+  public Integer getChatId() {
+    return chatId;
+  }
+
+  public void setChatId(Integer chatId) {
+    this.chatId = chatId;
+  }
+
+  public Conversation isEdited(Boolean isEdited) {
+    this.isEdited = isEdited;
+    return this;
+  }
+
+   /**
+   * Get isEdited
+   * @return isEdited
+  **/
+  @ApiModelProperty(example = "false", value = "")
+  public Boolean isIsEdited() {
+    return isEdited;
+  }
+
+  public void setIsEdited(Boolean isEdited) {
+    this.isEdited = isEdited;
+  }
+
+  public Conversation errorCode(String errorCode) {
+    this.errorCode = errorCode;
+    return this;
+  }
+
+   /**
+   * Error code.
+   * @return errorCode
+  **/
+  @ApiModelProperty(example = "test_error_code", value = "Error code.")
+  public String getErrorCode() {
+    return errorCode;
+  }
+
+  public void setErrorCode(String errorCode) {
+    this.errorCode = errorCode;
+  }
+
+  public Conversation files(List<java.io.File> files) {
+    this.files = files;
+    return this;
+  }
+
+  public Conversation addFilesItem(java.io.File filesItem) {
+    if (this.files == null) {
+      this.files = new ArrayList<java.io.File>();
+    }
+    this.files.add(filesItem);
+    return this;
+  }
+
+   /**
+   * Get files
+   * @return files
+  **/
+  @ApiModelProperty(value = "")
+  public List<java.io.File> getFiles() {
+    return files;
+  }
+
+  public void setFiles(List<java.io.File> files) {
+    this.files = files;
+  }
+
+  public Conversation payload(MessagePayload payload) {
+    this.payload = payload;
+    return this;
+  }
+
+   /**
+   * Get payload
+   * @return payload
+  **/
+  @ApiModelProperty(value = "")
+  public MessagePayload getPayload() {
+    return payload;
+  }
+
+  public void setPayload(MessagePayload payload) {
+    this.payload = payload;
+  }
+
+  public Conversation avatar(String avatar) {
+    this.avatar = avatar;
+    return this;
+  }
+
+   /**
+   * Get avatar
+   * @return avatar
+  **/
+  @ApiModelProperty(example = "avatars/dummy_avatar.png", value = "")
+  public String getAvatar() {
+    return avatar;
+  }
+
+  public void setAvatar(String avatar) {
+    this.avatar = avatar;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -332,12 +646,21 @@ public class Conversation {
         Objects.equals(this.firstName, conversation.firstName) &&
         Objects.equals(this.lastName, conversation.lastName) &&
         Objects.equals(this.sessionId, conversation.sessionId) &&
-        Objects.equals(this.initiatorId, conversation.initiatorId);
+        Objects.equals(this.initiatorId, conversation.initiatorId) &&
+        Objects.equals(this.messageFileId, conversation.messageFileId) &&
+        Objects.equals(this.type, conversation.type) &&
+        Objects.equals(this.chatType, conversation.chatType) &&
+        Objects.equals(this.chatId, conversation.chatId) &&
+        Objects.equals(this.isEdited, conversation.isEdited) &&
+        Objects.equals(this.errorCode, conversation.errorCode) &&
+        Objects.equals(this.files, conversation.files) &&
+        Objects.equals(this.payload, conversation.payload) &&
+        Objects.equals(this.avatar, conversation.avatar);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, direction, sender, messageTime, text, receiver, status, firstName, lastName, sessionId, initiatorId);
+    return Objects.hash(id, direction, sender, messageTime, text, receiver, status, firstName, lastName, sessionId, initiatorId, messageFileId, type, chatType, chatId, isEdited, errorCode, files, payload, avatar);
   }
 
 
@@ -357,6 +680,15 @@ public class Conversation {
     sb.append("    lastName: ").append(toIndentedString(lastName)).append("\n");
     sb.append("    sessionId: ").append(toIndentedString(sessionId)).append("\n");
     sb.append("    initiatorId: ").append(toIndentedString(initiatorId)).append("\n");
+    sb.append("    messageFileId: ").append(toIndentedString(messageFileId)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    chatType: ").append(toIndentedString(chatType)).append("\n");
+    sb.append("    chatId: ").append(toIndentedString(chatId)).append("\n");
+    sb.append("    isEdited: ").append(toIndentedString(isEdited)).append("\n");
+    sb.append("    errorCode: ").append(toIndentedString(errorCode)).append("\n");
+    sb.append("    files: ").append(toIndentedString(files)).append("\n");
+    sb.append("    payload: ").append(toIndentedString(payload)).append("\n");
+    sb.append("    avatar: ").append(toIndentedString(avatar)).append("\n");
     sb.append("}");
     return sb.toString();
   }

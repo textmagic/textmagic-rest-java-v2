@@ -68,6 +68,12 @@ public class UpdateContactInputObject {
   @SerializedName("country")
   private String country = null;
 
+  @SerializedName("tags")
+  private String tags = null;
+
+  @SerializedName("owner")
+  private Integer owner = null;
+
   public UpdateContactInputObject firstName(String firstName) {
     this.firstName = firstName;
     return this;
@@ -292,6 +298,42 @@ public class UpdateContactInputObject {
     this.country = country;
   }
 
+  public UpdateContactInputObject tags(String tags) {
+    this.tags = tags;
+    return this;
+  }
+
+   /**
+   * Contact [list](https://docs.textmagic.com/#tag/Tag) ID. Each contact must be assigned to at least one list.
+   * @return tags
+  **/
+  @ApiModelProperty(example = "10541,18599", value = "Contact [list](https://docs.textmagic.com/#tag/Tag) ID. Each contact must be assigned to at least one list.")
+  public String getTags() {
+    return tags;
+  }
+
+  public void setTags(String tags) {
+    this.tags = tags;
+  }
+
+  public UpdateContactInputObject owner(Integer owner) {
+    this.owner = owner;
+    return this;
+  }
+
+   /**
+   * Contact Owner ID
+   * @return owner
+  **/
+  @ApiModelProperty(example = "2", value = "Contact Owner ID")
+  public Integer getOwner() {
+    return owner;
+  }
+
+  public void setOwner(Integer owner) {
+    this.owner = owner;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -313,12 +355,14 @@ public class UpdateContactInputObject {
         Objects.equals(this.type, updateContactInputObject.type) &&
         Objects.equals(this.customFieldValues, updateContactInputObject.customFieldValues) &&
         Objects.equals(this.local, updateContactInputObject.local) &&
-        Objects.equals(this.country, updateContactInputObject.country);
+        Objects.equals(this.country, updateContactInputObject.country) &&
+        Objects.equals(this.tags, updateContactInputObject.tags) &&
+        Objects.equals(this.owner, updateContactInputObject.owner);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(firstName, lastName, phone, email, companyName, lists, favorited, blocked, type, customFieldValues, local, country);
+    return Objects.hash(firstName, lastName, phone, email, companyName, lists, favorited, blocked, type, customFieldValues, local, country, tags, owner);
   }
 
 
@@ -339,6 +383,8 @@ public class UpdateContactInputObject {
     sb.append("    customFieldValues: ").append(toIndentedString(customFieldValues)).append("\n");
     sb.append("    local: ").append(toIndentedString(local)).append("\n");
     sb.append("    country: ").append(toIndentedString(country)).append("\n");
+    sb.append("    tags: ").append(toIndentedString(tags)).append("\n");
+    sb.append("    owner: ").append(toIndentedString(owner)).append("\n");
     sb.append("}");
     return sb.toString();
   }

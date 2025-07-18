@@ -20,6 +20,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import com.textmagic.sdk.model.ContactList;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
@@ -41,7 +42,7 @@ public class GetListsOfContactPaginatedResponse {
   private Integer limit = null;
 
   @SerializedName("resources")
-  private List<List> resources = new ArrayList<List>();
+  private List<ContactList> resources = new ArrayList<ContactList>();
 
   public GetListsOfContactPaginatedResponse page(Integer page) {
     this.page = page;
@@ -97,12 +98,12 @@ public class GetListsOfContactPaginatedResponse {
     this.limit = limit;
   }
 
-  public GetListsOfContactPaginatedResponse resources(List<List> resources) {
+  public GetListsOfContactPaginatedResponse resources(List<ContactList> resources) {
     this.resources = resources;
     return this;
   }
 
-  public GetListsOfContactPaginatedResponse addResourcesItem(List resourcesItem) {
+  public GetListsOfContactPaginatedResponse addResourcesItem(ContactList resourcesItem) {
     this.resources.add(resourcesItem);
     return this;
   }
@@ -112,11 +113,11 @@ public class GetListsOfContactPaginatedResponse {
    * @return resources
   **/
   @ApiModelProperty(required = true, value = "")
-  public List<List> getResources() {
+  public List<ContactList> getResources() {
     return resources;
   }
 
-  public void setResources(List<List> resources) {
+  public void setResources(List<ContactList> resources) {
     this.resources = resources;
   }
 

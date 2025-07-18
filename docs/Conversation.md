@@ -15,6 +15,15 @@ Name | Type | Description | Notes
 **lastName** | **String** | Contact last name. | 
 **sessionId** | **Integer** | Session ID of a message. See [message sessions](https://docs.textmagic.com/#tag/Outbound-Message-Sessions) for details. | 
 **initiatorId** | **Integer** | Initiator ID of a message. See [message sessions](https://docs.textmagic.com/#tag/Outbound-Message-Sessions) for details. |  [optional]
+**messageFileId** | **Integer** | Message file id. |  [optional]
+**type** | [**TypeEnum**](#TypeEnum) | Message type. |  [optional]
+**chatType** | [**ChatTypeEnum**](#ChatTypeEnum) | Chat type. |  [optional]
+**chatId** | **Integer** | Chat id. |  [optional]
+**isEdited** | **Boolean** |  |  [optional]
+**errorCode** | **String** | Error code. |  [optional]
+**files** | [**List&lt;java.io.File&gt;**](java.io.File.md) |  |  [optional]
+**payload** | [**MessagePayload**](MessagePayload.md) |  |  [optional]
+**avatar** | **String** |  |  [optional]
 
 
 <a name="DirectionEnum"></a>
@@ -25,6 +34,32 @@ IN | &quot;in&quot;
 OUT | &quot;out&quot;
 O | &quot;o&quot;
 I | &quot;i&quot;
+
+
+<a name="TypeEnum"></a>
+## Enum: TypeEnum
+Name | Value
+---- | -----
+TEXT | &quot;text&quot;
+IMAGE | &quot;image&quot;
+AUDIO | &quot;audio&quot;
+VOICE | &quot;voice&quot;
+DOCUMENT | &quot;document&quot;
+VIDEO | &quot;video&quot;
+LOG | &quot;log&quot;
+INITIAL | &quot;initial&quot;
+NOTE | &quot;note&quot;
+
+
+<a name="ChatTypeEnum"></a>
+## Enum: ChatTypeEnum
+Name | Value
+---- | -----
+SMS | &quot;sms&quot;
+FACEBOOK_MESSENGER | &quot;facebook_messenger&quot;
+INSTAGRAM | &quot;instagram&quot;
+WHATSAPP_BUSINESS | &quot;whatsapp_business&quot;
+LIVE_CHAT | &quot;live_chat&quot;
 
 
 

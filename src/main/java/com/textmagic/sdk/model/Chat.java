@@ -22,9 +22,13 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import com.textmagic.sdk.model.Contact;
 import com.textmagic.sdk.model.Country;
+import com.textmagic.sdk.model.Tag;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 import org.threeten.bp.OffsetDateTime;
 
 /**
@@ -182,6 +186,18 @@ public class Chat {
 
   @SerializedName("pinned")
   private Boolean pinned = null;
+
+  @SerializedName("type")
+  private String type = null;
+
+  @SerializedName("smsPrice")
+  private BigDecimal smsPrice = null;
+
+  @SerializedName("mmsPrice")
+  private BigDecimal mmsPrice = null;
+
+  @SerializedName("tags")
+  private List<Tag> tags = null;
 
   public Chat id(Integer id) {
     this.id = id;
@@ -489,6 +505,86 @@ public class Chat {
     this.pinned = pinned;
   }
 
+  public Chat type(String type) {
+    this.type = type;
+    return this;
+  }
+
+   /**
+   * Chat type.
+   * @return type
+  **/
+  @ApiModelProperty(example = "sms", required = true, value = "Chat type.")
+  public String getType() {
+    return type;
+  }
+
+  public void setType(String type) {
+    this.type = type;
+  }
+
+  public Chat smsPrice(BigDecimal smsPrice) {
+    this.smsPrice = smsPrice;
+    return this;
+  }
+
+   /**
+   * Get smsPrice
+   * @return smsPrice
+  **/
+  @ApiModelProperty(example = "12.34", required = true, value = "")
+  public BigDecimal getSmsPrice() {
+    return smsPrice;
+  }
+
+  public void setSmsPrice(BigDecimal smsPrice) {
+    this.smsPrice = smsPrice;
+  }
+
+  public Chat mmsPrice(BigDecimal mmsPrice) {
+    this.mmsPrice = mmsPrice;
+    return this;
+  }
+
+   /**
+   * Get mmsPrice
+   * @return mmsPrice
+  **/
+  @ApiModelProperty(example = "12.34", required = true, value = "")
+  public BigDecimal getMmsPrice() {
+    return mmsPrice;
+  }
+
+  public void setMmsPrice(BigDecimal mmsPrice) {
+    this.mmsPrice = mmsPrice;
+  }
+
+  public Chat tags(List<Tag> tags) {
+    this.tags = tags;
+    return this;
+  }
+
+  public Chat addTagsItem(Tag tagsItem) {
+    if (this.tags == null) {
+      this.tags = new ArrayList<Tag>();
+    }
+    this.tags.add(tagsItem);
+    return this;
+  }
+
+   /**
+   * Get tags
+   * @return tags
+  **/
+  @ApiModelProperty(value = "")
+  public List<Tag> getTags() {
+    return tags;
+  }
+
+  public void setTags(List<Tag> tags) {
+    this.tags = tags;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -515,12 +611,16 @@ public class Chat {
         Objects.equals(this.mutedUntil, chat.mutedUntil) &&
         Objects.equals(this.timeLeftMute, chat.timeLeftMute) &&
         Objects.equals(this.country, chat.country) &&
-        Objects.equals(this.pinned, chat.pinned);
+        Objects.equals(this.pinned, chat.pinned) &&
+        Objects.equals(this.type, chat.type) &&
+        Objects.equals(this.smsPrice, chat.smsPrice) &&
+        Objects.equals(this.mmsPrice, chat.mmsPrice) &&
+        Objects.equals(this.tags, chat.tags);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, originalId, phone, contact, unsubscribedContactId, unread, updatedAt, status, mute, lastMessage, direction, replyOptionsType, from, mutedUntil, timeLeftMute, country, pinned);
+    return Objects.hash(id, originalId, phone, contact, unsubscribedContactId, unread, updatedAt, status, mute, lastMessage, direction, replyOptionsType, from, mutedUntil, timeLeftMute, country, pinned, type, smsPrice, mmsPrice, tags);
   }
 
 
@@ -546,6 +646,10 @@ public class Chat {
     sb.append("    timeLeftMute: ").append(toIndentedString(timeLeftMute)).append("\n");
     sb.append("    country: ").append(toIndentedString(country)).append("\n");
     sb.append("    pinned: ").append(toIndentedString(pinned)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    smsPrice: ").append(toIndentedString(smsPrice)).append("\n");
+    sb.append("    mmsPrice: ").append(toIndentedString(mmsPrice)).append("\n");
+    sb.append("    tags: ").append(toIndentedString(tags)).append("\n");
     sb.append("}");
     return sb.toString();
   }

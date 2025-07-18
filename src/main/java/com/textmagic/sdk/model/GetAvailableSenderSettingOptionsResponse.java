@@ -49,6 +49,15 @@ public class GetAvailableSenderSettingOptionsResponse {
   @SerializedName("userCarrierVonage")
   private List<String> userCarrierVonage = new ArrayList<String>();
 
+  @SerializedName("userCarrierSinch")
+  private List<String> userCarrierSinch = new ArrayList<String>();
+
+  @SerializedName("uCarrierBandwidth")
+  private List<String> uCarrierBandwidth = null;
+
+  @SerializedName("ucTwilioSenderId")
+  private List<String> ucTwilioSenderId = null;
+
   public GetAvailableSenderSettingOptionsResponse dedicated(List<String> dedicated) {
     this.dedicated = dedicated;
     return this;
@@ -187,6 +196,81 @@ public class GetAvailableSenderSettingOptionsResponse {
     this.userCarrierVonage = userCarrierVonage;
   }
 
+  public GetAvailableSenderSettingOptionsResponse userCarrierSinch(List<String> userCarrierSinch) {
+    this.userCarrierSinch = userCarrierSinch;
+    return this;
+  }
+
+  public GetAvailableSenderSettingOptionsResponse addUserCarrierSinchItem(String userCarrierSinchItem) {
+    this.userCarrierSinch.add(userCarrierSinchItem);
+    return this;
+  }
+
+   /**
+   * Array of alphanumeric sender IDs.
+   * @return userCarrierSinch
+  **/
+  @ApiModelProperty(example = "[447860021140,447860021141]", required = true, value = "Array of alphanumeric sender IDs.")
+  public List<String> getUserCarrierSinch() {
+    return userCarrierSinch;
+  }
+
+  public void setUserCarrierSinch(List<String> userCarrierSinch) {
+    this.userCarrierSinch = userCarrierSinch;
+  }
+
+  public GetAvailableSenderSettingOptionsResponse uCarrierBandwidth(List<String> uCarrierBandwidth) {
+    this.uCarrierBandwidth = uCarrierBandwidth;
+    return this;
+  }
+
+  public GetAvailableSenderSettingOptionsResponse addUCarrierBandwidthItem(String uCarrierBandwidthItem) {
+    if (this.uCarrierBandwidth == null) {
+      this.uCarrierBandwidth = new ArrayList<String>();
+    }
+    this.uCarrierBandwidth.add(uCarrierBandwidthItem);
+    return this;
+  }
+
+   /**
+   * Array of alphanumeric sender IDs.
+   * @return uCarrierBandwidth
+  **/
+  @ApiModelProperty(example = "[447860021142,447860021143]", value = "Array of alphanumeric sender IDs.")
+  public List<String> getUCarrierBandwidth() {
+    return uCarrierBandwidth;
+  }
+
+  public void setUCarrierBandwidth(List<String> uCarrierBandwidth) {
+    this.uCarrierBandwidth = uCarrierBandwidth;
+  }
+
+  public GetAvailableSenderSettingOptionsResponse ucTwilioSenderId(List<String> ucTwilioSenderId) {
+    this.ucTwilioSenderId = ucTwilioSenderId;
+    return this;
+  }
+
+  public GetAvailableSenderSettingOptionsResponse addUcTwilioSenderIdItem(String ucTwilioSenderIdItem) {
+    if (this.ucTwilioSenderId == null) {
+      this.ucTwilioSenderId = new ArrayList<String>();
+    }
+    this.ucTwilioSenderId.add(ucTwilioSenderIdItem);
+    return this;
+  }
+
+   /**
+   * Array of alphanumeric sender IDs.
+   * @return ucTwilioSenderId
+  **/
+  @ApiModelProperty(example = "[\"TestSender1\",\"TestSender2\"]", value = "Array of alphanumeric sender IDs.")
+  public List<String> getUcTwilioSenderId() {
+    return ucTwilioSenderId;
+  }
+
+  public void setUcTwilioSenderId(List<String> ucTwilioSenderId) {
+    this.ucTwilioSenderId = ucTwilioSenderId;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -202,12 +286,15 @@ public class GetAvailableSenderSettingOptionsResponse {
         Objects.equals(this.shared, getAvailableSenderSettingOptionsResponse.shared) &&
         Objects.equals(this.senderIds, getAvailableSenderSettingOptionsResponse.senderIds) &&
         Objects.equals(this.userCarrierTwilio, getAvailableSenderSettingOptionsResponse.userCarrierTwilio) &&
-        Objects.equals(this.userCarrierVonage, getAvailableSenderSettingOptionsResponse.userCarrierVonage);
+        Objects.equals(this.userCarrierVonage, getAvailableSenderSettingOptionsResponse.userCarrierVonage) &&
+        Objects.equals(this.userCarrierSinch, getAvailableSenderSettingOptionsResponse.userCarrierSinch) &&
+        Objects.equals(this.uCarrierBandwidth, getAvailableSenderSettingOptionsResponse.uCarrierBandwidth) &&
+        Objects.equals(this.ucTwilioSenderId, getAvailableSenderSettingOptionsResponse.ucTwilioSenderId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(dedicated, user, shared, senderIds, userCarrierTwilio, userCarrierVonage);
+    return Objects.hash(dedicated, user, shared, senderIds, userCarrierTwilio, userCarrierVonage, userCarrierSinch, uCarrierBandwidth, ucTwilioSenderId);
   }
 
 
@@ -222,6 +309,9 @@ public class GetAvailableSenderSettingOptionsResponse {
     sb.append("    senderIds: ").append(toIndentedString(senderIds)).append("\n");
     sb.append("    userCarrierTwilio: ").append(toIndentedString(userCarrierTwilio)).append("\n");
     sb.append("    userCarrierVonage: ").append(toIndentedString(userCarrierVonage)).append("\n");
+    sb.append("    userCarrierSinch: ").append(toIndentedString(userCarrierSinch)).append("\n");
+    sb.append("    uCarrierBandwidth: ").append(toIndentedString(uCarrierBandwidth)).append("\n");
+    sb.append("    ucTwilioSenderId: ").append(toIndentedString(ucTwilioSenderId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

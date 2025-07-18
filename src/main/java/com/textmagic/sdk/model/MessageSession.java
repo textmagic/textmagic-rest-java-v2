@@ -103,6 +103,12 @@ public class MessageSession {
   @SerializedName("destination")
   private DestinationEnum destination = null;
 
+  @SerializedName("initiatorId")
+  private Integer initiatorId = null;
+
+  @SerializedName("title")
+  private String title = null;
+
   public MessageSession id(Integer id) {
     this.id = id;
     return this;
@@ -247,6 +253,42 @@ public class MessageSession {
     this.destination = destination;
   }
 
+  public MessageSession initiatorId(Integer initiatorId) {
+    this.initiatorId = initiatorId;
+    return this;
+  }
+
+   /**
+   * Initiator ID.
+   * @return initiatorId
+  **/
+  @ApiModelProperty(example = "305", required = true, value = "Initiator ID.")
+  public Integer getInitiatorId() {
+    return initiatorId;
+  }
+
+  public void setInitiatorId(Integer initiatorId) {
+    this.initiatorId = initiatorId;
+  }
+
+  public MessageSession title(String title) {
+    this.title = title;
+    return this;
+  }
+
+   /**
+   * Get title
+   * @return title
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public String getTitle() {
+    return title;
+  }
+
+  public void setTitle(String title) {
+    this.title = title;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -264,12 +306,14 @@ public class MessageSession {
         Objects.equals(this.referenceId, messageSession.referenceId) &&
         Objects.equals(this.price, messageSession.price) &&
         Objects.equals(this.numbersCount, messageSession.numbersCount) &&
-        Objects.equals(this.destination, messageSession.destination);
+        Objects.equals(this.destination, messageSession.destination) &&
+        Objects.equals(this.initiatorId, messageSession.initiatorId) &&
+        Objects.equals(this.title, messageSession.title);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, startTime, text, source, referenceId, price, numbersCount, destination);
+    return Objects.hash(id, startTime, text, source, referenceId, price, numbersCount, destination, initiatorId, title);
   }
 
 
@@ -286,6 +330,8 @@ public class MessageSession {
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
     sb.append("    numbersCount: ").append(toIndentedString(numbersCount)).append("\n");
     sb.append("    destination: ").append(toIndentedString(destination)).append("\n");
+    sb.append("    initiatorId: ").append(toIndentedString(initiatorId)).append("\n");
+    sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("}");
     return sb.toString();
   }

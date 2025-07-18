@@ -37,6 +37,60 @@ public class GetAvailableDedicatedNumbersResponse {
   @SerializedName("price")
   private Float price = null;
 
+  /**
+   * Gets or Sets giftType
+   */
+  @JsonAdapter(GiftTypeEnum.Adapter.class)
+  public enum GiftTypeEnum {
+    NONE("none"),
+    
+    REGISTRATION("registration"),
+    
+    FIRST_MONTH("first_month"),
+    
+    INCLUDE_IN_PLAN("include_in_plan");
+
+    private String value;
+
+    GiftTypeEnum(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static GiftTypeEnum fromValue(String text) {
+      for (GiftTypeEnum b : GiftTypeEnum.values()) {
+        if (String.valueOf(b.value).equals(text)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<GiftTypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final GiftTypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public GiftTypeEnum read(final JsonReader jsonReader) throws IOException {
+        String value = jsonReader.nextString();
+        return GiftTypeEnum.fromValue(String.valueOf(value));
+      }
+    }
+  }
+
+  @SerializedName("giftType")
+  private GiftTypeEnum giftType = null;
+
   public GetAvailableDedicatedNumbersResponse numbers(List<String> numbers) {
     this.numbers = numbers;
     return this;
@@ -78,6 +132,24 @@ public class GetAvailableDedicatedNumbersResponse {
     this.price = price;
   }
 
+  public GetAvailableDedicatedNumbersResponse giftType(GiftTypeEnum giftType) {
+    this.giftType = giftType;
+    return this;
+  }
+
+   /**
+   * Get giftType
+   * @return giftType
+  **/
+  @ApiModelProperty(example = "none", required = true, value = "")
+  public GiftTypeEnum getGiftType() {
+    return giftType;
+  }
+
+  public void setGiftType(GiftTypeEnum giftType) {
+    this.giftType = giftType;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -89,12 +161,13 @@ public class GetAvailableDedicatedNumbersResponse {
     }
     GetAvailableDedicatedNumbersResponse getAvailableDedicatedNumbersResponse = (GetAvailableDedicatedNumbersResponse) o;
     return Objects.equals(this.numbers, getAvailableDedicatedNumbersResponse.numbers) &&
-        Objects.equals(this.price, getAvailableDedicatedNumbersResponse.price);
+        Objects.equals(this.price, getAvailableDedicatedNumbersResponse.price) &&
+        Objects.equals(this.giftType, getAvailableDedicatedNumbersResponse.giftType);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(numbers, price);
+    return Objects.hash(numbers, price, giftType);
   }
 
 
@@ -105,6 +178,7 @@ public class GetAvailableDedicatedNumbersResponse {
     
     sb.append("    numbers: ").append(toIndentedString(numbers)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
+    sb.append("    giftType: ").append(toIndentedString(giftType)).append("\n");
     sb.append("}");
     return sb.toString();
   }

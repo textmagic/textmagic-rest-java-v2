@@ -7,8 +7,6 @@ Method | HTTP request | Description
 [**assignContactsToList**](TextMagicApi.md#assignContactsToList) | **PUT** /api/v2/lists/{id}/contacts | Assign contacts to a list
 [**blockContact**](TextMagicApi.md#blockContact) | **POST** /api/v2/contacts/block | Block a contact by phone number
 [**buyDedicatedNumber**](TextMagicApi.md#buyDedicatedNumber) | **POST** /api/v2/numbers | Buy a dedicated number
-[**cancelVerification**](TextMagicApi.md#cancelVerification) | **DELETE** /api/v2/verify/{verifyId} | Cancel verification process
-[**checkPhoneVerificationCodeTFA**](TextMagicApi.md#checkPhoneVerificationCodeTFA) | **PUT** /api/v2/verify | Step 2: Check the verification code 
 [**clearAndAssignContactsToList**](TextMagicApi.md#clearAndAssignContactsToList) | **POST** /api/v2/lists/{id}/contacts | Reset list members to the specified contacts
 [**closeChatsBulk**](TextMagicApi.md#closeChatsBulk) | **POST** /api/v2/chats/close/bulk | Close chats (bulk)
 [**closeReadChats**](TextMagicApi.md#closeReadChats) | **POST** /api/v2/chats/close/read | Close read chats
@@ -130,7 +128,6 @@ Method | HTTP request | Description
 [**searchScheduledMessages**](TextMagicApi.md#searchScheduledMessages) | **GET** /api/v2/schedules/search | Find scheduled messages
 [**searchTemplates**](TextMagicApi.md#searchTemplates) | **GET** /api/v2/templates/search | Find templates by criteria
 [**sendMessage**](TextMagicApi.md#sendMessage) | **POST** /api/v2/messages | Send message
-[**sendPhoneVerificationCodeTFA**](TextMagicApi.md#sendPhoneVerificationCodeTFA) | **POST** /api/v2/verify | Step 1: Send a verification code 
 [**setChatStatus**](TextMagicApi.md#setChatStatus) | **POST** /api/v2/chats/status | Change chat status
 [**unblockContact**](TextMagicApi.md#unblockContact) | **POST** /api/v2/contacts/unblock | Unblock a contact by phone number
 [**unblockContactsBulk**](TextMagicApi.md#unblockContactsBulk) | **POST** /api/v2/contacts/unblock/bulk | Unblock contacts (bulk)
@@ -304,112 +301,6 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **buyDedicatedNumberInputObject** | [**BuyDedicatedNumberInputObject**](BuyDedicatedNumberInputObject.md)|  |
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-[BasicAuth](../README.md#BasicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="cancelVerification"></a>
-# **cancelVerification**
-> cancelVerification(verifyId)
-
-Cancel verification process
-
-You can cancel the verification not earlier than 30 seconds after the initial request.
-
-### Example
-```java
-// Import classes:
-//import com.textmagic.sdk.ApiClient;
-//import com.textmagic.sdk.ApiException;
-//import com.textmagic.sdk.Configuration;
-//import com.textmagic.sdk.auth.*;
-//import com.textmagic.sdk.api.TextMagicApi;
-
-ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure HTTP basic authorization: BasicAuth
-HttpBasicAuth BasicAuth = (HttpBasicAuth) defaultClient.getAuthentication("BasicAuth");
-BasicAuth.setUsername("YOUR USERNAME");
-BasicAuth.setPassword("YOUR PASSWORD");
-
-TextMagicApi apiInstance = new TextMagicApi();
-String verifyId = "\"123e4567-e89b-12d3-a456-426655440000\""; // String | The verifyId that you received in Step 1.
-try {
-    apiInstance.cancelVerification(verifyId);
-} catch (ApiException e) {
-    System.err.println("Exception when calling TextMagicApi#cancelVerification");
-    e.printStackTrace();
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **verifyId** | **String**| The verifyId that you received in Step 1. |
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-[BasicAuth](../README.md#BasicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="checkPhoneVerificationCodeTFA"></a>
-# **checkPhoneVerificationCodeTFA**
-> checkPhoneVerificationCodeTFA(checkPhoneVerificationCodeTFAInputObject)
-
-Step 2: Check the verification code 
-
-Check received code from user with the code which was actually sent.
-
-### Example
-```java
-// Import classes:
-//import com.textmagic.sdk.ApiClient;
-//import com.textmagic.sdk.ApiException;
-//import com.textmagic.sdk.Configuration;
-//import com.textmagic.sdk.auth.*;
-//import com.textmagic.sdk.api.TextMagicApi;
-
-ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure HTTP basic authorization: BasicAuth
-HttpBasicAuth BasicAuth = (HttpBasicAuth) defaultClient.getAuthentication("BasicAuth");
-BasicAuth.setUsername("YOUR USERNAME");
-BasicAuth.setPassword("YOUR PASSWORD");
-
-TextMagicApi apiInstance = new TextMagicApi();
-CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject = new CheckPhoneVerificationCodeTFAInputObject(); // CheckPhoneVerificationCodeTFAInputObject | 
-try {
-    apiInstance.checkPhoneVerificationCodeTFA(checkPhoneVerificationCodeTFAInputObject);
-} catch (ApiException e) {
-    System.err.println("Exception when calling TextMagicApi#checkPhoneVerificationCodeTFA");
-    e.printStackTrace();
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **checkPhoneVerificationCodeTFAInputObject** | [**CheckPhoneVerificationCodeTFAInputObject**](CheckPhoneVerificationCodeTFAInputObject.md)|  |
 
 ### Return type
 
@@ -3401,7 +3292,7 @@ Name | Type | Description  | Notes
 
 <a name="getChatMessages"></a>
 # **getChatMessages**
-> GetChatMessagesPaginatedResponse getChatMessages(id, page, limit, query, start, end, direction, voice)
+> GetChatMessagesPaginatedResponse getChatMessages(id, page, limit, query, start, end, direction, voice, includeNotes)
 
 Get chat messages
 
@@ -3432,8 +3323,9 @@ String start = "start_example"; // String | Return messages since specified time
 String end = "end_example"; // String | Return messages up to specified timestamp only. Required when `start` parameter specified.
 String direction = "desc"; // String | Order direction. Default is desc.
 Integer voice = 0; // Integer | Fetch results with voice calls.
+Integer includeNotes = 0; // Integer | Fetch results with messenger notes.
 try {
-    GetChatMessagesPaginatedResponse result = apiInstance.getChatMessages(id, page, limit, query, start, end, direction, voice);
+    GetChatMessagesPaginatedResponse result = apiInstance.getChatMessages(id, page, limit, query, start, end, direction, voice, includeNotes);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling TextMagicApi#getChatMessages");
@@ -3453,6 +3345,7 @@ Name | Type | Description  | Notes
  **end** | **String**| Return messages up to specified timestamp only. Required when &#x60;start&#x60; parameter specified. | [optional]
  **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc]
  **voice** | **Integer**| Fetch results with voice calls. | [optional] [default to 0]
+ **includeNotes** | **Integer**| Fetch results with messenger notes. | [optional] [default to 0]
 
 ### Return type
 
@@ -4461,7 +4354,7 @@ Name | Type | Description  | Notes
 
 <a name="getList"></a>
 # **getList**
-> List getList(id)
+> ContactList getList(id)
 
 Get the details of a specific list
 
@@ -4486,7 +4379,7 @@ BasicAuth.setPassword("YOUR PASSWORD");
 TextMagicApi apiInstance = new TextMagicApi();
 Integer id = 1; // Integer | 
 try {
-    List result = apiInstance.getList(id);
+    ContactList result = apiInstance.getList(id);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling TextMagicApi#getList");
@@ -4502,7 +4395,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List**](List.md)
+[**ContactList**](ContactList.md)
 
 ### Authorization
 
@@ -4695,7 +4588,7 @@ Name | Type | Description  | Notes
 
 Preview message
 
-Get a messages preview (with tags merged) of up to 100 messages per session.
+Get a messages preview (with dynamic fields merged) of up to 100 messages per session. 
 
 ### Example
 ```java
@@ -7194,60 +7087,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**SendMessageResponse**](SendMessageResponse.md)
-
-### Authorization
-
-[BasicAuth](../README.md#BasicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="sendPhoneVerificationCodeTFA"></a>
-# **sendPhoneVerificationCodeTFA**
-> SendPhoneVerificationCodeResponse sendPhoneVerificationCodeTFA(sendPhoneVerificationCodeTFAInputObject)
-
-Step 1: Send a verification code 
-
-Sends a verification code to a specified phone number.
-
-### Example
-```java
-// Import classes:
-//import com.textmagic.sdk.ApiClient;
-//import com.textmagic.sdk.ApiException;
-//import com.textmagic.sdk.Configuration;
-//import com.textmagic.sdk.auth.*;
-//import com.textmagic.sdk.api.TextMagicApi;
-
-ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure HTTP basic authorization: BasicAuth
-HttpBasicAuth BasicAuth = (HttpBasicAuth) defaultClient.getAuthentication("BasicAuth");
-BasicAuth.setUsername("YOUR USERNAME");
-BasicAuth.setPassword("YOUR PASSWORD");
-
-TextMagicApi apiInstance = new TextMagicApi();
-SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject = new SendPhoneVerificationCodeTFAInputObject(); // SendPhoneVerificationCodeTFAInputObject | 
-try {
-    SendPhoneVerificationCodeResponse result = apiInstance.sendPhoneVerificationCodeTFA(sendPhoneVerificationCodeTFAInputObject);
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling TextMagicApi#sendPhoneVerificationCodeTFA");
-    e.printStackTrace();
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **sendPhoneVerificationCodeTFAInputObject** | [**SendPhoneVerificationCodeTFAInputObject**](SendPhoneVerificationCodeTFAInputObject.md)|  |
-
-### Return type
-
-[**SendPhoneVerificationCodeResponse**](SendPhoneVerificationCodeResponse.md)
 
 ### Authorization
 

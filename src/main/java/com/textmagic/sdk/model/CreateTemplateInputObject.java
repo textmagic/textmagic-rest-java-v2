@@ -59,10 +59,10 @@ public class CreateTemplateInputObject {
   }
 
    /**
-   * Template text. May contain tags inside braces. See [Get timezones](https://docs.textmagic.com/#section/Custom-fields-list-(Merge-tags)).
+   * Template text. May contain dynamic fields inside braces. See [Custom fields list](https://docs.textmagic.com/#tag/Templates/Custom-fields-list-(Merge-dynamic-fields)).
    * @return content
   **/
-  @ApiModelProperty(example = "New template content", value = "Template text. May contain tags inside braces. See [Get timezones](https://docs.textmagic.com/#section/Custom-fields-list-(Merge-tags)).")
+  @ApiModelProperty(example = "New template content", value = "Template text. May contain dynamic fields inside braces. See [Custom fields list](https://docs.textmagic.com/#tag/Templates/Custom-fields-list-(Merge-dynamic-fields)).")
   public String getContent() {
     return content;
   }

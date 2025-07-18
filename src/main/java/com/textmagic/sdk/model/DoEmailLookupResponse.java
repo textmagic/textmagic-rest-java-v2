@@ -33,7 +33,7 @@ public class DoEmailLookupResponse {
   private String address = null;
 
   /**
-   * The email is &#x60;valid&#x60; or &#x60;invalid&#x60;.
+   * The email is &#x60;valid&#x60; or &#x60;invalid&#x60;.
    */
   @JsonAdapter(StatusEnum.Adapter.class)
   public enum StatusEnum {
@@ -89,7 +89,7 @@ public class DoEmailLookupResponse {
   private String reason = null;
 
   /**
-   * The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;.
+   * The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;.
    */
   @JsonAdapter(RiskEnum.Adapter.class)
   public enum RiskEnum {
@@ -143,7 +143,7 @@ public class DoEmailLookupResponse {
   private RiskEnum risk = null;
 
   /**
-   * The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;.
+   * The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;.
    */
   @JsonAdapter(AddressTypeEnum.Adapter.class)
   public enum AddressTypeEnum {
@@ -252,10 +252,10 @@ public class DoEmailLookupResponse {
   }
 
    /**
-   * The email is &#x60;valid&#x60; or &#x60;invalid&#x60;.
+   * The email is &#x60;valid&#x60; or &#x60;invalid&#x60;.
    * @return status
   **/
-  @ApiModelProperty(required = true, value = "The email is `valid` or `invalid`.")
+  @ApiModelProperty(required = true, value = "The email is `valid` or `invalid`.")
   public StatusEnum getStatus() {
     return status;
   }
@@ -270,10 +270,10 @@ public class DoEmailLookupResponse {
   }
 
    /**
-   * The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;. or &#x60;unknown&#x60;.
+   * The delivery status of the email address is&#x60;deliverable&#x60;, &#x60;undeliverable&#x60;. or &#x60;unknown&#x60;.
    * @return deliverability
   **/
-  @ApiModelProperty(example = "undeliverable", required = true, value = "The delivery status of the email address is`deliverable`, `undeliverable`. or `unknown`.")
+  @ApiModelProperty(example = "undeliverable", required = true, value = "The delivery status of the email address is`deliverable`, `undeliverable`. or `unknown`.")
   public String getDeliverability() {
     return deliverability;
   }
@@ -306,10 +306,10 @@ public class DoEmailLookupResponse {
   }
 
    /**
-   * The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;.
+   * The risk score of the email is&#x60;high&#x60;, &#x60;medium&#x60;, &#x60;low&#x60; or &#x60;null&#x60;.
    * @return risk
   **/
-  @ApiModelProperty(example = "high", required = true, value = "The risk score of the email is`high`, `medium`, `low` or `null`.")
+  @ApiModelProperty(example = "high", required = true, value = "The risk score of the email is`high`, `medium`, `low` or `null`.")
   public RiskEnum getRisk() {
     return risk;
   }
@@ -324,10 +324,10 @@ public class DoEmailLookupResponse {
   }
 
    /**
-   * The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;.
+   * The email address type (domain) is &#x60;free&#x60; or &#x60;corporate&#x60;.
    * @return addressType
   **/
-  @ApiModelProperty(example = "corporate", required = true, value = "The email address type (domain) is `free` or `corporate`.")
+  @ApiModelProperty(example = "corporate", required = true, value = "The email address type (domain) is `free` or `corporate`.")
   public AddressTypeEnum getAddressType() {
     return addressType;
   }
@@ -342,10 +342,10 @@ public class DoEmailLookupResponse {
   }
 
    /**
-   * This is &#x60;true&#x60; if the domain is in the list of disposable email addresses; otherwise, it returns as &#x60;false&#x60;.
+   * This is &#x60;true&#x60; if the domain is in the list of disposable email addresses; otherwise, it returns as &#x60;false&#x60;.
    * @return isDisposableAddress
   **/
-  @ApiModelProperty(example = "false", required = true, value = "This is `true` if the domain is in the list of disposable email addresses; otherwise, it returns as `false`.")
+  @ApiModelProperty(example = "false", required = true, value = "This is `true` if the domain is in the list of disposable email addresses; otherwise, it returns as `false`.")
   public Boolean isIsDisposableAddress() {
     return isDisposableAddress;
   }

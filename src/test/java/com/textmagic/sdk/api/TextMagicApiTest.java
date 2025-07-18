@@ -21,10 +21,10 @@ import com.textmagic.sdk.model.BlockContactInputObject;
 import com.textmagic.sdk.model.BulkSession;
 import com.textmagic.sdk.model.BuyDedicatedNumberInputObject;
 import com.textmagic.sdk.model.Chat;
-import com.textmagic.sdk.model.CheckPhoneVerificationCodeTFAInputObject;
 import com.textmagic.sdk.model.ClearAndAssignContactsToListInputObject;
 import com.textmagic.sdk.model.CloseChatsBulkInputObject;
 import com.textmagic.sdk.model.Contact;
+import com.textmagic.sdk.model.ContactList;
 import com.textmagic.sdk.model.ContactNote;
 import com.textmagic.sdk.model.CreateContactInputObject;
 import com.textmagic.sdk.model.CreateContactNoteInputObject;
@@ -116,8 +116,6 @@ import com.textmagic.sdk.model.SearchScheduledMessagesPaginatedResponse;
 import com.textmagic.sdk.model.SearchTemplatesPaginatedResponse;
 import com.textmagic.sdk.model.SendMessageInputObject;
 import com.textmagic.sdk.model.SendMessageResponse;
-import com.textmagic.sdk.model.SendPhoneVerificationCodeResponse;
-import com.textmagic.sdk.model.SendPhoneVerificationCodeTFAInputObject;
 import com.textmagic.sdk.model.SenderId;
 import com.textmagic.sdk.model.SetChatStatusInputObject;
 import com.textmagic.sdk.model.UnauthorizedResponse;
@@ -205,38 +203,6 @@ public class TextMagicApiTest {
     public void buyDedicatedNumberTest() throws ApiException {
         BuyDedicatedNumberInputObject buyDedicatedNumberInputObject = null;
         api.buyDedicatedNumber(buyDedicatedNumberInputObject);
-
-        // TODO: test validations
-    }
-    
-    /**
-     * Cancel verification process
-     *
-     * You can cancel the verification not earlier than 30 seconds after the initial request.
-     *
-     * @throws ApiException
-     *          if the Api call fails
-     */
-    @Test
-    public void cancelVerificationTest() throws ApiException {
-        String verifyId = null;
-        api.cancelVerification(verifyId);
-
-        // TODO: test validations
-    }
-    
-    /**
-     * Step 2: Check the verification code 
-     *
-     * Check received code from user with the code which was actually sent.
-     *
-     * @throws ApiException
-     *          if the Api call fails
-     */
-    @Test
-    public void checkPhoneVerificationCodeTFATest() throws ApiException {
-        CheckPhoneVerificationCodeTFAInputObject checkPhoneVerificationCodeTFAInputObject = null;
-        api.checkPhoneVerificationCodeTFA(checkPhoneVerificationCodeTFAInputObject);
 
         // TODO: test validations
     }
@@ -1164,7 +1130,8 @@ public class TextMagicApiTest {
         String end = null;
         String direction = null;
         Integer voice = null;
-        GetChatMessagesPaginatedResponse response = api.getChatMessages(id, page, limit, query, start, end, direction, voice);
+        Integer includeNotes = null;
+        GetChatMessagesPaginatedResponse response = api.getChatMessages(id, page, limit, query, start, end, direction, voice, includeNotes);
 
         // TODO: test validations
     }
@@ -1481,7 +1448,7 @@ public class TextMagicApiTest {
     @Test
     public void getListTest() throws ApiException {
         Integer id = null;
-        List response = api.getList(id);
+        ContactList response = api.getList(id);
 
         // TODO: test validations
     }
@@ -1544,7 +1511,7 @@ public class TextMagicApiTest {
     /**
      * Preview message
      *
-     * Get a messages preview (with tags merged) of up to 100 messages per session.
+     * Get a messages preview (with dynamic fields merged) of up to 100 messages per session. 
      *
      * @throws ApiException
      *          if the Api call fails
@@ -2327,22 +2294,6 @@ public class TextMagicApiTest {
     public void sendMessageTest() throws ApiException {
         SendMessageInputObject sendMessageInputObject = null;
         SendMessageResponse response = api.sendMessage(sendMessageInputObject);
-
-        // TODO: test validations
-    }
-    
-    /**
-     * Step 1: Send a verification code 
-     *
-     * Sends a verification code to a specified phone number.
-     *
-     * @throws ApiException
-     *          if the Api call fails
-     */
-    @Test
-    public void sendPhoneVerificationCodeTFATest() throws ApiException {
-        SendPhoneVerificationCodeTFAInputObject sendPhoneVerificationCodeTFAInputObject = null;
-        SendPhoneVerificationCodeResponse response = api.sendPhoneVerificationCodeTFA(sendPhoneVerificationCodeTFAInputObject);
 
         // TODO: test validations
     }

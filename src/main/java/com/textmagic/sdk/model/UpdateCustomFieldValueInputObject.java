@@ -59,10 +59,10 @@ public class UpdateCustomFieldValueInputObject {
   }
 
    /**
-   * Custom field value. Note that this value is not parsed in any way; it is stored and used in tags exactly as you send it.
+   * Custom field value. Note that this value is not parsed in any way; it is stored and used in dynamic fields exactly as you send it.
    * @return value
   **/
-  @ApiModelProperty(example = "1983-08-31T00:00:00.000Z", value = "Custom field value. Note that this value is not parsed in any way; it is stored and used in tags exactly as you send it.")
+  @ApiModelProperty(example = "1983-08-31T00:00:00.000Z", value = "Custom field value. Note that this value is not parsed in any way; it is stored and used in dynamic fields exactly as you send it.")
   public String getValue() {
     return value;
   }

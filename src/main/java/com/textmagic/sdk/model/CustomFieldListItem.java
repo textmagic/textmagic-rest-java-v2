@@ -23,6 +23,7 @@ import com.google.gson.stream.JsonWriter;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
+import org.threeten.bp.OffsetDateTime;
 
 /**
  * CustomFieldListItem
@@ -32,8 +33,17 @@ public class CustomFieldListItem {
   @SerializedName("id")
   private Integer id = null;
 
+  @SerializedName("userCustomFieldId")
+  private Integer userCustomFieldId = null;
+
+  @SerializedName("name")
+  private String name = null;
+
   @SerializedName("value")
   private String value = null;
+
+  @SerializedName("createdAt")
+  private OffsetDateTime createdAt = null;
 
   public CustomFieldListItem id(Integer id) {
     this.id = id;
@@ -51,6 +61,42 @@ public class CustomFieldListItem {
 
   public void setId(Integer id) {
     this.id = id;
+  }
+
+  public CustomFieldListItem userCustomFieldId(Integer userCustomFieldId) {
+    this.userCustomFieldId = userCustomFieldId;
+    return this;
+  }
+
+   /**
+   * Old property custom Field ID.
+   * @return userCustomFieldId
+  **/
+  @ApiModelProperty(example = "515", required = true, value = "Old property custom Field ID.")
+  public Integer getUserCustomFieldId() {
+    return userCustomFieldId;
+  }
+
+  public void setUserCustomFieldId(Integer userCustomFieldId) {
+    this.userCustomFieldId = userCustomFieldId;
+  }
+
+  public CustomFieldListItem name(String name) {
+    this.name = name;
+    return this;
+  }
+
+   /**
+   * Custom Field name.
+   * @return name
+  **/
+  @ApiModelProperty(example = "Custom name", required = true, value = "Custom Field name.")
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
   }
 
   public CustomFieldListItem value(String value) {
@@ -71,6 +117,24 @@ public class CustomFieldListItem {
     this.value = value;
   }
 
+  public CustomFieldListItem createdAt(OffsetDateTime createdAt) {
+    this.createdAt = createdAt;
+    return this;
+  }
+
+   /**
+   * Custom field creation time.
+   * @return createdAt
+  **/
+  @ApiModelProperty(example = "2015-02-11T07:33:19+0000", required = true, value = "Custom field creation time.")
+  public OffsetDateTime getCreatedAt() {
+    return createdAt;
+  }
+
+  public void setCreatedAt(OffsetDateTime createdAt) {
+    this.createdAt = createdAt;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -82,12 +146,15 @@ public class CustomFieldListItem {
     }
     CustomFieldListItem customFieldListItem = (CustomFieldListItem) o;
     return Objects.equals(this.id, customFieldListItem.id) &&
-        Objects.equals(this.value, customFieldListItem.value);
+        Objects.equals(this.userCustomFieldId, customFieldListItem.userCustomFieldId) &&
+        Objects.equals(this.name, customFieldListItem.name) &&
+        Objects.equals(this.value, customFieldListItem.value) &&
+        Objects.equals(this.createdAt, customFieldListItem.createdAt);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, value);
+    return Objects.hash(id, userCustomFieldId, name, value, createdAt);
   }
 
 
@@ -97,7 +164,10 @@ public class CustomFieldListItem {
     sb.append("class CustomFieldListItem {\n");
     
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    userCustomFieldId: ").append(toIndentedString(userCustomFieldId)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    value: ").append(toIndentedString(value)).append("\n");
+    sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("}");
     return sb.toString();
   }

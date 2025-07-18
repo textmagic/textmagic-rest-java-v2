@@ -20,10 +20,12 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import com.textmagic.sdk.model.ContactCustomField;
 import com.textmagic.sdk.model.ContactImage;
+import com.textmagic.sdk.model.ContactList;
 import com.textmagic.sdk.model.ContactNote;
 import com.textmagic.sdk.model.Country;
+import com.textmagic.sdk.model.CustomFieldListItem;
+import com.textmagic.sdk.model.Tag;
 import com.textmagic.sdk.model.User;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -64,13 +66,19 @@ public class Contact {
   private Country country = null;
 
   @SerializedName("customFields")
-  private List<ContactCustomField> customFields = new ArrayList<ContactCustomField>();
+  private List<CustomFieldListItem> customFields = new ArrayList<CustomFieldListItem>();
 
   @SerializedName("user")
   private User user = null;
 
   @SerializedName("lists")
-  private List<List> lists = new ArrayList<List>();
+  private List<ContactList> lists = new ArrayList<ContactList>();
+
+  @SerializedName("owner")
+  private User owner = null;
+
+  @SerializedName("tags")
+  private List<Tag> tags = null;
 
   @SerializedName("phoneType")
   private String phoneType = null;
@@ -80,6 +88,9 @@ public class Contact {
 
   @SerializedName("notes")
   private List<ContactNote> notes = new ArrayList<ContactNote>();
+
+  @SerializedName("whatsappPhone")
+  private String whatsappPhone = null;
 
   public Contact id(Integer id) {
     this.id = id;
@@ -243,26 +254,26 @@ public class Contact {
     this.country = country;
   }
 
-  public Contact customFields(List<ContactCustomField> customFields) {
+  public Contact customFields(List<CustomFieldListItem> customFields) {
     this.customFields = customFields;
     return this;
   }
 
-  public Contact addCustomFieldsItem(ContactCustomField customFieldsItem) {
+  public Contact addCustomFieldsItem(CustomFieldListItem customFieldsItem) {
     this.customFields.add(customFieldsItem);
     return this;
   }
 
    /**
-   * See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section.
+   * Get customFields
    * @return customFields
   **/
-  @ApiModelProperty(required = true, value = "See the [Custom Fields](https://docs.textmagic.com/#tag/Custom-Fields) section.")
-  public List<ContactCustomField> getCustomFields() {
+  @ApiModelProperty(required = true, value = "")
+  public List<CustomFieldListItem> getCustomFields() {
     return customFields;
   }
 
-  public void setCustomFields(List<ContactCustomField> customFields) {
+  public void setCustomFields(List<CustomFieldListItem> customFields) {
     this.customFields = customFields;
   }
 
@@ -284,12 +295,12 @@ public class Contact {
     this.user = user;
   }
 
-  public Contact lists(List<List> lists) {
+  public Contact lists(List<ContactList> lists) {
     this.lists = lists;
     return this;
   }
 
-  public Contact addListsItem(List listsItem) {
+  public Contact addListsItem(ContactList listsItem) {
     this.lists.add(listsItem);
     return this;
   }
@@ -299,12 +310,56 @@ public class Contact {
    * @return lists
   **/
   @ApiModelProperty(required = true, value = "")
-  public List<List> getLists() {
+  public List<ContactList> getLists() {
     return lists;
   }
 
-  public void setLists(List<List> lists) {
+  public void setLists(List<ContactList> lists) {
     this.lists = lists;
+  }
+
+  public Contact owner(User owner) {
+    this.owner = owner;
+    return this;
+  }
+
+   /**
+   * Contact Owner User ID.
+   * @return owner
+  **/
+  @ApiModelProperty(value = "Contact Owner User ID.")
+  public User getOwner() {
+    return owner;
+  }
+
+  public void setOwner(User owner) {
+    this.owner = owner;
+  }
+
+  public Contact tags(List<Tag> tags) {
+    this.tags = tags;
+    return this;
+  }
+
+  public Contact addTagsItem(Tag tagsItem) {
+    if (this.tags == null) {
+      this.tags = new ArrayList<Tag>();
+    }
+    this.tags.add(tagsItem);
+    return this;
+  }
+
+   /**
+   * Get tags
+   * @return tags
+  **/
+  @ApiModelProperty(value = "")
+  public List<Tag> getTags() {
+    return tags;
+  }
+
+  public void setTags(List<Tag> tags) {
+    this.tags = tags;
   }
 
   public Contact phoneType(String phoneType) {
@@ -366,6 +421,24 @@ public class Contact {
     this.notes = notes;
   }
 
+  public Contact whatsappPhone(String whatsappPhone) {
+    this.whatsappPhone = whatsappPhone;
+    return this;
+  }
+
+   /**
+   * Whatsapp phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).
+   * @return whatsappPhone
+  **/
+  @ApiModelProperty(example = "447860021130", value = "Whatsapp phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).")
+  public String getWhatsappPhone() {
+    return whatsappPhone;
+  }
+
+  public void setWhatsappPhone(String whatsappPhone) {
+    this.whatsappPhone = whatsappPhone;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -388,14 +461,17 @@ public class Contact {
         Objects.equals(this.customFields, contact.customFields) &&
         Objects.equals(this.user, contact.user) &&
         Objects.equals(this.lists, contact.lists) &&
+        Objects.equals(this.owner, contact.owner) &&
+        Objects.equals(this.tags, contact.tags) &&
         Objects.equals(this.phoneType, contact.phoneType) &&
         Objects.equals(this.avatar, contact.avatar) &&
-        Objects.equals(this.notes, contact.notes);
+        Objects.equals(this.notes, contact.notes) &&
+        Objects.equals(this.whatsappPhone, contact.whatsappPhone);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, favorited, blocked, firstName, lastName, companyName, phone, email, country, customFields, user, lists, phoneType, avatar, notes);
+    return Objects.hash(id, favorited, blocked, firstName, lastName, companyName, phone, email, country, customFields, user, lists, owner, tags, phoneType, avatar, notes, whatsappPhone);
   }
 
 
@@ -416,9 +492,12 @@ public class Contact {
     sb.append("    customFields: ").append(toIndentedString(customFields)).append("\n");
     sb.append("    user: ").append(toIndentedString(user)).append("\n");
     sb.append("    lists: ").append(toIndentedString(lists)).append("\n");
+    sb.append("    owner: ").append(toIndentedString(owner)).append("\n");
+    sb.append("    tags: ").append(toIndentedString(tags)).append("\n");
     sb.append("    phoneType: ").append(toIndentedString(phoneType)).append("\n");
     sb.append("    avatar: ").append(toIndentedString(avatar)).append("\n");
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
+    sb.append("    whatsappPhone: ").append(toIndentedString(whatsappPhone)).append("\n");
     sb.append("}");
     return sb.toString();
   }

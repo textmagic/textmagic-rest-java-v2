@@ -40,6 +40,9 @@ public class MessagesIcsParametersRecipients {
   @SerializedName("numbers")
   private List<String> numbers = new ArrayList<String>();
 
+  @SerializedName("filteredViews")
+  private List<Integer> filteredViews = new ArrayList<Integer>();
+
   public MessagesIcsParametersRecipients contacts(List<Integer> contacts) {
     this.contacts = contacts;
     return this;
@@ -109,6 +112,29 @@ public class MessagesIcsParametersRecipients {
     this.numbers = numbers;
   }
 
+  public MessagesIcsParametersRecipients filteredViews(List<Integer> filteredViews) {
+    this.filteredViews = filteredViews;
+    return this;
+  }
+
+  public MessagesIcsParametersRecipients addFilteredViewsItem(Integer filteredViewsItem) {
+    this.filteredViews.add(filteredViewsItem);
+    return this;
+  }
+
+   /**
+   * Get filteredViews
+   * @return filteredViews
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public List<Integer> getFilteredViews() {
+    return filteredViews;
+  }
+
+  public void setFilteredViews(List<Integer> filteredViews) {
+    this.filteredViews = filteredViews;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -121,12 +147,13 @@ public class MessagesIcsParametersRecipients {
     MessagesIcsParametersRecipients messagesIcsParametersRecipients = (MessagesIcsParametersRecipients) o;
     return Objects.equals(this.contacts, messagesIcsParametersRecipients.contacts) &&
         Objects.equals(this.groups, messagesIcsParametersRecipients.groups) &&
-        Objects.equals(this.numbers, messagesIcsParametersRecipients.numbers);
+        Objects.equals(this.numbers, messagesIcsParametersRecipients.numbers) &&
+        Objects.equals(this.filteredViews, messagesIcsParametersRecipients.filteredViews);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(contacts, groups, numbers);
+    return Objects.hash(contacts, groups, numbers, filteredViews);
   }
 
 
@@ -138,6 +165,7 @@ public class MessagesIcsParametersRecipients {
     sb.append("    contacts: ").append(toIndentedString(contacts)).append("\n");
     sb.append("    groups: ").append(toIndentedString(groups)).append("\n");
     sb.append("    numbers: ").append(toIndentedString(numbers)).append("\n");
+    sb.append("    filteredViews: ").append(toIndentedString(filteredViews)).append("\n");
     sb.append("}");
     return sb.toString();
   }
