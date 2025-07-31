@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **systemAccountAcceptTermsUpdate** | **Integer** |  | 
 **systemAccountClosed** | **Integer** |  | 
 **systemAccountAdditionalFields** | **Integer** |  | 
+**systemAccountNumbersListChange** | **Integer** |  | 
 **systemAccountPermissionsChanged** | **Integer** |  | 
 **userProfileChanged** | **Integer** |  | 
 **userBalanceChanged** | **Integer** |  | 
@@ -79,6 +80,7 @@ Name | Type | Description | Notes
 **progressCarrierBulkLookup** | **Integer** |  | 
 **progressEmailBulkLookup** | **Integer** |  | 
 **progressSubAccountBulkImport** | **Integer** |  | 
+**emailLookupProgressState** | **Integer** |  | 
 **importProgressState** | **Integer** |  | 
 **forceRefreshWebApp** | **Integer** |  | 
 **chatSenderSettingsChanged** | **Integer** |  | 
