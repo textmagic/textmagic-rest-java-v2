@@ -1,28 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>com.textmagic.sdk</groupId>
     <artifactId>textmagic-java-sdk</artifactId>
+    <version>2.0.${revision}</version>
     <packaging>jar</packaging>
     <name>textmagic-java-sdk</name>
-    <version>2.0.${revision}</version>
     <url>http://www.textmagic.com</url>
     <description>Java wrapper library for Textmagic services</description>
+
     <scm>
         <connection>scm:git:git@github.com:textmagic/textmagic-rest-java-v2.git</connection>
         <developerConnection>scm:git:git@github.com:textmagic/textmagic-rest-java-v2.git</developerConnection>
         <url>git://github.com/textmagic/textmagic-rest-java-v2.git</url>
     </scm>
-    <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>sonatype-nexus-staging</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
+
     <licenses>
         <license>
             <name>MIT License</name>
@@ -33,10 +27,9 @@
 
     <developers>
         <developer>
-            <name>Andrey Vorobyev</name>
-            <email>andrey.v@textmagic.biz</email>
-            <organization>TextMagic</organization>
-            <organizationUrl>https://textmagic.com</organizationUrl>
+            <email>developers@textmagic.biz</email>
+            <organization>Textmagic</organization>
+            <organizationUrl>https://www.textmagic.com</organizationUrl>
         </developer>
     </developers>
 
@@ -62,6 +55,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -78,6 +72,7 @@
                     <forkMode>pertest</forkMode>
                 </configuration>
             </plugin>
+
             <plugin>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
@@ -93,7 +88,6 @@
                 </executions>
             </plugin>
 
-            <!-- attach test jar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -106,8 +100,6 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                </configuration>
             </plugin>
 
             <plugin>
@@ -123,9 +115,7 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>
-                                    src/main/java
-                                </source>
+                                <source>src/main/java</source>
                             </sources>
                         </configuration>
                     </execution>
@@ -137,14 +127,13 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>
-                                    src/test/java
-                                </source>
+                                <source>src/test/java</source>
                             </sources>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
@@ -158,6 +147,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -171,6 +161,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
@@ -195,6 +186,18 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.8.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                  <publishingServerId>central</publishingServerId>
+                  <autoPublish>true</autoPublish>
+                  <checksums>all</checksums>
+                </configuration>
             </plugin>
         </plugins>
     </build>
@@ -260,7 +263,6 @@
             <artifactId>threetenbp</artifactId>
             <version>${threetenbp-version}</version>
         </dependency>
-        <!-- test dependencies -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -268,6 +270,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
     <properties>
         <java.version>1.7</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -280,9 +283,9 @@
         <maven-plugin-version>1.0.0</maven-plugin-version>
         <junit-version>4.12</junit-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <gpg.keyname>developers@textmagic.biz</gpg.keyname>
     </properties>
 
-    <!-- Sonatype repo submission stuff -->
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>

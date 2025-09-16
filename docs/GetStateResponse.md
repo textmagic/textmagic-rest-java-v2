@@ -78,7 +78,6 @@ Name | Type | Description | Notes
 **listCacheClear** | **Integer** |  | 
 **customFieldsCacheClear** | **Integer** |  | 
 **progressCarrierBulkLookup** | **Integer** |  | 
-**progressEmailBulkLookup** | **Integer** |  | 
 **progressSubAccountBulkImport** | **Integer** |  | 
 **emailLookupProgressState** | **Integer** |  | 
 **importProgressState** | **Integer** |  | 
@@ -184,6 +183,8 @@ Name | Type | Description | Notes
 **emailCampaignDomainEntryVerificationChanged** | **Integer** |  | 
 **emailCampaignProgressState** | **Integer** |  | 
 **emailCampaignUpdated** | **Integer** |  | 
+**emailTemplateImproved** | **Integer** |  | 
+**emailTemplateImprovingFailed** | **Integer** |  | 
 **smsCampaignInvalidated** | **Integer** |  | 
 **scheduledEmailCampaignCreated** | **Integer** |  | 
 **scheduledEmailCampaignUpdated** | **Integer** |  | 

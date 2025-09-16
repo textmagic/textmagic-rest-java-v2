@@ -20,6 +20,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import com.textmagic.sdk.model.MessageFile;
 import com.textmagic.sdk.model.MessagePayload;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -250,7 +251,7 @@ public class Conversation {
   private String errorCode = null;
 
   @SerializedName("files")
-  private List<java.io.File> files = null;
+  private List<MessageFile> files = null;
 
   @SerializedName("payload")
   private MessagePayload payload = null;
@@ -564,14 +565,14 @@ public class Conversation {
     this.errorCode = errorCode;
   }
 
-  public Conversation files(List<java.io.File> files) {
+  public Conversation files(List<MessageFile> files) {
     this.files = files;
     return this;
   }
 
-  public Conversation addFilesItem(java.io.File filesItem) {
+  public Conversation addFilesItem(MessageFile filesItem) {
     if (this.files == null) {
-      this.files = new ArrayList<java.io.File>();
+      this.files = new ArrayList<MessageFile>();
     }
     this.files.add(filesItem);
     return this;
@@ -582,11 +583,11 @@ public class Conversation {
    * @return files
   **/
   @ApiModelProperty(value = "")
-  public List<java.io.File> getFiles() {
+  public List<MessageFile> getFiles() {
     return files;
   }
 
-  public void setFiles(List<java.io.File> files) {
+  public void setFiles(List<MessageFile> files) {
     this.files = files;
   }
 

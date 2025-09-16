@@ -14,6 +14,7 @@ Method | HTTP request | Description
 [**createContact**](TextMagicApi.md#createContact) | **POST** /api/v2/contacts/normalized | Add a new contact
 [**createContactNote**](TextMagicApi.md#createContactNote) | **POST** /api/v2/contacts/{id}/notes | Create a new contact note
 [**createCustomField**](TextMagicApi.md#createCustomField) | **POST** /api/v2/customfields | Add a new custom field
+[**createEmailCampaign**](TextMagicApi.md#createEmailCampaign) | **POST** /api/v2/email-campaigns | Create new email campaign
 [**createList**](TextMagicApi.md#createList) | **POST** /api/v2/lists | Create a new list
 [**createTemplate**](TextMagicApi.md#createTemplate) | **POST** /api/v2/templates | Create a template
 [**deleteAllContacts**](TextMagicApi.md#deleteAllContacts) | **DELETE** /api/v2/contact/all | Delete contacts (bulk)
@@ -77,6 +78,7 @@ Method | HTTP request | Description
 [**getCustomField**](TextMagicApi.md#getCustomField) | **GET** /api/v2/customfields/{id} | Get the details of a specific custom field
 [**getCustomFields**](TextMagicApi.md#getCustomFields) | **GET** /api/v2/customfields | Get all custom fields
 [**getDedicatedNumber**](TextMagicApi.md#getDedicatedNumber) | **GET** /api/v2/numbers/{id} | Get the details of a specific dedicated number
+[**getEmailSenders**](TextMagicApi.md#getEmailSenders) | **GET** /api/v2/email-campaigns/email-senders | Get list of email senders
 [**getFavorites**](TextMagicApi.md#getFavorites) | **GET** /api/v2/contacts/favorite | Get favorite contacts and lists
 [**getInboundMessage**](TextMagicApi.md#getInboundMessage) | **GET** /api/v2/replies/{id} | Get a single inbound message
 [**getInboundMessagesNotificationSettings**](TextMagicApi.md#getInboundMessagesNotificationSettings) | **GET** /api/v2/user/notification/inbound | Get inbound messages notification settings
@@ -118,6 +120,7 @@ Method | HTTP request | Description
 [**reopenChatsBulk**](TextMagicApi.md#reopenChatsBulk) | **POST** /api/v2/chats/reopen/bulk | Reopen chats (bulk)
 [**requestNewSubaccountToken**](TextMagicApi.md#requestNewSubaccountToken) | **POST** /api/v2/subaccounts/tokens | Request a new REST API token for sub-account
 [**requestSenderId**](TextMagicApi.md#requestSenderId) | **POST** /api/v2/senderids | Apply for a new Sender ID
+[**scheduleEmailCampaign**](TextMagicApi.md#scheduleEmailCampaign) | **POST** /api/v2/email-campaigns/schedule | Schedule new email campaign
 [**searchChats**](TextMagicApi.md#searchChats) | **GET** /api/v2/chats/search | Find chats by message text
 [**searchChatsByIds**](TextMagicApi.md#searchChatsByIds) | **GET** /api/v2/chats/search/ids | Find chats (bulk)
 [**searchChatsByReceipent**](TextMagicApi.md#searchChatsByReceipent) | **GET** /api/v2/chats/search/recipients | Find chats by recipient
@@ -680,6 +683,60 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ResourceLinkResponse**](ResourceLinkResponse.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="createEmailCampaign"></a>
+# **createEmailCampaign**
+> CreateEmailCampaignResponse createEmailCampaign(createEmailCampaignInputObject)
+
+Create new email campaign
+
+Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you&#39;ll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account&#39;s email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
+
+### Example
+```java
+// Import classes:
+//import com.textmagic.sdk.ApiClient;
+//import com.textmagic.sdk.ApiException;
+//import com.textmagic.sdk.Configuration;
+//import com.textmagic.sdk.auth.*;
+//import com.textmagic.sdk.api.TextMagicApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure HTTP basic authorization: BasicAuth
+HttpBasicAuth BasicAuth = (HttpBasicAuth) defaultClient.getAuthentication("BasicAuth");
+BasicAuth.setUsername("YOUR USERNAME");
+BasicAuth.setPassword("YOUR PASSWORD");
+
+TextMagicApi apiInstance = new TextMagicApi();
+CreateEmailCampaignInputObject createEmailCampaignInputObject = new CreateEmailCampaignInputObject(); // CreateEmailCampaignInputObject | 
+try {
+    CreateEmailCampaignResponse result = apiInstance.createEmailCampaign(createEmailCampaignInputObject);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling TextMagicApi#createEmailCampaign");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **createEmailCampaignInputObject** | [**CreateEmailCampaignInputObject**](CreateEmailCampaignInputObject.md)|  |
+
+### Return type
+
+[**CreateEmailCampaignResponse**](CreateEmailCampaignResponse.md)
 
 ### Authorization
 
@@ -4134,6 +4191,60 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
+<a name="getEmailSenders"></a>
+# **getEmailSenders**
+> GetEmailSendersResponse getEmailSenders(domainId)
+
+Get list of email senders
+
+Retrieves a list of configured email senders available for creating email campaigns.
+
+### Example
+```java
+// Import classes:
+//import com.textmagic.sdk.ApiClient;
+//import com.textmagic.sdk.ApiException;
+//import com.textmagic.sdk.Configuration;
+//import com.textmagic.sdk.auth.*;
+//import com.textmagic.sdk.api.TextMagicApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure HTTP basic authorization: BasicAuth
+HttpBasicAuth BasicAuth = (HttpBasicAuth) defaultClient.getAuthentication("BasicAuth");
+BasicAuth.setUsername("YOUR USERNAME");
+BasicAuth.setPassword("YOUR PASSWORD");
+
+TextMagicApi apiInstance = new TextMagicApi();
+Integer domainId = 56; // Integer | Filter email senders by specific domain ID.
+try {
+    GetEmailSendersResponse result = apiInstance.getEmailSenders(domainId);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling TextMagicApi#getEmailSenders");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **domainId** | **Integer**| Filter email senders by specific domain ID. | [optional]
+
+### Return type
+
+[**GetEmailSendersResponse**](GetEmailSendersResponse.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 <a name="getFavorites"></a>
 # **getFavorites**
 > GetFavoritesPaginatedResponse getFavorites(page, limit, query)
@@ -6451,6 +6562,60 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ResourceLinkResponse**](ResourceLinkResponse.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="scheduleEmailCampaign"></a>
+# **scheduleEmailCampaign**
+> ScheduleEmailCampaignResponse scheduleEmailCampaign(scheduleEmailCampaignInputObject)
+
+Schedule new email campaign
+
+Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.
+
+### Example
+```java
+// Import classes:
+//import com.textmagic.sdk.ApiClient;
+//import com.textmagic.sdk.ApiException;
+//import com.textmagic.sdk.Configuration;
+//import com.textmagic.sdk.auth.*;
+//import com.textmagic.sdk.api.TextMagicApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure HTTP basic authorization: BasicAuth
+HttpBasicAuth BasicAuth = (HttpBasicAuth) defaultClient.getAuthentication("BasicAuth");
+BasicAuth.setUsername("YOUR USERNAME");
+BasicAuth.setPassword("YOUR PASSWORD");
+
+TextMagicApi apiInstance = new TextMagicApi();
+ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject = new ScheduleEmailCampaignInputObject(); // ScheduleEmailCampaignInputObject | 
+try {
+    ScheduleEmailCampaignResponse result = apiInstance.scheduleEmailCampaign(scheduleEmailCampaignInputObject);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling TextMagicApi#scheduleEmailCampaign");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **scheduleEmailCampaignInputObject** | [**ScheduleEmailCampaignInputObject**](ScheduleEmailCampaignInputObject.md)|  |
+
+### Return type
+
+[**ScheduleEmailCampaignResponse**](ScheduleEmailCampaignResponse.md)
 
 ### Authorization
 

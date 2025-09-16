@@ -251,9 +251,6 @@ public class GetStateResponse {
   @SerializedName("progressCarrierBulkLookup")
   private Integer progressCarrierBulkLookup = null;
 
-  @SerializedName("progressEmailBulkLookup")
-  private Integer progressEmailBulkLookup = null;
-
   @SerializedName("progressSubAccountBulkImport")
   private Integer progressSubAccountBulkImport = null;
 
@@ -568,6 +565,12 @@ public class GetStateResponse {
 
   @SerializedName("emailCampaignUpdated")
   private Integer emailCampaignUpdated = null;
+
+  @SerializedName("emailTemplateImproved")
+  private Integer emailTemplateImproved = null;
+
+  @SerializedName("emailTemplateImprovingFailed")
+  private Integer emailTemplateImprovingFailed = null;
 
   @SerializedName("smsCampaignInvalidated")
   private Integer smsCampaignInvalidated = null;
@@ -1923,24 +1926,6 @@ public class GetStateResponse {
 
   public void setProgressCarrierBulkLookup(Integer progressCarrierBulkLookup) {
     this.progressCarrierBulkLookup = progressCarrierBulkLookup;
-  }
-
-  public GetStateResponse progressEmailBulkLookup(Integer progressEmailBulkLookup) {
-    this.progressEmailBulkLookup = progressEmailBulkLookup;
-    return this;
-  }
-
-   /**
-   * Get progressEmailBulkLookup
-   * @return progressEmailBulkLookup
-  **/
-  @ApiModelProperty(required = true, value = "")
-  public Integer getProgressEmailBulkLookup() {
-    return progressEmailBulkLookup;
-  }
-
-  public void setProgressEmailBulkLookup(Integer progressEmailBulkLookup) {
-    this.progressEmailBulkLookup = progressEmailBulkLookup;
   }
 
   public GetStateResponse progressSubAccountBulkImport(Integer progressSubAccountBulkImport) {
@@ -3833,6 +3818,42 @@ public class GetStateResponse {
     this.emailCampaignUpdated = emailCampaignUpdated;
   }
 
+  public GetStateResponse emailTemplateImproved(Integer emailTemplateImproved) {
+    this.emailTemplateImproved = emailTemplateImproved;
+    return this;
+  }
+
+   /**
+   * Get emailTemplateImproved
+   * @return emailTemplateImproved
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailTemplateImproved() {
+    return emailTemplateImproved;
+  }
+
+  public void setEmailTemplateImproved(Integer emailTemplateImproved) {
+    this.emailTemplateImproved = emailTemplateImproved;
+  }
+
+  public GetStateResponse emailTemplateImprovingFailed(Integer emailTemplateImprovingFailed) {
+    this.emailTemplateImprovingFailed = emailTemplateImprovingFailed;
+    return this;
+  }
+
+   /**
+   * Get emailTemplateImprovingFailed
+   * @return emailTemplateImprovingFailed
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Integer getEmailTemplateImprovingFailed() {
+    return emailTemplateImprovingFailed;
+  }
+
+  public void setEmailTemplateImprovingFailed(Integer emailTemplateImprovingFailed) {
+    this.emailTemplateImprovingFailed = emailTemplateImprovingFailed;
+  }
+
   public GetStateResponse smsCampaignInvalidated(Integer smsCampaignInvalidated) {
     this.smsCampaignInvalidated = smsCampaignInvalidated;
     return this;
@@ -4061,7 +4082,6 @@ public class GetStateResponse {
         Objects.equals(this.listCacheClear, getStateResponse.listCacheClear) &&
         Objects.equals(this.customFieldsCacheClear, getStateResponse.customFieldsCacheClear) &&
         Objects.equals(this.progressCarrierBulkLookup, getStateResponse.progressCarrierBulkLookup) &&
-        Objects.equals(this.progressEmailBulkLookup, getStateResponse.progressEmailBulkLookup) &&
         Objects.equals(this.progressSubAccountBulkImport, getStateResponse.progressSubAccountBulkImport) &&
         Objects.equals(this.emailLookupProgressState, getStateResponse.emailLookupProgressState) &&
         Objects.equals(this.importProgressState, getStateResponse.importProgressState) &&
@@ -4167,6 +4187,8 @@ public class GetStateResponse {
         Objects.equals(this.emailCampaignDomainEntryVerificationChanged, getStateResponse.emailCampaignDomainEntryVerificationChanged) &&
         Objects.equals(this.emailCampaignProgressState, getStateResponse.emailCampaignProgressState) &&
         Objects.equals(this.emailCampaignUpdated, getStateResponse.emailCampaignUpdated) &&
+        Objects.equals(this.emailTemplateImproved, getStateResponse.emailTemplateImproved) &&
+        Objects.equals(this.emailTemplateImprovingFailed, getStateResponse.emailTemplateImprovingFailed) &&
         Objects.equals(this.smsCampaignInvalidated, getStateResponse.smsCampaignInvalidated) &&
         Objects.equals(this.scheduledEmailCampaignCreated, getStateResponse.scheduledEmailCampaignCreated) &&
         Objects.equals(this.scheduledEmailCampaignUpdated, getStateResponse.scheduledEmailCampaignUpdated) &&
@@ -4179,7 +4201,7 @@ public class GetStateResponse {
 
   @Override
   public int hashCode() {
-    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, systemAccountAcceptTermsUpdate, systemAccountClosed, systemAccountAdditionalFields, systemAccountNumbersListChange, systemAccountPermissionsChanged, userProfileChanged, userBalanceChanged, userPresenceStatusChanged, userImpersonationEnd, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageLog, messageNote, messageInitial, lastMessageSet, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleNotSentStateChanged, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatPinned, chatUnpinned, chatDeleted, chatClosed, chatReopened, chatActivated, chatCacheClear, chatRead, chatUnread, chatAssigneeChanged, chatTagsChanged, chatConversationEnded, chatUpdated, liveChatAgentChanged, liveChatRated, webWidgetUpdated, webWidgetDeleted, contactAdded, contactDeleted, contactBulkUpdated, contactStateChanged, contactUnsubscribed, contactResubscribed, contactNoteAdded, contactNoteDeleted, contactNoteStateChanged, listAdded, listDeleted, listStateChanged, listCountMembersUpdated, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear, progressCarrierBulkLookup, progressEmailBulkLookup, progressSubAccountBulkImport, emailLookupProgressState, importProgressState, forceRefreshWebApp, chatSenderSettingsChanged, countrySenderSettingsChanged, chatSummaryChunk, chatWaysToReplyChunk, chatSuggestedReplyChunk, userSubscriptionChanged, userSubscriptionDeleted, taskCreated, taskUpdated, taskReordered, taskDeleted, taskMovedAll, taskStageCreated, taskStageUpdated, taskStageDeleted, taskBoardCreated, taskBoardUpdated, taskBoardReordered, taskBoardDeleted, taskBoardArchived, taskChecklistCreated, taskChecklistUpdated, taskChecklistDeleted, taskChecklistBulkMarked, taskChecklistItemCreated, taskChecklistItemUpdated, taskChecklistItemDeleted, taskCommentCreated, taskCommentDeleted, pinnedContactAdded, pinnedContactRemoved, pinnedContactReordered, pinnedContactStateChanged, whatsappAccountAdded, whatsappAccountRemoved, whatsappAccountChanged, facebookPageAdded, facebookPageRemoved, facebookPageChanged, instagramAccountAdded, instagramAccountRemoved, instagramAccountChanged, unreadTicketsCountUpdated, ticketDeleted, ticketUpdated, ticketCreated, ticketBulkUpdated, ticketBulkDeleted, ticketMessageCreated, ticketMessageUpdated, ticketMessageDeleted, subAccountsClosed, userInvited, filteredViewCreated, filteredViewCountUpdated, filteredViewDeleted, forwardingInboxWasVerified, forwardingInboxCheckWasFailed, forwardingInboxVerificationLinkWasParsed, tendlcLinkNumberStatusUpdated, channelPresence, dealCreated, dealUpdated, dealDeleted, dealMoved, dealStageCreated, dealStageUpdated, dealStageDeleted, dealPipelineCreated, dealPipelineUpdated, dealPipelineDeleted, dealPipelineArchived, dealPipelineReordered, dealActivityUpdated, dealActivityItemCreated, dealActivityItemUpdated, dealActivityItemDeleted, dealActivityItemBulkMarked, dealTimelineItemDeleted, dealTimelineItemCreated, aiAssistantCreated, aiAssistantState, aiAssistantDeleted, aiAssistantLinkDeleted, aiAssistantLinkState, aiAssistantLinkCreated, aiAssistantSubLinkState, aiAssistantSubLinkCreated, emailCampaignEmailSenderCreated, emailCampaignEmailSenderUpdated, emailCampaignEmailSenderDeleted, emailCampaignDomainCreated, emailCampaignDomainDeleted, emailCampaignDomainVerified, emailCampaignDomainStatusChanged, emailCampaignDomainDkimVerified, emailCampaignDomainReturnPathVerified, emailCampaignDomainDmarcVerified, emailCampaignDomainEntryVerificationChanged, emailCampaignProgressState, emailCampaignUpdated, smsCampaignInvalidated, scheduledEmailCampaignCreated, scheduledEmailCampaignUpdated, scheduledEmailCampaignStatusUpdated, scheduledEmailCampaignDeleted, emailCampaignFailedAttemptCreated, emailCampaignFailedAttemptDeleted, emailCampaignFailedAttemptStateUpdated);
+    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, systemAccountAcceptTermsUpdate, systemAccountClosed, systemAccountAdditionalFields, systemAccountNumbersListChange, systemAccountPermissionsChanged, userProfileChanged, userBalanceChanged, userPresenceStatusChanged, userImpersonationEnd, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageLog, messageNote, messageInitial, lastMessageSet, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleNotSentStateChanged, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatPinned, chatUnpinned, chatDeleted, chatClosed, chatReopened, chatActivated, chatCacheClear, chatRead, chatUnread, chatAssigneeChanged, chatTagsChanged, chatConversationEnded, chatUpdated, liveChatAgentChanged, liveChatRated, webWidgetUpdated, webWidgetDeleted, contactAdded, contactDeleted, contactBulkUpdated, contactStateChanged, contactUnsubscribed, contactResubscribed, contactNoteAdded, contactNoteDeleted, contactNoteStateChanged, listAdded, listDeleted, listStateChanged, listCountMembersUpdated, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear, progressCarrierBulkLookup, progressSubAccountBulkImport, emailLookupProgressState, importProgressState, forceRefreshWebApp, chatSenderSettingsChanged, countrySenderSettingsChanged, chatSummaryChunk, chatWaysToReplyChunk, chatSuggestedReplyChunk, userSubscriptionChanged, userSubscriptionDeleted, taskCreated, taskUpdated, taskReordered, taskDeleted, taskMovedAll, taskStageCreated, taskStageUpdated, taskStageDeleted, taskBoardCreated, taskBoardUpdated, taskBoardReordered, taskBoardDeleted, taskBoardArchived, taskChecklistCreated, taskChecklistUpdated, taskChecklistDeleted, taskChecklistBulkMarked, taskChecklistItemCreated, taskChecklistItemUpdated, taskChecklistItemDeleted, taskCommentCreated, taskCommentDeleted, pinnedContactAdded, pinnedContactRemoved, pinnedContactReordered, pinnedContactStateChanged, whatsappAccountAdded, whatsappAccountRemoved, whatsappAccountChanged, facebookPageAdded, facebookPageRemoved, facebookPageChanged, instagramAccountAdded, instagramAccountRemoved, instagramAccountChanged, unreadTicketsCountUpdated, ticketDeleted, ticketUpdated, ticketCreated, ticketBulkUpdated, ticketBulkDeleted, ticketMessageCreated, ticketMessageUpdated, ticketMessageDeleted, subAccountsClosed, userInvited, filteredViewCreated, filteredViewCountUpdated, filteredViewDeleted, forwardingInboxWasVerified, forwardingInboxCheckWasFailed, forwardingInboxVerificationLinkWasParsed, tendlcLinkNumberStatusUpdated, channelPresence, dealCreated, dealUpdated, dealDeleted, dealMoved, dealStageCreated, dealStageUpdated, dealStageDeleted, dealPipelineCreated, dealPipelineUpdated, dealPipelineDeleted, dealPipelineArchived, dealPipelineReordered, dealActivityUpdated, dealActivityItemCreated, dealActivityItemUpdated, dealActivityItemDeleted, dealActivityItemBulkMarked, dealTimelineItemDeleted, dealTimelineItemCreated, aiAssistantCreated, aiAssistantState, aiAssistantDeleted, aiAssistantLinkDeleted, aiAssistantLinkState, aiAssistantLinkCreated, aiAssistantSubLinkState, aiAssistantSubLinkCreated, emailCampaignEmailSenderCreated, emailCampaignEmailSenderUpdated, emailCampaignEmailSenderDeleted, emailCampaignDomainCreated, emailCampaignDomainDeleted, emailCampaignDomainVerified, emailCampaignDomainStatusChanged, emailCampaignDomainDkimVerified, emailCampaignDomainReturnPathVerified, emailCampaignDomainDmarcVerified, emailCampaignDomainEntryVerificationChanged, emailCampaignProgressState, emailCampaignUpdated, emailTemplateImproved, emailTemplateImprovingFailed, smsCampaignInvalidated, scheduledEmailCampaignCreated, scheduledEmailCampaignUpdated, scheduledEmailCampaignStatusUpdated, scheduledEmailCampaignDeleted, emailCampaignFailedAttemptCreated, emailCampaignFailedAttemptDeleted, emailCampaignFailedAttemptStateUpdated);
   }
 
 
@@ -4262,7 +4284,6 @@ public class GetStateResponse {
     sb.append("    listCacheClear: ").append(toIndentedString(listCacheClear)).append("\n");
     sb.append("    customFieldsCacheClear: ").append(toIndentedString(customFieldsCacheClear)).append("\n");
     sb.append("    progressCarrierBulkLookup: ").append(toIndentedString(progressCarrierBulkLookup)).append("\n");
-    sb.append("    progressEmailBulkLookup: ").append(toIndentedString(progressEmailBulkLookup)).append("\n");
     sb.append("    progressSubAccountBulkImport: ").append(toIndentedString(progressSubAccountBulkImport)).append("\n");
     sb.append("    emailLookupProgressState: ").append(toIndentedString(emailLookupProgressState)).append("\n");
     sb.append("    importProgressState: ").append(toIndentedString(importProgressState)).append("\n");
@@ -4368,6 +4389,8 @@ public class GetStateResponse {
     sb.append("    emailCampaignDomainEntryVerificationChanged: ").append(toIndentedString(emailCampaignDomainEntryVerificationChanged)).append("\n");
     sb.append("    emailCampaignProgressState: ").append(toIndentedString(emailCampaignProgressState)).append("\n");
     sb.append("    emailCampaignUpdated: ").append(toIndentedString(emailCampaignUpdated)).append("\n");
+    sb.append("    emailTemplateImproved: ").append(toIndentedString(emailTemplateImproved)).append("\n");
+    sb.append("    emailTemplateImprovingFailed: ").append(toIndentedString(emailTemplateImprovingFailed)).append("\n");
     sb.append("    smsCampaignInvalidated: ").append(toIndentedString(smsCampaignInvalidated)).append("\n");
     sb.append("    scheduledEmailCampaignCreated: ").append(toIndentedString(scheduledEmailCampaignCreated)).append("\n");
     sb.append("    scheduledEmailCampaignUpdated: ").append(toIndentedString(scheduledEmailCampaignUpdated)).append("\n");

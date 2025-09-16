@@ -42,6 +42,8 @@ import com.textmagic.sdk.model.ContactNote;
 import com.textmagic.sdk.model.CreateContactInputObject;
 import com.textmagic.sdk.model.CreateContactNoteInputObject;
 import com.textmagic.sdk.model.CreateCustomFieldInputObject;
+import com.textmagic.sdk.model.CreateEmailCampaignInputObject;
+import com.textmagic.sdk.model.CreateEmailCampaignResponse;
 import com.textmagic.sdk.model.CreateListInputObject;
 import com.textmagic.sdk.model.CreateTemplateInputObject;
 import com.textmagic.sdk.model.DeleteChatMessagesBulkInputObject;
@@ -80,6 +82,7 @@ import com.textmagic.sdk.model.GetContactsByListIdPaginatedResponse;
 import com.textmagic.sdk.model.GetContactsPaginatedResponse;
 import com.textmagic.sdk.model.GetCountriesResponse;
 import com.textmagic.sdk.model.GetCustomFieldsPaginatedResponse;
+import com.textmagic.sdk.model.GetEmailSendersResponse;
 import com.textmagic.sdk.model.GetFavoritesPaginatedResponse;
 import com.textmagic.sdk.model.GetInboundMessagesNotificationSettingsResponse;
 import com.textmagic.sdk.model.GetInvoicesPaginatedResponse;
@@ -118,6 +121,8 @@ import com.textmagic.sdk.model.ReopenChatsBulkInputObject;
 import com.textmagic.sdk.model.RequestNewSubaccountTokenInputObject;
 import com.textmagic.sdk.model.RequestSenderIdInputObject;
 import com.textmagic.sdk.model.ResourceLinkResponse;
+import com.textmagic.sdk.model.ScheduleEmailCampaignInputObject;
+import com.textmagic.sdk.model.ScheduleEmailCampaignResponse;
 import com.textmagic.sdk.model.SearchChatsByIdsPaginatedResponse;
 import com.textmagic.sdk.model.SearchChatsByReceipentPaginatedResponse;
 import com.textmagic.sdk.model.SearchChatsPaginatedResponse;
@@ -1403,6 +1408,128 @@ public class TextMagicApi {
 
         com.squareup.okhttp.Call call = createCustomFieldValidateBeforeCall(createCustomFieldInputObject, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<ResourceLinkResponse>(){}.getType();
+        apiClient.executeAsync(call, localVarReturnType, callback);
+        return call;
+    }
+    /**
+     * Build call for createEmailCampaign
+     * @param createEmailCampaignInputObject  (required)
+     * @param progressListener Progress listener
+     * @param progressRequestListener Progress request listener
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     */
+    public com.squareup.okhttp.Call createEmailCampaignCall(CreateEmailCampaignInputObject createEmailCampaignInputObject, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+        Object localVarPostBody = createEmailCampaignInputObject;
+
+        // create path and map variables
+        String localVarPath = "/api/v2/email-campaigns";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+        localVarHeaderParams.put("Content-Type", localVarContentType);
+
+        if(progressListener != null) {
+            apiClient.getHttpClient().networkInterceptors().add(new com.squareup.okhttp.Interceptor() {
+                @Override
+                public com.squareup.okhttp.Response intercept(com.squareup.okhttp.Interceptor.Chain chain) throws IOException {
+                    com.squareup.okhttp.Response originalResponse = chain.proceed(chain.request());
+                    return originalResponse.newBuilder()
+                    .body(new ProgressResponseBody(originalResponse.body(), progressListener))
+                    .build();
+                }
+            });
+        }
+
+        String[] localVarAuthNames = new String[] { "BasicAuth" };
+        return apiClient.buildCall(localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private com.squareup.okhttp.Call createEmailCampaignValidateBeforeCall(CreateEmailCampaignInputObject createEmailCampaignInputObject, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+        
+        // verify the required parameter 'createEmailCampaignInputObject' is set
+        if (createEmailCampaignInputObject == null) {
+            throw new ApiException("Missing the required parameter 'createEmailCampaignInputObject' when calling createEmailCampaign(Async)");
+        }
+        
+
+        com.squareup.okhttp.Call call = createEmailCampaignCall(createEmailCampaignInputObject, progressListener, progressRequestListener);
+        return call;
+
+    }
+
+    /**
+     * Create new email campaign
+     * Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you&#39;ll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account&#39;s email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
+     * @param createEmailCampaignInputObject  (required)
+     * @return CreateEmailCampaignResponse
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     */
+    public CreateEmailCampaignResponse createEmailCampaign(CreateEmailCampaignInputObject createEmailCampaignInputObject) throws ApiException {
+        ApiResponse<CreateEmailCampaignResponse> resp = createEmailCampaignWithHttpInfo(createEmailCampaignInputObject);
+        return resp.getData();
+    }
+
+    /**
+     * Create new email campaign
+     * Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you&#39;ll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account&#39;s email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
+     * @param createEmailCampaignInputObject  (required)
+     * @return ApiResponse&lt;CreateEmailCampaignResponse&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     */
+    public ApiResponse<CreateEmailCampaignResponse> createEmailCampaignWithHttpInfo(CreateEmailCampaignInputObject createEmailCampaignInputObject) throws ApiException {
+        com.squareup.okhttp.Call call = createEmailCampaignValidateBeforeCall(createEmailCampaignInputObject, null, null);
+        Type localVarReturnType = new TypeToken<CreateEmailCampaignResponse>(){}.getType();
+        return apiClient.execute(call, localVarReturnType);
+    }
+
+    /**
+     * Create new email campaign (asynchronously)
+     * Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you&#39;ll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account&#39;s email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
+     * @param createEmailCampaignInputObject  (required)
+     * @param callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     */
+    public com.squareup.okhttp.Call createEmailCampaignAsync(CreateEmailCampaignInputObject createEmailCampaignInputObject, final ApiCallback<CreateEmailCampaignResponse> callback) throws ApiException {
+
+        ProgressResponseBody.ProgressListener progressListener = null;
+        ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
+
+        if (callback != null) {
+            progressListener = new ProgressResponseBody.ProgressListener() {
+                @Override
+                public void update(long bytesRead, long contentLength, boolean done) {
+                    callback.onDownloadProgress(bytesRead, contentLength, done);
+                }
+            };
+
+            progressRequestListener = new ProgressRequestBody.ProgressRequestListener() {
+                @Override
+                public void onRequestProgress(long bytesWritten, long contentLength, boolean done) {
+                    callback.onUploadProgress(bytesWritten, contentLength, done);
+                }
+            };
+        }
+
+        com.squareup.okhttp.Call call = createEmailCampaignValidateBeforeCall(createEmailCampaignInputObject, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken<CreateEmailCampaignResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
@@ -9231,6 +9358,125 @@ public class TextMagicApi {
         return call;
     }
     /**
+     * Build call for getEmailSenders
+     * @param domainId Filter email senders by specific domain ID. (optional)
+     * @param progressListener Progress listener
+     * @param progressRequestListener Progress request listener
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     */
+    public com.squareup.okhttp.Call getEmailSendersCall(Integer domainId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/api/v2/email-campaigns/email-senders";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        if (domainId != null)
+        localVarQueryParams.addAll(apiClient.parameterToPair("domainId", domainId));
+
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+        localVarHeaderParams.put("Content-Type", localVarContentType);
+
+        if(progressListener != null) {
+            apiClient.getHttpClient().networkInterceptors().add(new com.squareup.okhttp.Interceptor() {
+                @Override
+                public com.squareup.okhttp.Response intercept(com.squareup.okhttp.Interceptor.Chain chain) throws IOException {
+                    com.squareup.okhttp.Response originalResponse = chain.proceed(chain.request());
+                    return originalResponse.newBuilder()
+                    .body(new ProgressResponseBody(originalResponse.body(), progressListener))
+                    .build();
+                }
+            });
+        }
+
+        String[] localVarAuthNames = new String[] { "BasicAuth" };
+        return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private com.squareup.okhttp.Call getEmailSendersValidateBeforeCall(Integer domainId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+        
+
+        com.squareup.okhttp.Call call = getEmailSendersCall(domainId, progressListener, progressRequestListener);
+        return call;
+
+    }
+
+    /**
+     * Get list of email senders
+     * Retrieves a list of configured email senders available for creating email campaigns.
+     * @param domainId Filter email senders by specific domain ID. (optional)
+     * @return GetEmailSendersResponse
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     */
+    public GetEmailSendersResponse getEmailSenders(Integer domainId) throws ApiException {
+        ApiResponse<GetEmailSendersResponse> resp = getEmailSendersWithHttpInfo(domainId);
+        return resp.getData();
+    }
+
+    /**
+     * Get list of email senders
+     * Retrieves a list of configured email senders available for creating email campaigns.
+     * @param domainId Filter email senders by specific domain ID. (optional)
+     * @return ApiResponse&lt;GetEmailSendersResponse&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     */
+    public ApiResponse<GetEmailSendersResponse> getEmailSendersWithHttpInfo(Integer domainId) throws ApiException {
+        com.squareup.okhttp.Call call = getEmailSendersValidateBeforeCall(domainId, null, null);
+        Type localVarReturnType = new TypeToken<GetEmailSendersResponse>(){}.getType();
+        return apiClient.execute(call, localVarReturnType);
+    }
+
+    /**
+     * Get list of email senders (asynchronously)
+     * Retrieves a list of configured email senders available for creating email campaigns.
+     * @param domainId Filter email senders by specific domain ID. (optional)
+     * @param callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     */
+    public com.squareup.okhttp.Call getEmailSendersAsync(Integer domainId, final ApiCallback<GetEmailSendersResponse> callback) throws ApiException {
+
+        ProgressResponseBody.ProgressListener progressListener = null;
+        ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
+
+        if (callback != null) {
+            progressListener = new ProgressResponseBody.ProgressListener() {
+                @Override
+                public void update(long bytesRead, long contentLength, boolean done) {
+                    callback.onDownloadProgress(bytesRead, contentLength, done);
+                }
+            };
+
+            progressRequestListener = new ProgressRequestBody.ProgressRequestListener() {
+                @Override
+                public void onRequestProgress(long bytesWritten, long contentLength, boolean done) {
+                    callback.onUploadProgress(bytesWritten, contentLength, done);
+                }
+            };
+        }
+
+        com.squareup.okhttp.Call call = getEmailSendersValidateBeforeCall(domainId, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken<GetEmailSendersResponse>(){}.getType();
+        apiClient.executeAsync(call, localVarReturnType, callback);
+        return call;
+    }
+    /**
      * Build call for getFavorites
      * @param page Fetch specified results page. (optional, default to 1)
      * @param limit The number of results per page. (optional, default to 10)
@@ -14553,6 +14799,128 @@ public class TextMagicApi {
 
         com.squareup.okhttp.Call call = requestSenderIdValidateBeforeCall(requestSenderIdInputObject, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<ResourceLinkResponse>(){}.getType();
+        apiClient.executeAsync(call, localVarReturnType, callback);
+        return call;
+    }
+    /**
+     * Build call for scheduleEmailCampaign
+     * @param scheduleEmailCampaignInputObject  (required)
+     * @param progressListener Progress listener
+     * @param progressRequestListener Progress request listener
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     */
+    public com.squareup.okhttp.Call scheduleEmailCampaignCall(ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+        Object localVarPostBody = scheduleEmailCampaignInputObject;
+
+        // create path and map variables
+        String localVarPath = "/api/v2/email-campaigns/schedule";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+        localVarHeaderParams.put("Content-Type", localVarContentType);
+
+        if(progressListener != null) {
+            apiClient.getHttpClient().networkInterceptors().add(new com.squareup.okhttp.Interceptor() {
+                @Override
+                public com.squareup.okhttp.Response intercept(com.squareup.okhttp.Interceptor.Chain chain) throws IOException {
+                    com.squareup.okhttp.Response originalResponse = chain.proceed(chain.request());
+                    return originalResponse.newBuilder()
+                    .body(new ProgressResponseBody(originalResponse.body(), progressListener))
+                    .build();
+                }
+            });
+        }
+
+        String[] localVarAuthNames = new String[] { "BasicAuth" };
+        return apiClient.buildCall(localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private com.squareup.okhttp.Call scheduleEmailCampaignValidateBeforeCall(ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+        
+        // verify the required parameter 'scheduleEmailCampaignInputObject' is set
+        if (scheduleEmailCampaignInputObject == null) {
+            throw new ApiException("Missing the required parameter 'scheduleEmailCampaignInputObject' when calling scheduleEmailCampaign(Async)");
+        }
+        
+
+        com.squareup.okhttp.Call call = scheduleEmailCampaignCall(scheduleEmailCampaignInputObject, progressListener, progressRequestListener);
+        return call;
+
+    }
+
+    /**
+     * Schedule new email campaign
+     * Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.
+     * @param scheduleEmailCampaignInputObject  (required)
+     * @return ScheduleEmailCampaignResponse
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     */
+    public ScheduleEmailCampaignResponse scheduleEmailCampaign(ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject) throws ApiException {
+        ApiResponse<ScheduleEmailCampaignResponse> resp = scheduleEmailCampaignWithHttpInfo(scheduleEmailCampaignInputObject);
+        return resp.getData();
+    }
+
+    /**
+     * Schedule new email campaign
+     * Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.
+     * @param scheduleEmailCampaignInputObject  (required)
+     * @return ApiResponse&lt;ScheduleEmailCampaignResponse&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     */
+    public ApiResponse<ScheduleEmailCampaignResponse> scheduleEmailCampaignWithHttpInfo(ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject) throws ApiException {
+        com.squareup.okhttp.Call call = scheduleEmailCampaignValidateBeforeCall(scheduleEmailCampaignInputObject, null, null);
+        Type localVarReturnType = new TypeToken<ScheduleEmailCampaignResponse>(){}.getType();
+        return apiClient.execute(call, localVarReturnType);
+    }
+
+    /**
+     * Schedule new email campaign (asynchronously)
+     * Creates a new scheduled email campaign that will be sent at a specified time or according to a recurring schedule.
+     * @param scheduleEmailCampaignInputObject  (required)
+     * @param callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     */
+    public com.squareup.okhttp.Call scheduleEmailCampaignAsync(ScheduleEmailCampaignInputObject scheduleEmailCampaignInputObject, final ApiCallback<ScheduleEmailCampaignResponse> callback) throws ApiException {
+
+        ProgressResponseBody.ProgressListener progressListener = null;
+        ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
+
+        if (callback != null) {
+            progressListener = new ProgressResponseBody.ProgressListener() {
+                @Override
+                public void update(long bytesRead, long contentLength, boolean done) {
+                    callback.onDownloadProgress(bytesRead, contentLength, done);
+                }
+            };
+
+            progressRequestListener = new ProgressRequestBody.ProgressRequestListener() {
+                @Override
+                public void onRequestProgress(long bytesWritten, long contentLength, boolean done) {
+                    callback.onUploadProgress(bytesWritten, contentLength, done);
+                }
+            };
+        }
+
+        com.squareup.okhttp.Call call = scheduleEmailCampaignValidateBeforeCall(scheduleEmailCampaignInputObject, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken<ScheduleEmailCampaignResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }

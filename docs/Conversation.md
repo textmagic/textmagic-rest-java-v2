@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **chatId** | **Integer** | Chat id. |  [optional]
 **isEdited** | **Boolean** |  |  [optional]
 **errorCode** | **String** | Error code. |  [optional]
-**files** | [**List&lt;java.io.File&gt;**](java.io.File.md) |  |  [optional]
+**files** | [**List&lt;MessageFile&gt;**](MessageFile.md) |  |  [optional]
 **payload** | [**MessagePayload**](MessagePayload.md) |  |  [optional]
 **avatar** | **String** |  |  [optional]
 
