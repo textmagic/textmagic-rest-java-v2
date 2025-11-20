@@ -32,6 +32,8 @@ import com.textmagic.sdk.model.CreateCustomFieldInputObject;
 import com.textmagic.sdk.model.CreateEmailCampaignInputObject;
 import com.textmagic.sdk.model.CreateEmailCampaignResponse;
 import com.textmagic.sdk.model.CreateListInputObject;
+import com.textmagic.sdk.model.CreateTagInputObject;
+import com.textmagic.sdk.model.CreateTagResponse;
 import com.textmagic.sdk.model.CreateTemplateInputObject;
 import com.textmagic.sdk.model.DeleteChatMessagesBulkInputObject;
 import com.textmagic.sdk.model.DeleteChatsBulkInputObject;
@@ -326,7 +328,7 @@ public class TextMagicApiTest {
     }
     
     /**
-     * Create new email campaign
+     * Send email campaign
      *
      * Creates a new email campaign and sends it to the specified recipients.  This endpoint allows you to create and immediately send an email marketing campaign to your contacts, groups, or direct email addresses. The campaign will be processed asynchronously, and you&#39;ll receive a campaign object with tracking information.  ## Request Requirements  - **Email Sender ID**: Must be a valid, configured email sender from your account - **Recipients**: At least one recipient type must be specified (contacts, groups, or emails) - **Content**: Subject and HTML message content are required - **Balance**: Sufficient account balance for the estimated campaign cost  ## Recipient Types  You can target multiple recipient types in a single campaign:  - **Contact IDs**: Send to specific contacts from your contact list - **Group IDs**: Send to all contacts within specified groups   - **Direct Emails**: Send to email addresses not in your contact list  ## Content Guidelines  - **Subject**: Maximum 998 characters, should be engaging and relevant - **Message**: HTML content supported, including images, links, and formatting - **From Name**: Optional custom sender name (max 500 characters) - **Reply-To**: Optional custom reply-to email address  ## Cost and Balance  The API automatically calculates campaign costs based on: - Total number of unique recipients across all specified groups, contacts, and emails - Your account&#39;s email pricing tier - Any additional features or premium content  If your account balance is insufficient, the request will be rejected with a low balance error.  ## Response Information  Successful campaigns return: - Campaign ID for tracking and analytics - Current campaign status and progress - Cost breakdown and recipient counts - Sender information and content preview - Statistical totals and engagement metrics  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Invalid email addresses, missing required fields, or content that exceeds limits - **Insufficient Balance**: Account balance too low for campaign cost - **Invalid Recipients**: Non-existent contact/group IDs or invalid email formats - **Sender Configuration**: Invalid or unconfigured email sender ID - **No Recipients**: All recipient arrays are empty or invalid 
      *
@@ -353,6 +355,22 @@ public class TextMagicApiTest {
     public void createListTest() throws ApiException {
         CreateListInputObject createListInputObject = null;
         ResourceLinkResponse response = api.createList(createListInputObject);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * Create tag
+     *
+     * Creates a new tag for organizing and categorizing contacts.  This endpoint allows you to create a custom tag that can be used to segment and organize your contact database. Tags provide a flexible way to categorize contacts for better contact management.  ## Request Requirements  - **Title**: Required field, must be between 1 and 50 characters - **Uniqueness**: Tag titles must be unique within your account - **Authentication**: Valid API credentials required  ## Common Use Cases  Create tags for various organizational purposes:  - **Customer Types**: \&quot;VIP Customer\&quot;, \&quot;New Lead\&quot;, \&quot;Active Subscriber\&quot; - **Geographic Segments**: \&quot;North Region\&quot;, \&quot;Europe\&quot;, \&quot;Local Customers\&quot; - **Engagement Levels**: \&quot;Highly Engaged\&quot;, \&quot;Inactive\&quot;, \&quot;Recent Purchase\&quot; - **Campaign Categories**: \&quot;Summer Promotion\&quot;, \&quot;Newsletter Subscriber\&quot;, \&quot;Event Attendee\&quot; - **Custom Segments**: Any custom categorization that fits your business needs  ## Response Information  Successful tag creation returns: - **Tag ID**: Unique identifier for the newly created tag - **Title**: The tag name as provided in the request  Use the returned tag ID to assign this tag to contacts or reference it in other API operations.  ## Error Scenarios  Common error conditions include: - **Validation Errors**: Title exceeds 50 characters or is empty - **Duplicate Tag**: A tag with the same title already exists in your account - **Authentication Errors**: Invalid or missing API credentials  ## Next Steps  After creating a tag: 1. Use the tag ID to assign it to contacts via contact management endpoints 2. Reference the tag when filtering contacts 3. Manage and update tags through other Tags API endpoints 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void createTagTest() throws ApiException {
+        CreateTagInputObject createTagInputObject = null;
+        CreateTagResponse response = api.createTag(createTagInputObject);
 
         // TODO: test validations
     }

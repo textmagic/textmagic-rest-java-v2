@@ -69,7 +69,7 @@ public class UpdateContactInputObject {
   private String country = null;
 
   @SerializedName("tags")
-  private String tags = null;
+  private List<Integer> tags = null;
 
   @SerializedName("owner")
   private Integer owner = null;
@@ -298,21 +298,29 @@ public class UpdateContactInputObject {
     this.country = country;
   }
 
-  public UpdateContactInputObject tags(String tags) {
+  public UpdateContactInputObject tags(List<Integer> tags) {
     this.tags = tags;
     return this;
   }
 
+  public UpdateContactInputObject addTagsItem(Integer tagsItem) {
+    if (this.tags == null) {
+      this.tags = new ArrayList<Integer>();
+    }
+    this.tags.add(tagsItem);
+    return this;
+  }
+
    /**
-   * Contact [list](https://docs.textmagic.com/#tag/Tag) ID. Each contact must be assigned to at least one list.
+   * An array of tag IDs that will be assigned to the contact.
    * @return tags
   **/
-  @ApiModelProperty(example = "10541,18599", value = "Contact [list](https://docs.textmagic.com/#tag/Tag) ID. Each contact must be assigned to at least one list.")
-  public String getTags() {
+  @ApiModelProperty(example = "[23,45]", value = "An array of tag IDs that will be assigned to the contact.")
+  public List<Integer> getTags() {
     return tags;
   }
 
-  public void setTags(String tags) {
+  public void setTags(List<Integer> tags) {
     this.tags = tags;
   }
 

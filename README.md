@@ -1,5 +1,5 @@
 [comment]: <> (HEAD)
-# TextMagic Java SDK
+# TextMagic Java SDK 🚀
 This library provides you with an easy way of sending SMS and receiving replies by integrating the TextMagic SMS Gateway into your Java application.
 
 ## What Is TextMagic?
@@ -23,7 +23,7 @@ Add this dependency to your project's POM:
     <dependency>
         <groupId>com.textmagic.sdk</groupId>
         <artifactId>textmagic-java-sdk</artifactId>
-        <version>2.0.43753</version>
+        <version>2.0.43858</version>
     </dependency>
 </dependencies>
 ```
@@ -32,7 +32,7 @@ Add this dependency to your project's POM:
 
 Add this dependency to your project’s build file:
 ```groovy
-compile "com.textmagic.sdk:textmagic-java-sdk:2.0.43753"
+compile "com.textmagic.sdk:textmagic-java-sdk:2.0.43858"
 ```
 
 ## Usage Example
