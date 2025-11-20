@@ -1,11 +1,15 @@
 
+
 # BadRequestResponseErrors
 
+If it was a **POST** or **PUT** request (and the **message** returned is `Validation Failed`), this field may contain **errors** that describe the errors grouped by the input parameter name. 
+
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**common** | **List&lt;String&gt;** | Array of messages with errors related to the entire request. For example, you did not specify either the **text** or the **templateId** when [sending the message](https://docs.textmagic.com/#tag/Outbound-Messages).  |  [optional]
-**fields** | **Object** | Associative array. The keys are the POST/PUT parameter names and the values are arrays with error messages for these parameters.  |  [optional]
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**common** | **List&lt;String&gt;** | Array of messages with errors related to the entire request. For example, you did not specify either the **text** or the **templateId** when [sending the message](https://docs.textmagic.com/#tag/Outbound-Messages).  |  [optional] |
+|**fields** | **Object** | Associative array. The keys are the POST/PUT parameter names and the values are arrays with error messages for these parameters.  |  [optional] |
 
 
 

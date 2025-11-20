@@ -1,10 +1,13 @@
 
+
 # SurveyRecipient
 
+
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**phone** | **String** |  | 
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**phone** | **String** |  |  |
 
 
 

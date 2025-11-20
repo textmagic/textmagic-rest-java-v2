@@ -1,199 +1,202 @@
 
+
 # GetStateResponse
 
+
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**systemCacheClear** | **Integer** |  | 
-**systemExit** | **Integer** |  | 
-**systemAlert** | **Integer** |  | 
-**systemAccountStateChanged** | **Integer** |  | 
-**systemAccountAcceptTermsUpdate** | **Integer** |  | 
-**systemAccountClosed** | **Integer** |  | 
-**systemAccountAdditionalFields** | **Integer** |  | 
-**systemAccountNumbersListChange** | **Integer** |  | 
-**systemAccountPermissionsChanged** | **Integer** |  | 
-**userProfileChanged** | **Integer** |  | 
-**userBalanceChanged** | **Integer** |  | 
-**userPresenceStatusChanged** | **Integer** |  | 
-**userImpersonationEnd** | **Integer** |  | 
-**messageDeleted** | **Integer** |  | 
-**messageIncoming** | **Integer** |  | 
-**messageIncomingDeleted** | **Integer** |  | 
-**messageStateChanged** | **Integer** |  | 
-**messageBulkEnd** | **Integer** |  | 
-**messageWipeEnd** | **Integer** |  | 
-**messageSent** | **Integer** |  | 
-**messageLog** | **Integer** |  | 
-**messageNote** | **Integer** |  | 
-**messageInitial** | **Integer** |  | 
-**lastMessageSet** | **Integer** |  | 
-**messageSessionDeleted** | **Integer** |  | 
-**messageCacheClear** | **Integer** |  | 
-**messageIncomingCacheClear** | **Integer** |  | 
-**messageScheduleAdded** | **Integer** |  | 
-**messageScheduleStateChanged** | **Integer** |  | 
-**messageScheduleDeleted** | **Integer** |  | 
-**messageScheduleNotSentStateChanged** | **Integer** |  | 
-**messageScheduleCacheClear** | **Integer** |  | 
-**messageTemplateCacheClear** | **Integer** |  | 
-**callFinished** | **Integer** |  | 
-**chatCreated** | **Integer** |  | 
-**chatMarkedAsRead** | **Integer** |  | 
-**chatMuted** | **Integer** |  | 
-**chatUnmuted** | **Integer** |  | 
-**chatPinned** | **Integer** |  | 
-**chatUnpinned** | **Integer** |  | 
-**chatDeleted** | **Integer** |  | 
-**chatClosed** | **Integer** |  | 
-**chatReopened** | **Integer** |  | 
-**chatActivated** | **Integer** |  | 
-**chatCacheClear** | **Integer** |  | 
-**chatRead** | **Integer** |  | 
-**chatUnread** | **Integer** |  | 
-**chatAssigneeChanged** | **Integer** |  | 
-**chatTagsChanged** | **Integer** |  | 
-**chatConversationEnded** | **Integer** |  | 
-**chatUpdated** | **Integer** |  | 
-**liveChatAgentChanged** | **Integer** |  | 
-**liveChatRated** | **Integer** |  | 
-**webWidgetUpdated** | **Integer** |  | 
-**webWidgetDeleted** | **Integer** |  | 
-**contactAdded** | **Integer** |  | 
-**contactDeleted** | **Integer** |  | 
-**contactBulkUpdated** | **Integer** |  | 
-**contactStateChanged** | **Integer** |  | 
-**contactUnsubscribed** | **Integer** |  | 
-**contactResubscribed** | **Integer** |  | 
-**contactNoteAdded** | **Integer** |  | 
-**contactNoteDeleted** | **Integer** |  | 
-**contactNoteStateChanged** | **Integer** |  | 
-**listAdded** | **Integer** |  | 
-**listDeleted** | **Integer** |  | 
-**listStateChanged** | **Integer** |  | 
-**listCountMembersUpdated** | **Integer** |  | 
-**contactWipeEnd** | **Integer** |  | 
-**contactImportEnd** | **Integer** |  | 
-**contactCacheClear** | **Integer** |  | 
-**listCacheClear** | **Integer** |  | 
-**customFieldsCacheClear** | **Integer** |  | 
-**progressCarrierBulkLookup** | **Integer** |  | 
-**progressSubAccountBulkImport** | **Integer** |  | 
-**emailLookupProgressState** | **Integer** |  | 
-**importProgressState** | **Integer** |  | 
-**forceRefreshWebApp** | **Integer** |  | 
-**chatSenderSettingsChanged** | **Integer** |  | 
-**countrySenderSettingsChanged** | **Integer** |  | 
-**chatSummaryChunk** | **Integer** |  | 
-**chatWaysToReplyChunk** | **Integer** |  | 
-**chatSuggestedReplyChunk** | **Integer** |  | 
-**userSubscriptionChanged** | **Integer** |  |  [optional]
-**userSubscriptionDeleted** | **Integer** |  |  [optional]
-**taskCreated** | **Integer** |  | 
-**taskUpdated** | **Integer** |  | 
-**taskReordered** | **Integer** |  | 
-**taskDeleted** | **Integer** |  | 
-**taskMovedAll** | **Integer** |  | 
-**taskStageCreated** | **Integer** |  | 
-**taskStageUpdated** | **Integer** |  | 
-**taskStageDeleted** | **Integer** |  | 
-**taskBoardCreated** | **Integer** |  | 
-**taskBoardUpdated** | **Integer** |  | 
-**taskBoardReordered** | **Integer** |  | 
-**taskBoardDeleted** | **Integer** |  | 
-**taskBoardArchived** | **Integer** |  | 
-**taskChecklistCreated** | **Integer** |  | 
-**taskChecklistUpdated** | **Integer** |  | 
-**taskChecklistDeleted** | **Integer** |  | 
-**taskChecklistBulkMarked** | **Integer** |  | 
-**taskChecklistItemCreated** | **Integer** |  | 
-**taskChecklistItemUpdated** | **Integer** |  | 
-**taskChecklistItemDeleted** | **Integer** |  | 
-**taskCommentCreated** | **Integer** |  | 
-**taskCommentDeleted** | **Integer** |  | 
-**pinnedContactAdded** | **Integer** |  | 
-**pinnedContactRemoved** | **Integer** |  | 
-**pinnedContactReordered** | **Integer** |  | 
-**pinnedContactStateChanged** | **Integer** |  | 
-**whatsappAccountAdded** | **Integer** |  | 
-**whatsappAccountRemoved** | **Integer** |  | 
-**whatsappAccountChanged** | **Integer** |  | 
-**facebookPageAdded** | **Integer** |  | 
-**facebookPageRemoved** | **Integer** |  | 
-**facebookPageChanged** | **Integer** |  | 
-**instagramAccountAdded** | **Integer** |  | 
-**instagramAccountRemoved** | **Integer** |  | 
-**instagramAccountChanged** | **Integer** |  | 
-**unreadTicketsCountUpdated** | **Integer** |  | 
-**ticketDeleted** | **Integer** |  | 
-**ticketUpdated** | **Integer** |  | 
-**ticketCreated** | **Integer** |  | 
-**ticketBulkUpdated** | **Integer** |  | 
-**ticketBulkDeleted** | **Integer** |  | 
-**ticketMessageCreated** | **Integer** |  | 
-**ticketMessageUpdated** | **Integer** |  | 
-**ticketMessageDeleted** | **Integer** |  | 
-**subAccountsClosed** | **Integer** |  | 
-**userInvited** | **Integer** |  | 
-**filteredViewCreated** | **Integer** |  | 
-**filteredViewCountUpdated** | **Integer** |  | 
-**filteredViewDeleted** | **Integer** |  | 
-**forwardingInboxWasVerified** | **Integer** |  | 
-**forwardingInboxCheckWasFailed** | **Integer** |  | 
-**forwardingInboxVerificationLinkWasParsed** | **Integer** |  | 
-**tendlcLinkNumberStatusUpdated** | **Integer** |  | 
-**channelPresence** | **Integer** |  | 
-**dealCreated** | **Integer** |  | 
-**dealUpdated** | **Integer** |  | 
-**dealDeleted** | **Integer** |  | 
-**dealMoved** | **Integer** |  | 
-**dealStageCreated** | **Integer** |  | 
-**dealStageUpdated** | **Integer** |  | 
-**dealStageDeleted** | **Integer** |  | 
-**dealPipelineCreated** | **Integer** |  | 
-**dealPipelineUpdated** | **Integer** |  | 
-**dealPipelineDeleted** | **Integer** |  | 
-**dealPipelineArchived** | **Integer** |  | 
-**dealPipelineReordered** | **Integer** |  | 
-**dealActivityUpdated** | **Integer** |  | 
-**dealActivityItemCreated** | **Integer** |  | 
-**dealActivityItemUpdated** | **Integer** |  | 
-**dealActivityItemDeleted** | **Integer** |  | 
-**dealActivityItemBulkMarked** | **Integer** |  | 
-**dealTimelineItemDeleted** | **Integer** |  | 
-**dealTimelineItemCreated** | **Integer** |  | 
-**aiAssistantCreated** | **Integer** |  | 
-**aiAssistantState** | **Integer** |  | 
-**aiAssistantDeleted** | **Integer** |  | 
-**aiAssistantLinkDeleted** | **Integer** |  | 
-**aiAssistantLinkState** | **Integer** |  | 
-**aiAssistantLinkCreated** | **Integer** |  | 
-**aiAssistantSubLinkState** | **Integer** |  | 
-**aiAssistantSubLinkCreated** | **Integer** |  | 
-**emailCampaignEmailSenderCreated** | **Integer** |  | 
-**emailCampaignEmailSenderUpdated** | **Integer** |  | 
-**emailCampaignEmailSenderDeleted** | **Integer** |  | 
-**emailCampaignDomainCreated** | **Integer** |  | 
-**emailCampaignDomainDeleted** | **Integer** |  | 
-**emailCampaignDomainVerified** | **Integer** |  | 
-**emailCampaignDomainStatusChanged** | **Integer** |  | 
-**emailCampaignDomainDkimVerified** | **Integer** |  | 
-**emailCampaignDomainReturnPathVerified** | **Integer** |  | 
-**emailCampaignDomainDmarcVerified** | **Integer** |  | 
-**emailCampaignDomainEntryVerificationChanged** | **Integer** |  | 
-**emailCampaignProgressState** | **Integer** |  | 
-**emailCampaignUpdated** | **Integer** |  | 
-**emailTemplateImproved** | **Integer** |  | 
-**emailTemplateImprovingFailed** | **Integer** |  | 
-**emailBonusUpdated** | **Integer** |  | 
-**smsCampaignInvalidated** | **Integer** |  | 
-**scheduledEmailCampaignCreated** | **Integer** |  | 
-**scheduledEmailCampaignUpdated** | **Integer** |  | 
-**scheduledEmailCampaignStatusUpdated** | **Integer** |  | 
-**scheduledEmailCampaignDeleted** | **Integer** |  | 
-**emailCampaignFailedAttemptCreated** | **Integer** |  | 
-**emailCampaignFailedAttemptDeleted** | **Integer** |  | 
-**emailCampaignFailedAttemptStateUpdated** | **Integer** |  | 
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**systemCacheClear** | **Integer** |  |  |
+|**systemExit** | **Integer** |  |  |
+|**systemAlert** | **Integer** |  |  |
+|**systemAccountStateChanged** | **Integer** |  |  |
+|**systemAccountAcceptTermsUpdate** | **Integer** |  |  |
+|**systemAccountClosed** | **Integer** |  |  |
+|**systemAccountAdditionalFields** | **Integer** |  |  |
+|**systemAccountNumbersListChange** | **Integer** |  |  |
+|**systemAccountPermissionsChanged** | **Integer** |  |  |
+|**userProfileChanged** | **Integer** |  |  |
+|**userBalanceChanged** | **Integer** |  |  |
+|**userPresenceStatusChanged** | **Integer** |  |  |
+|**userImpersonationEnd** | **Integer** |  |  |
+|**messageDeleted** | **Integer** |  |  |
+|**messageIncoming** | **Integer** |  |  |
+|**messageIncomingDeleted** | **Integer** |  |  |
+|**messageStateChanged** | **Integer** |  |  |
+|**messageBulkEnd** | **Integer** |  |  |
+|**messageWipeEnd** | **Integer** |  |  |
+|**messageSent** | **Integer** |  |  |
+|**messageLog** | **Integer** |  |  |
+|**messageNote** | **Integer** |  |  |
+|**messageInitial** | **Integer** |  |  |
+|**lastMessageSet** | **Integer** |  |  |
+|**messageSessionDeleted** | **Integer** |  |  |
+|**messageCacheClear** | **Integer** |  |  |
+|**messageIncomingCacheClear** | **Integer** |  |  |
+|**messageScheduleAdded** | **Integer** |  |  |
+|**messageScheduleStateChanged** | **Integer** |  |  |
+|**messageScheduleDeleted** | **Integer** |  |  |
+|**messageScheduleNotSentStateChanged** | **Integer** |  |  |
+|**messageScheduleCacheClear** | **Integer** |  |  |
+|**messageTemplateCacheClear** | **Integer** |  |  |
+|**callFinished** | **Integer** |  |  |
+|**chatCreated** | **Integer** |  |  |
+|**chatMarkedAsRead** | **Integer** |  |  |
+|**chatMuted** | **Integer** |  |  |
+|**chatUnmuted** | **Integer** |  |  |
+|**chatPinned** | **Integer** |  |  |
+|**chatUnpinned** | **Integer** |  |  |
+|**chatDeleted** | **Integer** |  |  |
+|**chatClosed** | **Integer** |  |  |
+|**chatReopened** | **Integer** |  |  |
+|**chatActivated** | **Integer** |  |  |
+|**chatCacheClear** | **Integer** |  |  |
+|**chatRead** | **Integer** |  |  |
+|**chatUnread** | **Integer** |  |  |
+|**chatAssigneeChanged** | **Integer** |  |  |
+|**chatTagsChanged** | **Integer** |  |  |
+|**chatConversationEnded** | **Integer** |  |  |
+|**chatUpdated** | **Integer** |  |  |
+|**liveChatAgentChanged** | **Integer** |  |  |
+|**liveChatRated** | **Integer** |  |  |
+|**webWidgetUpdated** | **Integer** |  |  |
+|**webWidgetDeleted** | **Integer** |  |  |
+|**contactAdded** | **Integer** |  |  |
+|**contactDeleted** | **Integer** |  |  |
+|**contactBulkUpdated** | **Integer** |  |  |
+|**contactStateChanged** | **Integer** |  |  |
+|**contactUnsubscribed** | **Integer** |  |  |
+|**contactResubscribed** | **Integer** |  |  |
+|**contactNoteAdded** | **Integer** |  |  |
+|**contactNoteDeleted** | **Integer** |  |  |
+|**contactNoteStateChanged** | **Integer** |  |  |
+|**listAdded** | **Integer** |  |  |
+|**listDeleted** | **Integer** |  |  |
+|**listStateChanged** | **Integer** |  |  |
+|**listCountMembersUpdated** | **Integer** |  |  |
+|**contactWipeEnd** | **Integer** |  |  |
+|**contactImportEnd** | **Integer** |  |  |
+|**contactCacheClear** | **Integer** |  |  |
+|**listCacheClear** | **Integer** |  |  |
+|**customFieldsCacheClear** | **Integer** |  |  |
+|**progressCarrierBulkLookup** | **Integer** |  |  |
+|**progressSubAccountBulkImport** | **Integer** |  |  |
+|**emailLookupProgressState** | **Integer** |  |  |
+|**importProgressState** | **Integer** |  |  |
+|**forceRefreshWebApp** | **Integer** |  |  |
+|**chatSenderSettingsChanged** | **Integer** |  |  |
+|**countrySenderSettingsChanged** | **Integer** |  |  |
+|**chatSummaryChunk** | **Integer** |  |  |
+|**chatWaysToReplyChunk** | **Integer** |  |  |
+|**chatSuggestedReplyChunk** | **Integer** |  |  |
+|**userSubscriptionChanged** | **Integer** |  |  [optional] |
+|**userSubscriptionDeleted** | **Integer** |  |  [optional] |
+|**taskCreated** | **Integer** |  |  |
+|**taskUpdated** | **Integer** |  |  |
+|**taskReordered** | **Integer** |  |  |
+|**taskDeleted** | **Integer** |  |  |
+|**taskMovedAll** | **Integer** |  |  |
+|**taskStageCreated** | **Integer** |  |  |
+|**taskStageUpdated** | **Integer** |  |  |
+|**taskStageDeleted** | **Integer** |  |  |
+|**taskBoardCreated** | **Integer** |  |  |
+|**taskBoardUpdated** | **Integer** |  |  |
+|**taskBoardReordered** | **Integer** |  |  |
+|**taskBoardDeleted** | **Integer** |  |  |
+|**taskBoardArchived** | **Integer** |  |  |
+|**taskChecklistCreated** | **Integer** |  |  |
+|**taskChecklistUpdated** | **Integer** |  |  |
+|**taskChecklistDeleted** | **Integer** |  |  |
+|**taskChecklistBulkMarked** | **Integer** |  |  |
+|**taskChecklistItemCreated** | **Integer** |  |  |
+|**taskChecklistItemUpdated** | **Integer** |  |  |
+|**taskChecklistItemDeleted** | **Integer** |  |  |
+|**taskCommentCreated** | **Integer** |  |  |
+|**taskCommentDeleted** | **Integer** |  |  |
+|**pinnedContactAdded** | **Integer** |  |  |
+|**pinnedContactRemoved** | **Integer** |  |  |
+|**pinnedContactReordered** | **Integer** |  |  |
+|**pinnedContactStateChanged** | **Integer** |  |  |
+|**whatsappAccountAdded** | **Integer** |  |  |
+|**whatsappAccountRemoved** | **Integer** |  |  |
+|**whatsappAccountChanged** | **Integer** |  |  |
+|**facebookPageAdded** | **Integer** |  |  |
+|**facebookPageRemoved** | **Integer** |  |  |
+|**facebookPageChanged** | **Integer** |  |  |
+|**instagramAccountAdded** | **Integer** |  |  |
+|**instagramAccountRemoved** | **Integer** |  |  |
+|**instagramAccountChanged** | **Integer** |  |  |
+|**unreadTicketsCountUpdated** | **Integer** |  |  |
+|**ticketDeleted** | **Integer** |  |  |
+|**ticketUpdated** | **Integer** |  |  |
+|**ticketCreated** | **Integer** |  |  |
+|**ticketBulkUpdated** | **Integer** |  |  |
+|**ticketBulkDeleted** | **Integer** |  |  |
+|**ticketMessageCreated** | **Integer** |  |  |
+|**ticketMessageUpdated** | **Integer** |  |  |
+|**ticketMessageDeleted** | **Integer** |  |  |
+|**subAccountsClosed** | **Integer** |  |  |
+|**userInvited** | **Integer** |  |  |
+|**filteredViewCreated** | **Integer** |  |  |
+|**filteredViewCountUpdated** | **Integer** |  |  |
+|**filteredViewDeleted** | **Integer** |  |  |
+|**forwardingInboxWasVerified** | **Integer** |  |  |
+|**forwardingInboxCheckWasFailed** | **Integer** |  |  |
+|**forwardingInboxVerificationLinkWasParsed** | **Integer** |  |  |
+|**tendlcLinkNumberStatusUpdated** | **Integer** |  |  |
+|**channelPresence** | **Integer** |  |  |
+|**dealCreated** | **Integer** |  |  |
+|**dealUpdated** | **Integer** |  |  |
+|**dealDeleted** | **Integer** |  |  |
+|**dealMoved** | **Integer** |  |  |
+|**dealStageCreated** | **Integer** |  |  |
+|**dealStageUpdated** | **Integer** |  |  |
+|**dealStageDeleted** | **Integer** |  |  |
+|**dealPipelineCreated** | **Integer** |  |  |
+|**dealPipelineUpdated** | **Integer** |  |  |
+|**dealPipelineDeleted** | **Integer** |  |  |
+|**dealPipelineArchived** | **Integer** |  |  |
+|**dealPipelineReordered** | **Integer** |  |  |
+|**dealActivityUpdated** | **Integer** |  |  |
+|**dealActivityItemCreated** | **Integer** |  |  |
+|**dealActivityItemUpdated** | **Integer** |  |  |
+|**dealActivityItemDeleted** | **Integer** |  |  |
+|**dealActivityItemBulkMarked** | **Integer** |  |  |
+|**dealTimelineItemDeleted** | **Integer** |  |  |
+|**dealTimelineItemCreated** | **Integer** |  |  |
+|**aiAssistantCreated** | **Integer** |  |  |
+|**aiAssistantState** | **Integer** |  |  |
+|**aiAssistantDeleted** | **Integer** |  |  |
+|**aiAssistantLinkDeleted** | **Integer** |  |  |
+|**aiAssistantLinkState** | **Integer** |  |  |
+|**aiAssistantLinkCreated** | **Integer** |  |  |
+|**aiAssistantSubLinkState** | **Integer** |  |  |
+|**aiAssistantSubLinkCreated** | **Integer** |  |  |
+|**emailCampaignEmailSenderCreated** | **Integer** |  |  |
+|**emailCampaignEmailSenderUpdated** | **Integer** |  |  |
+|**emailCampaignEmailSenderDeleted** | **Integer** |  |  |
+|**emailCampaignDomainCreated** | **Integer** |  |  |
+|**emailCampaignDomainDeleted** | **Integer** |  |  |
+|**emailCampaignDomainVerified** | **Integer** |  |  |
+|**emailCampaignDomainStatusChanged** | **Integer** |  |  |
+|**emailCampaignDomainDkimVerified** | **Integer** |  |  |
+|**emailCampaignDomainReturnPathVerified** | **Integer** |  |  |
+|**emailCampaignDomainDmarcVerified** | **Integer** |  |  |
+|**emailCampaignDomainEntryVerificationChanged** | **Integer** |  |  |
+|**emailCampaignProgressState** | **Integer** |  |  |
+|**emailCampaignUpdated** | **Integer** |  |  |
+|**emailTemplateImproved** | **Integer** |  |  |
+|**emailTemplateImprovingFailed** | **Integer** |  |  |
+|**emailBonusUpdated** | **Integer** |  |  |
+|**smsCampaignInvalidated** | **Integer** |  |  |
+|**scheduledEmailCampaignCreated** | **Integer** |  |  |
+|**scheduledEmailCampaignUpdated** | **Integer** |  |  |
+|**scheduledEmailCampaignStatusUpdated** | **Integer** |  |  |
+|**scheduledEmailCampaignDeleted** | **Integer** |  |  |
+|**emailCampaignFailedAttemptCreated** | **Integer** |  |  |
+|**emailCampaignFailedAttemptDeleted** | **Integer** |  |  |
+|**emailCampaignFailedAttemptStateUpdated** | **Integer** |  |  |
 
 
 

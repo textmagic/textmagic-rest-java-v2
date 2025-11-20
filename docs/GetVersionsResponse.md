@@ -1,12 +1,15 @@
 
+
 # GetVersionsResponse
 
+
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**ios** | **String** |  | 
-**android** | **String** |  | 
-**desktop** | **String** |  | 
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**ios** | **String** |  |  |
+|**android** | **String** |  |  |
+|**desktop** | **String** |  |  |
 
 
 

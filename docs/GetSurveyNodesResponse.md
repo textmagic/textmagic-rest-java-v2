@@ -1,11 +1,14 @@
 
+
 # GetSurveyNodesResponse
 
+
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**nodes** | **Object** |  | 
-**rows** | **Object** |  | 
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**nodes** | **Object** |  |  |
+|**rows** | **Object** |  |  |
 
 
 
