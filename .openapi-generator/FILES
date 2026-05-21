@@ -1,6 +1,5 @@
 .github/workflows/maven.yml
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 api/openapi.yaml
@@ -33,6 +32,7 @@ docs/CreateTagResponse.md
 docs/CreateTemplateRequest.md
 docs/Currency.md
 docs/CustomFieldListItem.md
+docs/CustomFieldValues.md
 docs/DeleteChatMessagesRequest.md
 docs/DeleteChatsBulkRequest.md
 docs/DeleteContactNotesBulkRequest.md
@@ -117,6 +117,7 @@ docs/ModelList.md
 docs/MuteChatRequest.md
 docs/MuteChatsBulkRequest.md
 docs/NotFoundResponse.md
+docs/NullableUserPersonalInfo.md
 docs/OutboundEmailResponse.md
 docs/PingResponse.md
 docs/PushToken.md
@@ -229,6 +230,7 @@ src/main/java/com/textmagic/sdk/model/CreateTagResponse.java
 src/main/java/com/textmagic/sdk/model/CreateTemplateRequest.java
 src/main/java/com/textmagic/sdk/model/Currency.java
 src/main/java/com/textmagic/sdk/model/CustomFieldListItem.java
+src/main/java/com/textmagic/sdk/model/CustomFieldValues.java
 src/main/java/com/textmagic/sdk/model/DeleteChatMessagesRequest.java
 src/main/java/com/textmagic/sdk/model/DeleteChatsBulkRequest.java
 src/main/java/com/textmagic/sdk/model/DeleteContactNotesBulkRequest.java
@@ -313,6 +315,7 @@ src/main/java/com/textmagic/sdk/model/ModelList.java
 src/main/java/com/textmagic/sdk/model/MuteChatRequest.java
 src/main/java/com/textmagic/sdk/model/MuteChatsBulkRequest.java
 src/main/java/com/textmagic/sdk/model/NotFoundResponse.java
+src/main/java/com/textmagic/sdk/model/NullableUserPersonalInfo.java
 src/main/java/com/textmagic/sdk/model/OutboundEmailResponse.java
 src/main/java/com/textmagic/sdk/model/PingResponse.java
 src/main/java/com/textmagic/sdk/model/PushToken.java

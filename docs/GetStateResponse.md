@@ -62,6 +62,7 @@
 |**liveChatRated** | **Integer** |  |  |
 |**webWidgetUpdated** | **Integer** |  |  |
 |**webWidgetDeleted** | **Integer** |  |  |
+|**webWidgetCreated** | **Integer** |  |  |
 |**contactAdded** | **Integer** |  |  |
 |**contactDeleted** | **Integer** |  |  |
 |**contactBulkUpdated** | **Integer** |  |  |
@@ -197,6 +198,18 @@
 |**emailCampaignFailedAttemptCreated** | **Integer** |  |  |
 |**emailCampaignFailedAttemptDeleted** | **Integer** |  |  |
 |**emailCampaignFailedAttemptStateUpdated** | **Integer** |  |  |
+|**tollFreePreFillCompleted** | **Integer** |  |  |
+|**tollFreePreFillFailed** | **Integer** |  |  |
+|**tollFreeComplianceCheckCompleted** | **Integer** |  |  |
+|**tollFreeComplianceCheckFailed** | **Integer** |  |  |
+|**tenDlcPreFillCompleted** | **Integer** |  |  |
+|**tenDlcPreFillFailed** | **Integer** |  |  |
+|**tenDlcComplianceCheckCompleted** | **Integer** |  |  |
+|**tenDlcComplianceCheckFailed** | **Integer** |  |  |
+|**marketingDataModalChanged** | **Integer** |  |  |
+|**integrationStatusChanged** | **Integer** |  |  |
+|**integrationCustomerSyncProgressState** | **Integer** |  |  |
+|**integrationCustomerSyncEnd** | **Integer** |  |  |
 
 
 

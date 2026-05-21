@@ -5,7 +5,7 @@
 
     <groupId>com.textmagic.sdk</groupId>
     <artifactId>textmagic-java-sdk</artifactId>
-    <version>3.0.43863</version>
+    <version>3.0.50038</version>
     <packaging>jar</packaging>
     <name>textmagic-java-sdk</name>
     <url>https://textmagic.com</url>

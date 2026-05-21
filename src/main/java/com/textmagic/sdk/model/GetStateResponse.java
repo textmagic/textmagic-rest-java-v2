@@ -327,6 +327,11 @@ public class GetStateResponse {
   @javax.annotation.Nonnull
   private Integer webWidgetDeleted;
 
+  public static final String SERIALIZED_NAME_WEB_WIDGET_CREATED = "webWidgetCreated";
+  @SerializedName(SERIALIZED_NAME_WEB_WIDGET_CREATED)
+  @javax.annotation.Nonnull
+  private Integer webWidgetCreated;
+
   public static final String SERIALIZED_NAME_CONTACT_ADDED = "contactAdded";
   @SerializedName(SERIALIZED_NAME_CONTACT_ADDED)
   @javax.annotation.Nonnull
@@ -1001,6 +1006,66 @@ public class GetStateResponse {
   @SerializedName(SERIALIZED_NAME_EMAIL_CAMPAIGN_FAILED_ATTEMPT_STATE_UPDATED)
   @javax.annotation.Nonnull
   private Integer emailCampaignFailedAttemptStateUpdated;
+
+  public static final String SERIALIZED_NAME_TOLL_FREE_PRE_FILL_COMPLETED = "tollFreePreFillCompleted";
+  @SerializedName(SERIALIZED_NAME_TOLL_FREE_PRE_FILL_COMPLETED)
+  @javax.annotation.Nonnull
+  private Integer tollFreePreFillCompleted;
+
+  public static final String SERIALIZED_NAME_TOLL_FREE_PRE_FILL_FAILED = "tollFreePreFillFailed";
+  @SerializedName(SERIALIZED_NAME_TOLL_FREE_PRE_FILL_FAILED)
+  @javax.annotation.Nonnull
+  private Integer tollFreePreFillFailed;
+
+  public static final String SERIALIZED_NAME_TOLL_FREE_COMPLIANCE_CHECK_COMPLETED = "tollFreeComplianceCheckCompleted";
+  @SerializedName(SERIALIZED_NAME_TOLL_FREE_COMPLIANCE_CHECK_COMPLETED)
+  @javax.annotation.Nonnull
+  private Integer tollFreeComplianceCheckCompleted;
+
+  public static final String SERIALIZED_NAME_TOLL_FREE_COMPLIANCE_CHECK_FAILED = "tollFreeComplianceCheckFailed";
+  @SerializedName(SERIALIZED_NAME_TOLL_FREE_COMPLIANCE_CHECK_FAILED)
+  @javax.annotation.Nonnull
+  private Integer tollFreeComplianceCheckFailed;
+
+  public static final String SERIALIZED_NAME_TEN_DLC_PRE_FILL_COMPLETED = "tenDlcPreFillCompleted";
+  @SerializedName(SERIALIZED_NAME_TEN_DLC_PRE_FILL_COMPLETED)
+  @javax.annotation.Nonnull
+  private Integer tenDlcPreFillCompleted;
+
+  public static final String SERIALIZED_NAME_TEN_DLC_PRE_FILL_FAILED = "tenDlcPreFillFailed";
+  @SerializedName(SERIALIZED_NAME_TEN_DLC_PRE_FILL_FAILED)
+  @javax.annotation.Nonnull
+  private Integer tenDlcPreFillFailed;
+
+  public static final String SERIALIZED_NAME_TEN_DLC_COMPLIANCE_CHECK_COMPLETED = "tenDlcComplianceCheckCompleted";
+  @SerializedName(SERIALIZED_NAME_TEN_DLC_COMPLIANCE_CHECK_COMPLETED)
+  @javax.annotation.Nonnull
+  private Integer tenDlcComplianceCheckCompleted;
+
+  public static final String SERIALIZED_NAME_TEN_DLC_COMPLIANCE_CHECK_FAILED = "tenDlcComplianceCheckFailed";
+  @SerializedName(SERIALIZED_NAME_TEN_DLC_COMPLIANCE_CHECK_FAILED)
+  @javax.annotation.Nonnull
+  private Integer tenDlcComplianceCheckFailed;
+
+  public static final String SERIALIZED_NAME_MARKETING_DATA_MODAL_CHANGED = "marketingDataModalChanged";
+  @SerializedName(SERIALIZED_NAME_MARKETING_DATA_MODAL_CHANGED)
+  @javax.annotation.Nonnull
+  private Integer marketingDataModalChanged;
+
+  public static final String SERIALIZED_NAME_INTEGRATION_STATUS_CHANGED = "integrationStatusChanged";
+  @SerializedName(SERIALIZED_NAME_INTEGRATION_STATUS_CHANGED)
+  @javax.annotation.Nonnull
+  private Integer integrationStatusChanged;
+
+  public static final String SERIALIZED_NAME_INTEGRATION_CUSTOMER_SYNC_PROGRESS_STATE = "integrationCustomerSyncProgressState";
+  @SerializedName(SERIALIZED_NAME_INTEGRATION_CUSTOMER_SYNC_PROGRESS_STATE)
+  @javax.annotation.Nonnull
+  private Integer integrationCustomerSyncProgressState;
+
+  public static final String SERIALIZED_NAME_INTEGRATION_CUSTOMER_SYNC_END = "integrationCustomerSyncEnd";
+  @SerializedName(SERIALIZED_NAME_INTEGRATION_CUSTOMER_SYNC_END)
+  @javax.annotation.Nonnull
+  private Integer integrationCustomerSyncEnd;
 
   public GetStateResponse() {
   }
@@ -2047,6 +2112,25 @@ public class GetStateResponse {
 
   public void setWebWidgetDeleted(@javax.annotation.Nonnull Integer webWidgetDeleted) {
     this.webWidgetDeleted = webWidgetDeleted;
+  }
+
+
+  public GetStateResponse webWidgetCreated(@javax.annotation.Nonnull Integer webWidgetCreated) {
+    this.webWidgetCreated = webWidgetCreated;
+    return this;
+  }
+
+  /**
+   * Get webWidgetCreated
+   * @return webWidgetCreated
+   */
+  @javax.annotation.Nonnull
+  public Integer getWebWidgetCreated() {
+    return webWidgetCreated;
+  }
+
+  public void setWebWidgetCreated(@javax.annotation.Nonnull Integer webWidgetCreated) {
+    this.webWidgetCreated = webWidgetCreated;
   }
 
 
@@ -4615,6 +4699,234 @@ public class GetStateResponse {
   }
 
 
+  public GetStateResponse tollFreePreFillCompleted(@javax.annotation.Nonnull Integer tollFreePreFillCompleted) {
+    this.tollFreePreFillCompleted = tollFreePreFillCompleted;
+    return this;
+  }
+
+  /**
+   * Get tollFreePreFillCompleted
+   * @return tollFreePreFillCompleted
+   */
+  @javax.annotation.Nonnull
+  public Integer getTollFreePreFillCompleted() {
+    return tollFreePreFillCompleted;
+  }
+
+  public void setTollFreePreFillCompleted(@javax.annotation.Nonnull Integer tollFreePreFillCompleted) {
+    this.tollFreePreFillCompleted = tollFreePreFillCompleted;
+  }
+
+
+  public GetStateResponse tollFreePreFillFailed(@javax.annotation.Nonnull Integer tollFreePreFillFailed) {
+    this.tollFreePreFillFailed = tollFreePreFillFailed;
+    return this;
+  }
+
+  /**
+   * Get tollFreePreFillFailed
+   * @return tollFreePreFillFailed
+   */
+  @javax.annotation.Nonnull
+  public Integer getTollFreePreFillFailed() {
+    return tollFreePreFillFailed;
+  }
+
+  public void setTollFreePreFillFailed(@javax.annotation.Nonnull Integer tollFreePreFillFailed) {
+    this.tollFreePreFillFailed = tollFreePreFillFailed;
+  }
+
+
+  public GetStateResponse tollFreeComplianceCheckCompleted(@javax.annotation.Nonnull Integer tollFreeComplianceCheckCompleted) {
+    this.tollFreeComplianceCheckCompleted = tollFreeComplianceCheckCompleted;
+    return this;
+  }
+
+  /**
+   * Get tollFreeComplianceCheckCompleted
+   * @return tollFreeComplianceCheckCompleted
+   */
+  @javax.annotation.Nonnull
+  public Integer getTollFreeComplianceCheckCompleted() {
+    return tollFreeComplianceCheckCompleted;
+  }
+
+  public void setTollFreeComplianceCheckCompleted(@javax.annotation.Nonnull Integer tollFreeComplianceCheckCompleted) {
+    this.tollFreeComplianceCheckCompleted = tollFreeComplianceCheckCompleted;
+  }
+
+
+  public GetStateResponse tollFreeComplianceCheckFailed(@javax.annotation.Nonnull Integer tollFreeComplianceCheckFailed) {
+    this.tollFreeComplianceCheckFailed = tollFreeComplianceCheckFailed;
+    return this;
+  }
+
+  /**
+   * Get tollFreeComplianceCheckFailed
+   * @return tollFreeComplianceCheckFailed
+   */
+  @javax.annotation.Nonnull
+  public Integer getTollFreeComplianceCheckFailed() {
+    return tollFreeComplianceCheckFailed;
+  }
+
+  public void setTollFreeComplianceCheckFailed(@javax.annotation.Nonnull Integer tollFreeComplianceCheckFailed) {
+    this.tollFreeComplianceCheckFailed = tollFreeComplianceCheckFailed;
+  }
+
+
+  public GetStateResponse tenDlcPreFillCompleted(@javax.annotation.Nonnull Integer tenDlcPreFillCompleted) {
+    this.tenDlcPreFillCompleted = tenDlcPreFillCompleted;
+    return this;
+  }
+
+  /**
+   * Get tenDlcPreFillCompleted
+   * @return tenDlcPreFillCompleted
+   */
+  @javax.annotation.Nonnull
+  public Integer getTenDlcPreFillCompleted() {
+    return tenDlcPreFillCompleted;
+  }
+
+  public void setTenDlcPreFillCompleted(@javax.annotation.Nonnull Integer tenDlcPreFillCompleted) {
+    this.tenDlcPreFillCompleted = tenDlcPreFillCompleted;
+  }
+
+
+  public GetStateResponse tenDlcPreFillFailed(@javax.annotation.Nonnull Integer tenDlcPreFillFailed) {
+    this.tenDlcPreFillFailed = tenDlcPreFillFailed;
+    return this;
+  }
+
+  /**
+   * Get tenDlcPreFillFailed
+   * @return tenDlcPreFillFailed
+   */
+  @javax.annotation.Nonnull
+  public Integer getTenDlcPreFillFailed() {
+    return tenDlcPreFillFailed;
+  }
+
+  public void setTenDlcPreFillFailed(@javax.annotation.Nonnull Integer tenDlcPreFillFailed) {
+    this.tenDlcPreFillFailed = tenDlcPreFillFailed;
+  }
+
+
+  public GetStateResponse tenDlcComplianceCheckCompleted(@javax.annotation.Nonnull Integer tenDlcComplianceCheckCompleted) {
+    this.tenDlcComplianceCheckCompleted = tenDlcComplianceCheckCompleted;
+    return this;
+  }
+
+  /**
+   * Get tenDlcComplianceCheckCompleted
+   * @return tenDlcComplianceCheckCompleted
+   */
+  @javax.annotation.Nonnull
+  public Integer getTenDlcComplianceCheckCompleted() {
+    return tenDlcComplianceCheckCompleted;
+  }
+
+  public void setTenDlcComplianceCheckCompleted(@javax.annotation.Nonnull Integer tenDlcComplianceCheckCompleted) {
+    this.tenDlcComplianceCheckCompleted = tenDlcComplianceCheckCompleted;
+  }
+
+
+  public GetStateResponse tenDlcComplianceCheckFailed(@javax.annotation.Nonnull Integer tenDlcComplianceCheckFailed) {
+    this.tenDlcComplianceCheckFailed = tenDlcComplianceCheckFailed;
+    return this;
+  }
+
+  /**
+   * Get tenDlcComplianceCheckFailed
+   * @return tenDlcComplianceCheckFailed
+   */
+  @javax.annotation.Nonnull
+  public Integer getTenDlcComplianceCheckFailed() {
+    return tenDlcComplianceCheckFailed;
+  }
+
+  public void setTenDlcComplianceCheckFailed(@javax.annotation.Nonnull Integer tenDlcComplianceCheckFailed) {
+    this.tenDlcComplianceCheckFailed = tenDlcComplianceCheckFailed;
+  }
+
+
+  public GetStateResponse marketingDataModalChanged(@javax.annotation.Nonnull Integer marketingDataModalChanged) {
+    this.marketingDataModalChanged = marketingDataModalChanged;
+    return this;
+  }
+
+  /**
+   * Get marketingDataModalChanged
+   * @return marketingDataModalChanged
+   */
+  @javax.annotation.Nonnull
+  public Integer getMarketingDataModalChanged() {
+    return marketingDataModalChanged;
+  }
+
+  public void setMarketingDataModalChanged(@javax.annotation.Nonnull Integer marketingDataModalChanged) {
+    this.marketingDataModalChanged = marketingDataModalChanged;
+  }
+
+
+  public GetStateResponse integrationStatusChanged(@javax.annotation.Nonnull Integer integrationStatusChanged) {
+    this.integrationStatusChanged = integrationStatusChanged;
+    return this;
+  }
+
+  /**
+   * Get integrationStatusChanged
+   * @return integrationStatusChanged
+   */
+  @javax.annotation.Nonnull
+  public Integer getIntegrationStatusChanged() {
+    return integrationStatusChanged;
+  }
+
+  public void setIntegrationStatusChanged(@javax.annotation.Nonnull Integer integrationStatusChanged) {
+    this.integrationStatusChanged = integrationStatusChanged;
+  }
+
+
+  public GetStateResponse integrationCustomerSyncProgressState(@javax.annotation.Nonnull Integer integrationCustomerSyncProgressState) {
+    this.integrationCustomerSyncProgressState = integrationCustomerSyncProgressState;
+    return this;
+  }
+
+  /**
+   * Get integrationCustomerSyncProgressState
+   * @return integrationCustomerSyncProgressState
+   */
+  @javax.annotation.Nonnull
+  public Integer getIntegrationCustomerSyncProgressState() {
+    return integrationCustomerSyncProgressState;
+  }
+
+  public void setIntegrationCustomerSyncProgressState(@javax.annotation.Nonnull Integer integrationCustomerSyncProgressState) {
+    this.integrationCustomerSyncProgressState = integrationCustomerSyncProgressState;
+  }
+
+
+  public GetStateResponse integrationCustomerSyncEnd(@javax.annotation.Nonnull Integer integrationCustomerSyncEnd) {
+    this.integrationCustomerSyncEnd = integrationCustomerSyncEnd;
+    return this;
+  }
+
+  /**
+   * Get integrationCustomerSyncEnd
+   * @return integrationCustomerSyncEnd
+   */
+  @javax.annotation.Nonnull
+  public Integer getIntegrationCustomerSyncEnd() {
+    return integrationCustomerSyncEnd;
+  }
+
+  public void setIntegrationCustomerSyncEnd(@javax.annotation.Nonnull Integer integrationCustomerSyncEnd) {
+    this.integrationCustomerSyncEnd = integrationCustomerSyncEnd;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -4680,6 +4992,7 @@ public class GetStateResponse {
         Objects.equals(this.liveChatRated, getStateResponse.liveChatRated) &&
         Objects.equals(this.webWidgetUpdated, getStateResponse.webWidgetUpdated) &&
         Objects.equals(this.webWidgetDeleted, getStateResponse.webWidgetDeleted) &&
+        Objects.equals(this.webWidgetCreated, getStateResponse.webWidgetCreated) &&
         Objects.equals(this.contactAdded, getStateResponse.contactAdded) &&
         Objects.equals(this.contactDeleted, getStateResponse.contactDeleted) &&
         Objects.equals(this.contactBulkUpdated, getStateResponse.contactBulkUpdated) &&
@@ -4814,12 +5127,24 @@ public class GetStateResponse {
         Objects.equals(this.scheduledEmailCampaignDeleted, getStateResponse.scheduledEmailCampaignDeleted) &&
         Objects.equals(this.emailCampaignFailedAttemptCreated, getStateResponse.emailCampaignFailedAttemptCreated) &&
         Objects.equals(this.emailCampaignFailedAttemptDeleted, getStateResponse.emailCampaignFailedAttemptDeleted) &&
-        Objects.equals(this.emailCampaignFailedAttemptStateUpdated, getStateResponse.emailCampaignFailedAttemptStateUpdated);
+        Objects.equals(this.emailCampaignFailedAttemptStateUpdated, getStateResponse.emailCampaignFailedAttemptStateUpdated) &&
+        Objects.equals(this.tollFreePreFillCompleted, getStateResponse.tollFreePreFillCompleted) &&
+        Objects.equals(this.tollFreePreFillFailed, getStateResponse.tollFreePreFillFailed) &&
+        Objects.equals(this.tollFreeComplianceCheckCompleted, getStateResponse.tollFreeComplianceCheckCompleted) &&
+        Objects.equals(this.tollFreeComplianceCheckFailed, getStateResponse.tollFreeComplianceCheckFailed) &&
+        Objects.equals(this.tenDlcPreFillCompleted, getStateResponse.tenDlcPreFillCompleted) &&
+        Objects.equals(this.tenDlcPreFillFailed, getStateResponse.tenDlcPreFillFailed) &&
+        Objects.equals(this.tenDlcComplianceCheckCompleted, getStateResponse.tenDlcComplianceCheckCompleted) &&
+        Objects.equals(this.tenDlcComplianceCheckFailed, getStateResponse.tenDlcComplianceCheckFailed) &&
+        Objects.equals(this.marketingDataModalChanged, getStateResponse.marketingDataModalChanged) &&
+        Objects.equals(this.integrationStatusChanged, getStateResponse.integrationStatusChanged) &&
+        Objects.equals(this.integrationCustomerSyncProgressState, getStateResponse.integrationCustomerSyncProgressState) &&
+        Objects.equals(this.integrationCustomerSyncEnd, getStateResponse.integrationCustomerSyncEnd);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, systemAccountAcceptTermsUpdate, systemAccountClosed, systemAccountAdditionalFields, systemAccountNumbersListChange, systemAccountPermissionsChanged, userProfileChanged, userBalanceChanged, userPresenceStatusChanged, userImpersonationEnd, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageLog, messageNote, messageInitial, lastMessageSet, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleNotSentStateChanged, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatPinned, chatUnpinned, chatDeleted, chatClosed, chatReopened, chatActivated, chatCacheClear, chatRead, chatUnread, chatAssigneeChanged, chatTagsChanged, chatConversationEnded, chatUpdated, liveChatAgentChanged, liveChatRated, webWidgetUpdated, webWidgetDeleted, contactAdded, contactDeleted, contactBulkUpdated, contactStateChanged, contactUnsubscribed, contactResubscribed, contactNoteAdded, contactNoteDeleted, contactNoteStateChanged, listAdded, listDeleted, listStateChanged, listCountMembersUpdated, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear, progressCarrierBulkLookup, progressSubAccountBulkImport, emailLookupProgressState, importProgressState, forceRefreshWebApp, chatSenderSettingsChanged, countrySenderSettingsChanged, chatSummaryChunk, chatWaysToReplyChunk, chatSuggestedReplyChunk, userSubscriptionChanged, userSubscriptionDeleted, taskCreated, taskUpdated, taskReordered, taskDeleted, taskMovedAll, taskStageCreated, taskStageUpdated, taskStageDeleted, taskBoardCreated, taskBoardUpdated, taskBoardReordered, taskBoardDeleted, taskBoardArchived, taskChecklistCreated, taskChecklistUpdated, taskChecklistDeleted, taskChecklistBulkMarked, taskChecklistItemCreated, taskChecklistItemUpdated, taskChecklistItemDeleted, taskCommentCreated, taskCommentDeleted, pinnedContactAdded, pinnedContactRemoved, pinnedContactReordered, pinnedContactStateChanged, whatsappAccountAdded, whatsappAccountRemoved, whatsappAccountChanged, facebookPageAdded, facebookPageRemoved, facebookPageChanged, instagramAccountAdded, instagramAccountRemoved, instagramAccountChanged, unreadTicketsCountUpdated, ticketDeleted, ticketUpdated, ticketCreated, ticketBulkUpdated, ticketBulkDeleted, ticketMessageCreated, ticketMessageUpdated, ticketMessageDeleted, subAccountsClosed, userInvited, filteredViewCreated, filteredViewCountUpdated, filteredViewDeleted, forwardingInboxWasVerified, forwardingInboxCheckWasFailed, forwardingInboxVerificationLinkWasParsed, tendlcLinkNumberStatusUpdated, channelPresence, dealCreated, dealUpdated, dealDeleted, dealMoved, dealStageCreated, dealStageUpdated, dealStageDeleted, dealPipelineCreated, dealPipelineUpdated, dealPipelineDeleted, dealPipelineArchived, dealPipelineReordered, dealActivityUpdated, dealActivityItemCreated, dealActivityItemUpdated, dealActivityItemDeleted, dealActivityItemBulkMarked, dealTimelineItemDeleted, dealTimelineItemCreated, aiAssistantCreated, aiAssistantState, aiAssistantDeleted, aiAssistantLinkDeleted, aiAssistantLinkState, aiAssistantLinkCreated, aiAssistantSubLinkState, aiAssistantSubLinkCreated, emailCampaignEmailSenderCreated, emailCampaignEmailSenderUpdated, emailCampaignEmailSenderDeleted, emailCampaignDomainCreated, emailCampaignDomainDeleted, emailCampaignDomainVerified, emailCampaignDomainStatusChanged, emailCampaignDomainDkimVerified, emailCampaignDomainReturnPathVerified, emailCampaignDomainDmarcVerified, emailCampaignDomainEntryVerificationChanged, emailCampaignProgressState, emailCampaignUpdated, emailTemplateImproved, emailTemplateImprovingFailed, emailBonusUpdated, smsCampaignInvalidated, scheduledEmailCampaignCreated, scheduledEmailCampaignUpdated, scheduledEmailCampaignStatusUpdated, scheduledEmailCampaignDeleted, emailCampaignFailedAttemptCreated, emailCampaignFailedAttemptDeleted, emailCampaignFailedAttemptStateUpdated);
+    return Objects.hash(systemCacheClear, systemExit, systemAlert, systemAccountStateChanged, systemAccountAcceptTermsUpdate, systemAccountClosed, systemAccountAdditionalFields, systemAccountNumbersListChange, systemAccountPermissionsChanged, userProfileChanged, userBalanceChanged, userPresenceStatusChanged, userImpersonationEnd, messageDeleted, messageIncoming, messageIncomingDeleted, messageStateChanged, messageBulkEnd, messageWipeEnd, messageSent, messageLog, messageNote, messageInitial, lastMessageSet, messageSessionDeleted, messageCacheClear, messageIncomingCacheClear, messageScheduleAdded, messageScheduleStateChanged, messageScheduleDeleted, messageScheduleNotSentStateChanged, messageScheduleCacheClear, messageTemplateCacheClear, callFinished, chatCreated, chatMarkedAsRead, chatMuted, chatUnmuted, chatPinned, chatUnpinned, chatDeleted, chatClosed, chatReopened, chatActivated, chatCacheClear, chatRead, chatUnread, chatAssigneeChanged, chatTagsChanged, chatConversationEnded, chatUpdated, liveChatAgentChanged, liveChatRated, webWidgetUpdated, webWidgetDeleted, webWidgetCreated, contactAdded, contactDeleted, contactBulkUpdated, contactStateChanged, contactUnsubscribed, contactResubscribed, contactNoteAdded, contactNoteDeleted, contactNoteStateChanged, listAdded, listDeleted, listStateChanged, listCountMembersUpdated, contactWipeEnd, contactImportEnd, contactCacheClear, listCacheClear, customFieldsCacheClear, progressCarrierBulkLookup, progressSubAccountBulkImport, emailLookupProgressState, importProgressState, forceRefreshWebApp, chatSenderSettingsChanged, countrySenderSettingsChanged, chatSummaryChunk, chatWaysToReplyChunk, chatSuggestedReplyChunk, userSubscriptionChanged, userSubscriptionDeleted, taskCreated, taskUpdated, taskReordered, taskDeleted, taskMovedAll, taskStageCreated, taskStageUpdated, taskStageDeleted, taskBoardCreated, taskBoardUpdated, taskBoardReordered, taskBoardDeleted, taskBoardArchived, taskChecklistCreated, taskChecklistUpdated, taskChecklistDeleted, taskChecklistBulkMarked, taskChecklistItemCreated, taskChecklistItemUpdated, taskChecklistItemDeleted, taskCommentCreated, taskCommentDeleted, pinnedContactAdded, pinnedContactRemoved, pinnedContactReordered, pinnedContactStateChanged, whatsappAccountAdded, whatsappAccountRemoved, whatsappAccountChanged, facebookPageAdded, facebookPageRemoved, facebookPageChanged, instagramAccountAdded, instagramAccountRemoved, instagramAccountChanged, unreadTicketsCountUpdated, ticketDeleted, ticketUpdated, ticketCreated, ticketBulkUpdated, ticketBulkDeleted, ticketMessageCreated, ticketMessageUpdated, ticketMessageDeleted, subAccountsClosed, userInvited, filteredViewCreated, filteredViewCountUpdated, filteredViewDeleted, forwardingInboxWasVerified, forwardingInboxCheckWasFailed, forwardingInboxVerificationLinkWasParsed, tendlcLinkNumberStatusUpdated, channelPresence, dealCreated, dealUpdated, dealDeleted, dealMoved, dealStageCreated, dealStageUpdated, dealStageDeleted, dealPipelineCreated, dealPipelineUpdated, dealPipelineDeleted, dealPipelineArchived, dealPipelineReordered, dealActivityUpdated, dealActivityItemCreated, dealActivityItemUpdated, dealActivityItemDeleted, dealActivityItemBulkMarked, dealTimelineItemDeleted, dealTimelineItemCreated, aiAssistantCreated, aiAssistantState, aiAssistantDeleted, aiAssistantLinkDeleted, aiAssistantLinkState, aiAssistantLinkCreated, aiAssistantSubLinkState, aiAssistantSubLinkCreated, emailCampaignEmailSenderCreated, emailCampaignEmailSenderUpdated, emailCampaignEmailSenderDeleted, emailCampaignDomainCreated, emailCampaignDomainDeleted, emailCampaignDomainVerified, emailCampaignDomainStatusChanged, emailCampaignDomainDkimVerified, emailCampaignDomainReturnPathVerified, emailCampaignDomainDmarcVerified, emailCampaignDomainEntryVerificationChanged, emailCampaignProgressState, emailCampaignUpdated, emailTemplateImproved, emailTemplateImprovingFailed, emailBonusUpdated, smsCampaignInvalidated, scheduledEmailCampaignCreated, scheduledEmailCampaignUpdated, scheduledEmailCampaignStatusUpdated, scheduledEmailCampaignDeleted, emailCampaignFailedAttemptCreated, emailCampaignFailedAttemptDeleted, emailCampaignFailedAttemptStateUpdated, tollFreePreFillCompleted, tollFreePreFillFailed, tollFreeComplianceCheckCompleted, tollFreeComplianceCheckFailed, tenDlcPreFillCompleted, tenDlcPreFillFailed, tenDlcComplianceCheckCompleted, tenDlcComplianceCheckFailed, marketingDataModalChanged, integrationStatusChanged, integrationCustomerSyncProgressState, integrationCustomerSyncEnd);
   }
 
   @Override
@@ -4881,6 +5206,7 @@ public class GetStateResponse {
     sb.append("    liveChatRated: ").append(toIndentedString(liveChatRated)).append("\n");
     sb.append("    webWidgetUpdated: ").append(toIndentedString(webWidgetUpdated)).append("\n");
     sb.append("    webWidgetDeleted: ").append(toIndentedString(webWidgetDeleted)).append("\n");
+    sb.append("    webWidgetCreated: ").append(toIndentedString(webWidgetCreated)).append("\n");
     sb.append("    contactAdded: ").append(toIndentedString(contactAdded)).append("\n");
     sb.append("    contactDeleted: ").append(toIndentedString(contactDeleted)).append("\n");
     sb.append("    contactBulkUpdated: ").append(toIndentedString(contactBulkUpdated)).append("\n");
@@ -5016,6 +5342,18 @@ public class GetStateResponse {
     sb.append("    emailCampaignFailedAttemptCreated: ").append(toIndentedString(emailCampaignFailedAttemptCreated)).append("\n");
     sb.append("    emailCampaignFailedAttemptDeleted: ").append(toIndentedString(emailCampaignFailedAttemptDeleted)).append("\n");
     sb.append("    emailCampaignFailedAttemptStateUpdated: ").append(toIndentedString(emailCampaignFailedAttemptStateUpdated)).append("\n");
+    sb.append("    tollFreePreFillCompleted: ").append(toIndentedString(tollFreePreFillCompleted)).append("\n");
+    sb.append("    tollFreePreFillFailed: ").append(toIndentedString(tollFreePreFillFailed)).append("\n");
+    sb.append("    tollFreeComplianceCheckCompleted: ").append(toIndentedString(tollFreeComplianceCheckCompleted)).append("\n");
+    sb.append("    tollFreeComplianceCheckFailed: ").append(toIndentedString(tollFreeComplianceCheckFailed)).append("\n");
+    sb.append("    tenDlcPreFillCompleted: ").append(toIndentedString(tenDlcPreFillCompleted)).append("\n");
+    sb.append("    tenDlcPreFillFailed: ").append(toIndentedString(tenDlcPreFillFailed)).append("\n");
+    sb.append("    tenDlcComplianceCheckCompleted: ").append(toIndentedString(tenDlcComplianceCheckCompleted)).append("\n");
+    sb.append("    tenDlcComplianceCheckFailed: ").append(toIndentedString(tenDlcComplianceCheckFailed)).append("\n");
+    sb.append("    marketingDataModalChanged: ").append(toIndentedString(marketingDataModalChanged)).append("\n");
+    sb.append("    integrationStatusChanged: ").append(toIndentedString(integrationStatusChanged)).append("\n");
+    sb.append("    integrationCustomerSyncProgressState: ").append(toIndentedString(integrationCustomerSyncProgressState)).append("\n");
+    sb.append("    integrationCustomerSyncEnd: ").append(toIndentedString(integrationCustomerSyncEnd)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -5037,10 +5375,10 @@ public class GetStateResponse {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("systemCacheClear", "systemExit", "systemAlert", "systemAccountStateChanged", "systemAccountAcceptTermsUpdate", "systemAccountClosed", "systemAccountAdditionalFields", "systemAccountNumbersListChange", "systemAccountPermissionsChanged", "userProfileChanged", "userBalanceChanged", "userPresenceStatusChanged", "userImpersonationEnd", "messageDeleted", "messageIncoming", "messageIncomingDeleted", "messageStateChanged", "messageBulkEnd", "messageWipeEnd", "messageSent", "messageLog", "messageNote", "messageInitial", "lastMessageSet", "messageSessionDeleted", "messageCacheClear", "messageIncomingCacheClear", "messageScheduleAdded", "messageScheduleStateChanged", "messageScheduleDeleted", "messageScheduleNotSentStateChanged", "messageScheduleCacheClear", "messageTemplateCacheClear", "callFinished", "chatCreated", "chatMarkedAsRead", "chatMuted", "chatUnmuted", "chatPinned", "chatUnpinned", "chatDeleted", "chatClosed", "chatReopened", "chatActivated", "chatCacheClear", "chatRead", "chatUnread", "chatAssigneeChanged", "chatTagsChanged", "chatConversationEnded", "chatUpdated", "liveChatAgentChanged", "liveChatRated", "webWidgetUpdated", "webWidgetDeleted", "contactAdded", "contactDeleted", "contactBulkUpdated", "contactStateChanged", "contactUnsubscribed", "contactResubscribed", "contactNoteAdded", "contactNoteDeleted", "contactNoteStateChanged", "listAdded", "listDeleted", "listStateChanged", "listCountMembersUpdated", "contactWipeEnd", "contactImportEnd", "contactCacheClear", "listCacheClear", "customFieldsCacheClear", "progressCarrierBulkLookup", "progressSubAccountBulkImport", "emailLookupProgressState", "importProgressState", "forceRefreshWebApp", "chatSenderSettingsChanged", "countrySenderSettingsChanged", "chatSummaryChunk", "chatWaysToReplyChunk", "chatSuggestedReplyChunk", "userSubscriptionChanged", "userSubscriptionDeleted", "taskCreated", "taskUpdated", "taskReordered", "taskDeleted", "taskMovedAll", "taskStageCreated", "taskStageUpdated", "taskStageDeleted", "taskBoardCreated", "taskBoardUpdated", "taskBoardReordered", "taskBoardDeleted", "taskBoardArchived", "taskChecklistCreated", "taskChecklistUpdated", "taskChecklistDeleted", "taskChecklistBulkMarked", "taskChecklistItemCreated", "taskChecklistItemUpdated", "taskChecklistItemDeleted", "taskCommentCreated", "taskCommentDeleted", "pinnedContactAdded", "pinnedContactRemoved", "pinnedContactReordered", "pinnedContactStateChanged", "whatsappAccountAdded", "whatsappAccountRemoved", "whatsappAccountChanged", "facebookPageAdded", "facebookPageRemoved", "facebookPageChanged", "instagramAccountAdded", "instagramAccountRemoved", "instagramAccountChanged", "unreadTicketsCountUpdated", "ticketDeleted", "ticketUpdated", "ticketCreated", "ticketBulkUpdated", "ticketBulkDeleted", "ticketMessageCreated", "ticketMessageUpdated", "ticketMessageDeleted", "subAccountsClosed", "userInvited", "filteredViewCreated", "filteredViewCountUpdated", "filteredViewDeleted", "forwardingInboxWasVerified", "forwardingInboxCheckWasFailed", "forwardingInboxVerificationLinkWasParsed", "tendlcLinkNumberStatusUpdated", "channelPresence", "dealCreated", "dealUpdated", "dealDeleted", "dealMoved", "dealStageCreated", "dealStageUpdated", "dealStageDeleted", "dealPipelineCreated", "dealPipelineUpdated", "dealPipelineDeleted", "dealPipelineArchived", "dealPipelineReordered", "dealActivityUpdated", "dealActivityItemCreated", "dealActivityItemUpdated", "dealActivityItemDeleted", "dealActivityItemBulkMarked", "dealTimelineItemDeleted", "dealTimelineItemCreated", "AIAssistantCreated", "AIAssistantState", "AIAssistantDeleted", "AIAssistantLinkDeleted", "AIAssistantLinkState", "AIAssistantLinkCreated", "AIAssistantSubLinkState", "AIAssistantSubLinkCreated", "emailCampaignEmailSenderCreated", "emailCampaignEmailSenderUpdated", "emailCampaignEmailSenderDeleted", "emailCampaignDomainCreated", "emailCampaignDomainDeleted", "emailCampaignDomainVerified", "emailCampaignDomainStatusChanged", "emailCampaignDomainDkimVerified", "emailCampaignDomainReturnPathVerified", "emailCampaignDomainDmarcVerified", "emailCampaignDomainEntryVerificationChanged", "emailCampaignProgressState", "emailCampaignUpdated", "emailTemplateImproved", "emailTemplateImprovingFailed", "emailBonusUpdated", "smsCampaignInvalidated", "scheduledEmailCampaignCreated", "scheduledEmailCampaignUpdated", "scheduledEmailCampaignStatusUpdated", "scheduledEmailCampaignDeleted", "emailCampaignFailedAttemptCreated", "emailCampaignFailedAttemptDeleted", "emailCampaignFailedAttemptStateUpdated"));
+    openapiFields = new HashSet<String>(Arrays.asList("systemCacheClear", "systemExit", "systemAlert", "systemAccountStateChanged", "systemAccountAcceptTermsUpdate", "systemAccountClosed", "systemAccountAdditionalFields", "systemAccountNumbersListChange", "systemAccountPermissionsChanged", "userProfileChanged", "userBalanceChanged", "userPresenceStatusChanged", "userImpersonationEnd", "messageDeleted", "messageIncoming", "messageIncomingDeleted", "messageStateChanged", "messageBulkEnd", "messageWipeEnd", "messageSent", "messageLog", "messageNote", "messageInitial", "lastMessageSet", "messageSessionDeleted", "messageCacheClear", "messageIncomingCacheClear", "messageScheduleAdded", "messageScheduleStateChanged", "messageScheduleDeleted", "messageScheduleNotSentStateChanged", "messageScheduleCacheClear", "messageTemplateCacheClear", "callFinished", "chatCreated", "chatMarkedAsRead", "chatMuted", "chatUnmuted", "chatPinned", "chatUnpinned", "chatDeleted", "chatClosed", "chatReopened", "chatActivated", "chatCacheClear", "chatRead", "chatUnread", "chatAssigneeChanged", "chatTagsChanged", "chatConversationEnded", "chatUpdated", "liveChatAgentChanged", "liveChatRated", "webWidgetUpdated", "webWidgetDeleted", "webWidgetCreated", "contactAdded", "contactDeleted", "contactBulkUpdated", "contactStateChanged", "contactUnsubscribed", "contactResubscribed", "contactNoteAdded", "contactNoteDeleted", "contactNoteStateChanged", "listAdded", "listDeleted", "listStateChanged", "listCountMembersUpdated", "contactWipeEnd", "contactImportEnd", "contactCacheClear", "listCacheClear", "customFieldsCacheClear", "progressCarrierBulkLookup", "progressSubAccountBulkImport", "emailLookupProgressState", "importProgressState", "forceRefreshWebApp", "chatSenderSettingsChanged", "countrySenderSettingsChanged", "chatSummaryChunk", "chatWaysToReplyChunk", "chatSuggestedReplyChunk", "userSubscriptionChanged", "userSubscriptionDeleted", "taskCreated", "taskUpdated", "taskReordered", "taskDeleted", "taskMovedAll", "taskStageCreated", "taskStageUpdated", "taskStageDeleted", "taskBoardCreated", "taskBoardUpdated", "taskBoardReordered", "taskBoardDeleted", "taskBoardArchived", "taskChecklistCreated", "taskChecklistUpdated", "taskChecklistDeleted", "taskChecklistBulkMarked", "taskChecklistItemCreated", "taskChecklistItemUpdated", "taskChecklistItemDeleted", "taskCommentCreated", "taskCommentDeleted", "pinnedContactAdded", "pinnedContactRemoved", "pinnedContactReordered", "pinnedContactStateChanged", "whatsappAccountAdded", "whatsappAccountRemoved", "whatsappAccountChanged", "facebookPageAdded", "facebookPageRemoved", "facebookPageChanged", "instagramAccountAdded", "instagramAccountRemoved", "instagramAccountChanged", "unreadTicketsCountUpdated", "ticketDeleted", "ticketUpdated", "ticketCreated", "ticketBulkUpdated", "ticketBulkDeleted", "ticketMessageCreated", "ticketMessageUpdated", "ticketMessageDeleted", "subAccountsClosed", "userInvited", "filteredViewCreated", "filteredViewCountUpdated", "filteredViewDeleted", "forwardingInboxWasVerified", "forwardingInboxCheckWasFailed", "forwardingInboxVerificationLinkWasParsed", "tendlcLinkNumberStatusUpdated", "channelPresence", "dealCreated", "dealUpdated", "dealDeleted", "dealMoved", "dealStageCreated", "dealStageUpdated", "dealStageDeleted", "dealPipelineCreated", "dealPipelineUpdated", "dealPipelineDeleted", "dealPipelineArchived", "dealPipelineReordered", "dealActivityUpdated", "dealActivityItemCreated", "dealActivityItemUpdated", "dealActivityItemDeleted", "dealActivityItemBulkMarked", "dealTimelineItemDeleted", "dealTimelineItemCreated", "AIAssistantCreated", "AIAssistantState", "AIAssistantDeleted", "AIAssistantLinkDeleted", "AIAssistantLinkState", "AIAssistantLinkCreated", "AIAssistantSubLinkState", "AIAssistantSubLinkCreated", "emailCampaignEmailSenderCreated", "emailCampaignEmailSenderUpdated", "emailCampaignEmailSenderDeleted", "emailCampaignDomainCreated", "emailCampaignDomainDeleted", "emailCampaignDomainVerified", "emailCampaignDomainStatusChanged", "emailCampaignDomainDkimVerified", "emailCampaignDomainReturnPathVerified", "emailCampaignDomainDmarcVerified", "emailCampaignDomainEntryVerificationChanged", "emailCampaignProgressState", "emailCampaignUpdated", "emailTemplateImproved", "emailTemplateImprovingFailed", "emailBonusUpdated", "smsCampaignInvalidated", "scheduledEmailCampaignCreated", "scheduledEmailCampaignUpdated", "scheduledEmailCampaignStatusUpdated", "scheduledEmailCampaignDeleted", "emailCampaignFailedAttemptCreated", "emailCampaignFailedAttemptDeleted", "emailCampaignFailedAttemptStateUpdated", "tollFreePreFillCompleted", "tollFreePreFillFailed", "tollFreeComplianceCheckCompleted", "tollFreeComplianceCheckFailed", "tenDlcPreFillCompleted", "tenDlcPreFillFailed", "tenDlcComplianceCheckCompleted", "tenDlcComplianceCheckFailed", "marketingDataModalChanged", "integrationStatusChanged", "integrationCustomerSyncProgressState", "integrationCustomerSyncEnd"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>(Arrays.asList("systemCacheClear", "systemExit", "systemAlert", "systemAccountStateChanged", "systemAccountAcceptTermsUpdate", "systemAccountClosed", "systemAccountAdditionalFields", "systemAccountNumbersListChange", "systemAccountPermissionsChanged", "userProfileChanged", "userBalanceChanged", "userPresenceStatusChanged", "userImpersonationEnd", "messageDeleted", "messageIncoming", "messageIncomingDeleted", "messageStateChanged", "messageBulkEnd", "messageWipeEnd", "messageSent", "messageLog", "messageNote", "messageInitial", "lastMessageSet", "messageSessionDeleted", "messageCacheClear", "messageIncomingCacheClear", "messageScheduleAdded", "messageScheduleStateChanged", "messageScheduleDeleted", "messageScheduleNotSentStateChanged", "messageScheduleCacheClear", "messageTemplateCacheClear", "callFinished", "chatCreated", "chatMarkedAsRead", "chatMuted", "chatUnmuted", "chatPinned", "chatUnpinned", "chatDeleted", "chatClosed", "chatReopened", "chatActivated", "chatCacheClear", "chatRead", "chatUnread", "chatAssigneeChanged", "chatTagsChanged", "chatConversationEnded", "chatUpdated", "liveChatAgentChanged", "liveChatRated", "webWidgetUpdated", "webWidgetDeleted", "contactAdded", "contactDeleted", "contactBulkUpdated", "contactStateChanged", "contactUnsubscribed", "contactResubscribed", "contactNoteAdded", "contactNoteDeleted", "contactNoteStateChanged", "listAdded", "listDeleted", "listStateChanged", "listCountMembersUpdated", "contactWipeEnd", "contactImportEnd", "contactCacheClear", "listCacheClear", "customFieldsCacheClear", "progressCarrierBulkLookup", "progressSubAccountBulkImport", "emailLookupProgressState", "importProgressState", "forceRefreshWebApp", "chatSenderSettingsChanged", "countrySenderSettingsChanged", "chatSummaryChunk", "chatWaysToReplyChunk", "chatSuggestedReplyChunk", "taskCreated", "taskUpdated", "taskReordered", "taskDeleted", "taskMovedAll", "taskStageCreated", "taskStageUpdated", "taskStageDeleted", "taskBoardCreated", "taskBoardUpdated", "taskBoardReordered", "taskBoardDeleted", "taskBoardArchived", "taskChecklistCreated", "taskChecklistUpdated", "taskChecklistDeleted", "taskChecklistBulkMarked", "taskChecklistItemCreated", "taskChecklistItemUpdated", "taskChecklistItemDeleted", "taskCommentCreated", "taskCommentDeleted", "pinnedContactAdded", "pinnedContactRemoved", "pinnedContactReordered", "pinnedContactStateChanged", "whatsappAccountAdded", "whatsappAccountRemoved", "whatsappAccountChanged", "facebookPageAdded", "facebookPageRemoved", "facebookPageChanged", "instagramAccountAdded", "instagramAccountRemoved", "instagramAccountChanged", "unreadTicketsCountUpdated", "ticketDeleted", "ticketUpdated", "ticketCreated", "ticketBulkUpdated", "ticketBulkDeleted", "ticketMessageCreated", "ticketMessageUpdated", "ticketMessageDeleted", "subAccountsClosed", "userInvited", "filteredViewCreated", "filteredViewCountUpdated", "filteredViewDeleted", "forwardingInboxWasVerified", "forwardingInboxCheckWasFailed", "forwardingInboxVerificationLinkWasParsed", "tendlcLinkNumberStatusUpdated", "channelPresence", "dealCreated", "dealUpdated", "dealDeleted", "dealMoved", "dealStageCreated", "dealStageUpdated", "dealStageDeleted", "dealPipelineCreated", "dealPipelineUpdated", "dealPipelineDeleted", "dealPipelineArchived", "dealPipelineReordered", "dealActivityUpdated", "dealActivityItemCreated", "dealActivityItemUpdated", "dealActivityItemDeleted", "dealActivityItemBulkMarked", "dealTimelineItemDeleted", "dealTimelineItemCreated", "AIAssistantCreated", "AIAssistantState", "AIAssistantDeleted", "AIAssistantLinkDeleted", "AIAssistantLinkState", "AIAssistantLinkCreated", "AIAssistantSubLinkState", "AIAssistantSubLinkCreated", "emailCampaignEmailSenderCreated", "emailCampaignEmailSenderUpdated", "emailCampaignEmailSenderDeleted", "emailCampaignDomainCreated", "emailCampaignDomainDeleted", "emailCampaignDomainVerified", "emailCampaignDomainStatusChanged", "emailCampaignDomainDkimVerified", "emailCampaignDomainReturnPathVerified", "emailCampaignDomainDmarcVerified", "emailCampaignDomainEntryVerificationChanged", "emailCampaignProgressState", "emailCampaignUpdated", "emailTemplateImproved", "emailTemplateImprovingFailed", "emailBonusUpdated", "smsCampaignInvalidated", "scheduledEmailCampaignCreated", "scheduledEmailCampaignUpdated", "scheduledEmailCampaignStatusUpdated", "scheduledEmailCampaignDeleted", "emailCampaignFailedAttemptCreated", "emailCampaignFailedAttemptDeleted", "emailCampaignFailedAttemptStateUpdated"));
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("systemCacheClear", "systemExit", "systemAlert", "systemAccountStateChanged", "systemAccountAcceptTermsUpdate", "systemAccountClosed", "systemAccountAdditionalFields", "systemAccountNumbersListChange", "systemAccountPermissionsChanged", "userProfileChanged", "userBalanceChanged", "userPresenceStatusChanged", "userImpersonationEnd", "messageDeleted", "messageIncoming", "messageIncomingDeleted", "messageStateChanged", "messageBulkEnd", "messageWipeEnd", "messageSent", "messageLog", "messageNote", "messageInitial", "lastMessageSet", "messageSessionDeleted", "messageCacheClear", "messageIncomingCacheClear", "messageScheduleAdded", "messageScheduleStateChanged", "messageScheduleDeleted", "messageScheduleNotSentStateChanged", "messageScheduleCacheClear", "messageTemplateCacheClear", "callFinished", "chatCreated", "chatMarkedAsRead", "chatMuted", "chatUnmuted", "chatPinned", "chatUnpinned", "chatDeleted", "chatClosed", "chatReopened", "chatActivated", "chatCacheClear", "chatRead", "chatUnread", "chatAssigneeChanged", "chatTagsChanged", "chatConversationEnded", "chatUpdated", "liveChatAgentChanged", "liveChatRated", "webWidgetUpdated", "webWidgetDeleted", "webWidgetCreated", "contactAdded", "contactDeleted", "contactBulkUpdated", "contactStateChanged", "contactUnsubscribed", "contactResubscribed", "contactNoteAdded", "contactNoteDeleted", "contactNoteStateChanged", "listAdded", "listDeleted", "listStateChanged", "listCountMembersUpdated", "contactWipeEnd", "contactImportEnd", "contactCacheClear", "listCacheClear", "customFieldsCacheClear", "progressCarrierBulkLookup", "progressSubAccountBulkImport", "emailLookupProgressState", "importProgressState", "forceRefreshWebApp", "chatSenderSettingsChanged", "countrySenderSettingsChanged", "chatSummaryChunk", "chatWaysToReplyChunk", "chatSuggestedReplyChunk", "taskCreated", "taskUpdated", "taskReordered", "taskDeleted", "taskMovedAll", "taskStageCreated", "taskStageUpdated", "taskStageDeleted", "taskBoardCreated", "taskBoardUpdated", "taskBoardReordered", "taskBoardDeleted", "taskBoardArchived", "taskChecklistCreated", "taskChecklistUpdated", "taskChecklistDeleted", "taskChecklistBulkMarked", "taskChecklistItemCreated", "taskChecklistItemUpdated", "taskChecklistItemDeleted", "taskCommentCreated", "taskCommentDeleted", "pinnedContactAdded", "pinnedContactRemoved", "pinnedContactReordered", "pinnedContactStateChanged", "whatsappAccountAdded", "whatsappAccountRemoved", "whatsappAccountChanged", "facebookPageAdded", "facebookPageRemoved", "facebookPageChanged", "instagramAccountAdded", "instagramAccountRemoved", "instagramAccountChanged", "unreadTicketsCountUpdated", "ticketDeleted", "ticketUpdated", "ticketCreated", "ticketBulkUpdated", "ticketBulkDeleted", "ticketMessageCreated", "ticketMessageUpdated", "ticketMessageDeleted", "subAccountsClosed", "userInvited", "filteredViewCreated", "filteredViewCountUpdated", "filteredViewDeleted", "forwardingInboxWasVerified", "forwardingInboxCheckWasFailed", "forwardingInboxVerificationLinkWasParsed", "tendlcLinkNumberStatusUpdated", "channelPresence", "dealCreated", "dealUpdated", "dealDeleted", "dealMoved", "dealStageCreated", "dealStageUpdated", "dealStageDeleted", "dealPipelineCreated", "dealPipelineUpdated", "dealPipelineDeleted", "dealPipelineArchived", "dealPipelineReordered", "dealActivityUpdated", "dealActivityItemCreated", "dealActivityItemUpdated", "dealActivityItemDeleted", "dealActivityItemBulkMarked", "dealTimelineItemDeleted", "dealTimelineItemCreated", "AIAssistantCreated", "AIAssistantState", "AIAssistantDeleted", "AIAssistantLinkDeleted", "AIAssistantLinkState", "AIAssistantLinkCreated", "AIAssistantSubLinkState", "AIAssistantSubLinkCreated", "emailCampaignEmailSenderCreated", "emailCampaignEmailSenderUpdated", "emailCampaignEmailSenderDeleted", "emailCampaignDomainCreated", "emailCampaignDomainDeleted", "emailCampaignDomainVerified", "emailCampaignDomainStatusChanged", "emailCampaignDomainDkimVerified", "emailCampaignDomainReturnPathVerified", "emailCampaignDomainDmarcVerified", "emailCampaignDomainEntryVerificationChanged", "emailCampaignProgressState", "emailCampaignUpdated", "emailTemplateImproved", "emailTemplateImprovingFailed", "emailBonusUpdated", "smsCampaignInvalidated", "scheduledEmailCampaignCreated", "scheduledEmailCampaignUpdated", "scheduledEmailCampaignStatusUpdated", "scheduledEmailCampaignDeleted", "emailCampaignFailedAttemptCreated", "emailCampaignFailedAttemptDeleted", "emailCampaignFailedAttemptStateUpdated", "tollFreePreFillCompleted", "tollFreePreFillFailed", "tollFreeComplianceCheckCompleted", "tollFreeComplianceCheckFailed", "tenDlcPreFillCompleted", "tenDlcPreFillFailed", "tenDlcComplianceCheckCompleted", "tenDlcComplianceCheckFailed", "marketingDataModalChanged", "integrationStatusChanged", "integrationCustomerSyncProgressState", "integrationCustomerSyncEnd"));
   }
 
   /**

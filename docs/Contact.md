@@ -17,6 +17,7 @@
 |**email** | **String** | Contact email address. |  |
 |**country** | [**Country**](Country.md) |  |  |
 |**customFields** | [**List&lt;CustomFieldListItem&gt;**](CustomFieldListItem.md) |  |  |
+|**customFieldValues** | [**List&lt;CustomFieldValues&gt;**](CustomFieldValues.md) |  |  |
 |**user** | [**User**](User.md) |  |  |
 |**lists** | [**List&lt;ModelList&gt;**](ModelList.md) |  |  |
 |**owner** | [**User**](User.md) |  |  [optional] |

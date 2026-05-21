@@ -1768,7 +1768,8 @@ public class TextMagicApiTest {
         String country = null;
         String orderBy = null;
         String direction = null;
-        SearchContactsPaginatedResponse response = api.searchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction);
+        String tagIds = null;
+        SearchContactsPaginatedResponse response = api.searchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction, tagIds);
         // TODO: test validations
     }
 

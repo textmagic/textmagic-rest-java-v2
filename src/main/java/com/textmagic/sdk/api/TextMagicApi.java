@@ -16408,6 +16408,7 @@ public class TextMagicApi {
      * @param country The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
+     * @param tagIds Find contacts by tag ID(s). Multiple IDs can be separated by comma. (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -16419,7 +16420,7 @@ public class TextMagicApi {
         <tr><td> 401 </td><td> Unauthorized request. </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call searchContactsCall(@javax.annotation.Nullable Integer page, @javax.annotation.Nullable Integer limit, @javax.annotation.Nullable Integer shared, @javax.annotation.Nullable String ids, @javax.annotation.Nullable Integer listId, @javax.annotation.Nullable Integer includeBlocked, @javax.annotation.Nullable String query, @javax.annotation.Nullable Integer local, @javax.annotation.Nullable Integer exactMatch, @javax.annotation.Nullable String country, @javax.annotation.Nullable String orderBy, @javax.annotation.Nullable String direction, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call searchContactsCall(@javax.annotation.Nullable Integer page, @javax.annotation.Nullable Integer limit, @javax.annotation.Nullable Integer shared, @javax.annotation.Nullable String ids, @javax.annotation.Nullable Integer listId, @javax.annotation.Nullable Integer includeBlocked, @javax.annotation.Nullable String query, @javax.annotation.Nullable Integer local, @javax.annotation.Nullable Integer exactMatch, @javax.annotation.Nullable String country, @javax.annotation.Nullable String orderBy, @javax.annotation.Nullable String direction, @javax.annotation.Nullable String tagIds, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -16492,6 +16493,10 @@ public class TextMagicApi {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("direction", direction));
         }
 
+        if (tagIds != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("tagIds", tagIds));
+        }
+
         final String[] localVarAccepts = {
             "application/json"
         };
@@ -16512,8 +16517,8 @@ public class TextMagicApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call searchContactsValidateBeforeCall(@javax.annotation.Nullable Integer page, @javax.annotation.Nullable Integer limit, @javax.annotation.Nullable Integer shared, @javax.annotation.Nullable String ids, @javax.annotation.Nullable Integer listId, @javax.annotation.Nullable Integer includeBlocked, @javax.annotation.Nullable String query, @javax.annotation.Nullable Integer local, @javax.annotation.Nullable Integer exactMatch, @javax.annotation.Nullable String country, @javax.annotation.Nullable String orderBy, @javax.annotation.Nullable String direction, final ApiCallback _callback) throws ApiException {
-        return searchContactsCall(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction, _callback);
+    private okhttp3.Call searchContactsValidateBeforeCall(@javax.annotation.Nullable Integer page, @javax.annotation.Nullable Integer limit, @javax.annotation.Nullable Integer shared, @javax.annotation.Nullable String ids, @javax.annotation.Nullable Integer listId, @javax.annotation.Nullable Integer includeBlocked, @javax.annotation.Nullable String query, @javax.annotation.Nullable Integer local, @javax.annotation.Nullable Integer exactMatch, @javax.annotation.Nullable String country, @javax.annotation.Nullable String orderBy, @javax.annotation.Nullable String direction, @javax.annotation.Nullable String tagIds, final ApiCallback _callback) throws ApiException {
+        return searchContactsCall(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction, tagIds, _callback);
 
     }
 
@@ -16532,6 +16537,7 @@ public class TextMagicApi {
      * @param country The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
+     * @param tagIds Find contacts by tag ID(s). Multiple IDs can be separated by comma. (optional)
      * @return SearchContactsPaginatedResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -16542,8 +16548,8 @@ public class TextMagicApi {
         <tr><td> 401 </td><td> Unauthorized request. </td><td>  -  </td></tr>
      </table>
      */
-    public SearchContactsPaginatedResponse searchContacts(@javax.annotation.Nullable Integer page, @javax.annotation.Nullable Integer limit, @javax.annotation.Nullable Integer shared, @javax.annotation.Nullable String ids, @javax.annotation.Nullable Integer listId, @javax.annotation.Nullable Integer includeBlocked, @javax.annotation.Nullable String query, @javax.annotation.Nullable Integer local, @javax.annotation.Nullable Integer exactMatch, @javax.annotation.Nullable String country, @javax.annotation.Nullable String orderBy, @javax.annotation.Nullable String direction) throws ApiException {
-        ApiResponse<SearchContactsPaginatedResponse> localVarResp = searchContactsWithHttpInfo(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction);
+    public SearchContactsPaginatedResponse searchContacts(@javax.annotation.Nullable Integer page, @javax.annotation.Nullable Integer limit, @javax.annotation.Nullable Integer shared, @javax.annotation.Nullable String ids, @javax.annotation.Nullable Integer listId, @javax.annotation.Nullable Integer includeBlocked, @javax.annotation.Nullable String query, @javax.annotation.Nullable Integer local, @javax.annotation.Nullable Integer exactMatch, @javax.annotation.Nullable String country, @javax.annotation.Nullable String orderBy, @javax.annotation.Nullable String direction, @javax.annotation.Nullable String tagIds) throws ApiException {
+        ApiResponse<SearchContactsPaginatedResponse> localVarResp = searchContactsWithHttpInfo(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction, tagIds);
         return localVarResp.getData();
     }
 
@@ -16562,6 +16568,7 @@ public class TextMagicApi {
      * @param country The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
+     * @param tagIds Find contacts by tag ID(s). Multiple IDs can be separated by comma. (optional)
      * @return ApiResponse&lt;SearchContactsPaginatedResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -16572,8 +16579,8 @@ public class TextMagicApi {
         <tr><td> 401 </td><td> Unauthorized request. </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<SearchContactsPaginatedResponse> searchContactsWithHttpInfo(@javax.annotation.Nullable Integer page, @javax.annotation.Nullable Integer limit, @javax.annotation.Nullable Integer shared, @javax.annotation.Nullable String ids, @javax.annotation.Nullable Integer listId, @javax.annotation.Nullable Integer includeBlocked, @javax.annotation.Nullable String query, @javax.annotation.Nullable Integer local, @javax.annotation.Nullable Integer exactMatch, @javax.annotation.Nullable String country, @javax.annotation.Nullable String orderBy, @javax.annotation.Nullable String direction) throws ApiException {
-        okhttp3.Call localVarCall = searchContactsValidateBeforeCall(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction, null);
+    public ApiResponse<SearchContactsPaginatedResponse> searchContactsWithHttpInfo(@javax.annotation.Nullable Integer page, @javax.annotation.Nullable Integer limit, @javax.annotation.Nullable Integer shared, @javax.annotation.Nullable String ids, @javax.annotation.Nullable Integer listId, @javax.annotation.Nullable Integer includeBlocked, @javax.annotation.Nullable String query, @javax.annotation.Nullable Integer local, @javax.annotation.Nullable Integer exactMatch, @javax.annotation.Nullable String country, @javax.annotation.Nullable String orderBy, @javax.annotation.Nullable String direction, @javax.annotation.Nullable String tagIds) throws ApiException {
+        okhttp3.Call localVarCall = searchContactsValidateBeforeCall(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction, tagIds, null);
         Type localVarReturnType = new TypeToken<SearchContactsPaginatedResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -16593,6 +16600,7 @@ public class TextMagicApi {
      * @param country The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. (optional)
      * @param orderBy Order results by some field. Default is id. (optional, default to id)
      * @param direction Order direction. Default is desc. (optional, default to desc)
+     * @param tagIds Find contacts by tag ID(s). Multiple IDs can be separated by comma. (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -16604,9 +16612,9 @@ public class TextMagicApi {
         <tr><td> 401 </td><td> Unauthorized request. </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call searchContactsAsync(@javax.annotation.Nullable Integer page, @javax.annotation.Nullable Integer limit, @javax.annotation.Nullable Integer shared, @javax.annotation.Nullable String ids, @javax.annotation.Nullable Integer listId, @javax.annotation.Nullable Integer includeBlocked, @javax.annotation.Nullable String query, @javax.annotation.Nullable Integer local, @javax.annotation.Nullable Integer exactMatch, @javax.annotation.Nullable String country, @javax.annotation.Nullable String orderBy, @javax.annotation.Nullable String direction, final ApiCallback<SearchContactsPaginatedResponse> _callback) throws ApiException {
+    public okhttp3.Call searchContactsAsync(@javax.annotation.Nullable Integer page, @javax.annotation.Nullable Integer limit, @javax.annotation.Nullable Integer shared, @javax.annotation.Nullable String ids, @javax.annotation.Nullable Integer listId, @javax.annotation.Nullable Integer includeBlocked, @javax.annotation.Nullable String query, @javax.annotation.Nullable Integer local, @javax.annotation.Nullable Integer exactMatch, @javax.annotation.Nullable String country, @javax.annotation.Nullable String orderBy, @javax.annotation.Nullable String direction, @javax.annotation.Nullable String tagIds, final ApiCallback<SearchContactsPaginatedResponse> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = searchContactsValidateBeforeCall(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction, _callback);
+        okhttp3.Call localVarCall = searchContactsValidateBeforeCall(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction, tagIds, _callback);
         Type localVarReturnType = new TypeToken<SearchContactsPaginatedResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

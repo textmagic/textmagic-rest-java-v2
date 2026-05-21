@@ -8239,7 +8239,7 @@ public class Example {
 
 <a id="searchContacts"></a>
 # **searchContacts**
-> SearchContactsPaginatedResponse searchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction)
+> SearchContactsPaginatedResponse searchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction, tagIds)
 
 Find contacts by given criteria
 
@@ -8276,8 +8276,9 @@ public class Example {
     String country = "country_example"; // String | The 2-letter ISO country code for local phone numbers, used when \"local\" is set to true. Default is the account country.
     String orderBy = "id"; // String | Order results by some field. Default is id.
     String direction = "asc"; // String | Order direction. Default is desc.
+    String tagIds = "tagIds_example"; // String | Find contacts by tag ID(s). Multiple IDs can be separated by comma.
     try {
-      SearchContactsPaginatedResponse result = apiInstance.searchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction);
+      SearchContactsPaginatedResponse result = apiInstance.searchContacts(page, limit, shared, ids, listId, includeBlocked, query, local, exactMatch, country, orderBy, direction, tagIds);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling TextMagicApi#searchContacts");
@@ -8306,6 +8307,7 @@ public class Example {
 | **country** | **String**| The 2-letter ISO country code for local phone numbers, used when \&quot;local\&quot; is set to true. Default is the account country. | [optional] |
 | **orderBy** | **String**| Order results by some field. Default is id. | [optional] [default to id] [enum: id, firstName, lastName] |
 | **direction** | **String**| Order direction. Default is desc. | [optional] [default to desc] [enum: asc, desc] |
+| **tagIds** | **String**| Find contacts by tag ID(s). Multiple IDs can be separated by comma. | [optional] |
 
 ### Return type
 

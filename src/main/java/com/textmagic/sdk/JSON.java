@@ -123,6 +123,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.CreateTemplateRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.Currency.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.CustomFieldListItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.CustomFieldValues.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.DeleteChatMessagesRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.DeleteChatsBulkRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.DeleteContactNotesBulkRequest.CustomTypeAdapterFactory());
@@ -207,6 +208,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.MuteChatRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.MuteChatsBulkRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.NotFoundResponse.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.NullableUserPersonalInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.OutboundEmailResponse.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.PingResponse.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.textmagic.sdk.model.PushToken.CustomTypeAdapterFactory());

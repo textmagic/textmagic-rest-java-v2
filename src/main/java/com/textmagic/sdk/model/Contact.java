@@ -24,6 +24,7 @@ import com.textmagic.sdk.model.ContactImage;
 import com.textmagic.sdk.model.ContactNote;
 import com.textmagic.sdk.model.Country;
 import com.textmagic.sdk.model.CustomFieldListItem;
+import com.textmagic.sdk.model.CustomFieldValues;
 import com.textmagic.sdk.model.ModelList;
 import com.textmagic.sdk.model.Tag;
 import com.textmagic.sdk.model.User;
@@ -111,6 +112,11 @@ public class Contact {
   @SerializedName(SERIALIZED_NAME_CUSTOM_FIELDS)
   @javax.annotation.Nonnull
   private List<CustomFieldListItem> customFields = new ArrayList<>();
+
+  public static final String SERIALIZED_NAME_CUSTOM_FIELD_VALUES = "customFieldValues";
+  @SerializedName(SERIALIZED_NAME_CUSTOM_FIELD_VALUES)
+  @javax.annotation.Nonnull
+  private List<CustomFieldValues> customFieldValues = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_USER = "user";
   @SerializedName(SERIALIZED_NAME_USER)
@@ -353,6 +359,33 @@ public class Contact {
   }
 
 
+  public Contact customFieldValues(@javax.annotation.Nonnull List<CustomFieldValues> customFieldValues) {
+    this.customFieldValues = customFieldValues;
+    return this;
+  }
+
+  public Contact addCustomFieldValuesItem(CustomFieldValues customFieldValuesItem) {
+    if (this.customFieldValues == null) {
+      this.customFieldValues = new ArrayList<>();
+    }
+    this.customFieldValues.add(customFieldValuesItem);
+    return this;
+  }
+
+  /**
+   * Get customFieldValues
+   * @return customFieldValues
+   */
+  @javax.annotation.Nonnull
+  public List<CustomFieldValues> getCustomFieldValues() {
+    return customFieldValues;
+  }
+
+  public void setCustomFieldValues(@javax.annotation.Nonnull List<CustomFieldValues> customFieldValues) {
+    this.customFieldValues = customFieldValues;
+  }
+
+
   public Contact user(@javax.annotation.Nullable User user) {
     this.user = user;
     return this;
@@ -549,6 +582,7 @@ public class Contact {
         Objects.equals(this.email, contact.email) &&
         Objects.equals(this.country, contact.country) &&
         Objects.equals(this.customFields, contact.customFields) &&
+        Objects.equals(this.customFieldValues, contact.customFieldValues) &&
         Objects.equals(this.user, contact.user) &&
         Objects.equals(this.lists, contact.lists) &&
         Objects.equals(this.owner, contact.owner) &&
@@ -565,7 +599,7 @@ public class Contact {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, favorited, blocked, firstName, lastName, companyName, phone, email, country, customFields, user, lists, owner, tags, phoneType, avatar, notes, whatsappPhone);
+    return Objects.hash(id, favorited, blocked, firstName, lastName, companyName, phone, email, country, customFields, customFieldValues, user, lists, owner, tags, phoneType, avatar, notes, whatsappPhone);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -589,6 +623,7 @@ public class Contact {
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    country: ").append(toIndentedString(country)).append("\n");
     sb.append("    customFields: ").append(toIndentedString(customFields)).append("\n");
+    sb.append("    customFieldValues: ").append(toIndentedString(customFieldValues)).append("\n");
     sb.append("    user: ").append(toIndentedString(user)).append("\n");
     sb.append("    lists: ").append(toIndentedString(lists)).append("\n");
     sb.append("    owner: ").append(toIndentedString(owner)).append("\n");
@@ -618,10 +653,10 @@ public class Contact {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("id", "favorited", "blocked", "firstName", "lastName", "companyName", "phone", "email", "country", "customFields", "user", "lists", "owner", "tags", "phoneType", "avatar", "notes", "whatsappPhone"));
+    openapiFields = new HashSet<String>(Arrays.asList("id", "favorited", "blocked", "firstName", "lastName", "companyName", "phone", "email", "country", "customFields", "customFieldValues", "user", "lists", "owner", "tags", "phoneType", "avatar", "notes", "whatsappPhone"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>(Arrays.asList("id", "favorited", "blocked", "firstName", "lastName", "companyName", "phone", "email", "country", "customFields", "user", "lists", "phoneType", "avatar", "notes"));
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("id", "favorited", "blocked", "firstName", "lastName", "companyName", "phone", "email", "country", "customFields", "customFieldValues", "user", "lists", "phoneType", "avatar", "notes"));
   }
 
   /**
@@ -678,6 +713,16 @@ public class Contact {
       // validate the required field `customFields` (array)
       for (int i = 0; i < jsonArraycustomFields.size(); i++) {
         CustomFieldListItem.validateJsonElement(jsonArraycustomFields.get(i));
+      };
+      // ensure the json data is an array
+      if (!jsonObj.get("customFieldValues").isJsonArray()) {
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `customFieldValues` to be an array in the JSON string but got `%s`", jsonObj.get("customFieldValues").toString()));
+      }
+
+      JsonArray jsonArraycustomFieldValues = jsonObj.getAsJsonArray("customFieldValues");
+      // validate the required field `customFieldValues` (array)
+      for (int i = 0; i < jsonArraycustomFieldValues.size(); i++) {
+        CustomFieldValues.validateJsonElement(jsonArraycustomFieldValues.get(i));
       };
       // validate the required field `user`
       User.validateJsonElement(jsonObj.get("user"));

@@ -283,6 +283,11 @@ public class MessageOut {
   @javax.annotation.Nullable
   private Boolean deleted;
 
+  public static final String SERIALIZED_NAME_DELIVERED_AT = "deliveredAt";
+  @SerializedName(SERIALIZED_NAME_DELIVERED_AT)
+  @javax.annotation.Nullable
+  private OffsetDateTime deliveredAt;
+
   public static final String SERIALIZED_NAME_CHARSET = "charset";
   @SerializedName(SERIALIZED_NAME_CHARSET)
   @javax.annotation.Nullable
@@ -555,6 +560,25 @@ public class MessageOut {
   }
 
 
+  public MessageOut deliveredAt(@javax.annotation.Nullable OffsetDateTime deliveredAt) {
+    this.deliveredAt = deliveredAt;
+    return this;
+  }
+
+  /**
+   * Time when message was delivered.
+   * @return deliveredAt
+   */
+  @javax.annotation.Nullable
+  public OffsetDateTime getDeliveredAt() {
+    return deliveredAt;
+  }
+
+  public void setDeliveredAt(@javax.annotation.Nullable OffsetDateTime deliveredAt) {
+    this.deliveredAt = deliveredAt;
+  }
+
+
   public MessageOut charset(@javax.annotation.Nullable String charset) {
     this.charset = charset;
     return this;
@@ -804,6 +828,7 @@ public class MessageOut {
         Objects.equals(this.messageTime, messageOut.messageTime) &&
         Objects.equals(this.avatar, messageOut.avatar) &&
         Objects.equals(this.deleted, messageOut.deleted) &&
+        Objects.equals(this.deliveredAt, messageOut.deliveredAt) &&
         Objects.equals(this.charset, messageOut.charset) &&
         Objects.equals(this.charsetLabel, messageOut.charsetLabel) &&
         Objects.equals(this.firstName, messageOut.firstName) &&
@@ -824,7 +849,7 @@ public class MessageOut {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, sender, receiver, text, status, rejectReason, contactId, sessionId, messageTime, avatar, deleted, charset, charsetLabel, firstName, lastName, country, phone, price, partsCount, fromEmail, fromNumber, senderSource, session);
+    return Objects.hash(id, sender, receiver, text, status, rejectReason, contactId, sessionId, messageTime, avatar, deleted, deliveredAt, charset, charsetLabel, firstName, lastName, country, phone, price, partsCount, fromEmail, fromNumber, senderSource, session);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -849,6 +874,7 @@ public class MessageOut {
     sb.append("    messageTime: ").append(toIndentedString(messageTime)).append("\n");
     sb.append("    avatar: ").append(toIndentedString(avatar)).append("\n");
     sb.append("    deleted: ").append(toIndentedString(deleted)).append("\n");
+    sb.append("    deliveredAt: ").append(toIndentedString(deliveredAt)).append("\n");
     sb.append("    charset: ").append(toIndentedString(charset)).append("\n");
     sb.append("    charsetLabel: ").append(toIndentedString(charsetLabel)).append("\n");
     sb.append("    firstName: ").append(toIndentedString(firstName)).append("\n");
@@ -882,7 +908,7 @@ public class MessageOut {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("id", "sender", "receiver", "text", "status", "rejectReason", "contactId", "sessionId", "messageTime", "avatar", "deleted", "charset", "charsetLabel", "firstName", "lastName", "country", "phone", "price", "partsCount", "fromEmail", "fromNumber", "senderSource", "session"));
+    openapiFields = new HashSet<String>(Arrays.asList("id", "sender", "receiver", "text", "status", "rejectReason", "contactId", "sessionId", "messageTime", "avatar", "deleted", "deliveredAt", "charset", "charsetLabel", "firstName", "lastName", "country", "phone", "price", "partsCount", "fromEmail", "fromNumber", "senderSource", "session"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(Arrays.asList("id", "text", "status", "contactId", "sessionId", "messageTime", "avatar", "charset", "charsetLabel", "firstName", "lastName", "country", "partsCount"));

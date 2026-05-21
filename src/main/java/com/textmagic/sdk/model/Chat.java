@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import com.textmagic.sdk.model.Contact;
 import com.textmagic.sdk.model.Country;
+import com.textmagic.sdk.model.NullableUserPersonalInfo;
 import com.textmagic.sdk.model.Tag;
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -29,6 +30,7 @@ import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -273,6 +275,26 @@ public class Chat {
   @SerializedName(SERIALIZED_NAME_TAGS)
   @javax.annotation.Nullable
   private List<Tag> tags = new ArrayList<>();
+
+  public static final String SERIALIZED_NAME_ASSIGNEE_ID = "assigneeId";
+  @SerializedName(SERIALIZED_NAME_ASSIGNEE_ID)
+  @javax.annotation.Nullable
+  private Integer assigneeId;
+
+  public static final String SERIALIZED_NAME_UPDATED_BY = "updatedBy";
+  @SerializedName(SERIALIZED_NAME_UPDATED_BY)
+  @javax.annotation.Nullable
+  private NullableUserPersonalInfo updatedBy;
+
+  public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
+  @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
+  private OffsetDateTime createdAt;
+
+  public static final String SERIALIZED_NAME_MESSAGE_TIME = "messageTime";
+  @SerializedName(SERIALIZED_NAME_MESSAGE_TIME)
+  @javax.annotation.Nonnull
+  private OffsetDateTime messageTime;
 
   public Chat() {
   }
@@ -684,6 +706,82 @@ public class Chat {
   }
 
 
+  public Chat assigneeId(@javax.annotation.Nullable Integer assigneeId) {
+    this.assigneeId = assigneeId;
+    return this;
+  }
+
+  /**
+   * Get assigneeId
+   * @return assigneeId
+   */
+  @javax.annotation.Nullable
+  public Integer getAssigneeId() {
+    return assigneeId;
+  }
+
+  public void setAssigneeId(@javax.annotation.Nullable Integer assigneeId) {
+    this.assigneeId = assigneeId;
+  }
+
+
+  public Chat updatedBy(@javax.annotation.Nullable NullableUserPersonalInfo updatedBy) {
+    this.updatedBy = updatedBy;
+    return this;
+  }
+
+  /**
+   * Get updatedBy
+   * @return updatedBy
+   */
+  @javax.annotation.Nullable
+  public NullableUserPersonalInfo getUpdatedBy() {
+    return updatedBy;
+  }
+
+  public void setUpdatedBy(@javax.annotation.Nullable NullableUserPersonalInfo updatedBy) {
+    this.updatedBy = updatedBy;
+  }
+
+
+  public Chat createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
+    this.createdAt = createdAt;
+    return this;
+  }
+
+  /**
+   * Chat creation date and time.
+   * @return createdAt
+   */
+  @javax.annotation.Nonnull
+  public OffsetDateTime getCreatedAt() {
+    return createdAt;
+  }
+
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
+    this.createdAt = createdAt;
+  }
+
+
+  public Chat messageTime(@javax.annotation.Nonnull OffsetDateTime messageTime) {
+    this.messageTime = messageTime;
+    return this;
+  }
+
+  /**
+   * Chat last message date and time.
+   * @return messageTime
+   */
+  @javax.annotation.Nonnull
+  public OffsetDateTime getMessageTime() {
+    return messageTime;
+  }
+
+  public void setMessageTime(@javax.annotation.Nonnull OffsetDateTime messageTime) {
+    this.messageTime = messageTime;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -714,12 +812,27 @@ public class Chat {
         Objects.equals(this.type, chat.type) &&
         Objects.equals(this.smsPrice, chat.smsPrice) &&
         Objects.equals(this.mmsPrice, chat.mmsPrice) &&
-        Objects.equals(this.tags, chat.tags);
+        Objects.equals(this.tags, chat.tags) &&
+        Objects.equals(this.assigneeId, chat.assigneeId) &&
+        Objects.equals(this.updatedBy, chat.updatedBy) &&
+        Objects.equals(this.createdAt, chat.createdAt) &&
+        Objects.equals(this.messageTime, chat.messageTime);
+  }
+
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, originalId, phone, contact, unsubscribedContactId, unread, updatedAt, status, mute, lastMessage, direction, replyOptionsType, from, mutedUntil, timeLeftMute, country, pinned, type, smsPrice, mmsPrice, tags);
+    return Objects.hash(id, originalId, phone, contact, unsubscribedContactId, unread, updatedAt, status, mute, lastMessage, direction, replyOptionsType, from, mutedUntil, timeLeftMute, country, pinned, type, smsPrice, mmsPrice, tags, assigneeId, updatedBy, createdAt, messageTime);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -747,6 +860,10 @@ public class Chat {
     sb.append("    smsPrice: ").append(toIndentedString(smsPrice)).append("\n");
     sb.append("    mmsPrice: ").append(toIndentedString(mmsPrice)).append("\n");
     sb.append("    tags: ").append(toIndentedString(tags)).append("\n");
+    sb.append("    assigneeId: ").append(toIndentedString(assigneeId)).append("\n");
+    sb.append("    updatedBy: ").append(toIndentedString(updatedBy)).append("\n");
+    sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
+    sb.append("    messageTime: ").append(toIndentedString(messageTime)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -768,10 +885,10 @@ public class Chat {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("id", "originalId", "phone", "contact", "unsubscribedContactId", "unread", "updatedAt", "status", "mute", "lastMessage", "direction", "replyOptionsType", "from", "mutedUntil", "timeLeftMute", "country", "pinned", "type", "smsPrice", "mmsPrice", "tags"));
+    openapiFields = new HashSet<String>(Arrays.asList("id", "originalId", "phone", "contact", "unsubscribedContactId", "unread", "updatedAt", "status", "mute", "lastMessage", "direction", "replyOptionsType", "from", "mutedUntil", "timeLeftMute", "country", "pinned", "type", "smsPrice", "mmsPrice", "tags", "assigneeId", "updatedBy", "createdAt", "messageTime"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>(Arrays.asList("id", "originalId", "phone", "contact", "unsubscribedContactId", "unread", "updatedAt", "status", "mute", "lastMessage", "direction", "replyOptionsType", "from", "mutedUntil", "timeLeftMute", "country", "pinned", "type", "smsPrice", "mmsPrice"));
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("id", "originalId", "phone", "contact", "unsubscribedContactId", "unread", "updatedAt", "status", "mute", "lastMessage", "direction", "replyOptionsType", "from", "mutedUntil", "timeLeftMute", "country", "pinned", "type", "smsPrice", "mmsPrice", "assigneeId", "createdAt", "messageTime"));
   }
 
   /**
@@ -844,6 +961,10 @@ public class Chat {
             Tag.validateJsonElement(jsonArraytags.get(i));
           };
         }
+      }
+      // validate the optional field `updatedBy`
+      if (jsonObj.get("updatedBy") != null && !jsonObj.get("updatedBy").isJsonNull()) {
+        NullableUserPersonalInfo.validateJsonElement(jsonObj.get("updatedBy"));
       }
   }
 

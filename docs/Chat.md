@@ -28,6 +28,10 @@
 |**smsPrice** | **BigDecimal** |  |  |
 |**mmsPrice** | **BigDecimal** |  |  |
 |**tags** | [**List&lt;Tag&gt;**](Tag.md) |  |  [optional] |
+|**assigneeId** | **Integer** |  |  |
+|**updatedBy** | [**NullableUserPersonalInfo**](NullableUserPersonalInfo.md) |  |  [optional] |
+|**createdAt** | **OffsetDateTime** | Chat creation date and time. |  |
+|**messageTime** | **OffsetDateTime** | Chat last message date and time. |  |
 
 
 
