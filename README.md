@@ -162,7 +162,7 @@ ModelFile file = api.getFile(456);
    <dependency>
        <groupId>com.textmagic.sdk</groupId>
        <artifactId>textmagic-java-sdk</artifactId>
-       <version>3.0.50038</version>
+       <version>3.0.50055</version>
    </dependency>
    ```
 
@@ -274,7 +274,7 @@ Add this dependency to your project's POM:
     <dependency>
         <groupId>com.textmagic.sdk</groupId>
         <artifactId>textmagic-java-sdk</artifactId>
-        <version>3.0.50038</version>
+        <version>3.0.50055</version>
     </dependency>
 </dependencies>
 
@@ -282,7 +282,7 @@ Add this dependency to your project's POM:
 
 Add this dependency to your project's build file:
 ```groovy
-implementation "com.textmagic.sdk:textmagic-java-sdk:3.0.50038"
+implementation "com.textmagic.sdk:textmagic-java-sdk:3.0.50055"
 ```
 
 ## Usage Example

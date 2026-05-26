@@ -2,7 +2,7 @@ lazy val root = (project in file(".")).
   settings(
     organization := "com.textmagic.sdk",
     name := "textmagic-java-sdk",
-    version := "3.0.50038",
+    version := "3.0.50055",
     scalaVersion := "2.11.12",
     scalacOptions ++= Seq("-feature"),
     compile / javacOptions ++= Seq("-Xlint:deprecation"),
